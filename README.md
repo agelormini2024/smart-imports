@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and future platform documentation for Smart Imports.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-10
+updated: 2026-07-15
 tags:
   - smart-imports
   - knowledge-base
@@ -17,7 +17,7 @@ tags:
 
 # Smart Imports
 
-> Primero entender. Después invertir.
+> **Primero entender. Después invertir.**
 
 Smart Imports es un proyecto de inteligencia comercial aplicado al comercio físico y digital.
 
@@ -29,7 +29,7 @@ La importación es el primer caso de uso. La visión de largo plazo es construir
 
 ## Estado actual
 
-El proyecto se encuentra en etapa fundacional, con metodología inicial ya aplicada sobre el caso piloto **Energía Solar Portátil**.
+El proyecto se encuentra en etapa fundacional avanzada, con metodología inicial ya aplicada sobre el caso piloto **Energía Solar Portátil**.
 
 Actualmente se está trabajando en:
 
@@ -40,11 +40,14 @@ Actualmente se está trabajando en:
 - Decision Log.
 - Caso piloto: Energía Solar Portátil.
 - Procedimiento operativo para procesar evidencias de marketplace y fuentes externas.
+- Procedimiento preliminar para RFQ, negociación con proveedores y screening de margen.
 
 Avances recientes:
 
 - Se aplicó el criterio **Demanda** al nicho Energía Solar Portátil.
 - Se aplicó el criterio **Competencia** al nicho Energía Solar Portátil.
+- Se aplicaron criterios estratégicos preliminares: Recompra, Potencial IA, Potencial Automatización, Afinidad Personal, Potencial de Marca y Venta Impulsiva.
+- Se inició la evaluación preliminar de **Margen Potencial** mediante cotizaciones públicas de Alibaba, RFQ formales y cálculo de FOB objetivo.
 - Se definió una estructura operativa por capas: fuentes, productos base, evidencias, evaluaciones y dashboard.
 - Se decidió excluir generadores solares / power stations del nicho Energía Solar Portátil y evaluarlos potencialmente en un nicho separado.
 
@@ -82,8 +85,11 @@ docs/
 | `docs/02-business-intelligence-manual/criteria/si-bim-000-confidence-in-evaluations.md` | Define el concepto de Confianza. |
 | `docs/02-business-intelligence-manual/criteria/si-bim-001-demand-evaluation.md` | Define el criterio Demanda. |
 | `docs/02-business-intelligence-manual/criteria/si-bim-002-competition-evaluation.md` | Define el criterio Competencia. |
+| `docs/02-business-intelligence-manual/criteria/si-bim-003-margin-potential-evaluation.md` | Define el criterio Margen Potencial. |
 | `docs/02-business-intelligence-manual/procedures/si-bim-proc-001-marketplace-evidence-processing.md` | Define el procedimiento operativo provisorio para procesar evidencias de marketplace y fuentes externas. |
+| `docs/02-business-intelligence-manual/procedures/si-bim-proc-002-supplier-rfq-and-margin-screening.md` | Define el procedimiento operativo provisorio para RFQ, cotizaciones, FOB objetivo y screening de margen. |
 | `docs/09-decision-log/README.md` | Índice del Decision Log. |
+| `docs/09-decision-log/si-decision-005-portable-solar-pilot-scope.md` | Define el alcance del caso piloto Energía Solar Portátil. |
 
 ---
 
@@ -118,11 +124,12 @@ Energía solar no portátil
 
 ## Próximos pasos
 
-1. Documentar el criterio `Margen Potencial`.
-2. Aplicar Margen Potencial al nicho Energía Solar Portátil.
-3. Evaluar la creación de un nuevo nicho: `Energía solar no portátil`.
-4. Documentar el procedimiento operativo como base para una futura automatización con n8n.
-5. Continuar incorporando aprendizajes del piloto al Business Intelligence Manual.
+1. Completar la evaluación de **Margen Potencial** con RFQ reales, FOB negociado y costos logísticos más concretos.
+2. Evaluar **Facilidad de Importación** con datos técnicos de proveedores: batería, certificaciones, HS Code, packing, CBM, peso y restricciones logísticas.
+3. Cerrar el scoring del caso piloto Energía Solar Portátil.
+4. Documentar los aprendizajes finales del piloto.
+5. Preparar un documento ejecutivo para socio / potenciales inversores.
+6. Replicar el método en nuevos nichos.
 
 ---
 
@@ -132,3 +139,4 @@ Energía solar no portátil
 |---|---|---|
 | 0.1.0 | 2026-07-02 | Versión inicial del README raíz. |
 | 0.2.0 | 2026-07-10 | Se actualizó el estado del proyecto luego de aplicar Demanda y Competencia al piloto Energía Solar Portátil y documentar el procedimiento operativo. |
+| 0.3.0 | 2026-07-15 | Se incorporó el estado de Margen Potencial, RFQ con proveedores, FOB objetivo, criterios estratégicos preliminares y decisión de alcance del piloto. |

@@ -2,12 +2,12 @@
 id: si-bim-readme
 title: Business Intelligence Manual Index
 description: Índice principal del Business Intelligence Manual de Smart Imports. Organiza la metodología de investigación, evaluación, evidencias, scoring y priorización de nichos.
-version: 0.1.0
-status: draft
+version: 0.3.0
+status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-15
 tags:
   - business-intelligence
   - research
@@ -95,25 +95,7 @@ Próxima acción
 
 ---
 
-## 4. Qué problema resuelve
-
-Sin metodología, el proyecto corre riesgo de:
-
-- Enamorarse de productos atractivos.
-- Confundir ventas visibles con negocio rentable.
-- Subestimar competencia.
-- Sobrestimar márgenes.
-- Ignorar complejidad de importación.
-- Elegir nichos sin diferenciación.
-- Invertir capital demasiado pronto.
-- Perder conocimiento en chats o planillas desordenadas.
-- Tomar decisiones que no puedan auditarse más adelante.
-
-El BIM busca reducir esos riesgos.
-
----
-
-## 5. Relación con la Matriz de Oportunidades
+## 4. Relación con la Matriz de Oportunidades
 
 La Matriz de Oportunidades es la herramienta inicial.
 
@@ -129,9 +111,7 @@ El BIM responde:
 
 ---
 
-## 6. Componentes principales
-
-El BIM se organiza en los siguientes componentes:
+## 5. Componentes principales
 
 | Componente | Descripción |
 |---|---|
@@ -146,350 +126,99 @@ El BIM se organiza en los siguientes componentes:
 
 ---
 
-## 7. Criterios de evaluación
+## 6. Estado de criterios
 
-La matriz original de Smart Imports utiliza los siguientes criterios:
-
-| Criterio | Pregunta principal |
-|---|---|
-| Demanda | ¿Existe mercado activo para este nicho? |
-| Competencia | ¿Qué tan difícil será entrar y diferenciarse? |
-| Margen Potencial | ¿Hay espacio para rentabilidad atractiva? |
-| Facilidad de Importación | ¿Qué tan simple o complejo es importar productos del nicho? |
-| Potencial de Marca | ¿Se puede construir una marca propia o es un commodity? |
-| Venta Impulsiva | ¿El cliente puede comprar por deseo, emoción o impulso? |
-| Recompra | ¿Existe posibilidad de compras recurrentes? |
-| Potencial IA | ¿La IA puede generar valor diferencial para el cliente o el negocio? |
-| Potencial Automatización | ¿Se pueden automatizar procesos operativos o comerciales? |
-| Afinidad Personal | ¿El Founder tiene interés real en trabajar este nicho durante años? |
+| Criterio | Documento | Estado metodológico | Estado en piloto Energía Solar Portátil |
+|---|---|---|---|
+| Confianza | `criteria/si-bim-000-confidence-in-evaluations.md` | Definido | Aplicado |
+| Demanda | `criteria/si-bim-001-demand-evaluation.md` | Definido / review | Aplicado |
+| Competencia | `criteria/si-bim-002-competition-evaluation.md` | Definido / review | Aplicado |
+| Margen Potencial | `criteria/si-bim-003-margin-potential-evaluation.md` | Draft / en validación | En evaluación |
+| Facilidad de Importación | Pendiente | Pendiente | Pendiente |
+| Potencial de Marca | Pendiente | Criterio operativo preliminar | Aplicado preliminarmente |
+| Venta Impulsiva | Pendiente | Criterio operativo preliminar | Aplicado preliminarmente |
+| Recompra | Pendiente | Criterio operativo preliminar | Aplicado preliminarmente |
+| Potencial IA | Pendiente | Criterio operativo preliminar | Aplicado preliminarmente |
+| Potencial Automatización | Pendiente | Criterio operativo preliminar | Aplicado preliminarmente |
+| Afinidad Personal | Pendiente | Criterio operativo preliminar | Aplicado preliminarmente |
 
 ---
 
-## 8. Documentos de criterios
+## 7. Procedimientos operativos
 
-Cada criterio deberá tener su propio documento metodológico.
+| Procedimiento | Documento | Estado | Propósito |
+|---|---|---|---|
+| Procesamiento de evidencias marketplace | `procedures/si-bim-proc-001-marketplace-evidence-processing.md` | Review | Convertir PDFs, publicaciones ML y fuentes externas en datos estructurados, productos base, evidencias y análisis competitivo. |
+| RFQ y screening de margen | `procedures/si-bim-proc-002-supplier-rfq-and-margin-screening.md` | Draft | Pedir cotizaciones, calcular FOB objetivo, negociar proveedores y validar Margen Potencial. |
 
-Carpeta sugerida:
+---
+
+## 8. Flujo operativo vigente
 
 ```text
-docs/02-business-intelligence-manual/criteria/
+Fuentes crudas
+  ├── Publicaciones ML
+  ├── Fuentes Externas
+  └── Cotizaciones Proveedores
+        ↓
+Productos Base
+        ↓
+Análisis auxiliar
+  ├── Competencia ML
+  ├── Competencia Externa
+  └── Simulación Margen
+        ↓
+Evidencias
+        ↓
+Evaluaciones
+        ↓
+Nichos / Dashboard
 ```
 
-Documentos previstos:
-
-| Documento | Criterio | Estado |
-|---|---|---|
-| `si-bim-000-confidence-in-evaluations.md` | Confianza | Creado |
-| `si-bim-001-demand-evaluation.md` | Demanda | Pendiente |
-| `si-bim-002-competition-evaluation.md` | Competencia | Pendiente |
-| `si-bim-003-margin-potential-evaluation.md` | Margen Potencial | Pendiente |
-| `si-bim-004-import-feasibility-evaluation.md` | Facilidad de Importación | Pendiente |
-| `si-bim-005-brand-potential-evaluation.md` | Potencial de Marca | Pendiente |
-| `si-bim-006-impulse-purchase-evaluation.md` | Venta Impulsiva | Pendiente |
-| `si-bim-007-repeat-purchase-evaluation.md` | Recompra | Pendiente |
-| `si-bim-008-ai-potential-evaluation.md` | Potencial IA | Pendiente |
-| `si-bim-009-automation-potential-evaluation.md` | Potencial Automatización | Pendiente |
-| `si-bim-010-founder-affinity-evaluation.md` | Afinidad Personal | Pendiente |
-
 ---
 
-## 9. Estructura estándar de un criterio
+## 9. Caso piloto vigente
 
-Cada documento de criterio deberá incluir:
-
-1. Propósito.
-2. Definición.
-3. Pregunta principal.
-4. Qué mide.
-5. Qué no mide.
-6. Fuentes recomendadas.
-7. Evidencias requeridas.
-8. Escala de Valor.
-9. Escala de Confianza aplicada al criterio.
-10. Ejemplos.
-11. Casos límite.
-12. Uso en la matriz.
-13. Uso futuro en la plataforma.
-14. Preguntas abiertas.
-15. Changelog.
-
----
-
-## 10. Escala de Valor
-
-Los criterios se evaluarán inicialmente con una escala de 1 a 5.
-
-| Valor | Significado general |
-|---:|---|
-| 1 | Muy bajo / muy desfavorable |
-| 2 | Bajo / desfavorable |
-| 3 | Medio / aceptable |
-| 4 | Alto / favorable |
-| 5 | Muy alto / muy favorable |
-
-Regla general:
-
-> En todos los criterios, un valor más alto debe significar una situación más atractiva para Smart Imports.
-
-Ejemplo:
-
-En Competencia, 5 no significa “mucha competencia”.  
-Significa “baja competencia o competencia manejable”.
-
-Esto evita confusión al calcular scores.
-
----
-
-## 11. Confianza
-
-La Confianza se documenta en:
-
-```text
-criteria/si-bim-000-confidence-in-evaluations.md
-```
-
-Definición resumida:
-
-> Confianza mide qué tan sólida es la evidencia que respalda un valor asignado a un criterio.
-
-No mide atractivo del nicho.
-
-No mide probabilidad de éxito.
-
-No mide entusiasmo personal.
-
-Escala inicial:
-
-| Confianza | Significado |
-|---|---|
-| Baja | Evidencia débil, incompleta o basada principalmente en intuición. |
-| Media | Evidencia concreta pero parcial o pendiente de validación. |
-| Alta | Evidencia suficiente, actual, relevante y consistente. |
-
----
-
-## 12. Evidencias
-
-Las evidencias son datos u observaciones que respaldan evaluaciones.
-
-Ejemplos:
-
-- Producto de Mercado Libre con más de 1000 ventas.
-- Tendencia creciente en Google Trends.
-- Comunidad activa de Facebook.
-- Cotización FOB de proveedor.
-- Costo estimado de importación.
-- Cantidad de vendedores relevantes.
-- Review negativa recurrente.
-- Problema frecuente mencionado por usuarios.
-- Certificación requerida.
-- Alta concentración de competencia.
-
-Regla:
-
-> Un score sin evidencia es sólo una opinión.
-
----
-
-## 13. Evaluaciones
-
-Una evaluación representa la asignación de un valor a un criterio para un nicho.
-
-Ejemplo:
-
-```text
-Nicho: Energía Solar Portátil
-Criterio: Demanda
-Valor: 4
-Confianza: Alta
-Justificación: Existen múltiples productos con +1000 ventas en Mercado Libre...
-```
-
-Una evaluación debe tener:
-
-- Fecha.
-- Nicho.
-- Criterio.
-- Valor.
-- Confianza.
-- Justificación.
-- Evidencias asociadas.
-- Próxima acción.
-- Estado.
-
----
-
-## 14. Estados sugeridos para evaluaciones
-
-Se recomienda que cada evaluación tenga un estado.
-
-| Estado | Significado |
-|---|---|
-| Borrador | Evaluación inicial, todavía incompleta. |
-| Validada | Evaluación respaldada por evidencia suficiente. |
-| Revisar | Evaluación que requiere actualización o nueva evidencia. |
-| Descartada | Evaluación anulada o reemplazada. |
-
-Este campo será especialmente útil en la futura plataforma.
-
----
-
-## 15. Score
-
-El score permite comparar nichos.
-
-Inicialmente podrá calcularse como:
-
-- Promedio simple.
-- Promedio ponderado.
-- Score ajustado por confianza.
-
-La primera versión operativa puede usar promedio ponderado por criterio.
-
-Sin embargo, el score nunca debe interpretarse aislado de la confianza.
-
-Regla:
-
-> Score alto con confianza baja no debe habilitar inversión.
-
----
-
-## 16. Priorización
-
-La priorización debe considerar:
-
-- Score.
-- Confianza promedio.
-- Riesgos.
-- Potencial estratégico.
-- Facilidad de validación.
-- Capital requerido.
-- Afinidad del Founder.
-- Próxima acción recomendada.
-
-Ejemplo:
-
-| Caso | Interpretación |
-|---|---|
-| Score alto + confianza alta | Candidato fuerte para avanzar. |
-| Score alto + confianza baja | Investigar más antes de decidir. |
-| Score medio + confianza alta | Nicho interesante pero no prioritario. |
-| Score bajo + confianza alta | Posible descarte. |
-| Score bajo + confianza baja | Investigación insuficiente o baja prioridad. |
-
----
-
-## 17. Caso piloto
-
-El primer nicho utilizado para validar la metodología será:
+El caso piloto actual es:
 
 ```text
 Energía Solar Portátil
 ```
 
-Este nicho será utilizado para:
+Estado del piloto:
 
-- Probar la matriz.
-- Documentar el criterio Demanda.
-- Registrar evidencias.
-- Evaluar confianza.
-- Detectar mejoras en la planilla.
-- Diseñar futuros módulos de plataforma.
-
----
-
-## 18. Relación con Google Sheets
-
-Durante la etapa inicial, Google Sheets será la herramienta operativa para cargar y calcular datos.
-
-La documentación Markdown será la fuente metodológica.
-
-Relación:
-
-| Herramienta | Rol |
+| Criterio | Estado |
 |---|---|
-| Google Sheets | Operación, carga y cálculo inicial. |
-| Markdown | Metodología, decisiones, criterios y documentación. |
-| Futura plataforma | Implementación escalable de la metodología validada. |
+| Demanda | Cerrado preliminarmente |
+| Competencia | Cerrado preliminarmente |
+| Recompra | Cerrado preliminarmente |
+| Potencial IA | Cerrado preliminarmente |
+| Potencial Automatización | Cerrado preliminarmente |
+| Afinidad Personal | Cerrado preliminarmente |
+| Potencial de Marca | Cerrado preliminarmente |
+| Venta Impulsiva | Cerrado preliminarmente |
+| Margen Potencial | En evaluación con RFQ de proveedores |
+| Facilidad de Importación | Pendiente de datos técnicos y logísticos |
 
 ---
 
-## 19. Relación con la futura plataforma
+## 10. Documentos relacionados
 
-La plataforma Smart Imports deberá implementar la metodología definida en el BIM.
-
-No debe limitarse a copiar la planilla.
-
-Debe convertir la metodología en software.
-
-Entidades conceptuales futuras:
-
-```text
-Niche
-  ├── Evidence
-  ├── Evaluation
-  ├── Criterion
-  ├── Score
-  ├── Confidence
-  ├── Product
-  ├── Supplier
-  └── Decision
-```
+- [SI-DOC-001 — Documentation Standards](../standards/si-doc-001-documentation-standards.md)
+- [SI-00 — Sprint 0: Foundation](../00-vision/si-00-sprint-0-foundation.md)
+- [SI-BIM-000 — Confidence in Evaluations](./criteria/si-bim-000-confidence-in-evaluations.md)
+- [SI-BIM-001 — Demand Evaluation](./criteria/si-bim-001-demand-evaluation.md)
+- [SI-BIM-002 — Competition Evaluation](./criteria/si-bim-002-competition-evaluation.md)
+- [SI-BIM-003 — Margin Potential Evaluation](./criteria/si-bim-003-margin-potential-evaluation.md)
+- [SI-BIM-PROC-001 — Marketplace Evidence Processing](./procedures/si-bim-proc-001-marketplace-evidence-processing.md)
+- [SI-BIM-PROC-002 — Supplier RFQ and Margin Screening](./procedures/si-bim-proc-002-supplier-rfq-and-margin-screening.md)
 
 ---
 
-## 20. Relación con agentes IA
-
-Los futuros agentes IA podrán utilizar el BIM para:
-
-- Sugerir evidencias faltantes.
-- Resumir investigaciones.
-- Comparar nichos.
-- Detectar contradicciones.
-- Proponer scores preliminares.
-- Generar próximas acciones.
-- Explicar decisiones.
-- Auditar evaluaciones.
-
-Para que esto sea posible, la metodología debe estar claramente documentada.
-
----
-
-## 21. Preguntas abiertas
-
-- ¿Cada criterio debe tener evidencia mínima obligatoria?
-- ¿La confianza debe transformarse en número para cálculo?
-- ¿Debe existir un score ajustado por confianza desde la primera planilla?
-- ¿Qué criterios deberían tener mayor peso?
-- ¿Cuándo un nicho pasa de screening a investigación profunda?
-- ¿Cuándo una evaluación se considera validada?
-- ¿Cómo se vincularán evidencias con evaluaciones en la futura plataforma?
-- ¿Qué datos quedarán en Google Sheets y cuáles en Markdown?
-
----
-
-## 22. Próximos pasos
-
-1. Crear `criteria/si-bim-001-demand-evaluation.md`.
-2. Aplicar el criterio Demanda al nicho Energía Solar Portátil.
-3. Registrar evidencias de Mercado Libre.
-4. Definir escala específica de Demanda.
-5. Revisar si la planilla necesita columna `Estado` en Evaluaciones.
-6. Crear documentos de criterios restantes.
-
----
-
-## 23. Related Documents
-
-- `si-doc-001-documentation-standards.md`
-- `si-00-sprint-0-foundation.md`
-- `si-vision-001-smart-imports-vision.md`
-- `criteria/si-bim-000-confidence-in-evaluations.md`
-
----
-
-## 24. Changelog
+## 11. Changelog
 
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-07-02 | Versión inicial del índice del Business Intelligence Manual. |
+| 0.2.0 | 2026-07-10 | Se actualizó el índice luego de aplicar Demanda y Competencia al caso piloto y documentar el procedimiento de evidencias. |
+| 0.3.0 | 2026-07-15 | Se agregó Margen Potencial, procedimiento RFQ, estado de criterios estratégicos y estado actualizado del piloto. |
