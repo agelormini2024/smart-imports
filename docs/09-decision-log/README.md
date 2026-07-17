@@ -2,12 +2,12 @@
 id: si-decision-log-readme
 title: Decision Log Index
 description: Índice de decisiones estratégicas, metodológicas y técnicas de Smart Imports.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-16
+updated: 2026-07-17
 tags:
   - decision-log
   - governance
@@ -26,18 +26,7 @@ phase: foundation
 
 ## 1. Propósito
 
-El Decision Log conserva las decisiones que afectan de forma relevante:
-
-- Visión.
-- Modelo de negocio.
-- Metodología.
-- Matriz y scoring.
-- Investigación.
-- Uso de IA.
-- Arquitectura técnica.
-- Selección o descarte de nichos.
-- Uso del capital.
-- Roadmap.
+Conservar decisiones que afectan visión, modelo de negocio, metodología, matriz, scoring, investigación, IA, arquitectura, selección de nichos, capital y roadmap.
 
 Cada decisión debe explicar contexto, decisión, justificación, alternativas y consecuencias.
 
@@ -49,12 +38,11 @@ Cada decisión debe explicar contexto, decisión, justificación, alternativas y
 | `si-decision-002` | [`si-decision-002-use-hybrid-language-policy.md`](./si-decision-002-use-hybrid-language-policy.md) | Usar política de idioma híbrida. | Vigente |
 | `si-decision-003` | [`si-decision-003-evaluate-niches-before-products.md`](./si-decision-003-evaluate-niches-before-products.md) | Evaluar nichos antes que productos. | Vigente |
 | `si-decision-004` | [`si-decision-004-use-evidence-before-intuition.md`](./si-decision-004-use-evidence-before-intuition.md) | Usar evidencia antes que intuición. | Vigente |
-| `si-decision-005` | [`si-decision-005-portable-solar-pilot-scope.md`](./si-decision-005-portable-solar-pilot-scope.md) | Limitar el piloto solar portátil y excluir power stations. | `review` |
-| `si-decision-006` | [`si-decision-006-build-intelligence-engine-incrementally.md`](./si-decision-006-build-intelligence-engine-incrementally.md) | Construir el Intelligence Engine de forma incremental. | `review` |
+| `si-decision-005` | [`si-decision-005-portable-solar-pilot-scope.md`](./si-decision-005-portable-solar-pilot-scope.md) | Limitar el piloto solar y excluir power stations. | `review` |
+| `si-decision-006` | [`si-decision-006-build-intelligence-engine-incrementally.md`](./si-decision-006-build-intelligence-engine-incrementally.md) | Construir el Intelligence Engine incrementalmente. | `review` |
+| `si-decision-007` | [`si-decision-007-select-travel-organization-as-niche-2.md`](./si-decision-007-select-travel-organization-as-niche-2.md) | Seleccionar Viaje organizado como Nicho 2. | `review` |
 
 ## 3. Cuándo registrar una decisión
-
-Regla práctica:
 
 > Si dentro de seis meses podríamos preguntarnos “¿por qué hicimos esto?”, debe existir un documento de decisión.
 
@@ -79,19 +67,21 @@ Changelog
 - `review`: lista para revisión.
 - `approved`: aceptada explícitamente por el Founder.
 - `deprecated`: reemplazada.
-- `archived`: conservada como historial.
+- `archived`: historial.
 
 ## 6. Próximas acciones
 
 - Revisar y aprobar SI-DECISION-005.
 - Revisar y aprobar SI-DECISION-006.
-- Registrar la selección del Nicho 2 cuando se tome la decisión.
-- Registrar decisiones arquitectónicas relevantes del Intelligence Engine.
+- Revisar y aprobar SI-DECISION-007.
+- Registrar futuras decisiones de alcance del Nicho 2 cuando cambien de forma relevante.
+- Registrar decisiones arquitectónicas del Intelligence Engine.
 
 ## 7. Documentos relacionados
 
 - [Documentation Standards](../standards/si-doc-001-documentation-standards.md)
 - [Roadmaps](../08-roadmaps/README.md)
+- [Research](../06-research/README.md)
 - [AI Agents](../05-ai-agents/README.md)
 
 ## 8. Changelog
@@ -99,4 +89,5 @@ Changelog
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-07-02 | Versión inicial del índice. |
-| 0.2.0 | 2026-07-16 | Se actualizó el índice con decisiones reales hasta SI-DECISION-006. |
+| 0.2.0 | 2026-07-16 | Decisiones reales hasta SI-DECISION-006. |
+| 0.3.0 | 2026-07-17 | Se incorporó SI-DECISION-007 para la selección del Nicho 2. |

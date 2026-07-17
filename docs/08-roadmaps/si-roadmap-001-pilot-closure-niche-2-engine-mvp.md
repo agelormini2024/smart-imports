@@ -1,24 +1,27 @@
 ---
 id: si-roadmap-001
 title: Pilot Closure, Niche 2 and Intelligence Engine MVP Roadmap
-description: Plan coordinado para cerrar Energía Solar Portátil, seleccionar el segundo nicho y construir el primer MVP del Intelligence Engine.
-version: 0.1.0
+description: Plan coordinado para cerrar Energía Solar Portátil, ejecutar el segundo nicho y construir el primer MVP del Intelligence Engine.
+version: 0.2.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-07-16
+updated: 2026-07-17
 tags:
   - roadmap
   - portable-solar-energy
-  - niche-selection
+  - travel-organization
   - intelligence-engine
   - mvp
 related:
   - si-agent-001
+  - si-research-001
+  - si-research-002
   - si-roadmap-002
   - si-decision-005
   - si-decision-006
+  - si-decision-007
 audience:
   - founder
   - partner
@@ -34,214 +37,156 @@ phase: foundation
 
 ## 1. Propósito
 
-Este roadmap coordina tres líneas de trabajo paralelas:
+Coordinar tres líneas paralelas:
 
 ```text
-Línea A — Cerrar el piloto Energía Solar Portátil
-Línea B — Seleccionar y comenzar el Nicho 2
+Línea A — Cerrar Energía Solar Portátil
+Línea B — Ejecutar Viaje organizado como Nicho 2
 Línea C — Construir el primer MVP del Intelligence Engine
 ```
-
-El objetivo es avanzar sin dispersión, validar que la metodología sea reutilizable y comenzar la automatización a partir de problemas reales.
 
 ---
 
 ## 2. Reglas operativas
 
 1. No mantener más de dos nichos activos simultáneamente.
-2. No automatizar procesos que no hayan sido comprendidos manualmente.
-3. No avanzar a RFQ del Nicho 2 hasta completar su screening inicial.
+2. No automatizar procesos no comprendidos manualmente.
+3. No iniciar compras o muestras sin precio, documentación y decisión humana.
 4. No forzar una conclusión positiva del piloto solar.
-5. Registrar toda decisión relevante en el Decision Log.
-6. Actualizar el documento de estado después de cada hito significativo.
-7. Mantener aprobación humana para negociaciones, muestras, compras y pagos.
+5. Registrar decisiones relevantes en el Decision Log.
+6. Actualizar el documento de estado después de cada hito.
+7. La matriz más reciente es la fuente operativa de verdad.
+8. GitHub es la fuente documental de verdad.
 
 ---
 
-## 3. Línea A — Cierre de Energía Solar Portátil
+## 3. Línea A — Energía Solar Portátil
 
-### 3.1 Objetivo
+### Objetivo
 
-Cerrar los criterios pendientes y producir una decisión fundamentada sobre el nicho y sus subcategorías.
+Cerrar Margen Potencial y Facilidad de Importación para producir una decisión fundamentada.
 
-### 3.2 Criterios pendientes
+### Estado
+
+**En curso / esperando respuestas de proveedores.**
+
+### Criterios pendientes
 
 - Margen Potencial.
 - Facilidad de Importación.
 
-### 3.3 Proceso por respuesta de proveedor
+### Proceso por respuesta
 
 ```text
-Proveedor responde
+Extraer
   ↓
-Validación técnica
+Validar
   ↓
-Validación comercial
+Detectar faltantes y contradicciones
   ↓
-Detección de faltantes y contradicciones
+Comparar requisitos excluyentes
   ↓
-Comparación contra requisitos excluyentes
+Comparar FOB vs FOB objetivo
   ↓
-Comparación FOB vs FOB objetivo
+Repreguntar o negociar
   ↓
-Repregunta o contraoferta
+Registrar
   ↓
-Actualización de matriz y evidencias
-  ↓
-Recalcular margen y confianza
+Recalcular
 ```
 
-### 3.4 Datos necesarios para Margen Potencial
-
-- FOB por cantidad.
-- EXW.
-- MOQ.
-- Packing.
-- Unidades por caja.
-- Peso neto y bruto.
-- CBM.
-- Lead time.
-- Precio de venta posible.
-- Costos de canal.
-- Costos comerciales.
-- Costos de importación.
-
-### 3.5 Datos necesarios para Facilidad de Importación
-
-- Composición.
-- Tipo de batería.
-- Capacidad y Wh.
-- MSDS.
-- UN38.3.
-- HS Code.
-- Certificaciones.
-- Tipo de cargador y enchufe.
-- Restricciones logísticas.
-- Peso y volumen.
-
-### 3.6 Resultado esperado
-
-Cada producto y subcategoría deberá terminar en una de estas acciones:
+### Resultado esperado
 
 - Avanzar a muestra.
 - Continuar negociando.
 - Mantener en observación.
-- Descartar producto.
-- Descartar subcategoría.
-- Reformular el nicho.
-- Descartar el nicho.
-
-### 3.7 Entregables
-
-- Scoring definitivo del nicho.
-- Ranking de subcategorías.
-- Ranking de productos.
-- Ranking de proveedores.
-- Conclusión del piloto.
-- Retrospectiva metodológica.
-- Decisión de siguiente acción.
+- Descartar producto o subcategoría.
+- Reformular o descartar el nicho.
 
 ---
 
-## 4. Línea B — Selección del Nicho 2
+## 4. Línea B — Viaje organizado y equipaje funcional
 
-### 4.1 Objetivo
+### Objetivo
 
-Seleccionar un segundo nicho mediante un proceso reproducible y utilizarlo para probar la metodología fuera de Energía Solar Portátil.
+Aplicar por segunda vez el método completo en un nicho distinto y medir repetibilidad, tiempo, errores y calidad de decisión.
 
-### 4.2 Perfil preferido
+### Hitos completados
 
-- Sin batería o con menor complejidad técnica.
-- Peso y volumen moderados.
-- Ticket medio.
-- Familia de productos relacionada.
-- Potencial de marca propia.
-- Demanda observable.
-- Diferenciación mediante información, diseño, servicio o software.
+- [x] Lista larga de 12 candidatos.
+- [x] Filtros excluyentes.
+- [x] Normalización a seis candidatos.
+- [x] Screening rápido.
+- [x] Selección de tres finalistas.
+- [x] Validación profunda.
+- [x] Selección del Nicho 2.
+- [x] Alcance inicial documentado.
 
-### 4.3 Etapa 1 — Lista larga
+### Nicho seleccionado
 
-Generar entre 8 y 12 candidatos.
+```text
+Viaje organizado y equipaje funcional
+```
 
-Cada candidato debe representar una familia de productos, no un único artículo.
+### Hitos próximos
 
-### 4.4 Etapa 2 — Filtros excluyentes
+- [ ] Registrar el nicho en la matriz.
+- [ ] Preparar términos de búsqueda y PDFs.
+- [ ] Procesar Demanda.
+- [ ] Procesar Competencia.
+- [ ] Identificar productos base.
+- [ ] Hacer screening preliminar de proveedores y margen.
+- [ ] Evaluar Facilidad de Importación.
+- [ ] Comparar resultados con el piloto solar.
 
-Descartar candidatos con:
+### Subcategorías iniciales
 
-- Regulación sanitaria o médica compleja.
-- Alimentos, suplementos o cosméticos.
-- Riesgo alto de responsabilidad.
-- Dependencia de marcas o falsificaciones.
-- Volumen logístico desproporcionado.
-- MOQ incompatible con el capital.
-- Posventa técnica excesiva.
-- Imposibilidad de construir familia y marca.
+- Sets organizadores estándar.
+- Packing cubes de compresión.
+- Organizadores tecnológicos.
+- Organizadores para calzado.
+- Neceseres compartimentados.
+- Bolsas para ropa usada.
 
-### 4.5 Etapa 3 — Screening rápido
+### Medición
 
-Criterios iniciales:
+Registrar tiempo aproximado para:
 
-| Criterio | Pregunta principal |
-|---|---|
-| Demanda observable | ¿Existe interés comercial verificable? |
-| Competencia | ¿La categoría está saturada o permite entrada? |
-| Facilidad de importación | ¿Tiene barreras razonables para el proyecto? |
-| Potencial de marca | ¿Permite construir una propuesta coherente? |
-| Margen preliminar | ¿La estructura económica parece viable? |
-
-Duración objetivo: 30 a 60 minutos por candidato.
-
-### 4.6 Etapa 4 — Tres finalistas
-
-Cada ficha finalista deberá incluir:
-
-- Descripción del nicho.
-- Problema que resuelve.
-- Cliente probable.
-- Subcategorías iniciales.
-- Señales de demanda.
-- Riesgos.
-- Razones para continuar.
-
-### 4.7 Etapa 5 — Decisión
-
-Elegir un Nicho 2 que contraste con el piloto solar y permita comprobar si la metodología es generalizable.
-
-### 4.8 Entregables
-
-- Matriz de candidatos.
-- Tres fichas finalistas.
-- Comparación.
-- Decisión documentada.
-- Alcance del Nicho 2.
+| Actividad | Solar | Viaje |
+|---|---:|---:|
+| Procesar publicación | Línea base pendiente | Por medir |
+| Registrar producto base | Línea base pendiente | Por medir |
+| Crear evidencia | Línea base pendiente | Por medir |
+| Detectar duplicaciones | Línea base pendiente | Por medir |
+| Generar XLSX importable | Línea base pendiente | Por medir |
+| Validar importable | Línea base pendiente | Por medir |
 
 ---
 
 ## 5. Línea C — Intelligence Engine MVP
 
-### 5.1 Objetivo
+### MVP seleccionado
 
-Construir una primera utilidad interna que reduzca errores reales sin intentar desarrollar todavía la plataforma completa.
+```text
+Matrix Validator
+```
 
-### 5.2 MVP seleccionado
+### Estado
 
-**Matrix Validator**.
+**Pendiente de especificación técnica e implementación.**
 
-### 5.3 Alcance funcional inicial
+### Alcance inicial
 
-- Validar hojas requeridas.
-- Validar nombres y orden de columnas.
-- Detectar IDs duplicados.
-- Validar formato de IDs.
-- Validar relaciones.
-- Detectar evidencias sin fuente.
-- Detectar evaluaciones sin soporte.
-- Detectar productos base posiblemente duplicados.
-- Validar valores de criterios, confianza y estado.
-- Generar reporte de errores y advertencias.
+- Hojas requeridas.
+- Nombres y orden de columnas.
+- IDs primarios.
+- Relaciones.
+- Evidencias y evaluaciones.
+- Valores permitidos.
+- Duplicaciones potenciales.
+- Reporte de errores y advertencias.
 
-### 5.4 Stack preliminar
+### Stack preliminar
 
 ```text
 TypeScript
@@ -252,162 +197,78 @@ CLI
 Vitest o Jest
 ```
 
-### 5.5 Interfaz inicial
+### Requisitos observados para módulos posteriores
 
-```bash
-npm run validate -- ./data/smart-imports.xlsx
-```
-
-### 5.6 Salida esperada
-
-```text
-Validation result: FAILED
-
-Blocking errors: 2
-Warnings: 4
-
-- Duplicate ID EVID-0090 in Evidencias row 97
-- Missing Producto Base BASE-PB-006 referenced by COT-0008
-- Warning: possible duplicate product bases BASE-VENT-001 and BASE-VENT-004
-```
-
-### 5.7 Entregables
-
-- Repositorio o módulo inicial.
-- Esquemas Zod.
-- Reglas de validación.
-- Tests.
-- Reporte de validación.
-- Ejecución contra archivos reales.
+- Marketplace Evidence Analyzer.
+- Niche Candidate Normalizer.
+- Claims Validation Gate.
+- Product Quality Specification Builder.
+- Supplier Response Analyzer.
 
 ---
 
-## 6. Medición de eficiencia
-
-Durante el Nicho 2 se registrarán tiempos aproximados para:
-
-| Actividad | Piloto solar | Nicho 2 |
-|---|---:|---:|
-| Procesar una publicación | Pendiente de línea base | Por medir |
-| Registrar producto base | Pendiente de línea base | Por medir |
-| Generar evidencia | Pendiente de línea base | Por medir |
-| Evaluar criterio | Pendiente de línea base | Por medir |
-| Preparar RFQ | Pendiente de línea base | Por medir |
-| Procesar cotización | Pendiente de línea base | Por medir |
-
-El objetivo no es precisión científica, sino detectar las actividades que más tiempo y errores generan.
-
----
-
-## 7. Roadmap de seis semanas
-
-### Semana 1
-
-- Procesar respuestas de proveedores solares.
-- Generar lista larga del Nicho 2.
-- Confirmar alcance del Intelligence Engine.
-- Especificar reglas del Matrix Validator.
-
-### Semana 2
-
-- Aplicar filtros y screening.
-- Elegir tres finalistas.
-- Seleccionar Nicho 2.
-- Crear estructura inicial del validador.
-
-### Semana 3
-
-- Investigar Demanda del Nicho 2.
-- Implementar validación de hojas, columnas e IDs.
-- Continuar negociación solar.
-
-### Semana 4
-
-- Investigar Competencia del Nicho 2.
-- Implementar relaciones y evidencias.
-- Crear tests iniciales.
-
-### Semana 5
-
-- Hacer screening de Margen e Importación del Nicho 2.
-- Ejecutar el validador contra archivos reales.
-- Corregir falsos positivos.
-
-### Semana 6
-
-- Cerrar o encaminar el piloto solar.
-- Comparar ambos nichos.
-- Documentar retrospectiva.
-- Definir Supplier Response Analyzer.
-
----
-
-## 8. Tablero inicial
+## 6. Tablero actual
 
 ### En curso
 
 - Espera y seguimiento de RFQ solares.
-- Preparación de selección del Nicho 2.
-- Definición del Matrix Validator.
+- Registro operativo de Viaje organizado.
+- Preparación de la primera tanda de Demanda.
+- Especificación inicial del Matrix Validator.
 
 ### Próximo
 
-- Crear lista de 8 a 12 candidatos.
-- Diseñar tabla de screening.
-- Definir esquema XLSX del validador.
+- Procesar publicaciones de viaje.
+- Crear productos base y evidencias.
+- Medir tiempos.
+- Aplicar Demanda y Competencia.
 
 ### Bloqueado o esperando
 
-- Cierre de Margen Potencial solar.
-- Cierre de Facilidad de Importación solar.
+- Margen solar definitivo.
+- Facilidad de Importación solar definitiva.
+- Ranking final de proveedores solares.
 
-Dependencia: respuestas y documentos de proveedores.
-
-### Backlog
-
-- Supplier Response Analyzer.
-- Contextual RFQ Generator.
-- Margin and FOB Engine.
-- Scoring and Next Action Engine.
-- RAG de proveedores.
-- Monitoreo automatizado.
+Dependencia: respuestas, certificados y packing de proveedores.
 
 ---
 
-## 9. Criterios de éxito
+## 7. Criterios de éxito del ciclo
 
-El ciclo se considerará exitoso cuando:
-
-1. Energía Solar Portátil tenga una decisión clara o un camino de cierre.
-2. El Nicho 2 haya sido seleccionado mediante un proceso reproducible.
-3. Se haya reducido el tiempo o la fricción respecto del piloto.
-4. El Matrix Validator funcione sobre archivos reales.
-5. Exista un backlog del Intelligence Engine basado en problemas observados.
+1. Energía Solar Portátil tiene una decisión clara o camino de cierre.
+2. Viaje organizado completa Demanda y Competencia formal.
+3. Se mide al menos una línea base de tiempos y errores.
+4. El Matrix Validator funciona sobre archivos reales.
+5. El backlog del Intelligence Engine refleja problemas observados.
+6. La metodología puede compararse entre dos nichos diferentes.
 
 ---
 
-## 10. Próxima acción
+## 8. Próxima acción principal
 
 ```text
-1. Esperar y procesar respuestas de proveedores.
-2. Generar la lista larga de candidatos para el Nicho 2.
-3. Diseñar la matriz de screening rápido.
-4. Especificar el contrato de entrada y salida del Matrix Validator.
+1. Obtener la matriz XLSX más reciente.
+2. Registrar Viaje organizado como Nicho 2.
+3. Recolectar la primera tanda de publicaciones ML.
+4. Procesar Demanda por subcategoría.
+5. Continuar procesando respuestas solares cuando lleguen.
 ```
 
 ---
 
-## 11. Documentos relacionados
+## 9. Documentos relacionados
 
 - [SI-AGENT-001 — Smart Imports Intelligence Engine](../05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md)
+- [SI-RESEARCH-001 — Niche 2 Selection](../06-research/si-research-001-niche-2-selection.md)
+- [SI-RESEARCH-002 — Travel Organization Scope](../06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md)
 - [SI-ROADMAP-002 — Project Status and Handoff](./si-roadmap-002-project-status-and-handoff.md)
-- [SI-DECISION-005 — Portable Solar Pilot Scope](../09-decision-log/si-decision-005-portable-solar-pilot-scope.md)
-- [SI-DECISION-006 — Build the Intelligence Engine Incrementally](../09-decision-log/si-decision-006-build-intelligence-engine-incrementally.md)
+- [SI-DECISION-007 — Select Travel Organization as Niche 2](../09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md)
 
 ---
 
-## 12. Changelog
+## 10. Changelog
 
 | Version | Date | Change |
 |---|---|---|
-| 0.1.0 | 2026-07-16 | Roadmap inicial de tres líneas y seis semanas. |
+| 0.1.0 | 2026-07-16 | Roadmap inicial de tres líneas. |
+| 0.2.0 | 2026-07-17 | Se completó la selección del Nicho 2 y se actualizó el roadmap hacia su ejecución formal. |

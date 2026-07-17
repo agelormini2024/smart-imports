@@ -2,12 +2,12 @@
 id: docs-08-roadmaps-readme
 title: 08 — Roadmaps
 description: Índice de roadmaps, hitos, estado operativo y handoff de Smart Imports.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-16
+updated: 2026-07-17
 tags:
   - smart-imports
   - roadmap
@@ -23,8 +23,8 @@ tags:
 
 Esta carpeta documenta:
 
-- Roadmaps estratégicos.
-- Hitos comerciales y técnicos.
+- Roadmaps estratégicos y técnicos.
+- Hitos comerciales.
 - Estado actual.
 - Bloqueos y dependencias.
 - Próximas acciones.
@@ -34,37 +34,53 @@ Esta carpeta documenta:
 
 | Documento | Propósito | Estado |
 |---|---|---|
-| [`si-roadmap-001-pilot-closure-niche-2-engine-mvp.md`](./si-roadmap-001-pilot-closure-niche-2-engine-mvp.md) | Coordina el cierre solar, la selección del Nicho 2 y el primer MVP del Intelligence Engine. | `review` |
-| [`si-roadmap-002-project-status-and-handoff.md`](./si-roadmap-002-project-status-and-handoff.md) | Documento vivo de estado, bloqueos, próximos pasos y continuidad entre sesiones. | `review` |
+| [`si-roadmap-001-pilot-closure-niche-2-engine-mvp.md`](./si-roadmap-001-pilot-closure-niche-2-engine-mvp.md) | Coordina el cierre solar, la ejecución del Nicho 2 y el primer MVP del Intelligence Engine. | `review` |
+| [`si-roadmap-002-project-status-and-handoff.md`](./si-roadmap-002-project-status-and-handoff.md) | Documento vivo de estado, bloqueos, próximos pasos y continuidad. | `review` |
 
-## 3. Punto de entrada operativo
+## 3. Hito actual
 
-Para recuperar rápidamente el contexto actual, comenzar por:
+```text
+Nicho 2 seleccionado:
+Viaje organizado y equipaje funcional
+```
+
+Próximo checkpoint:
+
+```text
+Registrar el nicho en la matriz e iniciar Demanda formal.
+```
+
+## 4. Punto de entrada operativo
+
+Comenzar siempre por:
 
 ```text
 si-roadmap-002-project-status-and-handoff.md
 ```
 
-Luego consultar el roadmap y los documentos específicos del nicho o módulo en curso.
+Luego consultar el roadmap y los documentos de investigación del nicho activo.
 
-## 4. Regla de actualización
+## 5. Regla de actualización
 
-El estado debe actualizarse después de:
+Actualizar el estado después de:
 
 - Hitos.
 - Decisiones.
-- Cierres de criterios.
+- Cierre de criterios.
+- Selección o descarte de nichos.
 - Respuestas relevantes de proveedores.
 - Inicio o finalización de módulos.
 
-## 5. Documentos relacionados
+## 6. Documentos relacionados
 
 - [SI-AGENT-001 — Smart Imports Intelligence Engine](../05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md)
+- [SI-RESEARCH-001 — Niche 2 Selection](../06-research/si-research-001-niche-2-selection.md)
 - [Decision Log](../09-decision-log/README.md)
 
-## 6. Changelog
+## 7. Changelog
 
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
-| 0.2.0 | 2026-07-16 | Se incorporaron roadmap operativo y documento vivo de estado/handoff. |
+| 0.2.0 | 2026-07-16 | Roadmap operativo y documento vivo de estado/handoff. |
+| 0.3.0 | 2026-07-17 | Se registró la selección del Nicho 2 y el inicio de su fase operativa. |

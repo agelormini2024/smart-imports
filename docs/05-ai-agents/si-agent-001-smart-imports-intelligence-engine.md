@@ -1,13 +1,13 @@
 ---
 id: si-agent-001
 title: Smart Imports Intelligence Engine
-description: Visión funcional y principios de diseño del motor de inteligencia comercial de Smart Imports.
-version: 0.1.0
+description: Visión funcional, principios de diseño, módulos y requisitos observados del motor de inteligencia comercial de Smart Imports.
+version: 0.2.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-07-16
+updated: 2026-07-17
 tags:
   - intelligence-engine
   - ai-agents
@@ -19,7 +19,9 @@ related:
   - si-vision-001
   - si-roadmap-001
   - si-roadmap-002
+  - si-research-001
   - si-decision-006
+  - si-decision-007
 audience:
   - founder
   - partner
@@ -35,35 +37,36 @@ phase: foundation
 
 ## 1. Propósito
 
-Este documento define la visión inicial del **Smart Imports Intelligence Engine**, el futuro motor de inteligencia comercial que dará soporte a la investigación de nichos, la evaluación de productos, la selección de proveedores, la negociación, el cálculo económico y la toma de decisiones.
+Este documento define la visión funcional inicial del **Smart Imports Intelligence Engine**, el futuro motor de inteligencia comercial que dará soporte a:
 
-No describe todavía una arquitectura técnica definitiva. Su objetivo es fijar:
+- Descubrimiento de oportunidades.
+- Investigación de nichos y productos.
+- Gestión de evidencias.
+- Selección y seguimiento de proveedores.
+- Negociación.
+- Cálculo económico.
+- Scoring y recomendación.
+- Conservación y reutilización del conocimiento.
 
-- Qué problema debe resolver el motor.
-- Qué capacidades deberá desarrollar.
-- Qué principios deben guiar su construcción.
-- Qué partes se construirán primero.
-- Qué decisiones continuarán bajo control humano.
+No define todavía una arquitectura técnica definitiva. Su propósito es fijar capacidades, principios, módulos iniciales y requisitos descubiertos mediante trabajo real.
 
 ---
 
 ## 2. Problema que debe resolver
 
-La investigación comercial suele quedar distribuida entre:
+La investigación comercial suele quedar distribuida entre marketplaces, sitios de proveedores, chats, emails, PDFs, planillas, capturas y cálculos independientes.
 
-- Marketplaces.
-- Sitios de proveedores.
-- Chats.
-- Emails.
-- PDFs.
-- Planillas.
-- Capturas de pantalla.
-- Cálculos independientes.
-- Opiniones difíciles de rastrear.
+Esto genera:
 
-Esto genera problemas de consistencia, duplicación, pérdida de contexto y decisiones basadas en información incompleta.
+- Duplicación.
+- Pérdida de contexto.
+- Inconsistencias.
+- Claims no verificados.
+- Confusión entre datos del producto y del vendedor.
+- Dificultad para comparar alternativas.
+- Decisiones basadas en información incompleta.
 
-El Intelligence Engine deberá convertir esas fuentes dispersas en una secuencia trazable:
+El motor deberá convertir fuentes dispersas en una secuencia trazable:
 
 ```text
 Fuentes
@@ -74,9 +77,9 @@ Evidencias
   ↓
 Evaluaciones
   ↓
-Scoring y confianza
+Score + confianza
   ↓
-Recomendación
+Recomendación explicada
   ↓
 Decisión humana
 ```
@@ -85,18 +88,19 @@ Decisión humana
 
 ## 3. Visión
 
-El Smart Imports Intelligence Engine será una plataforma interna capaz de ayudar a Smart Imports a:
+El Smart Imports Intelligence Engine será una plataforma interna capaz de:
 
 1. Descubrir oportunidades comerciales.
 2. Investigar nichos y subcategorías.
-3. Normalizar información proveniente de distintas fuentes.
+3. Normalizar información de distintas fuentes.
 4. Construir evidencia trazable.
-5. Evaluar oportunidades con criterios consistentes.
+5. Evaluar con criterios consistentes.
 6. Reducir errores operativos.
-7. Acelerar negociaciones con proveedores.
+7. Acelerar consultas y negociaciones.
 8. Proteger el capital mediante decisiones informadas.
-9. Conservar conocimiento entre personas, chats y ciclos de investigación.
-10. Mejorar progresivamente con cada nicho investigado.
+9. Conservar conocimiento entre personas, chats y ciclos.
+10. Mejorar con cada nicho investigado.
+11. Recomendar próximas acciones sin sustituir aprobación humana.
 
 ---
 
@@ -110,85 +114,164 @@ El Smart Imports Intelligence Engine será una plataforma interna capaz de ayuda
 - Comparar fuentes locales y externas.
 - Registrar hallazgos con trazabilidad.
 
-### 4.2 Monitoreo y extracción de datos
+### 4.2 Monitoreo y extracción
 
-- Monitorear publicaciones, precios y disponibilidad.
 - Extraer datos desde páginas, PDFs, imágenes, emails y mensajes.
-- Detectar cambios relevantes.
-- Distinguir hechos, inferencias y datos faltantes.
+- Monitorear precios, disponibilidad y cambios.
+- Distinguir hechos, inferencias y faltantes.
 
-### 4.3 Normalización y gestión de evidencias
+### 4.3 Normalización y evidencias
 
 - Evitar IDs duplicados.
 - Resolver relaciones entre fuentes, productos y evaluaciones.
 - Identificar productos clonados o equivalentes.
-- Conservar la fuente, fecha y nivel de confianza de cada dato.
+- Conservar fuente, fecha, fragmento y confianza.
 
 ### 4.4 Scoring y confianza
 
-- Aplicar criterios y pesos definidos en el Business Intelligence Manual.
+- Aplicar criterios y pesos del Business Intelligence Manual.
 - Calcular score parcial y final.
 - Calcular confianza.
 - Detectar criterios pendientes.
-- Explicar por qué se asignó cada evaluación.
+- Explicar cada evaluación.
 
 ### 4.5 Negociación asistida
 
-- Comparar FOB público, FOB cotizado y FOB objetivo.
+- Comparar FOB público, cotizado y objetivo.
 - Detectar espacio de negociación.
-- Sugerir contraofertas.
-- Proponer repreguntas específicas.
-- Registrar el historial de negociación.
+- Sugerir contraofertas y repreguntas.
+- Registrar historial y estado.
 
-### 4.6 Cálculo de margen y FOB objetivo
+### 4.6 Margen y FOB objetivo
 
 - Estimar costo importado.
 - Simular escenarios por cantidad.
-- Calcular margen unitario, margen porcentual y ROI.
+- Calcular margen, ROI y sensibilidad.
 - Determinar FOB máximo aceptable.
-- Detectar sensibilidad a logística, canal y tipo de cambio.
 
-### 4.7 Gestión documental
+### 4.7 Gestión documental y RAG
 
 - Organizar datasheets, cotizaciones, certificados y catálogos.
 - Vincular documentos con proveedor, producto y evaluación.
-- Evitar que la información quede aislada en chats o emails.
-
-### 4.8 Knowledge Base y RAG
-
-- Consultar antecedentes de proveedores y productos.
-- Recuperar cotizaciones anteriores.
-- Comparar contradicciones entre documentos.
+- Recuperar antecedentes y contradicciones.
 - Responder utilizando evidencia interna citada.
 
-### 4.9 Generación contextual de RFQ
+### 4.8 RFQ contextual
 
-- Generar pedidos de cotización según tipo de producto.
-- Adaptar preguntas a baterías, certificaciones, packing y logística.
+- Adaptar RFQ al tipo de producto.
+- Considerar requisitos técnicos, packing y FOB objetivo.
 - Evitar repetir preguntas ya respondidas.
-- Generar follow-ups a partir de faltantes reales.
+- Crear follow-ups desde faltantes reales.
 
-### 4.10 Seguimiento de conversaciones
+### 4.9 Seguimiento de conversaciones
 
-- Registrar el estado de cada proveedor.
-- Identificar mensajes pendientes.
-- Detectar respuestas incompletas.
-- Recomendar la siguiente acción.
+- Registrar estado de cada proveedor.
+- Detectar mensajes pendientes e incompletos.
+- Recomendar siguiente acción.
 
-### 4.11 Recomendación de compra
+### 4.10 Recomendación de compra
 
 - Comparar producto, proveedor, margen, riesgo y confianza.
-- Recomendar: avanzar, negociar, pedir muestra, observar o descartar.
-- Explicar la recomendación.
-- Mantener la decisión final bajo aprobación humana.
+- Recomendar avanzar, negociar, pedir muestra, observar o descartar.
+- Mantener aprobación humana.
 
 ---
 
-## 5. Principios de diseño
+## 5. Requisitos descubiertos durante la selección del Nicho 2
+
+La segunda ejecución metodológica reveló capacidades adicionales que deberán incorporarse progresivamente.
+
+### 5.1 Niche Candidate Normalizer
+
+Debe detectar:
+
+- Nichos duplicados.
+- Productos individuales presentados como nichos.
+- Candidatos demasiado amplios.
+- Subcategorías que pertenecen a un nicho superior.
+- Solapamientos por cliente, problema o familia de productos.
+
+Ejemplo:
+
+```text
+Lavandería compacta
++ Organización del baño
++ Cocina compacta
+        ↓
+Problema común: falta de espacio
+        ↓
+Organización modular para espacios pequeños
+```
+
+### 5.2 Marketplace Evidence Analyzer
+
+Debe separar correctamente:
+
+- Ventas visibles del producto.
+- Opiniones y calificación del producto.
+- Reputación y ventas del vendedor.
+- Datos de una ficha consolidada frente a una publicación individual.
+- Información explícita frente a inferencias.
+
+Este requisito surgió al comprobar que algunos marketplaces muestran métricas del vendedor cerca de datos del producto.
+
+### 5.3 Claims Validation Gate
+
+Debe identificar términos no confirmados, por ejemplo:
+
+```text
+Waterproof
+Premium
+Heavy duty
+Compression
+Food grade
+BPA free
+Indestructible
+Antiansiedad
+```
+
+Cada claim deberá clasificarse como:
+
+- Declarado por el proveedor.
+- Respaldado documentalmente.
+- Validado mediante muestra o ensayo.
+- No confirmado.
+- No utilizable comercialmente.
+
+### 5.4 Product Quality Specification Builder
+
+Debe convertir descripciones genéricas en atributos medibles para RFQ, comparación e inspección.
+
+Para Viaje organizado, por ejemplo:
+
+- Material y gramaje.
+- Tipo de cierre.
+- Costuras.
+- Medidas.
+- Peso.
+- Solidez de color.
+- Resistencia del asa.
+- Compresión verificable.
+- Packing y CBM.
+
+### 5.5 Compatibility and Dimension Recommender
+
+Deberá poder relacionar medidas de productos con contextos de uso.
+
+Primer caso posible:
+
+- Dimensiones internas de una valija.
+- Dimensiones de packing cubes.
+- Configuración sugerida.
+- Capacidad y compatibilidad con carry-on.
+
+---
+
+## 6. Principios de diseño
 
 ### SI-ENGINE-P001 — Human in the loop
 
-El motor asistirá decisiones, pero no autorizará compras, pagos o compromisos comerciales sin aprobación humana.
+El motor no autorizará compras, pagos o compromisos comerciales sin aprobación humana.
 
 ### SI-ENGINE-P002 — Evidence before recommendation
 
@@ -196,15 +279,15 @@ Toda recomendación debe poder rastrearse hasta evidencia identificable.
 
 ### SI-ENGINE-P003 — Confidence is first-class data
 
-Un dato sin nivel de confianza no debe tratarse igual que un dato validado por documentación formal.
+Un dato sin confianza no debe tratarse igual que un dato confirmado.
 
 ### SI-ENGINE-P004 — Manual first, automation second
 
-No se automatizará un proceso que todavía no haya sido comprendido mediante ejecución manual.
+No se automatizará un proceso que todavía no haya sido comprendido manualmente.
 
 ### SI-ENGINE-P005 — Incremental delivery
 
-Cada módulo debe resolver un problema operativo real antes de ampliar alcance.
+Cada módulo debe resolver un problema real antes de ampliar alcance.
 
 ### SI-ENGINE-P006 — Structured outputs
 
@@ -212,91 +295,55 @@ Las salidas deben ser legibles por personas y máquinas.
 
 ### SI-ENGINE-P007 — Source preservation
 
-El valor normalizado no reemplaza a la fuente original. Ambos deben conservarse.
+El valor normalizado no reemplaza a la fuente original.
 
 ### SI-ENGINE-P008 — Reversibility
 
-Durante la etapa inicial se priorizarán decisiones técnicas reversibles y componentes desacoplados.
+Se priorizarán componentes desacoplados y decisiones técnicas reversibles.
 
 ### SI-ENGINE-P009 — No automation theater
 
-No se construirá una automatización únicamente porque sea técnicamente atractiva. Debe reducir tiempo, errores o riesgo.
+Toda automatización debe reducir tiempo, errores o riesgo.
+
+### SI-ENGINE-P010 — Claims are not facts
+
+Un claim comercial no se transformará en atributo confirmado sin evidencia suficiente.
 
 ---
 
-## 6. Estrategia de construcción
-
-Se seguirá esta regla:
+## 7. Estrategia de construcción
 
 ```text
-Primera ejecución  → descubrir el proceso
-Segunda ejecución  → estandarizarlo
-Tercera ejecución  → automatizarlo
+Primera ejecución → descubrir el proceso
+Segunda ejecución → estandarizarlo
+Tercera ejecución → automatizarlo
 ```
 
-El piloto **Energía Solar Portátil** representa la primera ejecución integral.
-
-El **Nicho 2** deberá servir para:
-
-- Validar qué partes del método son realmente repetibles.
-- Identificar datos innecesarios o faltantes.
-- Medir tiempos.
-- Detectar errores recurrentes.
-- Seleccionar automatizaciones con impacto comprobable.
+- **Energía Solar Portátil** representa la primera ejecución integral.
+- **Viaje organizado y equipaje funcional** representa la segunda ejecución y deberá validar repetibilidad, tiempos y reglas.
 
 ---
 
-## 7. Primeros módulos
+## 8. Módulos iniciales
 
 ### MVP 1 — Matrix Validator
 
-Validará archivos XLSX antes de incorporarlos a la matriz.
+Validará:
 
-Validaciones iniciales:
-
+- Hojas requeridas.
 - Nombres y orden de columnas.
-- IDs primarios duplicados.
-- Formatos de IDs.
-- Relaciones inexistentes.
-- Evidencias sin fuente.
-- Evaluaciones sin evidencia.
-- Productos base posiblemente duplicados.
-- Valores fuera de escala.
-- Estados, criterios y confianzas no reconocidos.
-
-Salida:
-
-```text
-Resultado general
-Errores bloqueantes
-Advertencias
-Filas afectadas
-Correcciones recomendadas
-```
+- IDs y relaciones.
+- Evidencias y evaluaciones.
+- Valores permitidos.
+- Posibles duplicaciones.
 
 ### MVP 2 — Supplier Response Analyzer
 
-Procesará mensajes, PDFs, emails y cotizaciones de proveedores.
-
-Salida esperada:
-
-```text
-Datos recibidos
-Datos faltantes
-Contradicciones
-Riesgos
-Condiciones excluyentes
-FOB por cantidad
-Packing y logística
-Certificaciones
-Repregunta sugerida
-Contraoferta sugerida
-Filas estructuradas para la matriz
-```
+Procesará mensajes, PDFs, emails y cotizaciones para obtener datos, faltantes, contradicciones, riesgos y follow-ups.
 
 ### MVP 3 — Contextual RFQ Generator
 
-Generará RFQ y follow-ups adaptados al producto, documentación existente, requisitos técnicos y FOB objetivo.
+Generará RFQ y repreguntas adaptadas al producto, requisitos y documentación existente.
 
 ### MVP 4 — Margin and FOB Engine
 
@@ -306,73 +353,84 @@ Calculará costo importado, margen, ROI, sensibilidad y FOB objetivo.
 
 Generará score, confianza, criterios pendientes y próxima acción explicada.
 
+### Módulos candidatos surgidos del Nicho 2
+
+- Marketplace Evidence Analyzer.
+- Niche Candidate Normalizer.
+- Claims Validation Gate.
+- Product Quality Specification Builder.
+- Compatibility and Dimension Recommender.
+
+Su prioridad definitiva dependerá de la fricción medida durante Demanda y Competencia de Viaje organizado.
+
 ---
 
-## 8. Alcance excluido inicialmente
-
-No forma parte de los primeros MVP:
+## 9. Alcance excluido inicialmente
 
 - Scraping masivo sin supervisión.
-- Agentes negociando de forma autónoma.
+- Agentes negociando autónomamente.
 - Compras automáticas.
-- Selección final de productos sin revisión humana.
-- Arquitectura de plataforma completa antes de validar módulos.
+- Selección final sin revisión humana.
+- Plataforma completa antes de validar módulos.
 - Reemplazo inmediato de Google Sheets.
 
 ---
 
-## 9. Datos mínimos trazables
-
-Cada dato relevante debería poder conservar:
+## 10. Datos mínimos trazables
 
 | Campo | Propósito |
 |---|---|
-| Valor normalizado | Dato utilizado por el sistema |
-| Fuente | Origen del dato |
-| Documento o URL | Evidencia primaria |
-| Fecha | Vigencia temporal |
-| Nivel de confianza | Calidad de la evidencia |
-| Fragmento de soporte | Texto o sección que respalda el valor |
-| Estado de revisión | Pendiente, revisado o confirmado |
+| Valor normalizado | Dato utilizado por el sistema. |
+| Fuente | Origen del dato. |
+| Documento o URL | Evidencia primaria. |
+| Fecha | Vigencia temporal. |
+| Nivel de confianza | Calidad de la evidencia. |
+| Fragmento de soporte | Texto o sección que respalda el valor. |
+| Estado de revisión | Pendiente, revisado o confirmado. |
+| Tipo de dato | Hecho, inferencia, claim o estimación. |
 
 ---
 
-## 10. Indicadores de éxito
+## 11. Indicadores de éxito
 
-El Intelligence Engine deberá demostrar que puede:
+El motor deberá demostrar que puede:
 
 - Reducir tiempo de procesamiento.
 - Reducir duplicaciones y errores.
 - Mejorar trazabilidad.
-- Detectar contradicciones.
+- Detectar contradicciones y claims no confirmados.
 - Evitar decisiones prematuras.
 - Reutilizar conocimiento entre nichos.
 - Producir recomendaciones explicables.
 
 ---
 
-## 11. Próximas acciones
+## 12. Próximas acciones
 
-1. Construir el Matrix Validator.
-2. Utilizar el Nicho 2 para validar repetibilidad.
-3. Medir tiempos manuales antes de automatizar.
-4. Definir el modelo estructurado de respuesta de proveedores.
-5. Diseñar el Supplier Response Analyzer después de cerrar el primer ciclo de cotizaciones solares.
+1. Especificar e implementar el Matrix Validator.
+2. Medir tiempos durante Demanda y Competencia de Viaje organizado.
+3. Registrar errores repetitivos del procesamiento de publicaciones.
+4. Definir el contrato mínimo del Marketplace Evidence Analyzer.
+5. Diseñar el Supplier Response Analyzer después del ciclo solar de cotizaciones.
 
 ---
 
-## 12. Documentos relacionados
+## 13. Documentos relacionados
 
 - [SI-00 — Sprint 0: Foundation](../00-vision/si-00-sprint-0-foundation.md)
 - [SI-VISION-001 — Smart Imports Vision](../00-vision/si-vision-001-smart-imports-vision.md)
+- [SI-RESEARCH-001 — Niche 2 Selection](../06-research/si-research-001-niche-2-selection.md)
+- [SI-RESEARCH-002 — Travel Organization Scope](../06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md)
 - [SI-ROADMAP-001 — Pilot Closure, Niche 2 and Engine MVP](../08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md)
 - [SI-ROADMAP-002 — Project Status and Handoff](../08-roadmaps/si-roadmap-002-project-status-and-handoff.md)
 - [SI-DECISION-006 — Build the Intelligence Engine Incrementally](../09-decision-log/si-decision-006-build-intelligence-engine-incrementally.md)
+- [SI-DECISION-007 — Select Travel Organization as Niche 2](../09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md)
 
 ---
 
-## 13. Changelog
+## 14. Changelog
 
 | Version | Date | Change |
 |---|---|---|
-| 0.1.0 | 2026-07-16 | Definición inicial de visión, capacidades, principios y primeros MVP del Intelligence Engine. |
+| 0.1.0 | 2026-07-16 | Definición inicial de visión, capacidades y primeros MVP. |
+| 0.2.0 | 2026-07-17 | Se incorporaron requisitos descubiertos durante la selección y validación del Nicho 2. |
