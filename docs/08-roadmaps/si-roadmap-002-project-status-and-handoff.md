@@ -1,7 +1,7 @@
 ---
 id: si-roadmap-002
 title: Project Status and Handoff
-description: Documento vivo que registra el estado actual, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
+description: Documento vivo que registra el estado actual, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports en un nuevo chat o sesión.
 version: 0.2.0
 status: review
 owner: Alejandro Gelormini
@@ -31,60 +31,107 @@ phase: foundation
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
-> Este documento es el punto de entrada operativo para saber dónde está parado el proyecto.
+> Este documento es el punto de entrada operativo obligatorio para saber dónde está parado el proyecto y retomar el trabajo sin depender de un chat específico.
 
 ---
 
 ## 1. Propósito
 
-Permitir que Smart Imports pueda retomarse sin depender de la memoria de una persona, un chat o una sesión.
+Este es un **documento vivo**.
 
-Debe responder:
+Debe responder rápidamente:
 
-- Qué estamos construyendo.
-- Qué ya está hecho.
-- Qué está en curso.
-- Qué está bloqueado.
-- Qué esperamos de terceros.
-- Cuál es la próxima acción.
-- Qué documentos deben leerse.
+- ¿Qué estamos construyendo?
+- ¿Qué ya está hecho?
+- ¿Qué está en curso?
+- ¿Qué está bloqueado?
+- ¿Qué esperamos de terceros?
+- ¿Cuál es la próxima acción?
+- ¿Qué archivos y documentos deben utilizarse como fuente de verdad?
+- ¿Qué información debe adjuntarse al abrir un nuevo chat?
 
----
-
-## 2. Regla de mantenimiento
-
-Actualizar cuando:
-
-- Se cierre un criterio.
-- Se seleccione o descarte un nicho.
-- Llegue una cotización relevante.
-- Se tome una decisión metodológica.
-- Se inicie o finalice un módulo.
-- Cambie la próxima acción principal.
-- Se abra un nuevo ciclo de trabajo.
+No debe registrar cada conversación menor. Debe mantener el **estado operativo consolidado**.
 
 ---
 
-## 3. Snapshot
+## 2. Fuentes de verdad
+
+### Fuente documental
+
+```text
+Repositorio GitHub:
+https://github.com/agelormini2024/smart-imports
+```
+
+GitHub contiene la visión, metodología, decisiones, roadmaps y documentos de investigación vigentes.
+
+### Fuente operativa
+
+La matriz XLSX más reciente conocida es:
+
+```text
+Smart Imports - matriz de oportunidades - v3 aut(11).xlsx
+```
+
+Debe tratarse como fuente operativa de verdad hasta que Alejandro adjunte una versión posterior.
+
+Reglas vigentes:
+
+- No modificar nombres ni orden de columnas existentes.
+- Toda columna nueva se agrega al final.
+- No duplicar IDs primarios dentro de una hoja.
+- Referenciar productos existentes mediante `ID Producto Base`.
+- No crear productos base duplicados.
+- Generar XLSX importables compatibles con la matriz vigente.
+
+---
+
+## 3. Regla de mantenimiento
+
+Actualizar este documento cuando ocurra alguno de estos eventos:
+
+- Se cierra o cambia el estado de un criterio.
+- Se selecciona, reformula o descarta un nicho.
+- Llega una cotización relevante.
+- Se recibe documentación técnica o logística importante.
+- Se envía una repregunta o contraoferta que cambia el estado de un proveedor.
+- Se toma una decisión metodológica.
+- Se inicia o finaliza un módulo del Intelligence Engine.
+- Cambia la matriz operativa vigente.
+- Cambia la próxima acción principal.
+- Se prepara la apertura de un nuevo chat o ciclo de trabajo.
+
+Antes de reemplazar este archivo:
+
+1. Comparar la versión nueva con la vigente.
+2. Preservar información estable todavía válida.
+3. No convertir el handoff en un resumen excesivamente breve.
+4. Verificar que el prompt de continuidad represente el estado real.
+5. Confirmar que las referencias a documentos, decisiones y archivos existan.
+
+---
+
+## 4. Snapshot
 
 | Campo | Estado |
 |---|---|
 | Fecha de corte | 2026-07-17 |
-| Fase | Foundation avanzada / segunda ejecución metodológica |
+| Fase | Foundation avanzada / validación comparativa del método |
 | Nichos activos | 2 |
-| Nicho 1 | Energía Solar Portátil |
-| Nicho 2 | Viaje organizado y equipaje funcional |
-| Piloto solar | Esperando y procesando RFQ |
-| Viaje organizado | Seleccionado; alcance definido; registro operativo pendiente |
-| Intelligence Engine | Visión actualizada; MVP 1 pendiente |
-| Bloqueo principal | Respuestas y documentación de proveedores solares |
-| Próxima acción principal | Registrar Viaje en la matriz e iniciar Demanda formal |
+| Nicho 1 | Energía Solar Portátil — cierre y validación con proveedores |
+| Nicho 2 | Viaje organizado y equipaje funcional — seleccionado y listo para registro operativo |
+| Matriz vigente | `Smart Imports - matriz de oportunidades - v3 aut(11).xlsx` |
+| Intelligence Engine | Visión y roadmap definidos; Matrix Validator pendiente de especificación e implementación |
+| Bloqueo principal del Nicho 1 | Respuestas comerciales, documentación aplicable y packing de proveedores |
+| Próxima acción principal | Terminar la tanda actual de proveedores solares y registrar Viaje organizado en la matriz |
 
 ---
 
-## 4. Visión vigente
+## 5. Visión vigente
 
-Smart Imports combina:
+Smart Imports no se define como una importadora tradicional.
+
+Su objetivo es construir una empresa que combine:
 
 - Inteligencia comercial.
 - Importación estratégica.
@@ -94,11 +141,19 @@ Smart Imports combina:
 - IA y agentes.
 - Software propio.
 
-El activo principal de largo plazo será el **Smart Imports Intelligence Engine**.
+El activo principal de largo plazo será el:
+
+```text
+Smart Imports Intelligence Engine
+```
+
+Principio rector:
+
+> Cada nuevo nicho debe producir conocimiento comercial y una pieza reutilizable del sistema.
 
 ---
 
-## 5. Metodología vigente
+## 6. Metodología vigente
 
 ```text
 Nicho
@@ -117,43 +172,45 @@ Score + confianza
   ↓
 Proveedores y RFQ
   ↓
-Margen + importación
+Margen + facilidad de importación
   ↓
 Decisión
 ```
 
-Principios:
+Principios activos:
 
 - Primero entender, después invertir.
 - Evaluar nichos antes que productos.
 - Evidencia antes que intuición.
-- Google Sheets es la herramienta operativa inicial.
+- La matriz es la herramienta operativa inicial.
 - GitHub es la fuente documental de verdad.
-- Alibaba público no equivale a FOB negociado.
-- Claims comerciales no equivalen a hechos confirmados.
-- La decisión requiere trazabilidad y confianza.
+- Precio público de Alibaba no equivale a FOB negociado.
+- Un dato comercial del proveedor no equivale automáticamente a evidencia técnica validada.
+- La decisión final requiere trazabilidad y confianza.
+- No se automatiza un proceso que todavía no fue comprendido manualmente.
+- Las decisiones de negociación, muestra, compra y pago requieren aprobación humana.
 
 ---
 
-## 6. Nicho 1 — Energía Solar Portátil
+# 7. Nicho 1 — Energía Solar Portátil
 
-### Alcance
-
-Incluye:
+## 7.1 Alcance incluido
 
 - Kits solares portátiles.
 - Ventiladores solares.
 - Power banks solares.
-- Paneles solares portátiles.
+- Paneles solares portátiles pequeños y medianos.
 
-Excluye:
+## 7.2 Alcance excluido
 
 - Generadores solares.
 - Power stations.
 - Sistemas solares completos.
-- Soluciones de mayor escala.
+- Soluciones solares de mayor escala.
 
-### Criterios
+Estos productos permanecen en backlog para un nicho separado.
+
+## 7.3 Estado de criterios
 
 | Criterio | Score | Confianza | Estado |
 |---|---:|---|---|
@@ -168,60 +225,190 @@ Excluye:
 | Potencial Automatización | 5 | Alta | Revisado |
 | Afinidad Personal | 5 | Alta | Revisado |
 
-### Proveedores
+Margen e Importación no deben considerarse definitivos hasta procesar RFQ, documentación, packing y costos logísticos aplicables.
 
-#### Kits AT-999 y DT-138 — DAT / Yiwu HaoYe
+---
 
-Estado: esperando respuesta.
+## 8. Estado de proveedores solares
 
-- AT-999 cotizado con batería de plomo-ácido.
-- Litio es condición excluyente.
-- Se pidió variante de litio, MSDS, UN38.3, FOB, EXW y packing.
-- Objetivo comunicado: USD 7,20–7,60 para 1000–3000 unidades, sujeto a especificación.
+### 8.1 Kits AT-999 y DT-138 — DAT / Yiwu HaoYe
 
-#### Power banks — Shenzhen Nulike Technology
+**Estado:** esperando respuesta a la repregunta técnica y comercial.
 
-Estado: esperando cotización y fichas.
+Hallazgos:
 
-- Modelos: 30.000 y 50.000 mAh.
-- 60.000 mAh como referencia opcional.
-- Se pidió capacidad real, celda, Wh, peso, documentos y packing.
+- La cotización original de AT-999 informó batería sellada de plomo-ácido 6V 4500mAh.
+- La variante de plomo quedó descartada para esta evaluación.
+- El proveedor afirmó que la versión con batería de litio requiere entre 1.000 y 2.000 unidades.
+- El proveedor mostró un antecedente OEM asociado comercialmente con Gadnic en Argentina.
+- Ese antecedente no confirma por sí mismo la química de batería ni la configuración técnica del producto.
 
-#### Ventiladores — Shenzhen Ani Technology
+Pendiente de confirmar:
 
-Estado: esperando cotización y fichas.
+- MOQ exacto: 1.000 o 2.000 unidades.
+- FOB y EXW de AT-999 litio.
+- FOB y EXW de DT-138 litio.
+- Química, voltaje, capacidad real y Wh.
+- Configuración de celdas.
+- MSDS.
+- UN38.3.
+- Datasheet.
+- Packing, peso y CBM.
+- Modelo alternativo compatible con el objetivo comercial.
+
+Objetivo FOB comunicado:
+
+```text
+USD 7,20–7,60 para 1.000–3.000 unidades,
+sujeto a especificaciones, batería y packing.
+```
+
+Próxima acción:
+
+- Esperar respuesta.
+- Validar existencia real de las versiones de litio.
+- Comparar el FOB ofrecido con el FOB objetivo.
+- Negociar sólo después de recibir precio y configuración verificables.
+
+---
+
+### 8.2 Ventiladores — Shenzhen Ani Technology
+
+**Estado:** cotización y documentación recibidas; repregunta técnica y comercial pendiente de envío o confirmación.
+
+Modelos evaluados:
 
 - LD-008.
 - LD-6008.
 - LD-2512.
 - LD-633.
-- LD-312 sólo si existe versión litio.
+- LD-607 agregado por el proveedor como alternativa comercial.
 
-#### Paneles plegables
+Lectura comercial preliminar:
 
-Estado: esperando respuestas completas.
+- LD-008: candidato fuerte y comparable con productos de demanda comprobada.
+- LD-6008 / LD-607: candidatos fuertes a comparar por precio, batería y configuración.
+- LD-2512: candidato posible, con margen preliminar más ajustado.
+- LD-633: opción premium; en pausa por capital requerido, divergencia de especificaciones y documentación faltante.
 
-- Obtener FOB exacto por potencia.
-- Confirmar ETFE, puertos, medidas, peso, packing y certificaciones.
+Hallazgos documentales:
+
+- MSDS y UN38.3 recibidos para celda INR18650 3,7V 1.200mAh / 4,44Wh.
+- La documentación puede ser relevante para LD-008 y LD-2512 sólo si el proveedor confirma que utilizan exactamente esas celdas.
+- No cubre directamente LD-6008 4.500mAh, LD-607 5.400mAh ni LD-633 LiFePO4 12,8V 6Ah.
+- Los certificados CE EMC y LVD enviados enumeran otros modelos y no identifican los modelos cotizados.
+- Los documentos de transporte recibidos corresponden a batería sola, no necesariamente al ventilador terminado con batería contenida en el equipo.
+
+Contradicciones o faltantes:
+
+- LD-633 figura como 14" en catálogo y 16" en cotización.
+- LD-008 requiere confirmar tamaño de hélice y tamaño exterior.
+- LD-607 presenta peso neto y bruto aparentemente invertidos.
+- Existen dos precios para panel 6V 4W sin explicación.
+- Debe aclararse qué accesorios incluye cada FOB.
+- La cotización se basó en 40HQ completo por modelo; debe consultarse una orden mixta.
+
+Próxima acción:
+
+1. Solicitar precios para 300, 500, 1.000 y 3.000 unidades.
+2. Consultar orden mixta.
+3. Confirmar FOB port y EXW.
+4. Confirmar contenido exacto por modelo.
+5. Solicitar documentación aplicable a cada batería y producto terminado.
+6. Solicitar certificados aplicables a los modelos cotizados.
+7. Consultar muestras, garantía, repuestos y AQL.
+8. Seleccionar modelos para muestra después de las aclaraciones.
 
 ---
 
-## 7. Nicho 2 — Viaje organizado y equipaje funcional
+### 8.3 Power banks — Shenzhen Nulike Technology
 
-### Estado
+**Estado:** esperando cotización y documentación.
 
-**Seleccionado y documentado. Preparación operativa.**
+Capacidades solicitadas:
 
-### Proceso completado
+- 30.000mAh.
+- 50.000mAh.
+- 60.000mAh como referencia opcional.
 
-- Lista larga: 12 candidatos.
-- Lista corta: 6 candidatos.
-- Finalistas: Mascotas, Viaje y Jardinería.
-- Validación profunda: completada.
-- Score de Viaje organizado: 3,80/5.
-- Decisión: Viaje organizado seleccionado como Nicho 2.
+Se solicitó:
 
-### Subcategorías iniciales
+- FOB y EXW por cantidad.
+- MOQ.
+- Capacidad real y capacidad nominal.
+- Tipo de celda.
+- Voltaje.
+- Wh.
+- Peso por modelo.
+- Packing.
+- MSDS.
+- UN38.3.
+- Certificaciones.
+- HS Code.
+- Muestras.
+- Personalización.
+
+Hallazgo pendiente:
+
+- El proveedor indicó aproximadamente 1,5 kg por unidad, pero debe aclararse a qué capacidad corresponde.
+
+Próxima acción:
+
+- Validar claims de capacidad.
+- Comparar capacidad, peso y Wh.
+- Evitar modelos de alta capacidad sin documentación técnica consistente.
+
+---
+
+### 8.4 Paneles plegables
+
+**Estado:** RFQ enviados; esperando respuestas completas o procesando respuestas según proveedor.
+
+Referencias principales:
+
+- Panel plegable genérico ETFE 30W / 40W / 50W.
+- Shine Solar como referencia competitiva.
+- MWISH como referencia de mayor precio.
+
+Hallazgos preliminares:
+
+- Shine Solar presenta una referencia pública potencialmente compatible con margen preliminar.
+- El precio debe confirmarse por potencia exacta.
+- El grado de protección no debe interpretarse como impermeabilidad completa de la caja de conexiones.
+- Debe validarse configuración de puertos y accesorios.
+
+Pendiente:
+
+- FOB exacto por potencia y cantidad.
+- EXW.
+- MOQ.
+- USB-A.
+- USB-C PD.
+- QC3.0.
+- DC output.
+- Material ETFE.
+- Medidas abiertas y plegadas.
+- Peso.
+- Packing.
+- CBM.
+- Certificaciones.
+- Muestras.
+
+---
+
+# 9. Nicho 2 — Viaje organizado y equipaje funcional
+
+## 9.1 Estado
+
+**Seleccionado formalmente y listo para comenzar su ejecución operativa.**
+
+La selección quedó documentada mediante:
+
+- `SI-RESEARCH-001 — Niche 2 Selection`.
+- `SI-RESEARCH-002 — Travel Organization Scope`.
+- `SI-DECISION-007 — Select Travel Organization as Niche 2`.
+
+## 9.2 Subcategorías incluidas
 
 - Sets organizadores estándar.
 - Packing cubes de compresión.
@@ -230,180 +417,297 @@ Estado: esperando respuestas completas.
 - Neceseres compartimentados.
 - Bolsas para ropa usada.
 
-### Próximas acciones
+## 9.3 Exclusiones iniciales
 
-1. Obtener matriz XLSX más reciente.
-2. Registrar el nicho.
-3. Confirmar IDs operativos.
-4. Recolectar primera tanda ML.
-5. Procesar Demanda y Competencia.
-6. Medir tiempos y errores.
+- Valijas y mochilas completas.
+- Candados y productos de seguridad.
+- Balanzas electrónicas.
+- Adaptadores eléctricos.
+- Productos rígidos o voluminosos.
+- Productos cuya única diferenciación sea un estampado.
 
-### Finalistas de reserva
+## 9.4 Próximos pasos operativos
 
-1. Soluciones para mascotas en departamentos — 3,60.
-2. Jardinería urbana y balcones — 3,45.
-3. Camping compacto sin energía — 3,40.
+1. Crear el registro del nicho en la matriz.
+2. Definir los términos de búsqueda por subcategoría.
+3. Preparar la primera tanda de PDFs de Mercado Libre.
+4. Registrar publicaciones.
+5. Deduplicar productos base.
+6. Crear evidencias.
+7. Comenzar la evaluación formal de Demanda.
+8. Registrar tiempos, errores y retrabajos.
+9. Comparar eficiencia con el piloto solar.
+
+## 9.5 Términos de búsqueda preliminares
+
+- `organizadores de valija 6 piezas`
+- `packing cubes`
+- `packing cubes compresión`
+- `cubos organizadores valija`
+- `organizador cables viaje`
+- `estuche organizador electrónico`
+- `bolsa zapatos viaje`
+- `neceser colgante viaje`
+- `bolsa ropa sucia viaje`
+
+La lista debe revisarse y agruparse por tanda antes de recolectar PDFs.
 
 ---
 
-## 8. Intelligence Engine
+# 10. Smart Imports Intelligence Engine
 
-### Estado
+## 10.1 Estado
 
-- Visión y capacidades documentadas.
-- Estrategia incremental vigente.
-- Primer MVP: Matrix Validator.
-- Implementación pendiente.
+- Nombre definido.
+- Visión y capacidades iniciales documentadas.
+- Estrategia incremental aprobada.
+- Primer MVP seleccionado: Matrix Validator.
+- Roadmap principal actualizado a `SI-ROADMAP-001 v0.3.0`.
 
-### Nuevos requerimientos observados
+## 10.2 MVP 1 — Matrix Validator
 
-- Niche Candidate Normalizer.
+**Estado:** pendiente de especificación técnica e implementación.
+
+Alcance inicial:
+
+- Hojas requeridas.
+- Nombres y orden de columnas.
+- IDs primarios.
+- Formato de IDs.
+- Relaciones.
+- Referencias a productos base.
+- Evidencias y evaluaciones.
+- Duplicaciones.
+- Valores permitidos.
+- Filas incompletas.
+- Errores bloqueantes y advertencias.
+
+Stack preliminar:
+
+```text
+TypeScript
+Node.js
+Zod
+ExcelJS
+CLI
+Vitest o Jest
+```
+
+## 10.3 Requisitos detectados para módulos posteriores
+
+- Supplier Response Analyzer.
+- Contextual RFQ Generator.
+- Margin and FOB Engine.
+- Scoring and Next Action Engine.
 - Marketplace Evidence Analyzer.
+- Niche Candidate Normalizer.
 - Claims Validation Gate.
 - Product Quality Specification Builder.
 - Compatibility and Dimension Recommender.
-
-### Backlog priorizado
-
-1. Matrix Validator.
-2. Supplier Response Analyzer.
-3. Contextual RFQ Generator.
-4. Margin and FOB Engine.
-5. Scoring and Next Action Engine.
-6. Módulos descubiertos durante el Nicho 2.
-7. RAG y monitoreo.
+- RAG de proveedores y documentos.
+- Monitoreo y scraping asistido.
 
 ---
 
-## 9. Trabajo completado
+# 11. Trabajo completado
 
-- Sprint 0 y visión.
+- Sprint 0 y visión estratégica.
 - Estructura documental.
-- BIM inicial.
+- Business Intelligence Manual inicial.
+- Criterios Demanda, Competencia y Margen Potencial documentados.
+- Procedimiento de evidencias.
+- Procedimiento de RFQ y screening de margen.
 - Matriz operativa por capas.
 - Demanda y Competencia del piloto solar.
-- Criterios estratégicos preliminares.
-- Margen preliminar, RFQ y FOB objetivo.
-- Documento ejecutivo.
-- Intelligence Engine conceptualizado.
-- Plan de acción documentado.
-- Lista larga, filtros y screening del Nicho 2.
-- Validación de tres finalistas.
-- Selección y alcance de Viaje organizado.
+- Criterios estratégicos preliminares del piloto solar.
+- Documento ejecutivo para socio e inversores.
+- Conceptualización del Intelligence Engine.
+- Roadmap coordinado de tres líneas.
+- Selección del Nicho 2.
+- Investigación comparativa de candidatos.
+- Alcance inicial de Viaje organizado.
 - Decision Log hasta SI-DECISION-007.
+- Recepción y primera revisión de documentación del proveedor Ani.
+- Identificación de documentación aplicable y no aplicable por modelo.
 
 ---
 
-## 10. Trabajo en curso
+# 12. Trabajo en curso
 
-- Seguimiento y negociación solar.
-- Margen Potencial solar.
-- Facilidad de Importación solar.
+- RFQ y negociación de kits solares.
+- Evaluación comercial y documental de ventiladores.
+- RFQ de power banks.
+- RFQ de paneles.
+- Margen Potencial del piloto solar.
+- Facilidad de Importación del piloto solar.
 - Registro operativo de Viaje organizado.
-- Preparación de Demanda del Nicho 2.
-- Especificación del Matrix Validator.
+- Preparación de la primera tanda formal de Demanda.
+- Especificación inicial del Matrix Validator.
 
 ---
 
-## 11. Bloqueos y dependencias
+# 13. Bloqueos y dependencias
 
-| Bloqueo | Dependencia | Trabajo paralelo |
+| Bloqueo | Dependencia | Acción mientras se espera |
 |---|---|---|
-| Margen solar definitivo | FOB, packing y logística | Iniciar Viaje organizado |
-| Importación solar definitiva | Baterías, certificados y HS Code | Documentar riesgos |
-| Ranking solar de proveedores | Respuestas comparables | Mantener evaluación uniforme |
-| Muestras solares | Precio y documentación | No comprometer capital |
-
-Viaje organizado no presenta bloqueos externos para comenzar Demanda.
+| Margen definitivo de kits | FOB litio y packing | Procesar otros proveedores y preparar Nicho 2 |
+| Facilidad de Importación de kits | Batería y documentación | Mantener variante de plomo descartada |
+| Selección de ventiladores para muestra | Precios por cantidades, orden mixta y documentos aplicables | Enviar repregunta consolidada |
+| Validación de power banks | Capacidad real, Wh, peso y documentos | No priorizar alta capacidad sin evidencia |
+| Margen definitivo de paneles | FOB por potencia y packing | Comparar proveedores y conservar FOB objetivo |
+| Ranking final de proveedores solares | Respuestas comparables | Usar estructura homogénea de evaluación |
+| Inicio formal de Demanda del Nicho 2 | Registro en matriz y términos por tanda | Preparar importable y protocolo de tiempos |
+| Matrix Validator | Especificación y tiempo de implementación | Extraer reglas desde errores reales |
 
 ---
 
-## 12. Próximas acciones ordenadas
+# 14. Prioridades ordenadas
 
-### Prioridad 1
+## Prioridad 1 — Completar la tanda actual de proveedores solares
 
-Registrar Viaje organizado en la matriz más reciente.
-
-### Prioridad 2
-
-Preparar y procesar la primera tanda de publicaciones ML.
-
-### Prioridad 3
-
-Registrar tiempos y errores para comparar con el piloto solar.
-
-### Prioridad 4
-
-Procesar cada respuesta solar mediante:
+Aplicar el flujo:
 
 ```text
-Extraer → validar → detectar faltantes → repreguntar → negociar → registrar → recalcular
+Extraer
+→ validar
+→ detectar faltantes
+→ repreguntar
+→ negociar
+→ registrar
+→ recalcular
+→ decidir próxima acción
 ```
 
-### Prioridad 5
+## Prioridad 2 — Registrar Viaje organizado en la matriz
 
-Especificar el contrato de entrada y salida del Matrix Validator.
+Usar exclusivamente:
+
+```text
+Smart Imports - matriz de oportunidades - v3 aut(11).xlsx
+```
+
+hasta que exista una versión posterior.
+
+## Prioridad 3 — Preparar la primera tanda formal de Demanda
+
+- Definir términos.
+- Elegir subcategoría inicial.
+- Recolectar PDFs.
+- Registrar tiempos.
+- Procesar publicaciones y productos base.
+
+## Prioridad 4 — Especificar Matrix Validator
+
+Definir:
+
+- Contrato de entrada.
+- Contrato de salida.
+- Reglas bloqueantes.
+- Advertencias.
+- Primer conjunto de tests.
+
+## Prioridad 5 — Cerrar el piloto solar
+
+- Margen definitivo o rango razonable.
+- Facilidad de Importación.
+- Ranking.
+- Retrospectiva.
+- Decisión de muestra, observación o descarte.
 
 ---
 
-## 13. Protocolo para abrir un nuevo chat
+# 15. Protocolo para abrir un nuevo chat
 
-Compartir el repositorio y pedir revisar:
+En un nuevo chat:
 
-1. `README.md`
-2. `docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md`
-3. `docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md`
-4. `docs/06-research/si-research-001-niche-2-selection.md`
-5. `docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md`
-6. `docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md`
+1. Compartir el repositorio.
+2. Adjuntar la matriz XLSX más reciente.
+3. Adjuntar cualquier cotización, PDF o respuesta de proveedor que todavía no esté consolidada en GitHub.
+4. Pedir que se revisen primero estos documentos:
 
-Prompt sugerido:
+```text
+README.md
+docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md
+docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md
+docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
+docs/06-research/si-research-001-niche-2-selection.md
+docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md
+docs/09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md
+```
+
+## Prompt sugerido
 
 ```text
 Estamos continuando el proyecto Smart Imports.
-Repositorio: https://github.com/agelormini2024/smart-imports
 
-Revisá primero:
+Repositorio:
+https://github.com/agelormini2024/smart-imports
+
+Antes de proponer cambios o continuar el trabajo, revisá especialmente:
+
 - README.md
 - docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md
 - docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md
+- docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
 - docs/06-research/si-research-001-niche-2-selection.md
 - docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md
-- docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
+- docs/09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md
 
-Tomá la documentación del repo como fuente de verdad.
-No modifiques la metodología, los IDs ni la estructura de la matriz sin detectar y explicar primero el impacto.
+Tomá SI-ROADMAP-002 como punto de entrada operativo y el repositorio como fuente documental de verdad.
+
+La matriz operativa vigente que voy a adjuntar es:
+Smart Imports - matriz de oportunidades - v3 aut(11).xlsx
+
+Estado resumido:
+
+- Nicho 1: Energía Solar Portátil, cerrando Margen Potencial y Facilidad de Importación mediante respuestas de proveedores.
+- Nicho 2: Viaje organizado y equipaje funcional, seleccionado y listo para registrarse en la matriz e iniciar Demanda.
+- Intelligence Engine: Matrix Validator es el primer MVP pendiente de especificación e implementación.
+
+No modifiques la metodología, los IDs, los nombres de hojas ni la estructura de columnas sin detectar y explicar primero el impacto.
+
+No asumas que una certificación o documento de batería aplica a un producto si el modelo, química, capacidad o configuración no coinciden.
+
+Antes de reemplazar documentación existente, compará la nueva versión con la vigente y preservá todo contenido todavía válido.
 ```
 
 ---
 
-## 14. Checklist de cierre de sesión
+# 16. Checklist de cierre de sesión
+
+Antes de cerrar una etapa importante:
 
 - [ ] Actualizar fecha de corte.
+- [ ] Confirmar la matriz operativa vigente.
 - [ ] Registrar trabajo completado.
 - [ ] Actualizar trabajo en curso.
 - [ ] Actualizar bloqueos.
-- [ ] Definir próxima acción.
+- [ ] Actualizar el estado de cada proveedor relevante.
+- [ ] Definir próxima acción principal.
 - [ ] Registrar decisiones nuevas.
-- [ ] Vincular documentos creados.
-- [ ] Verificar índices y README.
+- [ ] Vincular documentos o archivos creados.
+- [ ] Verificar que README e índices apunten a documentos vigentes.
+- [ ] Revisar el prompt sugerido.
+- [ ] Comparar la nueva versión del handoff con la anterior.
+- [ ] Confirmar que no se haya eliminado información válida por simplificación.
 
 ---
 
-## 15. Documentos relacionados
+# 17. Documentos relacionados
 
+- [SI-ROADMAP-001 — Pilot Closure, Niche 2 and Intelligence Engine MVP](./si-roadmap-001-pilot-closure-niche-2-engine-mvp.md)
 - [SI-AGENT-001 — Smart Imports Intelligence Engine](../05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md)
 - [SI-RESEARCH-001 — Niche 2 Selection](../06-research/si-research-001-niche-2-selection.md)
 - [SI-RESEARCH-002 — Travel Organization Scope](../06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md)
-- [SI-ROADMAP-001 — Pilot Closure, Niche 2 and Engine MVP](./si-roadmap-001-pilot-closure-niche-2-engine-mvp.md)
+- [SI-DECISION-005 — Portable Solar Pilot Scope](../09-decision-log/si-decision-005-portable-solar-pilot-scope.md)
+- [SI-DECISION-006 — Build the Intelligence Engine Incrementally](../09-decision-log/si-decision-006-build-intelligence-engine-incrementally.md)
 - [SI-DECISION-007 — Select Travel Organization as Niche 2](../09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md)
 
 ---
 
-## 16. Changelog
+# 18. Changelog
 
 | Version | Date | Change |
 |---|---|---|
-| 0.1.0 | 2026-07-16 | Snapshot inicial y protocolo de handoff. |
-| 0.2.0 | 2026-07-17 | Se registró la selección de Viaje organizado como Nicho 2 y el inicio de su ejecución formal. |
+| 0.1.0 | 2026-07-16 | Snapshot inicial, protocolo de actualización y handoff para nuevas sesiones. |
+| 0.2.0 | 2026-07-17 | Se actualizó la selección y alcance del Nicho 2, matriz vigente, estado de proveedores, revisión documental de Ani, prioridades y prompt de continuidad. |
