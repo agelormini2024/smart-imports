@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Documento vivo que registra el estado actual, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports en un nuevo chat o sesión.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-07-17
+updated: 2026-07-20
 tags:
   - status
   - handoff
@@ -19,6 +19,7 @@ related:
   - si-agent-001
   - si-research-001
   - si-research-002
+  - si-research-003
   - si-decision-005
   - si-decision-006
   - si-decision-007
@@ -70,7 +71,7 @@ GitHub contiene la visión, metodología, decisiones, roadmaps y documentos de i
 La matriz XLSX más reciente conocida es:
 
 ```text
-Smart Imports - matriz de oportunidades - v3 aut(11).xlsx
+Smart Imports - matriz de oportunidades - v3 aut(12).xlsx
 ```
 
 Debe tratarse como fuente operativa de verdad hasta que Alejandro adjunte una versión posterior.
@@ -115,15 +116,15 @@ Antes de reemplazar este archivo:
 
 | Campo | Estado |
 |---|---|
-| Fecha de corte | 2026-07-17 |
+| Fecha de corte | 2026-07-20 |
 | Fase | Foundation avanzada / validación comparativa del método |
 | Nichos activos | 2 |
 | Nicho 1 | Energía Solar Portátil — cierre y validación con proveedores |
 | Nicho 2 | Viaje organizado y equipaje funcional — seleccionado y listo para registro operativo |
-| Matriz vigente | `Smart Imports - matriz de oportunidades - v3 aut(11).xlsx` |
+| Matriz vigente | `Smart Imports - matriz de oportunidades - v3 aut(12).xlsx` |
 | Intelligence Engine | Visión y roadmap definidos; Matrix Validator pendiente de especificación e implementación |
 | Bloqueo principal del Nicho 1 | Respuestas comerciales, documentación aplicable y packing de proveedores |
-| Próxima acción principal | Terminar la tanda actual de proveedores solares y registrar Viaje organizado en la matriz |
+| Próxima acción principal | Aplicar la actualización de proveedores en la matriz y comenzar el registro operativo de Viaje organizado mientras se esperan nuevas respuestas |
 
 ---
 
@@ -231,50 +232,43 @@ Margen e Importación no deben considerarse definitivos hasta procesar RFQ, docu
 
 ## 8. Estado de proveedores solares
 
-### 8.1 Kits AT-999 y DT-138 — DAT / Yiwu HaoYe
+### 8.1 Kits AT-999 y variantes — DAT / Yiwu HaoYe
 
-**Estado:** esperando respuesta a la repregunta técnica y comercial.
+**Estado:** oferta preliminar de litio recibida; repregunta enviada y esperando aclaraciones.
 
 Hallazgos:
 
-- La cotización original de AT-999 informó batería sellada de plomo-ácido 6V 4500mAh.
-- La variante de plomo quedó descartada para esta evaluación.
-- El proveedor afirmó que la versión con batería de litio requiere entre 1.000 y 2.000 unidades.
-- El proveedor mostró un antecedente OEM asociado comercialmente con Gadnic en Argentina.
-- Ese antecedente no confirma por sí mismo la química de batería ni la configuración técnica del producto.
+- La configuración original de plomo-ácido continúa descartada.
+- El proveedor informó una configuración con batería de litio 3,7V 5.000mAh.
+- El precio comunicado se encuentra dentro del objetivo comercial preliminar.
+- El MOQ comunicado es elevado para una primera operación concentrada.
+- El packing preliminar es de 16 unidades por caja, con caja de 51 × 38,5 × 44,5 cm.
+- El proveedor afirmó disponer de MSDS, UN38.3 y test report, todavía no recibidos.
 
-Pendiente de confirmar:
+Contradicciones o faltantes:
 
-- MOQ exacto: 1.000 o 2.000 unidades.
-- FOB y EXW de AT-999 litio.
-- FOB y EXW de DT-138 litio.
-- Química, voltaje, capacidad real y Wh.
-- Configuración de celdas.
-- MSDS.
-- UN38.3.
-- Datasheet.
-- Packing, peso y CBM.
-- Modelo alternativo compatible con el objetivo comercial.
-
-Objetivo FOB comunicado:
-
-```text
-USD 7,20–7,60 para 1.000–3.000 unidades,
-sujeto a especificaciones, batería y packing.
-```
+- El proveedor mencionó `AT-666`, aunque la consulta correspondía a AT-999.
+- Falta confirmar si el precio comunicado es EXW o FOB.
+- Falta confirmar la cantidad mínima para producto DAT o neutro sin OEM.
+- Falta confirmar accesorios incluidos, peso, HS Code, lead time y muestra.
+- Falta validar la documentación de la batería exacta.
 
 Próxima acción:
 
-- Esperar respuesta.
-- Validar existencia real de las versiones de litio.
-- Comparar el FOB ofrecido con el FOB objetivo.
-- Negociar sólo después de recibir precio y configuración verificables.
+1. Confirmar el modelo exacto.
+2. Intentar reducir el MOQ manteniendo el mejor precio posible.
+3. Confirmar Incoterm y puerto.
+4. Validar configuración completa.
+5. Recibir y revisar documentación.
+6. Solicitar muestra antes de cualquier orden.
+
+Los valores exactos y objetivos comerciales permanecen en la matriz y el registro privado de proveedores.
 
 ---
 
 ### 8.2 Ventiladores — Shenzhen Ani Technology
 
-**Estado:** cotización y documentación recibidas; repregunta técnica y comercial pendiente de envío o confirmación.
+**Estado:** cotización y documentación recibidas; repregunta enviada y esperando respuesta.
 
 Modelos evaluados:
 
@@ -295,104 +289,70 @@ Hallazgos documentales:
 
 - MSDS y UN38.3 recibidos para celda INR18650 3,7V 1.200mAh / 4,44Wh.
 - La documentación puede ser relevante para LD-008 y LD-2512 sólo si el proveedor confirma que utilizan exactamente esas celdas.
-- No cubre directamente LD-6008 4.500mAh, LD-607 5.400mAh ni LD-633 LiFePO4 12,8V 6Ah.
-- Los certificados CE EMC y LVD enviados enumeran otros modelos y no identifican los modelos cotizados.
-- Los documentos de transporte recibidos corresponden a batería sola, no necesariamente al ventilador terminado con batería contenida en el equipo.
+- No cubre directamente LD-6008, LD-607 ni LD-633.
+- Los certificados CE EMC y LVD enviados enumeran otros modelos.
+- Los documentos de transporte corresponden a batería sola y no necesariamente al equipo terminado.
 
 Contradicciones o faltantes:
 
-- LD-633 figura como 14" en catálogo y 16" en cotización.
-- LD-008 requiere confirmar tamaño de hélice y tamaño exterior.
-- LD-607 presenta peso neto y bruto aparentemente invertidos.
-- Existen dos precios para panel 6V 4W sin explicación.
-- Debe aclararse qué accesorios incluye cada FOB.
-- La cotización se basó en 40HQ completo por modelo; debe consultarse una orden mixta.
+- Divergencias de tamaño entre catálogo y cotización.
+- Peso neto y bruto aparentemente invertidos en LD-607.
+- Diferencias no explicadas entre accesorios.
+- La cotización se basó en 40HQ completo por modelo.
 
 Próxima acción:
 
-1. Solicitar precios para 300, 500, 1.000 y 3.000 unidades.
-2. Consultar orden mixta.
-3. Confirmar FOB port y EXW.
-4. Confirmar contenido exacto por modelo.
-5. Solicitar documentación aplicable a cada batería y producto terminado.
-6. Solicitar certificados aplicables a los modelos cotizados.
-7. Consultar muestras, garantía, repuestos y AQL.
-8. Seleccionar modelos para muestra después de las aclaraciones.
+- Esperar respuesta sobre orden mixta, precios por cantidades, accesorios, documentación por modelo, muestras, garantía, repuestos y AQL.
 
 ---
 
 ### 8.3 Power banks — Shenzhen Nulike Technology
 
-**Estado:** esperando cotización y documentación.
+**Estado:** cotización formal recibida; modelos no viables al precio actual y repregunta enviada.
 
-Capacidades solicitadas:
+Hallazgos:
 
-- 30.000mAh.
-- 50.000mAh.
-- 60.000mAh como referencia opcional.
-
-Se solicitó:
-
-- FOB y EXW por cantidad.
-- MOQ.
-- Capacidad real y capacidad nominal.
-- Tipo de celda.
-- Voltaje.
-- Wh.
-- Peso por modelo.
-- Packing.
-- MSDS.
-- UN38.3.
-- Certificaciones.
-- HS Code.
-- Muestras.
-- Personalización.
-
-Hallazgo pendiente:
-
-- El proveedor indicó aproximadamente 1,5 kg por unidad, pero debe aclararse a qué capacidad corresponde.
+- Se cotizaron modelos de 30.000mAh y 50.000mAh.
+- La reducción de precio por volumen es insuficiente para alcanzar la estructura de margen del proyecto.
+- No se recibieron todavía pruebas de capacidad real, Wh, celdas o documentación coincidente.
+- La información de packing requiere mayor precisión.
+- Las capacidades declaradas pueden introducir restricciones adicionales de transporte y uso.
 
 Próxima acción:
 
-- Validar claims de capacidad.
-- Comparar capacidad, peso y Wh.
-- Evitar modelos de alta capacidad sin documentación técnica consistente.
+1. Solicitar modelos más simples o de menor capacidad.
+2. Pedir identificación exacta, Wh, capacidad real, celdas y documentación.
+3. Consultar condiciones de pago e inspección.
+4. Abrir búsqueda paralela de otro fabricante.
+5. No solicitar muestras de los modelos actuales.
 
 ---
 
-### 8.4 Paneles plegables
+### 8.4 Paneles plegables — Shine Solar y referencias comparables
 
-**Estado:** RFQ enviados; esperando respuestas completas o procesando respuestas según proveedor.
+**Estado:** cotización formal y packing recibidos; Shine Solar pasa a prioridad alta.
 
-Referencias principales:
+Hallazgos:
 
-- Panel plegable genérico ETFE 30W / 40W / 50W.
-- Shine Solar como referencia competitiva.
-- MWISH como referencia de mayor precio.
-
-Hallazgos preliminares:
-
-- Shine Solar presenta una referencia pública potencialmente compatible con margen preliminar.
-- El precio debe confirmarse por potencia exacta.
-- El grado de protección no debe interpretarse como impermeabilidad completa de la caja de conexiones.
-- Debe validarse configuración de puertos y accesorios.
+- Shine Solar acepta órdenes mixtas.
+- El MOQ sin logo es bajo y compatible con una validación inicial.
+- El pago puede realizarse mediante Trade Assurance con saldo posterior a inspección.
+- Se recibieron precios EXW y una estimación global de gastos para FOB Shenzhen.
+- Se recibió packing utilizable para 15W, 40W y 60W.
+- El proveedor diferencia panel IP68 de junction box IP65 y no recomienda uso bajo lluvia.
+- Las simulaciones preliminares de 15W y 40W permanecen positivas bajo un escenario conservador de costo de origen.
 
 Pendiente:
 
-- FOB exacto por potencia y cantidad.
-- EXW.
-- MOQ.
-- USB-A.
-- USB-C PD.
-- QC3.0.
-- DC output.
-- Material ETFE.
-- Medidas abiertas y plegadas.
-- Peso.
-- Packing.
-- CBM.
-- Certificaciones.
-- Muestras.
+- Confirmar si los tiers se calculan por cantidad total mezclada o por modelo.
+- Comparar EXW, FCA y FOB dentro de una futura consolidación.
+- Recibir y revisar CE, RoHS e informes IP aplicables a cada modelo.
+- Confirmar muestras, courier, garantía, AQL, packaging y accesorios.
+- Validar calidad y potencia mediante muestra.
+
+Próxima acción:
+
+- Esperar respuesta a las aclaraciones y preparar muestras SN-C15W y SN-C40W si la documentación resulta consistente.
 
 ---
 
@@ -529,15 +489,17 @@ Vitest o Jest
 - Decision Log hasta SI-DECISION-007.
 - Recepción y primera revisión de documentación del proveedor Ani.
 - Identificación de documentación aplicable y no aplicable por modelo.
+- Primera ronda de proveedores consolidada en SI-RESEARCH-003.
+- Actualización importable de cotizaciones, margen y evidencias preparada para la matriz v3 aut(12).
 
 ---
 
 # 12. Trabajo en curso
 
-- RFQ y negociación de kits solares.
-- Evaluación comercial y documental de ventiladores.
-- RFQ de power banks.
-- RFQ de paneles.
+- Aclaración y negociación de kit solar de litio.
+- Espera de repreguntas sobre ventiladores.
+- Búsqueda de alternativa para power banks y espera de documentación.
+- Preparación de muestras y documentación de paneles Shine Solar.
 - Margen Potencial del piloto solar.
 - Facilidad de Importación del piloto solar.
 - Registro operativo de Viaje organizado.
@@ -550,11 +512,11 @@ Vitest o Jest
 
 | Bloqueo | Dependencia | Acción mientras se espera |
 |---|---|---|
-| Margen definitivo de kits | FOB litio y packing | Procesar otros proveedores y preparar Nicho 2 |
-| Facilidad de Importación de kits | Batería y documentación | Mantener variante de plomo descartada |
-| Selección de ventiladores para muestra | Precios por cantidades, orden mixta y documentos aplicables | Enviar repregunta consolidada |
-| Validación de power banks | Capacidad real, Wh, peso y documentos | No priorizar alta capacidad sin evidencia |
-| Margen definitivo de paneles | FOB por potencia y packing | Comparar proveedores y conservar FOB objetivo |
+| Margen definitivo de kits | Modelo, Incoterm, MOQ y documentación | Mantener oferta preliminar separada del margen definitivo |
+| Facilidad de Importación de kits | Batería exacta y documentos | Mantener variante de plomo descartada |
+| Selección de ventiladores para muestra | Orden mixta, precios y documentos aplicables | Esperar respuesta de Ani |
+| Validación de power banks | Alternativa de menor costo, Wh y capacidad real | Buscar otro fabricante en paralelo |
+| Selección de paneles para muestra | Documentos, tiers mixtos y courier | Priorizar SN-C15W y SN-C40W |
 | Ranking final de proveedores solares | Respuestas comparables | Usar estructura homogénea de evaluación |
 | Inicio formal de Demanda del Nicho 2 | Registro en matriz y términos por tanda | Preparar importable y protocolo de tiempos |
 | Matrix Validator | Especificación y tiempo de implementación | Extraer reglas desde errores reales |
@@ -563,9 +525,37 @@ Vitest o Jest
 
 # 14. Prioridades ordenadas
 
-## Prioridad 1 — Completar la tanda actual de proveedores solares
+## Prioridad 1 — Aplicar la ronda de proveedores a la matriz
 
-Aplicar el flujo:
+Usar exclusivamente:
+
+```text
+Smart Imports - matriz de oportunidades - v3 aut(12).xlsx
+```
+
+Importar:
+
+- COT-0008 a COT-0010.
+- MARG-0008 a MARG-0009.
+- EVID-0096 a EVID-0099.
+- Nuevo bloque de Resumen Margen.
+
+## Prioridad 2 — Registrar Viaje organizado en la matriz
+
+- Crear el registro del Nicho 2.
+- Confirmar subcategorías.
+- Definir términos de búsqueda por tanda.
+
+## Prioridad 3 — Preparar la primera tanda formal de Demanda
+
+- Elegir subcategoría inicial.
+- Recolectar PDFs.
+- Registrar tiempos.
+- Procesar publicaciones y productos base.
+
+## Prioridad 4 — Continuar proveedores cuando respondan
+
+Aplicar:
 
 ```text
 Extraer
@@ -578,25 +568,9 @@ Extraer
 → decidir próxima acción
 ```
 
-## Prioridad 2 — Registrar Viaje organizado en la matriz
+Mantener búsqueda paralela de power banks.
 
-Usar exclusivamente:
-
-```text
-Smart Imports - matriz de oportunidades - v3 aut(11).xlsx
-```
-
-hasta que exista una versión posterior.
-
-## Prioridad 3 — Preparar la primera tanda formal de Demanda
-
-- Definir términos.
-- Elegir subcategoría inicial.
-- Recolectar PDFs.
-- Registrar tiempos.
-- Procesar publicaciones y productos base.
-
-## Prioridad 4 — Especificar Matrix Validator
+## Prioridad 5 — Especificar Matrix Validator
 
 Definir:
 
@@ -606,7 +580,7 @@ Definir:
 - Advertencias.
 - Primer conjunto de tests.
 
-## Prioridad 5 — Cerrar el piloto solar
+## Prioridad 6 — Cerrar el piloto solar
 
 - Margen definitivo o rango razonable.
 - Facilidad de Importación.
@@ -630,6 +604,7 @@ README.md
 docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md
 docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md
 docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
+docs/06-research/niche-001-portable-solar-energy/si-research-003-supplier-negotiation-round-01.md
 docs/06-research/si-research-001-niche-2-selection.md
 docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md
 docs/09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md
@@ -649,6 +624,7 @@ Antes de proponer cambios o continuar el trabajo, revisá especialmente:
 - docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md
 - docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md
 - docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
+- docs/06-research/niche-001-portable-solar-energy/si-research-003-supplier-negotiation-round-01.md
 - docs/06-research/si-research-001-niche-2-selection.md
 - docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md
 - docs/09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md
@@ -656,17 +632,19 @@ Antes de proponer cambios o continuar el trabajo, revisá especialmente:
 Tomá SI-ROADMAP-002 como punto de entrada operativo y el repositorio como fuente documental de verdad.
 
 La matriz operativa vigente que voy a adjuntar es:
-Smart Imports - matriz de oportunidades - v3 aut(11).xlsx
+Smart Imports - matriz de oportunidades - v3 aut(12).xlsx
 
 Estado resumido:
 
-- Nicho 1: Energía Solar Portátil, cerrando Margen Potencial y Facilidad de Importación mediante respuestas de proveedores.
+- Nicho 1: Energía Solar Portátil, con primera ronda de proveedores consolidada; DAT y Ani esperan aclaraciones, Nulike no es viable al precio actual y Shine Solar es prioridad alta para muestras.
 - Nicho 2: Viaje organizado y equipaje funcional, seleccionado y listo para registrarse en la matriz e iniciar Demanda.
 - Intelligence Engine: Matrix Validator es el primer MVP pendiente de especificación e implementación.
 
 No modifiques la metodología, los IDs, los nombres de hojas ni la estructura de columnas sin detectar y explicar primero el impacto.
 
 No asumas que una certificación o documento de batería aplica a un producto si el modelo, química, capacidad o configuración no coinciden.
+
+No publiques precios objetivo, cotizaciones originales, datos de contacto ni estrategia de negociación en el repositorio público.
 
 Antes de reemplazar documentación existente, compará la nueva versión con la vigente y preservá todo contenido todavía válido.
 ```
@@ -697,6 +675,7 @@ Antes de cerrar una etapa importante:
 
 - [SI-ROADMAP-001 — Pilot Closure, Niche 2 and Intelligence Engine MVP](./si-roadmap-001-pilot-closure-niche-2-engine-mvp.md)
 - [SI-AGENT-001 — Smart Imports Intelligence Engine](../05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md)
+- [SI-RESEARCH-003 — Supplier Negotiation Round 01](../06-research/niche-001-portable-solar-energy/si-research-003-supplier-negotiation-round-01.md)
 - [SI-RESEARCH-001 — Niche 2 Selection](../06-research/si-research-001-niche-2-selection.md)
 - [SI-RESEARCH-002 — Travel Organization Scope](../06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md)
 - [SI-DECISION-005 — Portable Solar Pilot Scope](../09-decision-log/si-decision-005-portable-solar-pilot-scope.md)
@@ -711,3 +690,4 @@ Antes de cerrar una etapa importante:
 |---|---|---|
 | 0.1.0 | 2026-07-16 | Snapshot inicial, protocolo de actualización y handoff para nuevas sesiones. |
 | 0.2.0 | 2026-07-17 | Se actualizó la selección y alcance del Nicho 2, matriz vigente, estado de proveedores, revisión documental de Ani, prioridades y prompt de continuidad. |
+| 0.3.0 | 2026-07-20 | Se consolidó la primera ronda de proveedores, se actualizó la matriz vigente a v3 aut(12), se incorporó SI-RESEARCH-003 y se revisaron prioridades, bloqueos y prompt de continuidad. |
