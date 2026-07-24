@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Documento vivo que registra el estado actual, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports en un nuevo chat o sesión.
-version: 0.4.0
+version: 0.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-07-23
+updated: 2026-07-24
 tags:
   - status
   - handoff
@@ -25,6 +25,7 @@ related:
   - si-decision-006
   - si-decision-007
   - si-decision-008
+  - si-func-001
 audience:
   - founder
   - partner
@@ -63,19 +64,19 @@ GitHub contiene la visión, metodología, decisiones, roadmaps y documentos de i
 
 ### 2.2 Fuente operativa
 
-La matriz más reciente recibida al cierre fue:
+La matriz vigente al cierre de esta actualización es:
 
 ```text
-Smart Imports - matriz de oportunidades - v3 aut(25).xlsx
+Smart Imports - matriz de oportunidades - v3 aut(29).xlsx
 ```
 
-Se preparó una versión de continuidad que agrega `TIME-0021` y `TIME-0022`:
+Secuencia reciente:
 
-```text
-Smart Imports - matriz de oportunidades - v3 aut(26).xlsx
-```
+- `v3 aut(27)`: consolidación de Demanda y Competencia del Nicho 2.
+- `v3 aut(28)`: formalización de la shortlist de Margen Potencial.
+- `v3 aut(29)`: corrección de `Evaluaciones!A10`, reemplazando `EV-0009` por `EVAL-0009`.
 
-La versión `v3 aut(26)` debe utilizarse en el siguiente chat.
+La corrección no agregó una fila: reemplazó el ID inválido del registro existente.
 
 ### 2.3 Reglas operativas vigentes
 
@@ -93,19 +94,20 @@ La versión `v3 aut(26)` debe utilizarse en el siguiente chat.
 
 | Campo | Estado |
 |---|---|
-| Fecha de corte | 2026-07-23 |
-| Fase | Foundation avanzada / validación comparativa del método |
+| Fecha de corte | 2026-07-24 |
+| Fase | Foundation avanzada / inicio de implementación del Intelligence Engine |
 | Nichos activos | 2 |
 | Nicho 1 | Energía Solar Portátil — negociación pausada o en espera según proveedor |
-| Nicho 2 | Viaje organizado y equipaje funcional — Demanda y Competencia ML cerradas |
-| Matriz vigente para continuidad | `Smart Imports - matriz de oportunidades - v3 aut(26).xlsx` |
+| Nicho 2 | Viaje organizado y equipaje funcional — Demanda y Competencia consolidadas; shortlist de Margen aprobada |
+| Matriz vigente para continuidad | `Smart Imports - matriz de oportunidades - v3 aut(29).xlsx` |
 | Último ID ML | `ML-0069` |
 | Último ID Producto Base | `BASE-TRAVEL-026` |
 | Último ID Competencia ML | `COMP-0069` |
 | Último ID Evidencia | `EVID-0206` |
+| Último ID Evaluación | `EVAL-0010` |
 | Último ID Tiempo | `TIME-0022` |
-| Intelligence Engine | Matrix Validator pendiente de especificación e implementación |
-| Próxima acción principal | Consolidar Demanda y Competencia del Nicho 2 en Evaluaciones y Nichos |
+| Intelligence Engine | `SI-FUNC-001` preparado; implementación pendiente |
+| Próxima acción principal | Revisar el contrato funcional e implementar las validaciones mínimas del Matrix Validator |
 
 ## 4. Visión vigente
 
@@ -260,8 +262,10 @@ No publicar en el repositorio:
 ```text
 Demanda por subcategoría: cerrada
 Competencia ML por subcategoría: cerrada
-Evaluación consolidada del nicho: pendiente
-Margen Potencial: pendiente
+Evaluación consolidada de Demanda: 4 / Confianza Media
+Evaluación consolidada de Competencia: 2 / Confianza Media
+Shortlist de Margen Potencial: aprobada
+Screening de Margen Potencial: pendiente
 Facilidad de Importación: pendiente
 ```
 
@@ -322,30 +326,43 @@ Las oportunidades más defendibles se relacionan con:
 - Instrucciones, rotulado y garantía.
 - Sistema de productos y cross-selling.
 
-### Shortlist preliminar para Margen
+### Shortlist aprobada para screening de Margen
 
-Debe confirmarse mediante evaluación formal. Candidatos a comparar:
+1. **Kits de envases recargables**
+   - `BASE-TRAVEL-021`
+   - `BASE-TRAVEL-022`
+2. **Bolsas de compresión al vacío**
+   - Manual: `BASE-TRAVEL-010`
+   - Eléctrica: `BASE-TRAVEL-012`
+   - Benchmark premium: `BASE-TRAVEL-011`
+3. **Kit textil reforzado o premium, condicionado al costo**
+   - `BASE-TRAVEL-002`
+   - `BASE-TRAVEL-003`
 
-1. Kits de envases recargables.
-2. Bolsas de compresión al vacío con bomba.
-3. Un kit textil sólo si los costos permiten evitar competencia directa por precio.
+Watchlist:
+
+- `BASE-TRAVEL-006`: competencia local baja, pero demanda todavía insuficientemente validada.
+
+Regla de avance:
+
+> No iniciar RFQ masivo. Primero realizar screening público y avanzar sólo con referencias que combinen señal económica, logística suficiente y diferenciación defendible.
 
 ## 7.5 Tiempos
 
 - Tiempo activo conocido acumulado: **291 minutos**.
 - Equivalente: **4 horas y 51 minutos**.
-- `TIME-0012` permanece sin tiempo medido.
+- `TIME-0012` quedó cerrado como actividad completada con tiempo no medido; no se inventó una duración.
 - Últimos registros preparados:
   - `TIME-0021`: incorporación de Competencia de organizadores para calzado.
   - `TIME-0022`: screening de bolsas para ropa usada o húmeda.
 
 ## 7.6 Próximas acciones del Nicho 2
 
-1. Crear `EVAL` de Demanda consolidada.
-2. Crear `EVAL` de Competencia consolidada.
-3. Actualizar la fila del Nicho 2 en `Nichos`.
-4. Definir shortlist aprobada para Margen Potencial.
-5. Decidir entre screening de costos públicos o RFQ.
+1. Mantener la shortlist como referencia aprobada.
+2. No iniciar RFQ masivo todavía.
+3. Implementar el Matrix Validator mínimo.
+4. Realizar screening público de costos después de validar la matriz con el MVP.
+5. Comparar manual y eléctrica como propuestas distintas.
 6. Registrar la decisión de avance o descarte por subcategoría.
 
 # 8. Smart Imports Intelligence Engine
@@ -355,7 +372,10 @@ Debe confirmarse mediante evaluación formal. Candidatos a comparar:
 - Nombre y visión definidos.
 - Estrategia incremental aprobada.
 - Primer MVP seleccionado: `Matrix Validator`.
-- El proceso manual ya produjo suficientes reglas y errores reales para iniciar implementación.
+- Contrato funcional inicial preparado en `SI-FUNC-001`.
+- Primer caso real registrado: ID `EV-0009` inválido en `aut(28)`.
+- Matriz corregida en `aut(29)`.
+- Implementación y tests pendientes.
 
 ## 8.2 Alcance mínimo del Matrix Validator
 
@@ -406,11 +426,12 @@ Consolidar Nicho 2
 
 # 10. Trabajo en curso
 
-- Evaluación consolidada de Demanda del Nicho 2.
-- Evaluación consolidada de Competencia del Nicho 2.
-- Shortlist para Margen Potencial.
+- Revisión funcional de `SI-FUNC-001`.
+- Especificación técnica mínima del Matrix Validator.
+- Implementación de validaciones de hojas, columnas, IDs y relaciones.
+- Preparación de fixtures y tests con `aut(28)` y `aut(29)`.
 - Cierre de Margen e Importación del piloto solar.
-- Especificación e implementación del Matrix Validator.
+- Screening de Margen del Nicho 2, pausado hasta contar con el Validator mínimo.
 
 # 11. Bloqueos y dependencias
 
@@ -419,43 +440,39 @@ Consolidar Nicho 2
 | Margen solar definitivo | Condiciones y documentación coincidente | Mantener estados preliminares y no comprar muestras sin prioridad |
 | AT-999 | Validación técnica real | Mantener pausa; probar unidad local sólo si vuelve a ser prioritario |
 | Paneles Shine Solar | Prioridad comercial y decisión de muestra | Mantener candidato aprobado sin desembolso |
-| Evaluación final del Nicho 2 | Consolidación de evidencias | Crear EVAL de Demanda y Competencia |
-| Shortlist del Nicho 2 | Evaluación consolidada | No iniciar RFQ masivo todavía |
-| Matrix Validator | Tiempo de implementación | Extraer reglas desde la matriz real y los importables |
+| Implementación del Matrix Validator | Contrato funcional y schema versionado | Revisar `SI-FUNC-001` y construir reglas mínimas |
+| Screening de Margen del Nicho 2 | Matriz validada y productos priorizados | Preparar datos públicos requeridos; no iniciar RFQ masivo |
 
 # 12. Prioridades ordenadas
 
-## Prioridad 1 — Consolidar Nicho 2
+## Prioridad 1 — Matrix Validator funcional
 
-- Crear evaluación de Demanda.
-- Crear evaluación de Competencia.
-- Actualizar `Nichos`.
-- Definir shortlist.
+- Revisar y aprobar `SI-FUNC-001`.
+- Confirmar perfiles, severidades y catálogo mínimo de reglas.
+- Mantener el MVP read-only.
 
-## Prioridad 2 — Actualizar documentación
+## Prioridad 2 — Matrix Validator técnico
 
-- Reemplazar `SI-ROADMAP-002`.
-- Incorporar `SI-RESEARCH-004`.
-- Incorporar `SI-DECISION-008`.
-- Actualizar README e índice del Decision Log.
+- Definir estructura del proyecto.
+- Definir schema versionado.
+- Implementar CLI y reporte JSON.
+- Implementar hojas, columnas, IDs y relaciones.
+- Agregar tests con `aut(28)` y `aut(29)`.
 
-## Prioridad 3 — Matrix Validator
+## Prioridad 3 — Margen Potencial del Nicho 2
 
-- Definir contrato de entrada.
-- Definir salida de errores y advertencias.
-- Implementar validación de hojas, columnas, IDs y relaciones.
-- Agregar tests con la matriz vigente.
+- Mantener la shortlist aprobada.
+- Realizar screening público.
+- Separar bomba manual de eléctrica.
+- Avanzar a RFQ sólo con finalistas.
 
-## Prioridad 4 — Margen Potencial
+## Prioridad 4 — Cierre del piloto solar
 
-- Elegir dos o tres subcategorías.
-- Definir productos base representativos.
-- Obtener costos preliminares.
-- Simular landed cost y margen.
+- Completar Margen e Importación sólo con información confiable.
+- Mantener muestras y proveedores pausados hasta recuperar prioridad.
 
 ## Prioridad 5 — Proveedores solares
 
-- Mantener pausas actuales.
 - Procesar únicamente respuestas que cambien una decisión.
 - No pagar muestras sin prioridad aprobada.
 
@@ -464,12 +481,12 @@ Consolidar Nicho 2
 En el nuevo chat:
 
 1. Compartir el repositorio.
-2. Adjuntar `Smart Imports - matriz de oportunidades - v3 aut(26).xlsx`.
+2. Adjuntar `Smart Imports - matriz de oportunidades - v3 aut(29).xlsx`.
 3. Pedir que se revise primero `SI-ROADMAP-002`.
 4. Pedir que se revise `SI-RESEARCH-004` y `SI-DECISION-008`.
 5. No adjuntar nuevamente todos los PDFs históricos.
 6. Adjuntar sólo documentos o respuestas nuevas que no estén consolidadas.
-7. Confirmar que la próxima acción es consolidar Demanda y Competencia del Nicho 2.
+7. Confirmar que la próxima acción es revisar e implementar el Matrix Validator.
 
 Documentos mínimos a revisar:
 
@@ -477,6 +494,7 @@ Documentos mínimos a revisar:
 README.md
 docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md
 docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md
+docs/03-functional-specifications/si-func-001-matrix-validator.md
 docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
 docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md
 docs/06-research/niche-002-travel-organization/si-research-004-demand-competition-closure.md
@@ -496,37 +514,35 @@ Antes de proponer cambios, revisá especialmente:
 - README.md
 - docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md
 - docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md
+- docs/03-functional-specifications/si-func-001-matrix-validator.md
 - docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
-- docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md
 - docs/06-research/niche-002-travel-organization/si-research-004-demand-competition-closure.md
-- docs/09-decision-log/si-decision-007-select-travel-organization-as-niche-2.md
 - docs/09-decision-log/si-decision-008-close-niche-2-demand-and-competition.md
 
 Tomá SI-ROADMAP-002 como punto de entrada operativo y el repositorio como fuente documental de verdad.
 
 Voy a adjuntar:
-Smart Imports - matriz de oportunidades - v3 aut(26).xlsx
+Smart Imports - matriz de oportunidades - v3 aut(29).xlsx
 
 Estado resumido:
-- Nicho 1, Energía Solar Portátil: Demanda y Competencia cerradas; AT-999 y muestras de paneles están pausados por priorización.
-- Nicho 2, Viaje organizado y equipaje funcional: Demanda y Competencia ML cerradas en siete subcategorías.
-- TANDA-VIAJE-006 se cerró sin procesamiento formal por oferta relevante insuficiente.
-- Próxima acción: consolidar Demanda y Competencia del Nicho 2 en Evaluaciones y Nichos y definir shortlist para Margen Potencial.
-- Intelligence Engine: Matrix Validator es el primer MVP pendiente de implementación.
+- Nicho 1: Demanda y Competencia cerradas; Margen e Importación siguen en evaluación; proveedores y muestras pausados por prioridad.
+- Nicho 2: Demanda 4 / Confianza Media y Competencia 2 / Confianza Media consolidadas.
+- Shortlist aprobada: kits de envases recargables, compresión manual y eléctrica, y kit textil condicional.
+- No iniciar RFQ masivo antes del screening público.
+- Matrix Validator: SI-FUNC-001 preparado; implementación pendiente.
+- aut(29) corrige el ID EV-0009 por EVAL-0009 reemplazando la fila existente.
 
-Reglas obligatorias de la matriz:
-- Trabajar siempre sobre la versión más reciente adjunta.
-- Preservar exactamente nombres y orden de columnas.
-- Las columnas nuevas se agregan sólo al final.
-- No duplicar IDs primarios.
-- Referenciar productos existentes mediante ID Producto Base.
-- No crear productos base duplicados.
-- Las correcciones reemplazan; no se agregan como filas duplicadas.
+Reglas obligatorias:
+- Trabajar sobre la matriz más reciente adjunta.
+- Preservar nombres y orden de columnas.
+- Agregar columnas nuevas sólo al final.
+- No duplicar IDs.
+- Mantener relaciones mediante ID Producto Base.
+- Las correcciones reemplazan filas.
+- No publicar información comercial confidencial.
 
-No modifiques metodología, IDs, hojas o estructura sin explicar primero el impacto.
-No publiques precios objetivo, cotizaciones originales, datos de contacto ni estrategia de negociación en el repositorio público.
-
-Primero confirmá qué documentos revisaste, cuál es la matriz vigente y cuál es la próxima acción. Después proponé el plan inmediato.
+Primero confirmá los documentos revisados, la matriz vigente y la próxima acción.
+Después continuá con la revisión o implementación del Matrix Validator.
 ```
 
 # 14. Checklist de cierre de sesión
@@ -540,7 +556,7 @@ Primero confirmá qué documentos revisaste, cuál es la matriz vigente y cuál 
 - [x] Registrar decisión nueva.
 - [x] Preparar prompt de continuidad.
 - [ ] Subir documentos actualizados a GitHub.
-- [ ] Utilizar `v3 aut(26)` en el nuevo chat.
+- [ ] Utilizar `v3 aut(29)` en el nuevo chat.
 
 # 15. Changelog
 
@@ -550,3 +566,4 @@ Primero confirmá qué documentos revisaste, cuál es la matriz vigente y cuál 
 | 0.2.0 | 2026-07-17 | Selección y alcance del Nicho 2, proveedores y prompt de continuidad. |
 | 0.3.0 | 2026-07-20 | Primera ronda de proveedores y matriz v3 aut(12). |
 | 0.4.0 | 2026-07-23 | Cierre de Demanda y Competencia del Nicho 2, estado actualizado de AT-999 y Shine Solar, matriz v3 aut(26) y nuevo prompt de continuidad. |
+| 0.5.0 | 2026-07-24 | Consolidación y shortlist del Nicho 2, matriz v3 aut(29), primer caso real del Validator y creación de SI-FUNC-001. |
