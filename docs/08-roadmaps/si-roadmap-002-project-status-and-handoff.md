@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Documento vivo que registra el estado actual, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports en un nuevo chat o sesión.
-version: 0.5.0
+version: 0.6.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -26,6 +26,8 @@ related:
   - si-decision-007
   - si-decision-008
   - si-func-001
+  - si-decision-009
+  - si-tech-001
 audience:
   - founder
   - partner
@@ -106,8 +108,9 @@ La corrección no agregó una fila: reemplazó el ID inválido del registro exis
 | Último ID Evidencia | `EVID-0206` |
 | Último ID Evaluación | `EVAL-0010` |
 | Último ID Tiempo | `TIME-0022` |
-| Intelligence Engine | `SI-FUNC-001` preparado; implementación pendiente |
-| Próxima acción principal | Revisar el contrato funcional e implementar las validaciones mínimas del Matrix Validator |
+| Intelligence Engine | `SI-FUNC-001` aprobado; `SI-DECISION-009` aprobado; `SI-TECH-001` en review |
+| Repositorio de software | `agelormini2024/smart-imports-engine` — privado, pendiente de creación |
+| Próxima acción principal | Revisar SI-TECH-001, crear el repositorio privado y ejecutar el spike XLSX |
 
 ## 4. Visión vigente
 
@@ -372,7 +375,11 @@ Regla de avance:
 - Nombre y visión definidos.
 - Estrategia incremental aprobada.
 - Primer MVP seleccionado: `Matrix Validator`.
-- Contrato funcional inicial preparado en `SI-FUNC-001`.
+- Contrato funcional `SI-FUNC-001` aprobado.
+- Separación de repositorios aprobada en `SI-DECISION-009`.
+- Arquitectura mínima preparada en `SI-TECH-001`.
+- El Engine vivirá en `agelormini2024/smart-imports-engine`, inicialmente privado.
+- El MVP se ejecutará como CLI local, sin hosting ni base de datos.
 - Primer caso real registrado: ID `EV-0009` inválido en `aut(28)`.
 - Matriz corregida en `aut(29)`.
 - Implementación y tests pendientes.
@@ -390,15 +397,17 @@ Regla de avance:
 - Filas incompletas.
 - Errores bloqueantes y advertencias.
 
-Stack preliminar:
+Stack técnico propuesto en `SI-TECH-001`:
 
 ```text
-TypeScript
-Node.js
-Zod
-ExcelJS
-CLI
-Vitest o Jest
+Node.js 24 LTS
+TypeScript 6
+pnpm 11
+Commander 15
+ExcelJS 4.4 — sujeto a spike
+Zod 4
+Vitest 4
+CLI local
 ```
 
 ## 8.3 Orden recomendado
@@ -426,8 +435,10 @@ Consolidar Nicho 2
 
 # 10. Trabajo en curso
 
-- Revisión funcional de `SI-FUNC-001`.
-- Especificación técnica mínima del Matrix Validator.
+- Revisión y aprobación de `SI-TECH-001`.
+- Creación del repositorio privado `smart-imports-engine`.
+- Inicialización del scaffold TypeScript.
+- Spike técnico del adapter ExcelJS.
 - Implementación de validaciones de hojas, columnas, IDs y relaciones.
 - Preparación de fixtures y tests con `aut(28)` y `aut(29)`.
 - Cierre de Margen e Importación del piloto solar.
@@ -440,38 +451,45 @@ Consolidar Nicho 2
 | Margen solar definitivo | Condiciones y documentación coincidente | Mantener estados preliminares y no comprar muestras sin prioridad |
 | AT-999 | Validación técnica real | Mantener pausa; probar unidad local sólo si vuelve a ser prioritario |
 | Paneles Shine Solar | Prioridad comercial y decisión de muestra | Mantener candidato aprobado sin desembolso |
-| Implementación del Matrix Validator | Contrato funcional y schema versionado | Revisar `SI-FUNC-001` y construir reglas mínimas |
+| Implementación del Matrix Validator | Arquitectura técnica y adapter XLSX validados | Revisar `SI-TECH-001`, crear el repo privado y ejecutar el spike |
 | Screening de Margen del Nicho 2 | Matriz validada y productos priorizados | Preparar datos públicos requeridos; no iniciar RFQ masivo |
 
 # 12. Prioridades ordenadas
 
-## Prioridad 1 — Matrix Validator funcional
+## Prioridad 1 — Arquitectura del Matrix Validator
 
-- Revisar y aprobar `SI-FUNC-001`.
-- Confirmar perfiles, severidades y catálogo mínimo de reglas.
-- Mantener el MVP read-only.
+- Revisar y aprobar `SI-TECH-001`.
+- Confirmar Node.js 24, TypeScript, CLI local y política de datos.
+- Confirmar que el MVP no tendrá hosting ni base de datos.
 
-## Prioridad 2 — Matrix Validator técnico
+## Prioridad 2 — Repositorio y foundation técnica
 
-- Definir estructura del proyecto.
-- Definir schema versionado.
-- Implementar CLI y reporte JSON.
+- Crear `agelormini2024/smart-imports-engine` como repositorio privado.
+- Incorporar el scaffold inicial.
+- Ejecutar `pnpm install` y commitear `pnpm-lock.yaml`.
+- Activar CI.
+- Ejecutar el spike de ExcelJS.
+
+## Prioridad 3 — Implementación del Validator
+
+- Implementar modelo normalizado.
 - Implementar hojas, columnas, IDs y relaciones.
-- Agregar tests con `aut(28)` y `aut(29)`.
+- Crear fixtures sintéticos.
+- Ejecutar tests privados contra `aut(28)` y `aut(29)`.
 
-## Prioridad 3 — Margen Potencial del Nicho 2
+## Prioridad 4 — Margen Potencial del Nicho 2
 
 - Mantener la shortlist aprobada.
 - Realizar screening público.
 - Separar bomba manual de eléctrica.
 - Avanzar a RFQ sólo con finalistas.
 
-## Prioridad 4 — Cierre del piloto solar
+## Prioridad 5 — Cierre del piloto solar
 
 - Completar Margen e Importación sólo con información confiable.
 - Mantener muestras y proveedores pausados hasta recuperar prioridad.
 
-## Prioridad 5 — Proveedores solares
+## Prioridad 6 — Proveedores solares
 
 - Procesar únicamente respuestas que cambien una decisión.
 - No pagar muestras sin prioridad aprobada.
@@ -486,7 +504,7 @@ En el nuevo chat:
 4. Pedir que se revise `SI-RESEARCH-004` y `SI-DECISION-008`.
 5. No adjuntar nuevamente todos los PDFs históricos.
 6. Adjuntar sólo documentos o respuestas nuevas que no estén consolidadas.
-7. Confirmar que la próxima acción es revisar e implementar el Matrix Validator.
+7. Confirmar que la próxima acción es revisar SI-TECH-001, crear el repositorio privado y ejecutar el spike XLSX.
 
 Documentos mínimos a revisar:
 
@@ -495,6 +513,8 @@ README.md
 docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md
 docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md
 docs/03-functional-specifications/si-func-001-matrix-validator.md
+docs/04-technical-specifications/si-tech-001-matrix-validator-architecture.md
+docs/09-decision-log/si-decision-009-separate-knowledge-and-engine-repositories.md
 docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md
 docs/06-research/niche-002-travel-organization/si-research-002-travel-organization-scope.md
 docs/06-research/niche-002-travel-organization/si-research-004-demand-competition-closure.md
@@ -567,3 +587,5 @@ Después continuá con la revisión o implementación del Matrix Validator.
 | 0.3.0 | 2026-07-20 | Primera ronda de proveedores y matriz v3 aut(12). |
 | 0.4.0 | 2026-07-23 | Cierre de Demanda y Competencia del Nicho 2, estado actualizado de AT-999 y Shine Solar, matriz v3 aut(26) y nuevo prompt de continuidad. |
 | 0.5.0 | 2026-07-24 | Consolidación y shortlist del Nicho 2, matriz v3 aut(29), primer caso real del Validator y creación de SI-FUNC-001. |
+| 0.6.0 | 2026-07-24 | SI-FUNC-001 aprobado, separación de repositorios aprobada y SI-TECH-001 preparado. |
+| 0.6.1 | 2026-07-24 | Se adopta pnpm 11 como package manager del Engine. |

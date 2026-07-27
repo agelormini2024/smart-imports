@@ -2,8 +2,8 @@
 id: si-func-001
 title: Matrix Validator Functional Specification
 description: Especificación funcional del primer MVP del Smart Imports Intelligence Engine para validar estructura, IDs, relaciones, valores y fórmulas de la matriz operativa.
-version: 0.1.0
-status: draft
+version: 1.0.0
+status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-24
@@ -19,6 +19,8 @@ related:
   - si-roadmap-001
   - si-roadmap-002
   - si-decision-006
+  - si-decision-009
+  - si-tech-001
 audience:
   - founder
   - developer
@@ -1041,3 +1043,4 @@ Estas preguntas no bloquean la implementación de las validaciones mínimas.
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-07-24 | Primera especificación funcional del Matrix Validator basada en la matriz v3 y en errores observados durante los Nichos 1 y 2. |
+| 1.0.0 | 2026-07-24 | Especificación funcional aprobada por el Founder. Las decisiones de repositorio y arquitectura mínima se derivan a SI-DECISION-009 y SI-TECH-001. |
