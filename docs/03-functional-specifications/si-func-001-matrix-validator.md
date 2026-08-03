@@ -2,12 +2,12 @@
 id: si-func-001
 title: Matrix Validator Functional Specification
 description: Especificación funcional del primer MVP del Smart Imports Intelligence Engine para validar estructura, IDs, relaciones, valores y fórmulas de la matriz operativa.
-version: 1.0.0
+version: 1.1.0
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-08-03
 tags:
   - matrix-validator
   - functional-specification
@@ -31,6 +31,41 @@ phase: foundation
 # SI-FUNC-001 — Matrix Validator
 
 > La primera automatización debe proteger la integridad del conocimiento que ya construimos manualmente.
+
+## 0. Estado de implementación al 2026-08-03
+
+El contrato continúa siendo la referencia funcional del MVP, pero su implementación todavía no cubre todos los puntos definidos originalmente.
+
+Implementado y validado:
+
+- Lectura XLSX read-only mediante SheetJS.
+- CLI local y reporte JSON.
+- `full-matrix-v3 0.1.0` y `full-matrix-v4 0.6.0`.
+- Hojas, columnas y posiciones.
+- Claves primarias faltantes y duplicadas.
+- Referencias simples y listas de evidencias.
+- Registro global de fuentes y relación `Evidencia Fuentes`.
+- Vocabularios controlados y valores obligatorios seleccionados.
+- Reglas de consistencia de fuentes.
+- 78 tests automatizados.
+- Validación privada de `aut29` y `aut30` con cero errores.
+
+Pendiente para aceptar el MVP completo:
+
+- Normalización de `Resumen Competencia`, `Resumen Margen` y `Resumen Tanda`.
+- Formato y secuencia general de IDs.
+- Tipos, rangos y consistencias semánticas restantes.
+- Fórmulas críticas y tokens de error.
+- Fixtures públicos end-to-end y CI.
+- Retiro del warning provisional de cobertura parcial.
+
+Por lo tanto:
+
+```text
+Matrix Validator implementado y utilizable
+≠
+Matrix Validator MVP terminado
+```
 
 ## 1. Propósito
 
@@ -138,7 +173,7 @@ Casos de uso:
 ### 6.1 Incluido
 
 - Lectura de archivos `.xlsx`.
-- Validación del perfil `full-matrix-v3`.
+- Validación de los perfiles `full-matrix-v3` y `full-matrix-v4`.
 - Validación de hojas requeridas.
 - Validación de nombres y orden de columnas.
 - Detección de columnas faltantes o agregadas.
@@ -188,7 +223,7 @@ No forma parte del MVP 0.1 para evitar ampliar el alcance antes de estabilizar e
 - Un archivo con extensión `.xlsx`.
 - No protegido con contraseña.
 - Legible por la librería seleccionada.
-- Correspondiente al esquema `full-matrix-v3`.
+- Correspondiente a un schema registrado, actualmente `full-matrix-v3` o `full-matrix-v4`.
 
 ### 7.2 Parámetros funcionales
 
@@ -201,7 +236,7 @@ smart-imports validate "Smart Imports - matriz de oportunidades - v3 aut(29).xls
 Opciones mínimas:
 
 ```text
---schema full-matrix-v3
+--schema full-matrix-v3|full-matrix-v4
 --format text|json
 --output <path>
 --strict
@@ -209,7 +244,7 @@ Opciones mínimas:
 
 Comportamiento:
 
-- `--schema`: selecciona el contrato de estructura. En el MVP sólo existe `full-matrix-v3`.
+- `--schema`: selecciona el contrato de estructura. Actualmente se registran `full-matrix-v3` y `full-matrix-v4`.
 - `--format text`: salida humana en consola.
 - `--format json`: reporte estructurado.
 - `--output`: guarda el reporte sin modificar el XLSX.
@@ -234,9 +269,9 @@ El resultado de una ejecución será:
 | `WARNING` | La matriz puede utilizarse, pero requiere revisión. | Resultado `PASS_WITH_WARNINGS`. |
 | `INFO` | Hallazgo descriptivo o métrica. | No cambia el resultado. |
 
-## 10. Hojas del esquema `full-matrix-v3`
+## 10. Hojas de los schemas soportados
 
-### 10.1 Hojas requeridas
+### 10.1 `full-matrix-v3` — hojas requeridas
 
 ```text
 Nichos
@@ -256,7 +291,7 @@ Resumen Tanda
 Criterios
 ```
 
-### 10.2 Política de validación
+### 10.2 Política de validación de v3
 
 - Las 15 hojas deben existir.
 - El orden de hojas se informa como `WARNING` si cambia.
@@ -264,6 +299,26 @@ Criterios
 - Las tres hojas `Resumen *` sólo validan existencia en el MVP.
 - Una hoja adicional produce `WARNING`.
 - Una hoja faltante produce `ERROR`.
+
+### 10.3 `full-matrix-v4`
+
+`full-matrix-v4` conserva las 15 hojas anteriores e incorpora:
+
+```text
+Fuentes
+Evidencia Fuentes
+```
+
+También agrega `Fuente Global ID` en las seis hojas especializadas y campos de migración en `Evidencias`.
+
+La relación canónica de fuentes pasa a ser:
+
+```text
+Evidencia Fuentes.Evidencia ID → Evidencias.Evidencia ID
+Evidencia Fuentes.Fuente ID → Fuentes.Fuente ID
+```
+
+Las tres hojas `Resumen *` continúan validando sólo existencia y son un bloqueo explícito de cierre.
 
 ## 11. Contrato de columnas
 
@@ -639,19 +694,19 @@ Consideraciones:
 
 Una referencia informada que no exista produce `ERROR`.
 
-### 13.2 Evidencias
+### 13.2 Evidencias y fuentes
 
-`Evidencias.Fuente ID` puede referenciar:
+En `full-matrix-v3`, `Evidencias.Fuente ID` conserva el modelo legado.
 
-- IDs internos existentes: `ML-*`, `COMP-*`, `EXT-*`, `COMPEXT-*`, `COT-*`, `MARG-*`.
-- Fuentes de screening no registradas como entidad, por ejemplo `ML-SEARCH-*`.
-- Evidencia estratégica interna, por ejemplo `STRAT-*`.
+En `full-matrix-v4`, la referencia polimórfica deja de ser canónica. La integridad se valida mediante:
 
-Regla del MVP:
+```text
+Fuentes.Fuente ID
+Evidencia Fuentes.Evidencia ID
+Evidencia Fuentes.Fuente ID
+```
 
-- Si el prefijo corresponde a una entidad interna conocida, debe existir en su hoja.
-- Si el prefijo es externo o estratégico permitido, se valida formato no vacío y se genera como máximo una advertencia.
-- Un prefijo desconocido produce `WARNING`, no `ERROR`, hasta que exista un registro central de tipos de fuente.
+Una evidencia debe tener al menos una relación activa. Las fuentes especializadas deben poseer un `Fuente Global ID` válido. Las columnas legadas se conservan temporalmente para auditoría de migración.
 
 ### 13.3 Consistencia de nombres
 
@@ -961,6 +1016,9 @@ El MVP se considera funcionalmente aceptado cuando:
 16. No modifica el archivo validado.
 17. Finaliza con el exit code correcto.
 18. Incluye tests automatizados para todas las reglas bloqueantes del MVP.
+19. Las tres hojas `Resumen *` poseen estructura tabular y contrato ejecutable.
+20. CI valida fixtures públicos sin depender de matrices privadas.
+21. El reporte ya no declara reglas parcialmente implementadas.
 
 ## 24. Casos de prueba derivados del trabajo real
 
@@ -1028,7 +1086,7 @@ El MVP se considera funcionalmente aceptado cuando:
 4. ¿El futuro perfil de importables debe exigir siempre una matriz base?
 5. ¿Los prefijos de fuentes estratégicas deben registrarse en una hoja o en configuración?
 
-Estas preguntas no bloquean la implementación de las validaciones mínimas.
+Las preguntas 1, 3, 4 y 5 ya fueron resueltas por la implementación y los ADR del repositorio privado. Las decisiones restantes deben actualizarse al cerrar el siguiente schema.
 
 ## 28. Documentos relacionados
 

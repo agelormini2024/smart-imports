@@ -2,12 +2,12 @@
 id: docs-03-functional-specifications-readme
 title: 03 — Functional Specifications
 description: Índice de especificaciones funcionales de la futura plataforma Smart Imports.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-24
+updated: 2026-08-03
 tags:
   - smart-imports
   - documentation
@@ -32,22 +32,21 @@ Las especificaciones de esta carpeta deben:
 
 ## 2. Estado
 
-La sección deja de funcionar como placeholder. El primer módulo especificado es el `Matrix Validator`, MVP inicial del Smart Imports Intelligence Engine.
+`SI-FUNC-001` está aprobado. Su implementación es funcional y avanzada, pero el cierre del MVP permanece pendiente por las hojas narrativas, reglas semánticas prioritarias, E2E público y CI.
 
 ## 3. Documentos
 
 | Documento | Estado | Propósito |
 |---|---|---|
-| [SI-FUNC-001 — Matrix Validator](./si-func-001-matrix-validator.md) | Draft | Validar estructura, IDs, relaciones, valores y fórmulas de la matriz operativa. |
+| [SI-FUNC-001 — Matrix Validator](./si-func-001-matrix-validator.md) | Approved / implementation advanced | Validar estructura, IDs, relaciones, valores y fórmulas de la matriz operativa. |
 
 ## 4. Próximos pasos
 
-1. Revisar y aprobar el contrato funcional de `SI-FUNC-001`.
-2. Crear la especificación técnica mínima.
-3. Implementar las reglas bloqueantes.
-4. Incorporar tests derivados de matrices reales.
-5. Validar `v3 aut(29)` como primera matriz de referencia.
-6. Diseñar el perfil para importables después de estabilizar el perfil de matriz completa.
+1. Normalizar las tres hojas `Resumen *`.
+2. Actualizar el contrato con el schema posterior a `full-matrix-v4`.
+3. Acordar el subconjunto semántico bloqueante para la release.
+4. Incorporar fixtures públicos end-to-end.
+5. Cerrar los criterios de aceptación aún pendientes.
 
 ## 5. Documentos relacionados
 
@@ -61,3 +60,4 @@ La sección deja de funcionar como placeholder. El primer módulo especificado e
 |---|---|---|
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
 | 0.2.0 | 2026-07-24 | Se incorpora SI-FUNC-001 como primera especificación funcional del Intelligence Engine. |
+| 0.3.0 | 2026-08-03 | Se registra la implementación avanzada, los schemas v3/v4 y los bloqueadores de cierre. |

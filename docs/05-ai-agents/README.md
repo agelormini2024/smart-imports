@@ -2,12 +2,12 @@
 id: docs-05-ai-agents-readme
 title: 05 — AI Agents
 description: Índice de agentes, automatizaciones, prompts, tools y componentes de inteligencia artificial de Smart Imports.
-version: 0.3.0
+version: 0.4.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-17
+updated: 2026-08-03
 tags:
   - smart-imports
   - ai-agents
@@ -39,7 +39,7 @@ Esta carpeta documenta:
 
 ## 3. Backlog actual
 
-1. Matrix Validator.
+1. Matrix Validator — implementación avanzada; cierre operativo del MVP en curso.
 2. Supplier Response Analyzer.
 3. Contextual RFQ Generator.
 4. Margin and FOB Engine.
@@ -73,3 +73,4 @@ Manual first → standardize → automate
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
 | 0.2.0 | 2026-07-16 | Se incorporó el Intelligence Engine y su backlog inicial. |
 | 0.3.0 | 2026-07-17 | Se agregaron capacidades detectadas durante la selección y validación del Nicho 2. |
+| 0.4.0 | 2026-08-03 | Se registra el Matrix Validator como módulo funcional en fase de cierre. |

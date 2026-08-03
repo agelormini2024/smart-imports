@@ -2,12 +2,12 @@
 id: docs-04-technical-specifications-readme
 title: 04 — Technical Specifications
 description: Índice de especificaciones técnicas de Smart Imports y del Smart Imports Intelligence Engine.
-version: 0.2.1
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-24
+updated: 2026-08-03
 tags:
   - smart-imports
   - documentation
@@ -45,13 +45,13 @@ Documentar:
 
 La sección deja de funcionar como placeholder.
 
-El primer documento técnico corresponde al `Matrix Validator`, primer MVP del Intelligence Engine.
+El primer documento técnico corresponde al `Matrix Validator`. La arquitectura ya fue implementada y evolucionó mediante ADR específicos del repositorio privado.
 
 ## 3. Documentos
 
 | Documento | Estado | Propósito |
 |---|---|---|
-| [SI-TECH-001 — Matrix Validator Architecture](./si-tech-001-matrix-validator-architecture.md) | Review | Definir repositorio, stack, módulos, ports/adapters, schemas, CLI, testing, seguridad y evolución del MVP. |
+| [SI-TECH-001 — Matrix Validator Architecture](./si-tech-001-matrix-validator-architecture.md) | As-built update / review | Definir repositorio, stack, módulos, ports/adapters, schemas, CLI, testing, seguridad y evolución del MVP. |
 
 ## 4. Reglas de esta sección
 
@@ -64,12 +64,12 @@ El primer documento técnico corresponde al `Matrix Validator`, primer MVP del I
 
 ## 5. Próximos pasos
 
-1. Revisar y aprobar `SI-TECH-001`.
-2. Crear el repositorio privado `smart-imports-engine`.
-3. Inicializar Node.js 24 y pnpm 11.
-4. Ejecutar el spike del adapter XLSX.
-5. Implementar las reglas estructurales del Matrix Validator.
-6. Agregar tests sintéticos y tests privados locales.
+1. Normalizar las hojas narrativas y crear el siguiente schema.
+2. Completar reglas semánticas y de fórmulas prioritarias.
+3. Crear fixtures públicos end-to-end.
+4. Activar GitHub Actions.
+5. Eliminar ExcelJS y artefactos de spike.
+6. Preparar la primera release reproducible.
 
 ## 6. Documentos relacionados
 
@@ -84,3 +84,4 @@ El primer documento técnico corresponde al `Matrix Validator`, primer MVP del I
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
 | 0.2.0 | 2026-07-24 | Se incorpora SI-TECH-001 como primera especificación técnica del Intelligence Engine. |
 | 0.2.1 | 2026-07-24 | Se actualiza SI-TECH-001 para utilizar pnpm como package manager. |
+| 0.3.0 | 2026-08-03 | Se registra la arquitectura as-built con SheetJS, schemas v3/v4 y estado de cierre. |

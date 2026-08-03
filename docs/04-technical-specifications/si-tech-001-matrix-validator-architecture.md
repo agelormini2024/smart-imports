@@ -2,12 +2,12 @@
 id: si-tech-001
 title: Matrix Validator Technical Architecture
 description: Arquitectura técnica mínima del Matrix Validator y base inicial del repositorio privado Smart Imports Intelligence Engine.
-version: 0.1.1
+version: 0.2.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-08-03
 tags:
   - technical-specification
   - matrix-validator
@@ -32,6 +32,39 @@ phase: foundation
 # SI-TECH-001 — Arquitectura técnica del Matrix Validator
 
 > El primer módulo debe ser pequeño, verificable y suficientemente modular para convertirse en la base del Intelligence Engine.
+
+## 0. Estado as-built al 2026-08-03
+
+La arquitectura base fue implementada en el repositorio privado `smart-imports-engine`.
+
+```text
+Node.js 24
+TypeScript 6 / ESM
+pnpm 11
+Commander 15
+SheetJS CE 0.20.3
+Vitest 4
+CLI local read-only
+```
+
+Estado verificable:
+
+- `full-matrix-v3 0.1.0` y `full-matrix-v4 0.6.0` registrados en el composition root.
+- `SheetJsWorkbookReader` aceptado mediante ADR-0001.
+- Snapshot sparse y checksum SHA-256 estables.
+- 12 reglas registradas.
+- 23 archivos de test y 78 tests aprobados.
+- `aut29` y `aut30` validados con cero errores.
+- Normalización de fuentes aceptada mediante ADR-0002.
+
+Pendientes técnicos de cierre:
+
+- Hojas narrativas normalizadas.
+- Validación semántica y fórmulas prioritarias.
+- E2E XLSX público.
+- GitHub Actions.
+- Limpieza de ExcelJS y scripts de spike.
+- Primera release.
 
 ## 1. Propósito
 
@@ -99,7 +132,7 @@ El adapter puede utilizar una librería capaz de escribir XLSX, pero la aplicaci
 | Módulos | ESM |
 | Package manager | pnpm 11 |
 | CLI | Commander 15 |
-| XLSX adapter inicial | ExcelJS 4.4 |
+| XLSX adapter operativo | SheetJS CE 0.20.3 |
 | Runtime schemas | Zod 4 |
 | Tests | Vitest 4 |
 | Hash de archivo | `node:crypto` con SHA-256 |
@@ -166,38 +199,25 @@ Reglas:
 - No se incorporan workspaces en el MVP.
 - El paquete no se publica en el registro npm.
 
-### 3.4 ExcelJS
+### 3.4 SheetJS CE
 
-ExcelJS será el adapter XLSX inicial porque permite leer workbooks, worksheets, celdas, estilos y modelos de fórmulas.
+SheetJS Community Edition `0.20.3` es el adapter XLSX operativo detrás de `WorkbookReaderPort`.
 
-Sin embargo, antes de implementar las reglas se realizará un spike técnico obligatorio.
+El spike demostró que:
 
-El spike debe confirmar sobre copias locales:
+1. Lee la matriz real exportada desde Google Sheets.
+2. Preserva hojas, orden, valores, fórmulas, resultados cacheados y formatos.
+3. Distingue string vacío de celda ausente.
+4. Mantiene el SHA-256 del archivo.
+5. Permite construir un `WorkbookSnapshot` sparse.
 
-1. Lectura de las 15 hojas.
-2. Preservación del orden.
-3. Lectura exacta de encabezados.
-4. Distinción entre celda vacía y string vacío.
-5. Lectura de fecha Excel y fecha en texto.
-6. Lectura de fórmulas.
-7. Acceso al resultado cacheado de fórmulas.
-8. Lectura de hojas con espacios y caracteres acentuados.
-9. Tiempo y memoria sobre la matriz vigente.
-10. Ausencia de modificaciones sobre el archivo de entrada.
-
-Si el adapter no cumple estos puntos, debe reemplazarse detrás del puerto `WorkbookReaderPort` sin alterar las reglas de dominio.
+ExcelJS `4.4.0` pudo leer fixtures sintéticos, pero falló sobre la matriz real y fue descartado mediante ADR-0001. Su dependencia y pruebas permanecen temporalmente como evidencia técnica y deben eliminarse antes de la release.
 
 ### 3.5 Zod
 
-Zod se utiliza para validar:
+Zod permanece disponible como dependencia para configuración o contratos runtime futuros.
 
-- Configuración CLI normalizada.
-- Definición de schemas ejecutables.
-- Estructura del reporte JSON.
-- Tipos de hallazgos serializables.
-- Configuración externa futura.
-
-Zod no sustituye las reglas de negocio del Validator. Una referencia rota requiere una regla específica, no sólo un schema de objeto.
+La implementación actual define los schemas ejecutables mediante objetos TypeScript que satisfacen `MatrixSchema`; las reglas de negocio no dependen de Zod. Antes de la release deberá decidirse si la dependencia aporta valor inmediato o puede retirarse temporalmente.
 
 ### 3.6 Commander
 
@@ -234,7 +254,8 @@ smart-imports-engine/
 │   │       └── presentation/
 │   │           └── cli/
 │   ├── schemas/
-│   │   └── full-matrix-v3/
+│   │   ├── full-matrix-v3/
+│   │   └── full-matrix-v4/
 │   └── shared/
 ├── tests/
 │   ├── unit/
@@ -303,7 +324,7 @@ El acceso al XLSX se realiza mediante:
 ```text
 WorkbookReaderPort
 ↑
-ExcelJsWorkbookReader
+SheetJsWorkbookReader
 ```
 
 ### 5.1 Domain
@@ -322,7 +343,7 @@ Contiene conceptos puros:
 - `ReferenceContract`.
 - `ValidationRule`.
 
-No importa ExcelJS, Commander, filesystem ni variables de entorno.
+No importa SheetJS, ExcelJS, Commander, filesystem ni variables de entorno.
 
 ### 5.2 Application
 
@@ -343,7 +364,7 @@ No llama `process.exit`.
 
 Implementa detalles externos:
 
-- Lectura XLSX mediante ExcelJS.
+- Lectura XLSX mediante SheetJS CE.
 - Acceso al filesystem.
 - Hash SHA-256.
 - Escritura opcional del reporte.
@@ -363,7 +384,7 @@ Implementa:
 
 ## 6. Modelo del workbook normalizado
 
-Las reglas no deben depender directamente de objetos ExcelJS.
+Las reglas no deben depender directamente de objetos de SheetJS ni de ninguna biblioteca XLSX.
 
 El adapter transformará el archivo a un modelo mínimo controlado:
 
@@ -400,7 +421,7 @@ interface CellSnapshot {
 
 Ventajas:
 
-- Las reglas pueden probarse sin ExcelJS.
+- Las reglas pueden probarse sin SheetJS ni ExcelJS.
 - El adapter puede reemplazarse.
 - Los fixtures unitarios son objetos pequeños.
 - El reporte conserva ubicación exacta.
@@ -412,11 +433,12 @@ Ventajas:
 
 ```text
 src/schemas/full-matrix-v3/
+src/schemas/full-matrix-v4/
 ```
 
 ### 7.2 Forma inicial
 
-El schema vivirá como objetos TypeScript tipados y validados con Zod.
+Los schemas viven como objetos TypeScript tipados mediante `satisfies MatrixSchema`. La validación runtime externa permanece como evolución posible.
 
 No se utilizará YAML en el MVP.
 
@@ -543,7 +565,7 @@ Debe ser serializable y estable.
 
 No debe contener:
 
-- Objetos de ExcelJS.
+- Objetos de SheetJS, ExcelJS u otra biblioteca XLSX.
 - Stack traces en reportes normales.
 - Valores confidenciales completos cuando no sean necesarios.
 - Paths absolutos en modo público.
@@ -760,8 +782,8 @@ tests/fixtures/private/
 
 Puede contener localmente:
 
-- `aut(28)`.
-- `aut(29)`.
+- `matrix-aut29-google-sheets.xlsx`.
+- `matrix-aut30-fuentes-normalizadas.xlsx`.
 - Copias controladas de matrices reales.
 
 La carpeta se ignora excepto por un README.
@@ -824,7 +846,7 @@ Antes de cada release:
 pnpm audit
 ```
 
-Las actualizaciones mayores se revisan conscientemente, especialmente ExcelJS y Commander.
+Las actualizaciones mayores se revisan conscientemente, especialmente SheetJS, Commander y Vitest.
 
 ## 18. CI inicial
 
@@ -862,68 +884,45 @@ pnpm build
 
 El primer `pnpm install` debe generar `pnpm-lock.yaml`, que se commiteará antes de activar CI.
 
-## 20. Plan de implementación
+## 20. Plan de implementación y estado
 
-### Fase 0 — Foundation
+### Fase 0 — Foundation — COMPLETA
 
-- Crear repositorio privado.
-- Incorporar scaffold.
-- Habilitar pnpm mediante Corepack.
-- Generar `pnpm-lock.yaml`.
-- Confirmar build y tests.
-- Activar CI.
+Repositorio, pnpm, lockfile, TypeScript, CLI y pipeline local operativos.
 
-### Fase 1 — XLSX adapter spike
+### Fase 1 — XLSX adapter — COMPLETA
 
-- Implementar `WorkbookReaderPort`.
-- Implementar adapter ExcelJS.
-- Probar lectura contra matrices privadas.
-- Documentar limitaciones.
-- Decidir `go/no-go` de ExcelJS.
+SheetJS aceptado; ExcelJS descartado para matrices reales.
 
-### Fase 2 — Estructura
+### Fase 2 — Estructura — COMPLETA
 
-- `MV-FILE-*`.
-- `MV-SHEET-*`.
-- `MV-COL-*`.
-- Modelo normalizado.
-- Reporte base.
+Hojas, columnas, posiciones, snapshot y reporte base implementados.
 
-### Fase 3 — IDs y relaciones
+### Fase 3 — IDs y relaciones — AVANZADA
 
-- `MV-ID-*`.
-- `MV-REF-*`.
-- Índices de registros.
-- Caso `EV-0009`.
+Claves primarias, duplicados, FK simples y listas implementadas. Formato y secuencia general de IDs permanecen pendientes.
 
-### Fase 4 — Valores y filas
+### Fase 4 — Valores y filas — AVANZADA
 
-- `MV-VAL-*`.
-- `MV-ROW-*`.
-- Estados por hoja.
-- Fechas y números.
+Vocabularios controlados y valores obligatorios implementados para el modelo normalizado. Tipos, rangos y reglas generales por hoja permanecen pendientes.
 
-### Fase 5 — Fórmulas y consistencia
+### Fase 5 — Fórmulas y consistencia — EN CURSO
 
-- `MV-FORM-*`.
-- `MV-CONS-*`.
-- Casos de Nichos.
-- Tandas.
+Consistencia de fuentes implementada. Fórmulas críticas, tokens de error y otras consistencias permanecen pendientes.
 
-### Fase 6 — Cierre MVP
+### Fase 6 — Hojas Resumen — PENDIENTE BLOQUEANTE
 
-- Text renderer.
-- JSON renderer.
-- Strict mode.
-- Exit codes.
-- Documentación de uso.
-- Validación privada de `aut(29)`.
+Normalizar `Resumen Competencia`, `Resumen Margen` y `Resumen Tanda` y producir un schema posterior.
+
+### Fase 7 — E2E, CI y release — PENDIENTE
+
+Fixtures públicos, GitHub Actions, documentación operativa, limpieza de spikes y release.
 
 ## 21. Criterios técnicos de aceptación
 
 La arquitectura se considera correctamente implementada cuando:
 
-1. El dominio no importa ExcelJS ni Commander.
+1. El dominio no importa SheetJS, ExcelJS ni Commander.
 2. Las reglas se prueban sobre snapshots sintéticos.
 3. El adapter XLSX puede reemplazarse mediante un puerto.
 4. La CLI y JSON producen el mismo resultado.
@@ -940,7 +939,7 @@ La arquitectura se considera correctamente implementada cuando:
 
 | Riesgo | Mitigación |
 |---|---|
-| ExcelJS no expone algún detalle requerido | Spike temprano y puerto reemplazable |
+| SheetJS no calcula fórmulas | Validar fórmula y resultado cacheado; documentar limitación |
 | Fórmulas cacheadas desactualizadas | Informar limitación y no recalcular |
 | Falsos positivos por fórmula relativa | Normalización estructural |
 | Cascada de errores | Dependencias entre fases |
@@ -954,11 +953,11 @@ La arquitectura se considera correctamente implementada cuando:
 
 Las preguntas abiertas de `SI-FUNC-001` se resuelven inicialmente así:
 
-1. **Schema:** objetos TypeScript tipados y validados con Zod.
+1. **Schema:** objetos TypeScript tipados; la validación runtime externa permanece como evolución.
 2. **Columnas nuevas al final:** warning hasta actualizar el schema.
 3. **Checksum:** SHA-256 incluido en el reporte.
 4. **Importables futuros:** requerirán matriz base mediante `--against`.
-5. **Prefijos externos:** configuración versionada; no nueva hoja en el MVP.
+5. **Fuentes:** registro global `Fuentes` y relación `Evidencia Fuentes` desde `full-matrix-v4`.
 6. **Fixtures reales:** locales y fuera de Git.
 7. **Hosting:** no existe en MVP 0.1.
 8. **Base de datos:** no existe en MVP 0.1.
@@ -996,7 +995,8 @@ La base de datos no se elige antes de conocer esos casos de uso.
 - Node.js Releases.
 - TypeScript 6 release notes.
 - Commander documentation.
-- ExcelJS repository and workbook model.
+- SheetJS CE documentation and distribution.
+- ADR-0001 — Uso de SheetJS CE para XLSX.
 - Zod documentation.
 - Vitest documentation.
 

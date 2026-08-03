@@ -2,12 +2,12 @@
 id: si-roadmap-001
 title: Pilot Closure, Niche 2 and Intelligence Engine MVP Roadmap
 description: Plan coordinado para cerrar Energía Solar Portátil, ejecutar Viaje organizado como segundo nicho y construir el primer MVP del Intelligence Engine.
-version: 0.3.0
+version: 0.4.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-07-17
+updated: 2026-08-03
 tags:
   - roadmap
   - portable-solar-energy
@@ -383,7 +383,21 @@ Matrix Validator
 
 ## 6.3 Estado
 
-**Pendiente de especificación técnica detallada e implementación.**
+**Implementación funcional avanzada; cierre operativo pendiente.**
+
+```text
+23 archivos de test
+78 tests aprobados
+full-matrix-v3 y full-matrix-v4
+0 errores sobre aut29 y aut30
+```
+
+Bloqueadores principales:
+
+- Normalización de las tres hojas `Resumen *`.
+- Validaciones semánticas y fórmulas prioritarias.
+- Fixtures públicos end-to-end.
+- CI, limpieza técnica y release.
 
 ## 6.4 Alcance funcional inicial
 
@@ -406,21 +420,23 @@ Matrix Validator
 - Generar advertencias.
 - Producir un resumen de integridad.
 
-## 6.5 Stack preliminar
+## 6.5 Stack implementado
 
 ```text
-TypeScript
-Node.js
-Zod
-ExcelJS
-CLI
-Vitest o Jest
+TypeScript 6
+Node.js 24
+pnpm 11
+Commander 15
+SheetJS CE 0.20.3
+Vitest 4
+CLI local read-only
 ```
 
-## 6.6 Interfaz inicial
+## 6.6 Interfaz actual
 
 ```bash
-npm run validate -- ./data/smart-imports.xlsx
+pnpm build
+node --enable-source-maps dist/cli.js validate   "./data/smart-imports.xlsx"   --schema full-matrix-v4   --format json
 ```
 
 ## 6.7 Ejemplo de salida
@@ -573,19 +589,18 @@ El detalle operativo se mantiene en SI-ROADMAP-002.
 
 ## En curso
 
-- Espera y seguimiento de RFQ solares.
-- Registro operativo de Viaje organizado.
-- Preparación de la primera tanda formal de Demanda.
-- Especificación inicial del Matrix Validator.
+- Cierre operativo del Matrix Validator.
+- Actualización documental de ambos repositorios.
+- Diseño de normalización de `Resumen Competencia`.
+- Cierre de Margen e Importación del piloto solar cuando exista información confiable.
 
 ## Próximo
 
-- Obtener la matriz XLSX más reciente.
-- Registrar Viaje organizado.
-- Procesar publicaciones por subcategoría.
-- Crear productos base y evidencias.
-- Medir tiempos.
-- Implementar validación de hojas, columnas e IDs.
+- Normalizar las tres hojas `Resumen *`.
+- Crear la próxima matriz y `full-matrix-v5`.
+- Completar reglas semánticas prioritarias.
+- Incorporar E2E público y GitHub Actions.
+- Publicar la primera release del Validator.
 
 ## Bloqueado o esperando
 
@@ -593,9 +608,7 @@ El detalle operativo se mantiene en SI-ROADMAP-002.
 - Facilidad de Importación solar definitiva.
 - Ranking final de proveedores solares.
 
-Dependencia principal: respuestas, certificados, packing y condiciones comerciales de proveedores.
-
-## Backlog
+## Backlog posterior al Validator
 
 - Supplier Response Analyzer.
 - Contextual RFQ Generator.
@@ -603,8 +616,6 @@ Dependencia principal: respuestas, certificados, packing y condiciones comercial
 - Scoring and Next Action Engine.
 - RAG de proveedores.
 - Monitoreo automatizado.
-
----
 
 # 10. Criterios de éxito del ciclo
 
@@ -625,16 +636,13 @@ El ciclo se considerará exitoso cuando:
 # 11. Próxima acción principal
 
 ```text
-1. Obtener la matriz XLSX más reciente.
-2. Registrar Viaje organizado como Nicho 2.
-3. Definir la estructura de medición de tiempos.
-4. Recolectar la primera tanda de publicaciones de Mercado Libre.
-5. Procesar Demanda por subcategoría.
-6. Continuar procesando respuestas solares cuando lleguen.
-7. Especificar el contrato de entrada y salida del Matrix Validator.
+1. Actualizar la documentación as-built.
+2. Inventariar Resumen Competencia.
+3. Definir su estructura tabular normalizada.
+4. Validar el diseño antes de migrar las otras hojas Resumen.
+5. Crear aut31 y full-matrix-v5.
+6. Completar E2E, CI y release del Matrix Validator.
 ```
-
----
 
 # 12. Documentos relacionados
 
@@ -655,3 +663,4 @@ El ciclo se considerará exitoso cuando:
 | 0.1.0 | 2026-07-16 | Roadmap inicial de tres líneas y seis semanas. |
 | 0.2.0 | 2026-07-17 | Actualización del estado después de seleccionar Viaje organizado como Nicho 2. La simplificación eliminó contenido estructural que debía conservarse. |
 | 0.3.0 | 2026-07-17 | Fusión de la estructura completa de v0.1.0 con los avances de v0.2.0. Se restauraron planificación, entregables, métricas, alcance del Matrix Validator y separación de responsabilidades documentales. |
+| 0.4.0 | 2026-08-03 | Matrix Validator implementado y validado; roadmap actualizado hacia su cierre operativo. |

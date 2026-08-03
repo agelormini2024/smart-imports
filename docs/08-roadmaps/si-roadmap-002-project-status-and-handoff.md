@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Documento vivo que registra el estado actual, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports en un nuevo chat o sesión.
-version: 0.6.1
+version: 0.7.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-07-24
+updated: 2026-08-03
 tags:
   - status
   - handoff
@@ -66,10 +66,11 @@ GitHub contiene la visión, metodología, decisiones, roadmaps y documentos de i
 
 ### 2.2 Fuente operativa
 
-La matriz vigente al cierre de esta actualización es:
+Las matrices de referencia para continuidad son:
 
 ```text
-Smart Imports - matriz de oportunidades - v3 aut(29).xlsx
+aut29 → full-matrix-v3
+aut30 → full-matrix-v4 con fuentes normalizadas
 ```
 
 Secuencia reciente:
@@ -96,21 +97,21 @@ La corrección no agregó una fila: reemplazó el ID inválido del registro exis
 
 | Campo | Estado |
 |---|---|
-| Fecha de corte | 2026-07-24 |
-| Fase | Foundation avanzada / inicio de implementación del Intelligence Engine |
+| Fecha de corte | 2026-08-03 |
+| Fase | Foundation avanzada / cierre del Matrix Validator MVP |
 | Nichos activos | 2 |
 | Nicho 1 | Energía Solar Portátil — negociación pausada o en espera según proveedor |
 | Nicho 2 | Viaje organizado y equipaje funcional — Demanda y Competencia consolidadas; shortlist de Margen aprobada |
-| Matriz vigente para continuidad | `Smart Imports - matriz de oportunidades - v3 aut(29).xlsx` |
-| Último ID ML | `ML-0069` |
-| Último ID Producto Base | `BASE-TRAVEL-026` |
-| Último ID Competencia ML | `COMP-0069` |
-| Último ID Evidencia | `EVID-0206` |
-| Último ID Evaluación | `EVAL-0010` |
-| Último ID Tiempo | `TIME-0022` |
-| Intelligence Engine | `SI-FUNC-001` aprobado; `SI-DECISION-009` aprobado; `SI-TECH-001` en review |
-| Repositorio de software | `agelormini2024/smart-imports-engine` — privado, pendiente de creación |
-| Próxima acción principal | Revisar SI-TECH-001, crear el repositorio privado y ejecutar el spike XLSX |
+| Matrices de referencia | `aut29` para v3; `aut30` para v4 normalizada |
+| Último ID ML registrado | `ML-0069` |
+| Último ID Producto Base registrado | `BASE-TRAVEL-026` |
+| Último ID Competencia ML registrado | `COMP-0069` |
+| Último ID Evidencia registrado | `EVID-0206` |
+| Último ID Evaluación registrado | `EVAL-0010` |
+| Último ID Tiempo registrado | `TIME-0022` |
+| Matrix Validator | Implementación funcional avanzada; 78 tests; schemas v3/v4 |
+| Repositorio de software | `agelormini2024/smart-imports-engine` — privado y operativo |
+| Próxima acción principal | Normalizar `Resumen Competencia` y avanzar al cierre del MVP |
 
 ## 4. Visión vigente
 
@@ -363,8 +364,8 @@ Regla de avance:
 
 1. Mantener la shortlist como referencia aprobada.
 2. No iniciar RFQ masivo todavía.
-3. Implementar el Matrix Validator mínimo.
-4. Realizar screening público de costos después de validar la matriz con el MVP.
+3. Cerrar operativamente el Matrix Validator.
+4. Realizar screening público de costos según la prioridad comercial y con la matriz validada.
 5. Comparar manual y eléctrica como propuestas distintas.
 6. Registrar la decisión de avance o descarte por subcategoría.
 
@@ -372,139 +373,128 @@ Regla de avance:
 
 ## 8.1 Estado
 
-- Nombre y visión definidos.
-- Estrategia incremental aprobada.
-- Primer MVP seleccionado: `Matrix Validator`.
-- Contrato funcional `SI-FUNC-001` aprobado.
-- Separación de repositorios aprobada en `SI-DECISION-009`.
-- Arquitectura mínima preparada en `SI-TECH-001`.
-- El Engine vivirá en `agelormini2024/smart-imports-engine`, inicialmente privado.
-- El MVP se ejecutará como CLI local, sin hosting ni base de datos.
-- Primer caso real registrado: ID `EV-0009` inválido en `aut(28)`.
-- Matriz corregida en `aut(29)`.
-- Implementación y tests pendientes.
+- Primer MVP: `Matrix Validator`.
+- Repositorio privado creado y consolidado en `main`.
+- CLI local read-only operativa.
+- SheetJS CE aceptado como lector XLSX.
+- `full-matrix-v3 0.1.0` y `full-matrix-v4 0.6.0` registrados.
+- `aut29` y `aut30` validados con cero errores.
+- Fuentes normalizadas mediante `Fuentes` y `Evidencia Fuentes`.
+- 23 archivos de pruebas y 78 tests aprobados.
+- Implementación funcional avanzada; cierre operativo pendiente.
 
-## 8.2 Alcance mínimo del Matrix Validator
+## 8.2 Cobertura actual
 
-- Hojas requeridas.
-- Nombres y orden de columnas.
-- IDs primarios y formatos.
-- IDs duplicados.
-- Secuencias y colisiones.
-- Referencias a `ID Producto Base`.
-- Relaciones entre publicaciones, competencia y evidencias.
-- Valores permitidos.
-- Filas incompletas.
-- Errores bloqueantes y advertencias.
+Implementado:
 
-Stack técnico propuesto en `SI-TECH-001`:
+- Hojas, columnas y posiciones.
+- Claves primarias faltantes y duplicadas.
+- Referencias simples y listas de evidencias.
+- Valores permitidos y obligatorios seleccionados.
+- Consistencia de fuentes globales.
+- Reporte JSON, checksum y exit codes.
 
-```text
-Node.js 24 LTS
-TypeScript 6
-pnpm 11
-Commander 15
-ExcelJS 4.4 — sujeto a spike
-Zod 4
-Vitest 4
-CLI local
-```
+Pendiente:
+
+- Hojas `Resumen *` normalizadas.
+- Formato/secuencia general de IDs.
+- Tipos, rangos y fórmulas prioritarias.
+- E2E público y GitHub Actions.
+- Limpieza de ExcelJS y release.
 
 ## 8.3 Orden recomendado
 
 ```text
-Consolidar Nicho 2
-→ actualizar documentación
-→ especificar Matrix Validator
-→ implementar validaciones mínimas
-→ volver a Margen Potencial
+Actualizar documentación
+→ normalizar Resumen Competencia
+→ extender a las otras hojas Resumen
+→ crear aut31 y full-matrix-v5
+→ completar E2E y CI
+→ publicar release del Matrix Validator
+→ continuar con el siguiente módulo del Engine
 ```
 
 # 9. Trabajo completado desde el último handoff
 
-- Registro operativo completo del Nicho 2.
-- Demanda y Competencia de siete subcategorías.
-- Normalización repetida de productos base y variantes.
-- Registro sistemático de tiempos.
-- Cierre metodológico de una subcategoría por señal insuficiente.
-- Respuesta y pausa del proveedor AT-999.
-- Aclaración comercial y técnica de Shine Solar.
-- Generación de importables compatibles hasta la matriz `v3 aut(25)`.
-- Preparación de `v3 aut(26)` para continuidad.
-- Creación de `SI-RESEARCH-004` y `SI-DECISION-008`.
+- Repositorio privado `smart-imports-engine` creado.
+- Foundation TypeScript con Node 24 y pnpm 11.
+- Spike ExcelJS ejecutado y descartado para matrices reales.
+- SheetJS CE aceptado mediante ADR-0001.
+- Snapshot sparse y verificación SHA-256.
+- CLI, reportes y exit codes implementados.
+- Reglas estructurales, IDs, referencias, valores y consistencia implementadas.
+- Normalización de fuentes aceptada mediante ADR-0002.
+- `aut30` creada con `Fuentes` y `Evidencia Fuentes`.
+- `full-matrix-v4` evolucionado hasta `0.6.0`.
+- 78 tests aprobados.
+- Rama de feature integrada mediante fast-forward a `main`.
+- Documentación de estado y roadmap de cierre preparada.
 
 # 10. Trabajo en curso
 
-- Revisión y aprobación de `SI-TECH-001`.
-- Creación del repositorio privado `smart-imports-engine`.
-- Inicialización del scaffold TypeScript.
-- Spike técnico del adapter ExcelJS.
-- Implementación de validaciones de hojas, columnas, IDs y relaciones.
-- Preparación de fixtures y tests con `aut(28)` y `aut(29)`.
-- Cierre de Margen e Importación del piloto solar.
-- Screening de Margen del Nicho 2, pausado hasta contar con el Validator mínimo.
+- Actualización coordinada de la documentación pública y privada.
+- Diseño de normalización de las tres hojas `Resumen *`.
+- Definición del subconjunto semántico requerido para la release.
+- Preparación de fixtures públicos end-to-end y CI.
+- Cierre de Margen e Importación del piloto solar cuando exista información confiable.
+- Screening de Margen del Nicho 2 según prioridades comerciales.
 
 # 11. Bloqueos y dependencias
 
-| Bloqueo | Dependencia | Acción mientras se espera |
+| Bloqueo | Dependencia | Acción |
 |---|---|---|
-| Margen solar definitivo | Condiciones y documentación coincidente | Mantener estados preliminares y no comprar muestras sin prioridad |
-| AT-999 | Validación técnica real | Mantener pausa; probar unidad local sólo si vuelve a ser prioritario |
-| Paneles Shine Solar | Prioridad comercial y decisión de muestra | Mantener candidato aprobado sin desembolso |
-| Implementación del Matrix Validator | Arquitectura técnica y adapter XLSX validados | Revisar `SI-TECH-001`, crear el repo privado y ejecutar el spike |
-| Screening de Margen del Nicho 2 | Matriz validada y productos priorizados | Preparar datos públicos requeridos; no iniciar RFQ masivo |
+| Cierre del Matrix Validator | Normalización de `Resumen *` | Diseñar `Resumen Competencia` primero y validar el patrón |
+| Release reproducible | Fixtures públicos y CI | Crear E2E sanitizado y GitHub Actions |
+| Retiro del warning provisional | Cobertura acordada completa | Definir DoD y cerrar reglas bloqueantes |
+| Margen solar definitivo | Condiciones y documentación coincidente | Mantener estados preliminares |
+| AT-999 | Validación técnica real | Mantener pausa |
+| Paneles Shine Solar | Prioridad comercial | Mantener candidato sin desembolso |
+| Screening de Margen del Nicho 2 | Prioridad comercial y matriz estable | Mantener shortlist; no iniciar RFQ masivo |
 
 # 12. Prioridades ordenadas
 
-## Prioridad 1 — Arquitectura del Matrix Validator
+## Prioridad 1 — Actualización documental
 
-- Revisar y aprobar `SI-TECH-001`.
-- Confirmar Node.js 24, TypeScript, CLI local y política de datos.
-- Confirmar que el MVP no tendrá hosting ni base de datos.
+- Alinear README, SI-FUNC-001, SI-TECH-001, SI-AGENT-001 y roadmaps.
+- Mantener un estado técnico específico en el repositorio privado.
 
-## Prioridad 2 — Repositorio y foundation técnica
+## Prioridad 2 — Hojas Resumen
 
-- Crear `agelormini2024/smart-imports-engine` como repositorio privado.
-- Incorporar el scaffold inicial.
-- Ejecutar `pnpm install` y commitear `pnpm-lock.yaml`.
-- Activar CI.
-- Ejecutar el spike de ExcelJS.
+- Inventariar `Resumen Competencia`.
+- Diseñar estructura tabular.
+- Migrar y validar.
+- Extender a `Resumen Margen` y `Resumen Tanda`.
 
-## Prioridad 3 — Implementación del Validator
+## Prioridad 3 — Cierre técnico del Validator
 
-- Implementar modelo normalizado.
-- Implementar hojas, columnas, IDs y relaciones.
-- Crear fixtures sintéticos.
-- Ejecutar tests privados contra `aut(28)` y `aut(29)`.
+- Crear `aut31` y `full-matrix-v5`.
+- Completar reglas semánticas prioritarias.
+- Incorporar E2E público y CI.
+- Eliminar ExcelJS y spikes.
+- Retirar el warning provisional y publicar release.
 
 ## Prioridad 4 — Margen Potencial del Nicho 2
 
 - Mantener la shortlist aprobada.
-- Realizar screening público.
-- Separar bomba manual de eléctrica.
+- Realizar screening público según prioridad.
 - Avanzar a RFQ sólo con finalistas.
 
 ## Prioridad 5 — Cierre del piloto solar
 
-- Completar Margen e Importación sólo con información confiable.
+- Completar Margen e Importación únicamente con información confiable.
 - Mantener muestras y proveedores pausados hasta recuperar prioridad.
-
-## Prioridad 6 — Proveedores solares
-
-- Procesar únicamente respuestas que cambien una decisión.
-- No pagar muestras sin prioridad aprobada.
 
 # 13. Protocolo para abrir un nuevo chat
 
 En el nuevo chat:
 
 1. Compartir el repositorio.
-2. Adjuntar `Smart Imports - matriz de oportunidades - v3 aut(29).xlsx`.
+2. Adjuntar la matriz necesaria para la tarea: `aut29` para v3 o `aut30` para v4.
 3. Pedir que se revise primero `SI-ROADMAP-002`.
 4. Pedir que se revise `SI-RESEARCH-004` y `SI-DECISION-008`.
 5. No adjuntar nuevamente todos los PDFs históricos.
 6. Adjuntar sólo documentos o respuestas nuevas que no estén consolidadas.
-7. Confirmar que la próxima acción es revisar SI-TECH-001, crear el repositorio privado y ejecutar el spike XLSX.
+7. Confirmar que la próxima acción es cerrar el Matrix Validator, comenzando por las hojas `Resumen *`.
 
 Documentos mínimos a revisar:
 
@@ -541,15 +531,16 @@ Antes de proponer cambios, revisá especialmente:
 
 Tomá SI-ROADMAP-002 como punto de entrada operativo y el repositorio como fuente documental de verdad.
 
-Voy a adjuntar:
-Smart Imports - matriz de oportunidades - v3 aut(29).xlsx
+Voy a adjuntar la matriz necesaria para la tarea:
+- aut29 para compatibilidad v3, o
+- aut30 para fuentes normalizadas v4
 
 Estado resumido:
 - Nicho 1: Demanda y Competencia cerradas; Margen e Importación siguen en evaluación; proveedores y muestras pausados por prioridad.
 - Nicho 2: Demanda 4 / Confianza Media y Competencia 2 / Confianza Media consolidadas.
 - Shortlist aprobada: kits de envases recargables, compresión manual y eléctrica, y kit textil condicional.
 - No iniciar RFQ masivo antes del screening público.
-- Matrix Validator: SI-FUNC-001 preparado; implementación pendiente.
+- Matrix Validator: implementación funcional avanzada; 78 tests; cierre operativo pendiente.
 - aut(29) corrige el ID EV-0009 por EVAL-0009 reemplazando la fila existente.
 
 Reglas obligatorias:
@@ -562,7 +553,7 @@ Reglas obligatorias:
 - No publicar información comercial confidencial.
 
 Primero confirmá los documentos revisados, la matriz vigente y la próxima acción.
-Después continuá con la revisión o implementación del Matrix Validator.
+Después continuá con el cierre del Matrix Validator, priorizando la normalización de las hojas Resumen.
 ```
 
 # 14. Checklist de cierre de sesión
@@ -576,7 +567,7 @@ Después continuá con la revisión o implementación del Matrix Validator.
 - [x] Registrar decisión nueva.
 - [x] Preparar prompt de continuidad.
 - [ ] Subir documentos actualizados a GitHub.
-- [ ] Utilizar `v3 aut(29)` en el nuevo chat.
+- [ ] Adjuntar `aut29` o `aut30` según el schema requerido.
 
 # 15. Changelog
 
@@ -589,3 +580,4 @@ Después continuá con la revisión o implementación del Matrix Validator.
 | 0.5.0 | 2026-07-24 | Consolidación y shortlist del Nicho 2, matriz v3 aut(29), primer caso real del Validator y creación de SI-FUNC-001. |
 | 0.6.0 | 2026-07-24 | SI-FUNC-001 aprobado, separación de repositorios aprobada y SI-TECH-001 preparado. |
 | 0.6.1 | 2026-07-24 | Se adopta pnpm 11 como package manager del Engine. |
+| 0.7.0 | 2026-08-03 | Handoff actualizado con Matrix Validator funcional, schemas v3/v4, 78 tests y prioridades de cierre. |

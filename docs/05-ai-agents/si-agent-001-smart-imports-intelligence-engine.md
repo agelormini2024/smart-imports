@@ -2,12 +2,12 @@
 id: si-agent-001
 title: Smart Imports Intelligence Engine
 description: Visión funcional, principios de diseño, módulos y requisitos observados del motor de inteligencia comercial de Smart Imports.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-07-17
+updated: 2026-08-03
 tags:
   - intelligence-engine
   - ai-agents
@@ -328,14 +328,23 @@ Tercera ejecución → automatizarlo
 
 ### MVP 1 — Matrix Validator
 
-Validará:
+**Estado:** implementación funcional avanzada / cierre operativo del MVP.
+
+Actualmente valida:
 
 - Hojas requeridas.
 - Nombres y orden de columnas.
 - IDs y relaciones.
 - Evidencias y evaluaciones.
 - Valores permitidos.
-- Posibles duplicaciones.
+- Fuentes normalizadas y relaciones de evidencia.
+- Valores permitidos y obligatorios seleccionados.
+
+Pendientes de cierre:
+
+- Hojas `Resumen *` normalizadas.
+- Reglas semánticas y fórmulas prioritarias.
+- E2E público, CI, limpieza técnica y release.
 
 ### MVP 2 — Supplier Response Analyzer
 
@@ -407,13 +416,12 @@ El motor deberá demostrar que puede:
 
 ## 12. Próximas acciones
 
-1. Especificar e implementar el Matrix Validator.
-2. Medir tiempos durante Demanda y Competencia de Viaje organizado.
-3. Registrar errores repetitivos del procesamiento de publicaciones.
-4. Definir el contrato mínimo del Marketplace Evidence Analyzer.
-5. Diseñar el Supplier Response Analyzer después del ciclo solar de cotizaciones.
-
----
+1. Cerrar el Matrix Validator MVP.
+2. Normalizar las tres hojas `Resumen *`.
+3. Completar E2E, CI y primera release.
+4. Retomar el screening de Margen del Nicho 2.
+5. Seleccionar el segundo módulo del Engine según la fricción e impacto observados.
+6. Mantener Supplier Response Analyzer, RFQ contextual y Margin Engine como módulos posteriores, sin ampliar alcance antes de cerrar el Validator.
 
 ## 13. Documentos relacionados
 
@@ -434,3 +442,4 @@ El motor deberá demostrar que puede:
 |---|---|---|
 | 0.1.0 | 2026-07-16 | Definición inicial de visión, capacidades y primeros MVP. |
 | 0.2.0 | 2026-07-17 | Se incorporaron requisitos descubiertos durante la selección y validación del Nicho 2. |
+| 0.3.0 | 2026-08-03 | Matrix Validator registrado como módulo funcional en fase de cierre operativo. |

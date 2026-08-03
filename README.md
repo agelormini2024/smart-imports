@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and future platform documentation for Smart Imports.
-version: 0.7.1
+version: 0.8.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-24
+updated: 2026-08-03
 tags:
   - smart-imports
   - knowledge-base
@@ -27,12 +27,12 @@ La importación es el primer caso de uso. La visión de largo plazo es construir
 
 ## Estado actual
 
-El proyecto se encuentra en etapa fundacional avanzada y de validación metodológica.
+El proyecto se encuentra en etapa fundacional avanzada. El Matrix Validator ya funciona como primer módulo ejecutable del Intelligence Engine y se encuentra en fase de cierre operativo del MVP.
 
 Existen dos líneas comerciales activas:
 
 1. **Energía Solar Portátil:** Demanda y Competencia revisadas; Margen e Importación continúan en evaluación. Las muestras y negociaciones principales están pausadas hasta que un producto recupere prioridad.
-2. **Viaje organizado y equipaje funcional:** Demanda y Competencia consolidadas. La shortlist para screening de Margen Potencial quedó aprobada y el siguiente hito es implementar el Matrix Validator.
+2. **Viaje organizado y equipaje funcional:** Demanda y Competencia consolidadas. La shortlist para screening de Margen Potencial quedó aprobada; el screening permanece coordinado con el cierre del Matrix Validator.
 
 El principal activo tecnológico de largo plazo continúa siendo el:
 
@@ -44,21 +44,18 @@ Su primer MVP es el `Matrix Validator`.
 
 ### Avances recientes
 
-- Demanda y Competencia ML del Nicho 2 cerradas.
-- Siete subcategorías procesadas mediante tandas reproducibles.
-- Una subcategoría cerrada por señal insuficiente, sin forzar evidencias.
-- Tiempos y fricciones manuales registrados para automatización futura.
-- Proveedor AT-999 pausado hasta validación técnica real.
-- Shine Solar conservado como candidato comercial, con muestras pausadas.
-- Cierre documentado en `SI-RESEARCH-004` y `SI-DECISION-008`.
-- Demanda del Nicho 2 consolidada en `EVAL-0009`: valor 4, confianza Media.
-- Competencia del Nicho 2 consolidada en `EVAL-0010`: valor 2, confianza Media.
-- Shortlist de Margen aprobada para kits de envases, compresión con bomba y un kit textil condicional.
-- Matriz operativa actualizada hasta `v3 aut(29)`.
-- `SI-FUNC-001` aprobado como contrato funcional del Matrix Validator.
-- `SI-DECISION-009` aprobado: documentación pública y Engine privado vivirán en repositorios separados.
-- `SI-TECH-001` creado con la arquitectura técnica mínima del MVP.
-- `SI-ROADMAP-002` actualizado como handoff obligatorio.
+- Repositorio privado `smart-imports-engine` creado e integrado en `main`.
+- Node.js 24, pnpm 11, TypeScript, Commander y Vitest operativos.
+- SheetJS CE `0.20.3` aceptado como lector XLSX después de descartar ExcelJS para matrices reales.
+- `full-matrix-v3 0.1.0` validado contra `aut29`.
+- `full-matrix-v4 0.6.0` validado contra `aut30`.
+- Normalización de fuentes implementada mediante `Fuentes` y `Evidencia Fuentes`.
+- Reglas de estructura, posiciones, claves primarias, referencias, vocabularios y valores obligatorios implementadas.
+- 23 archivos de pruebas y 78 tests aprobados.
+- Ambas matrices privadas finalizan con 0 errores; permanece un warning provisional de cobertura parcial.
+- Principal bloqueo de cierre: normalizar `Resumen Competencia`, `Resumen Margen` y `Resumen Tanda`.
+- Demanda y Competencia ML del Nicho 2 cerradas y shortlist de Margen aprobada.
+- Matriz operativa evolucionada desde `aut29` a `aut30` para incorporar fuentes normalizadas.
 
 ## Estructura del repositorio
 
@@ -133,13 +130,15 @@ Bolsas compactas para ropa usada quedaron en backlog por oferta relevante insufi
 
 ## Próximos pasos
 
-1. Revisar y aprobar `SI-TECH-001 — Matrix Validator Architecture`.
-2. Crear el repositorio privado `smart-imports-engine`.
-3. Inicializar Node.js 24, pnpm 11 y el scaffold TypeScript.
-4. Ejecutar el spike de lectura XLSX.
-5. Implementar validaciones de hojas, columnas, IDs y relaciones.
-6. Agregar fixtures sintéticos y tests privados locales.
-7. Volver al screening público de Margen Potencial del Nicho 2.
+1. Actualizar y alinear la documentación pública y privada.
+2. Normalizar `Resumen Competencia` como primer patrón tabular.
+3. Aplicar el patrón a `Resumen Margen` y `Resumen Tanda`.
+4. Crear la próxima matriz operativa y `full-matrix-v5`.
+5. Completar validaciones semánticas prioritarias.
+6. Crear fixtures públicos end-to-end y GitHub Actions.
+7. Documentar la operación de la CLI y limpiar ExcelJS/spikes.
+8. Retirar el warning provisional y publicar la primera release del Matrix Validator.
+9. Retomar el screening de Margen del Nicho 2 según las prioridades comerciales.
 
 ## Changelog
 
@@ -153,3 +152,4 @@ Bolsas compactas para ropa usada quedaron en backlog por oferta relevante insufi
 | 0.6.0 | 2026-07-24 | Consolidación del Nicho 2, shortlist de Margen, matriz aut(29) y especificación funcional del Matrix Validator. |
 | 0.7.0 | 2026-07-24 | Aprobación de SI-FUNC-001, separación de repositorios y creación de SI-TECH-001. |
 | 0.7.1 | 2026-07-24 | Se adopta pnpm como package manager del Smart Imports Intelligence Engine. |
+| 0.8.0 | 2026-08-03 | Estado as-built del Matrix Validator, schemas v3/v4, 78 tests y roadmap de cierre operativo. |
