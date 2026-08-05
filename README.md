@@ -2,19 +2,18 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 0.9.0
+version: 1.0.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-08-04
+updated: 2026-08-05
 tags:
   - smart-imports
   - knowledge-base
   - business-intelligence
   - documentation
 ---
-
 # Smart Imports
 
 > Primero entender. Después invertir.
@@ -25,35 +24,44 @@ La importación es el primer caso de uso. La visión de largo plazo es una metod
 
 ## Estado actual
 
-El proyecto se encuentra en etapa fundacional avanzada. El primer módulo ejecutable del Smart Imports Intelligence Engine es el `Matrix Validator`, cuyo núcleo técnico está avanzado y se encuentra en cierre operativo del MVP.
+El proyecto se encuentra en etapa fundacional avanzada. El primer módulo ejecutable del Smart Imports Intelligence Engine, el `Matrix Validator`, cerró su MVP técnico y fue publicado como primera release reproducible.
 
 ### Líneas comerciales
 
 1. **Energía Solar Portátil:** Demanda y Competencia revisadas. Margen e Importación continúan preliminares; muestras y negociaciones permanecen pausadas hasta recuperar prioridad.
-2. **Viaje organizado y equipaje funcional:** Demanda y Competencia consolidadas. La shortlist de Margen Potencial está aprobada; el screening continúa coordinado con el cierre del Validator.
+2. **Viaje organizado y equipaje funcional:** Demanda y Competencia consolidadas. La shortlist de Margen Potencial está aprobada y el screening puede retomarse después del cierre documental de la release.
 
 ### Baseline tecnológica
 
 ```text
 Repositorio ejecutable: smart-imports-engine
-Matriz vigente: aut31
-Schema vigente: full-matrix-v5 0.5.0
-Compatibilidad: aut29/v3 y aut30/v4
-Reglas registradas: 17
-Test files: 35
-Tests: 144
-Resultado aut31: 0 errores; 1 warning provisional
+Release: v0.1.0 — Matrix Validator MVP
+Commit de release: 9f4125b
+Matriz vigente: aut32
+Schema vigente: full-matrix-v5 0.7.0
+Compatibilidad histórica: aut29/v3, aut30/v4 y aut31/v5
+Reglas de validación: 19
+Test files: 40
+Tests: 170
+Casos CLI: 5
+Fixtures E2E públicos: 10
+CI remoto: verde
+Resultado aut32: PASS; 0 errores; 0 warnings; 0 limitaciones
 ```
 
-Avances:
+Avances consolidados:
 
-- SheetJS CE `0.20.3` adoptado como lector XLSX.
+- SheetJS CE `0.20.3` adoptado como única implementación XLSX mantenida.
 - Fuentes y evidencias normalizadas.
 - Resúmenes de Competencia, Margen y Tanda normalizados.
 - Seis tablas canónicas/de detalle y tres vistas derivadas incorporadas.
 - Tipos, rangos, obligaciones condicionales y consistencia por fila implementados.
-- 391 celdas derivadas verificadas mediante fórmulas.
-- Repositorio `smart-imports-engine` temporalmente visible para revisión técnica.
+- Formatos declarativos de identificadores y unicidad interna de listas implementados.
+- Cobertura de validación declarada por schema.
+- Reportes JSON y texto, persistencia con `--output` y exit codes documentados.
+- GitHub Actions, casos CLI y fixtures E2E públicos operativos.
+- ExcelJS y los artefactos experimentales retirados.
+- Release pública disponible en `smart-imports-engine/releases/tag/v0.1.0`.
 
 ## Fuentes de verdad
 
@@ -70,11 +78,12 @@ Avances:
 | `docs/standards/si-doc-001-documentation-standards.md` | Estándar documental. |
 | `docs/03-functional-specifications/si-func-001-matrix-validator.md` | Contrato funcional del Matrix Validator. |
 | `docs/04-technical-specifications/si-tech-001-matrix-validator-architecture.md` | Arquitectura técnica base. |
-| `docs/04-technical-specifications/si-tech-002-matrix-validator-as-built.md` | Estado técnico as-built de v5. |
+| `docs/04-technical-specifications/si-tech-002-matrix-validator-as-built.md` | Estado técnico verificable de la release `v0.1.0`. |
 | `docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md` | Visión y módulos del Intelligence Engine. |
 | `docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md` | Plan coordinado histórico. |
 | `docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md` | Punto de entrada operativo vigente. |
-| `docs/09-decision-log/si-decision-010-adopt-aut31-and-full-matrix-v5.md` | Adopción de aut31 y v5. |
+| `docs/09-decision-log/si-decision-010-adopt-aut31-and-full-matrix-v5.md` | Adopción histórica de los resúmenes normalizados en `aut31`. |
+| `docs/09-decision-log/si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md` | Adopción de `aut32` y formalización de la primera release. |
 
 ## Estructura del repositorio
 
@@ -95,14 +104,12 @@ docs/
 
 ## Próximos pasos
 
-1. Completar el checkpoint documental coordinado.
-2. Crear fixtures XLSX públicos end-to-end.
-3. Configurar GitHub Actions.
-4. Completar el manual operativo y limpiar ExcelJS/spikes.
-5. Decidir el alcance bloqueante de agregados e IDs pendientes.
-6. Revisar humanamente los resúmenes migrados de `aut31`.
-7. Retirar el warning provisional y publicar la primera release.
-8. Retomar el screening de Margen del Nicho 2 según prioridad comercial.
+1. Cerrar el checkpoint documental de la release `v0.1.0`.
+2. Retomar el screening público de Margen Potencial para la shortlist del Nicho 2.
+3. Avanzar a RFQ selectivo sólo con referencias que combinen señal económica, logística suficiente y diferenciación defendible.
+4. Revisar humanamente los resúmenes `BORRADOR` de `aut32` antes de marcarlos como `REVISADO`.
+5. Mantener el frente solar pausado hasta recuperar prioridad y datos confiables.
+6. Priorizar trabajo post-MVP del Engine únicamente cuando responda a una necesidad comercial concreta.
 
 ## Changelog
 
@@ -110,3 +117,4 @@ docs/
 |---|---|---|
 | 0.8.0 | 2026-08-03 | Estado as-built de schemas v3/v4 y 78 tests. |
 | 0.9.0 | 2026-08-04 | Adopción de `aut31`, `full-matrix-v5 0.5.0`, 144 tests, resúmenes normalizados y vistas derivadas. |
+| 1.0.0 | 2026-08-05 | Adopción de `aut32`, cierre del Matrix Validator MVP y publicación de la release `v0.1.0`. |

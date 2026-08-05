@@ -2,19 +2,18 @@
 id: docs-08-roadmaps-readme
 title: 08 — Roadmaps
 description: Índice de roadmaps, hitos, estado operativo y handoff de Smart Imports.
-version: 0.4.0
+version: 0.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-08-03
+updated: 2026-08-05
 tags:
   - smart-imports
   - roadmap
   - status
   - milestones
 ---
-
 # 08 — Roadmaps
 
 > El roadmap define hacia dónde avanzamos; el documento de estado indica dónde estamos parados hoy.
@@ -40,13 +39,13 @@ Esta carpeta documenta:
 ## 3. Hito actual
 
 ```text
-Cerrar el Matrix Validator MVP
+Matrix Validator MVP publicado como v0.1.0
 ```
 
 Próximo checkpoint:
 
 ```text
-Normalizar Resumen Competencia y validar el diseño tabular antes de extenderlo a las otras hojas Resumen.
+Cerrar la sincronización documental y retomar el screening de Margen Potencial del Nicho 2.
 ```
 
 ## 4. Punto de entrada operativo
@@ -69,6 +68,7 @@ Actualizar el estado después de:
 - Selección o descarte de nichos.
 - Respuestas relevantes de proveedores.
 - Inicio o finalización de módulos.
+- Publicación de releases que modifiquen la baseline operativa.
 
 ## 6. Documentos relacionados
 
@@ -84,3 +84,4 @@ Actualizar el estado después de:
 | 0.2.0 | 2026-07-16 | Roadmap operativo y documento vivo de estado/handoff. |
 | 0.3.0 | 2026-07-17 | Se registró la selección del Nicho 2 y el inicio de su fase operativa. |
 | 0.4.0 | 2026-08-03 | El hito actual pasa al cierre operativo del Matrix Validator. |
+| 0.5.0 | 2026-08-05 | Se registra la release `v0.1.0` y el regreso a la prioridad comercial del Nicho 2. |

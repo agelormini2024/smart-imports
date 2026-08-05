@@ -2,12 +2,12 @@
 id: si-decision-log-readme
 title: Decision Log Index
 description: Índice de decisiones estratégicas, metodológicas y técnicas de Smart Imports.
-version: 0.4.0
+version: 0.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-24
+updated: 2026-08-05
 tags:
   - decision-log
   - governance
@@ -19,7 +19,6 @@ related:
   - si-vision-001
 phase: foundation
 ---
-
 # 09 — Decision Log
 
 > Una decisión no documentada es una decisión que el proyecto puede olvidar.
@@ -53,7 +52,9 @@ Cada decisión debe explicar contexto, decisión, justificación, alternativas y
 | `si-decision-006` | [`si-decision-006-build-intelligence-engine-incrementally.md`](./si-decision-006-build-intelligence-engine-incrementally.md) | Construir el Intelligence Engine de forma incremental. | `review` |
 | `si-decision-007` | [`si-decision-007-select-travel-organization-as-niche-2.md`](./si-decision-007-select-travel-organization-as-niche-2.md) | Seleccionar Viaje organizado y equipaje funcional como Nicho 2. | Vigente |
 | `si-decision-008` | [`si-decision-008-close-niche-2-demand-and-competition.md`](./si-decision-008-close-niche-2-demand-and-competition.md) | Cerrar Demanda y Competencia del Nicho 2 sin forzar la subcategoría de ropa usada. | `approved` |
-| `si-decision-009` | [`si-decision-009-separate-knowledge-and-engine-repositories.md`](./si-decision-009-separate-knowledge-and-engine-repositories.md) | Separar el repositorio documental público del repositorio privado del Intelligence Engine. | `approved` |
+| `si-decision-009` | [`si-decision-009-separate-knowledge-and-engine-repositories.md`](./si-decision-009-separate-knowledge-and-engine-repositories.md) | Separar el repositorio documental del repositorio ejecutable del Intelligence Engine. | `approved` |
+| `si-decision-010` | [`si-decision-010-adopt-aut31-and-full-matrix-v5.md`](./si-decision-010-adopt-aut31-and-full-matrix-v5.md) | Adoptar `aut31` y los resúmenes normalizados; baseline histórica reemplazada operativamente por SI-DECISION-011. | `approved` |
+| `si-decision-011` | [`si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md`](./si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md) | Adoptar `aut32`, `full-matrix-v5 0.7.0` y la release `v0.1.0`. | `approved` |
 
 ## 3. Cuándo registrar una decisión
 
@@ -84,11 +85,14 @@ Changelog
 - `deprecated`: reemplazada.
 - `archived`: conservada como historial.
 
+Una decisión `approved` puede conservar valor histórico aunque una decisión posterior reemplace su baseline operativa. La relación de reemplazo debe quedar explícita en el documento nuevo y en este índice.
+
 ## 6. Próximas acciones
 
 - Revisar el estado documental de SI-DECISION-005 y SI-DECISION-006.
-- Revisar y aprobar SI-TECH-001.
-- Registrar nuevas decisiones sólo cuando modifiquen arquitectura, seguridad, metodología o roadmap.
+- Registrar nuevas decisiones sólo cuando modifiquen arquitectura, seguridad, metodología, baseline operativa o roadmap.
+- Mantener SI-DECISION-010 como antecedente histórico de la normalización de resúmenes.
+- Usar SI-DECISION-011 como decisión vigente para la matriz y release del Validator.
 
 ## 7. Documentos relacionados
 
@@ -104,3 +108,4 @@ Changelog
 | 0.2.0 | 2026-07-16 | Se actualizó el índice con decisiones reales hasta SI-DECISION-006. |
 | 0.3.0 | 2026-07-23 | Se incorporaron SI-DECISION-007 y SI-DECISION-008. |
 | 0.4.0 | 2026-07-24 | Se incorporó SI-DECISION-009 sobre la separación de repositorios. |
+| 0.5.0 | 2026-08-05 | Se incorporan SI-DECISION-010 y SI-DECISION-011 y se actualiza la baseline operativa. |
