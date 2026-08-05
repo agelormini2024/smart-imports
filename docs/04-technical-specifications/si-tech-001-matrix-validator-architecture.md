@@ -1,13 +1,13 @@
 ---
 id: si-tech-001
 title: Matrix Validator Technical Architecture
-description: Arquitectura técnica mínima del Matrix Validator y base inicial del repositorio privado Smart Imports Intelligence Engine.
-version: 0.2.0
+description: Arquitectura técnica base del Matrix Validator y fundamentos del repositorio Smart Imports Intelligence Engine.
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-24
-updated: 2026-08-03
+updated: 2026-08-04
 tags:
   - technical-specification
   - matrix-validator
@@ -22,6 +22,8 @@ related:
   - si-decision-009
   - si-agent-001
   - si-roadmap-002
+  - si-tech-002
+  - si-decision-010
 audience:
   - founder
   - developer
@@ -33,13 +35,13 @@ phase: foundation
 
 > El primer módulo debe ser pequeño, verificable y suficientemente modular para convertirse en la base del Intelligence Engine.
 
-## 0. Estado as-built al 2026-08-03
+## 0. Estado as-built al 2026-08-04
 
-La arquitectura base fue implementada en el repositorio privado `smart-imports-engine`.
+La arquitectura base está implementada en `smart-imports-engine`. El detalle verificable más reciente se mantiene en `SI-TECH-002`.
 
 ```text
 Node.js 24
-TypeScript 6 / ESM
+TypeScript / ESM
 pnpm 11
 Commander 15
 SheetJS CE 0.20.3
@@ -47,24 +49,15 @@ Vitest 4
 CLI local read-only
 ```
 
-Estado verificable:
+Estado:
 
-- `full-matrix-v3 0.1.0` y `full-matrix-v4 0.6.0` registrados en el composition root.
-- `SheetJsWorkbookReader` aceptado mediante ADR-0001.
-- Snapshot sparse y checksum SHA-256 estables.
-- 12 reglas registradas.
-- 23 archivos de test y 78 tests aprobados.
-- `aut29` y `aut30` validados con cero errores.
-- Normalización de fuentes aceptada mediante ADR-0002.
+- schemas `full-matrix-v3 0.1.0`, `v4 0.6.0` y `v5 0.5.0`;
+- 17 reglas registradas;
+- 35 archivos de test y 144 tests;
+- `aut29`, `aut30` y `aut31` con cero errores;
+- fuentes, resúmenes, semántica por fila y vistas derivadas implementadas.
 
-Pendientes técnicos de cierre:
-
-- Hojas narrativas normalizadas.
-- Validación semántica y fórmulas prioritarias.
-- E2E XLSX público.
-- GitHub Actions.
-- Limpieza de ExcelJS y scripts de spike.
-- Primera release.
+Pendientes: E2E público, CI, manual final, limpieza de ExcelJS, Definition of Done y release.
 
 ## 1. Propósito
 
@@ -100,7 +93,7 @@ smart-imports
 └── Fuente documental de verdad
 
 smart-imports-engine
-├── Private
+├── Source repository
 ├── Código, tests y releases
 └── Producto ejecutable
 ```
@@ -255,7 +248,8 @@ smart-imports-engine/
 │   │           └── cli/
 │   ├── schemas/
 │   │   ├── full-matrix-v3/
-│   │   └── full-matrix-v4/
+│   │   ├── full-matrix-v4/
+│   │   └── full-matrix-v5/
 │   └── shared/
 ├── tests/
 │   ├── unit/
@@ -434,6 +428,7 @@ Ventajas:
 ```text
 src/schemas/full-matrix-v3/
 src/schemas/full-matrix-v4/
+src/schemas/full-matrix-v5/
 ```
 
 ### 7.2 Forma inicial
@@ -902,17 +897,17 @@ Hojas, columnas, posiciones, snapshot y reporte base implementados.
 
 Claves primarias, duplicados, FK simples y listas implementadas. Formato y secuencia general de IDs permanecen pendientes.
 
-### Fase 4 — Valores y filas — AVANZADA
+### Fase 4 — Valores y filas — COMPLETA PARA V5
 
-Vocabularios controlados y valores obligatorios implementados para el modelo normalizado. Tipos, rangos y reglas generales por hoja permanecen pendientes.
+Vocabularios, valores obligatorios, tipos, rangos, obligaciones condicionales y consistencia semántica por fila están implementados en `full-matrix-v5`.
 
-### Fase 5 — Fórmulas y consistencia — EN CURSO
+### Fase 5 — Fórmulas y consistencia — AVANZADA
 
-Consistencia de fuentes implementada. Fórmulas críticas, tokens de error y otras consistencias permanecen pendientes.
+La consistencia de fuentes y las tres vistas derivadas formula-driven están implementadas. Permanecen pendientes los agregados recalculados contra tablas relacionadas y la decisión sobre formato general de IDs.
 
-### Fase 6 — Hojas Resumen — PENDIENTE BLOQUEANTE
+### Fase 6 — Hojas Resumen — COMPLETA TÉCNICAMENTE
 
-Normalizar `Resumen Competencia`, `Resumen Margen` y `Resumen Tanda` y producir un schema posterior.
+`aut31` y `full-matrix-v5 0.5.0` normalizan Competencia, Margen y Tanda mediante cabeceras, tablas de detalle y vistas derivadas. Los registros migrados requieren revisión humana.
 
 ### Fase 7 — E2E, CI y release — PENDIENTE
 

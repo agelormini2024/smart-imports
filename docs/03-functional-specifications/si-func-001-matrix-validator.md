@@ -2,12 +2,12 @@
 id: si-func-001
 title: Matrix Validator Functional Specification
 description: Especificación funcional del primer MVP del Smart Imports Intelligence Engine para validar estructura, IDs, relaciones, valores y fórmulas de la matriz operativa.
-version: 1.1.0
+version: 1.2.0
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-24
-updated: 2026-08-03
+updated: 2026-08-04
 tags:
   - matrix-validator
   - functional-specification
@@ -21,6 +21,8 @@ related:
   - si-decision-006
   - si-decision-009
   - si-tech-001
+  - si-tech-002
+  - si-decision-010
 audience:
   - founder
   - developer
@@ -32,39 +34,36 @@ phase: foundation
 
 > La primera automatización debe proteger la integridad del conocimiento que ya construimos manualmente.
 
-## 0. Estado de implementación al 2026-08-03
+## 0. Estado de implementación al 2026-08-04
 
-El contrato continúa siendo la referencia funcional del MVP, pero su implementación todavía no cubre todos los puntos definidos originalmente.
+El contrato funcional continúa vigente. La implementación ya cubre la normalización estructural y la mayor parte de las validaciones semánticas del MVP.
 
 Implementado y validado:
 
 - Lectura XLSX read-only mediante SheetJS.
 - CLI local y reporte JSON.
-- `full-matrix-v3 0.1.0` y `full-matrix-v4 0.6.0`.
-- Hojas, columnas y posiciones.
-- Claves primarias faltantes y duplicadas.
-- Referencias simples y listas de evidencias.
-- Registro global de fuentes y relación `Evidencia Fuentes`.
-- Vocabularios controlados y valores obligatorios seleccionados.
-- Reglas de consistencia de fuentes.
-- 78 tests automatizados.
-- Validación privada de `aut29` y `aut30` con cero errores.
+- `full-matrix-v3 0.1.0`, `full-matrix-v4 0.6.0` y `full-matrix-v5 0.5.0`.
+- `aut29`, `aut30` y `aut31` con cero errores bloqueantes.
+- Hojas, columnas, posiciones, PK, FK y listas de FK.
+- Fuentes globales y relación `Evidencia Fuentes`.
+- Resúmenes normalizados de Competencia, Margen y Tanda.
+- Tipos, rangos, vocabularios y valores obligatorios.
+- Obligaciones condicionales y consistencia por fila.
+- Vistas derivadas formula-driven y tokens de error visibles.
+- 35 archivos de test y 144 tests.
 
 Pendiente para aceptar el MVP completo:
 
-- Normalización de `Resumen Competencia`, `Resumen Margen` y `Resumen Tanda`.
-- Formato y secuencia general de IDs.
-- Tipos, rangos y consistencias semánticas restantes.
-- Fórmulas críticas y tokens de error.
-- Fixtures públicos end-to-end y CI.
-- Retiro del warning provisional de cobertura parcial.
-
-Por lo tanto:
+- Fixtures XLSX públicos end-to-end y CI.
+- Manual operativo final y limpieza de ExcelJS/spikes.
+- Definición explícita sobre agregados cruzados y formato general de IDs.
+- Revisión humana de los resúmenes migrados.
+- Retiro del warning provisional y primera release.
 
 ```text
-Matrix Validator implementado y utilizable
+Matrix Validator técnicamente avanzado y utilizable
 ≠
-Matrix Validator MVP terminado
+Matrix Validator MVP publicado
 ```
 
 ## 1. Propósito
@@ -173,7 +172,7 @@ Casos de uso:
 ### 6.1 Incluido
 
 - Lectura de archivos `.xlsx`.
-- Validación de los perfiles `full-matrix-v3` y `full-matrix-v4`.
+- Validación de los perfiles `full-matrix-v3`, `full-matrix-v4` y `full-matrix-v5`.
 - Validación de hojas requeridas.
 - Validación de nombres y orden de columnas.
 - Detección de columnas faltantes o agregadas.
@@ -223,7 +222,7 @@ No forma parte del MVP 0.1 para evitar ampliar el alcance antes de estabilizar e
 - Un archivo con extensión `.xlsx`.
 - No protegido con contraseña.
 - Legible por la librería seleccionada.
-- Correspondiente a un schema registrado, actualmente `full-matrix-v3` o `full-matrix-v4`.
+- Correspondiente a un schema registrado: `full-matrix-v3`, `full-matrix-v4` o `full-matrix-v5`.
 
 ### 7.2 Parámetros funcionales
 
@@ -236,7 +235,7 @@ smart-imports validate "Smart Imports - matriz de oportunidades - v3 aut(29).xls
 Opciones mínimas:
 
 ```text
---schema full-matrix-v3|full-matrix-v4
+--schema full-matrix-v3|full-matrix-v4|full-matrix-v5
 --format text|json
 --output <path>
 --strict
@@ -244,7 +243,7 @@ Opciones mínimas:
 
 Comportamiento:
 
-- `--schema`: selecciona el contrato de estructura. Actualmente se registran `full-matrix-v3` y `full-matrix-v4`.
+- `--schema`: selecciona el contrato de estructura. Actualmente se registran `full-matrix-v3`, `full-matrix-v4` y `full-matrix-v5`.
 - `--format text`: salida humana en consola.
 - `--format json`: reporte estructurado.
 - `--output`: guarda el reporte sin modificar el XLSX.
@@ -319,6 +318,29 @@ Evidencia Fuentes.Fuente ID → Fuentes.Fuente ID
 ```
 
 Las tres hojas `Resumen *` continúan validando sólo existencia y son un bloqueo explícito de cierre.
+
+### 10.4 `full-matrix-v5`
+
+`full-matrix-v5` es el contrato de `aut31`. Conserva la normalización de fuentes de v4 e incorpora seis tablas canónicas/de detalle y tres vistas ejecutivas:
+
+```text
+Resumen Competencia
+Resumen Competencia Segmentos
+Resumen Competencia Vista
+Resumen Margen
+Resumen Margen Productos
+Resumen Margen Vista
+Resumen Tanda
+Resumen Tanda Etapas
+Resumen Tanda Vista
+```
+
+En v5:
+
+- las cabeceras y tablas de detalle son fuentes de verdad;
+- las vistas deben contener fórmulas directas hacia la misma fila de la tabla canónica;
+- los IDs, relaciones, valores, tipos, rangos y condiciones son validables;
+- las hojas `* Legacy` quedan fuera del contrato operativo.
 
 ## 11. Contrato de columnas
 
@@ -1086,7 +1108,7 @@ El MVP se considera funcionalmente aceptado cuando:
 4. ¿El futuro perfil de importables debe exigir siempre una matriz base?
 5. ¿Los prefijos de fuentes estratégicas deben registrarse en una hoja o en configuración?
 
-Las preguntas 1, 3, 4 y 5 ya fueron resueltas por la implementación y los ADR del repositorio privado. Las decisiones restantes deben actualizarse al cerrar el siguiente schema.
+Las preguntas 1, 3, 4 y 5 ya fueron resueltas por la implementación y los ADR del repositorio de software. Las decisiones restantes deben actualizarse al cerrar el siguiente schema.
 
 ## 28. Documentos relacionados
 
@@ -1102,3 +1124,5 @@ Las preguntas 1, 3, 4 y 5 ya fueron resueltas por la implementación y los ADR d
 |---|---|---|
 | 0.1.0 | 2026-07-24 | Primera especificación funcional del Matrix Validator basada en la matriz v3 y en errores observados durante los Nichos 1 y 2. |
 | 1.0.0 | 2026-07-24 | Especificación funcional aprobada por el Founder. Las decisiones de repositorio y arquitectura mínima se derivan a SI-DECISION-009 y SI-TECH-001. |
+| 1.1.0 | 2026-08-03 | Estado as-built de v3/v4 y normalización de fuentes. |
+| 1.2.0 | 2026-08-04 | Adopción de aut31/v5, tipos, rangos, consistencia y vistas derivadas. |
