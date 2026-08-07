@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.0.0
+version: 1.1.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-08-05
+updated: 2026-08-07
 tags:
   - smart-imports
   - knowledge-base
@@ -24,44 +24,56 @@ La importación es el primer caso de uso. La visión de largo plazo es una metod
 
 ## Estado actual
 
-El proyecto se encuentra en etapa fundacional avanzada. El primer módulo ejecutable del Smart Imports Intelligence Engine, el `Matrix Validator`, cerró su MVP técnico y fue publicado como primera release reproducible.
+El proyecto se encuentra en etapa fundacional avanzada, con el primer módulo ejecutable cerrado y el foco nuevamente puesto en validar el método comercial de punta a punta.
 
 ### Líneas comerciales
 
-1. **Energía Solar Portátil:** Demanda y Competencia revisadas. Margen e Importación continúan preliminares; muestras y negociaciones permanecen pausadas hasta recuperar prioridad.
-2. **Viaje organizado y equipaje funcional:** Demanda y Competencia consolidadas. La shortlist de Margen Potencial está aprobada y el screening puede retomarse después del cierre documental de la release.
+1. **Energía Solar Portátil:** primera ejecución integral del método. Demanda y Competencia fueron revisadas; la línea permanece en pausa selectiva y no se fuerza una conclusión positiva.
+2. **Viaje organizado y equipaje funcional:** Demanda y Competencia cerradas; screening de proveedores/origen e Import Cost Headroom completados; próxima etapa: Landed Cost de los candidatos sobrevivientes.
 
 ### Baseline tecnológica
 
 ```text
 Repositorio ejecutable: smart-imports-engine
-Release: v0.1.0 — Matrix Validator MVP
-Commit de release: 9f4125b
-Matriz vigente: aut32
+Matrix Validator: v0.1.0 publicado
+Baseline de release: aut32
+Matriz operativa vigente: aut33
 Schema vigente: full-matrix-v5 0.7.0
-Compatibilidad histórica: aut29/v3, aut30/v4 y aut31/v5
-Reglas de validación: 19
 Test files: 40
 Tests: 170
-Casos CLI: 5
-Fixtures E2E públicos: 10
-CI remoto: verde
-Resultado aut32: PASS; 0 errores; 0 warnings; 0 limitaciones
+CLI: 5 casos operativos
+E2E público: 10 fixtures XLSX
+CI: verde
+Resultado aut33: PASS / 0 errores / 0 warnings / 0 limitaciones
+SHA-256 aut33: fb1905260ad24fd4bb0a8284082f1bebb92473de99c46963fb65c1228837bfd1
 ```
 
-Avances consolidados:
+### Estado comercial del Nicho 2
 
-- SheetJS CE `0.20.3` adoptado como única implementación XLSX mantenida.
-- Fuentes y evidencias normalizadas.
-- Resúmenes de Competencia, Margen y Tanda normalizados.
-- Seis tablas canónicas/de detalle y tres vistas derivadas incorporadas.
-- Tipos, rangos, obligaciones condicionales y consistencia por fila implementados.
-- Formatos declarativos de identificadores y unicidad interna de listas implementados.
-- Cobertura de validación declarada por schema.
-- Reportes JSON y texto, persistencia con `--output` y exit codes documentados.
-- GitHub Actions, casos CLI y fixtures E2E públicos operativos.
-- ExcelJS y los artefactos experimentales retirados.
-- Release pública disponible en `smart-imports-engine/releases/tag/v0.1.0`.
+El screening de origen incorporó **Import Cost Headroom**, definido como cuánto puede crecer el costo de origen antes de dejar de cumplir el margen objetivo. Es un filtro de priorización, no una estimación del costo real de importación.
+
+Candidatos actuales para Landed Cost:
+
+| Prioridad | Producto | Headroom aprox. | Estado |
+|---:|---|---:|---|
+| 1 | `BASE-TRAVEL-024` | `5,80x` | Esperando FOB para 500/1.000 sets |
+| 2 | `BASE-TRAVEL-022` | `3,19x` | Profundizar |
+| 3 | `BASE-TRAVEL-010` | `2,22x` | Profundizar |
+| 4 | `BASE-TRAVEL-018` | `2,06x` | Profundizar |
+| Condicional | `BASE-TRAVEL-023` | `3,15x` si se confirma composición | Esperar dato |
+
+`BASE-TRAVEL-021`, `003` y `013` quedaron frágiles bajo el screening de headroom. Las fuentes no comparables no se fuerzan dentro de una simulación.
+
+No se adopta un multiplicador genérico como sustituto del Landed Cost. La referencia anecdótica `FOB × 2,60` de un importador de sillas de oficina se conserva sólo como stress test externo y específico de esa categoría.
+
+### Definiciones post-Nicho 2
+
+Después de completar el circuito del Nicho 2 se formalizarán dos necesidades descubiertas durante el trabajo real:
+
+- un modelo normalizado de `Landed Cost`, `Landed Cost Componentes` y `Resumen Landed Cost`;
+- un módulo de Smart Imports Engine con nombre de trabajo `Decision Reporter`, capaz de generar un reporte ejecutivo determinístico a partir de una matriz validada.
+
+La matriz seguirá siendo la fuente de verdad. El reporte será una vista derivada y no una base de datos paralela.
 
 ## Fuentes de verdad
 
@@ -82,8 +94,10 @@ Avances consolidados:
 | `docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md` | Visión y módulos del Intelligence Engine. |
 | `docs/08-roadmaps/si-roadmap-001-pilot-closure-niche-2-engine-mvp.md` | Plan coordinado histórico. |
 | `docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md` | Punto de entrada operativo vigente. |
-| `docs/09-decision-log/si-decision-010-adopt-aut31-and-full-matrix-v5.md` | Adopción histórica de los resúmenes normalizados en `aut31`. |
-| `docs/09-decision-log/si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md` | Adopción de `aut32` y formalización de la primera release. |
+| `docs/09-decision-log/si-decision-010-adopt-aut31-and-full-matrix-v5.md` | Adopción histórica de aut31 y v5. |
+| `docs/09-decision-log/si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md` | Baseline aut32 y cierre del Matrix Validator v0.1.0. |
+| `docs/09-decision-log/si-decision-012-adopt-aut33-and-headroom-first-margin-screening.md` | aut33 e Import Cost Headroom como gate previo al Landed Cost. |
+| `docs/09-decision-log/si-decision-013-add-decision-reporting-layer-after-niche-2.md` | Capa de reporting ejecutivo post-Nicho 2. |
 
 ## Estructura del repositorio
 
@@ -104,12 +118,16 @@ docs/
 
 ## Próximos pasos
 
-1. Cerrar el checkpoint documental de la release `v0.1.0`.
-2. Retomar el screening público de Margen Potencial para la shortlist del Nicho 2.
-3. Avanzar a RFQ selectivo sólo con referencias que combinen señal económica, logística suficiente y diferenciación defendible.
-4. Revisar humanamente los resúmenes `BORRADOR` de `aut32` antes de marcarlos como `REVISADO`.
-5. Mantener el frente solar pausado hasta recuperar prioridad y datos confiables.
-6. Priorizar trabajo post-MVP del Engine únicamente cuando responda a una necesidad comercial concreta.
+1. Esperar la respuesta FOB de Xichen para `BASE-TRAVEL-024` en escalas de 500 y 1.000 sets.
+2. Construir el primer Landed Cost defendible y compararlo contra el headroom `5,80x`.
+3. Alimentar `Simulación Margen` sólo cuando exista un costo puesto suficientemente defendible.
+4. Repetir Landed Cost únicamente con los candidatos que sobrevivan el screening.
+5. Cerrar el circuito end-to-end del Nicho 2.
+6. Realizar retrospectiva metodológica del Nicho 2.
+7. Formalizar el modelo normalizado de Landed Cost si el circuito manual lo confirma.
+8. Diseñar el contrato funcional de `Decision Reporter`.
+9. Actualizar schema/Engine sólo a partir de requisitos confirmados por el proceso manual.
+10. Iniciar la investigación de nuevos nichos con el método ya calibrado.
 
 ## Changelog
 
@@ -118,3 +136,4 @@ docs/
 | 0.8.0 | 2026-08-03 | Estado as-built de schemas v3/v4 y 78 tests. |
 | 0.9.0 | 2026-08-04 | Adopción de `aut31`, `full-matrix-v5 0.5.0`, 144 tests, resúmenes normalizados y vistas derivadas. |
 | 1.0.0 | 2026-08-05 | Adopción de `aut32`, cierre del Matrix Validator MVP y publicación de la release `v0.1.0`. |
+| 1.1.0 | 2026-08-07 | Matrix Validator v0.1.0 cerrado, aut33 PASS, Import Cost Headroom, preparación de Landed Cost y definición de Decision Reporter. |

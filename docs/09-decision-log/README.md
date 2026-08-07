@@ -7,7 +7,7 @@ status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-08-05
+updated: 2026-08-07
 tags:
   - decision-log
   - governance
@@ -55,6 +55,8 @@ Cada decisión debe explicar contexto, decisión, justificación, alternativas y
 | `si-decision-009` | [`si-decision-009-separate-knowledge-and-engine-repositories.md`](./si-decision-009-separate-knowledge-and-engine-repositories.md) | Separar el repositorio documental del repositorio ejecutable del Intelligence Engine. | `approved` |
 | `si-decision-010` | [`si-decision-010-adopt-aut31-and-full-matrix-v5.md`](./si-decision-010-adopt-aut31-and-full-matrix-v5.md) | Adoptar `aut31` y los resúmenes normalizados; baseline histórica reemplazada operativamente por SI-DECISION-011. | `approved` |
 | `si-decision-011` | [`si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md`](./si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md) | Adoptar `aut32`, `full-matrix-v5 0.7.0` y la release `v0.1.0`. | `approved` |
+| `si-decision-012` | [`si-decision-012-adopt-aut33-and-headroom-first-margin-screening.md`](./si-decision-012-adopt-aut33-and-headroom-first-margin-screening.md) | Adoptar `aut33` e Import Cost Headroom como gate previo al Landed Cost. | `approved` |
+| `si-decision-013` | [`si-decision-013-add-decision-reporting-layer-after-niche-2.md`](./si-decision-013-add-decision-reporting-layer-after-niche-2.md) | Diseñar una capa de reporting ejecutivo derivada de la matriz después del Nicho 2. | `approved` |
 
 ## 3. Cuándo registrar una decisión
 
