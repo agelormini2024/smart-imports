@@ -39,13 +39,16 @@ Esta carpeta documenta:
 ## 3. Hito actual
 
 ```text
-Matrix Validator MVP publicado como v0.1.0
+Nicho 3 — Fase 7: shortlist pre-origen
 ```
 
-Próximo checkpoint:
+Checkpoint completado:
 
 ```text
-Cerrar la sincronización documental y retomar el screening de Margen Potencial del Nicho 2.
+Fases 0–6 cerradas
+→ 8 Productos Base
+→ aut34 materializada
+→ Matrix Validator PASS limpio
 ```
 
 ## 4. Punto de entrada operativo
@@ -84,4 +87,5 @@ Actualizar el estado después de:
 | 0.2.0 | 2026-07-16 | Roadmap operativo y documento vivo de estado/handoff. |
 | 0.3.0 | 2026-07-17 | Se registró la selección del Nicho 2 y el inicio de su fase operativa. |
 | 0.4.0 | 2026-08-03 | El hito actual pasa al cierre operativo del Matrix Validator. |
+| 0.5.0 | 2026-09-11 | Matrix Validator cerrado; el hito activo pasa a Fase 7 del Nicho 3. |
 | 0.5.0 | 2026-08-05 | Se registra la release `v0.1.0` y el regreso a la prioridad comercial del Nicho 2. |

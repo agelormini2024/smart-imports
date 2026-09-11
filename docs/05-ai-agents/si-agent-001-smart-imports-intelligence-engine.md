@@ -7,7 +7,7 @@ status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-08-07
+updated: 2026-09-11
 tags:
   - intelligence-engine
   - ai-agents
@@ -15,6 +15,8 @@ tags:
   - business-intelligence
   - platform
 related:
+  - si-decision-014
+  - si-research-005
   - si-func-001
   - si-tech-002
   - si-roadmap-001
@@ -69,20 +71,19 @@ Fuentes
 ## 4. Estado del MVP 1 — Matrix Validator
 
 ```text
-Estado: v0.1.0 publicado / MVP funcional cerrado
-Aplicación: 0.1.0
+Estado: cerrado y publicado
+Application: 0.1.0
+Tag: v0.1.0
 Schema operativo: full-matrix-v5 0.7.0
-Baseline de release: aut32 / PASS
-Matriz operativa vigente: aut33 / PASS
+Baseline técnica: aut32 / PASS
+Snapshot comercial vigente: aut34 / PASS
 Tests: 40 archivos / 170 tests
-CLI: 5 casos operativos
-E2E público: 10 fixtures XLSX
+CLI: 5 casos
+E2E público: 10 fixtures
 CI: verde
 ```
 
-`aut32` queda como baseline técnico del release. `aut33` es la matriz comercial vigente y fue validada con cero errores, warnings y limitaciones.
-
-El Validator protege la integridad estructural y semántica de la matriz antes de utilizarla como fuente de trabajo. No debe reabrirse su desarrollo sin una necesidad concreta descubierta por el circuito comercial.
+El Validator protege la integridad estructural y semántica de la matriz y permanece cerrado mientras no exista un requerimiento comercial bloqueante.
 
 ## 5. Capacidades objetivo
 
@@ -124,64 +125,46 @@ La matriz validada seguirá siendo la fuente de verdad. Los reportes serán vist
 
 ## 6. Módulos
 
-| Orden conceptual | Módulo | Propósito | Estado |
-|---:|---|---|---|
-| 1 | Matrix Validator | Integridad de la matriz. | `v0.1.0` cerrado |
-| 2 | Supplier Response Analyzer | Extraer datos, faltantes y contradicciones. | Candidato |
-| 3 | Contextual RFQ Generator | RFQ y follow-ups adaptados. | Candidato |
-| 4 | Landed Cost and Margin Engine | Headroom, costo puesto, margen, ROI y FOB objetivo. | Contrato en descubrimiento manual |
-| 5 | Scoring and Next Action Engine | Score, confianza y próxima acción. | Candidato |
-| 6 | Decision Reporter | Reporte ejecutivo determinístico desde una matriz validada. | Diseñar post-Nicho 2 |
+| Estado | Módulo | Propósito |
+|---|---|---|
+| Cerrado | Matrix Validator v0.1.0 | Integridad de la matriz. |
+| Candidato | Supplier Response Analyzer | Extraer datos, faltantes y contradicciones. |
+| Candidato | Contextual RFQ Generator | RFQ y follow-ups adaptados. |
+| Futuro | Landed Cost / Margin Engine | Costo puesto, margen, ROI y sensibilidad. |
+| Futuro | Scoring and Next Action Engine | Score, confianza y próxima acción. |
 
-Candidatos adicionales: Marketplace Evidence Analyzer, Niche Candidate Normalizer, Claims Validation Gate, Product Quality Specification Builder y Compatibility and Dimension Recommender.
+Requisitos/capacidades descubiertos por Method v2 y el Nicho 3:
 
-El orden conceptual no obliga a implementar todos los módulos ni fija prioridad definitiva. Cada módulo debe nacer de una fricción observada y un contrato validado manualmente.
+- Niche / Architecture / Product Base Normalizer.
+- Competition Relation Classifier: `DIRECTA | INDIRECTA | SUSTITUTO | BENCHMARK`.
+- Claims Validation Gate.
+- Connectivity Compatibility Gate.
+- Service Continuity Risk Analyzer.
+- Measurement Validity Gate.
+- Product Quality Specification Builder.
+- Brand Potential Evaluator.
+
+Estas capacidades son backlog funcional. No implican implementación inmediata.
 
 ## 7. Estrategia de construcción
 
 ```text
 Primera ejecución → descubrir
 Segunda ejecución → estandarizar
-Tercera ejecución → automatizar
+Tercera ejecución → tensionar el método con mayor complejidad
+Luego → automatizar sólo capacidades estabilizadas
 ```
 
 - Energía Solar Portátil: primera ejecución integral.
-- Viaje organizado y equipaje funcional: segunda ejecución y prueba de repetibilidad.
-- Matrix Validator: primera automatización surgida de errores reales.
-
-El circuito comercial vigente del Nicho 2 es:
-
-```text
-Demanda
-→ Competencia
-→ screening de proveedores/origen
-→ comparabilidad
-→ Import Cost Headroom
-→ Landed Cost sólo para sobrevivientes
-→ Simulación Margen
-→ shortlist final
-→ RFQ profundo / muestra / validación real
-```
-
-No se utilizará un multiplicador genérico como sustituto del Landed Cost. Los benchmarks empíricos externos podrán utilizarse únicamente como stress tests y deberán conservar explícitamente su categoría, contexto y nivel de confianza.
-
-Mientras el contrato de Landed Cost siga en descubrimiento, `full-matrix-v5 0.7.0` debe permanecer estable. Si el circuito del Nicho 2 confirma nuevas hojas canónicas, se evaluará una nueva versión de schema después de la retrospectiva.
+- Viaje organizado: segunda ejecución y estandarización de matriz/evidencia.
+- Mascotas — cuidado, bienestar y tecnología: tercera ejecución; incorpora IoT, seguridad, software, servicios recurrentes y Wellness.
+- Matrix Validator: primera automatización surgida de errores reales y ya cerrada como v0.1.0.
 
 ## 8. Próximas acciones
 
-1. Esperar la respuesta FOB de Xichen para `BASE-TRAVEL-024` en 500 y 1.000 sets.
-2. Construir manualmente el primer Landed Cost defendible de `BASE-TRAVEL-024`.
-3. Comparar el Landed Cost estimado contra el Headroom aproximado de `5,80x`.
-4. Alimentar `Simulación Margen` sólo después de tener un costo puesto suficientemente defendible.
-5. Repetir Landed Cost únicamente con los candidatos que sobrevivan el screening.
-6. Cerrar el circuito end-to-end del Nicho 2.
-7. Realizar retrospectiva metodológica del Nicho 2.
-8. Si la experiencia lo confirma, formalizar `Landed Cost`, `Landed Cost Componentes` y `Resumen Landed Cost`.
-9. Diseñar el contrato funcional de `Decision Reporter` después de esa retrospectiva.
-10. Modificar schema/Engine sólo a partir de requisitos confirmados y luego iniciar nuevos nichos con el método calibrado.
-
-## 9. Changelog
-
-| Version | Date | Change |
-|---|---|---|
-| 0.4.0 | 2026-08-07 | Matrix Validator v0.1.0 cerrado; aut33 PASS; Headroom, Landed Cost y Decision Reporter incorporados como definiciones del siguiente ciclo. |
+1. Ejecutar Fase 7 — shortlist pre-origen del Nicho 3.
+2. Medir la siguiente fricción operativa de mayor impacto.
+3. Mantener Matrix Validator v0.1.0 cerrado.
+4. No implementar Matrix vNext hasta que Familia/Arquitectura, Tipo Competencia o Next Action sean bloqueantes.
+5. Mantener Landed Cost, Supplier Response Analyzer, RFQ contextual, conectividad, continuidad de servicio y validez de mediciones como capacidades candidatas hasta que el trabajo real justifique su implementación.
+6. Mantener Google Sheets + XLSX como sistema operativo mientras no exista una alternativa claramente superior.

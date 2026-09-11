@@ -7,7 +7,7 @@ status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-08-03
+updated: 2026-09-11
 tags:
   - smart-imports
   - ai-agents
@@ -39,19 +39,22 @@ Esta carpeta documenta:
 
 ## 3. Backlog actual
 
-1. Matrix Validator — implementación avanzada; cierre operativo del MVP en curso.
+1. Matrix Validator — **cerrado / v0.1.0**.
 2. Supplier Response Analyzer.
 3. Contextual RFQ Generator.
-4. Margin and FOB Engine.
+4. Landed Cost / Margin Engine.
 5. Scoring and Next Action Engine.
 6. Marketplace Evidence Analyzer.
-7. Niche Candidate Normalizer.
+7. Niche / Architecture / Product Base Normalizer.
 8. Claims Validation Gate.
-9. Product Quality Specification Builder.
-10. RAG de proveedores y documentos.
-11. Monitoreo y extracción asistida.
+9. Connectivity Compatibility Gate.
+10. Service Continuity Risk Analyzer.
+11. Measurement Validity Gate.
+12. Product Quality Specification Builder.
+13. RAG de proveedores y documentos.
+14. Monitoreo y extracción asistida.
 
-El orden posterior al Matrix Validator deberá ajustarse según el tiempo, errores y riesgos observados durante la investigación de Viaje organizado.
+La prioridad post-Validator se decidirá después de observar la fricción real de las siguientes fases comerciales, no por orden teórico.
 
 ## 4. Principio vigente
 
@@ -74,3 +77,4 @@ Manual first → standardize → automate
 | 0.2.0 | 2026-07-16 | Se incorporó el Intelligence Engine y su backlog inicial. |
 | 0.3.0 | 2026-07-17 | Se agregaron capacidades detectadas durante la selección y validación del Nicho 2. |
 | 0.4.0 | 2026-08-03 | Se registra el Matrix Validator como módulo funcional en fase de cierre. |
+| 0.4.0 | 2026-09-11 | Se actualizó el backlog con requisitos descubiertos en Nicho 3 y se marcó Matrix Validator como cerrado. |

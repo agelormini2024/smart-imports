@@ -7,7 +7,7 @@ status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-08-07
+updated: 2026-09-11
 tags:
   - decision-log
   - governance
@@ -57,6 +57,7 @@ Cada decisión debe explicar contexto, decisión, justificación, alternativas y
 | `si-decision-011` | [`si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md`](./si-decision-011-adopt-aut32-and-release-matrix-validator-v0.1.0.md) | Adoptar `aut32`, `full-matrix-v5 0.7.0` y la release `v0.1.0`. | `approved` |
 | `si-decision-012` | [`si-decision-012-adopt-aut33-and-headroom-first-margin-screening.md`](./si-decision-012-adopt-aut33-and-headroom-first-margin-screening.md) | Adoptar `aut33` e Import Cost Headroom como gate previo al Landed Cost. | `approved` |
 | `si-decision-013` | [`si-decision-013-add-decision-reporting-layer-after-niche-2.md`](./si-decision-013-add-decision-reporting-layer-after-niche-2.md) | Diseñar una capa de reporting ejecutivo derivada de la matriz después del Nicho 2. | `approved` |
+| `si-decision-014` | [`si-decision-014-adopt-niche3-method-v2-and-aut34.md`](./si-decision-014-adopt-niche3-method-v2-and-aut34.md) | Adoptar Method v2 y `aut34`, manteniendo v5 estable hasta que Matrix vNext sea bloqueante. | `approved` |
 
 ## 3. Cuándo registrar una decisión
 
@@ -111,3 +112,4 @@ Una decisión `approved` puede conservar valor histórico aunque una decisión p
 | 0.3.0 | 2026-07-23 | Se incorporaron SI-DECISION-007 y SI-DECISION-008. |
 | 0.4.0 | 2026-07-24 | Se incorporó SI-DECISION-009 sobre la separación de repositorios. |
 | 0.5.0 | 2026-08-05 | Se incorporan SI-DECISION-010 y SI-DECISION-011 y se actualiza la baseline operativa. |
+| 0.5.0 | 2026-09-11 | Se actualizó el índice vigente y se incorporó SI-DECISION-014 para Method v2 y `aut34`. |

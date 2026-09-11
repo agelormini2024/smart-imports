@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 0.10.0
+version: 1.0.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-08-07
+updated: 2026-09-11
 tags:
   - status
   - handoff
@@ -19,18 +19,18 @@ related:
   - si-func-001
   - si-tech-001
   - si-tech-002
-  - si-decision-009
   - si-decision-010
   - si-decision-011
-  - si-decision-012
-  - si-decision-013
+  - si-research-005
+  - si-decision-014
 audience:
   - founder
   - partner
   - developer
   - assistant
-phase: foundation
+phase: research
 ---
+
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
 > Punto de entrada operativo obligatorio para retomar el proyecto sin depender de un chat específico.
@@ -44,337 +44,239 @@ https://github.com/agelormini2024/smart-imports
 Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
-Release vigente del Engine:
-v0.1.0 — Matrix Validator MVP
+Snapshot comercial vigente:
+matrix-aut34-niche3-phase6-corrected.xlsx
+→ full-matrix-v5 0.7.0
+→ PASS limpio
 
-Baseline de release del Validator:
-aut32 → full-matrix-v5 0.7.0
-
-Matriz operativa vigente:
-aut33 → full-matrix-v5 0.7.0
+Baseline técnica de release:
+matrix-aut32-id-formats-corrected.xlsx
+→ Matrix Validator v0.1.0
 ```
 
-Compatibilidad histórica:
+No confundir:
 
-```text
-aut29 → full-matrix-v3 0.1.0
-aut30 → full-matrix-v4 0.6.0
-aut31 → full-matrix-v5 0.7.0; checkpoint histórico con EV-0009
-aut32 → full-matrix-v5 0.7.0; baseline de release con EVAL-0009
-aut33 → full-matrix-v5 0.7.0; matriz operativa comercial vigente / PASS
-```
+- `aut32`: baseline técnica de la release del Validator.
+- `aut34`: snapshot comercial operativo vigente.
 
-La matriz operativa es la fuente de verdad de los datos estructurados. Los documentos resumen decisiones, estado y método; no deben convertirse en una base paralela.
-
-## 2. Snapshot al 2026-08-07
+## 2. Snapshot al 2026-09-11
 
 | Campo | Estado |
 |---|---|
-| Fase | Foundation avanzada / validación comercial del método |
-| Nichos trabajados | 2 |
-| Energía Solar Portátil | Investigación piloto cerrada en pausa selectiva |
-| Viaje organizado | Demanda y Competencia cerradas; screening de origen/headroom completado; Landed Cost por iniciar |
-| Matriz operativa | `matrix-aut33-supplier-screening-headroom-corrected.xlsx` |
-| SHA-256 aut33 | `fb1905260ad24fd4bb0a8284082f1bebb92473de99c46963fb65c1228837bfd1` |
-| Schema vigente | `full-matrix-v5 0.7.0` |
-| Matrix Validator | `v0.1.0` publicado y operativo |
+| Fase general | Research / validación del método sobre múltiples nichos |
+| Matrix Validator | v0.1.0 publicado y cerrado |
+| Schema operativo | `full-matrix-v5 0.7.0` |
 | Tests | 40 archivos / 170 tests |
-| CLI | 5 casos operativos verificados |
-| E2E público | 10 fixtures XLSX |
+| CLI | 5 casos operativos |
+| E2E público | 10 fixtures |
 | CI | Verde |
-| Resultado aut33 | `PASS`; 0 errores, 0 warnings, 0 limitaciones |
-| Próxima dependencia | Respuesta FOB de Xichen para `BASE-TRAVEL-024` |
+| Matriz comercial vigente | `aut34` |
+| Resultado aut34 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
+| Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
+| Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
+| Nicho 3 — Mascotas | Fases 0–6 cerradas; 8 PB materializados |
+| Próxima acción | Fase 7 — shortlist pre-origen del Nicho 3 |
 
 ## 3. Matrix Validator — estado cerrado
 
-El Matrix Validator MVP ya no es un bloqueo comercial.
-
-Baseline de release:
-
 ```text
-Aplicación: 0.1.0
-Schema operativo: full-matrix-v5 0.7.0
-Fixture privado de release: aut32
-Resultado aut32: PASS
-Tests: 40 archivos / 170 tests
-CLI: 5 casos
-E2E: 10 fixtures
-CI: verde
+Application: 0.1.0
 Tag: v0.1.0
-Commit de release: 9f4125b
-GitHub Release: https://github.com/agelormini2024/smart-imports-engine/releases/tag/v0.1.0
-Package publication: none; private: true
+Schema: full-matrix-v5 0.7.0
+Runtime: Node.js 24
+Package manager: pnpm 11
+Comportamiento: read-only
 ```
 
-La evolución futura del Validator debe responder a necesidades concretas descubiertas por el trabajo comercial. No se ampliará el schema por anticipación.
+Estado consolidado:
 
-Pendientes no bloqueantes posteriores al MVP:
+- 40 archivos de test.
+- 170 tests.
+- 5 casos CLI.
+- 10 fixtures E2E públicos.
+- `aut32` PASS limpio.
+- CI remoto verde.
+- release publicada.
 
-- Agregados cruzados entre hojas.
-- Secuencia global y gaps de identificadores.
-- Controles históricos adicionales.
-- Revisión editorial de resúmenes.
-- Decisión final sobre hojas `Legacy`.
+No reabrir el Validator sin un requerimiento comercial concreto.
 
-## 4. Matriz operativa aut33
-
-`aut33` incorpora el bloque de screening de proveedores y el nuevo concepto de Import Cost Headroom.
-
-Resultado del Validator:
+## 4. Matriz operativa vigente — aut34
 
 ```text
+matrix-aut34-niche3-phase6-corrected.xlsx
+SHA-256:
+ad791f8d5fe5c0bb0b18994d4c12d45b187499216f3dbd90cd42e4a9b08f9bf5
+```
+
+Validación:
+
+```text
+Matrix Validator: v0.1.0
 Schema: full-matrix-v5 0.7.0
 Result: PASS
 Errors: 0
 Warnings: 0
 Info: 0
 Limitations: 0
-SHA-256: fb1905260ad24fd4bb0a8284082f1bebb92473de99c46963fb65c1228837bfd1
 ```
 
-Principales incorporaciones del ciclo:
+`aut34` conserva lo anterior e incorpora la materialización de Fase 6 del Nicho 3:
 
-- 27 nuevas fuentes de proveedor: publicaciones Alibaba y respuestas directas.
-- 13 nuevas evidencias consolidadas por Producto Base.
-- 40 relaciones `Evidencia Fuentes`.
-- 7 nuevas `Cotizaciones Proveedores`.
-- Nuevo snapshot `RES-MARG-0004` de screening de origen/headroom.
-- 13 nuevas filas de `Resumen Margen Productos`.
-- No se agregaron nuevas filas `MARG-*` porque todavía no existe un Landed Cost suficientemente defendible.
+- Nicho 29 normalizado.
+- 3 Evaluaciones nuevas.
+- 8 Productos Base `BASE-PET-*`.
+- publicaciones y competencia local normalizadas.
+- benchmarks externos.
+- evidencias y fuentes trazables.
+- cuatro resúmenes de competencia por arquitectura.
+- segmentos competitivos, incluidos sustitutos.
 
-`aut32` se conserva como baseline técnico de release. `aut33` es la matriz operativa comercial vigente.
+No incorpora todavía Landed Cost ni una selección final de proveedores.
 
-## 5. Evolución del método — Import Cost Headroom
+## 5. Método vigente — Method v2
 
-Durante el screening del Nicho 2 se descartó usar un factor genérico de importación como sustituto de un costo puesto real.
-
-Se incorpora como puerta de decisión preliminar:
+Jerarquía:
 
 ```text
-Import Cost Headroom
-=
-Costo puesto económico unitario máximo compatible con el margen objetivo
-÷
-Costo unitario de origen
+NICHO
+→ NECESIDAD / FAMILIA
+→ ARQUITECTURA DE SOLUCIÓN
+→ PRODUCTO BASE
 ```
 
-El indicador responde:
+Reglas consolidadas:
 
-> ¿Cuánto puede crecer el costo de origen antes de que el producto deje de cumplir el margen objetivo?
+- `publicación ≠ competidor ≠ SKU ≠ Producto Base`;
+- normalizar antes de evaluar;
+- Demanda y Competencia se evalúan por separado;
+- complejidad técnica es riesgo, no descarte automático;
+- un sustituto puede ser una combinación de productos;
+- `OEM platform ≠ exact supplier`;
+- safety claim no equivale a seguridad validada;
+- network generation no equivale a network compatibility;
+- standby battery no equivale a tracking battery;
+- private-label capability no equivale a Potencial de Marca.
 
-No estima el costo real de importación. Su función es decidir qué productos justifican invertir tiempo en NCM, packing, CBM, flete, derechos, gastos de nacionalización y demás componentes del Landed Cost.
+## 6. Nicho 3 — estado por arquitectura
 
-El benchmark anecdótico `FOB × 2,60` aportado por un importador de sillas de oficina se conserva únicamente como stress test empírico externo. No se adopta como factor de cálculo de Smart Imports.
+| Arquitectura | Estado | Potencial de Marca |
+|---|---|---|
+| Vacuum Grooming | ADVANCE | MEDIO–ALTO |
+| Arenero automático/smart | ADVANCE | ALTO — CONDICIONADO |
+| Smart Fountain | ADVANCE | MEDIO–ALTO |
+| GPS + Wellness | ADVANCE — CONDITIONAL | ALTO — FUERTEMENTE CONDICIONADO |
 
-## 6. Resultado del screening del Nicho 2
+Watchlist:
 
-### 6.1 Candidatos para Landed Cost
+- Dedicated Pet Camera + interaction.
+- Mobile Pet Robot.
 
-| Prioridad | Producto | Headroom aprox. | Lectura actual |
-|---:|---|---:|---|
-| 1 | `BASE-TRAVEL-024` — kit x11 de envases plásticos | `5,80x` | Señal más fuerte; comparable limpio y packing conocido |
-| 2 | `BASE-TRAVEL-022` — kit mixto x15/x17 | `3,19x` | Fuerte; comparabilidad cercana, no exacta |
-| 3 | `BASE-TRAVEL-010` — bolsas al vacío + bomba manual | `2,22x` | Investigable; demanda fuerte |
-| 4 | `BASE-TRAVEL-018` — neceser colgante | `2,06x` | Investigable; comparable de origen razonable |
-| Condicional | `BASE-TRAVEL-023` — set x3 de 60 ml | `3,15x` si se confirma composición | No avanzar a Landed Cost hasta aclarar el set |
+## 7. Productos Base del Nicho 3
 
-### 6.2 Casos frágiles o pausados
+| ID | Producto Base |
+|---|---|
+| BASE-PET-001 | Vacuum Grooming doméstico integrado |
+| BASE-PET-002 | Arenero automático rotativo cerrado |
+| BASE-PET-003 | Arenero automático open-top / acceso amplio |
+| BASE-PET-004 | Arenero automático de rastrillo |
+| BASE-PET-005 | Fuente inteligente automatizada/conectada |
+| BASE-PET-006 | Fuente con monitoreo cuantitativo de hidratación |
+| BASE-PET-007 | Tracker GPS 4G para mascotas |
+| BASE-PET-008 | Tracker GPS + Wellness avanzado |
 
-| Producto | Headroom aprox. | Decisión actual |
-|---|---:|---|
-| `BASE-TRAVEL-021` | `1,52x` | Pausar; precio EXW confirmado deja poco espacio |
-| `BASE-TRAVEL-003` | `1,40x` | Pausar |
-| `BASE-TRAVEL-013` | `1,35x` | Pausar |
-| `BASE-TRAVEL-001` | no formal | Benchmark |
-| `BASE-TRAVEL-016` | no formal | PDF no comparable al Producto Base |
-| `BASE-TRAVEL-017` | no formal | PDF no comparable al Producto Base |
-| `BASE-TRAVEL-019` | orientativo | Benchmark |
-| `BASE-TRAVEL-020` | orientativo | Benchmark / commodity |
+## 8. Necesidades futuras descubiertas para Matrix vNext
 
-La shortlist es una hipótesis de trabajo, no un filtro irreversible. `BASE-TRAVEL-024` reingresó con fuerza después del screening y demuestra que el método debe permitir rescatar productos cuando aparece evidencia económica superior.
+No bloquean el ciclo actual.
 
-## 7. BASE-TRAVEL-024 — estado puntual
+1. `Familia` y `Arquitectura` explícitas.
+2. `Tipo Competencia = DIRECTA | INDIRECTA | SUSTITUTO | BENCHMARK`.
+3. `Nichos.Proxima Accion` alineada con las fases de Method v2.
 
-Producto:
+Mantener `full-matrix-v5 0.7.0` estable mientras estas necesidades no justifiquen un nuevo schema.
 
-```text
-Kit de 11 envases plásticos y accesorios con pouch
-Proveedor: Taizhou Xichen Plastic Industry Co., Ltd.
-Material principal: PET
-Precio informado: USD 0,74 a 100/300; USD 0,73 a 500; USD 0,72 a 1.000
-MOQ: 2
-Puerto informado: Ningbo / Shanghai
-Incoterm del precio: todavía no confirmado
-```
+## 9. Estado comercial por nicho
 
-Packing publicado:
+### Nicho 1 — Energía Solar Portátil
 
-```text
-Caja master: 65 × 49,5 × 51,5 cm
-Cantidad: 110 sets
-Peso bruto: 16,33 kg
-CBM por caja: ~0,1657 m³
-Peso bruto por set: ~0,1485 kg
-```
+- AT-999 y compras permanecen pausadas.
+- Conservar evidencia histórica.
+- No forzar reactivación sin una nueva razón comercial.
 
-Se envió follow-up al proveedor solicitando:
+### Nicho 2 — Viaje organizado y equipaje funcional
 
-- FOB Ningbo o Shanghai para 500 y 1.000 sets completos x11 + pouch.
-- Cantidad total de cajas.
-- Dimensión de caja.
-- Peso bruto total.
-- CBM total.
-- HS code sugerido.
-- Material/safety report disponible.
+- Demanda y Competencia cerradas.
+- Screening de proveedores/origen realizado.
+- Headroom screening realizado.
+- Landed Cost defendible sigue pendiente.
+- No crear snapshots MARG basados en supuestos no defendibles.
 
-No completar la simulación de margen hasta recibir o estimar de forma defendible el Landed Cost.
+### Nicho 3 — Mascotas
 
-## 8. Modelo de Landed Cost — definición pendiente de formalización
-
-El circuito del Nicho 2 reveló que `Simulación Margen` no debe absorber todo el detalle aduanero y logístico.
-
-Después de cerrar el circuito completo del Nicho 2 se diseñará formalmente un modelo normalizado con, como mínimo:
-
-```text
-Landed Cost
-Landed Cost Componentes
-Resumen Landed Cost
-```
-
-Responsabilidad esperada:
-
-```text
-Landed Cost
-→ calcula/representa el costo puesto por escenario y escala
-
-Landed Cost Componentes
-→ conserva el detalle trazable de flete, seguro, derechos, tasas,
-  terminal, despachante, transporte local, impuestos y percepciones
-
-Resumen Landed Cost
-→ vista rápida por producto y escenario
-
-Simulación Margen
-→ consume el costo puesto resultante; no reemplaza al modelo de Landed Cost
-```
-
-Debe distinguirse:
-
-```text
-Costo puesto económico
-≠
-Desembolso financiero total
-```
-
-IVA, percepciones y otros conceptos recuperables deben separarse de los costos económicos definitivos.
-
-No modificar todavía el schema v5 por esta necesidad. Primero se completará manualmente al menos un circuito de Landed Cost y luego se diseñará el contrato de datos definitivo.
-
-## 9. Smart Imports Decision Reporter — definición post-Nicho 2
-
-La matriz ya contiene suficiente información como para resultar difícil de leer rápidamente en una reunión de decisión.
-
-Después de cerrar el Nicho 2 se diseñará un módulo de Smart Imports Engine que reciba una matriz validada y produzca un reporte ejecutivo para Founder y socio.
-
-Principios definidos:
-
-1. La matriz validada es la fuente de verdad.
-2. El reporte es una vista derivada, no una segunda base de datos.
-3. La primera versión debe ser determinística.
-4. Las decisiones del reporte deben provenir de decisiones registradas en la matriz, no de inferencias autónomas de un LLM.
-5. Una futura capa narrativa con IA deberá distinguir datos, decisiones registradas y texto generado.
-
-Contenido esperado:
-
-- Estado general del nicho.
-- Productos investigados y priorizados.
-- Demanda y competencia.
-- Headroom.
-- Landed Cost cuando exista.
-- Margen y ROI cuando existan.
-- Riesgos.
-- Razones para avanzar, pausar o descartar.
-- Pendientes críticos.
-
-Nombre de trabajo del módulo:
-
-```text
-Decision Reporter
-```
-
-La implementación no comienza hasta completar el circuito del Nicho 2 y realizar su retrospectiva.
-
-## 10. Estado comercial
-
-### Energía Solar Portátil
-
-- Sirvió como primera ejecución integral del método.
-- No se fuerza una conclusión positiva.
-- AT-999 permanece pausado.
-- Paneles y demás candidatos sólo se retomarán si recuperan prioridad.
-
-### Viaje organizado y equipaje funcional
-
+- Research Brief: cerrado.
+- Madurez: cerrada.
 - Demanda: cerrada.
 - Competencia: cerrada.
-- Screening de proveedores/origen: completado.
-- Headroom: incorporado.
-- aut33: `PASS`.
-- Landed Cost: siguiente etapa.
-- Primer producto: `BASE-TRAVEL-024`.
+- Potencial de Marca: cerrado.
+- Productos Base: cerrados.
+- Materialización: `aut34` PASS.
+- Próxima fase: shortlist pre-origen.
 
-## 11. Dependencias actuales
+## 10. Próxima secuencia del Nicho 3
 
-| Dependencia | Estado | Acción |
+```text
+Fase 7 — shortlist pre-origen
+→ Fase 8 — origin screening + comparability
+→ Fase 9 — Headroom
+→ Fase 10 — Minimum Landed Cost Dataset
+→ Fase 11 — Landed Cost
+→ Fase 12 — Margin + ROI
+→ Fase 13 — final shortlist
+→ Fase 14 — validación real
+```
+
+## 11. Bloqueos y dependencias
+
+| Tema | Estado | Acción |
 |---|---|---|
-| FOB de `BASE-TRAVEL-024` | Esperando proveedor | Continuar cuando responda Xichen |
-| Packing total 500/1.000 | Parcial | Confirmar con proveedor |
-| NCM | Hipótesis, no definitiva | Validar posteriormente con despachante |
-| Derechos/tasas | Pendiente de escenario | Incorporar en Landed Cost |
-| Flete internacional | Pendiente | Cotizar/estimar por escala |
-| Gastos locales | Pendiente | Calibrar con despachante y experiencia real |
-| Modelo de Landed Cost | Definición conceptual | Formalizar después del circuito Nicho 2 |
-| Decision Reporter | Definición conceptual | Diseñar después de la retrospectiva Nicho 2 |
+| Matrix Validator | Cerrado | No reabrir sin requerimiento comercial |
+| Matrix vNext | No bloqueante | Registrar requisitos y diferir |
+| Niche 3 shortlist | Pendiente | Ejecutar Fase 7 |
+| Niche 3 origin | No iniciado formalmente | Esperar Fase 8 |
+| Landed Cost Niche 3 | No iniciado | No adelantar |
+| Wellness local | Hipótesis abierta | Mantener como condición |
+| Seguridad areneros | Riesgo crítico posterior | Evaluar en sourcing/QA |
+| Compatibilidad GPS | Riesgo crítico posterior | Exigir variante/bandas documentadas |
 
-## 12. Próxima secuencia
+## 12. Protocolo para abrir un nuevo chat
 
-```text
-Esperar respuesta Xichen para BASE-TRAVEL-024
-→ construir primer Landed Cost por escenarios 500 / 1.000
-→ comparar contra headroom
-→ alimentar Simulación Margen
-→ repetir sólo con candidatos sobrevivientes
-→ cerrar Nicho 2 end-to-end
-→ retrospectiva metodológica
-→ formalizar modelo Landed Cost
-→ diseñar Decision Reporter
-→ actualizar schema/Engine sólo si el proceso manual lo justifica
-→ comenzar investigación de nuevos nichos
-```
-
-## 13. Protocolo para abrir un nuevo chat
-
-1. Compartir ambos repositorios o sus URLs.
+1. Compartir ambos repositorios.
 2. Pedir lectura inicial de `SI-ROADMAP-002`.
-3. Indicar que el Matrix Validator v0.1.0 está cerrado y no debe reabrirse sin una necesidad comercial concreta.
-4. Adjuntar `aut33` sólo cuando la tarea requiera datos privados de la matriz.
-5. No volver a adjuntar PDFs ya consolidados salvo que sea necesario auditar una fuente específica.
-6. Adjuntar la nueva respuesta de Xichen cuando llegue.
-7. Continuar de a un paso por vez.
+3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
+4. Adjuntar `aut34` sólo cuando la tarea requiera datos privados de la matriz.
+5. No volver a adjuntar PDFs históricos ya consolidados.
+6. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
+7. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
 
-## 14. Próxima acción concreta
+## 13. Próxima acción concreta
 
 ```text
-Recibir respuesta FOB de Xichen para BASE-TRAVEL-024
-→ construir el primer Landed Cost defendible
-→ comparar escenario realista con headroom 5,80x
+Nicho 3
+→ Fase 7 — shortlist pre-origen
+→ reducir los 8 PB antes de profundizar sourcing
 ```
 
-## Changelog
+No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar esa shortlist.
+
+## 14. Documentos relacionados
+
+- [SI-RESEARCH-005 — Niche 3 Phases 0–6](../06-research/niche-003-pet-care-wellness-technology/si-research-005-niche-3-phases-0-to-6.md)
+- [SI-AGENT-001 — Smart Imports Intelligence Engine](../05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md)
+- [SI-DECISION-014 — Adopt Niche 3 Method v2 and aut34](../09-decision-log/si-decision-014-adopt-niche3-method-v2-and-aut34.md)
+
+## 15. Changelog
 
 | Version | Date | Change |
 |---|---|---|
 | 0.7.0 | 2026-08-03 | Handoff de v3/v4 y normalización de fuentes. |
 | 0.8.0 | 2026-08-04 | Adopción de aut31/v5, 144 tests y cierre técnico de vistas derivadas. |
-| 0.9.0 | 2026-08-05 | Adopción de aut32, cierre del MVP y publicación de `v0.1.0`. |
-| 0.10.0 | 2026-08-07 | Registra aut33 validada, Import Cost Headroom, shortlist de Landed Cost y definiciones post-Nicho 2 para Landed Cost y Decision Reporter. |
+| 1.0.0 | 2026-09-11 | Matrix Validator cerrado; `aut34` adoptada; Method v2 y Fases 0–6 del Nicho 3 consolidadas. |
