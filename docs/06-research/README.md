@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.4.0
+version: 0.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-11
+updated: 2026-09-15
 tags:
   - smart-imports
   - research
@@ -43,6 +43,7 @@ La matriz operativa conserva los datos estructurados. Los documentos Markdown co
 | [`niche-002-travel-organization/si-research-002-travel-organization-scope.md`](./niche-002-travel-organization/si-research-002-travel-organization-scope.md) | Define alcance, subcategorías, exclusiones y plan inicial de investigación. | `review` |
 | [`niche-003-pet-care-wellness-technology/README.md`](./niche-003-pet-care-wellness-technology/README.md) | Punto de entrada del Nicho 3: Mascotas — cuidado, bienestar y tecnología. | `review` |
 | [`niche-003-pet-care-wellness-technology/si-research-005-niche-3-phases-0-to-6.md`](./niche-003-pet-care-wellness-technology/si-research-005-niche-3-phases-0-to-6.md) | Consolida Method v2 y Fases 0–6 del Nicho 3. | `review` |
+| [`niche-003-pet-care-wellness-technology/si-research-006-niche-3-phases-7-to-11-method-v2-validation.md`](./niche-003-pet-care-wellness-technology/si-research-006-niche-3-phases-7-to-11-method-v2-validation.md) | Cierra Fases 7–11 y valida Method v2 internamente hasta Landed Cost Screen. | `review` |
 
 ## 3. Investigaciones activas
 
@@ -52,11 +53,11 @@ Estado: prioridad pausada selectivamente; conservar como piloto histórico.
 
 ### Viaje organizado y equipaje funcional
 
-Estado: Demanda y Competencia cerradas; screening de origen/headroom realizado; Landed Cost defendible pendiente.
+Estado: investigación principal cerrada; candidatos y aprendizajes preservados para comparación transversal y eventual shortlist consolidada.
 
 ### Mascotas — cuidado, bienestar y tecnología
 
-Estado: Fases 0–6 cerradas, ocho Productos Base materializados en `aut34` y validados. Próxima etapa: Fase 7 — shortlist pre-origen.
+Estado: Method v2 ejecutado internamente hasta Fase 11 — `Landed Cost Screen`. `aut36` validada sin hallazgos. Próxima etapa: completar candidatos firmes y preparar validación profesional externa.
 
 ## 4. Regla de investigación
 
@@ -93,10 +94,11 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 ## 6. Próximos documentos previstos
 
-- Shortlist pre-origen del Nicho 3.
-- Screening formal de origen de los PB sobrevivientes.
-- Retrospectiva comparativa de Method v2 después de cerrar el ciclo del Nicho 3.
-- Modelo de Landed Cost cuando exista dataset mínimo defendible.
+- Paquete consolidado de 5–6 candidatos para revisión profesional.
+- Validación aduanera/regulatoria externa cuando intervenga el despachante.
+- Actualización de Landed Cost con valores profesionales.
+- Shortlist final y decisión de importación.
+- Retrospectiva transversal del método después del gate profesional.
 
 ## 7. Changelog
 
@@ -107,3 +109,4 @@ Los datos comerciales exactos permanecen en sistemas privados:
 | 0.3.0 | 2026-07-20 | Se creó el punto de entrada del Nicho 1 y se documentó la primera ronda de proveedores. |
 
 | 0.4.0 | 2026-09-11 | Se incorporó el Nicho 3, Method v2 y su consolidación hasta Fase 6. |
+| 0.5.0 | 2026-09-15 | Se incorporó SI-RESEARCH-006 y se cerró la validación interna de Method v2 hasta Landed Cost Screen. |

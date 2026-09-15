@@ -2,12 +2,12 @@
 id: docs-08-roadmaps-readme
 title: 08 — Roadmaps
 description: Índice de roadmaps, hitos, estado operativo y handoff de Smart Imports.
-version: 0.5.0
+version: 0.6.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-08-05
+updated: 2026-09-15
 tags:
   - smart-imports
   - roadmap
@@ -39,16 +39,17 @@ Esta carpeta documenta:
 ## 3. Hito actual
 
 ```text
-Nicho 3 — Fase 7: shortlist pre-origen
+Method v2 — validación interna cerrada hasta Landed Cost Screen
 ```
 
-Checkpoint completado:
+Checkpoint:
 
 ```text
-Fases 0–6 cerradas
-→ 8 Productos Base
-→ aut34 materializada
+Nicho 3 / Fases 0–11
+→ aut36 materializada
 → Matrix Validator PASS limpio
+→ primer strong candidate
+→ siguiente gate: 5–6 finalistas + despachante
 ```
 
 ## 4. Punto de entrada operativo
@@ -88,4 +89,5 @@ Actualizar el estado después de:
 | 0.3.0 | 2026-07-17 | Se registró la selección del Nicho 2 y el inicio de su fase operativa. |
 | 0.4.0 | 2026-08-03 | El hito actual pasa al cierre operativo del Matrix Validator. |
 | 0.5.0 | 2026-09-11 | Matrix Validator cerrado; el hito activo pasa a Fase 7 del Nicho 3. |
+| 0.6.0 | 2026-09-15 | Method v2 validado internamente hasta Landed Cost Screen; próximo gate profesional externo. |
 | 0.5.0 | 2026-08-05 | Se registra la release `v0.1.0` y el regreso a la prioridad comercial del Nicho 2. |

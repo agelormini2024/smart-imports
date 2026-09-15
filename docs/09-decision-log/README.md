@@ -2,12 +2,12 @@
 id: si-decision-log-readme
 title: Decision Log Index
 description: Índice de decisiones estratégicas, metodológicas y técnicas de Smart Imports.
-version: 0.5.0
+version: 0.6.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-11
+updated: 2026-09-15
 tags:
   - decision-log
   - governance
@@ -58,6 +58,7 @@ Cada decisión debe explicar contexto, decisión, justificación, alternativas y
 | `si-decision-012` | [`si-decision-012-adopt-aut33-and-headroom-first-margin-screening.md`](./si-decision-012-adopt-aut33-and-headroom-first-margin-screening.md) | Adoptar `aut33` e Import Cost Headroom como gate previo al Landed Cost. | `approved` |
 | `si-decision-013` | [`si-decision-013-add-decision-reporting-layer-after-niche-2.md`](./si-decision-013-add-decision-reporting-layer-after-niche-2.md) | Diseñar una capa de reporting ejecutivo derivada de la matriz después del Nicho 2. | `approved` |
 | `si-decision-014` | [`si-decision-014-adopt-niche3-method-v2-and-aut34.md`](./si-decision-014-adopt-niche3-method-v2-and-aut34.md) | Adoptar Method v2 y `aut34`, manteniendo v5 estable hasta que Matrix vNext sea bloqueante. | `approved` |
+| `si-decision-015` | [`si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md`](./si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md) | Adoptar `aut36`, validar Method v2 internamente hasta Landed Cost Screen y formalizar el gate profesional externo. | `approved` |
 
 ## 3. Cuándo registrar una decisión
 
@@ -113,3 +114,4 @@ Una decisión `approved` puede conservar valor histórico aunque una decisión p
 | 0.4.0 | 2026-07-24 | Se incorporó SI-DECISION-009 sobre la separación de repositorios. |
 | 0.5.0 | 2026-08-05 | Se incorporan SI-DECISION-010 y SI-DECISION-011 y se actualiza la baseline operativa. |
 | 0.5.0 | 2026-09-11 | Se actualizó el índice vigente y se incorporó SI-DECISION-014 para Method v2 y `aut34`. |
+| 0.6.0 | 2026-09-15 | Se incorporó SI-DECISION-015 y la adopción de `aut36`. |

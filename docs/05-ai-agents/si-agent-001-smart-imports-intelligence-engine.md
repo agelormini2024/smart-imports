@@ -2,12 +2,12 @@
 id: si-agent-001
 title: Smart Imports Intelligence Engine
 description: Visión funcional, principios, módulos y estado del motor de inteligencia comercial de Smart Imports.
-version: 0.4.0
+version: 0.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-09-11
+updated: 2026-09-15
 tags:
   - intelligence-engine
   - ai-agents
@@ -26,6 +26,8 @@ related:
   - si-decision-011
   - si-decision-012
   - si-decision-013
+  - si-research-006
+  - si-decision-015
 audience:
   - founder
   - partner
@@ -76,7 +78,7 @@ Application: 0.1.0
 Tag: v0.1.0
 Schema operativo: full-matrix-v5 0.7.0
 Baseline técnica: aut32 / PASS
-Snapshot comercial vigente: aut34 / PASS
+Snapshot comercial vigente: aut36 / PASS
 Tests: 40 archivos / 170 tests
 CLI: 5 casos
 E2E público: 10 fixtures
@@ -162,9 +164,12 @@ Luego → automatizar sólo capacidades estabilizadas
 
 ## 8. Próximas acciones
 
-1. Ejecutar Fase 7 — shortlist pre-origen del Nicho 3.
-2. Medir la siguiente fricción operativa de mayor impacto.
-3. Mantener Matrix Validator v0.1.0 cerrado.
-4. No implementar Matrix vNext hasta que Familia/Arquitectura, Tipo Competencia o Next Action sean bloqueantes.
-5. Mantener Landed Cost, Supplier Response Analyzer, RFQ contextual, conectividad, continuidad de servicio y validez de mediciones como capacidades candidatas hasta que el trabajo real justifique su implementación.
-6. Mantener Google Sheets + XLSX como sistema operativo mientras no exista una alternativa claramente superior.
+1. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados.
+2. Completar sólo la investigación necesaria para reunir 5–6 candidatos firmes.
+3. Negociar condiciones de origen sobre finalistas, no sobre todo el universo investigado.
+4. Usar al despachante como gate profesional externo para NCM, intervenciones, certificaciones y costos definitivos.
+5. Medir la fricción real de Supplier Response, RFQ, Landed Cost y validación regulatoria antes de decidir el próximo módulo a automatizar.
+6. No implementar Matrix vNext mientras las necesidades detectadas no sean bloqueantes.
+7. Mantener Google Sheets + XLSX como sistema operativo mientras siga siendo suficiente.
+
+Method v2 ya no está en fase de validación conceptual interna: el próximo aprendizaje relevante vendrá de su confrontación con validación profesional y decisiones reales de importación.

@@ -7,7 +7,7 @@ status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-15
 tags:
   - research
   - niche-003
@@ -95,3 +95,27 @@ Ejecutar **Fase 7 — shortlist pre-origen** sobre los ocho Productos Base, sin 
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-09-11 | Punto de entrada inicial del Nicho 3 luego de cerrar Fases 0–6 y validar `aut34`. |
+
+## Checkpoint Method v2 — 2026-09-15
+
+El Nicho 3 completó internamente las Fases 0–11 de Method v2.
+
+```text
+Fases 0–6  → SI-RESEARCH-005
+Fases 7–11 → SI-RESEARCH-006
+```
+
+Estado operativo:
+
+- `BASE-PET-003`: `STRONG CANDIDATE — PENDING PROFESSIONAL VALIDATION`.
+- `BASE-PET-004`: `AWAITING_SUPPLIER_RESPONSE`.
+- Matriz vigente: `matrix-aut36-niche3-method-v2-checkpoint-corrected.xlsx`.
+- Validator: `PASS / 0 errors / 0 warnings / 0 info / 0 limitations`.
+- Próximo gate: reunir 5–6 candidatos firmes, negociar condiciones y llevar la shortlist al despachante.
+
+Documentos:
+
+- [`SI-RESEARCH-006`](./si-research-006-niche-3-phases-7-to-11-method-v2-validation.md)
+- [`SI-DECISION-015`](../../09-decision-log/si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md)
+
+La revisión del despachante es un gate profesional externo; no implica reabrir Matrix Validator ni `full-matrix-v5`.
