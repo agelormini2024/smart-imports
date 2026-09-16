@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.0.0
+version: 1.1.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-09-15
+updated: 2026-09-16
 tags:
   - status
   - handoff
@@ -25,6 +25,9 @@ related:
   - si-decision-014
   - si-research-006
   - si-decision-015
+  - si-brand-001
+  - si-brand-002
+  - si-decision-016
 audience:
   - founder
   - partner
@@ -62,7 +65,7 @@ No confundir:
 - `aut34`: snapshot comercial anterior, correspondiente al cierre de Fase 6 del Nicho 3.
 - `aut36`: snapshot comercial operativo vigente, con Method v2 materializado hasta Landed Cost Screen.
 
-## 2. Snapshot al 2026-09-15
+## 2. Snapshot al 2026-09-16
 
 | Campo | Estado |
 |---|---|
@@ -78,9 +81,12 @@ No confundir:
 | Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
-| Próxima acción | consolidación de finalistas y preparación del gate profesional externo del Nicho 3 |
+| Próxima acción comercial | consolidación de finalistas y preparación del gate profesional externo del Nicho 3 |
+| Brand System | v0.1 definido; `Marca Hogar` como primera implementación reusable |
+| Brand Candidate Screening | v0.1 operativo; `BRAND-CAND-001` = `PASS TO METHOD V2` |
+| Próxima acción Brand | `BRAND-CAND-002 — Purificación de agua doméstica` |
 
-## 3. Snapshot operativo — 2026-09-15
+## 3. Snapshot operativo — 2026-09-16
 
 ### Estado general
 
@@ -131,6 +137,8 @@ Fase 11    → primer Landed Cost Screen completado
 ```
 
 `BASE-PET-003` es el primer `STRONG CANDIDATE — PENDING PROFESSIONAL VALIDATION`.
+
+El 2026-09-16 el proveedor confirmó que la diferencia entre dimensiones de producto y caja se explica porque el producto se envía parcialmente desmontado. El packing queda aclarado y no constituye un bloqueo actual.
 
 `BASE-PET-004` queda pendiente de respuesta de proveedor antes de completar su Fase 10/11.
 
@@ -285,12 +293,64 @@ completar BASE-PET-004 cuando responda el proveedor
 
 Las Fases 7–11 ya forman parte del recorrido interno cerrado de Method v2. No deben reaparecer como trabajo futuro salvo que nueva evidencia obligue a reabrir un candidato concreto.
 
-## 11. Bloqueos y dependencias
+## 11. Nuevo frente — Brand System
+
+El 2026-09-16 se formaliza una nueva capa estratégica previa a Method v2.
+
+Principio:
+
+```text
+BRAND FIT
+¿Queremos que nuestra marca venda este producto?
+
+METHOD V2
+¿Existe realmente un negocio defendible alrededor de este producto?
+```
+
+Arquitectura reusable:
+
+```text
+BRAND
+→ BRAND TERRITORY
+→ MISSIONS
+→ PROBLEMS
+→ SOLUTIONS
+→ BRAND CANDIDATE SCREENING
+→ METHOD V2
+```
+
+`Marca Hogar` es la primera implementación real, con el descriptor interno:
+
+> **Un hogar que funciona mejor.**
+
+El portfolio se organiza por misiones y problemas, no por categorías comerciales.
+
+Misiones v0.1:
+
+1. mejorar las condiciones del hogar;
+2. usar mejor los recursos;
+3. reducir y gestionar residuos;
+4. resolver problemas domésticos recurrentes conectados con el núcleo.
+
+El sistema debe ser reusable para futuras marcas con territorios y misiones propios. `Mundo Fitness` queda registrado como ejemplo conceptual de esa reusabilidad, no como una marca decidida.
+
+Primer candidato:
+
+```text
+BRAND-CAND-001
+Sistema doméstico de detección de fugas de agua con corte automático
+→ PASS TO METHOD V2
+```
+
+El Brand System no modifica `aut36`, `full-matrix-v5 0.7.0` ni Matrix Validator v0.1.0. Las necesidades futuras de modelado de Brand, Territory, Mission, Problem, Solution y Brand Fit se registran conceptualmente antes de decidir Matrix vNext o cambios del Intelligence Engine.
+
+## 12. Bloqueos y dependencias
 
 | Tema | Estado | Acción |
 |---|---|---|
 | Matrix Validator | Cerrado | No reabrir sin requerimiento comercial |
 | Matrix vNext | No bloqueante | Registrar requisitos y diferir |
+| Brand System | Validación práctica | Continuar Brand Candidate Screening y ajustar por evidencia de uso real |
 | Validación profesional externa | En preparación | Consolidar 5–6 candidatos, negociar condiciones y preparar revisión con despachante |
 | Niche 3 origin | Screening cerrado en sobrevivientes | Reabrir sólo si aparece un nuevo candidato firme |
 | Landed Cost Niche 3 | Screening preliminar iniciado | Completar sólo en finalistas y validar profesionalmente |
@@ -298,17 +358,19 @@ Las Fases 7–11 ya forman parte del recorrido interno cerrado de Method v2. No 
 | Seguridad areneros | Riesgo crítico posterior | Evaluar en sourcing/QA |
 | Compatibilidad GPS | Riesgo crítico posterior | Exigir variante/bandas documentadas |
 
-## 12. Protocolo para abrir un nuevo chat
+## 13. Protocolo para abrir un nuevo chat
 
 1. Compartir ambos repositorios.
 2. Pedir lectura inicial de `SI-ROADMAP-002`.
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
-4. Adjuntar `aut36` sólo cuando la tarea requiera datos privados de la matriz.
-5. No volver a adjuntar PDFs históricos ya consolidados.
-6. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
-7. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
+4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
+5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002` y `SI-DECISION-016`.
+6. Adjuntar `aut36` sólo cuando la tarea requiera datos privados de la matriz.
+7. No volver a adjuntar PDFs históricos ya consolidados.
+8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
+9. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
 
-## 13. Próxima acción concreta
+## 14. Próxima acción concreta
 
 ```text
 Nicho 3
@@ -316,18 +378,31 @@ Nicho 3
 → completar y consolidar los finalistas antes de la validación profesional
 ```
 
-No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar esa shortlist.
+```text
+Marca Hogar
+→ continuar Brand Candidate Screening
+→ próximo caso: BRAND-CAND-002 — Purificación de agua doméstica
+→ ajustar el filtro sólo a partir de evidencia de uso real
+```
 
-## 14. Documentos relacionados
+No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial del Nicho 3.
+
+## 15. Documentos relacionados
 
 - [SI-RESEARCH-005 — Niche 3 Phases 0–6](../06-research/niche-003-pet-care-wellness-technology/si-research-005-niche-3-phases-0-to-6.md)
 - [SI-AGENT-001 — Smart Imports Intelligence Engine](../05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md)
 - [SI-DECISION-014 — Adopt Niche 3 Method v2 and aut34](../09-decision-log/si-decision-014-adopt-niche3-method-v2-and-aut34.md)
+- [SI-RESEARCH-006 — Niche 3 Phases 7–11 / Method v2 validation](../06-research/niche-003-pet-care-wellness-technology/si-research-006-niche-3-phases-7-to-11-method-v2-validation.md)
+- [SI-DECISION-015 — Adopt aut36 and validate Method v2](../09-decision-log/si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md)
+- [SI-BRAND-001 — Brand System reutilizable y Marca Hogar](../07-brand/si-brand-001-reusable-brand-system-and-home-territory.md)
+- [SI-BRAND-002 — Brand Candidate Screening](../07-brand/si-brand-002-brand-candidate-screening-method.md)
+- [SI-DECISION-016 — Arquitectura de marca por misiones](../09-decision-log/si-decision-016-adopt-mission-based-brand-architecture-and-screening.md)
 
-## 15. Changelog
+## 16. Changelog
 
 | Version | Date | Change |
 |---|---|---|
 | 0.7.0 | 2026-08-03 | Handoff de v3/v4 y normalización de fuentes. |
 | 0.8.0 | 2026-08-04 | Adopción de aut31/v5, 144 tests y cierre técnico de vistas derivadas. |
 | 1.0.0 | 2026-09-11 | Matrix Validator cerrado; `aut34` adoptada; Method v2 y Fases 0–6 del Nicho 3 consolidadas. |
+| 1.1.0 | 2026-09-16 | Se incorpora Brand System reusable, Marca Hogar v0.1, Brand Candidate Screening y aclaración de packing de PET-003. |

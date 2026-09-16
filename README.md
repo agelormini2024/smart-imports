@@ -2,17 +2,18 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.1.0
+version: 1.2.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-15
+updated: 2026-09-16
 tags:
   - smart-imports
   - knowledge-base
   - business-intelligence
   - documentation
+  - brand-system
 ---
 # Smart Imports
 
@@ -22,9 +23,11 @@ Smart Imports es un proyecto de inteligencia comercial aplicado al comercio fís
 
 La importación es el primer caso de uso. La visión de largo plazo es una metodología y una plataforma para descubrir, evaluar y ejecutar oportunidades comerciales.
 
+A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusable** para definir dónde quiere jugar cada marca antes de aplicar Method v2. `Marca Hogar` es la primera implementación real; el marco está diseñado para reutilizarse en futuras marcas con territorios y misiones propios.
+
 ## Estado actual
 
-Smart Imports se encuentra en una etapa de **selección de candidatos y preparación de validación profesional externa**.
+Smart Imports se encuentra en una etapa de **selección de candidatos, preparación de validación profesional externa y validación práctica del Brand System**.
 
 El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0**, permanece cerrado y publicado. Method v2 fue ejecutado internamente hasta `Landed Cost Screen` sobre el Nicho 3.
 
@@ -57,12 +60,15 @@ Avances recientes:
 - Primer candidato fuerte preparado para validación profesional.
 - La revisión del despachante queda definida como gate profesional externo.
 - Matrix Validator y `full-matrix-v5 0.7.0` permanecen cerrados.
+- Brand System v0.1 definido con arquitectura `territorio → misiones → problemas → soluciones`.
+- `Marca Hogar` adoptada como primera implementación, organizada por misiones y no por categorías comerciales.
+- Brand Candidate Screening v0.1 operativo; `BRAND-CAND-001` queda `PASS TO METHOD V2`.
 
 ## Fuentes de verdad
 
 | Fuente | Responsabilidad |
 |---|---|
-| `smart-imports` | Visión, metodología, investigación, decisiones, contratos funcionales y estado integral. |
+| `smart-imports` | Visión, metodología, marca, investigación, decisiones, contratos funcionales y estado integral. |
 | `smart-imports-engine` | Código, schemas, reglas, tests, ADR y documentación técnica de implementación. |
 | Matriz operativa | Datos estructurados de trabajo y trazabilidad operativa. |
 
@@ -77,9 +83,12 @@ Avances recientes:
 | `docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md` | Visión y módulos del Intelligence Engine. |
 | `docs/06-research/niche-003-pet-care-wellness-technology/si-research-005-niche-3-phases-0-to-6.md` | Consolidación del Nicho 3 hasta Fase 6. |
 | `docs/06-research/niche-003-pet-care-wellness-technology/si-research-006-niche-3-phases-7-to-11-method-v2-validation.md` | Cierre de Fases 7–11 y validación interna de Method v2. |
+| `docs/07-brand/si-brand-001-reusable-brand-system-and-home-territory.md` | Brand System reusable y primera implementación `Marca Hogar`. |
+| `docs/07-brand/si-brand-002-brand-candidate-screening-method.md` | Método reusable de Brand Candidate Screening previo a Method v2. |
 | `docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md` | Punto de entrada operativo vigente. |
 | `docs/09-decision-log/si-decision-014-adopt-niche3-method-v2-and-aut34.md` | Adopción inicial de Method v2 y `aut34`. |
 | `docs/09-decision-log/si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md` | Adopción de `aut36` y gate profesional externo. |
+| `docs/09-decision-log/si-decision-016-adopt-mission-based-brand-architecture-and-screening.md` | Adopción del Brand System por misiones y Brand Candidate Screening. |
 
 ## Estructura del repositorio
 
@@ -107,6 +116,8 @@ docs/
 5. Validar profesionalmente NCM, intervenciones, certificaciones y costos definitivos.
 6. Actualizar `Landed Cost` y construir la shortlist final para decisión de importación.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
+8. Continuar `Brand Candidate Screening` de Marca Hogar, comenzando por `BRAND-CAND-002 — Purificación de agua doméstica`.
+9. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
 
 ## Changelog
 
@@ -116,5 +127,6 @@ docs/
 | 0.9.0 | 2026-08-04 | Adopción de `aut31`, `full-matrix-v5 0.5.0`, 144 tests, resúmenes normalizados y vistas derivadas. |
 | 1.0.0 | 2026-09-11 | Matrix Validator cerrado; `aut34` adoptada; Method v2 y Nicho 3 Fases 0–6 consolidados. |
 | 1.1.0 | 2026-09-15 | `aut36` adoptada; Method v2 validado internamente hasta Landed Cost Screen; gate del despachante formalizado. |
+| 1.2.0 | 2026-09-16 | Se incorpora Brand System reusable, Marca Hogar v0.1 y Brand Candidate Screening v0.1. |
 | 1.0.0 | 2026-08-05 | Adopción de `aut32`, cierre del Matrix Validator MVP y publicación de la release `v0.1.0`. |
 | 1.1.0 | 2026-08-07 | Matrix Validator v0.1.0 cerrado, aut33 PASS, Import Cost Headroom, preparación de Landed Cost y definición de Decision Reporter. |
