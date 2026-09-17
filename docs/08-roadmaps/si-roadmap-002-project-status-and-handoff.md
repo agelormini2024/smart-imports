@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.4.0
+version: 1.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -83,8 +83,8 @@ No confundir:
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
 | Próxima acción comercial | consolidación de finalistas y preparación del gate profesional externo del Nicho 3 |
 | Brand System | v0.2 definido; `Marca Hogar` como primera implementación reusable |
-| Brand Candidate Screening | v0.2 operativo; `BRAND-CAND-001`, `BRAND-CAND-002`, `BRAND-CAND-003` y `BRAND-CAND-004` = `PASS TO METHOD V2` |
-| Próxima acción Brand | `BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos` |
+| Brand Candidate Screening | v0.2 operativo; `BRAND-CAND-001` a `BRAND-CAND-005` = `PASS TO METHOD V2` |
+| Próxima acción Brand | `BRAND-CAND-006 — PET-003 (screening retrospectivo)` |
 
 ## 3. Snapshot operativo — 2026-09-17
 
@@ -410,3 +410,4 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 | 1.2.0 | 2026-09-17 | Se separan Brand System e instancia Marca Hogar; BRAND-CAND-002 queda PASS y se formalizan expedientes por candidato. |
 | 1.3.0 | 2026-09-17 | BRAND-CAND-003 queda PASS TO METHOD V2 y se registra su handoff; próximo screening BRAND-CAND-004. |
 | 1.4.0 | 2026-09-17 | BRAND-CAND-004 queda PASS TO METHOD V2 y se registra su handoff; próximo screening BRAND-CAND-005. |
+| 1.5.0 | 2026-09-17 | BRAND-CAND-005 queda PASS TO METHOD V2 y se registra su handoff; próximo screening retrospectivo BRAND-CAND-006. |

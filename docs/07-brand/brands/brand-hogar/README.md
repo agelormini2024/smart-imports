@@ -2,7 +2,7 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.3.0
+version: 0.4.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -122,7 +122,7 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM |
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
 | [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
-| `BRAND-CAND-005` | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `PENDING` | — | — |
+| [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / PROCESS / OUTPUT / CLAIM |
 | `BRAND-CAND-006` | Arenero automático open-top / acceso amplio (`BASE-PET-003`) | Problemas domésticos recurrentes | `RETROSPECTIVE BRAND SCREENING PENDING` | — | — |
 
 `BRAND-CAND-006` ya cuenta con investigación previa en Method v2. Su screening será retrospectivo y no reinicia su evaluación comercial.
@@ -130,10 +130,10 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 ## 10. Próximo candidato
 
 ```text
-BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos
+BRAND-CAND-006 — PET-003 (screening retrospectivo)
 ```
 
-Objetivo: distinguir reducción/transformación real de residuos de productos comercializados como composteras que sólo sequen, trituren, almacenen o modifiquen parcialmente el residuo.
+Objetivo: aplicar retrospectivamente Brand Candidate Screening a PET-003, ya validado comercialmente por Method v2, para comprobar si su pertenencia a Marca Hogar se sostiene por gestión de residuos, higiene, olor y operación doméstica, y no por pertenecer genéricamente a Pet Care.
 
 ## 11. Documentos relacionados
 
@@ -148,3 +148,4 @@ Objetivo: distinguir reducción/transformación real de residuos de productos co
 | 0.1.0 | 2026-09-17 | Primera instancia formal de Marca Hogar con territorio, misiones, límites y Candidate Register. |
 | 0.2.0 | 2026-09-17 | BRAND-CAND-003 pasa a Method v2; próximo screening BRAND-CAND-004. |
 | 0.3.0 | 2026-09-17 | BRAND-CAND-004 pasa a Method v2; próximo screening BRAND-CAND-005. |
+| 0.4.0 | 2026-09-17 | BRAND-CAND-005 pasa a Method v2; próximo screening retrospectivo BRAND-CAND-006. |

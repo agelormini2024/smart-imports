@@ -2,7 +2,7 @@
 id: brand-hogar-candidates-readme
 title: Marca Hogar — Brand Candidates
 description: Índice de expedientes de Brand Candidate Screening de Marca Hogar.
-version: 0.3.0
+version: 0.4.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -20,5 +20,6 @@ Cada archivo de esta carpeta es la fuente de verdad del screening de una soluci�
 | [BRAND-CAND-002](./brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | `PASS TO METHOD V2` |
 | [BRAND-CAND-003](./brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | `PASS TO METHOD V2` |
 | [BRAND-CAND-004](./brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | `PASS TO METHOD V2` |
+| [BRAND-CAND-005](./brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | `PASS TO METHOD V2` |
 
-Próximo: `BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos`.
+Próximo: `BRAND-CAND-006 — PET-003 (screening retrospectivo)`.
