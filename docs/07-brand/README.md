@@ -2,7 +2,7 @@
 id: docs-07-brand-readme
 title: 07 — Brand
 description: Índice del Brand System de Smart Imports y sus instancias de marca.
-version: 0.4.0
+version: 0.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -60,7 +60,8 @@ Brand System reusable
 - `BRAND-CAND-001`: `PASS TO METHOD V2`.
 - `BRAND-CAND-002`: `PASS TO METHOD V2`.
 - `BRAND-CAND-003`: `PASS TO METHOD V2`.
-- Próximo screening: `BRAND-CAND-004 — Monitor de consumo energético`.
+- `BRAND-CAND-004`: `PASS TO METHOD V2`.
+- Próximo screening: `BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos`.
 - matriz, schema y Matrix Validator: sin cambios.
 
 ## 5. Changelog
@@ -71,3 +72,4 @@ Brand System reusable
 | 0.2.0 | 2026-09-16 | Se incorpora Brand System, Marca Hogar y Brand Candidate Screening. |
 | 0.3.0 | 2026-09-17 | Se separa metodología reusable de instancias y expedientes de candidatos. |
 | 0.4.0 | 2026-09-17 | Se documenta BRAND-CAND-003 como PASS TO METHOD V2 y se avanza a BRAND-CAND-004. |
+| 0.5.0 | 2026-09-17 | Se documenta BRAND-CAND-004 como PASS TO METHOD V2 y se avanza a BRAND-CAND-005. |

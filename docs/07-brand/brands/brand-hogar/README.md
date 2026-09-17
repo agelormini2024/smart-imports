@@ -2,7 +2,7 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -121,7 +121,7 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | [`BRAND-CAND-001`](./candidates/brand-cand-001-water-leak-detection-and-shutoff.md) | Detección de fugas + corte automático | Usar mejor los recursos | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE |
 | [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM |
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
-| `BRAND-CAND-004` | Monitor de consumo energético | Usar mejor los recursos | `PENDING` | — | — |
+| [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
 | `BRAND-CAND-005` | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `PENDING` | — | — |
 | `BRAND-CAND-006` | Arenero automático open-top / acceso amplio (`BASE-PET-003`) | Problemas domésticos recurrentes | `RETROSPECTIVE BRAND SCREENING PENDING` | — | — |
 
@@ -130,10 +130,10 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 ## 10. Próximo candidato
 
 ```text
-BRAND-CAND-004 — Monitor de consumo energético
+BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos
 ```
 
-Objetivo: validar si medir consumo y aportar información accionable constituye una mejora suficientemente central para la marca, sin confundir monitoreo con ahorro real.
+Objetivo: distinguir reducción/transformación real de residuos de productos comercializados como composteras que sólo sequen, trituren, almacenen o modifiquen parcialmente el residuo.
 
 ## 11. Documentos relacionados
 
@@ -147,3 +147,4 @@ Objetivo: validar si medir consumo y aportar información accionable constituye 
 |---|---|---|
 | 0.1.0 | 2026-09-17 | Primera instancia formal de Marca Hogar con territorio, misiones, límites y Candidate Register. |
 | 0.2.0 | 2026-09-17 | BRAND-CAND-003 pasa a Method v2; próximo screening BRAND-CAND-004. |
+| 0.3.0 | 2026-09-17 | BRAND-CAND-004 pasa a Method v2; próximo screening BRAND-CAND-005. |

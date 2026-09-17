@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.4.0
+version: 1.5.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -62,7 +62,7 @@ Avances recientes:
 - Matrix Validator y `full-matrix-v5 0.7.0` permanecen cerrados.
 - Brand System v0.2 definido con arquitectura `territorio → misiones → problemas → soluciones`.
 - `Marca Hogar` adoptada como primera implementación, organizada por misiones y no por categorías comerciales.
-- Brand Candidate Screening v0.2 operativo; `BRAND-CAND-001`, `BRAND-CAND-002` y `BRAND-CAND-003` quedan `PASS TO METHOD V2`.
+- Brand Candidate Screening v0.2 operativo; `BRAND-CAND-001`, `BRAND-CAND-002`, `BRAND-CAND-003` y `BRAND-CAND-004` quedan `PASS TO METHOD V2`.
 
 ## Fuentes de verdad
 
@@ -117,7 +117,7 @@ docs/
 5. Validar profesionalmente NCM, intervenciones, certificaciones y costos definitivos.
 6. Actualizar `Landed Cost` y construir la shortlist final para decisión de importación.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
-8. Continuar `Brand Candidate Screening` de Marca Hogar con `BRAND-CAND-004 — Monitor de consumo energético`.
+8. Continuar `Brand Candidate Screening` de Marca Hogar con `BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos`.
 9. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
 
 ## Changelog
@@ -131,5 +131,6 @@ docs/
 | 1.2.0 | 2026-09-16 | Se incorpora Brand System reusable, Marca Hogar v0.1 y Brand Candidate Screening v0.1. |
 | 1.3.0 | 2026-09-17 | Refactor Brand System: metodología separada de instancias/candidatos; BRAND-CAND-002 PASS. |
 | 1.4.0 | 2026-09-17 | BRAND-CAND-003 documentado como PASS TO METHOD V2; próximo screening BRAND-CAND-004. |
+| 1.5.0 | 2026-09-17 | BRAND-CAND-004 documentado como PASS TO METHOD V2; próximo screening BRAND-CAND-005. |
 | 1.0.0 | 2026-08-05 | Adopción de `aut32`, cierre del Matrix Validator MVP y publicación de la release `v0.1.0`. |
 | 1.1.0 | 2026-08-07 | Matrix Validator v0.1.0 cerrado, aut33 PASS, Import Cost Headroom, preparación de Landed Cost y definición de Decision Reporter. |
