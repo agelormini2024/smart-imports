@@ -2,12 +2,12 @@
 id: si-decision-016
 title: Adopt Mission-Based Brand Architecture and Brand Candidate Screening
 description: Adopta un Brand System reusable basado en territorio, misiones y problemas, con screening previo a Method v2.
-version: 1.0.0
+version: 1.0.1
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 tags:
   - decision
   - brand
@@ -183,7 +183,7 @@ y utilizar después el mismo Brand Candidate Screening y Method v2.
 
 ## 5. Primera implementación
 
-`Marca Hogar v0.1` se define en `SI-BRAND-001`.
+`Marca Hogar v0.1` se documenta como instancia en `docs/07-brand/brands/brand-hogar/README.md`.
 
 Misiones iniciales:
 
@@ -234,8 +234,9 @@ se registrarán conceptualmente hasta que exista evidencia suficiente para Matri
 
 ## 8. Documentos relacionados
 
-- [SI-BRAND-001 — Brand System reutilizable y Marca Hogar](../07-brand/si-brand-001-reusable-brand-system-and-home-territory.md)
+- [SI-BRAND-001 — Brand System reusable](../07-brand/si-brand-001-reusable-brand-system.md)
 - [SI-BRAND-002 — Brand Candidate Screening](../07-brand/si-brand-002-brand-candidate-screening-method.md)
+- [Marca Hogar — instancia](../07-brand/brands/brand-hogar/README.md)
 - [SI-ROADMAP-002 — Estado actual y handoff](../08-roadmaps/si-roadmap-002-project-status-and-handoff.md)
 - [SI-DECISION-015 — Adoptar aut36 y validar Method v2](./si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md)
 
@@ -244,3 +245,4 @@ se registrarán conceptualmente hasta que exista evidencia suficiente para Matri
 | Version | Date | Change |
 |---|---|---|
 | 1.0.0 | 2026-09-16 | Se adopta Brand System reusable, arquitectura por misiones y Brand Candidate Screening previo a Method v2. |
+| 1.0.1 | 2026-09-17 | Refactor documental no semántico: Brand System separado de instancias y expedientes. |

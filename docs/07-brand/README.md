@@ -1,13 +1,13 @@
 ---
 id: docs-07-brand-readme
 title: 07 — Brand
-description: Índice de documentación del Brand System de Smart Imports y sus implementaciones de marca.
-version: 0.2.0
+description: Índice del Brand System de Smart Imports y sus instancias de marca.
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-16
+updated: 2026-09-17
 tags:
   - smart-imports
   - brand
@@ -23,72 +23,49 @@ related:
 
 > La marca define dónde queremos jugar; Method v2 determina dónde existe un negocio defendible.
 
-## 1. Propósito
-
-Esta sección documenta el sistema de construcción de marcas y portfolios de Smart Imports.
-
-El objetivo no es limitarse a identidad visual, naming o comunicación. La marca se trata como una capa estratégica que define:
-
-- territorio;
-- misiones;
-- problemas;
-- soluciones;
-- criterios de pertenencia al portfolio;
-- relación entre Brand Fit y evaluación comercial.
-
-## 2. Principio rector
-
-Smart Imports adopta una arquitectura basada en:
+## 1. Arquitectura
 
 ```text
-BRAND
-→ BRAND TERRITORY
-→ MISSIONS
-→ PROBLEMS
-→ SOLUTIONS
-→ BRAND CANDIDATE SCREENING
-→ METHOD V2
+Brand System reusable
+├── SI-BRAND-001 — arquitectura general
+├── SI-BRAND-002 — screening reusable
+└── brands/
+    └── brand-hogar/
+        ├── territorio / misiones / límites
+        └── candidates/
+            └── expedientes individuales
 ```
 
-El sistema es deliberadamente reutilizable.
-
-`Marca Hogar` es la primera implementación real, pero el mismo marco debe poder aplicarse a futuras marcas con territorios y misiones diferentes, por ejemplo una eventual marca del `Mundo Fitness`.
-
-## 3. Documentos vigentes
+## 2. Metodología reusable
 
 | Documento | Propósito |
 |---|---|
-| [SI-BRAND-001 — Brand System reutilizable y territorio de Marca Hogar](./si-brand-001-reusable-brand-system-and-home-territory.md) | Define el marco reusable de marca y su primera implementación sobre Hogar. |
-| [SI-BRAND-002 — Brand Candidate Screening](./si-brand-002-brand-candidate-screening-method.md) | Define cómo una solución es evaluada antes de ingresar a Method v2. |
-| [SI-DECISION-016 — Arquitectura de marca por misiones](../09-decision-log/si-decision-016-adopt-mission-based-brand-architecture-and-screening.md) | Formaliza la decisión metodológica. |
+| [SI-BRAND-001](./si-brand-001-reusable-brand-system.md) | Arquitectura común para construir cualquier marca. |
+| [SI-BRAND-002](./si-brand-002-brand-candidate-screening-method.md) | Screening reusable previo a Method v2. |
+| [SI-DECISION-016](../09-decision-log/si-decision-016-adopt-mission-based-brand-architecture-and-screening.md) | Decisión metodológica. |
 
-## 4. Separación fundamental
+## 3. Instancias de marca
 
-```text
-BRAND FIT
-¿Queremos que nuestra marca venda este producto?
+| Brand ID | Estado | Descripción |
+|---|---|---|
+| [`brand-hogar`](./brands/brand-hogar/README.md) | v0.1 / validación práctica | Primera implementación real. |
 
-METHOD V2
-¿Existe realmente un negocio defendible alrededor de este producto?
-```
+`brand-fitness` / `Mundo Fitness` permanece como ejemplo conceptual de reusabilidad, no como marca decidida.
 
-Un alto Brand Fit no implica atractivo comercial.
+## 4. Estado al 2026-09-17
 
-Un producto comercialmente atractivo puede quedar fuera del territorio de una marca concreta.
+- Brand System reusable: v0.2.
+- Brand Candidate Screening: v0.2.
+- Marca Hogar: v0.1.
+- `BRAND-CAND-001`: `PASS TO METHOD V2`.
+- `BRAND-CAND-002`: `PASS TO METHOD V2`.
+- Próximo screening: `BRAND-CAND-003 — Purificación de aire`.
+- matriz, schema y Matrix Validator: sin cambios.
 
-## 5. Estado
-
-Al 2026-09-16:
-
-- `Brand System v0.1`: definido para validación práctica.
-- `Marca Hogar v0.1`: primer territorio aplicado.
-- `Brand Candidate Screening v0.1`: operativo.
-- `BRAND-CAND-001`: aprobado para pasar a Method v2.
-- matriz, schema y Matrix Validator: sin cambios por este frente.
-
-## 6. Changelog
+## 5. Changelog
 
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
-| 0.2.0 | 2026-09-16 | Se incorpora Brand System, Marca Hogar y Brand Candidate Screening como nueva capa estratégica reusable. |
+| 0.2.0 | 2026-09-16 | Se incorpora Brand System, Marca Hogar y Brand Candidate Screening. |
+| 0.3.0 | 2026-09-17 | Se separa metodología reusable de instancias y expedientes de candidatos. |

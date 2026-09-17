@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.2.0
+version: 1.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-16
+updated: 2026-09-17
 tags:
   - smart-imports
   - knowledge-base
@@ -60,9 +60,9 @@ Avances recientes:
 - Primer candidato fuerte preparado para validación profesional.
 - La revisión del despachante queda definida como gate profesional externo.
 - Matrix Validator y `full-matrix-v5 0.7.0` permanecen cerrados.
-- Brand System v0.1 definido con arquitectura `territorio → misiones → problemas → soluciones`.
+- Brand System v0.2 definido con arquitectura `territorio → misiones → problemas → soluciones`.
 - `Marca Hogar` adoptada como primera implementación, organizada por misiones y no por categorías comerciales.
-- Brand Candidate Screening v0.1 operativo; `BRAND-CAND-001` queda `PASS TO METHOD V2`.
+- Brand Candidate Screening v0.2 operativo; `BRAND-CAND-001` y `BRAND-CAND-002` quedan `PASS TO METHOD V2`.
 
 ## Fuentes de verdad
 
@@ -83,8 +83,9 @@ Avances recientes:
 | `docs/05-ai-agents/si-agent-001-smart-imports-intelligence-engine.md` | Visión y módulos del Intelligence Engine. |
 | `docs/06-research/niche-003-pet-care-wellness-technology/si-research-005-niche-3-phases-0-to-6.md` | Consolidación del Nicho 3 hasta Fase 6. |
 | `docs/06-research/niche-003-pet-care-wellness-technology/si-research-006-niche-3-phases-7-to-11-method-v2-validation.md` | Cierre de Fases 7–11 y validación interna de Method v2. |
-| `docs/07-brand/si-brand-001-reusable-brand-system-and-home-territory.md` | Brand System reusable y primera implementación `Marca Hogar`. |
+| `docs/07-brand/si-brand-001-reusable-brand-system.md` | Brand System reusable para cualquier instancia de marca. |
 | `docs/07-brand/si-brand-002-brand-candidate-screening-method.md` | Método reusable de Brand Candidate Screening previo a Method v2. |
+| `docs/07-brand/brands/brand-hogar/README.md` | Territorio, misiones, límites y Candidate Register de Marca Hogar. |
 | `docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md` | Punto de entrada operativo vigente. |
 | `docs/09-decision-log/si-decision-014-adopt-niche3-method-v2-and-aut34.md` | Adopción inicial de Method v2 y `aut34`. |
 | `docs/09-decision-log/si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md` | Adopción de `aut36` y gate profesional externo. |
@@ -116,7 +117,7 @@ docs/
 5. Validar profesionalmente NCM, intervenciones, certificaciones y costos definitivos.
 6. Actualizar `Landed Cost` y construir la shortlist final para decisión de importación.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
-8. Continuar `Brand Candidate Screening` de Marca Hogar, comenzando por `BRAND-CAND-002 — Purificación de agua doméstica`.
+8. Continuar `Brand Candidate Screening` de Marca Hogar con `BRAND-CAND-003 — Purificación de aire`.
 9. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
 
 ## Changelog
@@ -128,5 +129,6 @@ docs/
 | 1.0.0 | 2026-09-11 | Matrix Validator cerrado; `aut34` adoptada; Method v2 y Nicho 3 Fases 0–6 consolidados. |
 | 1.1.0 | 2026-09-15 | `aut36` adoptada; Method v2 validado internamente hasta Landed Cost Screen; gate del despachante formalizado. |
 | 1.2.0 | 2026-09-16 | Se incorpora Brand System reusable, Marca Hogar v0.1 y Brand Candidate Screening v0.1. |
+| 1.3.0 | 2026-09-17 | Refactor Brand System: metodología separada de instancias/candidatos; BRAND-CAND-002 PASS. |
 | 1.0.0 | 2026-08-05 | Adopción de `aut32`, cierre del Matrix Validator MVP y publicación de la release `v0.1.0`. |
 | 1.1.0 | 2026-08-07 | Matrix Validator v0.1.0 cerrado, aut33 PASS, Import Cost Headroom, preparación de Landed Cost y definición de Decision Reporter. |

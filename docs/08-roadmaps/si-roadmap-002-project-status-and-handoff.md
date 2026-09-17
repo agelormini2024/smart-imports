@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.1.0
+version: 1.2.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-09-16
+updated: 2026-09-17
 tags:
   - status
   - handoff
@@ -82,11 +82,11 @@ No confundir:
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
 | Próxima acción comercial | consolidación de finalistas y preparación del gate profesional externo del Nicho 3 |
-| Brand System | v0.1 definido; `Marca Hogar` como primera implementación reusable |
-| Brand Candidate Screening | v0.1 operativo; `BRAND-CAND-001` = `PASS TO METHOD V2` |
-| Próxima acción Brand | `BRAND-CAND-002 — Purificación de agua doméstica` |
+| Brand System | v0.2 definido; `Marca Hogar` como primera implementación reusable |
+| Brand Candidate Screening | v0.2 operativo; `BRAND-CAND-001` y `BRAND-CAND-002` = `PASS TO METHOD V2` |
+| Próxima acción Brand | `BRAND-CAND-003 — Purificación de aire` |
 
-## 3. Snapshot operativo — 2026-09-16
+## 3. Snapshot operativo — 2026-09-17
 
 ### Estado general
 
@@ -394,8 +394,9 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 - [SI-DECISION-014 — Adopt Niche 3 Method v2 and aut34](../09-decision-log/si-decision-014-adopt-niche3-method-v2-and-aut34.md)
 - [SI-RESEARCH-006 — Niche 3 Phases 7–11 / Method v2 validation](../06-research/niche-003-pet-care-wellness-technology/si-research-006-niche-3-phases-7-to-11-method-v2-validation.md)
 - [SI-DECISION-015 — Adopt aut36 and validate Method v2](../09-decision-log/si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md)
-- [SI-BRAND-001 — Brand System reutilizable y Marca Hogar](../07-brand/si-brand-001-reusable-brand-system-and-home-territory.md)
+- [SI-BRAND-001 — Brand System reusable](../07-brand/si-brand-001-reusable-brand-system.md)
 - [SI-BRAND-002 — Brand Candidate Screening](../07-brand/si-brand-002-brand-candidate-screening-method.md)
+- [Marca Hogar — territorio y Candidate Register](../07-brand/brands/brand-hogar/README.md)
 - [SI-DECISION-016 — Arquitectura de marca por misiones](../09-decision-log/si-decision-016-adopt-mission-based-brand-architecture-and-screening.md)
 
 ## 16. Changelog
@@ -406,3 +407,4 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 | 0.8.0 | 2026-08-04 | Adopción de aut31/v5, 144 tests y cierre técnico de vistas derivadas. |
 | 1.0.0 | 2026-09-11 | Matrix Validator cerrado; `aut34` adoptada; Method v2 y Fases 0–6 del Nicho 3 consolidadas. |
 | 1.1.0 | 2026-09-16 | Se incorpora Brand System reusable, Marca Hogar v0.1, Brand Candidate Screening y aclaración de packing de PET-003. |
+| 1.2.0 | 2026-09-17 | Se separan Brand System e instancia Marca Hogar; BRAND-CAND-002 queda PASS y se formalizan expedientes por candidato. |
