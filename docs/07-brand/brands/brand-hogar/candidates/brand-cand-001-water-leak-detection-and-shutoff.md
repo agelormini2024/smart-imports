@@ -2,7 +2,7 @@
 id: brand-cand-001
 title: Water Leak Detection and Automatic Shutoff
 description: Brand Candidate Screening de sistema doméstico de detección de fugas con corte automático para Marca Hogar.
-version: 0.1.0
+version: 0.2.0
 status: pass-to-method-v2
 brand: brand-hogar
 created: 2026-09-16
@@ -16,6 +16,8 @@ updated: 2026-09-17
 ```text
 Candidate ID: BRAND-CAND-001
 Brand: brand-hogar
+Screening Type: PROSPECTIVE
+Territory Relationship: CORE
 Solution: Sistema doméstico de detección de fugas de agua con corte automático
 Primary Mission: Usar mejor los recursos
 Secondary Mission: Resolver problemas domésticos recurrentes

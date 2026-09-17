@@ -2,7 +2,7 @@
 id: brand-cand-004
 title: Domestic Energy Monitoring
 description: Brand Candidate Screening de monitoreo doméstico del consumo energético para Marca Hogar.
-version: 0.1.0
+version: 0.2.0
 status: pass-to-method-v2
 brand: brand-hogar
 created: 2026-09-17
@@ -26,6 +26,8 @@ related:
 ```text
 Candidate ID: BRAND-CAND-004
 Brand: brand-hogar
+Screening Type: PROSPECTIVE
+Territory Relationship: CORE
 Solution: Monitoreo doméstico del consumo de energía
 Primary Mission: Usar mejor los recursos
 Screening Date: 2026-09-17

@@ -2,7 +2,7 @@
 id: docs-07-brand-readme
 title: 07 — Brand
 description: Índice del Brand System de Smart Imports y sus instancias de marca.
-version: 0.7.0
+version: 0.8.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -54,8 +54,8 @@ Brand System reusable
 
 ## 4. Estado al 2026-09-17
 
-- Brand System reusable: v0.2.
-- Brand Candidate Screening: v0.2.
+- Brand System reusable: v0.3.
+- Brand Candidate Screening: v0.3.
 - Marca Hogar: v0.1.
 - `BRAND-CAND-001`: `PASS TO METHOD V2`.
 - `BRAND-CAND-002`: `PASS TO METHOD V2`.
@@ -63,7 +63,7 @@ Brand System reusable
 - `BRAND-CAND-004`: `PASS TO METHOD V2`.
 - `BRAND-CAND-005`: `PASS TO METHOD V2`.
 - `BRAND-CAND-006`: `BRAND FIT CONFIRMED` — strong adjacency.
-- Próximo paso: consolidar los aprendizajes de los seis screenings y decidir qué debe promoverse a metodología reusable.
+- Próximo paso: aplicar Brand System v0.3 a oportunidades reales futuras y observar si aparecen excepciones que justifiquen otra evolución metodológica.
 - matriz, schema y Matrix Validator: sin cambios.
 
 ## 5. Changelog
@@ -77,3 +77,5 @@ Brand System reusable
 | 0.5.0 | 2026-09-17 | Se documenta BRAND-CAND-004 como PASS TO METHOD V2 y se avanza a BRAND-CAND-005. |
 | 0.6.0 | 2026-09-17 | Se documenta BRAND-CAND-005 como PASS TO METHOD V2 y se avanza al screening retrospectivo de BRAND-CAND-006. |
 | 0.7.0 | 2026-09-17 | BRAND-CAND-006 confirma Brand Fit como strong adjacency; finaliza el bloque inicial de screenings. |
+
+| 0.8.0 | 2026-09-17 | Se consolida Brand System / Brand Candidate Screening v0.3 con Territory Relationship y soporte prospectivo/retrospectivo. |

@@ -2,7 +2,7 @@
 id: si-brand-001
 title: Reusable Brand System
 description: Define el Brand System reutilizable de Smart Imports para construir marcas y portfolios coherentes antes de aplicar Method v2.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -154,6 +154,84 @@ BRAND CREDIBILITY
 
 Un candidato puede tener alta relevancia y credibilidad todavía desconocida.
 
+### 4.6 Category membership ≠ Brand Fit
+
+La categoría comercial no determina por sí misma la pertenencia a una marca.
+
+```text
+CATEGORY
+≠
+BRAND TERRITORY
+
+CATEGORY MEMBERSHIP
+≠
+BRAND FIT
+```
+
+El Brand System evalúa primero el `Problem` y la `Solution`, no una taxonomía de marketplace.
+
+Dos Solutions de una misma categoría comercial pueden obtener decisiones de Brand Fit diferentes.
+
+### 4.7 Territory Relationship
+
+Cuando un candidato pertenece al territorio, se registra además su relación estructural:
+
+```text
+CORE
+STRONG ADJACENCY
+```
+
+`CORE` indica pertenencia directa al núcleo del territorio o a una misión central.
+
+`STRONG ADJACENCY` indica una Solution fuera del núcleo puro, pero con conexión suficientemente fuerte y defendible.
+
+Una `STRONG ADJACENCY` requiere simultáneamente:
+
+1. problema concreto y recurrente;
+2. conexión fuerte con el núcleo;
+3. mejora central y tangible;
+4. que su aceptación no habilite automáticamente toda la categoría comercial.
+
+`Territory Relationship` no es un score ni una escala numérica.
+
+`OUTSIDE BRAND TERRITORY` sigue siendo una decisión de screening, no un tercer nivel de Territory Relationship.
+
+### 4.8 Protección contra category creep
+
+> **Aceptar una Solution adyacente no habilita automáticamente su categoría comercial completa.**
+
+Cada nueva Solution debe justificar su Brand Fit por el problema que resuelve.
+
+La pertenencia no se hereda por categoría, proveedor, tecnología, nicho o similitud superficial.
+
+### 4.9 Disciplina de Brand Credibility
+
+Brand Credibility no debe inferir un resultado final desde una señal intermedia.
+
+```text
+DECLARED ATTRIBUTE / COMMERCIAL LABEL
+                 ↓
+           REAL MECHANISM
+                 ↓
+        SYSTEM CAPABILITY
+                 ↓
+        OBSERVABLE OUTPUT
+                 ↓
+             OUTCOME
+                 ↓
+          COMMERCIAL CLAIM
+```
+
+No todas las Solutions requieren todas las capas. La regla es no saltar entre ellas sin evidencia.
+
+Ejemplos empíricos:
+
+```text
+Component specification ≠ System performance
+Measurement ≠ Savings
+Commercial label ≠ Actual transformation process
+```
+
 ## 5. Reusabilidad entre marcas
 
 Primera instancia real:
@@ -291,3 +369,5 @@ Estas entidades son necesidades futuras de modelado, no cambios autorizados sobr
 |---|---|---|
 | 0.1.0 | 2026-09-16 | Primera definición del Brand System reusable junto con Marca Hogar v0.1. |
 | 0.2.0 | 2026-09-17 | Se separa el Brand System reusable de sus instancias y se formaliza `brands/<brand-id>/`. |
+
+| 0.3.0 | 2026-09-17 | Se consolidan seis screenings: Category membership ≠ Brand Fit, Territory Relationship, protección contra category creep y disciplina reusable de Brand Credibility. |

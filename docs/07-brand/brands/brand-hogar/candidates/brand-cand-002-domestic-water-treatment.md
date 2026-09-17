@@ -2,7 +2,7 @@
 id: brand-cand-002
 title: Domestic Water Treatment
 description: Brand Candidate Screening de tratamiento doméstico de agua para Marca Hogar.
-version: 0.1.0
+version: 0.2.0
 status: pass-to-method-v2
 brand: brand-hogar
 created: 2026-09-17
@@ -16,6 +16,8 @@ updated: 2026-09-17
 ```text
 Candidate ID: BRAND-CAND-002
 Brand: brand-hogar
+Screening Type: PROSPECTIVE
+Territory Relationship: CORE
 Solution: Tratamiento doméstico del agua destinada al consumo
 Primary Mission: Mejorar las condiciones del hogar
 Secondary Mission: Usar mejor los recursos — sólo cuando corresponda

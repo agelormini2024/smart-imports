@@ -2,7 +2,7 @@
 id: si-brand-002
 title: Brand Candidate Screening Method
 description: Método reusable para decidir si una solución tiene suficiente Brand Fit para ingresar a Method v2.
-version: 0.2.0
+version: 0.3.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -77,6 +77,29 @@ La unidad inicial es una **Solution / Brand Candidate**, no necesariamente un Pr
 BRAND CANDIDATE / SOLUTION ≠ PRODUCT BASE
 ```
 
+### 3.1 Screening Type
+
+Cada evaluación declara uno de dos tipos:
+
+```text
+PROSPECTIVE
+RETROSPECTIVE
+```
+
+`PROSPECTIVE` es el flujo normal:
+
+```text
+Brand Candidate Screening
+↓
+PASS TO METHOD V2
+↓
+Method v2
+```
+
+`RETROSPECTIVE` se utiliza cuando la oportunidad ya atravesó Method v2 antes de existir formalmente el Brand System.
+
+En ese caso el screening agrega Brand Fit sin reiniciar la evaluación comercial.
+
 ## 4. Dimensiones del screening
 
 ### 4.1 Problema reconocible
@@ -123,11 +146,64 @@ BRAND CREDIBILITY
 
 La solución puede pertenecer al territorio mientras todavía sea necesario demostrar su impacto real.
 
+### 5.1 Territory Relationship
+
+Cuando existe Brand Fit suficiente, el screening registra:
+
+```text
+CORE
+STRONG ADJACENCY
+```
+
+`CORE` representa pertenencia directa al núcleo o a una misión central.
+
+`STRONG ADJACENCY` representa una pertenencia defendible conectada fuertemente con el núcleo, sin expandir automáticamente la categoría comercial.
+
+Para una `STRONG ADJACENCY` deben sostenerse simultáneamente:
+
+1. problema concreto y recurrente;
+2. conexión fuerte con el núcleo;
+3. mejora central y tangible;
+4. ausencia de expansión automática de la categoría.
+
+La clasificación no constituye scoring.
+
+### 5.2 Disciplina de Brand Credibility
+
+No inferir una promesa final desde una etiqueta comercial, un componente aislado, una medición intermedia o una característica declarada.
+
+```text
+DECLARED ATTRIBUTE / COMMERCIAL LABEL
+                 ↓
+           REAL MECHANISM
+                 ↓
+        SYSTEM CAPABILITY
+                 ↓
+        OBSERVABLE OUTPUT
+                 ↓
+             OUTCOME
+                 ↓
+          COMMERCIAL CLAIM
+```
+
+La evidencia debe corresponder al nivel del claim que se pretenda sostener.
+
 ## 6. Estados
 
 ### PASS TO METHOD V2
 
 Brand Fit suficiente para justificar investigación comercial. No implica recomendación de importación.
+
+### BRAND FIT CONFIRMED
+
+Estado reservado para un screening `RETROSPECTIVE` cuando la pertenencia a la marca queda confirmada y Method v2 ya fue realizado.
+
+```text
+Decision: BRAND FIT CONFIRMED
+Method v2 handoff: NO NEW METHOD V2 HANDOFF
+```
+
+No implica que todos los claims de Brand Credibility estén validados.
 
 ### HOLD — BRAND FIT UNCLEAR
 
@@ -149,9 +225,11 @@ Pueden utilizarse lecturas cualitativas como `fuerte`, `muy alto` o `borde`, per
 Candidate ID
 Candidate
 Brand
+Screening Type
 Mission
 Problem
 Solution definition
+Territory Relationship
 Brand Relevance
 Brand Credibility
 Brand-fit rationale
@@ -213,6 +291,15 @@ El screening no debe evaluar anticipadamente:
 - margen;
 - ROI.
 
+Para un screening `RETROSPECTIVE`, si Method v2 ya existe y Brand Fit queda confirmado:
+
+```text
+Method v2 handoff:
+NO NEW METHOD V2 HANDOFF
+```
+
+El screening no reinicia ni duplica el recorrido comercial.
+
 Son válidos resultados como:
 
 ```text
@@ -258,3 +345,5 @@ No se modifica todavía la matriz vigente.
 |---|---|---|
 | 0.1.0 | 2026-09-16 | Primera versión reusable y primer screening aplicado. |
 | 0.2.0 | 2026-09-17 | Se separan resultados concretos del método y se formaliza persistencia por marca/candidato. |
+
+| 0.3.0 | 2026-09-17 | Se formalizan Screening Type, Territory Relationship, BRAND FIT CONFIRMED retrospectivo y disciplina reusable de Brand Credibility. |

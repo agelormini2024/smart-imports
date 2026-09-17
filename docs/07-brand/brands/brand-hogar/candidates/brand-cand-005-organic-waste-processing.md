@@ -2,7 +2,7 @@
 id: brand-cand-005
 title: Organic Waste Processing
 description: Brand Candidate Screening de gestión doméstica de residuos orgánicos para Marca Hogar.
-version: 0.1.0
+version: 0.2.0
 status: pass-to-method-v2
 brand: brand-hogar
 created: 2026-09-17
@@ -26,6 +26,8 @@ related:
 ```text
 Candidate ID: BRAND-CAND-005
 Brand: brand-hogar
+Screening Type: PROSPECTIVE
+Territory Relationship: CORE
 Solution: Gestión doméstica de residuos orgánicos
 Primary Mission: Reducir y gestionar residuos
 Screening Date: 2026-09-17

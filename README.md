@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.7.0
+version: 1.8.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -62,7 +62,7 @@ Avances recientes:
 - Matrix Validator y `full-matrix-v5 0.7.0` permanecen cerrados.
 - Brand System v0.2 definido con arquitectura `territorio → misiones → problemas → soluciones`.
 - `Marca Hogar` adoptada como primera implementación, organizada por misiones y no por categorías comerciales.
-- Brand Candidate Screening v0.2 operativo; `BRAND-CAND-001` a `BRAND-CAND-005` quedan `PASS TO METHOD V2` y `BRAND-CAND-006` queda `BRAND FIT CONFIRMED` como strong adjacency.
+- Brand Candidate Screening v0.3 operativo; `BRAND-CAND-001` a `BRAND-CAND-005` quedan `PASS TO METHOD V2` y `BRAND-CAND-006` queda `BRAND FIT CONFIRMED` como strong adjacency.
 
 ## Fuentes de verdad
 
@@ -117,7 +117,7 @@ docs/
 5. Validar profesionalmente NCM, intervenciones, certificaciones y costos definitivos.
 6. Actualizar `Landed Cost` y construir la shortlist final para decisión de importación.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
-8. Consolidar los aprendizajes de `BRAND-CAND-001` a `BRAND-CAND-006` y revisar qué reglas deben promoverse a la metodología reusable.
+8. Mantener Brand System v0.3 en observación empírica y aplicar el screening a nuevas oportunidades reales cuando aparezcan.
 9. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
 
 ## Changelog
@@ -136,3 +136,5 @@ docs/
 | 1.7.0 | 2026-09-17 | BRAND-CAND-006 confirma Brand Fit retrospectivamente; se completa el bloque inicial de seis screenings. |
 | 1.0.0 | 2026-08-05 | Adopción de `aut32`, cierre del Matrix Validator MVP y publicación de la release `v0.1.0`. |
 | 1.1.0 | 2026-08-07 | Matrix Validator v0.1.0 cerrado, aut33 PASS, Import Cost Headroom, preparación de Landed Cost y definición de Decision Reporter. |
+
+| 1.8.0 | 2026-09-17 | Se consolida Brand System v0.3 y se migran los seis screenings a Territory Relationship + Screening Type. |

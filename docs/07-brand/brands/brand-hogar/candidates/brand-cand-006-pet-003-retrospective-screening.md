@@ -2,7 +2,7 @@
 id: brand-cand-006
 title: PET-003 Retrospective Brand Screening
 description: Screening retrospectivo de BASE-PET-003 para validar su pertenencia a Marca Hogar.
-version: 0.1.0
+version: 0.2.0
 status: brand-fit-confirmed
 brand: brand-hogar
 created: 2026-09-17
@@ -30,6 +30,7 @@ Candidate ID: BRAND-CAND-006
 Brand: brand-hogar
 Reference Product Base: BASE-PET-003
 Screening Type: RETROSPECTIVE
+Territory Relationship: STRONG ADJACENCY
 Primary Mission: Resolver problemas domésticos recurrentes conectados con el núcleo
 Secondary Connection: Reducir y gestionar residuos
 Screening Date: 2026-09-17
@@ -132,12 +133,14 @@ La propuesta no depende de:
 ## 7. Brand Relevance
 
 ```text
-HIGH — STRONG ADJACENCY
+HIGH
 ```
 
 El calificativo `STRONG ADJACENCY` es importante.
 
 `BASE-PET-003` no pertenece al núcleo puro de Marca Hogar, pero presenta una relación fuerte y defendible con problemas domésticos recurrentes, residuos, higiene y mantenimiento.
+
+Territory Relationship: `STRONG ADJACENCY`.
 
 ## 8. Brand Credibility
 

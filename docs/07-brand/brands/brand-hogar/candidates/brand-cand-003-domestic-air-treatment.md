@@ -2,7 +2,7 @@
 id: brand-cand-003
 title: Domestic Air Treatment
 description: Brand Candidate Screening de tratamiento doméstico del aire interior para Marca Hogar.
-version: 0.1.0
+version: 0.2.0
 status: pass-to-method-v2
 brand: brand-hogar
 created: 2026-09-17
@@ -25,6 +25,8 @@ related:
 ```text
 Candidate ID: BRAND-CAND-003
 Brand: brand-hogar
+Screening Type: PROSPECTIVE
+Territory Relationship: CORE
 Solution: Tratamiento doméstico del aire interior
 Primary Mission: Mejorar las condiciones del hogar
 Screening Date: 2026-09-17

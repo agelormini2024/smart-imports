@@ -2,7 +2,7 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.5.0
+version: 0.6.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -116,24 +116,24 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 
 ## 9. Candidate Register
 
-| ID | Candidate | Mission | Status | Brand Relevance | Brand Credibility |
-|---|---|---|---|---|---|
-| [`BRAND-CAND-001`](./candidates/brand-cand-001-water-leak-detection-and-shutoff.md) | Detección de fugas + corte automático | Usar mejor los recursos | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE |
-| [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM |
-| [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
-| [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
-| [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / PROCESS / OUTPUT / CLAIM |
-| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `BRAND FIT CONFIRMED` | HIGH — STRONG ADJACENCY | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
+| ID | Candidate | Mission | Territory Relationship | Status | Brand Relevance | Brand Credibility |
+|---|---|---|---|---|---|---|
+| [`BRAND-CAND-001`](./candidates/brand-cand-001-water-leak-detection-and-shutoff.md) | Detección de fugas + corte automático | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE |
+| [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM |
+| [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
+| [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
+| [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / PROCESS / OUTPUT / CLAIM |
+| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
 
 `BRAND-CAND-006` ya cuenta con investigación previa en Method v2. Su screening será retrospectivo y no reinicia su evaluación comercial.
 
 ## 10. Próximo candidato
 
 ```text
-Consolidar aprendizajes del Brand Candidate Screening y revisar si corresponde formalizar ajustes metodológicos
+Aplicar Brand System v0.3 a nuevas oportunidades reales cuando aparezcan; no crear candidatos sólo para probar el método
 ```
 
-Objetivo: consolidar los aprendizajes empíricos de BRAND-CAND-001 a BRAND-CAND-006 antes de modificar la metodología reusable.
+Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras excepciones sólo cuando aparezcan oportunidades reales.
 
 ## 11. Documentos relacionados
 
@@ -146,7 +146,9 @@ Objetivo: consolidar los aprendizajes empíricos de BRAND-CAND-001 a BRAND-CAND-
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-09-17 | Primera instancia formal de Marca Hogar con territorio, misiones, límites y Candidate Register. |
-| 0.2.0 | 2026-09-17 | BRAND-CAND-003 pasa a Method v2; próximo screening BRAND-CAND-004. |
-| 0.3.0 | 2026-09-17 | BRAND-CAND-004 pasa a Method v2; próximo screening BRAND-CAND-005. |
-| 0.4.0 | 2026-09-17 | BRAND-CAND-005 pasa a Method v2; próximo screening retrospectivo BRAND-CAND-006. |
-| 0.5.0 | 2026-09-17 | BRAND-CAND-006 confirma Brand Fit como strong adjacency; se completa el bloque inicial de seis screenings. |
+| [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
+| [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
+| [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / PROCESS / OUTPUT / CLAIM |
+| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
+
+| 0.6.0 | 2026-09-17 | Se consolida Brand System v0.3: candidatos 001–005 = CORE; candidato 006 = STRONG ADJACENCY. |
