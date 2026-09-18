@@ -2,12 +2,12 @@
 id: brand-hogar-candidates-readme
 title: Marca Hogar — Brand Candidates
 description: Índice de expedientes de Brand Candidate Screening de Marca Hogar.
-version: 0.6.0
+version: 0.7.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 # Marca Hogar — Candidates
@@ -24,3 +24,18 @@ Cada archivo de esta carpeta es la fuente de verdad del screening de una soluci�
 | [BRAND-CAND-006](./brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` |
 
 Estado: bloque inicial consolidado bajo Brand Candidate Screening v0.3. Nuevos candidatos se incorporarán por oportunidad real, no para completar una cuota de pruebas.
+
+
+## Method v2 execution status
+
+| Candidate | Estado de Method v2 | Research | Próximo gate |
+|---|---|---|---|
+| `BRAND-CAND-001` | Fases 0–6 cerradas / `aut37` PASS | [SI-RESEARCH-007](../../../../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md) | Fase 7 — shortlist pre-origen |
+
+La decisión de Brand Screening continúa siendo `PASS TO METHOD V2`; el estado de ejecución comercial se registra por separado.
+
+## Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 0.7.0 | 2026-09-18 | Se registra el estado de ejecución de Method v2 para BRAND-CAND-001 sin alterar su decisión de screening. |

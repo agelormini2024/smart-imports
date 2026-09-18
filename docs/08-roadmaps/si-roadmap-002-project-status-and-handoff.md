@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.7.0
+version: 1.8.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-09-17
+updated: 2026-09-18
 tags:
   - status
   - handoff
@@ -50,7 +50,7 @@ Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
 Snapshot comercial vigente:
-matrix-aut36-niche3-method-v2-checkpoint-corrected.xlsx
+matrix-aut37-brand-cand-001-phase6.xlsx
 → full-matrix-v5 0.7.0
 → PASS limpio
 
@@ -62,10 +62,11 @@ matrix-aut32-id-formats-corrected.xlsx
 No confundir:
 
 - `aut32`: baseline técnica de la release del Validator.
-- `aut34`: snapshot comercial anterior, correspondiente al cierre de Fase 6 del Nicho 3.
-- `aut36`: snapshot comercial operativo vigente, con Method v2 materializado hasta Landed Cost Screen.
+- `aut34`: snapshot comercial histórico correspondiente al cierre de Fase 6 del Nicho 3.
+- `aut36`: checkpoint comercial histórico del Nicho 3, con Method v2 materializado hasta Landed Cost Screen.
+- `aut37`: snapshot comercial operativo vigente, correspondiente a la Golden Run de `BRAND-CAND-001` cerrada hasta Fase 6.
 
-## 2. Snapshot al 2026-09-16
+## 2. Snapshot al 2026-09-18
 
 | Campo | Estado |
 |---|---|
@@ -76,17 +77,18 @@ No confundir:
 | CLI | 5 casos operativos |
 | E2E público | 10 fixtures |
 | CI | Verde |
-| Matriz comercial vigente | `aut36` |
-| Resultado aut36 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
+| Matriz comercial vigente | `matrix-aut37-brand-cand-001-phase6.xlsx` |
+| Resultado aut37 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
 | Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
-| Próxima acción comercial | consolidación de finalistas y preparación del gate profesional externo del Nicho 3 |
+| Próxima acción Golden Run | Fase 7 — shortlist pre-origen de `BRAND-CAND-001` |
+| Próxima acción Nicho 3 | Consolidar finalistas y preparar el gate profesional externo |
 | Brand System | v0.3 consolidado; arquitectura reusable con `CORE` / `STRONG ADJACENCY`, category-creep protection y separación Brand Fit / Method v2 |
 | Brand Candidate Screening | v0.3 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; 001–005 = `CORE / PASS TO METHOD V2`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED` |
 | Próxima acción Brand | Aplicar Brand System v0.3 a nuevas oportunidades reales; no abrir candidatos sólo para probar el método |
 
-## 3. Snapshot operativo — 2026-09-17
+## 3. Snapshot histórico del Nicho 3 — 2026-09-17
 
 ### Estado general
 
@@ -96,7 +98,7 @@ Smart Imports completó la validación interna de Method v2 hasta `Landed Cost S
 Matrix Validator: v0.1.0
 Schema: full-matrix-v5 0.7.0
 Baseline técnica: aut32
-Snapshot comercial vigente: aut36
+Snapshot comercial del checkpoint: aut36
 Archivo: matrix-aut36-niche3-method-v2-checkpoint-corrected.xlsx
 Resultado: PASS
 errors: 0
@@ -157,7 +159,7 @@ completar 5–6 candidatos firmes
 
 La revisión del despachante es una dependencia profesional externa y no requiere reabrir el Matrix Validator.
 
-## 4. Matriz operativa vigente — aut36
+## 4. Matriz del checkpoint histórico del Nicho 3 — aut36
 
 ```text
 matrix-aut36-niche3-method-v2-checkpoint-corrected.xlsx
@@ -275,7 +277,7 @@ Mantener `full-matrix-v5 0.7.0` estable mientras estas necesidades no justifique
 - Competencia: cerrada.
 - Potencial de Marca: cerrado.
 - Productos Base: cerrados.
-- Materialización operativa vigente: `aut36` PASS.
+- Materialización del checkpoint del Nicho 3: `aut36` PASS.
 - Próximo gate: consolidar 5–6 candidatos firmes, negociar condiciones y preparar la validación profesional externa.
 
 ## 10. Próxima secuencia del Nicho 3
@@ -342,7 +344,7 @@ Sistema doméstico de detección de fugas de agua con corte automático
 → PASS TO METHOD V2
 ```
 
-El Brand System no modifica `aut36`, `full-matrix-v5 0.7.0` ni Matrix Validator v0.1.0. Las necesidades futuras de modelado de Brand, Territory, Mission, Problem, Solution y Brand Fit se registran conceptualmente antes de decidir Matrix vNext o cambios del Intelligence Engine.
+El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validator v0.1.0. La ejecución de `BRAND-CAND-001` generó `aut37` como nuevo snapshot comercial vigente, preservando `aut36` como checkpoint histórico del Nicho 3. Las necesidades futuras de modelado de Brand, Territory, Mission, Problem, Solution y Brand Fit se registran conceptualmente antes de decidir Matrix vNext o cambios del Intelligence Engine.
 
 ## 12. Bloqueos y dependencias
 
@@ -365,7 +367,7 @@ El Brand System no modifica `aut36`, `full-matrix-v5 0.7.0` ni Matrix Validator 
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
 4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
 5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002` y `SI-DECISION-016`.
-6. Adjuntar `aut36` sólo cuando la tarea requiera datos privados de la matriz.
+6. Adjuntar `aut37` cuando la tarea requiera el snapshot comercial vigente. Usar `aut36` sólo cuando la tarea requiera específicamente el checkpoint histórico del Nicho 3.
 7. No volver a adjuntar PDFs históricos ya consolidados.
 8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
 9. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
@@ -403,6 +405,7 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.8.0 | 2026-09-18 | BRAND-CAND-001 completa Golden Run hasta Fase 6; aut37 PASS y próxima acción Fase 7. |
 | 0.7.0 | 2026-08-03 | Handoff de v3/v4 y normalización de fuentes. |
 | 0.8.0 | 2026-08-04 | Adopción de aut31/v5, 144 tests y cierre técnico de vistas derivadas. |
 | 1.0.0 | 2026-09-11 | Matrix Validator cerrado; `aut34` adoptada; Method v2 y Fases 0–6 del Nicho 3 consolidadas. |
@@ -414,3 +417,21 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 | 1.6.0 | 2026-09-17 | BRAND-CAND-006 confirma Brand Fit retrospectivamente; próximo paso: consolidar aprendizajes del bloque de seis screenings. |
 
 | 1.7.0 | 2026-09-17 | Se consolida Brand System v0.3: Territory Relationship, Screening Type y soporte formal de screening retrospectivo. |
+## Golden Run BRAND-CAND-001 — Fases 0–6
+
+Estado:
+
+```text
+Input: BRAND-CAND-001
+Method v2: Fases 0–6 COMPLETADAS
+Matrix: matrix-aut37-brand-cand-001-phase6.xlsx
+SHA-256: 6c0f1524fe102fe5c531edb890639bb9fa9845fbc4cc1b9e046ce9ceb96387ff
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+Next Action: Fase 7 — shortlist pre-origen
+```
+
+Cinco Product Bases pasan al gate de Fase 7: `BASE-HOGAR-002` a `BASE-HOGAR-006`. `BASE-HOGAR-001`, `BASE-HOGAR-007` y `BASE-HOGAR-008` son PB de soporte y no avanzan automáticamente.
+
+La matriz usa el Nicho ID 32 como `MATRIX_SCOPE_ALIAS` exclusivamente por compatibilidad con `full-matrix-v5 0.7.0`. El input conceptual sigue siendo `BRAND-CAND-001`; esta fricción queda registrada para Matrix vNext / Intelligence Engine, sin reabrir ahora el schema ni el Validator.
+
+Fuente de ejecución: [SI-RESEARCH-007](../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md).

@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.8.0
+version: 1.9.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-17
+updated: 2026-09-18
 tags:
   - smart-imports
   - knowledge-base
@@ -27,6 +27,18 @@ A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusab
 
 ## Estado actual
 
+
+### BRAND-CAND-001 — Golden Run Fases 0–6
+
+La primera ejecución formal `Brand System → Method v2` completó Fases 0–6 sobre detección de fugas + corte automático. El snapshot comercial vigente para este checkpoint es `matrix-aut37-brand-cand-001-phase6.xlsx`, validado con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
+
+```text
+Brand Candidate → Method v2 → Product Bases → aut37 PASS → Fase 7
+```
+
+Research: `docs/06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md`.
+
+
 Smart Imports se encuentra en una etapa de **selección de candidatos, preparación de validación profesional externa y validación práctica del Brand System**.
 
 El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0**, permanece cerrado y publicado. Method v2 fue ejecutado internamente hasta `Landed Cost Screen` sobre el Nicho 3.
@@ -43,14 +55,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: aut36
-Archivo: matrix-aut36-niche3-method-v2-checkpoint-corrected.xlsx
+Matriz comercial vigente: `matrix-aut37-brand-cand-001-phase6.xlsx`
+Archivo: matrix-aut37-brand-cand-001-phase6.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut36: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+Resultado aut37: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
 SHA-256: 219d9954acca9fefda5f6edef2eab18f93bf0b4564e45d3e1442f13d6db39a53
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` es el snapshot comercial operativo vigente.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut37` es el snapshot comercial operativo vigente.
 
 Avances recientes:
 
@@ -124,6 +136,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.9.0 | 2026-09-18 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 6; aut37 PASS y lista para shortlist pre-origen. |
 | 0.8.0 | 2026-08-03 | Estado as-built de schemas v3/v4 y 78 tests. |
 | 0.9.0 | 2026-08-04 | Adopción de `aut31`, `full-matrix-v5 0.5.0`, 144 tests, resúmenes normalizados y vistas derivadas. |
 | 1.0.0 | 2026-09-11 | Matrix Validator cerrado; `aut34` adoptada; Method v2 y Nicho 3 Fases 0–6 consolidados. |

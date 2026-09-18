@@ -2,11 +2,12 @@
 id: brand-cand-001
 title: Water Leak Detection and Automatic Shutoff
 description: Brand Candidate Screening de sistema doméstico de detección de fugas con corte automático para Marca Hogar.
-version: 0.2.0
+version: 0.3.0
 status: pass-to-method-v2
 brand: brand-hogar
+method_v2_status: phase6-closed
 created: 2026-09-16
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 # BRAND-CAND-001 — Detección de fugas + corte automático
@@ -29,7 +30,7 @@ Decision: PASS TO METHOD V2
 
 Detectar una pérdida de agua y, cuando corresponda, interrumpir automáticamente el suministro para evitar desperdicio y daños.
 
-Todavía no define un Product Base.
+El screening no predefine un Product Base. La Golden Run posterior de Method v2 definió y materializó los Product Bases documentados en SI-RESEARCH-007.
 
 ## 3. Screening
 
@@ -76,7 +77,48 @@ Detección y prevención doméstica de fugas de agua con capacidad de corte auto
 
 Method v2 debe normalizar las arquitecturas comerciales relevantes antes de evaluar demanda, competencia, origen y economía.
 
+
+## Method v2 execution status
+
+```text
+Screening Type: PROSPECTIVE
+Method v2: FASES 0–6 COMPLETADAS
+Commercial snapshot: aut37
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+Next Gate: FASE 7 — SHORTLIST PRE-ORIGEN
+```
+
+La ejecución formal queda documentada en:
+
+- [SI-RESEARCH-007 — BRAND-CAND-001 Golden Run Fases 0–6](../../../../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md)
+
+Product Bases elegibles para Fase 7:
+
+```text
+BASE-HOGAR-002
+BASE-HOGAR-003
+BASE-HOGAR-004
+BASE-HOGAR-005
+BASE-HOGAR-006
+```
+
+Product Bases de soporte, trazables pero no elegibles por inercia:
+
+```text
+BASE-HOGAR-001
+BASE-HOGAR-007
+BASE-HOGAR-008
+```
+
+La fila de Nicho 32 de `aut37` es un `MATRIX_SCOPE_ALIAS`: adapta el flujo `Brand Candidate → Method v2` al modelo legacy de `full-matrix-v5 0.7.0`; no redefine a `BRAND-CAND-001` como nicho.
+
 ## 8. Documentos relacionados
 
 - [Marca Hogar](../README.md)
 - [Brand Candidate Screening](../../../si-brand-002-brand-candidate-screening-method.md)
+
+## Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 0.3.0 | 2026-09-18 | Method v2 completa Fases 0–6; aut37 PASS, Product Bases normalizados y próximo gate Fase 7. |

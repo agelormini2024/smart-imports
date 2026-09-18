@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.5.0
+version: 0.6.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-15
+updated: 2026-09-18
 tags:
   - smart-imports
   - research
@@ -104,9 +104,19 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.6.0 | 2026-09-18 | Se incorpora Research de Marca Hogar y SI-RESEARCH-007 como primera Golden Run Brand System → Method v2. |
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
 | 0.2.0 | 2026-07-17 | Se activó la sección con la selección y el alcance del Nicho 2. |
 | 0.3.0 | 2026-07-20 | Se creó el punto de entrada del Nicho 1 y se documentó la primera ronda de proveedores. |
 
 | 0.4.0 | 2026-09-11 | Se incorporó el Nicho 3, Method v2 y su consolidación hasta Fase 6. |
 | 0.5.0 | 2026-09-15 | Se incorporó SI-RESEARCH-006 y se cerró la validación interna de Method v2 hasta Landed Cost Screen. |
+
+
+## Research originado desde Brand System
+
+| Brand | Documento | Estado |
+|---|---|---|
+| Marca Hogar | [SI-RESEARCH-007 — BRAND-CAND-001 Golden Run Fases 0–6](./brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md) | `aut37` PASS / Fase 6 cerrada / listo para Fase 7 |
+
+> Estos research parten de un Brand Candidate aprobado. No deben modelarse conceptualmente como nuevos nichos aunque la matriz legacy requiera un `MATRIX_SCOPE_ALIAS`.

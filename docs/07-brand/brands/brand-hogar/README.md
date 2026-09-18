@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.6.0
+version: 0.7.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-17
+updated: 2026-09-18
 tags:
   - brand
   - home
@@ -145,6 +145,7 @@ Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras
 
 | Version | Date | Change |
 |---|---|---|
+| 0.7.0 | 2026-09-18 | BRAND-CAND-001 completa Method v2 hasta Fase 6 y queda listo para shortlist pre-origen. |
 | 0.1.0 | 2026-09-17 | Primera instancia formal de Marca Hogar con territorio, misiones, límites y Candidate Register. |
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
 | [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
@@ -152,3 +153,12 @@ Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras
 | [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
 
 | 0.6.0 | 2026-09-17 | Se consolida Brand System v0.3: candidatos 001–005 = CORE; candidato 006 = STRONG ADJACENCY. |
+
+
+## Golden Run BRAND-CAND-001
+
+`BRAND-CAND-001` completó Method v2 hasta Fase 6. `aut37` quedó validada con PASS limpio y cinco Product Bases candidatos están listos para `Fase 7 — shortlist pre-origen`.
+
+La ejecución completa se conserva en [SI-RESEARCH-007](../../../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md).
+
+Esta ejecución no modifica el Brand Fit ni la decisión original `PASS TO METHOD V2`; agrega el estado comercial posterior.
