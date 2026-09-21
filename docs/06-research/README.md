@@ -2,7 +2,7 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.7.0
+version: 0.8.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -104,6 +104,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.8.0 | 2026-09-21 | Se incorpora SI-RESEARCH-009 con cierre de Fase 9 de BRAND-CAND-001. |
 | 0.7.0 | 2026-09-21 | Se incorpora SI-RESEARCH-008 con cierre de Fases 7–8 de BRAND-CAND-001. |
 | 0.6.0 | 2026-09-18 | Se incorpora Research de Marca Hogar y SI-RESEARCH-007 como primera Golden Run Brand System → Method v2. |
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
@@ -127,3 +128,9 @@ Los datos comerciales exactos permanecen en sistemas privados:
 | Brand | Documento | Estado |
 |---|---|---|
 | Marca Hogar | [SI-RESEARCH-008 — BRAND-CAND-001 Golden Run Fases 7–8](./brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md) | `aut39` PASS / Fase 8 cerrada / próximo gate Fase 9 — Headroom |
+
+## Golden Run BRAND-CAND-001 — Fase 9
+
+| Brand | Documento | Estado |
+|---|---|---|
+| Marca Hogar | [SI-RESEARCH-009 — BRAND-CAND-001 Fase 9 Headroom](./brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md) | `aut40` PASS / Fase 9 cerrada / siguiente gate Fase 10 — Minimum Landed Cost Dataset |

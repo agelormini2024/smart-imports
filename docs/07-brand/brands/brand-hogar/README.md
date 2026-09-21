@@ -2,7 +2,7 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.8.0
+version: 0.9.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -145,6 +145,7 @@ Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras
 
 | Version | Date | Change |
 |---|---|---|
+| 0.9.0 | 2026-09-21 | BRAND-CAND-001 completa Fase 9; aut40 PASS y siguiente gate Fase 10. |
 | 0.8.0 | 2026-09-21 | BRAND-CAND-001 completa Fases 7–8; aut39 PASS y próximo gate Headroom. |
 | 0.7.0 | 2026-09-18 | BRAND-CAND-001 completa Method v2 hasta Fase 6 y queda listo para shortlist pre-origen. |
 | 0.1.0 | 2026-09-17 | Primera instancia formal de Marca Hogar con territorio, misiones, límites y Candidate Register. |
@@ -173,3 +174,13 @@ La shortlist activa queda centrada en `BASE-HOGAR-003`, `BASE-HOGAR-006` y `BASE
 El próximo gate es `Fase 9 — Headroom`.
 
 Fuente: [SI-RESEARCH-008](../../../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md).
+
+## Golden Run BRAND-CAND-001 — Fase 9 cerrada
+
+`BRAND-CAND-001` completó Method v2 hasta Fase 9. `aut40` quedó validada con PASS limpio.
+
+Los tres PB activos sobreviven al filtro de Headroom: `BASE-HOGAR-002`, `BASE-HOGAR-003` —condicionado— y `BASE-HOGAR-006`. `BASE-HOGAR-004` permanece en watchlist y `BASE-HOGAR-005` pausado.
+
+El siguiente gate es `Fase 10 — Minimum Landed Cost Dataset`.
+
+Fuente: [SI-RESEARCH-009](../../../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md).

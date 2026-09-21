@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.10.0
+version: 1.11.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -27,6 +27,21 @@ A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusab
 
 ## Estado actual
 
+
+
+
+### BRAND-CAND-001 — Golden Run Fase 9
+
+La Golden Run completó `Fase 9 — Import Cost Headroom`. El snapshot comercial vigente es `matrix-aut40-brand-cand-001-phase9.xlsx`, validado con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
+
+```text
+Brand Candidate
+→ Method v2 Fases 0–9
+→ aut40 PASS
+→ Fase 10 — Minimum Landed Cost Dataset
+```
+
+Research: `docs/06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md`.
 
 
 ### BRAND-CAND-001 — Golden Run Fases 7–8
@@ -70,14 +85,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut39-brand-cand-001-phase8.xlsx`
-Archivo: matrix-aut39-brand-cand-001-phase8.xlsx
+Matriz comercial vigente: `matrix-aut40-brand-cand-001-phase9.xlsx`
+Archivo: matrix-aut40-brand-cand-001-phase9.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut39: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 219d9954acca9fefda5f6edef2eab18f93bf0b4564e45d3e1442f13d6db39a53
+Resultado aut40: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 525e8aefb5db96a30b8d5565f05fd9c1ac283f1a8eafffbbd7d5f75f9ecc4512
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut37` es el snapshot comercial operativo vigente.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut40` es el snapshot comercial operativo vigente.
 
 Avances recientes:
 
@@ -151,6 +166,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.11.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 9; aut40 PASS y siguiente gate Minimum Landed Cost Dataset. |
 | 1.10.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 8; aut39 PASS y próximo gate Headroom. |
 | 1.9.0 | 2026-09-18 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 6; aut37 PASS y lista para shortlist pre-origen. |
 | 0.8.0 | 2026-08-03 | Estado as-built de schemas v3/v4 y 78 tests. |

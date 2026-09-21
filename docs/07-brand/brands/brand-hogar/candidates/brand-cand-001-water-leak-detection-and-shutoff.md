@@ -2,10 +2,10 @@
 id: brand-cand-001
 title: Water Leak Detection and Automatic Shutoff
 description: Brand Candidate Screening de sistema doméstico de detección de fugas con corte automático para Marca Hogar.
-version: 0.4.0
+version: 0.5.0
 status: pass-to-method-v2
 brand: brand-hogar
-method_v2_status: phase8-closed
+method_v2_status: phase9-closed
 created: 2026-09-16
 updated: 2026-09-21
 ---
@@ -82,28 +82,29 @@ Method v2 debe normalizar las arquitecturas comerciales relevantes antes de eval
 
 ```text
 Screening Type: PROSPECTIVE
-Method v2: FASES 0–8 COMPLETADAS
-Commercial snapshot: aut39
+Method v2: FASES 0–9 COMPLETADAS
+Commercial snapshot: aut40
 Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-Next Gate: FASE 9 — HEADROOM
+Next Gate: FASE 10 — MINIMUM LANDED COST DATASET
 ```
 
 La ejecución se documenta en:
 
 - [SI-RESEARCH-007 — BRAND-CAND-001 Golden Run Fases 0–6](../../../../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md)
 - [SI-RESEARCH-008 — BRAND-CAND-001 Golden Run Fases 7–8](../../../../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md)
+- [SI-RESEARCH-009 — BRAND-CAND-001 Golden Run Fase 9](../../../../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md)
 
-Estado de shortlist/origen:
+Estado posterior a Headroom:
 
 ```text
-BASE-HOGAR-003 → ACTIVE / ORIGIN CONFIRMED
-BASE-HOGAR-006 → ACTIVE / ORIGIN CONFIRMED
-BASE-HOGAR-002 → ACTIVE SECONDARY / ORIGIN CONFIRMED — CONDITIONAL
-BASE-HOGAR-004 → WATCHLIST / ORIGIN CONFIRMED
-BASE-HOGAR-005 → PAUSED / NOT SCREENED BY DESIGN
+BASE-HOGAR-002 → SURVIVES / PASS TO F10
+BASE-HOGAR-003 → SURVIVES — CONDITIONED / PASS TO F10
+BASE-HOGAR-006 → SURVIVES / PASS TO F10
+BASE-HOGAR-004 → WATCHLIST
+BASE-HOGAR-005 → PAUSED
 ```
 
-`ORIGIN CONFIRMED` no selecciona proveedor ni autoriza compra. Los pendientes documentales se actualizan por fila y sólo reabren el PB ante contradicción estructural.
+`HEADROOM ≠ LANDED COST`. Fase 10 debe reunir el dataset mínimo defendible antes de abrir un cálculo de costo puesto.
 
 
 ## 8. Documentos relacionados
@@ -115,5 +116,6 @@ BASE-HOGAR-005 → PAUSED / NOT SCREENED BY DESIGN
 
 | Version | Date | Change |
 |---|---|---|
+| 0.5.0 | 2026-09-21 | Method v2 completa Fase 9; aut40 PASS y siguiente gate Fase 10 — Minimum Landed Cost Dataset. |
 | 0.4.0 | 2026-09-21 | Method v2 completa Fases 7–8; aut39 PASS y próximo gate Fase 9 — Headroom. |
 | 0.3.0 | 2026-09-18 | Method v2 completa Fases 0–6; aut37 PASS, Product Bases normalizados y próximo gate Fase 7. |

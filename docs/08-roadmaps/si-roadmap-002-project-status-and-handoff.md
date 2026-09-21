@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.9.0
+version: 1.10.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -50,7 +50,7 @@ Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
 Snapshot comercial vigente:
-matrix-aut39-brand-cand-001-phase8.xlsx
+matrix-aut40-brand-cand-001-phase9.xlsx
 → full-matrix-v5 0.7.0
 → PASS limpio
 
@@ -77,12 +77,12 @@ No confundir:
 | CLI | 5 casos operativos |
 | E2E público | 10 fixtures |
 | CI | Verde |
-| Matriz comercial vigente | `matrix-aut39-brand-cand-001-phase8.xlsx` |
-| Resultado aut39 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
+| Matriz comercial vigente | `matrix-aut40-brand-cand-001-phase9.xlsx` |
+| Resultado aut40 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
 | Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
-| Próxima acción Golden Run | Fase 9 — Headroom de `BRAND-CAND-001` |
+| Próxima acción Golden Run | Fase 10 — Minimum Landed Cost Dataset de `BRAND-CAND-001` |
 | Próxima acción Nicho 3 | Consolidar finalistas y preparar el gate profesional externo |
 | Brand System | v0.3 consolidado; arquitectura reusable con `CORE` / `STRONG ADJACENCY`, category-creep protection y separación Brand Fit / Method v2 |
 | Brand Candidate Screening | v0.3 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; 001–005 = `CORE / PASS TO METHOD V2`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED` |
@@ -405,6 +405,7 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.10.0 | 2026-09-21 | BRAND-CAND-001 completa Fase 9; aut40 PASS y próxima acción Fase 10 — Minimum Landed Cost Dataset. |
 | 1.9.0 | 2026-09-21 | BRAND-CAND-001 completa Fases 7–8; aut39 PASS y próxima acción Fase 9 — Headroom. |
 | 1.8.0 | 2026-09-18 | BRAND-CAND-001 completa Golden Run hasta Fase 6; aut37 PASS y próxima acción Fase 7. |
 | 0.7.0 | 2026-08-03 | Handoff de v3/v4 y normalización de fuentes. |
@@ -462,3 +463,31 @@ BASE-HOGAR-005 → PAUSED
 Las respuestas documentales pendientes de proveedores no bloquean el gate ya demostrado. Se actualiza sólo la evidencia afectada; Fase 8 se reabre únicamente ante una contradicción estructural.
 
 Fuente de ejecución: [SI-RESEARCH-008](../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md).
+## Golden Run BRAND-CAND-001 — Fase 9
+
+Estado:
+
+```text
+Input: BRAND-CAND-001
+Method v2: Fases 0–9 COMPLETADAS
+Matrix vigente: matrix-aut40-brand-cand-001-phase9.xlsx
+SHA-256: 525e8aefb5db96a30b8d5565f05fd9c1ac283f1a8eafffbbd7d5f75f9ecc4512
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+Next Action: Fase 10 — Minimum Landed Cost Dataset
+```
+
+Resultado del gate:
+
+```text
+BASE-HOGAR-002 → SURVIVES / PASS TO F10
+BASE-HOGAR-003 → SURVIVES — CONDITIONED / PASS TO F10
+BASE-HOGAR-006 → SURVIVES / PASS TO F10
+BASE-HOGAR-004 → WATCHLIST
+BASE-HOGAR-005 → PAUSED
+```
+
+`HEADROOM ≠ LANDED COST`. Los ratios y datos comerciales exactos permanecen en la matriz operativa y registros privados.
+
+Fase 10 debe reunir configuración exacta, Incoterm, tier/MOQ aplicable, packing, unidades por caja, dimensiones/CBM, pesos y documentación técnica mínima antes de abrir Landed Cost.
+
+Fuente de ejecución: [SI-RESEARCH-009](../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md).

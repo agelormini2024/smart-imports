@@ -2,7 +2,7 @@
 id: brand-hogar-candidates-readme
 title: Marca Hogar — Brand Candidates
 description: Índice de expedientes de Brand Candidate Screening de Marca Hogar.
-version: 0.8.0
+version: 0.9.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -30,7 +30,7 @@ Estado: bloque inicial consolidado bajo Brand Candidate Screening v0.3. Nuevos c
 
 | Candidate | Estado de Method v2 | Research | Próximo gate |
 |---|---|---|---|
-| `BRAND-CAND-001` | Fases 0–8 cerradas / `aut39` PASS | [SI-RESEARCH-008](../../../../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md) | Fase 9 — Headroom |
+| `BRAND-CAND-001` | Fases 0–9 cerradas / `aut40` PASS | [SI-RESEARCH-009](../../../../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md) | Fase 10 — Minimum Landed Cost Dataset |
 
 La decisión de Brand Screening continúa siendo `PASS TO METHOD V2`; el estado de ejecución comercial se registra por separado.
 
@@ -38,5 +38,6 @@ La decisión de Brand Screening continúa siendo `PASS TO METHOD V2`; el estado 
 
 | Version | Date | Change |
 |---|---|---|
+| 0.9.0 | 2026-09-21 | BRAND-CAND-001 cierra Fase 9 con aut40 PASS; siguiente gate Minimum Landed Cost Dataset. |
 | 0.8.0 | 2026-09-21 | BRAND-CAND-001 cierra Fase 8 con aut39 PASS; próximo gate Headroom. |
 | 0.7.0 | 2026-09-18 | Se registra el estado de ejecución de Method v2 para BRAND-CAND-001 sin alterar su decisión de screening. |
