@@ -2,12 +2,12 @@
 id: research-brand-hogar-readme
 title: Marca Hogar — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Hogar.
-version: 0.1.0
+version: 0.2.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-21
 ---
 
 # Marca Hogar — Research
@@ -33,3 +33,13 @@ No debe confundirse este directorio con los research históricos organizados por
 ## Regla operativa
 
 El expediente del Brand Candidate sigue siendo el input de negocio. Este directorio documenta la ejecución posterior de Method v2 y no redefine al candidato como nicho.
+
+## BRAND-CAND-001 — Golden Run Fases 7–8
+
+- [SI-RESEARCH-008 — BRAND-CAND-001 Method v2 Golden Run — Fases 7 a 8](./si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md) — shortlist pre-origen + screening de origen; `aut39` PASS; próximo gate Fase 9 — Headroom.
+
+## Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 0.2.0 | 2026-09-21 | Se documentan Fases 7–8 de BRAND-CAND-001; aut39 PASS y próximo gate Headroom. |

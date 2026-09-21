@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.9.0
+version: 1.10.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-18
+updated: 2026-09-21
 tags:
   - smart-imports
   - knowledge-base
@@ -26,6 +26,21 @@ La importación es el primer caso de uso. La visión de largo plazo es una metod
 A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusable** para definir dónde quiere jugar cada marca antes de aplicar Method v2. `Marca Hogar` es la primera implementación real; el marco está diseñado para reutilizarse en futuras marcas con territorios y misiones propios.
 
 ## Estado actual
+
+
+
+### BRAND-CAND-001 — Golden Run Fases 7–8
+
+La Golden Run completó shortlist pre-origen y screening de origen. El snapshot comercial vigente es `matrix-aut39-brand-cand-001-phase8.xlsx`, validado con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
+
+```text
+Brand Candidate
+→ Method v2 Fases 0–8
+→ aut39 PASS
+→ Fase 9 — Headroom
+```
+
+Research: `docs/06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md`.
 
 
 ### BRAND-CAND-001 — Golden Run Fases 0–6
@@ -55,10 +70,10 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut37-brand-cand-001-phase6.xlsx`
-Archivo: matrix-aut37-brand-cand-001-phase6.xlsx
+Matriz comercial vigente: `matrix-aut39-brand-cand-001-phase8.xlsx`
+Archivo: matrix-aut39-brand-cand-001-phase8.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut37: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+Resultado aut39: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
 SHA-256: 219d9954acca9fefda5f6edef2eab18f93bf0b4564e45d3e1442f13d6db39a53
 ```
 
@@ -136,6 +151,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.10.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 8; aut39 PASS y próximo gate Headroom. |
 | 1.9.0 | 2026-09-18 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 6; aut37 PASS y lista para shortlist pre-origen. |
 | 0.8.0 | 2026-08-03 | Estado as-built de schemas v3/v4 y 78 tests. |
 | 0.9.0 | 2026-08-04 | Adopción de `aut31`, `full-matrix-v5 0.5.0`, 144 tests, resúmenes normalizados y vistas derivadas. |

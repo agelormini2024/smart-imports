@@ -2,12 +2,12 @@
 id: brand-cand-001
 title: Water Leak Detection and Automatic Shutoff
 description: Brand Candidate Screening de sistema doméstico de detección de fugas con corte automático para Marca Hogar.
-version: 0.3.0
+version: 0.4.0
 status: pass-to-method-v2
 brand: brand-hogar
-method_v2_status: phase6-closed
+method_v2_status: phase8-closed
 created: 2026-09-16
-updated: 2026-09-18
+updated: 2026-09-21
 ---
 
 # BRAND-CAND-001 — Detección de fugas + corte automático
@@ -82,35 +82,29 @@ Method v2 debe normalizar las arquitecturas comerciales relevantes antes de eval
 
 ```text
 Screening Type: PROSPECTIVE
-Method v2: FASES 0–6 COMPLETADAS
-Commercial snapshot: aut37
+Method v2: FASES 0–8 COMPLETADAS
+Commercial snapshot: aut39
 Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-Next Gate: FASE 7 — SHORTLIST PRE-ORIGEN
+Next Gate: FASE 9 — HEADROOM
 ```
 
-La ejecución formal queda documentada en:
+La ejecución se documenta en:
 
 - [SI-RESEARCH-007 — BRAND-CAND-001 Golden Run Fases 0–6](../../../../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md)
+- [SI-RESEARCH-008 — BRAND-CAND-001 Golden Run Fases 7–8](../../../../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md)
 
-Product Bases elegibles para Fase 7:
-
-```text
-BASE-HOGAR-002
-BASE-HOGAR-003
-BASE-HOGAR-004
-BASE-HOGAR-005
-BASE-HOGAR-006
-```
-
-Product Bases de soporte, trazables pero no elegibles por inercia:
+Estado de shortlist/origen:
 
 ```text
-BASE-HOGAR-001
-BASE-HOGAR-007
-BASE-HOGAR-008
+BASE-HOGAR-003 → ACTIVE / ORIGIN CONFIRMED
+BASE-HOGAR-006 → ACTIVE / ORIGIN CONFIRMED
+BASE-HOGAR-002 → ACTIVE SECONDARY / ORIGIN CONFIRMED — CONDITIONAL
+BASE-HOGAR-004 → WATCHLIST / ORIGIN CONFIRMED
+BASE-HOGAR-005 → PAUSED / NOT SCREENED BY DESIGN
 ```
 
-La fila de Nicho 32 de `aut37` es un `MATRIX_SCOPE_ALIAS`: adapta el flujo `Brand Candidate → Method v2` al modelo legacy de `full-matrix-v5 0.7.0`; no redefine a `BRAND-CAND-001` como nicho.
+`ORIGIN CONFIRMED` no selecciona proveedor ni autoriza compra. Los pendientes documentales se actualizan por fila y sólo reabren el PB ante contradicción estructural.
+
 
 ## 8. Documentos relacionados
 
@@ -121,4 +115,5 @@ La fila de Nicho 32 de `aut37` es un `MATRIX_SCOPE_ALIAS`: adapta el flujo `Bran
 
 | Version | Date | Change |
 |---|---|---|
+| 0.4.0 | 2026-09-21 | Method v2 completa Fases 7–8; aut39 PASS y próximo gate Fase 9 — Headroom. |
 | 0.3.0 | 2026-09-18 | Method v2 completa Fases 0–6; aut37 PASS, Product Bases normalizados y próximo gate Fase 7. |

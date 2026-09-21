@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.7.0
+version: 0.8.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-18
+updated: 2026-09-21
 tags:
   - brand
   - home
@@ -145,6 +145,7 @@ Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras
 
 | Version | Date | Change |
 |---|---|---|
+| 0.8.0 | 2026-09-21 | BRAND-CAND-001 completa Fases 7–8; aut39 PASS y próximo gate Headroom. |
 | 0.7.0 | 2026-09-18 | BRAND-CAND-001 completa Method v2 hasta Fase 6 y queda listo para shortlist pre-origen. |
 | 0.1.0 | 2026-09-17 | Primera instancia formal de Marca Hogar con territorio, misiones, límites y Candidate Register. |
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
@@ -162,3 +163,13 @@ Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras
 La ejecución completa se conserva en [SI-RESEARCH-007](../../../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md).
 
 Esta ejecución no modifica el Brand Fit ni la decisión original `PASS TO METHOD V2`; agrega el estado comercial posterior.
+
+## Golden Run BRAND-CAND-001 — Fases 7–8 cerradas
+
+`BRAND-CAND-001` completó Method v2 hasta Fase 8. `aut39` quedó validada con PASS limpio.
+
+La shortlist activa queda centrada en `BASE-HOGAR-003`, `BASE-HOGAR-006` y `BASE-HOGAR-002`; `BASE-HOGAR-004` permanece en watchlist y `BASE-HOGAR-005` pausado.
+
+El próximo gate es `Fase 9 — Headroom`.
+
+Fuente: [SI-RESEARCH-008](../../../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md).

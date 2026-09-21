@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.8.0
+version: 1.9.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-09-18
+updated: 2026-09-21
 tags:
   - status
   - handoff
@@ -50,7 +50,7 @@ Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
 Snapshot comercial vigente:
-matrix-aut37-brand-cand-001-phase6.xlsx
+matrix-aut39-brand-cand-001-phase8.xlsx
 → full-matrix-v5 0.7.0
 → PASS limpio
 
@@ -77,12 +77,12 @@ No confundir:
 | CLI | 5 casos operativos |
 | E2E público | 10 fixtures |
 | CI | Verde |
-| Matriz comercial vigente | `matrix-aut37-brand-cand-001-phase6.xlsx` |
-| Resultado aut37 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
+| Matriz comercial vigente | `matrix-aut39-brand-cand-001-phase8.xlsx` |
+| Resultado aut39 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
 | Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
-| Próxima acción Golden Run | Fase 7 — shortlist pre-origen de `BRAND-CAND-001` |
+| Próxima acción Golden Run | Fase 9 — Headroom de `BRAND-CAND-001` |
 | Próxima acción Nicho 3 | Consolidar finalistas y preparar el gate profesional externo |
 | Brand System | v0.3 consolidado; arquitectura reusable con `CORE` / `STRONG ADJACENCY`, category-creep protection y separación Brand Fit / Method v2 |
 | Brand Candidate Screening | v0.3 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; 001–005 = `CORE / PASS TO METHOD V2`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED` |
@@ -405,6 +405,7 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.9.0 | 2026-09-21 | BRAND-CAND-001 completa Fases 7–8; aut39 PASS y próxima acción Fase 9 — Headroom. |
 | 1.8.0 | 2026-09-18 | BRAND-CAND-001 completa Golden Run hasta Fase 6; aut37 PASS y próxima acción Fase 7. |
 | 0.7.0 | 2026-08-03 | Handoff de v3/v4 y normalización de fuentes. |
 | 0.8.0 | 2026-08-04 | Adopción de aut31/v5, 144 tests y cierre técnico de vistas derivadas. |
@@ -435,3 +436,29 @@ Cinco Product Bases pasan al gate de Fase 7: `BASE-HOGAR-002` a `BASE-HOGAR-006`
 La matriz usa el Nicho ID 32 como `MATRIX_SCOPE_ALIAS` exclusivamente por compatibilidad con `full-matrix-v5 0.7.0`. El input conceptual sigue siendo `BRAND-CAND-001`; esta fricción queda registrada para Matrix vNext / Intelligence Engine, sin reabrir ahora el schema ni el Validator.
 
 Fuente de ejecución: [SI-RESEARCH-007](../06-research/brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md).
+## Golden Run BRAND-CAND-001 — Fases 7–8
+
+Estado:
+
+```text
+Input: BRAND-CAND-001
+Method v2: Fases 0–8 COMPLETADAS
+Matrix vigente: matrix-aut39-brand-cand-001-phase8.xlsx
+SHA-256: 62341e1c202f87a531f96e9573613f9adda588e70e761eee9254e214a30a658c
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+Next Action: Fase 9 — Headroom
+```
+
+Shortlist / origen:
+
+```text
+BASE-HOGAR-003 → ACTIVE / ORIGIN CONFIRMED
+BASE-HOGAR-006 → ACTIVE / ORIGIN CONFIRMED
+BASE-HOGAR-002 → ACTIVE SECONDARY / ORIGIN CONFIRMED — CONDITIONAL
+BASE-HOGAR-004 → WATCHLIST / ORIGIN CONFIRMED
+BASE-HOGAR-005 → PAUSED
+```
+
+Las respuestas documentales pendientes de proveedores no bloquean el gate ya demostrado. Se actualiza sólo la evidencia afectada; Fase 8 se reabre únicamente ante una contradicción estructural.
+
+Fuente de ejecución: [SI-RESEARCH-008](../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md).

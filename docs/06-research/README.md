@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.6.0
+version: 0.7.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-18
+updated: 2026-09-21
 tags:
   - smart-imports
   - research
@@ -104,6 +104,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.7.0 | 2026-09-21 | Se incorpora SI-RESEARCH-008 con cierre de Fases 7–8 de BRAND-CAND-001. |
 | 0.6.0 | 2026-09-18 | Se incorpora Research de Marca Hogar y SI-RESEARCH-007 como primera Golden Run Brand System → Method v2. |
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
 | 0.2.0 | 2026-07-17 | Se activó la sección con la selección y el alcance del Nicho 2. |
@@ -120,3 +121,9 @@ Los datos comerciales exactos permanecen en sistemas privados:
 | Marca Hogar | [SI-RESEARCH-007 — BRAND-CAND-001 Golden Run Fases 0–6](./brand-hogar/si-research-007-brand-cand-001-method-v2-golden-run-phases-0-to-6.md) | `aut37` PASS / Fase 6 cerrada / listo para Fase 7 |
 
 > Estos research parten de un Brand Candidate aprobado. No deben modelarse conceptualmente como nuevos nichos aunque la matriz legacy requiera un `MATRIX_SCOPE_ALIAS`.
+
+## Golden Run BRAND-CAND-001 — continuación
+
+| Brand | Documento | Estado |
+|---|---|---|
+| Marca Hogar | [SI-RESEARCH-008 — BRAND-CAND-001 Golden Run Fases 7–8](./brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md) | `aut39` PASS / Fase 8 cerrada / próximo gate Fase 9 — Headroom |
