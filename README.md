@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.11.0
+version: 1.12.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-21
+updated: 2026-09-23
 tags:
   - smart-imports
   - knowledge-base
@@ -28,6 +28,21 @@ A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusab
 ## Estado actual
 
 
+
+
+
+### BRAND-CAND-001 — Golden Run Fase 10
+
+La Golden Run completó `Fase 10 — Minimum Landed Cost Dataset`. `matrix-aut41-brand-cand-001-phase10.xlsx` quedó validada con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
+
+```text
+Brand Candidate
+→ Method v2 Fases 0–10
+→ aut41 PASS
+→ Fase 11 — Landed Cost
+```
+
+Research: `docs/06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md`.
 
 
 ### BRAND-CAND-001 — Golden Run Fase 9
@@ -85,14 +100,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut40-brand-cand-001-phase9.xlsx`
-Archivo: matrix-aut40-brand-cand-001-phase9.xlsx
+Matriz comercial vigente: `matrix-aut41-brand-cand-001-phase10.xlsx`
+Archivo: matrix-aut41-brand-cand-001-phase10.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut40: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 525e8aefb5db96a30b8d5565f05fd9c1ac283f1a8eafffbbd7d5f75f9ecc4512
+Resultado aut41: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 73a58052336456ddf09390db8fd6874f5e3e43c9cc9a68b1d139d19d4659d649
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut40` es el snapshot comercial operativo vigente.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut41` es el snapshot comercial operativo vigente.
 
 Avances recientes:
 
@@ -166,6 +181,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.12.0 | 2026-09-23 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 10; aut41 PASS y siguiente gate Landed Cost. |
 | 1.11.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 9; aut40 PASS y siguiente gate Minimum Landed Cost Dataset. |
 | 1.10.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 8; aut39 PASS y próximo gate Headroom. |
 | 1.9.0 | 2026-09-18 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 6; aut37 PASS y lista para shortlist pre-origen. |

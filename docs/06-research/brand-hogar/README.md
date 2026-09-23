@@ -2,12 +2,12 @@
 id: research-brand-hogar-readme
 title: Marca Hogar — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Hogar.
-version: 0.3.0
+version: 0.4.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-18
-updated: 2026-09-21
+updated: 2026-09-23
 ---
 
 # Marca Hogar — Research
@@ -42,9 +42,14 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 
 - [SI-RESEARCH-009 — BRAND-CAND-001 Method v2 Golden Run — Fase 9 Headroom](./si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md) — Headroom cerrado; `aut40` PASS; siguiente gate Fase 10 — Minimum Landed Cost Dataset.
 
+## BRAND-CAND-001 — Golden Run Fase 10
+
+- [SI-RESEARCH-010 — BRAND-CAND-001 Method v2 Golden Run — Fase 10 Minimum Landed Cost Dataset](./si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md) — dataset mínimo decision-grade cerrado; `aut41` PASS; siguiente gate Fase 11 — Landed Cost.
+
 ## Changelog
 
 | Version | Date | Change |
 |---|---|---|
+| 0.4.0 | 2026-09-23 | Se documenta Fase 10 de BRAND-CAND-001; aut41 PASS y siguiente gate Fase 11. |
 | 0.3.0 | 2026-09-21 | Se documenta Fase 9 de BRAND-CAND-001; aut40 PASS y siguiente gate Fase 10. |
 | 0.2.0 | 2026-09-21 | Se documentan Fases 7–8 de BRAND-CAND-001; aut39 PASS y próximo gate Headroom. |

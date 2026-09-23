@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.9.0
+version: 0.10.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-21
+updated: 2026-09-23
 tags:
   - brand
   - home
@@ -145,6 +145,7 @@ Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras
 
 | Version | Date | Change |
 |---|---|---|
+| 0.10.0 | 2026-09-23 | BRAND-CAND-001 completa Fase 10; aut41 PASS y siguiente gate Fase 11. |
 | 0.9.0 | 2026-09-21 | BRAND-CAND-001 completa Fase 9; aut40 PASS y siguiente gate Fase 10. |
 | 0.8.0 | 2026-09-21 | BRAND-CAND-001 completa Fases 7–8; aut39 PASS y próximo gate Headroom. |
 | 0.7.0 | 2026-09-18 | BRAND-CAND-001 completa Method v2 hasta Fase 6 y queda listo para shortlist pre-origen. |
@@ -184,3 +185,13 @@ Los tres PB activos sobreviven al filtro de Headroom: `BASE-HOGAR-002`, `BASE-HO
 El siguiente gate es `Fase 10 — Minimum Landed Cost Dataset`.
 
 Fuente: [SI-RESEARCH-009](../../../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md).
+
+## Golden Run BRAND-CAND-001 — Fase 10 cerrada
+
+`BRAND-CAND-001` completó Method v2 hasta Fase 10. `aut41` quedó validada con PASS limpio.
+
+Los tres PB activos disponen de un `decision-grade dataset` suficiente para abrir Landed Cost: `BASE-HOGAR-002` con evidencia pública y condición de comparabilidad; `BASE-HOGAR-003` con configuración/logística confirmada y precio público; `BASE-HOGAR-006` con proxy conservador explícito.
+
+El siguiente gate es `Fase 11 — Landed Cost`.
+
+Fuente: [SI-RESEARCH-010](../../../06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md).
