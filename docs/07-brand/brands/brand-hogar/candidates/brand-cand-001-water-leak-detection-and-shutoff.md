@@ -5,12 +5,29 @@ description: Brand Candidate Screening de sistema doméstico de detección de fu
 version: 0.6.0
 status: pass-to-method-v2
 brand: brand-hogar
-method_v2_status: phase10-closed
+method_v2_status: phase11-closed
 created: 2026-09-16
 updated: 2026-09-23
 ---
 
 # BRAND-CAND-001 — Detección de fugas + corte automático
+
+<!-- SI-F11-CHECKPOINT:START -->
+## Checkpoint vigente — Fase 11
+
+Estado del Golden Run:
+
+```text
+Fases 0–11 → CLOSED
+Snapshot → matrix-aut42-brand-cand-001-phase11.xlsx
+Validator → PASS limpio
+Próxima fase → F12 — Margin + ROI
+```
+
+F11 mantiene activos y condicionados `BASE-HOGAR-002`, `BASE-HOGAR-003` y `BASE-HOGAR-006`. El resultado económico no elimina ningún PB, pero deja condiciones diferentes: comparabilidad/instalación para 002, economía ajustada + cloud/compatibilidad para 003 y compatibilidad eléctrica + precio productivo proxy para 006.
+
+La lectura completa está documentada en `SI-RESEARCH-011`.
+<!-- SI-F11-CHECKPOINT:END -->
 
 ## 1. Identificación
 
@@ -94,13 +111,14 @@ La ejecución se documenta en:
 - [SI-RESEARCH-008 — BRAND-CAND-001 Golden Run Fases 7–8](../../../../06-research/brand-hogar/si-research-008-brand-cand-001-method-v2-golden-run-phases-7-to-8.md)
 - [SI-RESEARCH-009 — BRAND-CAND-001 Golden Run Fase 9](../../../../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md)
 - [SI-RESEARCH-010 — BRAND-CAND-001 Golden Run Fase 10](../../../../06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md)
+- [`SI-RESEARCH-011 — Fase 11 Landed Cost`](../../../../06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md)
 
-Estado posterior a F10:
+Estado posterior a F11:
 
 ```text
-BASE-HOGAR-002 → PASS TO F11 — WITH PUBLIC DATA / COMPARABILITY CONDITION
-BASE-HOGAR-003 → PASS TO F11 — WITH PUBLIC PRICE
-BASE-HOGAR-006 → PASS TO F11 — WITH PROXY
+BASE-HOGAR-002 → PASS TO F12 — CONDITIONED
+BASE-HOGAR-003 → PASS TO F12 — CONDITIONED
+BASE-HOGAR-006 → PASS TO F12 — CONDITIONED
 BASE-HOGAR-004 → WATCHLIST
 BASE-HOGAR-005 → PAUSED
 ```

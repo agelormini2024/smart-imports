@@ -17,6 +17,12 @@ tags:
 
 # 06 — Research
 
+<!-- SI-F11-CHECKPOINT:START -->
+## BRAND-CAND-001 — Golden Run vigente
+
+`SI-RESEARCH-011` cierra Fase 11 — Landed Cost con `aut42` validada y deja como próximo gate F12 — Margin + ROI.
+<!-- SI-F11-CHECKPOINT:END -->
+
 > La investigación concreta prueba y mejora la metodología.
 
 ## 1. Propósito
@@ -141,3 +147,4 @@ Los datos comerciales exactos permanecen en sistemas privados:
 | Brand | Documento | Estado |
 |---|---|---|
 | Marca Hogar | [SI-RESEARCH-010 — BRAND-CAND-001 Fase 10 Minimum Landed Cost Dataset](./brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md) | `aut41` PASS / Fase 10 cerrada / siguiente gate Fase 11 — Landed Cost |
+| Marca Hogar | [SI-RESEARCH-011 — BRAND-CAND-001 Fase 11 Landed Cost](./brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md) | `aut42` PASS / Fase 11 cerrada / siguiente gate Fase 12 — Margin + ROI |

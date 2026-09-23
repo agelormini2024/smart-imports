@@ -12,6 +12,16 @@ updated: 2026-09-23
 
 # Marca Hogar — Candidates
 
+<!-- SI-F11-CHECKPOINT:START -->
+## BRAND-CAND-001 — estado vigente
+
+```text
+Fases 0–11: CLOSED
+aut42: PASS limpio
+Next gate: F12 — Margin + ROI
+```
+<!-- SI-F11-CHECKPOINT:END -->
+
 Cada archivo de esta carpeta es la fuente de verdad del screening de una solución concreta y de su handoff hacia Method v2.
 
 | ID | Candidate | Territory Relationship | Status |
@@ -30,7 +40,7 @@ Estado: bloque inicial consolidado bajo Brand Candidate Screening v0.3. Nuevos c
 
 | Candidate | Estado de Method v2 | Research | Próximo gate |
 |---|---|---|---|
-| `BRAND-CAND-001` | Fases 0–10 cerradas / `aut41` PASS | [SI-RESEARCH-010](../../../../06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md) | Fase 11 — Landed Cost |
+| `BRAND-CAND-001` | Fases 0–11 cerradas / `aut42` PASS | [SI-RESEARCH-011](../../../../06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md) | Fase 12 — Margin + ROI |
 
 La decisión de Brand Screening continúa siendo `PASS TO METHOD V2`; el estado de ejecución comercial se registra por separado.
 

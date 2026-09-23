@@ -38,6 +38,21 @@ phase: research
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
+<!-- SI-F11-CHECKPOINT:START -->
+## Checkpoint operativo — BRAND-CAND-001 / 2026-09-23
+
+```text
+Golden Run Method v2: Fases 0–11 CLOSED
+Snapshot comercial vigente: matrix-aut42-brand-cand-001-phase11.xlsx
+Schema: full-matrix-v5 0.7.0
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 6204f672b70d9e4629ee047aac31e25044b93e37037c9db98a303cc95cb6361c
+Next gate: F12 — Margin + ROI
+```
+
+F11 cerró seis escenarios decision-grade de Landed Cost para `BASE-HOGAR-002`, `BASE-HOGAR-003` y `BASE-HOGAR-006`. Los tres pasan a F12 condicionados. No reabrir sourcing, negociación fina ni Matrix Validator salvo contradicción material o bloqueo real.
+<!-- SI-F11-CHECKPOINT:END -->
+
 > Punto de entrada operativo obligatorio para retomar el proyecto sin depender de un chat específico.
 
 ## 1. Fuentes de verdad
@@ -50,7 +65,7 @@ Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
 Snapshot comercial vigente:
-matrix-aut41-brand-cand-001-phase10.xlsx
+matrix-aut42-brand-cand-001-phase11.xlsx
 → full-matrix-v5 0.7.0
 → PASS limpio
 
@@ -77,8 +92,8 @@ No confundir:
 | CLI | 5 casos operativos |
 | E2E público | 10 fixtures |
 | CI | Verde |
-| Matriz comercial vigente | `matrix-aut41-brand-cand-001-phase10.xlsx` |
-| Resultado aut41 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
+| Matriz comercial vigente | `matrix-aut42-brand-cand-001-phase11.xlsx` |
+| Resultado aut42 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
 | Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
@@ -498,11 +513,11 @@ Estado:
 
 ```text
 Input: BRAND-CAND-001
-Method v2: Fases 0–10 COMPLETADAS
-Matrix vigente: matrix-aut41-brand-cand-001-phase10.xlsx
-SHA-256: 73a58052336456ddf09390db8fd6874f5e3e43c9cc9a68b1d139d19d4659d649
+Method v2: Fases 0–11 COMPLETADAS
+Matrix vigente: matrix-aut42-brand-cand-001-phase11.xlsx
+SHA-256: 6204f672b70d9e4629ee047aac31e25044b93e37037c9db98a303cc95cb6361c
 Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-Next Action: Fase 11 — Landed Cost
+Next Action: Fase 12 — Margin + ROI
 ```
 
 Resultado del gate:
@@ -524,6 +539,6 @@ SUPPLIER RESPONSE ≠ PHASE PROGRESS
 
 El contacto con proveedores enriquece la evidencia, pero no debe controlar el camino crítico cuando datos públicos o proxies conservadores permiten una decisión defendible.
 
-F11 deberá normalizar condiciones de origen y mantener explícita la calidad de cada input antes de calcular Landed Cost.
+F12 deberá interpretar formalmente margen y ROI sobre los escenarios materializados, manteniendo explícitas la calidad de evidencia y las condiciones técnicas abiertas.
 
-Fuente de ejecución: [SI-RESEARCH-010](../06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md).
+Fuente de ejecución vigente: [SI-RESEARCH-011 — Fase 11 Landed Cost](../06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md).

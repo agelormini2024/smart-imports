@@ -22,6 +22,12 @@ related:
 
 # Marca Hogar
 
+<!-- SI-F11-CHECKPOINT:START -->
+## Estado vigente de BRAND-CAND-001
+
+Golden Run completada hasta Fase 11 — Landed Cost. Los tres Product Base activos pasan a F12 — Margin + ROI con condiciones explícitas. No existe todavía selección final de producto ni decisión de importación.
+<!-- SI-F11-CHECKPOINT:END -->
+
 > **Un hogar que funciona mejor.**
 
 ## 1. Identidad de trabajo
@@ -188,10 +194,10 @@ Fuente: [SI-RESEARCH-009](../../../06-research/brand-hogar/si-research-009-brand
 
 ## Golden Run BRAND-CAND-001 — Fase 10 cerrada
 
-`BRAND-CAND-001` completó Method v2 hasta Fase 10. `aut41` quedó validada con PASS limpio.
+`BRAND-CAND-001` completó Method v2 hasta Fase 11. `aut42` quedó validada con PASS limpio.
 
-Los tres PB activos disponen de un `decision-grade dataset` suficiente para abrir Landed Cost: `BASE-HOGAR-002` con evidencia pública y condición de comparabilidad; `BASE-HOGAR-003` con configuración/logística confirmada y precio público; `BASE-HOGAR-006` con proxy conservador explícito.
+Fase 11 completó el Landed Cost Screen decision-grade para los tres PB activos. `BASE-HOGAR-002`, `BASE-HOGAR-003` y `BASE-HOGAR-006` pasan a F12 condicionados, con riesgos técnicos y de evidencia explícitos.
 
-El siguiente gate es `Fase 11 — Landed Cost`.
+El siguiente gate es `Fase 12 — Margin + ROI`.
 
-Fuente: [SI-RESEARCH-010](../../../06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md).
+Fuente vigente: [SI-RESEARCH-011 — Fase 11 Landed Cost](../../../06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md).

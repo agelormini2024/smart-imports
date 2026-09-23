@@ -17,6 +17,19 @@ tags:
 ---
 # Smart Imports
 
+<!-- SI-F11-CHECKPOINT:START -->
+## Golden Run BRAND-CAND-001 — estado vigente
+
+```text
+Method v2: Fases 0–11 cerradas
+Snapshot comercial vigente: matrix-aut42-brand-cand-001-phase11.xlsx
+Matrix Validator: PASS limpio
+Próximo gate: F12 — Margin + ROI
+```
+
+Fase 11 modeló seis escenarios comparables de Landed Cost para los tres Product Base activos. Los tres pasan a F12 condicionados; la interpretación formal de margen y ROI pertenece a F12.
+<!-- SI-F11-CHECKPOINT:END -->
+
 > Primero entender. Después invertir.
 
 Smart Imports es un proyecto de inteligencia comercial aplicado al comercio físico y digital. Su objetivo inicial es identificar nichos rentables para importar productos desde China, validar oportunidades con bajo riesgo y construir una empresa que combine investigación sistemática, importación estratégica, e-commerce, automatización, IA, agentes y software propio.
@@ -31,18 +44,18 @@ A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusab
 
 
 
-### BRAND-CAND-001 — Golden Run Fase 10
+### BRAND-CAND-001 — Golden Run Fase 11
 
-La Golden Run completó `Fase 10 — Minimum Landed Cost Dataset`. `matrix-aut41-brand-cand-001-phase10.xlsx` quedó validada con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
+La Golden Run completó `Fase 11 — Landed Cost`. `matrix-aut42-brand-cand-001-phase11.xlsx` quedó validada con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
 
 ```text
 Brand Candidate
-→ Method v2 Fases 0–10
-→ aut41 PASS
-→ Fase 11 — Landed Cost
+→ Method v2 Fases 0–11
+→ aut42 PASS
+→ Fase 12 — Margin + ROI
 ```
 
-Research: `docs/06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md`.
+Research: `docs/06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md`.
 
 
 ### BRAND-CAND-001 — Golden Run Fase 9
@@ -100,14 +113,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut41-brand-cand-001-phase10.xlsx`
-Archivo: matrix-aut41-brand-cand-001-phase10.xlsx
+Matriz comercial vigente: `matrix-aut42-brand-cand-001-phase11.xlsx`
+Archivo: matrix-aut42-brand-cand-001-phase11.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut41: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 73a58052336456ddf09390db8fd6874f5e3e43c9cc9a68b1d139d19d4659d649
+Resultado aut42: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 6204f672b70d9e4629ee047aac31e25044b93e37037c9db98a303cc95cb6361c
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut41` es el snapshot comercial operativo vigente.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut42` es el snapshot comercial operativo vigente.
 
 Avances recientes:
 

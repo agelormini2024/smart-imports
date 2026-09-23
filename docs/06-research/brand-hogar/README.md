@@ -12,6 +12,12 @@ updated: 2026-09-23
 
 # Marca Hogar — Research
 
+<!-- SI-F11-CHECKPOINT:START -->
+## Golden Run — estado vigente
+
+`BRAND-CAND-001` tiene Fases 0–11 cerradas. `aut42` materializa Fase 11 y pasa limpia por `full-matrix-v5 0.7.0`. Próximo gate: F12 — Margin + ROI.
+<!-- SI-F11-CHECKPOINT:END -->
+
 Este directorio conserva investigaciones comerciales iniciadas desde Brand Candidates aprobados por Brand System.
 
 La separación es intencional:
@@ -42,9 +48,10 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 
 - [SI-RESEARCH-009 — BRAND-CAND-001 Method v2 Golden Run — Fase 9 Headroom](./si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md) — Headroom cerrado; `aut40` PASS; siguiente gate Fase 10 — Minimum Landed Cost Dataset.
 
-## BRAND-CAND-001 — Golden Run Fase 10
+## BRAND-CAND-001 — Golden Run Fases 10–11
 
 - [SI-RESEARCH-010 — BRAND-CAND-001 Method v2 Golden Run — Fase 10 Minimum Landed Cost Dataset](./si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md) — dataset mínimo decision-grade cerrado; `aut41` PASS; siguiente gate Fase 11 — Landed Cost.
+- [SI-RESEARCH-011 — BRAND-CAND-001 Method v2 Golden Run — Fase 11 Landed Cost](./si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md) — seis escenarios decision-grade cerrados; `aut42` PASS; siguiente gate Fase 12 — Margin + ROI.
 
 ## Changelog
 
