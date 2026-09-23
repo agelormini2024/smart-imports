@@ -22,6 +22,12 @@ related:
 
 # Marca Hogar
 
+<!-- SI-F12-CHECKPOINT:START -->
+## Estado vigente de BRAND-CAND-001
+
+Golden Run completada hasta Fase 12 — Margin + ROI. `BASE-HOGAR-002` y `BASE-HOGAR-006` pasan a F13 condicionados; `BASE-HOGAR-003` queda STOP — REOPENABLE. No existe todavía decisión de compra.
+<!-- SI-F12-CHECKPOINT:END -->
+
 <!-- SI-F11-CHECKPOINT:START -->
 ## Estado vigente de BRAND-CAND-001
 
@@ -192,12 +198,12 @@ El siguiente gate es `Fase 10 — Minimum Landed Cost Dataset`.
 
 Fuente: [SI-RESEARCH-009](../../../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md).
 
-## Golden Run BRAND-CAND-001 — Fase 10 cerrada
+## Golden Run BRAND-CAND-001 — Fase 12 cerrada
 
-`BRAND-CAND-001` completó Method v2 hasta Fase 11. `aut42` quedó validada con PASS limpio.
+`BRAND-CAND-001` completó Method v2 hasta Fase 12. `aut43` quedó validada con PASS limpio.
 
-Fase 11 completó el Landed Cost Screen decision-grade para los tres PB activos. `BASE-HOGAR-002`, `BASE-HOGAR-003` y `BASE-HOGAR-006` pasan a F12 condicionados, con riesgos técnicos y de evidencia explícitos.
+Fase 12 interpretó formalmente Margin + ROI. `BASE-HOGAR-002` y `BASE-HOGAR-006` pasan a F13 condicionados; `BASE-HOGAR-003` sale del camino activo como STOP — REOPENABLE.
 
-El siguiente gate es `Fase 12 — Margin + ROI`.
+El siguiente gate es `Fase 13 — Shortlist final`.
 
-Fuente vigente: [SI-RESEARCH-011 — Fase 11 Landed Cost](../../../06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md).
+Fuente vigente: [SI-RESEARCH-012 — Fase 12 Margin + ROI](../../../06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md).

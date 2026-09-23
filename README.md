@@ -17,6 +17,19 @@ tags:
 ---
 # Smart Imports
 
+<!-- SI-F12-CHECKPOINT:START -->
+## Golden Run BRAND-CAND-001 — estado vigente
+
+```text
+Method v2: Fases 0–12 cerradas
+Snapshot comercial vigente: matrix-aut43-brand-cand-001-phase12.xlsx
+Matrix Validator: PASS limpio
+Próximo gate: F13 — Shortlist final
+```
+
+Fase 12 interpretó formalmente Margin + ROI. `BASE-HOGAR-002` y `BASE-HOGAR-006` pasan a F13 condicionados; `BASE-HOGAR-003` queda STOP — REOPENABLE.
+<!-- SI-F12-CHECKPOINT:END -->
+
 <!-- SI-F11-CHECKPOINT:START -->
 ## Golden Run BRAND-CAND-001 — estado vigente
 
@@ -44,18 +57,18 @@ A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusab
 
 
 
-### BRAND-CAND-001 — Golden Run Fase 11
+### BRAND-CAND-001 — Golden Run Fase 12
 
-La Golden Run completó `Fase 11 — Landed Cost`. `matrix-aut42-brand-cand-001-phase11.xlsx` quedó validada con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
+La Golden Run completó `Fase 12 — Margin + ROI`. `matrix-aut43-brand-cand-001-phase12.xlsx` quedó validada con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
 
 ```text
 Brand Candidate
-→ Method v2 Fases 0–11
-→ aut42 PASS
-→ Fase 12 — Margin + ROI
+→ Method v2 Fases 0–12
+→ aut43 PASS
+→ Fase 13 — Shortlist final
 ```
 
-Research: `docs/06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md`.
+Research: `docs/06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md`.
 
 
 ### BRAND-CAND-001 — Golden Run Fase 9
@@ -113,14 +126,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut42-brand-cand-001-phase11.xlsx`
-Archivo: matrix-aut42-brand-cand-001-phase11.xlsx
+Matriz comercial vigente: `matrix-aut43-brand-cand-001-phase12.xlsx`
+Archivo: matrix-aut43-brand-cand-001-phase12.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut42: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 6204f672b70d9e4629ee047aac31e25044b93e37037c9db98a303cc95cb6361c
+Resultado aut43: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 5b602747404dce8584c3735552009487607ffe4a642c56bb05b8b9aba0663315
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut42` es el snapshot comercial operativo vigente.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut43` es el snapshot comercial operativo vigente.
 
 Avances recientes:
 

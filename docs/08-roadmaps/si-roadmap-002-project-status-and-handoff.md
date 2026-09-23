@@ -38,6 +38,21 @@ phase: research
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
+<!-- SI-F12-CHECKPOINT:START -->
+## Checkpoint operativo — BRAND-CAND-001 / 2026-09-23
+
+```text
+Golden Run Method v2: Fases 0–12 CLOSED
+Snapshot comercial vigente: matrix-aut43-brand-cand-001-phase12.xlsx
+Schema: full-matrix-v5 0.7.0
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 5b602747404dce8584c3735552009487607ffe4a642c56bb05b8b9aba0663315
+Next gate: F13 — Shortlist final
+```
+
+F12 reduce el camino activo a `BASE-HOGAR-002` y `BASE-HOGAR-006`, ambos condicionados. `BASE-HOGAR-003` queda STOP — REOPENABLE. No reabrir sourcing ni negociación fina salvo evidencia material nueva.
+<!-- SI-F12-CHECKPOINT:END -->
+
 <!-- SI-F11-CHECKPOINT:START -->
 ## Checkpoint operativo — BRAND-CAND-001 / 2026-09-23
 
@@ -65,7 +80,7 @@ Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
 Snapshot comercial vigente:
-matrix-aut42-brand-cand-001-phase11.xlsx
+matrix-aut43-brand-cand-001-phase12.xlsx
 → full-matrix-v5 0.7.0
 → PASS limpio
 
@@ -92,8 +107,8 @@ No confundir:
 | CLI | 5 casos operativos |
 | E2E público | 10 fixtures |
 | CI | Verde |
-| Matriz comercial vigente | `matrix-aut42-brand-cand-001-phase11.xlsx` |
-| Resultado aut42 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
+| Matriz comercial vigente | `matrix-aut43-brand-cand-001-phase12.xlsx` |
+| Resultado aut43 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
 | Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
@@ -513,19 +528,19 @@ Estado:
 
 ```text
 Input: BRAND-CAND-001
-Method v2: Fases 0–11 COMPLETADAS
-Matrix vigente: matrix-aut42-brand-cand-001-phase11.xlsx
-SHA-256: 6204f672b70d9e4629ee047aac31e25044b93e37037c9db98a303cc95cb6361c
+Method v2: Fases 0–12 COMPLETADAS
+Matrix vigente: matrix-aut43-brand-cand-001-phase12.xlsx
+SHA-256: 5b602747404dce8584c3735552009487607ffe4a642c56bb05b8b9aba0663315
 Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-Next Action: Fase 12 — Margin + ROI
+Next Action: Fase 13 — Shortlist final
 ```
 
 Resultado del gate:
 
 ```text
-BASE-HOGAR-002 → PASS TO F11 — WITH PUBLIC DATA / COMPARABILITY CONDITION
-BASE-HOGAR-003 → PASS TO F11 — WITH PUBLIC PRICE
-BASE-HOGAR-006 → PASS TO F11 — WITH PROXY
+BASE-HOGAR-002 → PASS TO F13 — CONDITIONED
+BASE-HOGAR-003 → STOP — REOPENABLE
+BASE-HOGAR-006 → PASS TO F13 — CONDITIONED
 BASE-HOGAR-004 → WATCHLIST
 BASE-HOGAR-005 → PAUSED
 ```
@@ -539,6 +554,6 @@ SUPPLIER RESPONSE ≠ PHASE PROGRESS
 
 El contacto con proveedores enriquece la evidencia, pero no debe controlar el camino crítico cuando datos públicos o proxies conservadores permiten una decisión defendible.
 
-F12 deberá interpretar formalmente margen y ROI sobre los escenarios materializados, manteniendo explícitas la calidad de evidencia y las condiciones técnicas abiertas.
+F13 deberá consolidar economía, calidad de evidencia, complejidad operativa, Brand Fit y condiciones abiertas para construir la shortlist final.
 
-Fuente de ejecución vigente: [SI-RESEARCH-011 — Fase 11 Landed Cost](../06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md).
+Fuente de ejecución vigente: [SI-RESEARCH-012 — Fase 12 Margin + ROI](../06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md).
