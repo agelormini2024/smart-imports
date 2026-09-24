@@ -12,6 +12,12 @@ updated: 2026-09-23
 
 # Marca Hogar — Research
 
+<!-- SI-F13-CHECKPOINT:START -->
+## Golden Run — estado vigente
+
+`BRAND-CAND-001` tiene Fases 0–13 cerradas. `aut44` materializa la shortlist final y pasa limpia por `full-matrix-v5 0.7.0`. Estado: `PORTFOLIO REVIEW READY`; F14 no se abre.
+<!-- SI-F13-CHECKPOINT:END -->
+
 <!-- SI-F12-CHECKPOINT:START -->
 ## Golden Run — estado vigente
 
@@ -54,11 +60,12 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 
 - [SI-RESEARCH-009 — BRAND-CAND-001 Method v2 Golden Run — Fase 9 Headroom](./si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md) — Headroom cerrado; `aut40` PASS; siguiente gate Fase 10 — Minimum Landed Cost Dataset.
 
-## BRAND-CAND-001 — Golden Run Fases 10–12
+## BRAND-CAND-001 — Golden Run Fases 10–13
 
 - [SI-RESEARCH-010 — BRAND-CAND-001 Method v2 Golden Run — Fase 10 Minimum Landed Cost Dataset](./si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md) — dataset mínimo decision-grade cerrado; `aut41` PASS; siguiente gate Fase 11 — Landed Cost.
 - [SI-RESEARCH-011 — BRAND-CAND-001 Method v2 Golden Run — Fase 11 Landed Cost](./si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md) — seis escenarios decision-grade cerrados; `aut42` PASS; siguiente gate Fase 12 — Margin + ROI.
 - [SI-RESEARCH-012 — BRAND-CAND-001 Method v2 Golden Run — Fase 12 Margin + ROI](./si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md) — interpretación económica cerrada; `aut43` PASS; siguiente gate Fase 13 — Shortlist final.
+- [SI-RESEARCH-013 — BRAND-CAND-001 Method v2 Golden Run — Fase 13 Shortlist final](./si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md) — dos finalistas condicionados; `aut44` PASS; candidato en freeze hasta Portfolio Review.
 
 ## Changelog
 

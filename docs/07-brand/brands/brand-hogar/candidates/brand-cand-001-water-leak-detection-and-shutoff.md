@@ -5,12 +5,26 @@ description: Brand Candidate Screening de sistema doméstico de detección de fu
 version: 0.6.0
 status: pass-to-method-v2
 brand: brand-hogar
-method_v2_status: phase12-closed
+method_v2_status: phase13-closed
 created: 2026-09-16
 updated: 2026-09-23
 ---
 
 # BRAND-CAND-001 — Detección de fugas + corte automático
+
+<!-- SI-F13-CHECKPOINT:START -->
+## Checkpoint vigente — Fase 13
+
+```text
+Fases 0–13 → CLOSED
+Snapshot → matrix-aut44-brand-cand-001-phase13-corrected.xlsx
+Validator → PASS limpio
+Portfolio status → PORTFOLIO REVIEW READY
+F14 → NOT OPENED
+```
+
+Finalistas: `BASE-HOGAR-002` y `BASE-HOGAR-006`, ambos `FINALIST — CONDITIONED`. `BRAND-CAND-001` queda en `FREEZE` hasta Portfolio Review y revisión externa previa.
+<!-- SI-F13-CHECKPOINT:END -->
 
 <!-- SI-F12-CHECKPOINT:START -->
 ## Checkpoint vigente — Fase 12
@@ -126,15 +140,19 @@ La ejecución se documenta en:
 - [SI-RESEARCH-010 — BRAND-CAND-001 Golden Run Fase 10](../../../../06-research/brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md)
 - [`SI-RESEARCH-011 — Fase 11 Landed Cost`](../../../../06-research/brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md)
 - [SI-RESEARCH-012 — Fase 12 Margin + ROI](../../../../06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md)
+- [SI-RESEARCH-013 — Fase 13 Shortlist final](../../../../06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md)
 
-Estado posterior a F12:
+Estado posterior a F13:
 
 ```text
-BASE-HOGAR-002 → PASS TO F13 — CONDITIONED
+BASE-HOGAR-002 → FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW
 BASE-HOGAR-003 → STOP — REOPENABLE
-BASE-HOGAR-006 → PASS TO F13 — CONDITIONED
+BASE-HOGAR-006 → FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW
 BASE-HOGAR-004 → WATCHLIST
 BASE-HOGAR-005 → PAUSED
+
+BRAND-CAND-001 → PORTFOLIO REVIEW READY / FREEZE
+F14 → NOT OPENED
 ```
 
 `DECISION-GRADE ≠ PROCUREMENT-GRADE`. Las respuestas futuras de proveedores pueden mejorar el dataset, pero no controlan el camino crítico salvo contradicción material.

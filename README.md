@@ -17,6 +17,20 @@ tags:
 ---
 # Smart Imports
 
+<!-- SI-F13-CHECKPOINT:START -->
+## Golden Run BRAND-CAND-001 — estado vigente
+
+```text
+Method v2: Fases 0–13 cerradas
+Snapshot comercial vigente: matrix-aut44-brand-cand-001-phase13-corrected.xlsx
+Matrix Validator: PASS limpio
+Portfolio status: PORTFOLIO REVIEW READY
+F14: NOT OPENED
+```
+
+Fase 13 conserva `BASE-HOGAR-002` y `BASE-HOGAR-006` como `FINALIST — CONDITIONED`. `BRAND-CAND-001` queda en `FREEZE` hasta la comparación transversal de finalistas y la revisión externa previa.
+<!-- SI-F13-CHECKPOINT:END -->
+
 <!-- SI-F12-CHECKPOINT:START -->
 ## Golden Run BRAND-CAND-001 — estado vigente
 
@@ -57,18 +71,18 @@ A partir de 2026-09-16, Smart Imports incorpora además un **Brand System reusab
 
 
 
-### BRAND-CAND-001 — Golden Run Fase 12
+### BRAND-CAND-001 — Golden Run Fase 13
 
-La Golden Run completó `Fase 12 — Margin + ROI`. `matrix-aut43-brand-cand-001-phase12.xlsx` quedó validada con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
+La Golden Run completó `Fase 13 — Shortlist final`. `matrix-aut44-brand-cand-001-phase13-corrected.xlsx` quedó validada con `full-matrix-v5 0.7.0` y resultado `PASS` limpio.
 
 ```text
 Brand Candidate
-→ Method v2 Fases 0–12
-→ aut43 PASS
-→ Fase 13 — Shortlist final
+→ Method v2 Fases 0–13
+→ aut44 PASS
+→ FREEZE / Portfolio Review futuro
 ```
 
-Research: `docs/06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md`.
+Research: `docs/06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md`.
 
 
 ### BRAND-CAND-001 — Golden Run Fase 9
@@ -126,14 +140,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut43-brand-cand-001-phase12.xlsx`
-Archivo: matrix-aut43-brand-cand-001-phase12.xlsx
+Matriz comercial vigente: `matrix-aut44-brand-cand-001-phase13-corrected.xlsx`
+Archivo: matrix-aut44-brand-cand-001-phase13-corrected.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut43: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 5b602747404dce8584c3735552009487607ffe4a642c56bb05b8b9aba0663315
+Resultado aut44: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 37b2b37c5c61355efec271b7ecb49df74c2264e2f721830a1c2478858a850f56
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut43` es el snapshot comercial operativo vigente.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` es el snapshot comercial operativo vigente.
 
 Avances recientes:
 

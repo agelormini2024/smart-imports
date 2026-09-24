@@ -38,6 +38,22 @@ phase: research
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
+<!-- SI-F13-CHECKPOINT:START -->
+## Checkpoint operativo — BRAND-CAND-001 / 2026-09-24
+
+```text
+Golden Run Method v2: Fases 0–13 CLOSED
+Snapshot comercial vigente: matrix-aut44-brand-cand-001-phase13-corrected.xlsx
+Schema: full-matrix-v5 0.7.0
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 37b2b37c5c61355efec271b7ecb49df74c2264e2f721830a1c2478858a850f56
+Portfolio status: PORTFOLIO REVIEW READY
+F14: NOT OPENED
+```
+
+F13 conserva `BASE-HOGAR-002` y `BASE-HOGAR-006` como `FINALIST — CONDITIONED`. `BRAND-CAND-001` queda en `FREEZE`: completar los candidatos restantes hasta F13, comparar finalistas y realizar revisión externa —incluido despachante— antes de decidir qué producto abre F14.
+<!-- SI-F13-CHECKPOINT:END -->
+
 <!-- SI-F12-CHECKPOINT:START -->
 ## Checkpoint operativo — BRAND-CAND-001 / 2026-09-23
 
@@ -80,7 +96,7 @@ Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
 Snapshot comercial vigente:
-matrix-aut43-brand-cand-001-phase12.xlsx
+matrix-aut44-brand-cand-001-phase13-corrected.xlsx
 → full-matrix-v5 0.7.0
 → PASS limpio
 
@@ -107,8 +123,8 @@ No confundir:
 | CLI | 5 casos operativos |
 | E2E público | 10 fixtures |
 | CI | Verde |
-| Matriz comercial vigente | `matrix-aut43-brand-cand-001-phase12.xlsx` |
-| Resultado aut43 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
+| Matriz comercial vigente | `matrix-aut44-brand-cand-001-phase13-corrected.xlsx` |
+| Resultado aut44 | PASS / 0 errors / 0 warnings / 0 info / 0 limitations |
 | Nicho 1 — Energía Solar Portátil | Pausado selectivamente |
 | Nicho 2 — Viaje organizado | Screening de origen/headroom realizado; Landed Cost defendible pendiente |
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
@@ -528,21 +544,24 @@ Estado:
 
 ```text
 Input: BRAND-CAND-001
-Method v2: Fases 0–12 COMPLETADAS
-Matrix vigente: matrix-aut43-brand-cand-001-phase12.xlsx
-SHA-256: 5b602747404dce8584c3735552009487607ffe4a642c56bb05b8b9aba0663315
+Method v2: Fases 0–13 COMPLETADAS
+Matrix vigente: matrix-aut44-brand-cand-001-phase13-corrected.xlsx
+SHA-256: 37b2b37c5c61355efec271b7ecb49df74c2264e2f721830a1c2478858a850f56
 Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-Next Action: Fase 13 — Shortlist final
+Next Action: FREEZE BRAND-CAND-001 / continuar candidatos restantes hasta F13 / Portfolio Review futuro
 ```
 
 Resultado del gate:
 
 ```text
-BASE-HOGAR-002 → PASS TO F13 — CONDITIONED
+BASE-HOGAR-002 → FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW
 BASE-HOGAR-003 → STOP — REOPENABLE
-BASE-HOGAR-006 → PASS TO F13 — CONDITIONED
+BASE-HOGAR-006 → FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW
 BASE-HOGAR-004 → WATCHLIST
 BASE-HOGAR-005 → PAUSED
+
+BRAND-CAND-001 → PORTFOLIO REVIEW READY / FREEZE
+F14 → NOT OPENED
 ```
 
 Principios observados:
@@ -554,6 +573,6 @@ SUPPLIER RESPONSE ≠ PHASE PROGRESS
 
 El contacto con proveedores enriquece la evidencia, pero no debe controlar el camino crítico cuando datos públicos o proxies conservadores permiten una decisión defendible.
 
-F13 deberá consolidar economía, calidad de evidencia, complejidad operativa, Brand Fit y condiciones abiertas para construir la shortlist final.
+F13 consolidó la shortlist final. `BRAND-CAND-001` queda en freeze hasta Portfolio Review; la revisión externa previa deberá incluir al despachante antes de decidir qué producto abre F14.
 
-Fuente de ejecución vigente: [SI-RESEARCH-012 — Fase 12 Margin + ROI](../06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md).
+Fuente de ejecución vigente: [SI-RESEARCH-013 — Fase 13 Shortlist final](../06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md).

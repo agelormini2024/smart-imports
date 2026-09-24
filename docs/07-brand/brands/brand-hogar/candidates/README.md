@@ -12,6 +12,19 @@ updated: 2026-09-23
 
 # Marca Hogar — Candidates
 
+<!-- SI-F13-CHECKPOINT:START -->
+## BRAND-CAND-001 — estado vigente
+
+```text
+Fases 0–13: CLOSED
+aut44: PASS limpio
+Portfolio status: PORTFOLIO REVIEW READY
+F14: NOT OPENED
+```
+
+Finalistas: `BASE-HOGAR-002` y `BASE-HOGAR-006`, ambos condicionados.
+<!-- SI-F13-CHECKPOINT:END -->
+
 <!-- SI-F12-CHECKPOINT:START -->
 ## BRAND-CAND-001 — estado vigente
 
@@ -50,7 +63,7 @@ Estado: bloque inicial consolidado bajo Brand Candidate Screening v0.3. Nuevos c
 
 | Candidate | Estado de Method v2 | Research | Próximo gate |
 |---|---|---|---|
-| `BRAND-CAND-001` | Fases 0–12 cerradas / `aut43` PASS | [SI-RESEARCH-012](../../../../06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md) | Fase 13 — Shortlist final |
+| `BRAND-CAND-001` | Fases 0–13 cerradas / `aut44` PASS | [SI-RESEARCH-013](../../../../06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md) | Portfolio Review futuro / revisión externa previa a F14 |
 
 La decisión de Brand Screening continúa siendo `PASS TO METHOD V2`; el estado de ejecución comercial se registra por separado.
 

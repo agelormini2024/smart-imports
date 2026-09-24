@@ -22,6 +22,12 @@ related:
 
 # Marca Hogar
 
+<!-- SI-F13-CHECKPOINT:START -->
+## Estado vigente de BRAND-CAND-001
+
+Golden Run completada hasta Fase 13 — Shortlist final. `BASE-HOGAR-002` y `BASE-HOGAR-006` quedan `FINALIST — CONDITIONED`. El candidato queda `PORTFOLIO REVIEW READY` y en `FREEZE`; F14 no está abierto.
+<!-- SI-F13-CHECKPOINT:END -->
+
 <!-- SI-F12-CHECKPOINT:START -->
 ## Estado vigente de BRAND-CAND-001
 
@@ -198,12 +204,12 @@ El siguiente gate es `Fase 10 — Minimum Landed Cost Dataset`.
 
 Fuente: [SI-RESEARCH-009](../../../06-research/brand-hogar/si-research-009-brand-cand-001-method-v2-golden-run-phase-9-headroom.md).
 
-## Golden Run BRAND-CAND-001 — Fase 12 cerrada
+## Golden Run BRAND-CAND-001 — Fase 13 cerrada
 
-`BRAND-CAND-001` completó Method v2 hasta Fase 12. `aut43` quedó validada con PASS limpio.
+`BRAND-CAND-001` completó Method v2 hasta Fase 13. `aut44` quedó validada con PASS limpio.
 
-Fase 12 interpretó formalmente Margin + ROI. `BASE-HOGAR-002` y `BASE-HOGAR-006` pasan a F13 condicionados; `BASE-HOGAR-003` sale del camino activo como STOP — REOPENABLE.
+Fase 13 consolida la shortlist final: `BASE-HOGAR-002` y `BASE-HOGAR-006` quedan `FINALIST — CONDITIONED`; `BASE-HOGAR-003` permanece `STOP — REOPENABLE`. No se selecciona todavía un producto para importar.
 
-El siguiente gate es `Fase 13 — Shortlist final`.
+El siguiente gate global es `Portfolio Review`, una vez que los candidatos relevantes completen F13; luego corresponde revisión externa previa antes de decidir F14.
 
-Fuente vigente: [SI-RESEARCH-012 — Fase 12 Margin + ROI](../../../06-research/brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md).
+Fuente vigente: [SI-RESEARCH-013 — Fase 13 Shortlist final](../../../06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md).

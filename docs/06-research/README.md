@@ -17,6 +17,12 @@ tags:
 
 # 06 — Research
 
+<!-- SI-F13-CHECKPOINT:START -->
+## BRAND-CAND-001 — Golden Run vigente
+
+`SI-RESEARCH-013` cierra Fase 13 — Shortlist final con `aut44` validada. `BRAND-CAND-001` queda `PORTFOLIO REVIEW READY`; F14 no se abre.
+<!-- SI-F13-CHECKPOINT:END -->
+
 <!-- SI-F12-CHECKPOINT:START -->
 ## BRAND-CAND-001 — Golden Run vigente
 
@@ -155,3 +161,4 @@ Los datos comerciales exactos permanecen en sistemas privados:
 | Marca Hogar | [SI-RESEARCH-010 — BRAND-CAND-001 Fase 10 Minimum Landed Cost Dataset](./brand-hogar/si-research-010-brand-cand-001-method-v2-golden-run-phase-10-minimum-landed-cost-dataset.md) | `aut41` PASS / Fase 10 cerrada / siguiente gate Fase 11 — Landed Cost |
 | Marca Hogar | [SI-RESEARCH-011 — BRAND-CAND-001 Fase 11 Landed Cost](./brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md) | `aut42` PASS / Fase 11 cerrada / siguiente gate Fase 12 — Margin + ROI |
 | Marca Hogar | [SI-RESEARCH-012 — BRAND-CAND-001 Fase 12 Margin + ROI](./brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md) | `aut43` PASS / Fase 12 cerrada / siguiente gate Fase 13 — Shortlist final |
+| Marca Hogar | [SI-RESEARCH-013 — BRAND-CAND-001 Fase 13 Shortlist final](./brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md) | `aut44` PASS / Fase 13 cerrada / Portfolio Review Ready / F14 no abierto |
