@@ -2,11 +2,11 @@
 id: brand-cand-003
 title: Domestic Air Treatment
 description: Brand Candidate Screening de tratamiento doméstico del aire interior para Marca Hogar.
-version: 0.2.0
-status: pass-to-method-v2
+version: 0.3.0
+status: portfolio-review-ready
 brand: brand-hogar
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-25
 tags:
   - brand-candidate
   - home
@@ -19,6 +19,8 @@ related:
 ---
 
 # BRAND-CAND-003 — Tratamiento doméstico del aire interior
+
+
 
 ## 1. Identificación
 
@@ -296,3 +298,57 @@ Component specification ≠ System performance
 
 - [Marca Hogar](../README.md)
 - [Brand Candidate Screening](../../../si-brand-002-brand-candidate-screening-method.md)
+
+<!-- BRAND-CAND-003-METHOD-V2-RESULT:START -->
+## 16. Method v2 — resultado posterior al screening
+
+El `PASS TO METHOD V2` de este expediente permanece como la decisión de entrada histórica. La ejecución comercial posterior quedó completada hasta F13.
+
+```text
+METHOD V2
+F0–F13 → CLOSED
+
+FINALIST
+BASE-HOGAR-010
+→ FINALIST — CONDITIONED
+→ ELIGIBLE FOR PORTFOLIO REVIEW
+
+STOP — REOPENABLE
+BASE-HOGAR-009
+BASE-HOGAR-011
+
+PORTFOLIO STATUS
+→ PORTFOLIO REVIEW READY
+→ FREEZE
+
+F14
+→ NOT OPENED
+```
+
+### Condición dominante del finalista
+
+```text
+CARBON PRESENT
+≠ MATERIAL SORBENT VALIDATED
+```
+
+Antes de cualquier Real Validation deberán resolverse materialidad/capacidad del sorbente, método de prueba y claims aplicables, filtros/repuestos, compatibilidad eléctrica y revisión externa.
+
+## 17. Research de Method v2
+
+La ejecución completa está documentada en `SI-RESEARCH-014` a `SI-RESEARCH-027` dentro de `docs/06-research/brand-hogar/`.
+
+Checkpoint final:
+
+```text
+matrix-aut58-brand-cand-003-phase13.xlsx
+SHA-256: ec5c8b8f52cc3ae13c2d759e41b4f90f568948fa03676271ce585894d80c44da
+Validator: PASS limpio
+```
+
+## 18. Freeze
+
+`BRAND-CAND-003` no debe reabrir sourcing, negociación ni F14 antes de la futura `Portfolio Review` y la revisión externa correspondiente.
+
+Próxima ejecución: `BRAND-CAND-004 — Monitoreo doméstico del consumo energético`.
+<!-- BRAND-CAND-003-METHOD-V2-RESULT:END -->

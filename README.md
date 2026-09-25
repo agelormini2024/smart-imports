@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.12.0
+version: 1.13.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-23
+updated: 2026-09-25
 tags:
   - smart-imports
   - knowledge-base
@@ -16,6 +16,29 @@ tags:
   - brand-system
 ---
 # Smart Imports
+
+<!-- BRAND-CAND-003-CHECKPOINT:START -->
+## Method v2 BRAND-CAND-003 — estado vigente
+
+```text
+Method v2: Fases 0–13 CLOSED
+Snapshot comercial vigente: matrix-aut58-brand-cand-003-phase13.xlsx
+Matrix Validator: PASS limpio
+SHA-256: ec5c8b8f52cc3ae13c2d759e41b4f90f568948fa03676271ce585894d80c44da
+Finalist: BASE-HOGAR-010 — FINALIST — CONDITIONED
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
+F14: NOT OPENED
+```
+
+`BRAND-CAND-003 — Tratamiento doméstico del aire interior` completó Method v2. `BASE-HOGAR-010` queda `FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW`; `BASE-HOGAR-009` y `BASE-HOGAR-011` quedan `STOP — REOPENABLE`.
+
+`BRAND-CAND-002` permanece `PASS TO METHOD V2 — DEFERRED / PAUSED`. La pausa responde a una preocupación del founder sobre aprobación/costo regulatorio y **no** se registra como conclusión regulatoria verificada.
+
+Research vigente: `docs/06-research/brand-hogar/si-research-027-brand-cand-003-method-v2-agile-phase-13-final-shortlist.md`.
+
+Próxima ejecución: `BRAND-CAND-004 — Monitoreo doméstico del consumo energético`.
+<!-- BRAND-CAND-003-CHECKPOINT:END -->
 
 <!-- SI-F13-CHECKPOINT:START -->
 ## Golden Run BRAND-CAND-001 — estado vigente
@@ -140,14 +163,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut44-brand-cand-001-phase13-corrected.xlsx`
-Archivo: matrix-aut44-brand-cand-001-phase13-corrected.xlsx
+Matriz comercial vigente: `matrix-aut58-brand-cand-003-phase13.xlsx`
+Archivo: matrix-aut58-brand-cand-003-phase13.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut44: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 37b2b37c5c61355efec271b7ecb49df74c2264e2f721830a1c2478858a850f56
+Resultado aut58: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: ec5c8b8f52cc3ae13c2d759e41b4f90f568948fa03676271ce585894d80c44da
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` es el snapshot comercial operativo vigente.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` es el snapshot comercial operativo vigente después del cierre de BRAND-CAND-003.
 
 Avances recientes:
 
@@ -207,12 +230,12 @@ docs/
 
 ## Próximos pasos
 
-1. Procesar la respuesta pendiente de `BASE-PET-004`.
-2. Continuar el screening sólo hasta reunir aproximadamente **5–6 candidatos firmes**.
-3. Negociar FOB y condiciones con los proveedores finalistas.
-4. Preparar un paquete homogéneo para el despachante.
-5. Validar profesionalmente NCM, intervenciones, certificaciones y costos definitivos.
-6. Actualizar `Landed Cost` y construir la shortlist final para decisión de importación.
+1. Mantener `BRAND-CAND-001` y `BRAND-CAND-003` en `FREEZE / PORTFOLIO REVIEW READY`.
+2. Ejecutar `BRAND-CAND-004 — Monitoreo doméstico del consumo energético` hasta F13 con Method v2 Agile.
+3. Continuar luego con `BRAND-CAND-005` y `BRAND-CAND-006` según el orden operativo vigente.
+4. Cuando el conjunto relevante complete F13, realizar `Portfolio Review` transversal.
+5. Preparar la revisión externa —incluido despachante y validaciones regulatorias/técnicas cuando correspondan— sobre los finalistas.
+6. Seleccionar qué Product Base justifica profundización procurement-grade y recién entonces decidir la apertura de F14.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
 8. Mantener Brand System v0.3 en observación empírica y aplicar el screening a nuevas oportunidades reales cuando aparezcan.
 9. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
@@ -221,6 +244,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.13.0 | 2026-09-25 | BRAND-CAND-003 completa Fases 0–13; aut58 PASS; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |
 | 1.12.0 | 2026-09-23 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 10; aut41 PASS y siguiente gate Landed Cost. |
 | 1.11.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 9; aut40 PASS y siguiente gate Minimum Landed Cost Dataset. |
 | 1.10.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 8; aut39 PASS y próximo gate Headroom. |

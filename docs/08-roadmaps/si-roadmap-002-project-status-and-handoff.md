@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.11.0
+version: 1.12.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-09-23
+updated: 2026-09-25
 tags:
   - status
   - handoff
@@ -37,6 +37,40 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- BRAND-CAND-003-HANDOFF:START -->
+## Checkpoint operativo — BRAND-CAND-003 / 2026-09-25
+
+```text
+Method v2 Agile: Fases 0–13 CLOSED
+Snapshot comercial vigente: matrix-aut58-brand-cand-003-phase13.xlsx
+Schema: full-matrix-v5 0.7.0
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: ec5c8b8f52cc3ae13c2d759e41b4f90f568948fa03676271ce585894d80c44da
+Finalist: BASE-HOGAR-010 — FINALIST — CONDITIONED
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
+F14: NOT OPENED
+```
+
+`BASE-HOGAR-009` y `BASE-HOGAR-011` quedan `STOP — REOPENABLE`. `BASE-HOGAR-010` sobrevive condicionado por materialidad/capacidad del sorbente, claims, filtros/repuestos, compatibilidad eléctrica y futura revisión externa.
+
+`BRAND-CAND-002` permanece `PASS TO METHOD V2 — DEFERRED / PAUSED`. La pausa responde a una preocupación del founder sobre aprobación/costo regulatorio; requiere revisión externa y **no** se registra como conclusión regulatoria verificada.
+
+`BRAND-CAND-002` permanece `PASS TO METHOD V2 — DEFERRED / PAUSED`. La pausa responde a una preocupación del founder sobre aprobación/costo regulatorio, pendiente de revisión externa; **no se registra como conclusión regulatoria verificada**.
+
+Próxima secuencia obligatoria:
+
+```text
+BRAND-CAND-004
+→ BRAND-CAND-005
+→ BRAND-CAND-006
+→ Portfolio Review global
+→ revisión externa
+→ selección para profundización
+→ decisión sobre F14
+```
+<!-- BRAND-CAND-003-HANDOFF:END -->
 
 <!-- SI-F13-CHECKPOINT:START -->
 ## Checkpoint operativo — BRAND-CAND-001 / 2026-09-24
@@ -96,7 +130,7 @@ Software ejecutable:
 https://github.com/agelormini2024/smart-imports-engine
 
 Snapshot comercial vigente:
-matrix-aut44-brand-cand-001-phase13-corrected.xlsx
+matrix-aut58-brand-cand-003-phase13.xlsx
 → full-matrix-v5 0.7.0
 → PASS limpio
 
@@ -413,7 +447,7 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
 4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
 5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002` y `SI-DECISION-016`.
-6. Adjuntar `aut37` cuando la tarea requiera el snapshot comercial vigente. Usar `aut36` sólo cuando la tarea requiera específicamente el checkpoint histórico del Nicho 3.
+6. Adjuntar `aut58` cuando la tarea requiera el snapshot comercial vigente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
 7. No volver a adjuntar PDFs históricos ya consolidados.
 8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
 9. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
@@ -421,19 +455,19 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 ## 14. Próxima acción concreta
 
 ```text
-Nicho 3
-→ consolidación de finalistas y preparación del gate profesional externo
-→ completar y consolidar los finalistas antes de la validación profesional
-```
-
-```text
 Marca Hogar
-→ continuar Brand Candidate Screening
-→ próximo caso: BRAND-CAND-002 — Purificación de agua doméstica
-→ ajustar el filtro sólo a partir de evidencia de uso real
+→ BRAND-CAND-001: PORTFOLIO REVIEW READY / FREEZE
+→ BRAND-CAND-003: PORTFOLIO REVIEW READY / FREEZE
+→ NEXT: BRAND-CAND-004 — Monitoreo doméstico del consumo energético
+→ luego BRAND-CAND-005
+→ luego BRAND-CAND-006
+→ Portfolio Review global
+→ revisión externa
+→ selección para profundización
+→ decisión sobre apertura de F14
 ```
 
-No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial del Nicho 3.
+No reabrir `BRAND-CAND-001` ni `BRAND-CAND-003` salvo contradicción material o decisión surgida de Portfolio Review. No abrir F14 antes de la comparación transversal y el gate externo.
 
 ## 15. Documentos relacionados
 
@@ -451,6 +485,7 @@ No iniciar Landed Cost ni RFQ exhaustivo antes de cerrar la shortlist comercial 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.12.0 | 2026-09-25 | BRAND-CAND-003 completa F0–F13; aut58 PASS; BASE-HOGAR-010 FINALIST — CONDITIONED; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-004. |
 | 1.11.0 | 2026-09-23 | BRAND-CAND-001 completa Fase 10; aut41 PASS y próxima acción Fase 11 — Landed Cost. |
 | 1.10.0 | 2026-09-21 | BRAND-CAND-001 completa Fase 9; aut40 PASS y próxima acción Fase 10 — Minimum Landed Cost Dataset. |
 | 1.9.0 | 2026-09-21 | BRAND-CAND-001 completa Fases 7–8; aut39 PASS y próxima acción Fase 9 — Headroom. |

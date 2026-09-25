@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.9.0
+version: 0.10.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-23
+updated: 2026-09-25
 tags:
   - smart-imports
   - research
@@ -16,6 +16,23 @@ tags:
 ---
 
 # 06 — Research
+
+<!-- BRAND-HOGAR-RESEARCH-STATUS:START -->
+## Marca Hogar — Research vigente
+
+Las ejecuciones originadas desde Brand Candidates se indexan en `brand-hogar/README.md`.
+
+```text
+BRAND-CAND-001 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
+BRAND-CAND-002 → PASS TO METHOD V2 → DEFERRED / PAUSED
+BRAND-CAND-003 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
+NEXT → BRAND-CAND-004
+```
+
+`BRAND-CAND-003` queda documentado en `SI-RESEARCH-014` a `SI-RESEARCH-027`. La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, hallazgos consolidados, estados y decisiones.
+
+La pausa de `BRAND-CAND-002` refleja una preocupación del founder sobre aprobación/costo regulatorio; queda pendiente de revisión externa y no constituye una conclusión regulatoria verificada.
+<!-- BRAND-HOGAR-RESEARCH-STATUS:END -->
 
 <!-- SI-F13-CHECKPOINT:START -->
 ## BRAND-CAND-001 — Golden Run vigente
@@ -122,6 +139,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.10.0 | 2026-09-25 | Se incorpora el índice de Marca Hogar y el cierre completo de BRAND-CAND-003 mediante SI-RESEARCH-014 a SI-RESEARCH-027. |
 | 0.9.0 | 2026-09-23 | Se incorpora SI-RESEARCH-010 con cierre de Fase 10 de BRAND-CAND-001. |
 | 0.8.0 | 2026-09-21 | Se incorpora SI-RESEARCH-009 con cierre de Fase 9 de BRAND-CAND-001. |
 | 0.7.0 | 2026-09-21 | Se incorpora SI-RESEARCH-008 con cierre de Fases 7–8 de BRAND-CAND-001. |

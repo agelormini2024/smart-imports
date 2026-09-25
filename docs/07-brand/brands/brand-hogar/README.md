@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.10.0
+version: 0.11.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-23
+updated: 2026-09-25
 tags:
   - brand
   - home
@@ -21,6 +21,23 @@ related:
 ---
 
 # Marca Hogar
+
+<!-- BRAND-CAND-003-STATUS:START -->
+## Estado vigente de BRAND-CAND-003
+
+`BRAND-CAND-003 — Tratamiento doméstico del aire interior` completó Method v2 hasta Fase 13. `BASE-HOGAR-010` queda `FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW`; `BASE-HOGAR-009` y `BASE-HOGAR-011` quedan `STOP — REOPENABLE`.
+
+```text
+BRAND-CAND-003
+→ PORTFOLIO REVIEW READY
+→ FREEZE
+
+F14
+→ NOT OPENED
+```
+
+Fuente: `docs/06-research/brand-hogar/si-research-027-brand-cand-003-method-v2-agile-phase-13-final-shortlist.md`.
+<!-- BRAND-CAND-003-STATUS:END -->
 
 <!-- SI-F13-CHECKPOINT:START -->
 ## Estado vigente de BRAND-CAND-001
@@ -137,8 +154,8 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | ID | Candidate | Mission | Territory Relationship | Status | Brand Relevance | Brand Credibility |
 |---|---|---|---|---|---|---|
 | [`BRAND-CAND-001`](./candidates/brand-cand-001-water-leak-detection-and-shutoff.md) | Detección de fugas + corte automático | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE |
-| [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM |
-| [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / CLAIM / TEST METHOD |
+| [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2 — DEFERRED / PAUSED` | HIGH | PENDING BY PRODUCT BASE / CLAIM / EXTERNAL REGULATORY REVIEW |
+| [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — SORBENT / CLAIM / TEST METHOD / ELECTRICAL / EXTERNAL REVIEW` |
 | [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
 | [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / PROCESS / OUTPUT / CLAIM |
 | [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
@@ -148,10 +165,18 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 ## 10. Próximo candidato
 
 ```text
-Aplicar Brand System v0.3 a nuevas oportunidades reales cuando aparezcan; no crear candidatos sólo para probar el método
+NEXT METHOD V2 EXECUTION
+→ BRAND-CAND-004 — Monitoreo doméstico del consumo energético
+
+THEN
+→ BRAND-CAND-005
+→ BRAND-CAND-006
+→ Portfolio Review global
 ```
 
-Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras excepciones sólo cuando aparezcan oportunidades reales.
+`BRAND-CAND-001` y `BRAND-CAND-003` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
+
+`BRAND-CAND-002` permanece `DEFERRED / PAUSED`: la preocupación del founder sobre aprobación/costo regulatorio requiere revisión externa y no se toma como conclusión regulatoria verificada.
 
 ## 11. Documentos relacionados
 
@@ -163,6 +188,7 @@ Objetivo: mantener Brand System v0.3 en observación empírica y revisar futuras
 
 | Version | Date | Change |
 |---|---|---|
+| 0.11.0 | 2026-09-25 | BRAND-CAND-003 completa Fase 13; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |
 | 0.10.0 | 2026-09-23 | BRAND-CAND-001 completa Fase 10; aut41 PASS y siguiente gate Fase 11. |
 | 0.9.0 | 2026-09-21 | BRAND-CAND-001 completa Fase 9; aut40 PASS y siguiente gate Fase 10. |
 | 0.8.0 | 2026-09-21 | BRAND-CAND-001 completa Fases 7–8; aut39 PASS y próximo gate Headroom. |
