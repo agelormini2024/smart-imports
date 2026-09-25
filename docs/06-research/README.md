@@ -2,7 +2,7 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.10.0
+version: 0.11.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -17,6 +17,27 @@ tags:
 
 # 06 — Research
 
+<!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
+## Regla de cierre documental de Brand Candidate
+
+Un Brand Candidate no queda operativamente terminado sólo porque F13 tenga `PASS`.
+
+Secuencia obligatoria:
+
+```text
+F13 PASS
+→ publicar research F0–F13 en smart-imports
+→ actualizar expediente del Brand Candidate
+→ actualizar índices de Research y Marca Hogar
+→ actualizar README raíz y SI-ROADMAP-002
+→ verificar diff / enlaces / estado
+→ commit + push humano
+→ recién entonces abrir el siguiente Brand Candidate
+```
+
+Esta regla evita que el estado operativo dependa de un chat o de archivos locales no publicados.
+<!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:END -->
+
 <!-- BRAND-HOGAR-RESEARCH-STATUS:START -->
 ## Marca Hogar — Research vigente
 
@@ -26,10 +47,13 @@ Las ejecuciones originadas desde Brand Candidates se indexan en `brand-hogar/REA
 BRAND-CAND-001 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-002 → PASS TO METHOD V2 → DEFERRED / PAUSED
 BRAND-CAND-003 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-NEXT → BRAND-CAND-004
+BRAND-CAND-004 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
+NEXT → BRAND-CAND-005
 ```
 
-`BRAND-CAND-003` queda documentado en `SI-RESEARCH-014` a `SI-RESEARCH-027`. La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, hallazgos consolidados, estados y decisiones.
+`BRAND-CAND-003` queda documentado en `SI-RESEARCH-014` a `SI-RESEARCH-027`.
+
+`BRAND-CAND-004` queda documentado en `SI-RESEARCH-028` a `SI-RESEARCH-041`. La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, evidencia pública consolidada, estados, decisiones y continuidad.
 
 La pausa de `BRAND-CAND-002` refleja una preocupación del founder sobre aprobación/costo regulatorio; queda pendiente de revisión externa y no constituye una conclusión regulatoria verificada.
 <!-- BRAND-HOGAR-RESEARCH-STATUS:END -->
@@ -139,6 +163,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.11.0 | 2026-09-25 | Se incorpora BRAND-CAND-004 completo mediante SI-RESEARCH-028 a SI-RESEARCH-041 y se formaliza el cierre documental obligatorio antes de abrir el siguiente candidato. |
 | 0.10.0 | 2026-09-25 | Se incorpora el índice de Marca Hogar y el cierre completo de BRAND-CAND-003 mediante SI-RESEARCH-014 a SI-RESEARCH-027. |
 | 0.9.0 | 2026-09-23 | Se incorpora SI-RESEARCH-010 con cierre de Fase 10 de BRAND-CAND-001. |
 | 0.8.0 | 2026-09-21 | Se incorpora SI-RESEARCH-009 con cierre de Fase 9 de BRAND-CAND-001. |

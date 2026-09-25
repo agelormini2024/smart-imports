@@ -2,7 +2,7 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.11.0
+version: 0.12.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -21,6 +21,25 @@ related:
 ---
 
 # Marca Hogar
+
+<!-- BRAND-CAND-004-STATUS:START -->
+## Estado vigente de BRAND-CAND-004
+
+`BRAND-CAND-004 — Monitoreo doméstico del consumo energético` completó Method v2 hasta Fase 13. `BASE-HOGAR-016` queda `FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW`; `BASE-HOGAR-017` y `BASE-HOGAR-019` quedan `STOP — REOPENABLE`.
+
+```text
+BRAND-CAND-004
+→ PORTFOLIO REVIEW READY
+→ FREEZE
+
+F14
+→ NOT OPENED
+```
+
+Condiciones dominantes de `BASE-HOGAR-016`: `accuracy/test evidence`, configuración eléctrica exacta, plug Argentina/AU, packing/peso same-SKU, certificación/requisitos locales y revisión externa.
+
+Fuente: `docs/06-research/brand-hogar/si-research-041-brand-cand-004-method-v2-agile-phase-13-final-shortlist.md`.
+<!-- BRAND-CAND-004-STATUS:END -->
 
 <!-- BRAND-CAND-003-STATUS:START -->
 ## Estado vigente de BRAND-CAND-003
@@ -156,7 +175,7 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | [`BRAND-CAND-001`](./candidates/brand-cand-001-water-leak-detection-and-shutoff.md) | Detección de fugas + corte automático | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE |
 | [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2 — DEFERRED / PAUSED` | HIGH | PENDING BY PRODUCT BASE / CLAIM / EXTERNAL REGULATORY REVIEW |
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — SORBENT / CLAIM / TEST METHOD / ELECTRICAL / EXTERNAL REVIEW` |
-| [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / MEASUREMENT ACCURACY / ACTIONABILITY / CLAIM |
+| [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — ACCURACY / LOCAL ELECTRICAL FIT / PACKING / CERTIFICATION / EXTERNAL REVIEW` |
 | [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / PROCESS / OUTPUT / CLAIM |
 | [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
 
@@ -165,16 +184,22 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 ## 10. Próximo candidato
 
 ```text
+CLOSED / FREEZE
+→ BRAND-CAND-001
+→ BRAND-CAND-003
+→ BRAND-CAND-004
+
 NEXT METHOD V2 EXECUTION
-→ BRAND-CAND-004 — Monitoreo doméstico del consumo energético
+→ BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos
 
 THEN
-→ BRAND-CAND-005
 → BRAND-CAND-006
 → Portfolio Review global
 ```
 
-`BRAND-CAND-001` y `BRAND-CAND-003` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
+Regla: no abrir el siguiente candidato hasta completar documentación, verificación, commit y push del candidato recién cerrado.
+
+`BRAND-CAND-001`, `BRAND-CAND-003` y `BRAND-CAND-004` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
 
 `BRAND-CAND-002` permanece `DEFERRED / PAUSED`: la preocupación del founder sobre aprobación/costo regulatorio requiere revisión externa y no se toma como conclusión regulatoria verificada.
 
@@ -200,8 +225,7 @@ THEN
 | [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
 
 | 0.6.0 | 2026-09-17 | Se consolida Brand System v0.3: candidatos 001–005 = CORE; candidato 006 = STRONG ADJACENCY. |
-
-
+| 0.12.0 | 2026-09-25 | BRAND-CAND-004 completa Fase 13; BASE-HOGAR-016 queda FINALIST — CONDITIONED; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-005 después del cierre documental. |
 ## Golden Run BRAND-CAND-001
 
 `BRAND-CAND-001` completó Method v2 hasta Fase 6. `aut37` quedó validada con PASS limpio y cinco Product Bases candidatos están listos para `Fase 7 — shortlist pre-origen`.

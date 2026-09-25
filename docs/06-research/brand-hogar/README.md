@@ -2,7 +2,7 @@
 id: research-brand-hogar-readme
 title: Marca Hogar — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Hogar.
-version: 0.5.0
+version: 0.6.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -11,6 +11,60 @@ updated: 2026-09-25
 ---
 
 # Marca Hogar — Research
+
+<!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
+## Regla operativa — no abrir el siguiente candidato sin cierre documental
+
+Para Marca Hogar, el cierre de un Brand Candidate es una **unidad de trabajo completa**:
+
+```text
+Method v2 F0–F13
++ matriz final validada
++ research publicado
++ expediente del candidato actualizado
++ índices / roadmap / README actualizados
++ verificación del diff
++ commit y push humano
+```
+
+Hasta completar esa secuencia, el siguiente Brand Candidate permanece `NOT OPENED`.
+<!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:END -->
+
+<!-- BRAND-CAND-004-RESEARCH-INDEX:START -->
+## BRAND-CAND-004 — Agile Run — estado vigente
+
+```text
+Fases 0–13 CLOSED
+Snapshot final: matrix-aut72-brand-cand-004-phase13.xlsx
+Validator: PASS limpio
+SHA-256: 560fd2073da35327babe7a473c726e012f8d5496223f98c9d4f1dd5212948ced
+Finalist: BASE-HOGAR-016 — FINALIST — CONDITIONED
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
+F14: NOT OPENED
+```
+
+### Research completo
+
+| Documento | Fase | Checkpoint |
+|---|---|---|
+| [`SI-RESEARCH-028`](si-research-028-brand-cand-004-method-v2-agile-phase-0-research-brief.md) | F0 — Research Brief | `aut59 PASS` |
+| [`SI-RESEARCH-029`](si-research-029-brand-cand-004-method-v2-agile-phase-1-solution-map.md) | F1 — Market / Solution Map | `aut60 PASS` |
+| [`SI-RESEARCH-030`](si-research-030-brand-cand-004-method-v2-agile-phase-2-maturity.md) | F2 — Maturity | `aut61 PASS` |
+| [`SI-RESEARCH-031`](si-research-031-brand-cand-004-method-v2-agile-phase-3-demand.md) | F3 — Demand | `aut62 PASS` |
+| [`SI-RESEARCH-032`](si-research-032-brand-cand-004-method-v2-agile-phase-4-competition.md) | F4 — Competition | `aut63 corrected PASS` |
+| [`SI-RESEARCH-033`](si-research-033-brand-cand-004-method-v2-agile-phase-5-brand-potential.md) | F5 — Brand Potential | `aut64 PASS` |
+| [`SI-RESEARCH-034`](si-research-034-brand-cand-004-method-v2-agile-phase-6-product-bases.md) | F6 — Product Bases | `aut65 PASS` |
+| [`SI-RESEARCH-035`](si-research-035-brand-cand-004-method-v2-agile-phase-7-shortlist-pre-origin.md) | F7 — Shortlist pre-origen | `aut66 PASS` |
+| [`SI-RESEARCH-036`](si-research-036-brand-cand-004-method-v2-agile-phase-8-origin-screening.md) | F8 — Screening de origen | `aut67 PASS` |
+| [`SI-RESEARCH-037`](si-research-037-brand-cand-004-method-v2-agile-phase-9-import-cost-headroom.md) | F9 — Import Cost Headroom | `aut68 PASS` |
+| [`SI-RESEARCH-038`](si-research-038-brand-cand-004-method-v2-agile-phase-10-minimum-landed-cost-dataset.md) | F10 — Minimum Landed Cost Dataset | `aut69 corrected PASS` |
+| [`SI-RESEARCH-039`](si-research-039-brand-cand-004-method-v2-agile-phase-11-landed-cost-screen.md) | F11 — Landed Cost Screen | `aut70 corrected PASS` |
+| [`SI-RESEARCH-040`](si-research-040-brand-cand-004-method-v2-agile-phase-12-margin-roi.md) | F12 — Margin + ROI | `aut71 PASS` |
+| [`SI-RESEARCH-041`](si-research-041-brand-cand-004-method-v2-agile-phase-13-final-shortlist.md) | F13 — Shortlist final | `aut72 PASS` |
+
+Resultado final: `BRAND-CAND-004` queda `FREEZE / PORTFOLIO REVIEW READY`. La siguiente ejecución es `BRAND-CAND-005`, después de completar el cierre documental y publicación de este checkpoint.
+<!-- BRAND-CAND-004-RESEARCH-INDEX:END -->
 
 <!-- BRAND-CAND-003-RESEARCH-INDEX:START -->
 ## BRAND-CAND-003 — Agile Run — estado vigente
@@ -110,3 +164,4 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 | 0.4.0 | 2026-09-23 | Se documenta Fase 10 de BRAND-CAND-001; aut41 PASS y siguiente gate Fase 11. |
 | 0.3.0 | 2026-09-21 | Se documenta Fase 9 de BRAND-CAND-001; aut40 PASS y siguiente gate Fase 10. |
 | 0.2.0 | 2026-09-21 | Se documentan Fases 7–8 de BRAND-CAND-001; aut39 PASS y próximo gate Headroom. |
+| 0.6.0 | 2026-09-25 | Se incorpora la ejecución completa de BRAND-CAND-004, SI-RESEARCH-028 a SI-RESEARCH-041; aut72 PASS; estado PORTFOLIO REVIEW READY / FREEZE; se formaliza el cierre documental previo al siguiente candidato. |

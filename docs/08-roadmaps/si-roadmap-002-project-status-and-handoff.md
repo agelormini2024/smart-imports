@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.13.0
+version: 1.14.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -37,6 +37,65 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
+## Regla obligatoria — cierre documental antes del siguiente Brand Candidate
+
+El cierre operativo de un Brand Candidate **no termina con el PASS de F13**.
+
+Secuencia obligatoria de cierre:
+
+```text
+F13 validada con PASS
+→ publicar SI-RESEARCH de F0–F13 en smart-imports
+→ actualizar expediente del Brand Candidate
+→ actualizar índices de Research y Marca Hogar
+→ actualizar README raíz
+→ actualizar SI-ROADMAP-002
+→ ejecutar verificación documental y git diff --check
+→ git add / commit / push con aprobación humana
+→ recién entonces abrir el siguiente Brand Candidate
+```
+
+Reglas derivadas:
+
+- ningún candidato siguiente se abre mientras el anterior esté sólo cerrado en chat/matriz;
+- la fuente de continuidad es el repo `smart-imports`, no la conversación;
+- `commit` y `push` siguen siendo pasos humanos explícitos;
+- un candidato en `FREEZE` no se reabre para sourcing/F14 salvo Portfolio Review, revisión externa o contradicción material.
+
+Esta regla aplica a todos los Brand Candidates actuales y futuros.
+<!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:END -->
+
+<!-- BRAND-CAND-004-HANDOFF:START -->
+## Checkpoint operativo — BRAND-CAND-004 / 2026-09-25
+
+```text
+Method v2 Agile: Fases 0–13 CLOSED
+Snapshot comercial vigente: matrix-aut72-brand-cand-004-phase13.xlsx
+Schema: full-matrix-v5 0.7.0
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 560fd2073da35327babe7a473c726e012f8d5496223f98c9d4f1dd5212948ced
+Finalist: BASE-HOGAR-016 — FINALIST — CONDITIONED
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
+F14: NOT OPENED
+```
+
+`BASE-HOGAR-017` y `BASE-HOGAR-019` quedan `STOP — REOPENABLE`. `BASE-HOGAR-016` sobrevive condicionado por accuracy/test evidence, configuración eléctrica exacta, plug Argentina/AU, packing/peso same-SKU, certificación/requisitos locales y futura revisión externa.
+
+Próxima secuencia:
+
+```text
+DOCUMENTARY CLOSE BRAND-CAND-004
+→ BRAND-CAND-005
+→ BRAND-CAND-006
+→ Portfolio Review global
+→ revisión externa
+→ selección para profundización
+→ decisión sobre F14
+```
+<!-- BRAND-CAND-004-HANDOFF:END -->
 
 <!-- BRAND-CAND-003-HANDOFF:START -->
 ## Checkpoint operativo — BRAND-CAND-003 / 2026-09-25
@@ -447,7 +506,7 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
 4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
 5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002` y `SI-DECISION-016`.
-6. Adjuntar `aut58` cuando la tarea requiera el snapshot comercial vigente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
+6. Adjuntar `aut72` cuando la tarea requiera el snapshot comercial vigente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
 7. No volver a adjuntar PDFs históricos ya consolidados.
 8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
 9. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
@@ -458,8 +517,14 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 Marca Hogar
 → BRAND-CAND-001: PORTFOLIO REVIEW READY / FREEZE
 → BRAND-CAND-003: PORTFOLIO REVIEW READY / FREEZE
-→ NEXT: BRAND-CAND-004 — Monitoreo doméstico del consumo energético
-→ luego BRAND-CAND-005
+→ BRAND-CAND-004: PORTFOLIO REVIEW READY / FREEZE
+
+DOCUMENTARY CLOSE
+→ verificar documentación / diff
+→ commit + push humano
+
+NEXT
+→ BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos
 → luego BRAND-CAND-006
 → Portfolio Review global
 → revisión externa
@@ -467,7 +532,7 @@ Marca Hogar
 → decisión sobre apertura de F14
 ```
 
-No reabrir `BRAND-CAND-001` ni `BRAND-CAND-003` salvo contradicción material o decisión surgida de Portfolio Review. No abrir F14 antes de la comparación transversal y el gate externo.
+No abrir `BRAND-CAND-005` hasta que el checkpoint de `BRAND-CAND-004` esté publicado en el repositorio. No reabrir candidatos en `FREEZE` salvo contradicción material o decisión surgida de Portfolio Review / gate externo.
 
 ## 15. Documentos relacionados
 
@@ -587,6 +652,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 | 1.6.0 | 2026-09-17 | BRAND-CAND-006 confirma Brand Fit retrospectivamente; próximo paso: consolidar aprendizajes del bloque de seis screenings. |
 
 | 1.7.0 | 2026-09-17 | Se consolida Brand System v0.3: Territory Relationship, Screening Type y soporte formal de screening retrospectivo. |
+| 1.14.0 | 2026-09-25 | BRAND-CAND-004 completa F0–F13; aut72 PASS; BASE-HOGAR-016 FINALIST — CONDITIONED; candidato PORTFOLIO REVIEW READY / FREEZE; se formaliza la regla obligatoria de cierre documental + commit/push antes de abrir el siguiente Brand Candidate. |
 ## Golden Run BRAND-CAND-001 — Fases 0–6
 
 Estado:

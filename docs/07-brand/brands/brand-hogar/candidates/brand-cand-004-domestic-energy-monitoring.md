@@ -2,11 +2,11 @@
 id: brand-cand-004
 title: Domestic Energy Monitoring
 description: Brand Candidate Screening de monitoreo doméstico del consumo energético para Marca Hogar.
-version: 0.2.0
-status: pass-to-method-v2
+version: 0.3.0
+status: portfolio-review-ready
 brand: brand-hogar
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-25
 tags:
   - brand-candidate
   - home
@@ -20,6 +20,102 @@ related:
 ---
 
 # BRAND-CAND-004 — Monitoreo doméstico del consumo energético
+
+<!-- BRAND-CAND-004-METHOD-V2-RESULT:START -->
+## Method v2 — resultado posterior al screening
+
+El `PASS TO METHOD V2` de este expediente permanece como decisión histórica de entrada. La ejecución comercial posterior quedó completada hasta F13.
+
+```text
+METHOD V2
+F0–F13 → CLOSED
+
+FINALIST
+BASE-HOGAR-016
+→ FINALIST — CONDITIONED
+→ ELIGIBLE FOR PORTFOLIO REVIEW
+
+STOP — REOPENABLE
+BASE-HOGAR-017
+BASE-HOGAR-019
+
+PORTFOLIO STATUS
+→ PORTFOLIO REVIEW READY
+→ FREEZE
+
+F14
+→ NOT OPENED
+```
+
+### Perfil finalista — BASE-HOGAR-016
+
+`Medidor enchufable standalone de consumo`.
+
+El PB sobrevivió porque combina:
+
+- demanda observable;
+- medición directa por artefacto;
+- instalación simple;
+- baja dependencia de cloud/app;
+- beneficio fácil de explicar;
+- economía suficiente en los escenarios de 50 y 100 unidades.
+
+Resultados F12:
+
+```text
+50 unidades
+→ margen ~43,06%
+→ ROI sobre costo económico ~85,66%
+
+100 unidades
+→ margen ~57,57%
+→ ROI sobre costo económico ~161,00%
+```
+
+### Condiciones dominantes
+
+```text
+accuracy / test evidence
+16A + 220–240V / 50Hz exactos
+plug Argentina/AU exacto
+packing/peso same-SKU
+memoria / persistencia según propuesta final
+documentación / certificaciones
+revisión externa / importación
+```
+
+La promesa debe conservar la cadena:
+
+```text
+medir → comprender → decidir
+```
+
+y no transformarse en:
+
+```text
+monitoring → ahorro garantizado
+```
+
+## Research de Method v2
+
+La ejecución completa está documentada en `SI-RESEARCH-028` a `SI-RESEARCH-041` dentro de `docs/06-research/brand-hogar/`.
+
+Checkpoint final:
+
+```text
+matrix-aut72-brand-cand-004-phase13.xlsx
+SHA-256: 560fd2073da35327babe7a473c726e012f8d5496223f98c9d4f1dd5212948ced
+Validator: PASS limpio
+```
+
+## Freeze
+
+`BRAND-CAND-004` no debe reabrir sourcing, negociación, procurement-grade work ni F14 antes de la futura `Portfolio Review` y la revisión externa correspondiente.
+
+`BASE-HOGAR-017` y `BASE-HOGAR-019` sólo pueden reabrirse ante evidencia material nueva que cambie su estructura económica o técnica.
+
+Próxima ejecución: `BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos`, una vez completado el cierre documental de BRAND-CAND-004 en el repo.
+<!-- BRAND-CAND-004-METHOD-V2-RESULT:END -->
 
 ## 1. Identificación
 
