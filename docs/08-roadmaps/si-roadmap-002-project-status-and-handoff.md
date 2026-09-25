@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.12.0
+version: 1.13.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -481,10 +481,96 @@ No reabrir `BRAND-CAND-001` ni `BRAND-CAND-003` salvo contradicción material o 
 - [Marca Hogar — territorio y Candidate Register](../07-brand/brands/brand-hogar/README.md)
 - [SI-DECISION-016 — Arquitectura de marca por misiones](../09-decision-log/si-decision-016-adopt-mission-based-brand-architecture-and-screening.md)
 
+<!-- ECONOMIC-BRIEFING-PENDING:START -->
+## Pendiente futuro — Documento didáctico de evaluación económica para reunión con socio
+
+### Estado
+
+```text
+PENDING
+DO NOT PREPARE YET
+TRIGGER → Brand Candidates relevantes completados hasta F13
+        → finalistas disponibles para Portfolio Review
+```
+
+### Objetivo
+
+Preparar un documento simple, muy didáctico y completamente en español para explicar al socio cómo Smart Imports evalúa económicamente una oportunidad de producto.
+
+No debe enseñar finanzas en abstracto. Debe mostrar, utilizando **uno o más productos reales investigados por Smart Imports y números propios de las matrices**, cómo una oportunidad pasa de:
+
+```text
+“parece interesante”
+→
+“económicamente defendible o no”
+```
+
+### Recorrido pedagógico obligatorio
+
+```text
+Precio local
+→ Headroom
+→ Costo de origen
+→ Landed Cost
+→ Margen
+→ ROI
+→ significado para la decisión
+```
+
+### Conceptos a explicar en lenguaje sencillo
+
+```text
+HEADROOM
+→ ¿hay espacio económico suficiente para investigar la importación?
+
+LANDED COST
+→ ¿cuánto estimamos que cuesta realmente poner el producto en Argentina?
+
+MARGEN
+→ ¿cuánto queda económicamente después del costo puesto y los costos comerciales?
+
+ROI
+→ ¿qué retorno unitario obtenemos respecto del costo económico invertido?
+```
+
+### Distinciones obligatorias
+
+```text
+Headroom ≠ Landed Cost
+
+Economic Landed Cost ≠ Total Cash Outlay
+
+ROI sobre costo económico
+≠
+ROI total del negocio / capital total invertido
+```
+
+### Selección de ejemplos
+
+Usar uno o más Product Bases reales investigados por Smart Imports y sus números reales.
+
+Cuando el portfolio esté completo, priorizar ejemplos que permitan contrastar, por ejemplo:
+
+```text
+economía holgada
+vs.
+economía ajustada o no defendible
+```
+
+La selección definitiva debe hacerse recién después de completar los Brand Candidates relevantes hasta F13, para elegir casos pedagógicamente representativos del portfolio real.
+
+### Regla de activación
+
+**No preparar este documento antes del trigger definido.**
+
+El entregable se prepara cuando existan finalistas suficientes para `Portfolio Review`; hasta entonces permanece como pendiente documental del proyecto.
+<!-- ECONOMIC-BRIEFING-PENDING:END -->
+
 ## 16. Changelog
 
 | Version | Date | Change |
 |---|---|---|
+| 1.13.0 | 2026-09-25 | Se registra como pendiente futuro el documento didáctico para reunión con socio sobre Precio local → Headroom → Costo de origen → Landed Cost → Margen → ROI, usando ejemplos reales de Smart Imports y activado sólo después de completar los candidatos relevantes hasta F13. |
 | 1.12.0 | 2026-09-25 | BRAND-CAND-003 completa F0–F13; aut58 PASS; BASE-HOGAR-010 FINALIST — CONDITIONED; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-004. |
 | 1.11.0 | 2026-09-23 | BRAND-CAND-001 completa Fase 10; aut41 PASS y próxima acción Fase 11 — Landed Cost. |
 | 1.10.0 | 2026-09-21 | BRAND-CAND-001 completa Fase 9; aut40 PASS y próxima acción Fase 10 — Minimum Landed Cost Dataset. |
