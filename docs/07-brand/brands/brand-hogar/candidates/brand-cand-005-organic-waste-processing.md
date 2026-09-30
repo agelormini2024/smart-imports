@@ -2,11 +2,11 @@
 id: brand-cand-005
 title: Organic Waste Processing
 description: Brand Candidate Screening de gestión doméstica de residuos orgánicos para Marca Hogar.
-version: 0.2.0
-status: pass-to-method-v2
+version: 0.3.0
+status: portfolio-review-ready
 brand: brand-hogar
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-30
 tags:
   - brand-candidate
   - home
@@ -20,6 +20,67 @@ related:
 ---
 
 # BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos
+
+<!-- BRAND-CAND-005-METHOD-V2-RESULT:START -->
+## Method v2 — resultado posterior al screening
+
+El `PASS TO METHOD V2` del screening fue una decisión de entrada. La ejecución posterior de Method v2 quedó cerrada en F13 con `aut90 PASS`.
+
+```text
+Method v2 Agile: F0–F13 CLOSED
+Final matrix: matrix-aut90-brand-cand-005-phase13.xlsx
+SHA-256: 2bb0e30d75f98d9d90b60942b0b84ea409544e0966b5d5a4fd88e51fc65fbe9e
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+F14: NOT OPENED
+```
+
+### Resultado por Product Base
+
+```text
+BASE-HOGAR-028
+→ FINALIST — CONDITIONED
+→ ELIGIBLE FOR PORTFOLIO REVIEW
+→ NOT FIRST-STAGE FIT
+
+BASE-HOGAR-024
+→ STOP — REOPENABLE
+
+BASE-HOGAR-025
+→ STOP — REOPENABLE / LOGISTICS GATE
+```
+
+El escenario económico ejecutable que sostiene a `BASE-HOGAR-028` es `MARG-0037` a 100 unidades: margen mecánico aproximado `31,21%` y ROI aproximado `50,23%`. `MARG-0036` a 50 unidades se conserva sólo como sensibilidad `NON-EXECUTABLE AT PUBLIC MOQ`.
+
+### Condiciones del finalista
+
+`BASE-HOGAR-028` no queda listo para compra ni para F14. Antes de cualquier profundización procurement-grade deben resolverse, como mínimo:
+
+- señal transaccional local todavía débil/no visible;
+- compatibilidad eléctrica exacta `220–240V / 50Hz` y plug local;
+- filtros, disponibilidad de reemplazos y repuestos;
+- warranty y capacidad de postventa;
+- documentación/certificaciones y seguridad;
+- claims de reducción de volumen, olor, higienización y naturaleza real del output;
+- prohibición de presentar el output como compost maduro por defecto sin evidencia suficiente.
+
+### Estado del candidato
+
+```text
+BRAND-CAND-005
+→ PORTFOLIO REVIEW READY
+→ FREEZE
+
+F14
+→ NOT OPENED
+
+NEXT
+→ documentary close
+→ commit + push humano
+→ BRAND-CAND-006
+```
+
+Research completo: `SI-RESEARCH-042` a `SI-RESEARCH-055`.
+<!-- BRAND-CAND-005-METHOD-V2-RESULT:END -->
 
 ## 1. Identificación
 
@@ -352,3 +413,9 @@ Forma práctica:
 
 - [Marca Hogar](../README.md)
 - [Brand Candidate Screening](../../../si-brand-002-brand-candidate-screening-method.md)
+
+## Changelog
+
+| Version | Fecha | Cambio |
+|---|---|---|
+| 0.3.0 | 2026-09-30 | Method v2 F0–F13 cerrado; aut90 PASS; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; F14 NOT OPENED. |

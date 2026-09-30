@@ -2,7 +2,7 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.11.0
+version: 0.12.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -48,12 +48,15 @@ BRAND-CAND-001 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-002 → PASS TO METHOD V2 → DEFERRED / PAUSED
 BRAND-CAND-003 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-004 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-NEXT → BRAND-CAND-005
+BRAND-CAND-005 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
+NEXT → BRAND-CAND-006
 ```
 
 `BRAND-CAND-003` queda documentado en `SI-RESEARCH-014` a `SI-RESEARCH-027`.
 
-`BRAND-CAND-004` queda documentado en `SI-RESEARCH-028` a `SI-RESEARCH-041`. La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, evidencia pública consolidada, estados, decisiones y continuidad.
+`BRAND-CAND-004` queda documentado en `SI-RESEARCH-028` a `SI-RESEARCH-041`.
+
+`BRAND-CAND-005` queda documentado en `SI-RESEARCH-042` a `SI-RESEARCH-055`. La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, evidencia pública consolidada, estados, decisiones y continuidad.
 
 La pausa de `BRAND-CAND-002` refleja una preocupación del founder sobre aprobación/costo regulatorio; queda pendiente de revisión externa y no constituye una conclusión regulatoria verificada.
 <!-- BRAND-HOGAR-RESEARCH-STATUS:END -->
@@ -163,6 +166,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.12.0 | 2026-09-30 | Se incorpora BRAND-CAND-005 completo mediante SI-RESEARCH-042 a SI-RESEARCH-055; aut90 PASS; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.11.0 | 2026-09-25 | Se incorpora BRAND-CAND-004 completo mediante SI-RESEARCH-028 a SI-RESEARCH-041 y se formaliza el cierre documental obligatorio antes de abrir el siguiente candidato. |
 | 0.10.0 | 2026-09-25 | Se incorpora el índice de Marca Hogar y el cierre completo de BRAND-CAND-003 mediante SI-RESEARCH-014 a SI-RESEARCH-027. |
 | 0.9.0 | 2026-09-23 | Se incorpora SI-RESEARCH-010 con cierre de Fase 10 de BRAND-CAND-001. |

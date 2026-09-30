@@ -2,7 +2,7 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.12.0
+version: 0.13.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -21,6 +21,25 @@ related:
 ---
 
 # Marca Hogar
+
+<!-- BRAND-CAND-005-STATUS:START -->
+## Estado vigente de BRAND-CAND-005
+
+`BRAND-CAND-005 — Compostaje / procesamiento doméstico de residuos orgánicos` completó Method v2 hasta Fase 13. `BASE-HOGAR-028` queda `FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT`; `BASE-HOGAR-024` queda `STOP — REOPENABLE`; `BASE-HOGAR-025` queda `STOP — REOPENABLE / LOGISTICS GATE`.
+
+```text
+BRAND-CAND-005
+→ PORTFOLIO REVIEW READY
+→ FREEZE
+
+F14
+→ NOT OPENED
+```
+
+Condiciones dominantes de `BASE-HOGAR-028`: demanda transaccional local débil/no visible, postventa de electrodoméstico, `220–240V / 50Hz` + plug local, filtros/repuestos, warranty, documentación/certificaciones, seguridad y claims sobre la naturaleza real del output.
+
+Fuente: `docs/06-research/brand-hogar/si-research-055-brand-cand-005-method-v2-agile-phase-13-final-shortlist.md`.
+<!-- BRAND-CAND-005-STATUS:END -->
 
 <!-- BRAND-CAND-004-STATUS:START -->
 ## Estado vigente de BRAND-CAND-004
@@ -176,7 +195,7 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | [`BRAND-CAND-002`](./candidates/brand-cand-002-domestic-water-treatment.md) | Tratamiento doméstico de agua | Mejorar condiciones del hogar | `CORE` | `PASS TO METHOD V2 — DEFERRED / PAUSED` | HIGH | PENDING BY PRODUCT BASE / CLAIM / EXTERNAL REGULATORY REVIEW |
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — SORBENT / CLAIM / TEST METHOD / ELECTRICAL / EXTERNAL REVIEW` |
 | [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — ACCURACY / LOCAL ELECTRICAL FIT / PACKING / CERTIFICATION / EXTERNAL REVIEW` |
-| [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PASS TO METHOD V2` | HIGH | PENDING BY PRODUCT BASE / PROCESS / OUTPUT / CLAIM |
+| [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — DEMAND / TECH-SERVICE / ELECTRICAL / FILTERS-SPARES / CERTIFICATION / CLAIM / EXTERNAL REVIEW` |
 | [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
 
 `BRAND-CAND-006` ya cuenta con investigación previa en Method v2. Su screening será retrospectivo y no reinicia su evaluación comercial.
@@ -188,18 +207,24 @@ CLOSED / FREEZE
 → BRAND-CAND-001
 → BRAND-CAND-003
 → BRAND-CAND-004
+→ BRAND-CAND-005
+
+DEFERRED / PAUSED
+→ BRAND-CAND-002
 
 NEXT METHOD V2 EXECUTION
-→ BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos
+→ BRAND-CAND-006 — residuos de mascotas
 
 THEN
-→ BRAND-CAND-006
 → Portfolio Review global
+→ revisión externa
+→ selección para profundización
+→ decisión sobre apertura de F14
 ```
 
-Regla: no abrir el siguiente candidato hasta completar documentación, verificación, commit y push del candidato recién cerrado.
+Regla: no abrir `BRAND-CAND-006` hasta completar documentación, verificación, commit y push del candidato 005.
 
-`BRAND-CAND-001`, `BRAND-CAND-003` y `BRAND-CAND-004` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
+`BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
 
 `BRAND-CAND-002` permanece `DEFERRED / PAUSED`: la preocupación del founder sobre aprobación/costo regulatorio requiere revisión externa y no se toma como conclusión regulatoria verificada.
 
@@ -213,6 +238,7 @@ Regla: no abrir el siguiente candidato hasta completar documentación, verificac
 
 | Version | Date | Change |
 |---|---|---|
+| 0.13.0 | 2026-09-30 | BRAND-CAND-005 completa Fase 13; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.11.0 | 2026-09-25 | BRAND-CAND-003 completa Fase 13; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |
 | 0.10.0 | 2026-09-23 | BRAND-CAND-001 completa Fase 10; aut41 PASS y siguiente gate Fase 11. |
 | 0.9.0 | 2026-09-21 | BRAND-CAND-001 completa Fase 9; aut40 PASS y siguiente gate Fase 10. |

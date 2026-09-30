@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.14.0
+version: 1.15.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -66,6 +66,41 @@ Reglas derivadas:
 
 Esta regla aplica a todos los Brand Candidates actuales y futuros.
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:END -->
+
+<!-- BRAND-CAND-005-HANDOFF:START -->
+## Checkpoint operativo — BRAND-CAND-005 / 2026-09-30
+
+```text
+Method v2 Agile: Fases 0–13 CLOSED
+Snapshot comercial vigente: matrix-aut90-brand-cand-005-phase13.xlsx
+Schema: full-matrix-v5 0.7.0
+Validator: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 2bb0e30d75f98d9d90b60942b0b84ea409544e0966b5d5a4fd88e51fc65fbe9e
+Finalist: BASE-HOGAR-028 — FINALIST — CONDITIONED
+Portfolio eligibility: ELIGIBLE FOR PORTFOLIO REVIEW
+First-stage fit: NOT FIRST-STAGE FIT
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
+F14: NOT OPENED
+```
+
+`BASE-HOGAR-024` queda `STOP — REOPENABLE`. `BASE-HOGAR-025` queda `STOP — REOPENABLE / LOGISTICS GATE`. `BASE-HOGAR-028` sobrevive condicionado por demanda local débil/no visible, postventa de electrodoméstico, compatibilidad eléctrica exacta, filtros/repuestos, warranty, documentación/certificaciones, seguridad y disciplina de claims sobre el output.
+
+Próxima secuencia:
+
+```text
+DOCUMENTARY CLOSE BRAND-CAND-005
+→ verificación documental / git diff --check
+→ git add / commit / push humano
+→ BRAND-CAND-006 — residuos de mascotas
+→ Portfolio Review global
+→ revisión externa
+→ selección para profundización
+→ decisión sobre F14
+```
+
+No reabrir F14 ni tratar el finalista como producto listo antes de Portfolio Review y gate externo.
+<!-- BRAND-CAND-005-HANDOFF:END -->
 
 <!-- BRAND-CAND-004-HANDOFF:START -->
 ## Checkpoint operativo — BRAND-CAND-004 / 2026-09-25
@@ -506,7 +541,7 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
 4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
 5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002` y `SI-DECISION-016`.
-6. Adjuntar `aut72` cuando la tarea requiera el snapshot comercial vigente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
+6. Adjuntar `aut90` cuando la tarea requiera el snapshot comercial vigente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
 7. No volver a adjuntar PDFs históricos ya consolidados.
 8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
 9. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
@@ -516,23 +551,24 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 ```text
 Marca Hogar
 → BRAND-CAND-001: PORTFOLIO REVIEW READY / FREEZE
+→ BRAND-CAND-002: DEFERRED / PAUSED
 → BRAND-CAND-003: PORTFOLIO REVIEW READY / FREEZE
 → BRAND-CAND-004: PORTFOLIO REVIEW READY / FREEZE
+→ BRAND-CAND-005: PORTFOLIO REVIEW READY / FREEZE
 
-DOCUMENTARY CLOSE
+DOCUMENTARY CLOSE BRAND-CAND-005
 → verificar documentación / diff
 → commit + push humano
 
 NEXT
-→ BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos
-→ luego BRAND-CAND-006
+→ BRAND-CAND-006 — residuos de mascotas
 → Portfolio Review global
 → revisión externa
 → selección para profundización
 → decisión sobre apertura de F14
 ```
 
-No abrir `BRAND-CAND-005` hasta que el checkpoint de `BRAND-CAND-004` esté publicado en el repositorio. No reabrir candidatos en `FREEZE` salvo contradicción material o decisión surgida de Portfolio Review / gate externo.
+No abrir `BRAND-CAND-006` hasta que el checkpoint de `BRAND-CAND-005` esté publicado, verificado y commiteado/pusheado. No reabrir candidatos en `FREEZE` salvo contradicción material o decisión surgida de Portfolio Review / gate externo.
 
 ## 15. Documentos relacionados
 
@@ -635,6 +671,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 1.13.0 | 2026-09-25 | Se registra como pendiente futuro el documento didáctico para reunión con socio sobre Precio local → Headroom → Costo de origen → Landed Cost → Margen → ROI, usando ejemplos reales de Smart Imports y activado sólo después de completar los candidatos relevantes hasta F13. |
 | 1.12.0 | 2026-09-25 | BRAND-CAND-003 completa F0–F13; aut58 PASS; BASE-HOGAR-010 FINALIST — CONDITIONED; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-004. |
 | 1.11.0 | 2026-09-23 | BRAND-CAND-001 completa Fase 10; aut41 PASS y próxima acción Fase 11 — Landed Cost. |

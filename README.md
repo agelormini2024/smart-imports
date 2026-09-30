@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.14.0
+version: 1.15.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -16,6 +16,31 @@ tags:
   - brand-system
 ---
 # Smart Imports
+
+<!-- BRAND-CAND-005-CHECKPOINT:START -->
+## Method v2 BRAND-CAND-005 — estado vigente
+
+```text
+Method v2: Fases 0–13 CLOSED
+Snapshot comercial vigente: matrix-aut90-brand-cand-005-phase13.xlsx
+Matrix Validator: PASS limpio
+SHA-256: 2bb0e30d75f98d9d90b60942b0b84ea409544e0966b5d5a4fd88e51fc65fbe9e
+Finalist: BASE-HOGAR-028 — FINALIST — CONDITIONED
+Portfolio eligibility: ELIGIBLE FOR PORTFOLIO REVIEW
+First-stage fit: NOT FIRST-STAGE FIT
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
+F14: NOT OPENED
+```
+
+`BRAND-CAND-005 — Compostaje / procesamiento doméstico de residuos orgánicos` completó Method v2. `BASE-HOGAR-028` queda `FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT`; `BASE-HOGAR-024` queda `STOP — REOPENABLE`; `BASE-HOGAR-025` queda `STOP — REOPENABLE / LOGISTICS GATE`.
+
+Las condiciones dominantes de `BASE-HOGAR-028` son demanda transaccional local débil/no visible, carga de electrodoméstico y postventa, compatibilidad `220–240V / 50Hz` + plug local, filtros/repuestos, warranty, documentación/certificaciones, seguridad y disciplina de claims. El output no debe presentarse como compost maduro por defecto.
+
+Research vigente: `docs/06-research/brand-hogar/si-research-055-brand-cand-005-method-v2-agile-phase-13-final-shortlist.md`.
+
+Próxima ejecución: `BRAND-CAND-006 — residuos de mascotas`, sólo después de completar este cierre documental y el commit/push humano.
+<!-- BRAND-CAND-005-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-004-CHECKPOINT:START -->
 ## Method v2 BRAND-CAND-004 — estado vigente
@@ -184,14 +209,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut72-brand-cand-004-phase13.xlsx`
-Archivo: matrix-aut72-brand-cand-004-phase13.xlsx
+Matriz comercial vigente: `matrix-aut90-brand-cand-005-phase13.xlsx`
+Archivo: matrix-aut90-brand-cand-005-phase13.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut72: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 560fd2073da35327babe7a473c726e012f8d5496223f98c9d4f1dd5212948ced
+Resultado aut90: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 2bb0e30d75f98d9d90b60942b0b84ea409544e0966b5d5a4fd88e51fc65fbe9e
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` se conserva como snapshot final de BRAND-CAND-003. `aut72` es el snapshot comercial operativo vigente después del cierre de BRAND-CAND-004.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` se conserva como snapshot final de BRAND-CAND-003. `aut72` se conserva como snapshot final de BRAND-CAND-004. `aut90` es el snapshot comercial operativo vigente después del cierre de BRAND-CAND-005.
 
 Avances recientes:
 
@@ -251,21 +276,21 @@ docs/
 
 ## Próximos pasos
 
-1. Mantener `BRAND-CAND-001`, `BRAND-CAND-003` y `BRAND-CAND-004` en `FREEZE / PORTFOLIO REVIEW READY`.
-2. Completar el cierre documental de cada Brand Candidate en `smart-imports` antes de abrir el siguiente.
-3. Ejecutar `BRAND-CAND-005 — Compostaje / procesamiento de residuos orgánicos` hasta F13 con Method v2 Agile.
-4. Continuar luego con `BRAND-CAND-006` según el orden operativo vigente.
-5. Cuando el conjunto relevante complete F13 y su cierre documental, realizar `Portfolio Review` transversal.
-6. Preparar la revisión externa —incluido despachante y validaciones regulatorias/técnicas cuando correspondan— sobre los finalistas.
-7. Seleccionar qué Product Base justifica profundización procurement-grade y recién entonces decidir la apertura de F14.
-8. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
-9. Mantener Brand System v0.3 en observación empírica y aplicar el screening a nuevas oportunidades reales cuando aparezcan.
-10. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
+1. Mantener `BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` en `FREEZE / PORTFOLIO REVIEW READY`.
+2. Completar el cierre documental + commit/push humano de `BRAND-CAND-005` antes de abrir el siguiente candidato.
+3. Ejecutar `BRAND-CAND-006 — residuos de mascotas` con Method v2 Agile.
+4. Cuando `BRAND-CAND-006` complete F13 y su cierre documental, realizar `Portfolio Review` transversal.
+5. Preparar la revisión externa —incluido despachante y validaciones regulatorias/técnicas cuando correspondan— sobre los finalistas.
+6. Seleccionar qué Product Base justifica profundización procurement-grade y recién entonces decidir la apertura de F14.
+7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
+8. Mantener Brand System v0.3 en observación empírica y aplicar el screening a nuevas oportunidades reales cuando aparezcan.
+9. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
 
 ## Changelog
 
 | Version | Date | Change |
 |---|---|---|
+| 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 1.13.0 | 2026-09-25 | BRAND-CAND-003 completa Fases 0–13; aut58 PASS; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |
 | 1.12.0 | 2026-09-23 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 10; aut41 PASS y siguiente gate Landed Cost. |
 | 1.11.0 | 2026-09-21 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 9; aut40 PASS y siguiente gate Minimum Landed Cost Dataset. |
