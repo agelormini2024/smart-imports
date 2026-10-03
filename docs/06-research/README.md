@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.12.0
+version: 0.13.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-25
+updated: 2026-10-03
 tags:
   - smart-imports
   - research
@@ -16,6 +16,24 @@ tags:
 ---
 
 # 06 — Research
+
+<!-- BRAND-CAND-006-RESEARCH-STATUS:START -->
+## BRAND-CAND-006 — estado de investigación
+
+```text
+F0 CLOSED → aut91 PASS
+F1 CLOSED → aut92 PASS
+F2 CLOSED → aut93 PASS
+F3 CLOSED → aut94 corrected PASS
+F4 CLOSED → aut95 PASS
+F5 ANALYSIS COMPLETE → materialization pending
+F6–F13 NOT CLOSED in current retrospective run
+```
+
+Documentación: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
+
+La investigación es retrospectiva y reutiliza evidencia histórica del Nicho 3. No debe confundirse el recorrido histórico de `BASE-PET-003` con el estado formal de la reconciliación actual de `BRAND-CAND-006`.
+<!-- BRAND-CAND-006-RESEARCH-STATUS:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
 ## Regla de cierre documental de Brand Candidate
@@ -49,7 +67,8 @@ BRAND-CAND-002 → PASS TO METHOD V2 → DEFERRED / PAUSED
 BRAND-CAND-003 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-004 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-005 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-NEXT → BRAND-CAND-006
+BRAND-CAND-006 → F0–F4 CLOSED → F5 ANALYSIS COMPLETE / MATERIALIZATION PENDING
+NEXT GATE → materializar aut96 + Matrix Validator PASS
 ```
 
 `BRAND-CAND-003` queda documentado en `SI-RESEARCH-014` a `SI-RESEARCH-027`.
@@ -166,6 +185,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.13.0 | 2026-10-03 | Se incorpora BRAND-CAND-006 SI-RESEARCH-056 a SI-RESEARCH-061; F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. |
 | 0.12.0 | 2026-09-30 | Se incorpora BRAND-CAND-005 completo mediante SI-RESEARCH-042 a SI-RESEARCH-055; aut90 PASS; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.11.0 | 2026-09-25 | Se incorpora BRAND-CAND-004 completo mediante SI-RESEARCH-028 a SI-RESEARCH-041 y se formaliza el cierre documental obligatorio antes de abrir el siguiente candidato. |
 | 0.10.0 | 2026-09-25 | Se incorpora el índice de Marca Hogar y el cierre completo de BRAND-CAND-003 mediante SI-RESEARCH-014 a SI-RESEARCH-027. |

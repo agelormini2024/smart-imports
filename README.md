@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.15.0
+version: 1.16.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-25
+updated: 2026-10-03
 tags:
   - smart-imports
   - knowledge-base
@@ -16,6 +16,34 @@ tags:
   - brand-system
 ---
 # Smart Imports
+
+<!-- BRAND-CAND-006-CHECKPOINT:START -->
+## Method v2 BRAND-CAND-006 — estado vigente
+
+```text
+Mode: RETROSPECTIVE + REUSE + RECONCILIATION
+F0: CLOSED — aut91 PASS
+F1: CLOSED — aut92 PASS
+F2: CLOSED — aut93 PASS
+F3: CLOSED — aut94 corrected PASS
+F4: CLOSED — aut95 PASS
+F5: ANALYSIS COMPLETE / MATERIALIZATION PENDING / NOT CLOSED
+Latest validated matrix: matrix-aut95-brand-cand-006-phase4.xlsx
+Latest validated SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+F14: NOT OPENED
+```
+
+`BASE-PET-003` conserva evidencia comercial histórica y ahora está siendo reconciliado dentro del Brand System de Marca Hogar. La ejecución actual no reinicia la investigación: formaliza Brand Fit, reutiliza evidencia trazable y exige nuevamente Matrix Validator en cada gate.
+
+Research vigente: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
+
+Bloqueo actual: la materialización de `aut96` no pudo completarse por una falla intermitente de transporte RPC de la herramienta de edición XLSX. La falla no habilita el cierre de F5 ni modifica la metodología.
+
+### Frentes paralelos habilitados
+
+- `Decision Reporter`: contrato funcional prototipado manualmente; implementación diferida hasta después de la primera compra.
+- `Marca Fitness`: frente exploratorio abierto con seis hipótesis iniciales; todavía sin Brand Candidates aprobados ni Method v2 abierto.
+<!-- BRAND-CAND-006-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-005-CHECKPOINT:START -->
 ## Method v2 BRAND-CAND-005 — estado vigente
@@ -39,7 +67,7 @@ Las condiciones dominantes de `BASE-HOGAR-028` son demanda transaccional local d
 
 Research vigente: `docs/06-research/brand-hogar/si-research-055-brand-cand-005-method-v2-agile-phase-13-final-shortlist.md`.
 
-Próxima ejecución: `BRAND-CAND-006 — residuos de mascotas`, sólo después de completar este cierre documental y el commit/push humano.
+Ejecución posterior: `BRAND-CAND-006 — residuos de mascotas` ya fue iniciada. Estado actual: F0–F4 `CLOSED`; F5 con análisis completo y materialización pendiente.
 <!-- BRAND-CAND-005-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-004-CHECKPOINT:START -->
@@ -209,14 +237,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut90-brand-cand-005-phase13.xlsx`
-Archivo: matrix-aut90-brand-cand-005-phase13.xlsx
+Matriz comercial vigente: `matrix-aut95-brand-cand-006-phase4.xlsx`
+Archivo: matrix-aut95-brand-cand-006-phase4.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut90: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 2bb0e30d75f98d9d90b60942b0b84ea409544e0966b5d5a4fd88e51fc65fbe9e
+Resultado aut95: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` se conserva como snapshot final de BRAND-CAND-003. `aut72` se conserva como snapshot final de BRAND-CAND-004. `aut90` es el snapshot comercial operativo vigente después del cierre de BRAND-CAND-005.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` se conserva como snapshot final de BRAND-CAND-003. `aut72` se conserva como snapshot final de BRAND-CAND-004. `aut90` se conserva como snapshot final de BRAND-CAND-005. `aut95` es el snapshot comercial validado más reciente de BRAND-CAND-006; F0–F4 están cerradas y F5 todavía no está cerrada.
 
 Avances recientes:
 
@@ -276,20 +304,21 @@ docs/
 
 ## Próximos pasos
 
-1. Mantener `BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` en `FREEZE / PORTFOLIO REVIEW READY`.
-2. Completar el cierre documental + commit/push humano de `BRAND-CAND-005` antes de abrir el siguiente candidato.
-3. Ejecutar `BRAND-CAND-006 — residuos de mascotas` con Method v2 Agile.
+1. Mantener `BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` en `FREEZE / PORTFOLIO REVIEW READY`; mantener `BRAND-CAND-002` en `DEFERRED / PAUSED`.
+2. Continuar `BRAND-CAND-006` desde F5: materializar `aut96`, validar con Matrix Validator y no abrir formalmente F6 hasta obtener `PASS`.
+3. En paralelo, preparar material de decisión para la reunión con el socio y definir qué finalistas deben pasar a revisión externa / despachante.
 4. Cuando `BRAND-CAND-006` complete F13 y su cierre documental, realizar `Portfolio Review` transversal.
-5. Preparar la revisión externa —incluido despachante y validaciones regulatorias/técnicas cuando correspondan— sobre los finalistas.
+5. Preparar la revisión externa —incluido despachante y validaciones regulatorias/técnicas cuando correspondan— sobre los finalistas seleccionados.
 6. Seleccionar qué Product Base justifica profundización procurement-grade y recién entonces decidir la apertura de F14.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
-8. Mantener Brand System v0.3 en observación empírica y aplicar el screening a nuevas oportunidades reales cuando aparezcan.
-9. Mantener diferidos naming comercial, identidad visual y expansión fuera del hogar hasta acumular experiencia real.
+8. Mantener `Marca Fitness` en `EXPLORATION`: territorio provisional y `FIT-CAND-001..006` como hipótesis pre-screening, sin abrir todavía Method v2.
+9. Diferir implementación de Decision Reporter / nuevas automatizaciones hasta después de la primera compra, priorizando el período de tránsito de mercadería para desarrollo de software.
 
 ## Changelog
 
 | Version | Date | Change |
 |---|---|---|
+| 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda formalmente cerrado hasta F4 sobre aut95 PASS; F5 tiene análisis completo pero materialización pendiente. Se registra Decision Reporter prototipado y se abre Marca Fitness como exploración pre-screening. |
 | 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 1.13.0 | 2026-09-25 | BRAND-CAND-003 completa Fases 0–13; aut58 PASS; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |
 | 1.12.0 | 2026-09-23 | Golden Run de BRAND-CAND-001 cerrada hasta Fase 10; aut41 PASS y siguiente gate Landed Cost. |

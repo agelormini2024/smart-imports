@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.15.0
+version: 1.16.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-09-25
+updated: 2026-10-03
 tags:
   - status
   - handoff
@@ -37,6 +37,76 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- BRAND-CAND-006-HANDOFF:START -->
+## Checkpoint operativo — BRAND-CAND-006 / 2026-10-03
+
+```text
+Execution: RETROSPECTIVE + REUSE + RECONCILIATION
+F0 CLOSED — aut91 PASS
+F1 CLOSED — aut92 PASS
+F2 CLOSED — aut93 PASS
+F3 CLOSED — aut94 corrected PASS
+F4 CLOSED — aut95 PASS
+F5 ANALYSIS COMPLETE / MATRIX MATERIALIZATION PENDING / NOT CLOSED
+Latest validated matrix: matrix-aut95-brand-cand-006-phase4.xlsx
+Latest validated SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+F14: NOT OPENED
+```
+
+### F5 conceptual target
+
+```text
+EVAL-0028
+Brand Potential = 4/5
+Confidence = Media
+Brand Fit = CONFIRMED
+Brand Relevance = HIGH — STRONG ADJACENCY
+Brand Credibility = CONDITIONED
+Territory Risk = MEDIUM
+```
+
+No existe `aut96` válida: la herramienta de edición XLSX falló de forma intermitente durante export/import. No usar ese problema de tooling como justificación para saltar el gate.
+
+### Prioridad comercial
+
+El objetivo de corto plazo es producir información suficiente para:
+
+```text
+reunión con socio
+→ shortlist para revisión externa
+→ despachante / clasificación / intervenciones / certificaciones
+→ recalcular sólo donde cambie algo material
+→ primera compra
+```
+
+No iniciar ahora un proyecto de software que desvíe esa secuencia.
+
+### Decision Reporter
+
+Contrato funcional prototipado manualmente sobre varios finalistas.
+
+Implementación del Engine: diferida para el período posterior a la primera compra, idealmente durante el lead time logístico.
+
+Fuente: `docs/05-ai-agents/si-agent-002-decision-reporter.md`.
+
+### Marca Fitness
+
+Se abre un frente exploratorio separado para reutilizar el Brand System.
+
+```text
+FIT-CAND-001 — fuerza compacta para el hogar
+FIT-CAND-002 — entrenamiento funcional portátil
+FIT-CAND-003 — recuperación y movilidad
+FIT-CAND-004 — calistenia y peso corporal
+FIT-CAND-005 — movilidad / bajo impacto
+FIT-CAND-006 — entrenamiento medible / fitness inteligente
+```
+
+Son hipótesis pre-screening, no decisiones de inversión ni candidatos aprobados.
+
+Fuente: `docs/07-brand/brands/brand-fitness/`.
+<!-- BRAND-CAND-006-HANDOFF:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
 ## Regla obligatoria — cierre documental antes del siguiente Brand Candidate
@@ -541,7 +611,7 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
 4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
 5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002` y `SI-DECISION-016`.
-6. Adjuntar `aut90` cuando la tarea requiera el snapshot comercial vigente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
+6. Adjuntar `aut95` cuando la tarea requiera el snapshot comercial validado más reciente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
 7. No volver a adjuntar PDFs históricos ya consolidados.
 8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
 9. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
@@ -555,20 +625,23 @@ Marca Hogar
 → BRAND-CAND-003: PORTFOLIO REVIEW READY / FREEZE
 → BRAND-CAND-004: PORTFOLIO REVIEW READY / FREEZE
 → BRAND-CAND-005: PORTFOLIO REVIEW READY / FREEZE
+→ BRAND-CAND-006: F0–F4 CLOSED / F5 MATERIALIZATION PENDING
 
-DOCUMENTARY CLOSE BRAND-CAND-005
-→ verificar documentación / diff
-→ commit + push humano
+CURRENT GATE
+→ materializar aut96
+→ Matrix Validator PASS
+→ cerrar F5
+→ continuar secuencialmente hasta F13
 
-NEXT
-→ BRAND-CAND-006 — residuos de mascotas
+THEN
+→ cierre documental BRAND-CAND-006
 → Portfolio Review global
-→ revisión externa
+→ revisión externa / despachante
 → selección para profundización
 → decisión sobre apertura de F14
 ```
 
-No abrir `BRAND-CAND-006` hasta que el checkpoint de `BRAND-CAND-005` esté publicado, verificado y commiteado/pusheado. No reabrir candidatos en `FREEZE` salvo contradicción material o decisión surgida de Portfolio Review / gate externo.
+`BRAND-CAND-006` ya está abierto. No avanzar de F5 a F6 sin `aut96 PASS`. No reabrir candidatos en `FREEZE` salvo contradicción material o decisión surgida de Portfolio Review / gate externo.
 
 ## 15. Documentos relacionados
 
@@ -671,6 +744,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo pero no cerrado. Se registra Decision Reporter prototipado, prioridad primera compra/revisión externa y apertura exploratoria de Marca Fitness. |
 | 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 1.13.0 | 2026-09-25 | Se registra como pendiente futuro el documento didáctico para reunión con socio sobre Precio local → Headroom → Costo de origen → Landed Cost → Margen → ROI, usando ejemplos reales de Smart Imports y activado sólo después de completar los candidatos relevantes hasta F13. |
 | 1.12.0 | 2026-09-25 | BRAND-CAND-003 completa F0–F13; aut58 PASS; BASE-HOGAR-010 FINALIST — CONDITIONED; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-004. |

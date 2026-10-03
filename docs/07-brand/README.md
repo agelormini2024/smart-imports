@@ -2,12 +2,12 @@
 id: docs-07-brand-readme
 title: 07 — Brand
 description: Índice del Brand System de Smart Imports y sus instancias de marca.
-version: 0.8.0
+version: 0.9.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-09-17
+updated: 2026-10-03
 tags:
   - smart-imports
   - brand
@@ -20,6 +20,27 @@ related:
 ---
 
 # 07 — Brand
+
+<!-- BRAND-FITNESS-EXPLORATION:START -->
+## Marca Fitness — exploración
+
+Se abre un segundo territorio de prueba para comprobar la reutilización real del Brand System.
+
+```text
+Estado: EXPLORATION
+Territory: provisional
+Candidate hypotheses: FIT-CAND-001..006
+Brand Candidate Screening: NOT STARTED
+Method v2: NOT OPENED
+```
+
+Documentos:
+
+- [`Marca Fitness — Exploración`](./brands/brand-fitness/README.md)
+- [`Candidate Hypotheses v0.1`](./brands/brand-fitness/fitness-candidate-hypotheses-v0.1.md)
+
+Las hipótesis Fitness no compiten con la prioridad comercial inmediata de cerrar una primera importación de los finalistas de Marca Hogar.
+<!-- BRAND-FITNESS-EXPLORATION:END -->
 
 > La marca define dónde queremos jugar; Method v2 determina dónde existe un negocio defendible.
 
@@ -79,3 +100,4 @@ Brand System reusable
 | 0.7.0 | 2026-09-17 | BRAND-CAND-006 confirma Brand Fit como strong adjacency; finaliza el bloque inicial de screenings. |
 
 | 0.8.0 | 2026-09-17 | Se consolida Brand System / Brand Candidate Screening v0.3 con Territory Relationship y soporte prospectivo/retrospectivo. |
+| 0.9.0 | 2026-10-03 | Se abre Marca Fitness como exploración reusable del Brand System; FIT-CAND-001..006 quedan como hipótesis pre-screening. BRAND-CAND-006 continúa su reconciliación retrospectiva en Marca Hogar. |

@@ -2,15 +2,47 @@
 id: research-brand-hogar-readme
 title: Marca Hogar — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Hogar.
-version: 0.7.0
+version: 0.8.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-18
-updated: 2026-09-25
+updated: 2026-10-03
 ---
 
 # Marca Hogar — Research
+
+<!-- BRAND-CAND-006-RESEARCH-INDEX:START -->
+## BRAND-CAND-006 — Retrospective Run — estado vigente
+
+```text
+F0 CLOSED — aut91 PASS
+F1 CLOSED — aut92 PASS
+F2 CLOSED — aut93 PASS
+F3 CLOSED — aut94 corrected PASS
+F4 CLOSED — aut95 PASS
+F5 ANALYSIS COMPLETE / MATERIALIZATION PENDING / NOT CLOSED
+F14 NOT OPENED
+```
+
+| Documento | Fase | Checkpoint |
+|---|---|---|
+| [`SI-RESEARCH-056`](si-research-056-brand-cand-006-method-v2-agile-phase-0-research-brief.md) | F0 — Research Brief | `aut91 PASS` |
+| [`SI-RESEARCH-057`](si-research-057-brand-cand-006-method-v2-agile-phase-1-solution-map.md) | F1 — Market / Solution Map | `aut92 PASS` |
+| [`SI-RESEARCH-058`](si-research-058-brand-cand-006-method-v2-agile-phase-2-maturity.md) | F2 — Maturity | `aut93 PASS` |
+| [`SI-RESEARCH-059`](si-research-059-brand-cand-006-method-v2-agile-phase-3-demand.md) | F3 — Demand | `aut94 corrected PASS` |
+| [`SI-RESEARCH-060`](si-research-060-brand-cand-006-method-v2-agile-phase-4-competition.md) | F4 — Competition | `aut95 PASS` |
+| [`SI-RESEARCH-061`](si-research-061-brand-cand-006-method-v2-agile-phase-5-brand-potential.md) | F5 — Brand Potential | `ANALYSIS COMPLETE / MATRIX PENDING` |
+
+Último snapshot validado:
+
+```text
+matrix-aut95-brand-cand-006-phase4.xlsx
+SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+```
+
+No existe `aut96` válida.
+<!-- BRAND-CAND-006-RESEARCH-INDEX:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
 ## Regla operativa — no abrir el siguiente candidato sin cierre documental
@@ -65,7 +97,7 @@ F14: NOT OPENED
 | [`SI-RESEARCH-054`](si-research-054-brand-cand-005-method-v2-agile-phase-12-margin-roi.md) | F12 — Margin + ROI | `aut89 PASS` |
 | [`SI-RESEARCH-055`](si-research-055-brand-cand-005-method-v2-agile-phase-13-final-shortlist.md) | F13 — Shortlist final | `aut90 PASS` |
 
-Resultado final: `BRAND-CAND-005` queda `FREEZE / PORTFOLIO REVIEW READY`. `BASE-HOGAR-028` es el único `FINALIST — CONDITIONED`, elegible para Portfolio Review pero `NOT FIRST-STAGE FIT`. `BASE-HOGAR-024` permanece `STOP — REOPENABLE`; `BASE-HOGAR-025` permanece `STOP — REOPENABLE / LOGISTICS GATE`. La siguiente ejecución es `BRAND-CAND-006`, después de completar documentación, verificación, commit y push humano.
+Resultado final: `BRAND-CAND-005` queda `FREEZE / PORTFOLIO REVIEW READY`. `BASE-HOGAR-028` es el único `FINALIST — CONDITIONED`, elegible para Portfolio Review pero `NOT FIRST-STAGE FIT`. `BASE-HOGAR-024` permanece `STOP — REOPENABLE`; `BASE-HOGAR-025` permanece `STOP — REOPENABLE / LOGISTICS GATE`. La ejecución posterior `BRAND-CAND-006` ya está iniciada y actualmente se encuentra F0–F4 `CLOSED`, con F5 pendiente de materialización.
 <!-- BRAND-CAND-005-RESEARCH-INDEX:END -->
 
 <!-- BRAND-CAND-004-RESEARCH-INDEX:START -->
@@ -198,6 +230,7 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 
 | Version | Date | Change |
 |---|---|---|
+| 0.8.0 | 2026-10-03 | Se incorpora BRAND-CAND-006 SI-RESEARCH-056 a SI-RESEARCH-061; F0–F4 CLOSED sobre aut91–aut95 PASS; F5 permanece pendiente de materialización. |
 | 0.7.0 | 2026-09-30 | Se incorpora la ejecución completa de BRAND-CAND-005, SI-RESEARCH-042 a SI-RESEARCH-055; aut90 PASS; BASE-HOGAR-028 FINALIST — CONDITIONED; estado PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.5.0 | 2026-09-25 | Se incorpora la ejecución completa de BRAND-CAND-003, SI-RESEARCH-014 a SI-RESEARCH-027; aut58 PASS y estado PORTFOLIO REVIEW READY / FREEZE. |
 | 0.4.0 | 2026-09-23 | Se documenta Fase 10 de BRAND-CAND-001; aut41 PASS y siguiente gate Fase 11. |

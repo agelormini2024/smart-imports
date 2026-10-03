@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.13.0
+version: 0.14.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-25
+updated: 2026-10-03
 tags:
   - brand
   - home
@@ -21,6 +21,33 @@ related:
 ---
 
 # Marca Hogar
+
+<!-- BRAND-CAND-006-STATUS:START -->
+## Estado vigente de BRAND-CAND-006
+
+`BRAND-CAND-006` es una ejecución retrospectiva sobre `BASE-PET-003`.
+
+```text
+F0 CLOSED — aut91 PASS
+F1 CLOSED — aut92 PASS
+F2 CLOSED — aut93 PASS
+F3 CLOSED — aut94 corrected PASS
+F4 CLOSED — aut95 PASS
+F5 ANALYSIS COMPLETE / MATERIALIZATION PENDING / NOT CLOSED
+F14 NOT OPENED
+```
+
+Último snapshot validado:
+
+```text
+matrix-aut95-brand-cand-006-phase4.xlsx
+SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+```
+
+Brand Fit continúa `CONFIRMED` como `HIGH — STRONG ADJACENCY`.
+
+La fase actual no queda cerrada hasta materializar `aut96` y obtener `PASS`.
+<!-- BRAND-CAND-006-STATUS:END -->
 
 <!-- BRAND-CAND-005-STATUS:START -->
 ## Estado vigente de BRAND-CAND-005
@@ -196,9 +223,9 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — SORBENT / CLAIM / TEST METHOD / ELECTRICAL / EXTERNAL REVIEW` |
 | [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — ACCURACY / LOCAL ELECTRICAL FIT / PACKING / CERTIFICATION / EXTERNAL REVIEW` |
 | [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — DEMAND / TECH-SERVICE / ELECTRICAL / FILTERS-SPARES / CERTIFICATION / CLAIM / EXTERNAL REVIEW` |
-| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `BRAND FIT CONFIRMED` | HIGH | PENDING BY PRODUCT BASE / SAFETY / ODOR-HYGIENE CLAIM / USER EXPERIENCE |
+| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `METHOD V2 RETROSPECTIVE — F0–F4 CLOSED / F5 IN PROGRESS` | HIGH | `CONDITIONED — DEMAND / SAFETY / QA / LOGISTICS / POST-SALE / EXTERNAL REVIEW` |
 
-`BRAND-CAND-006` ya cuenta con investigación previa en Method v2. Su screening será retrospectivo y no reinicia su evaluación comercial.
+`BRAND-CAND-006` ya cuenta con investigación previa en Method v2. Su screening retrospectivo confirmó Brand Fit y la reconciliación actual está en curso; no reinicia la investigación comercial ya realizada.
 
 ## 10. Próximo candidato
 
@@ -212,17 +239,17 @@ CLOSED / FREEZE
 DEFERRED / PAUSED
 → BRAND-CAND-002
 
-NEXT METHOD V2 EXECUTION
-→ BRAND-CAND-006 — residuos de mascotas
+CURRENT METHOD V2 EXECUTION
+→ BRAND-CAND-006 — F0–F4 CLOSED / F5 MATERIALIZATION PENDING
 
-THEN
+AFTER F13 + DOCUMENTARY CLOSE
 → Portfolio Review global
 → revisión externa
 → selección para profundización
 → decisión sobre apertura de F14
 ```
 
-Regla: no abrir `BRAND-CAND-006` hasta completar documentación, verificación, commit y push del candidato 005.
+Regla vigente: `BRAND-CAND-006` ya está abierto. No cerrar F5 ni abrir formalmente F6 hasta materializar `aut96` y obtener `PASS`; no abrir Portfolio Review global hasta completar F13 y el cierre documental del candidato.
 
 `BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
 
@@ -238,6 +265,7 @@ Regla: no abrir `BRAND-CAND-006` hasta completar documentación, verificación, 
 
 | Version | Date | Change |
 |---|---|---|
+| 0.14.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. Se abre Marca Fitness como exploración separada del territorio Hogar. |
 | 0.13.0 | 2026-09-30 | BRAND-CAND-005 completa Fase 13; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.11.0 | 2026-09-25 | BRAND-CAND-003 completa Fase 13; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |
 | 0.10.0 | 2026-09-23 | BRAND-CAND-001 completa Fase 10; aut41 PASS y siguiente gate Fase 11. |

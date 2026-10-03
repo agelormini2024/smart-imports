@@ -2,11 +2,11 @@
 id: brand-cand-006
 title: PET-003 Retrospective Brand Screening
 description: Screening retrospectivo de BASE-PET-003 para validar su pertenencia a Marca Hogar.
-version: 0.2.0
-status: brand-fit-confirmed
+version: 0.3.0
+status: method-v2-in-progress
 brand: brand-hogar
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-10-03
 tags:
   - brand-candidate
   - retrospective
@@ -22,6 +22,41 @@ related:
 ---
 
 # BRAND-CAND-006 — PET-003 (screening retrospectivo)
+
+<!-- BRAND-CAND-006-METHOD-V2-RESULT:START -->
+## Method v2 — reconciliación retrospectiva vigente
+
+El screening de marca continúa válido:
+
+```text
+Brand Fit: CONFIRMED
+Brand Relevance: HIGH — STRONG ADJACENCY
+```
+
+La reconciliación posterior de Method v2 se encuentra en:
+
+```text
+F0 CLOSED — aut91 PASS
+F1 CLOSED — aut92 PASS
+F2 CLOSED — aut93 PASS
+F3 CLOSED — aut94 corrected PASS
+F4 CLOSED — aut95 PASS
+F5 ANALYSIS COMPLETE / MATERIALIZATION PENDING / NOT CLOSED
+F6–F13 NOT CLOSED in current run
+F14 NOT OPENED
+```
+
+Última matriz validada:
+
+```text
+matrix-aut95-brand-cand-006-phase4.xlsx
+SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+```
+
+Research vigente: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
+
+El recorrido histórico de `BASE-PET-003` no se borra ni se presenta como equivalente al cierre formal de esta reconciliación. Cada gate actual debe volver a cumplir materialización + Validator.
+<!-- BRAND-CAND-006-METHOD-V2-RESULT:END -->
 
 ## 1. Identificación
 
@@ -334,3 +369,10 @@ Category membership ≠ Brand Fit
 - [Brand Candidate Screening](../../../si-brand-002-brand-candidate-screening-method.md)
 - [Method v2 — Niche 3 Phases 7–11](../../../../06-research/niche-003-pet-care-wellness-technology/si-research-006-niche-3-phases-7-to-11-method-v2-validation.md)
 - [Decision — aut36 / Method v2 through Landed Cost Screen](../../../../09-decision-log/si-decision-015-adopt-aut36-and-validate-method-v2-through-landed-cost-screen.md)
+
+
+## Changelog
+
+| Version | Fecha | Cambio |
+|---|---|---|
+| 0.3.0 | 2026-10-03 | Se documenta reconciliación retrospectiva Method v2: F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente; F14 NOT OPENED. |
