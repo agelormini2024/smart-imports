@@ -2,7 +2,7 @@
 id: docs-07-brand-readme
 title: 07 — Brand
 description: Índice del Brand System de Smart Imports y sus instancias de marca.
-version: 0.10.0
+version: 0.11.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -44,24 +44,30 @@ Documento: [`SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`](./si-b
 <!-- OPPORTUNITY-INTAKE:END -->
 
 <!-- BRAND-FITNESS-EXPLORATION:START -->
-## Marca Fitness — exploración
+## Marca Fitness — pre-screening v0.2
 
-Se abre un segundo territorio de prueba para comprobar la reutilización real del Brand System.
+Se congela una baseline conceptual para iniciar el screening reusable sin abrir todavía Method v2.
 
 ```text
-Estado: EXPLORATION
-Territory: provisional
-Candidate hypotheses: FIT-CAND-001..006
-Brand Candidate Screening: NOT STARTED
+Territory: FROZEN FOR SCREENING
+Missions: FROZEN FOR SCREENING
+Active candidates: FIT-CAND-001 / 002 / 005 / 007
+FIT-CAND-003: MERGED INTO 005
+FIT-CAND-004: MERGED INTO 001
+FIT-CAND-006: RECLASSIFIED AS TRANSVERSAL CAPABILITY
+Brand Candidate Screening: READY / NOT STARTED
 Method v2: NOT OPENED
 ```
 
 Documentos:
 
-- [`Marca Fitness — Exploración`](./brands/brand-fitness/README.md)
-- [`Candidate Hypotheses v0.1`](./brands/brand-fitness/fitness-candidate-hypotheses-v0.1.md)
+- [`Marca Fitness`](./brands/brand-fitness/README.md)
+- [`Candidate Hypotheses v0.1`](./brands/brand-fitness/fitness-candidate-hypotheses-v0.1.md) — histórico
+- [`Pre-screening Architecture v0.2`](./brands/brand-fitness/fitness-pre-screening-architecture-v0.2.md) — baseline activa
 
-Las hipótesis Fitness no compiten con la prioridad comercial inmediata de cerrar una primera importación de los finalistas de Marca Hogar.
+El contexto `+50` no define el territorio. Se conserva como posible segmento dentro de un problema transversal más amplio de sedentarismo / baja actividad cotidiana.
+
+La exploración de Marca Fitness no modifica la prioridad comercial inmediata de Smart Imports: avanzar hacia la primera importación con los finalistas de Marca Hogar una vez resueltas las revisiones externas pendientes con socio y despachante.
 <!-- BRAND-FITNESS-EXPLORATION:END -->
 
 > La marca define dónde queremos jugar; Method v2 determina dónde existe un negocio defendible.
@@ -113,6 +119,7 @@ Brand System reusable
 
 | Version | Date | Change |
 |---|---|---|
+| 0.11.0 | 2026-10-05 | Marca Fitness congela arquitectura pre-screening v0.2 con territorio/misiones revisados, cuatro candidatos activos y decisiones MERGED/RECLASSIFIED trazables. |
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |
 | 0.2.0 | 2026-09-16 | Se incorpora Brand System, Marca Hogar y Brand Candidate Screening. |
 | 0.3.0 | 2026-09-17 | Se separa metodología reusable de instancias y expedientes de candidatos. |

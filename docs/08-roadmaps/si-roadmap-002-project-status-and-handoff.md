@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.17.0
+version: 1.18.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -37,6 +37,48 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- FITNESS-PRESCREENING-V02:START -->
+## Checkpoint operativo — Marca Fitness pre-screening v0.2 / 2026-10-05
+
+```text
+Territory baseline: FROZEN FOR SCREENING
+Missions baseline: FROZEN FOR SCREENING
+
+ACTIVE PRE-SCREENING
+→ FIT-CAND-001 — Fuerza accesible y compacta
+→ FIT-CAND-002 — Entrenamiento flexible y portátil
+→ FIT-CAND-005 — Movilidad, estabilidad y capacidad física
+→ FIT-CAND-007 — Movimiento integrado a la jornada sedentaria
+
+HISTORICAL / RECLASSIFIED
+→ FIT-CAND-003 — MERGED INTO FIT-CAND-005
+→ FIT-CAND-004 — MERGED INTO FIT-CAND-001
+→ FIT-CAND-006 — TRANSVERSAL CAPABILITY: medición + feedback + constancia
+
+Brand Candidate Screening: READY / NOT STARTED
+Method v2: NOT OPENED
+```
+
+Territorio v0.2:
+
+> Ayudar a personas a conservar, recuperar y desarrollar capacidad física en una vida cotidiana marcada por sedentarismo, poco tiempo y espacios limitados, mediante soluciones simples, compactas, comprensibles y sostenibles en el tiempo.
+
+`+50` es contexto/segmento potencial; no define por sí mismo el territorio.
+
+No existen todavía Product Bases Fitness ni evaluación de demanda, competencia, origen, costos, margen o ROI.
+
+Siguiente acción formal:
+
+```text
+FIT-CAND-001
+→ SI-BRAND-002 Brand Candidate Screening
+→ documentar decisión
+→ sólo con PASS TO METHOD V2 habilitar investigación comercial posterior
+```
+
+Fuente: `docs/07-brand/brands/brand-fitness/fitness-pre-screening-architecture-v0.2.md`.
+<!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
 ## Checkpoint operativo — pausa Marca Hogar / 2026-10-05
@@ -777,6 +819,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.18.0 | 2026-10-05 | Marca Fitness congela baseline pre-screening v0.2 con territorio/misiones revisados, candidatos activos 001/002/005/007, 003/004 absorbidos y 006 reclasificado; siguiente gate FIT-CAND-001. |
 | 1.17.0 | 2026-10-05 | Marca Hogar queda en pausa operativa hasta reuniones con socio y despachante; se documentan entregables de revisión externa y SI-BRAND-003 para ingreso reusable de oportunidades descendentes/ascendentes. |
 | 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo pero no cerrado. Se registra Decision Reporter prototipado, prioridad primera compra/revisión externa y apertura exploratoria de Marca Fitness. |
 | 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |

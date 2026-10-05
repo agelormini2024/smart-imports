@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.17.0
+version: 1.18.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -16,6 +16,28 @@ tags:
   - brand-system
 ---
 # Smart Imports
+
+<!-- FITNESS-PRESCREENING-V02:START -->
+## Marca Fitness — baseline pre-screening v0.2
+
+```text
+Territory: FROZEN FOR SCREENING
+Active candidates: FIT-CAND-001 / 002 / 005 / 007
+FIT-CAND-003 → MERGED INTO FIT-CAND-005
+FIT-CAND-004 → MERGED INTO FIT-CAND-001
+FIT-CAND-006 → RECLASSIFIED AS TRANSVERSAL CAPABILITY
+Brand Candidate Screening: READY / NOT STARTED
+Method v2: NOT OPENED
+```
+
+El territorio se orienta a conservar, recuperar y desarrollar capacidad física en contextos cotidianos con sedentarismo, poco tiempo o espacios limitados.
+
+`+50` queda como segmento/contexto potencialmente relevante, no como definición de la marca.
+
+Baseline: [`Marca Fitness — Arquitectura pre-screening v0.2`](docs/07-brand/brands/brand-fitness/fitness-pre-screening-architecture-v0.2.md).
+
+Siguiente gate: abrir `FIT-CAND-001` con `SI-BRAND-002`.
+<!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-EXTERNAL-REVIEW-PAUSE:START -->
 ## Marca Hogar — pausa operativa para revisión externa
@@ -339,6 +361,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.18.0 | 2026-10-05 | Se congela Marca Fitness v0.2 para pre-screening: territorio y misiones revisados, cuatro candidatos activos, tres hipótesis absorbidas/reclasificadas y siguiente gate FIT-CAND-001. |
 | 1.17.0 | 2026-10-05 | Marca Hogar entra en pausa operativa hasta reuniones con socio y despachante; se registran los entregables de revisión externa y se incorpora SI-BRAND-003 para ingreso de oportunidades descendentes/ascendentes antes del screening. |
 | 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda formalmente cerrado hasta F4 sobre aut95 PASS; F5 tiene análisis completo pero materialización pendiente. Se registra Decision Reporter prototipado y se abre Marca Fitness como exploración pre-screening. |
 | 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
