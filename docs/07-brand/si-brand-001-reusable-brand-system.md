@@ -2,12 +2,12 @@
 id: si-brand-001
 title: Reusable Brand System
 description: Define el Brand System reutilizable de Smart Imports para construir marcas y portfolios coherentes antes de aplicar Method v2.
-version: 0.3.0
+version: 0.4.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-17
+updated: 2026-10-05
 tags:
   - brand
   - brand-system
@@ -295,16 +295,38 @@ brands/<brand-id>/candidates/
 → expediente individual y handoff de cada candidato
 ```
 
-## 7. IDs
+## 7. IDs y lifecycle de hipótesis
 
-Los IDs `BRAND-CAND-XXX` son globales dentro de Smart Imports. No se reinicia la numeración por marca.
+Los IDs `BRAND-CAND-XXX` son **formales y globales** dentro de Smart Imports. No se reinicia la numeración por marca.
+
+Una instancia de marca puede usar IDs locales durante exploración o pre-screening sin consumir todavía un ID formal.
 
 ```text
-Candidate ID: BRAND-CAND-017
-Brand: brand-fitness
+FIT-CAND-001
+→ Hypothesis ID local de brand-fitness
+→ pre-screening
 ```
 
-Esto evita colisiones y simplifica trazabilidad, BD y RAG.
+Cuando una hipótesis abre y se persiste como `Brand Candidate Screening` formal, recibe el siguiente `BRAND-CAND-XXX` global antes de registrar la decisión:
+
+```text
+FIT-CAND-001
+→ apertura de screening formal
+→ BRAND-CAND-007
+→ Brand: brand-fitness
+```
+
+El ID formal se conserva cualquiera sea la decisión posterior (`PASS TO METHOD V2`, `HOLD — BRAND FIT UNCLEAR` u `OUTSIDE BRAND TERRITORY`).
+
+Una hipótesis absorbida o reclasificada **antes** de abrir screening formal conserva su ID local histórico y no necesita un `BRAND-CAND-XXX`.
+
+```text
+HYPOTHESIS ID ≠ FORMAL BRAND CANDIDATE ID
+BRAND-CAND-XXX → GLOBAL / NO REUSE
+LOCAL HYPOTHESIS ID → BRAND-SCOPED / TRACEABLE / NO REUSE WITHIN BRAND
+```
+
+Esto evita colisiones y preserva trazabilidad entre exploración, Brand Candidate Screening, BD y RAG.
 
 ## 8. Relación con Method v2
 
@@ -369,5 +391,5 @@ Estas entidades son necesidades futuras de modelado, no cambios autorizados sobr
 |---|---|---|
 | 0.1.0 | 2026-09-16 | Primera definición del Brand System reusable junto con Marca Hogar v0.1. |
 | 0.2.0 | 2026-09-17 | Se separa el Brand System reusable de sus instancias y se formaliza `brands/<brand-id>/`. |
-
 | 0.3.0 | 2026-09-17 | Se consolidan seis screenings: Category membership ≠ Brand Fit, Territory Relationship, protección contra category creep y disciplina reusable de Brand Credibility. |
+| 0.4.0 | 2026-10-05 | Se formaliza el lifecycle Hypothesis ID local → `BRAND-CAND-XXX` formal/global al abrir un screening formal; el ID se preserva cualquiera sea la decisión. |

@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.18.0
+version: 1.19.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -39,45 +39,30 @@ phase: research
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
 <!-- FITNESS-PRESCREENING-V02:START -->
-## Checkpoint operativo — Marca Fitness pre-screening v0.2 / 2026-10-05
+## Checkpoint operativo — Marca Fitness Brand Candidate Screening / 2026-10-05
 
 ```text
-Territory baseline: FROZEN FOR SCREENING
-Missions baseline: FROZEN FOR SCREENING
-
-ACTIVE PRE-SCREENING
-→ FIT-CAND-001 — Fuerza accesible y compacta
-→ FIT-CAND-002 — Entrenamiento flexible y portátil
-→ FIT-CAND-005 — Movilidad, estabilidad y capacidad física
-→ FIT-CAND-007 — Movimiento integrado a la jornada sedentaria
-
-HISTORICAL / RECLASSIFIED
-→ FIT-CAND-003 — MERGED INTO FIT-CAND-005
-→ FIT-CAND-004 — MERGED INTO FIT-CAND-001
-→ FIT-CAND-006 — TRANSVERSAL CAPABILITY: medición + feedback + constancia
-
-Brand Candidate Screening: READY / NOT STARTED
-Method v2: NOT OPENED
+SCREENING BLOCK: CLOSED
+FIT-CAND-001 → BRAND-CAND-007 → CORE / PASS TO METHOD V2
+FIT-CAND-002 → BRAND-CAND-008 → CORE / PASS TO METHOD V2
+FIT-CAND-005 → BRAND-CAND-009 → CORE / PASS TO METHOD V2
+FIT-CAND-007 → BRAND-CAND-010 → CORE / PASS TO METHOD V2
+FIT-CAND-003 → MERGED
+FIT-CAND-004 → MERGED
+FIT-CAND-006 → TRANSVERSAL CAPABILITY
+Method v2: ELIGIBLE / NOT OPENED
+Product Bases Fitness: NOT DEFINED
 ```
 
-Territorio v0.2:
+Se formaliza el lifecycle de IDs: `FIT-CAND-*` = hipótesis local pre-screening; `BRAND-CAND-*` = candidato formal global.
 
-> Ayudar a personas a conservar, recuperar y desarrollar capacidad física en una vida cotidiana marcada por sedentarismo, poco tiempo y espacios limitados, mediante soluciones simples, compactas, comprensibles y sostenibles en el tiempo.
+Los cuatro PASS no determinan prioridad ni obligan a investigar los cuatro en paralelo.
 
-`+50` es contexto/segmento potencial; no define por sí mismo el territorio.
+Siguiente decisión: definir orden de apertura de Method v2 para `BRAND-CAND-007..010`.
 
-No existen todavía Product Bases Fitness ni evaluación de demanda, competencia, origen, costos, margen o ROI.
+La prioridad comercial inmediata de primera importación de Marca Hogar permanece sin cambios mientras se esperan las revisiones externas.
 
-Siguiente acción formal:
-
-```text
-FIT-CAND-001
-→ SI-BRAND-002 Brand Candidate Screening
-→ documentar decisión
-→ sólo con PASS TO METHOD V2 habilitar investigación comercial posterior
-```
-
-Fuente: `docs/07-brand/brands/brand-fitness/fitness-pre-screening-architecture-v0.2.md`.
+Fuente: `docs/07-brand/brands/brand-fitness/candidates/README.md`.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
@@ -403,9 +388,9 @@ No confundir:
 | Nicho 3 — Mascotas | Method v2 ejecutado internamente hasta Fase 11; primer strong candidate pendiente de validación profesional |
 | Próxima acción Golden Run | Fase 11 — Landed Cost de `BRAND-CAND-001` |
 | Próxima acción Nicho 3 | Consolidar finalistas y preparar el gate profesional externo |
-| Brand System | v0.3 consolidado; arquitectura reusable con `CORE` / `STRONG ADJACENCY`, category-creep protection y separación Brand Fit / Method v2 |
-| Brand Candidate Screening | v0.3 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; 001–005 = `CORE / PASS TO METHOD V2`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED` |
-| Próxima acción Brand | Aplicar Brand System v0.3 a nuevas oportunidades reales; no abrir candidatos sólo para probar el método |
+| Brand System | v0.4; se agrega lifecycle de Hypothesis ID local → `BRAND-CAND-XXX` formal/global, manteniendo `CORE` / `STRONG ADJACENCY` y separación Brand Fit / Method v2 |
+| Brand Candidate Screening | v0.4 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; lifecycle Hypothesis ID → `BRAND-CAND-XXX`; 001–005 = `CORE / PASS`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED`; 007–010 = `CORE / PASS TO METHOD V2` |
+| Próxima acción Brand | Mantener la prioridad comercial de Marca Hogar y, para Fitness, decidir el orden de apertura de Method v2 de `BRAND-CAND-007..010`; no abrirlos en paralelo por defecto |
 
 ## 3. Snapshot histórico del Nicho 3 — 2026-09-17
 
@@ -819,6 +804,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.19.0 | 2026-10-05 | Marca Fitness cierra screenings: BRAND-CAND-007..010 = CORE / PASS TO METHOD V2; Brand System y Screening formalizan la trazabilidad desde FIT-CAND y el próximo gate es decidir el orden de Method v2. |
 | 1.18.0 | 2026-10-05 | Marca Fitness congela baseline pre-screening v0.2 con territorio/misiones revisados, candidatos activos 001/002/005/007, 003/004 absorbidos y 006 reclasificado; siguiente gate FIT-CAND-001. |
 | 1.17.0 | 2026-10-05 | Marca Hogar queda en pausa operativa hasta reuniones con socio y despachante; se documentan entregables de revisión externa y SI-BRAND-003 para ingreso reusable de oportunidades descendentes/ascendentes. |
 | 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo pero no cerrado. Se registra Decision Reporter prototipado, prioridad primera compra/revisión externa y apertura exploratoria de Marca Fitness. |

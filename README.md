@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.18.0
+version: 1.19.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -18,25 +18,24 @@ tags:
 # Smart Imports
 
 <!-- FITNESS-PRESCREENING-V02:START -->
-## Marca Fitness — baseline pre-screening v0.2
+## Marca Fitness — Brand Candidate Screening cerrado
 
 ```text
-Territory: FROZEN FOR SCREENING
-Active candidates: FIT-CAND-001 / 002 / 005 / 007
-FIT-CAND-003 → MERGED INTO FIT-CAND-005
-FIT-CAND-004 → MERGED INTO FIT-CAND-001
-FIT-CAND-006 → RECLASSIFIED AS TRANSVERSAL CAPABILITY
-Brand Candidate Screening: READY / NOT STARTED
-Method v2: NOT OPENED
+FIT-CAND-001 → BRAND-CAND-007 → CORE / PASS TO METHOD V2
+FIT-CAND-002 → BRAND-CAND-008 → CORE / PASS TO METHOD V2
+FIT-CAND-005 → BRAND-CAND-009 → CORE / PASS TO METHOD V2
+FIT-CAND-007 → BRAND-CAND-010 → CORE / PASS TO METHOD V2
+
+FIT-CAND-003 → MERGED
+FIT-CAND-004 → MERGED
+FIT-CAND-006 → TRANSVERSAL CAPABILITY
+
+Method v2: ELIGIBLE / NOT OPENED
 ```
 
-El territorio se orienta a conservar, recuperar y desarrollar capacidad física en contextos cotidianos con sedentarismo, poco tiempo o espacios limitados.
+Los `FIT-CAND-*` permanecen como IDs históricos de hipótesis; los `BRAND-CAND-*` son candidatos formales globales.
 
-`+50` queda como segmento/contexto potencialmente relevante, no como definición de la marca.
-
-Baseline: [`Marca Fitness — Arquitectura pre-screening v0.2`](docs/07-brand/brands/brand-fitness/fitness-pre-screening-architecture-v0.2.md).
-
-Siguiente gate: abrir `FIT-CAND-001` con `SI-BRAND-002`.
+Siguiente gate: decidir el orden de ejecución de Method v2 para `BRAND-CAND-007..010`. No hay Product Bases Fitness definidos todavía.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-EXTERNAL-REVIEW-PAUSE:START -->
@@ -361,6 +360,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.19.0 | 2026-10-05 | Marca Fitness cierra el primer bloque de screening: BRAND-CAND-007..010 quedan CORE / PASS TO METHOD V2; se formaliza la trazabilidad desde FIT-CAND y Method v2 continúa sin abrir. |
 | 1.18.0 | 2026-10-05 | Se congela Marca Fitness v0.2 para pre-screening: territorio y misiones revisados, cuatro candidatos activos, tres hipótesis absorbidas/reclasificadas y siguiente gate FIT-CAND-001. |
 | 1.17.0 | 2026-10-05 | Marca Hogar entra en pausa operativa hasta reuniones con socio y despachante; se registran los entregables de revisión externa y se incorpora SI-BRAND-003 para ingreso de oportunidades descendentes/ascendentes antes del screening. |
 | 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda formalmente cerrado hasta F4 sobre aut95 PASS; F5 tiene análisis completo pero materialización pendiente. Se registra Decision Reporter prototipado y se abre Marca Fitness como exploración pre-screening. |

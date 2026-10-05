@@ -2,12 +2,12 @@
 id: si-brand-002
 title: Brand Candidate Screening Method
 description: Método reusable para decidir si una solución tiene suficiente Brand Fit para ingresar a Method v2.
-version: 0.3.0
+version: 0.4.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-09-17
+updated: 2026-10-05
 tags:
   - brand
   - screening
@@ -99,6 +99,34 @@ Method v2
 `RETROSPECTIVE` se utiliza cuando la oportunidad ya atravesó Method v2 antes de existir formalmente el Brand System.
 
 En ese caso el screening agrega Brand Fit sin reiniciar la evaluación comercial.
+
+### 3.2 Lifecycle de IDs
+
+Una marca puede usar un `Hypothesis ID` local durante exploración o pre-screening.
+
+```text
+FIT-CAND-001
+→ hypothesis / pre-screening
+```
+
+Cuando se decide abrir un `Brand Candidate Screening` formal, se asigna el siguiente `BRAND-CAND-XXX` global **antes de persistir la evaluación y su decisión**.
+
+```text
+FIT-CAND-001
+→ BRAND-CAND-007
+→ screening formal
+→ PASS / HOLD / OUTSIDE
+```
+
+El `BRAND-CAND-XXX` no depende de obtener `PASS TO METHOD V2`: identifica el expediente formal y se conserva cualquiera sea el resultado.
+
+Las hipótesis absorbidas o reclasificadas antes de abrir screening formal conservan únicamente su ID local histórico.
+
+```text
+HYPOTHESIS ID
+≠
+FORMAL CANDIDATE ID
+```
 
 ## 4. Dimensiones del screening
 
@@ -223,6 +251,7 @@ Pueden utilizarse lecturas cualitativas como `fuerte`, `muy alto` o `borde`, per
 
 ```text
 Candidate ID
+Source Hypothesis ID (if applicable)
 Candidate
 Brand
 Screening Type
@@ -345,5 +374,5 @@ No se modifica todavía la matriz vigente.
 |---|---|---|
 | 0.1.0 | 2026-09-16 | Primera versión reusable y primer screening aplicado. |
 | 0.2.0 | 2026-09-17 | Se separan resultados concretos del método y se formaliza persistencia por marca/candidato. |
-
 | 0.3.0 | 2026-09-17 | Se formalizan Screening Type, Territory Relationship, BRAND FIT CONFIRMED retrospectivo y disciplina reusable de Brand Credibility. |
+| 0.4.0 | 2026-10-05 | Se formaliza el lifecycle entre Hypothesis ID local y `BRAND-CAND-XXX` global: el ID formal se asigna al abrir el screening y persiste cualquiera sea la decisión. |
