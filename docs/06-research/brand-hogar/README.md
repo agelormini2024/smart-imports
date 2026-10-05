@@ -2,12 +2,12 @@
 id: research-brand-hogar-readme
 title: Marca Hogar — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Hogar.
-version: 0.8.0
+version: 0.9.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-18
-updated: 2026-10-03
+updated: 2026-10-05
 ---
 
 # Marca Hogar — Research
@@ -21,7 +21,8 @@ F1 CLOSED — aut92 PASS
 F2 CLOSED — aut93 PASS
 F3 CLOSED — aut94 corrected PASS
 F4 CLOSED — aut95 PASS
-F5 ANALYSIS COMPLETE / MATERIALIZATION PENDING / NOT CLOSED
+F5 CLOSED — aut96 PASS
+F6 NOT OPENED
 F14 NOT OPENED
 ```
 
@@ -32,16 +33,16 @@ F14 NOT OPENED
 | [`SI-RESEARCH-058`](si-research-058-brand-cand-006-method-v2-agile-phase-2-maturity.md) | F2 — Maturity | `aut93 PASS` |
 | [`SI-RESEARCH-059`](si-research-059-brand-cand-006-method-v2-agile-phase-3-demand.md) | F3 — Demand | `aut94 corrected PASS` |
 | [`SI-RESEARCH-060`](si-research-060-brand-cand-006-method-v2-agile-phase-4-competition.md) | F4 — Competition | `aut95 PASS` |
-| [`SI-RESEARCH-061`](si-research-061-brand-cand-006-method-v2-agile-phase-5-brand-potential.md) | F5 — Brand Potential | `ANALYSIS COMPLETE / MATRIX PENDING` |
+| [`SI-RESEARCH-061`](si-research-061-brand-cand-006-method-v2-agile-phase-5-brand-potential.md) | F5 — Brand Potential | `aut96 PASS` |
 
 Último snapshot validado:
 
 ```text
-matrix-aut95-brand-cand-006-phase4.xlsx
-SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+matrix-aut96-brand-cand-006-phase5.xlsx
+SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
 ```
 
-No existe `aut96` válida.
+Próximo gate: `F6 — Product Bases`, en modalidad retrospectiva/reuse.
 <!-- BRAND-CAND-006-RESEARCH-INDEX:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
@@ -230,6 +231,7 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 
 | Version | Date | Change |
 |---|---|---|
+| 0.9.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 — Brand Potential sobre aut96 PASS; siguiente gate F6 — Product Bases. |
 | 0.8.0 | 2026-10-03 | Se incorpora BRAND-CAND-006 SI-RESEARCH-056 a SI-RESEARCH-061; F0–F4 CLOSED sobre aut91–aut95 PASS; F5 permanece pendiente de materialización. |
 | 0.7.0 | 2026-09-30 | Se incorpora la ejecución completa de BRAND-CAND-005, SI-RESEARCH-042 a SI-RESEARCH-055; aut90 PASS; BASE-HOGAR-028 FINALIST — CONDITIONED; estado PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.5.0 | 2026-09-25 | Se incorpora la ejecución completa de BRAND-CAND-003, SI-RESEARCH-014 a SI-RESEARCH-027; aut58 PASS y estado PORTFOLIO REVIEW READY / FREEZE. |

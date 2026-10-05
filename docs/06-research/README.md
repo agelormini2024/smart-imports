@@ -2,7 +2,7 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.14.0
+version: 0.15.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -45,13 +45,20 @@ F1 CLOSED → aut92 PASS
 F2 CLOSED → aut93 PASS
 F3 CLOSED → aut94 corrected PASS
 F4 CLOSED → aut95 PASS
-F5 ANALYSIS COMPLETE → materialization pending
+F5 CLOSED → aut96 PASS
 F6–F13 NOT CLOSED in current retrospective run
+```
+
+Último snapshot validado:
+
+```text
+matrix-aut96-brand-cand-006-phase5.xlsx
+SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
 ```
 
 Documentación: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
 
-La investigación es retrospectiva y reutiliza evidencia histórica del Nicho 3. No debe confundirse el recorrido histórico de `BASE-PET-003` con el estado formal de la reconciliación actual de `BRAND-CAND-006`.
+Próximo gate formal: `F6 — Product Bases`.
 <!-- BRAND-CAND-006-RESEARCH-STATUS:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
@@ -86,7 +93,7 @@ BRAND-CAND-002 → PASS TO METHOD V2 → DEFERRED / PAUSED
 BRAND-CAND-003 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-004 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-005 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-BRAND-CAND-006 → F0–F4 CLOSED → F5 ANALYSIS COMPLETE / MATERIALIZATION PENDING
+BRAND-CAND-006 → F0–F5 CLOSED → NEXT F6 — PRODUCT BASES
 NEXT GATE → materializar aut96 + Matrix Validator PASS
 ```
 
@@ -204,6 +211,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.15.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 formaliza Potencial de Marca 4/5 Media; siguiente gate F6. |
 | 0.14.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 con SI-RESEARCH-070 F0; análisis completo, materialización/Validator pendientes y aut105 reservado después del lineage aut96..aut104. |
 | 0.13.0 | 2026-10-03 | Se incorpora BRAND-CAND-006 SI-RESEARCH-056 a SI-RESEARCH-061; F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. |
 | 0.12.0 | 2026-09-30 | Se incorpora BRAND-CAND-005 completo mediante SI-RESEARCH-042 a SI-RESEARCH-055; aut90 PASS; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |

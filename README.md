@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.20.0
+version: 1.21.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -76,22 +76,20 @@ F1: CLOSED — aut92 PASS
 F2: CLOSED — aut93 PASS
 F3: CLOSED — aut94 corrected PASS
 F4: CLOSED — aut95 PASS
-F5: ANALYSIS COMPLETE / MATERIALIZATION PENDING / NOT CLOSED
-Latest validated matrix: matrix-aut95-brand-cand-006-phase4.xlsx
-Latest validated SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+F5: CLOSED — aut96 PASS
+Latest validated matrix: matrix-aut96-brand-cand-006-phase5.xlsx
+Latest validated SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
+Next gate: F6 — Product Bases
 F14: NOT OPENED
 ```
 
-`BASE-PET-003` conserva evidencia comercial histórica y ahora está siendo reconciliado dentro del Brand System de Marca Hogar. La ejecución actual no reinicia la investigación: formaliza Brand Fit, reutiliza evidencia trazable y exige nuevamente Matrix Validator en cada gate.
+`EVAL-0028` formaliza `Potencial de Marca = 4/5 / confianza Media` reutilizando `EVID-0229`.
+
+`BASE-PET-003` conserva su identidad histórica. F6 deberá reconciliar Product Bases sin crear un nuevo `BASE-HOGAR-*` sólo por cambio de contexto de marca.
 
 Research vigente: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
 
-Bloqueo actual: la materialización de `aut96` no pudo completarse por una falla intermitente de transporte RPC de la herramienta de edición XLSX. La falla no habilita el cierre de F5 ni modifica la metodología.
-
-### Frentes paralelos habilitados
-
-- `Decision Reporter`: contrato funcional prototipado manualmente; implementación diferida hasta después de la primera compra.
-- `Marca Fitness`: frente exploratorio abierto con seis hipótesis iniciales; todavía sin Brand Candidates aprobados ni Method v2 abierto.
+Marca Fitness mantiene `BRAND-CAND-010` con F0 abierto pero pendiente de materialización; su target `aut105` permanece detrás del lineage `aut96..aut104`.
 <!-- BRAND-CAND-006-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-005-CHECKPOINT:START -->
@@ -286,11 +284,11 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut95-brand-cand-006-phase4.xlsx`
-Archivo: matrix-aut95-brand-cand-006-phase4.xlsx
+Matriz comercial vigente: `matrix-aut96-brand-cand-006-phase5.xlsx`
+Archivo: matrix-aut96-brand-cand-006-phase5.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut95: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+Resultado aut96: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
 ```
 
 `aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` se conserva como snapshot final de BRAND-CAND-003. `aut72` se conserva como snapshot final de BRAND-CAND-004. `aut90` se conserva como snapshot final de BRAND-CAND-005. `aut95` es el snapshot comercial validado más reciente de BRAND-CAND-006; F0–F4 están cerradas y F5 todavía no está cerrada.
@@ -367,6 +365,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.21.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 — Brand Potential sobre aut96 PASS; EVAL-0028 = 4/5 Media; siguiente gate F6 — Product Bases. |
 | 1.20.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 de Marca Fitness; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed y aut105 reservado tras reconciliar aut96..aut104. |
 | 1.19.0 | 2026-10-05 | Marca Fitness cierra el primer bloque de screening: BRAND-CAND-007..010 quedan CORE / PASS TO METHOD V2; se formaliza la trazabilidad desde FIT-CAND y Method v2 continúa sin abrir. |
 | 1.18.0 | 2026-10-05 | Se congela Marca Fitness v0.2 para pre-screening: territorio y misiones revisados, cuatro candidatos activos, tres hipótesis absorbidas/reclasificadas y siguiente gate FIT-CAND-001. |

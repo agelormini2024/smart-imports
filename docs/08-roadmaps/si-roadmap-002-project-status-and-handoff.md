@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.20.0
+version: 1.21.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -127,7 +127,7 @@ Fuente: `docs/07-brand/si-brand-003-opportunity-intake-and-discovery.md`.
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:END -->
 
 <!-- BRAND-CAND-006-HANDOFF:START -->
-## Checkpoint operativo — BRAND-CAND-006 / 2026-10-03
+## Checkpoint operativo — BRAND-CAND-006 / 2026-10-05
 
 ```text
 Execution: RETROSPECTIVE + REUSE + RECONCILIATION
@@ -136,13 +136,14 @@ F1 CLOSED — aut92 PASS
 F2 CLOSED — aut93 PASS
 F3 CLOSED — aut94 corrected PASS
 F4 CLOSED — aut95 PASS
-F5 ANALYSIS COMPLETE / MATRIX MATERIALIZATION PENDING / NOT CLOSED
-Latest validated matrix: matrix-aut95-brand-cand-006-phase4.xlsx
-Latest validated SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+F5 CLOSED — aut96 PASS
+Latest validated matrix: matrix-aut96-brand-cand-006-phase5.xlsx
+Latest validated SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
+Next gate: F6 — Product Bases
 F14: NOT OPENED
 ```
 
-### F5 conceptual target
+### F5 cerrado
 
 ```text
 EVAL-0028
@@ -152,48 +153,28 @@ Brand Fit = CONFIRMED
 Brand Relevance = HIGH — STRONG ADJACENCY
 Brand Credibility = CONDITIONED
 Territory Risk = MEDIUM
+Matrix Validator = PASS limpio
 ```
 
-No existe `aut96` válida: la herramienta de edición XLSX falló de forma intermitente durante export/import. No usar ese problema de tooling como justificación para saltar el gate.
+`Score parcial` operativo del alias: `2.7777777777777777`, calculado por la fórmula oficial de la matriz.
+
+### Dependencia siguiente
+
+```text
+aut96 PASS
+→ F5 CLOSED
+→ F6 Product Bases
+→ materializar aut97
+→ Matrix Validator
+```
+
+No declarar F6 cerrada antes de `aut97 PASS`.
+
+Marca Fitness continúa en paralelo sólo a nivel conceptual/documental: `BRAND-CAND-010` F0 permanece pendiente de materialización y su target `aut105` depende de completar el lineage `aut97..aut104`.
 
 ### Prioridad comercial
 
-El objetivo de corto plazo es producir información suficiente para:
-
-```text
-reunión con socio
-→ shortlist para revisión externa
-→ despachante / clasificación / intervenciones / certificaciones
-→ recalcular sólo donde cambie algo material
-→ primera compra
-```
-
-No iniciar ahora un proyecto de software que desvíe esa secuencia.
-
-### Decision Reporter
-
-Contrato funcional prototipado manualmente sobre varios finalistas.
-
-Implementación del Engine: diferida para el período posterior a la primera compra, idealmente durante el lead time logístico.
-
-Fuente: `docs/05-ai-agents/si-agent-002-decision-reporter.md`.
-
-### Marca Fitness
-
-Se abre un frente exploratorio separado para reutilizar el Brand System.
-
-```text
-FIT-CAND-001 — fuerza compacta para el hogar
-FIT-CAND-002 — entrenamiento funcional portátil
-FIT-CAND-003 — recuperación y movilidad
-FIT-CAND-004 — calistenia y peso corporal
-FIT-CAND-005 — movilidad / bajo impacto
-FIT-CAND-006 — entrenamiento medible / fitness inteligente
-```
-
-Son hipótesis pre-screening, no decisiones de inversión ni candidatos aprobados.
-
-Fuente: `docs/07-brand/brands/brand-fitness/`.
+Marca Hogar conserva prioridad para primera importación y revisión externa con socio/despachante.
 <!-- BRAND-CAND-006-HANDOFF:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
@@ -699,7 +680,7 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
 4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
 5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002`, `SI-BRAND-003` y `SI-DECISION-016`.
-6. Adjuntar `aut95` cuando la tarea requiera el snapshot comercial validado más reciente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
+6. Adjuntar `aut96` cuando la tarea requiera el snapshot comercial validado más reciente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
 7. No volver a adjuntar PDFs históricos ya consolidados.
 8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
 9. No reabrir decisiones técnicas cerradas salvo que el flujo comercial descubra un bloqueo real.
@@ -832,6 +813,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.21.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 = 4/5 Media; siguiente gate F6 y aut97. |
 | 1.20.0 | 2026-10-05 | Marca Fitness abre Method v2 únicamente para BRAND-CAND-010; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed, con Nicho ID 37 y aut105 reservados tras el lineage aut96..aut104. |
 | 1.19.0 | 2026-10-05 | Marca Fitness cierra screenings: BRAND-CAND-007..010 = CORE / PASS TO METHOD V2; Brand System y Screening formalizan la trazabilidad desde FIT-CAND y el próximo gate es decidir el orden de Method v2. |
 | 1.18.0 | 2026-10-05 | Marca Fitness congela baseline pre-screening v0.2 con territorio/misiones revisados, candidatos activos 001/002/005/007, 003/004 absorbidos y 006 reclasificado; siguiente gate FIT-CAND-001. |

@@ -2,12 +2,12 @@
 id: si-research-061
 title: BRAND-CAND-006 — Method v2 Agile — Fase 5 — Brand Potential
 description: Análisis conceptual de Brand Potential de BASE-PET-003; materialización y Validator pendientes.
-version: 0.1.0
-status: in-progress
+version: 0.2.0
+status: complete
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-05
 brand: brand-hogar
 brand_candidate: brand-cand-006
 method: method-v2-agile
@@ -20,12 +20,12 @@ phase: F5
 
 ```text
 ANALYSIS COMPLETE
-MATRIX MATERIALIZATION PENDING
-VALIDATOR PENDING
-NOT CLOSED
+MATRIX MATERIALIZED — aut96
+MATRIX VALIDATOR PASS
+F5 CLOSED
 ```
 
-No existe una `aut96` válida.
+`aut96` fue materializada y validada el 2026-10-05.
 
 Durante el intento de materialización, la herramienta de edición XLSX perdió la conexión RPC durante `export_xlsx`; el reintento posterior falló durante `import_xlsx`.
 
@@ -90,4 +90,52 @@ aut95 validated
 → F5 CLOSED
 ```
 
-Hasta entonces, `F6` permanece `NOT OPENED` formalmente.
+`F6 — Product Bases` queda habilitada como próximo gate formal; todavía no está cerrada.
+
+## Cierre formal — 2026-10-05
+
+Materialización:
+
+```text
+Matrix: matrix-aut96-brand-cand-006-phase5.xlsx
+SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
+Schema: full-matrix-v5 0.7.0
+Result: PASS
+errors: 0
+warnings: 0
+info: 0
+limitations: 0
+```
+
+Evaluación formalizada:
+
+```text
+EVAL-0028
+Criterio: Potencial de Marca
+Valor: 4 / 5
+Confianza: Media
+Soporte: EVID-0229
+```
+
+Estado acumulado del `MATRIX_SCOPE_ALIAS`:
+
+```text
+Demanda: 2 / 5 — Media
+Competencia: 3 / 5 — Media
+Potencial de Marca: 4 / 5 — Media
+Criterios evaluados: 3 / 10
+Score parcial: 2.7777777777777777
+Confianza promedio: Media
+```
+
+El score parcial se toma de la fórmula oficial de la matriz. La previsión documental `3.0`, cuando aparecía en el delta previo, queda corregida por el valor calculado por el modelo operativo.
+
+Estado formal:
+
+```text
+F5 CLOSED — aut96 PASS
+F6 — Product Bases: NEXT GATE / NOT CLOSED
+F14: NOT OPENED
+```
+
+No se crearon nuevas Publicaciones ML, Competencia ML, Product Bases, cotizaciones, fuentes externas ni evidencias.

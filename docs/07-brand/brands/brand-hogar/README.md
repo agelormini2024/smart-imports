@@ -53,20 +53,21 @@ F1 CLOSED — aut92 PASS
 F2 CLOSED — aut93 PASS
 F3 CLOSED — aut94 corrected PASS
 F4 CLOSED — aut95 PASS
-F5 ANALYSIS COMPLETE / MATERIALIZATION PENDING / NOT CLOSED
+F5 CLOSED — aut96 PASS
+F6 — NEXT GATE / NOT CLOSED
 F14 NOT OPENED
 ```
 
 Último snapshot validado:
 
 ```text
-matrix-aut95-brand-cand-006-phase4.xlsx
-SHA-256: 688c67055370d804416033f7ba96b51887a67b11df0b8d704ba1d2e62a86a9d3
+matrix-aut96-brand-cand-006-phase5.xlsx
+SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
 ```
 
-Brand Fit continúa `CONFIRMED` como `HIGH — STRONG ADJACENCY`.
+Brand Fit continúa `CONFIRMED` como `HIGH — STRONG ADJACENCY`; Brand Credibility permanece `CONDITIONED`.
 
-La fase actual no queda cerrada hasta materializar `aut96` y obtener `PASS`.
+F6 debe reutilizar `BASE-PET-003` cuando corresponda y no duplicar Product Base sólo por el cambio de contexto de marca.
 <!-- BRAND-CAND-006-STATUS:END -->
 
 <!-- BRAND-CAND-005-STATUS:START -->
@@ -243,7 +244,7 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — SORBENT / CLAIM / TEST METHOD / ELECTRICAL / EXTERNAL REVIEW` |
 | [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — ACCURACY / LOCAL ELECTRICAL FIT / PACKING / CERTIFICATION / EXTERNAL REVIEW` |
 | [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — DEMAND / TECH-SERVICE / ELECTRICAL / FILTERS-SPARES / CERTIFICATION / CLAIM / EXTERNAL REVIEW` |
-| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `METHOD V2 RETROSPECTIVE — F0–F4 CLOSED / F5 IN PROGRESS` | HIGH | `CONDITIONED — DEMAND / SAFETY / QA / LOGISTICS / POST-SALE / EXTERNAL REVIEW` |
+| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `METHOD V2 RETROSPECTIVE — F0–F5 CLOSED / NEXT F6` | HIGH | `CONDITIONED — DEMAND / SAFETY / QA / LOGISTICS / POST-SALE / EXTERNAL REVIEW` |
 
 `BRAND-CAND-006` ya cuenta con investigación previa en Method v2. Su screening retrospectivo confirmó Brand Fit y la reconciliación actual está en curso; no reinicia la investigación comercial ya realizada.
 
@@ -285,6 +286,7 @@ Regla vigente: `BRAND-CAND-006` ya está abierto. No cerrar F5 ni abrir formalme
 
 | Version | Date | Change |
 |---|---|---|
+| 0.15.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; próximo gate F6 — Product Bases. |
 | 0.15.0 | 2026-10-05 | Marca Hogar entra en pausa operativa para reuniones con socio y despachante; se preservan estados Method v2 y se formaliza el checkpoint de revisión externa. |
 | 0.14.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. Se abre Marca Fitness como exploración separada del territorio Hogar. |
 | 0.13.0 | 2026-09-30 | BRAND-CAND-005 completa Fase 13; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
