@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.16.0
+version: 1.17.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-03
+updated: 2026-10-05
 tags:
   - smart-imports
   - knowledge-base
@@ -16,6 +16,27 @@ tags:
   - brand-system
 ---
 # Smart Imports
+
+<!-- HOGAR-EXTERNAL-REVIEW-PAUSE:START -->
+## Marca Hogar — pausa operativa para revisión externa
+
+```text
+Estado operativo: PAUSA — reuniones con socio + despachante
+Estados Method v2: PRESERVADOS
+BRAND-CAND-006: F0–F4 CLOSED / F5 materialización pendiente
+F14: NOT OPENED
+```
+
+Ya existe material operativo suficiente para las reuniones: comparativa ejecutiva de finalistas para socio y paquete estructurado para revisión de despachante.
+
+Prioridad externa inicial: `BASE-HOGAR-002`, `006`, `010`, `016`. Reserva de cartera / segunda etapa: `BASE-HOGAR-028`, `BASE-PET-003`.
+
+Durante esta pausa no se profundizan proveedores por defecto. Sí pueden registrarse nuevos hallazgos mediante `SI-BRAND-003` como oportunidades detectadas, sin abrir automáticamente Brand Candidate Screening ni Method v2. Después de las reuniones se decidirá qué información adicional pedir, qué economía recalcular y qué productos merecen avanzar hacia compra.
+
+Checkpoint: [`Marca Hogar — pausa operativa para revisión externa`](docs/07-brand/brands/brand-hogar/brand-hogar-external-review-pause-checkpoint.md).
+
+El Brand System incorpora además [`SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`](docs/07-brand/si-brand-003-opportunity-intake-and-discovery.md), que permite incorporar hallazgos espontáneos sin saltar Brand Candidate Screening ni Method v2.
+<!-- HOGAR-EXTERNAL-REVIEW-PAUSE:END -->
 
 <!-- BRAND-CAND-006-CHECKPOINT:START -->
 ## Method v2 BRAND-CAND-006 — estado vigente
@@ -318,6 +339,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.17.0 | 2026-10-05 | Marca Hogar entra en pausa operativa hasta reuniones con socio y despachante; se registran los entregables de revisión externa y se incorpora SI-BRAND-003 para ingreso de oportunidades descendentes/ascendentes antes del screening. |
 | 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda formalmente cerrado hasta F4 sobre aut95 PASS; F5 tiene análisis completo pero materialización pendiente. Se registra Decision Reporter prototipado y se abre Marca Fitness como exploración pre-screening. |
 | 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 1.13.0 | 2026-09-25 | BRAND-CAND-003 completa Fases 0–13; aut58 PASS; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |

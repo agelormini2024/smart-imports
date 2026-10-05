@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.16.0
+version: 1.17.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-10-03
+updated: 2026-10-05
 tags:
   - status
   - handoff
@@ -37,6 +37,39 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
+## Checkpoint operativo — pausa Marca Hogar / 2026-10-05
+
+```text
+Marca Hogar: PAUSA OPERATIVA — REVISIÓN EXTERNA
+Socio: reunión pendiente
+Despachante: reunión pendiente
+Method v2 states: PRESERVADOS
+BRAND-CAND-006: F0–F4 CLOSED / F5 materialización pendiente
+F14: NOT OPENED
+```
+
+Entregables operativos ya preparados: comparativa ejecutiva de finalistas para socio y paquete para revisión de despachante.
+
+Prioridad inicial para despachante: `BASE-HOGAR-002`, `006`, `010`, `016`. Reserva de cartera / segunda etapa: `BASE-HOGAR-028`, `BASE-PET-003`.
+
+Durante la pausa no se profundizan proveedores por defecto. Sí pueden registrarse oportunidades nuevas mediante `SI-BRAND-003` sin reabrir automáticamente screening ni Method v2. La reentrada de HOGAR depende de la información obtenida en las reuniones.
+
+Fuente: `docs/07-brand/brands/brand-hogar/brand-hogar-external-review-pause-checkpoint.md`.
+
+### Mejora metodológica reusable
+
+Se incorpora `SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`.
+
+El sistema admite descubrimiento descendente `territorio → misión → problema → solución → producto` y descubrimiento ascendente `producto → solución → problema → misión → territorio`. Ambas rutas convergen en Brand Candidate Screening antes de Method v2.
+
+```text
+ORIGEN DE LA IDEA ≠ CALIDAD DE LA OPORTUNIDAD
+```
+
+Fuente: `docs/07-brand/si-brand-003-opportunity-intake-and-discovery.md`.
+<!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:END -->
 
 <!-- BRAND-CAND-006-HANDOFF:START -->
 ## Checkpoint operativo — BRAND-CAND-006 / 2026-10-03
@@ -610,7 +643,7 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 2. Pedir lectura inicial de `SI-ROADMAP-002`.
 3. Para tareas del Nicho 3, consultar `SI-RESEARCH-005`.
 4. Para Fases 7–11 y estado de Method v2, consultar `SI-RESEARCH-006` y `SI-DECISION-015`.
-5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002` y `SI-DECISION-016`.
+5. Para tareas de marca, consultar `SI-BRAND-001`, `SI-BRAND-002`, `SI-BRAND-003` y `SI-DECISION-016`.
 6. Adjuntar `aut95` cuando la tarea requiera el snapshot comercial validado más reciente. Usar snapshots anteriores sólo para reproducir checkpoints históricos concretos.
 7. No volver a adjuntar PDFs históricos ya consolidados.
 8. Mantener separadas tareas de negocio (`smart-imports`) y técnicas (`smart-imports-engine`).
@@ -744,6 +777,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.17.0 | 2026-10-05 | Marca Hogar queda en pausa operativa hasta reuniones con socio y despachante; se documentan entregables de revisión externa y SI-BRAND-003 para ingreso reusable de oportunidades descendentes/ascendentes. |
 | 1.16.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo pero no cerrado. Se registra Decision Reporter prototipado, prioridad primera compra/revisión externa y apertura exploratoria de Marca Fitness. |
 | 1.15.0 | 2026-09-30 | BRAND-CAND-005 completa F0–F13; aut90 PASS; BASE-HOGAR-028 FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 1.13.0 | 2026-09-25 | Se registra como pendiente futuro el documento didáctico para reunión con socio sobre Precio local → Headroom → Costo de origen → Landed Cost → Margen → ROI, usando ejemplos reales de Smart Imports y activado sólo después de completar los candidatos relevantes hasta F13. |

@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.14.0
+version: 0.15.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-10-03
+updated: 2026-10-05
 tags:
   - brand
   - home
@@ -21,6 +21,26 @@ related:
 ---
 
 # Marca Hogar
+
+<!-- BRAND-HOGAR-EXTERNAL-PAUSE:START -->
+## Pausa operativa — reuniones con socio y despachante
+
+Marca Hogar queda temporalmente en:
+
+```text
+PAUSA OPERATIVA — REVISIÓN EXTERNA
+```
+
+La pausa no modifica los estados de Method v2. `BRAND-CAND-006` continúa formalmente con F0–F4 `CLOSED`, F5 con análisis completo y materialización pendiente, y F14 `NOT OPENED`.
+
+Ya se prepararon fuera del repositorio la comparativa ejecutiva de finalistas para reunión con socio y el paquete para revisión de despachante.
+
+Prioridad inicial para revisión externa: `BASE-HOGAR-002`, `006`, `010`, `016`. Reserva de cartera / posible segunda etapa: `BASE-HOGAR-028`, `BASE-PET-003`.
+
+No se profundizarán proveedores hasta incorporar el resultado de las reuniones, salvo necesidad explícita. Durante la pausa sí pueden registrarse nuevos hallazgos mediante `SI-BRAND-003`; su ingreso no reabre por sí solo Brand Candidate Screening ni Method v2.
+
+Checkpoint completo: [`Marca Hogar — pausa operativa para revisión externa`](./brand-hogar-external-review-pause-checkpoint.md).
+<!-- BRAND-HOGAR-EXTERNAL-PAUSE:END -->
 
 <!-- BRAND-CAND-006-STATUS:START -->
 ## Estado vigente de BRAND-CAND-006
@@ -265,6 +285,7 @@ Regla vigente: `BRAND-CAND-006` ya está abierto. No cerrar F5 ni abrir formalme
 
 | Version | Date | Change |
 |---|---|---|
+| 0.15.0 | 2026-10-05 | Marca Hogar entra en pausa operativa para reuniones con socio y despachante; se preservan estados Method v2 y se formaliza el checkpoint de revisión externa. |
 | 0.14.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. Se abre Marca Fitness como exploración separada del territorio Hogar. |
 | 0.13.0 | 2026-09-30 | BRAND-CAND-005 completa Fase 13; BASE-HOGAR-028 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.11.0 | 2026-09-25 | BRAND-CAND-003 completa Fase 13; BASE-HOGAR-010 queda FINALIST — CONDITIONED y el candidato pasa a PORTFOLIO REVIEW READY / FREEZE. |

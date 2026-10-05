@@ -2,12 +2,12 @@
 id: docs-07-brand-readme
 title: 07 — Brand
 description: Índice del Brand System de Smart Imports y sus instancias de marca.
-version: 0.9.0
+version: 0.10.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-03
+updated: 2026-10-05
 tags:
   - smart-imports
   - brand
@@ -20,6 +20,28 @@ related:
 ---
 
 # 07 — Brand
+
+<!-- OPPORTUNITY-INTAKE:START -->
+## Ingreso de oportunidades
+
+El Brand System admite oportunidades descubiertas tanto desde una investigación estructurada como desde un producto observado espontáneamente.
+
+```text
+DESCUBRIMIENTO DESCENDENTE
+territorio → misión → problema → solución → producto
+
+DESCUBRIMIENTO ASCENDENTE
+producto → solución → problema → misión → territorio
+```
+
+Ambas rutas convergen antes de `Brand Candidate Screening`.
+
+```text
+ORIGEN DE LA IDEA ≠ CALIDAD DE LA OPORTUNIDAD
+```
+
+Documento: [`SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`](./si-brand-003-opportunity-intake-and-discovery.md).
+<!-- OPPORTUNITY-INTAKE:END -->
 
 <!-- BRAND-FITNESS-EXPLORATION:START -->
 ## Marca Fitness — exploración
@@ -101,3 +123,4 @@ Brand System reusable
 
 | 0.8.0 | 2026-09-17 | Se consolida Brand System / Brand Candidate Screening v0.3 con Territory Relationship y soporte prospectivo/retrospectivo. |
 | 0.9.0 | 2026-10-03 | Se abre Marca Fitness como exploración reusable del Brand System; FIT-CAND-001..006 quedan como hipótesis pre-screening. BRAND-CAND-006 continúa su reconciliación retrospectiva en Marca Hogar. |
+| 0.10.0 | 2026-10-05 | Se incorpora SI-BRAND-003: ingreso de oportunidades espontáneas, descubrimiento descendente/ascendente y convergencia obligatoria en Brand Candidate Screening antes de Method v2. |
