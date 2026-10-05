@@ -2,7 +2,7 @@
 id: docs-07-brand-readme
 title: 07 — Brand
 description: Índice del Brand System de Smart Imports y sus instancias de marca.
-version: 0.12.0
+version: 0.13.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -44,26 +44,33 @@ Documento: [`SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`](./si-b
 <!-- OPPORTUNITY-INTAKE:END -->
 
 <!-- BRAND-FITNESS-EXPLORATION:START -->
-## Marca Fitness — screening cerrado
+## Marca Fitness — primer Method v2 abierto
 
 ```text
 Brand Candidate Screening: CLOSED
-FIT-CAND-001 → BRAND-CAND-007 → CORE / PASS TO METHOD V2
-FIT-CAND-002 → BRAND-CAND-008 → CORE / PASS TO METHOD V2
-FIT-CAND-005 → BRAND-CAND-009 → CORE / PASS TO METHOD V2
-FIT-CAND-007 → BRAND-CAND-010 → CORE / PASS TO METHOD V2
-Method v2: ELIGIBLE / NOT OPENED
-```
+BRAND-CAND-007 → CORE / PASS TO METHOD V2 / NOT OPENED
+BRAND-CAND-008 → CORE / PASS TO METHOD V2 / NOT OPENED
+BRAND-CAND-009 → CORE / PASS TO METHOD V2 / NOT OPENED
+BRAND-CAND-010 → CORE / PASS TO METHOD V2 / F0 OPENED
+F0 → ANALYSIS COMPLETE / MATRIX PENDING / NOT CLOSED
 
-`FIT-CAND-003` y `FIT-CAND-004` quedaron absorbidos; `FIT-CAND-006` quedó como capacidad transversal.
+FIT-CAND-003 → MERGED
+FIT-CAND-004 → MERGED
+FIT-CAND-006 → TRANSVERSAL CAPABILITY
+
+Product Bases Fitness: NOT DEFINED
+```
 
 Documentos:
 
 - [`Marca Fitness`](./brands/brand-fitness/README.md)
 - [`Brand Candidates`](./brands/brand-fitness/candidates/README.md)
 - [`Pre-screening Architecture v0.2`](./brands/brand-fitness/fitness-pre-screening-architecture-v0.2.md) — baseline histórica
+- [`SI-RESEARCH-070`](../06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md)
 
-La exploración de Marca Fitness no modifica la prioridad comercial inmediata de Smart Imports: avanzar hacia la primera importación con los finalistas de Marca Hogar una vez resueltas las revisiones externas pendientes con socio y despachante.
+Los `FIT-CAND-*` se conservan como trazabilidad histórica local; `BRAND-CAND-*` identifica los candidatos formales globales.
+
+La prioridad comercial inmediata de Smart Imports continúa siendo la primera importación de Marca Hogar después de las revisiones externas pendientes con socio y despachante.
 <!-- BRAND-FITNESS-EXPLORATION:END -->
 
 > La marca define dónde queremos jugar; Method v2 determina dónde existe un negocio defendible.
@@ -115,6 +122,7 @@ Brand System reusable
 
 | Version | Date | Change |
 |---|---|---|
+| 0.13.0 | 2026-10-05 | Marca Fitness abre Method v2 únicamente para BRAND-CAND-010; F0 queda analysis complete / matrix pending / not closed y 007–009 permanecen elegibles sin abrir. |
 | 0.12.0 | 2026-10-05 | Se cierra el primer bloque de screening de Marca Fitness: cuatro hipótesis promueven a BRAND-CAND-007..010 como CORE / PASS TO METHOD V2; se preservan IDs locales como trazabilidad. |
 | 0.11.0 | 2026-10-05 | Marca Fitness congela arquitectura pre-screening v0.2 con territorio/misiones revisados, cuatro candidatos activos y decisiones MERGED/RECLASSIFIED trazables. |
 | 0.1.0 | 2026-07-02 | Placeholder inicial. |

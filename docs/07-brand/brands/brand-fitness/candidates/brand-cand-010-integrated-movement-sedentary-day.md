@@ -2,9 +2,10 @@
 id: brand-cand-010
 title: Movimiento integrado a la jornada sedentaria
 description: Brand Candidate Screening prospectivo de movimiento integrado a la jornada sedentaria para Marca Fitness.
-version: 0.1.0
+version: 0.2.0
 status: pass-to-method-v2
 brand: brand-fitness
+method_v2_status: phase0-pending-materialization
 created: 2026-10-05
 updated: 2026-10-05
 ---
@@ -115,7 +116,7 @@ Si una futura solución puede aparecer en ambos, deberá declararse el problema 
 
 ```text
 Decision: PASS TO METHOD V2
-Method v2 handoff: ELIGIBLE — NOT OPENED
+Method v2 handoff: OPENED — F0 PENDING MATERIALIZATION
 ```
 
 Decision rationale:
@@ -126,6 +127,23 @@ Decision rationale:
 
 ```text
 SCREENING: CLOSED
-METHOD V2: NOT OPENED
+METHOD V2: F0 OPENED
+F0: ANALYSIS COMPLETE / MATRIX PENDING / NOT CLOSED
 PRODUCT BASES: NOT DEFINED
 ```
+
+## 11. Method v2 execution status
+
+```text
+Research: SI-RESEARCH-070
+F0: ANALYSIS COMPLETE
+Matrix materialization: PENDING
+Matrix Validator: PENDING
+Target MATRIX_SCOPE_ALIAS: Nicho ID 37
+Target matrix: aut105
+Next formal gate: F0 MATRIX PASS
+```
+
+`aut105` queda reservado como target futuro y no debe materializarse desde `aut95`; antes debe reconciliarse el lineage global `aut96..aut104`.
+
+`BRAND-CAND-007`, `BRAND-CAND-008` y `BRAND-CAND-009` permanecen `ELIGIBLE — NOT OPENED`.

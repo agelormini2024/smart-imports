@@ -1,8 +1,8 @@
 ---
 id: brand-fitness
-title: Marca Fitness — Screening cerrado
-description: Estado vigente de Marca Fitness después del primer bloque formal de Brand Candidate Screening.
-version: 0.4.0
+title: Marca Fitness — Screening cerrado / Method v2 iniciado
+description: Estado vigente de Marca Fitness con screening cerrado y BRAND-CAND-010 abierto en F0 de Method v2.
+version: 0.5.0
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -30,7 +30,7 @@ Missions baseline: FROZEN
 Brand Candidate Screening: CLOSED
 Formal candidates: BRAND-CAND-007..010
 PASS TO METHOD V2: 4
-Method v2: ELIGIBLE / NOT OPENED
+Method v2: BRAND-CAND-010 F0 OPENED / MATRIX PENDING / NOT CLOSED
 Product Bases: NOT DEFINED
 Purchase Decision: NONE
 ```
@@ -77,21 +77,28 @@ Los IDs históricos se preservan y no se reutilizan.
 - [`SI-BRAND-002`](../../si-brand-002-brand-candidate-screening-method.md) — método reusable de screening.
 - [`SI-BRAND-003`](../../si-brand-003-opportunity-intake-and-discovery.md) — ingreso de futuras oportunidades.
 
-## 7. Próxima decisión
+## 7. Ejecución Method v2
 
 ```text
-BRAND-CAND-007..010
-→ ELIGIBLE FOR METHOD V2
-→ EXECUTION ORDER: NOT DECIDED
-→ METHOD V2: NOT OPENED
+BRAND-CAND-010
+→ FIRST FITNESS CANDIDATE
+→ F0 ANALYSIS COMPLETE
+→ MATRIX MATERIALIZATION PENDING
+→ F0 NOT CLOSED
+
+BRAND-CAND-007..009
+→ ELIGIBLE — NOT OPENED
 ```
 
-La próxima tarea es decidir el orden de ejecución comercial. No hay Product Bases Fitness definidos todavía.
+Research vigente: [`SI-RESEARCH-070`](../../../06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md).
+
+No hay Product Bases Fitness definidos todavía. La prioridad comercial inmediata de Marca Hogar no cambia.
 
 ## Changelog
 
 | Version | Fecha | Cambio |
 |---|---|---|
+| 0.5.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010: F0 Research Brief completo en SI-RESEARCH-070; materialización y Validator pendientes; 007–009 permanecen elegibles sin abrir. |
 | 0.4.0 | 2026-10-05 | Se cierra el primer bloque de Brand Candidate Screening: FIT-CAND-001/002/005/007 promueven a BRAND-CAND-007..010, todos CORE / PASS TO METHOD V2; Method v2 permanece sin abrir. |
 | 0.3.0 | 2026-10-05 | Se congela Fitness v0.2 como baseline pre-screening: territorio revisado, cuatro misiones, cuatro candidatos activos, FIT-CAND-003/004 absorbidos y FIT-CAND-006 reclasificado como capacidad transversal. |
 | 0.2.0 | 2026-10-05 | Se integra SI-BRAND-003 y se habilitan rutas de descubrimiento descendente y ascendente antes del Brand Candidate Screening. |

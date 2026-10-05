@@ -2,7 +2,7 @@
 id: brand-fitness-candidates-readme
 title: Marca Fitness — Brand Candidates
 description: Índice de expedientes de Brand Candidate Screening de Marca Fitness.
-version: 0.1.0
+version: 0.2.0
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -17,7 +17,7 @@ updated: 2026-10-05
 ```text
 SCREENINGS CLOSED: 4
 PASS TO METHOD V2: 4
-METHOD V2 OPENED: 0
+METHOD V2 OPENED: 1
 PRODUCT BASES DEFINED: 0
 ```
 
@@ -32,7 +32,7 @@ Método aplicado: `SI-BRAND-002 v0.4`.
 | `FIT-CAND-001` | [`BRAND-CAND-007`](./brand-cand-007-accessible-compact-strength.md) | Fuerza accesible y compacta | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
 | `FIT-CAND-002` | [`BRAND-CAND-008`](./brand-cand-008-flexible-portable-training.md) | Entrenamiento flexible y portátil | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
 | `FIT-CAND-005` | [`BRAND-CAND-009`](./brand-cand-009-mobility-stability-physical-capacity.md) | Movilidad, estabilidad y conservación/recuperación de capacidad física | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
-| `FIT-CAND-007` | [`BRAND-CAND-010`](./brand-cand-010-integrated-movement-sedentary-day.md) | Movimiento integrado a la jornada sedentaria | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
+| `FIT-CAND-007` | [`BRAND-CAND-010`](./brand-cand-010-integrated-movement-sedentary-day.md) | Movimiento integrado a la jornada sedentaria | `CORE` | `PASS TO METHOD V2` | `F0 OPENED — MATRIX PENDING` |
 
 ## 3. Hipótesis no promovidas
 
@@ -62,12 +62,24 @@ BRAND-CAND-010 → existe necesidad de romper la inactividad de la jornada
 
 ## 5. Próximo gate
 
-El cierre de screening no obliga a ejecutar los cuatro candidatos en Method v2.
-
-> ¿En qué orden conviene abrir Method v2 para los candidatos elegibles de Marca Fitness?
-
-Hasta tomar esa decisión:
+Se decidió abrir primero `BRAND-CAND-010`.
 
 ```text
-METHOD V2: NOT OPENED
+BRAND-CAND-010
+→ F0 OPENED
+→ ANALYSIS COMPLETE
+→ MATRIX MATERIALIZATION PENDING
+→ F0 NOT CLOSED
+
+BRAND-CAND-007..009
+→ ELIGIBLE — NOT OPENED
+```
+
+Próximo gate formal:
+
+```text
+aut105 materialized after global lineage reconciliation
+→ Matrix Validator PASS
+→ F0 CLOSED
+→ F1 — Market / Solution Map
 ```

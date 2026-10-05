@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.19.0
+version: 1.20.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -39,30 +39,58 @@ phase: research
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
 <!-- FITNESS-PRESCREENING-V02:START -->
-## Checkpoint operativo — Marca Fitness Brand Candidate Screening / 2026-10-05
+## Checkpoint operativo — Marca Fitness Method v2 / 2026-10-05
 
 ```text
 SCREENING BLOCK: CLOSED
-FIT-CAND-001 → BRAND-CAND-007 → CORE / PASS TO METHOD V2
-FIT-CAND-002 → BRAND-CAND-008 → CORE / PASS TO METHOD V2
-FIT-CAND-005 → BRAND-CAND-009 → CORE / PASS TO METHOD V2
-FIT-CAND-007 → BRAND-CAND-010 → CORE / PASS TO METHOD V2
+
+BRAND-CAND-007 → CORE / PASS TO METHOD V2 / NOT OPENED
+BRAND-CAND-008 → CORE / PASS TO METHOD V2 / NOT OPENED
+BRAND-CAND-009 → CORE / PASS TO METHOD V2 / NOT OPENED
+BRAND-CAND-010 → CORE / PASS TO METHOD V2 / F0 OPENED
+
 FIT-CAND-003 → MERGED
 FIT-CAND-004 → MERGED
 FIT-CAND-006 → TRANSVERSAL CAPABILITY
-Method v2: ELIGIBLE / NOT OPENED
+
+SI-RESEARCH-070:
+F0 ANALYSIS COMPLETE
+MATRIX MATERIALIZATION PENDING
+MATRIX VALIDATOR PENDING
+F0 NOT CLOSED
+
 Product Bases Fitness: NOT DEFINED
 ```
 
-Se formaliza el lifecycle de IDs: `FIT-CAND-*` = hipótesis local pre-screening; `BRAND-CAND-*` = candidato formal global.
+Se conserva el lifecycle de IDs:
 
-Los cuatro PASS no determinan prioridad ni obligan a investigar los cuatro en paralelo.
+```text
+FIT-CAND-* = hipótesis local / histórica
+BRAND-CAND-* = candidato formal global
+```
 
-Siguiente decisión: definir orden de apertura de Method v2 para `BRAND-CAND-007..010`.
+Scope operativo reservado:
 
-La prioridad comercial inmediata de primera importación de Marca Hogar permanece sin cambios mientras se esperan las revisiones externas.
+```text
+Nicho ID target: 37
+MATRIX_SCOPE_ALIAS: Marca Fitness — movimiento integrado a la jornada sedentaria
+Target matrix: aut105
+```
 
-Fuente: `docs/07-brand/brands/brand-fitness/candidates/README.md`.
+Dependencia global:
+
+```text
+aut96..aut104
+→ reservados para reconciliación pendiente de BRAND-CAND-006
+→ aut105 no debe materializarse desde aut95
+```
+
+Siguiente gate Fitness: reconciliar lineage global, materializar F0 de `BRAND-CAND-010`, obtener Matrix Validator PASS y recién entonces cerrar F0 / abrir F1.
+
+La prioridad comercial inmediata de Marca Hogar permanece sin cambios.
+
+Fuente de screening: `docs/07-brand/brands/brand-fitness/candidates/README.md`.
+Research F0: `docs/06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md`.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
@@ -390,7 +418,7 @@ No confundir:
 | Próxima acción Nicho 3 | Consolidar finalistas y preparar el gate profesional externo |
 | Brand System | v0.4; se agrega lifecycle de Hypothesis ID local → `BRAND-CAND-XXX` formal/global, manteniendo `CORE` / `STRONG ADJACENCY` y separación Brand Fit / Method v2 |
 | Brand Candidate Screening | v0.4 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; lifecycle Hypothesis ID → `BRAND-CAND-XXX`; 001–005 = `CORE / PASS`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED`; 007–010 = `CORE / PASS TO METHOD V2` |
-| Próxima acción Brand | Mantener la prioridad comercial de Marca Hogar y, para Fitness, decidir el orden de apertura de Method v2 de `BRAND-CAND-007..010`; no abrirlos en paralelo por defecto |
+| Próxima acción Brand | Mantener la prioridad comercial de Marca Hogar; Fitness abrió sólo `BRAND-CAND-010` en F0, pendiente de materialización/Validator; `BRAND-CAND-007..009` permanecen elegibles sin abrir |
 
 ## 3. Snapshot histórico del Nicho 3 — 2026-09-17
 
@@ -804,6 +832,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.20.0 | 2026-10-05 | Marca Fitness abre Method v2 únicamente para BRAND-CAND-010; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed, con Nicho ID 37 y aut105 reservados tras el lineage aut96..aut104. |
 | 1.19.0 | 2026-10-05 | Marca Fitness cierra screenings: BRAND-CAND-007..010 = CORE / PASS TO METHOD V2; Brand System y Screening formalizan la trazabilidad desde FIT-CAND y el próximo gate es decidir el orden de Method v2. |
 | 1.18.0 | 2026-10-05 | Marca Fitness congela baseline pre-screening v0.2 con territorio/misiones revisados, candidatos activos 001/002/005/007, 003/004 absorbidos y 006 reclasificado; siguiente gate FIT-CAND-001. |
 | 1.17.0 | 2026-10-05 | Marca Hogar queda en pausa operativa hasta reuniones con socio y despachante; se documentan entregables de revisión externa y SI-BRAND-003 para ingreso reusable de oportunidades descendentes/ascendentes. |

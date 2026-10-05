@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.13.0
+version: 0.14.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-03
+updated: 2026-10-05
 tags:
   - smart-imports
   - research
@@ -16,6 +16,25 @@ tags:
 ---
 
 # 06 — Research
+
+<!-- BRAND-FITNESS-RESEARCH-STATUS:START -->
+## Marca Fitness — Research vigente
+
+```text
+BRAND-CAND-010
+→ Method v2 F0 OPENED
+→ ANALYSIS COMPLETE
+→ MATRIX MATERIALIZATION PENDING
+→ F0 NOT CLOSED
+
+BRAND-CAND-007..009
+→ ELIGIBLE — NOT OPENED
+```
+
+Research: [`brand-fitness/README.md`](./brand-fitness/README.md).
+
+Target operativo futuro: `Nicho ID 37 / MATRIX_SCOPE_ALIAS / aut105`, sólo después de reconciliar la secuencia global pendiente `aut96..aut104`.
+<!-- BRAND-FITNESS-RESEARCH-STATUS:END -->
 
 <!-- BRAND-CAND-006-RESEARCH-STATUS:START -->
 ## BRAND-CAND-006 — estado de investigación
@@ -185,6 +204,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.14.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 con SI-RESEARCH-070 F0; análisis completo, materialización/Validator pendientes y aut105 reservado después del lineage aut96..aut104. |
 | 0.13.0 | 2026-10-03 | Se incorpora BRAND-CAND-006 SI-RESEARCH-056 a SI-RESEARCH-061; F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. |
 | 0.12.0 | 2026-09-30 | Se incorpora BRAND-CAND-005 completo mediante SI-RESEARCH-042 a SI-RESEARCH-055; aut90 PASS; candidato PORTFOLIO REVIEW READY / FREEZE; siguiente ejecución BRAND-CAND-006 después del cierre documental. |
 | 0.11.0 | 2026-09-25 | Se incorpora BRAND-CAND-004 completo mediante SI-RESEARCH-028 a SI-RESEARCH-041 y se formaliza el cierre documental obligatorio antes de abrir el siguiente candidato. |

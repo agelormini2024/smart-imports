@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.19.0
+version: 1.20.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -18,24 +18,31 @@ tags:
 # Smart Imports
 
 <!-- FITNESS-PRESCREENING-V02:START -->
-## Marca Fitness — Brand Candidate Screening cerrado
+## Marca Fitness — Method v2 iniciado
 
 ```text
-FIT-CAND-001 → BRAND-CAND-007 → CORE / PASS TO METHOD V2
-FIT-CAND-002 → BRAND-CAND-008 → CORE / PASS TO METHOD V2
-FIT-CAND-005 → BRAND-CAND-009 → CORE / PASS TO METHOD V2
-FIT-CAND-007 → BRAND-CAND-010 → CORE / PASS TO METHOD V2
+FIT-CAND-001 → BRAND-CAND-007 → CORE / PASS TO METHOD V2 / NOT OPENED
+FIT-CAND-002 → BRAND-CAND-008 → CORE / PASS TO METHOD V2 / NOT OPENED
+FIT-CAND-005 → BRAND-CAND-009 → CORE / PASS TO METHOD V2 / NOT OPENED
+FIT-CAND-007 → BRAND-CAND-010 → CORE / PASS TO METHOD V2 / F0 OPENED
+
+BRAND-CAND-010 F0:
+ANALYSIS COMPLETE / MATRIX MATERIALIZATION PENDING / NOT CLOSED
 
 FIT-CAND-003 → MERGED
 FIT-CAND-004 → MERGED
 FIT-CAND-006 → TRANSVERSAL CAPABILITY
 
-Method v2: ELIGIBLE / NOT OPENED
+Product Bases Fitness: NOT DEFINED
 ```
 
 Los `FIT-CAND-*` permanecen como IDs históricos de hipótesis; los `BRAND-CAND-*` son candidatos formales globales.
 
-Siguiente gate: decidir el orden de ejecución de Method v2 para `BRAND-CAND-007..010`. No hay Product Bases Fitness definidos todavía.
+Research: `docs/06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md`.
+
+Target futuro de matriz: `Nicho ID 37 / aut105`, sólo después de reconciliar `aut96..aut104`.
+
+La prioridad comercial de Marca Hogar permanece sin cambios.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-EXTERNAL-REVIEW-PAUSE:START -->
@@ -360,6 +367,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.20.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 de Marca Fitness; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed y aut105 reservado tras reconciliar aut96..aut104. |
 | 1.19.0 | 2026-10-05 | Marca Fitness cierra el primer bloque de screening: BRAND-CAND-007..010 quedan CORE / PASS TO METHOD V2; se formaliza la trazabilidad desde FIT-CAND y Method v2 continúa sin abrir. |
 | 1.18.0 | 2026-10-05 | Se congela Marca Fitness v0.2 para pre-screening: territorio y misiones revisados, cuatro candidatos activos, tres hipótesis absorbidas/reclasificadas y siguiente gate FIT-CAND-001. |
 | 1.17.0 | 2026-10-05 | Marca Hogar entra en pausa operativa hasta reuniones con socio y despachante; se registran los entregables de revisión externa y se incorpora SI-BRAND-003 para ingreso de oportunidades descendentes/ascendentes antes del screening. |
