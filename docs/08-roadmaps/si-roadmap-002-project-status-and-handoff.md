@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.22.0
+version: 1.23.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-10-05
+updated: 2026-10-07
 tags:
   - status
   - handoff
@@ -28,6 +28,7 @@ related:
   - si-brand-001
   - si-brand-002
   - si-decision-016
+  - si-decision-017
 audience:
   - founder
   - partner
@@ -94,28 +95,31 @@ Research F0: `docs/06-research/brand-fitness/si-research-070-brand-cand-010-meth
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
-## Checkpoint operativo — pausa Marca Hogar / 2026-10-05
+## Checkpoint operativo — cierre interno Marca Hogar / 2026-10-07
 
 ```text
-Marca Hogar: PAUSA OPERATIVA — REVISIÓN EXTERNA
-Socio: reunión pendiente
-Despachante: reunión pendiente
-Method v2 states: PRESERVADOS
-BRAND-CAND-006: F0–F13 CLOSED / PORTFOLIO REVIEW READY / FREEZE
+INTERNAL PORTFOLIO REVIEW: COMPLETE
+FIRST-STAGE LEAD: BASE-HOGAR-016
+BACKUP: BASE-HOGAR-006
+SECONDARY: BASE-HOGAR-010 / BASE-HOGAR-002
+RESERVE: BASE-HOGAR-028 / BASE-PET-003
+BRAND-CAND-002: DEFERRED / PAUSED
+EXTERNAL REVIEW: PENDING
+PROCUREMENT: NOT OPENED
 F14: NOT OPENED
+PORTFOLIO BASELINE: FROZEN
 ```
 
-Entregables operativos ya preparados: comparativa ejecutiva de finalistas para socio y paquete para revisión de despachante.
+Portfolio Review: `SI-RESEARCH-071`.
+Decisión: `SI-DECISION-017`.
 
-Prioridad inicial para despachante: `BASE-HOGAR-002`, `006`, `010`, `016`. Reserva de cartera / segunda etapa: `BASE-HOGAR-028`, `BASE-PET-003`.
-
-Durante la pausa no se profundizan proveedores por defecto. Sí pueden registrarse oportunidades nuevas mediante `SI-BRAND-003` sin reabrir automáticamente screening ni Method v2. La reentrada de HOGAR depende de la información obtenida en las reuniones.
+`aut104` permanece como último snapshot de Hogar. Portfolio Review no consume `aut`; `aut105` queda reservado para `BRAND-CAND-010 / Marca Fitness`.
 
 Fuente: `docs/07-brand/brands/brand-hogar/brand-hogar-external-review-pause-checkpoint.md`.
 
 ### Mejora metodológica reusable
 
-Se incorpora `SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`.
+Se mantiene `SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`.
 
 El sistema admite descubrimiento descendente `territorio → misión → problema → solución → producto` y descubrimiento ascendente `producto → solución → problema → misión → territorio`. Ambas rutas convergen en Brand Candidate Screening antes de Method v2.
 
@@ -686,28 +690,22 @@ El Brand System no requirió modificar `full-matrix-v5 0.7.0` ni Matrix Validato
 ## 14. Próxima acción concreta
 
 ```text
-Marca Hogar
-→ BRAND-CAND-001: PORTFOLIO REVIEW READY / FREEZE
-→ BRAND-CAND-002: DEFERRED / PAUSED
-→ BRAND-CAND-003: PORTFOLIO REVIEW READY / FREEZE
-→ BRAND-CAND-004: PORTFOLIO REVIEW READY / FREEZE
-→ BRAND-CAND-005: PORTFOLIO REVIEW READY / FREEZE
-→ BRAND-CAND-006: F0–F13 CLOSED / PORTFOLIO REVIEW READY / FREEZE
+MARCA HOGAR
+→ INTERNAL PORTFOLIO REVIEW COMPLETE
+→ PORTFOLIO BASELINE FROZEN
+→ EXTERNAL REVIEW PENDING
+→ F14 NOT OPENED
 
-CURRENT GATE
-→ Portfolio Review transversal + revisión externa
-→ BRAND-CAND-010 / aut105 habilitado como siguiente target de matriz
-
-THEN
-→ Portfolio Review transversal
-→ revisión externa sobre finalistas
-→ decisión posterior sobre F14
-→ revisión externa / despachante
-→ selección para profundización
-→ decisión sobre apertura de F14
+PRIMARY WORKSTREAM
+→ MARCA FITNESS
+→ BRAND-CAND-010
+→ materializar aut105
+→ Matrix Validator PASS
+→ cerrar F0
+→ continuar Method v2
 ```
 
-`BRAND-CAND-006` ya está abierto. No avanzar de F5 a F6 sin `aut96 PASS`. No reabrir candidatos en `FREEZE` salvo contradicción material o decisión surgida de Portfolio Review / gate externo.
+Marca Hogar sólo se reabre por gate externo, contradicción material o decisión explícita. No se reabren F0–F13 por defecto.
 
 ## 15. Documentos relacionados
 
@@ -727,10 +725,10 @@ THEN
 ### Estado
 
 ```text
-PENDING
-DO NOT PREPARE YET
-TRIGGER → Brand Candidates relevantes completados hasta F13
-        → finalistas disponibles para Portfolio Review
+TRIGGER MET
+MEETING MATERIAL — PREPARE WHEN NEEDED
+Brand Candidates relevantes completados hasta F13
+→ Portfolio Review interno completo
 ```
 
 ### Objetivo
@@ -801,15 +799,14 @@ La selección definitiva debe hacerse recién después de completar los Brand Ca
 
 ### Regla de activación
 
-**No preparar este documento antes del trigger definido.**
-
-El entregable se prepara cuando existan finalistas suficientes para `Portfolio Review`; hasta entonces permanece como pendiente documental del proyecto.
+El trigger ya fue cumplido. El entregable permanece como material de reunión a preparar cuando se necesite, sin bloquear el cambio de workstream a Fitness.
 <!-- ECONOMIC-BRIEFING-PENDING:END -->
 
 ## 16. Changelog
 
 | Version | Date | Change |
 |---|---|---|
+| 1.23.0 | 2026-10-07 | Marca Hogar cierra Portfolio Review interno; BASE-HOGAR-016 lead, BASE-HOGAR-006 backup; baseline congelada, revisión externa pendiente y workstream principal cambia a Marca Fitness / aut105. |
 | 1.22.0 | 2026-10-05 | BRAND-CAND-006 completa F6–F13 sobre aut97–aut104 PASS; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; aut105 queda desbloqueado para BRAND-CAND-010. |
 | 1.21.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 = 4/5 Media; siguiente gate F6 y aut97. |
 | 1.20.0 | 2026-10-05 | Marca Fitness abre Method v2 únicamente para BRAND-CAND-010; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed, con Nicho ID 37 y aut105 reservados tras el lineage aut96..aut104. |

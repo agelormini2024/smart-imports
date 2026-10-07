@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.22.0
+version: 1.23.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-05
+updated: 2026-10-07
 tags:
   - smart-imports
   - knowledge-base
@@ -46,24 +46,27 @@ La prioridad comercial de Marca Hogar permanece sin cambios.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-EXTERNAL-REVIEW-PAUSE:START -->
-## Marca Hogar — pausa operativa para revisión externa
+## Marca Hogar — baseline interna cerrada / revisión externa pendiente
 
 ```text
-Estado operativo: PAUSA — reuniones con socio + despachante
-Estados Method v2: PRESERVADOS
-BRAND-CAND-006: F0–F13 CLOSED / PORTFOLIO REVIEW READY / FREEZE
+INTERNAL PORTFOLIO REVIEW: COMPLETE
+INTERNAL FIRST-STAGE LEAD: BASE-HOGAR-016
+FIRST-STAGE BACKUP: BASE-HOGAR-006
+SECONDARY: BASE-HOGAR-010 / BASE-HOGAR-002
+RESERVE: BASE-HOGAR-028 / BASE-PET-003
+EXTERNAL REVIEW: PENDING
+PROCUREMENT: NOT OPENED
 F14: NOT OPENED
+PORTFOLIO BASELINE: FROZEN
 ```
 
-Ya existe material operativo suficiente para las reuniones: comparativa ejecutiva de finalistas para socio y paquete estructurado para revisión de despachante.
+La decisión interna ya no depende de esperar al despachante. La revisión externa funciona como gate de confirmación o reordenamiento, no como requisito para continuar trabajando en otra marca.
 
-Prioridad externa inicial: `BASE-HOGAR-002`, `006`, `010`, `016`. Reserva de cartera / segunda etapa: `BASE-HOGAR-028`, `BASE-PET-003`.
+Portfolio Review: `docs/06-research/brand-hogar/si-research-071-brand-hogar-portfolio-review.md`.
 
-Durante esta pausa no se profundizan proveedores por defecto. Sí pueden registrarse nuevos hallazgos mediante `SI-BRAND-003` como oportunidades detectadas, sin abrir automáticamente Brand Candidate Screening ni Method v2. Después de las reuniones se decidirá qué información adicional pedir, qué economía recalcular y qué productos merecen avanzar hacia compra.
+Decisión: `docs/09-decision-log/si-decision-017-freeze-brand-hogar-internal-portfolio-baseline.md`.
 
-Checkpoint: [`Marca Hogar — pausa operativa para revisión externa`](docs/07-brand/brands/brand-hogar/brand-hogar-external-review-pause-checkpoint.md).
-
-El Brand System incorpora además [`SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`](docs/07-brand/si-brand-003-opportunity-intake-and-discovery.md), que permite incorporar hallazgos espontáneos sin saltar Brand Candidate Screening ni Method v2.
+El Brand System mantiene [`SI-BRAND-003 — Ingreso de oportunidades y descubrimiento`](docs/07-brand/si-brand-003-opportunity-intake-and-discovery.md) para nuevos hallazgos sin reabrir automáticamente screening ni Method v2.
 <!-- HOGAR-EXTERNAL-REVIEW-PAUSE:END -->
 
 <!-- BRAND-CAND-006-CHECKPOINT:START -->
@@ -353,20 +356,20 @@ docs/
 
 ## Próximos pasos
 
-1. Mantener `BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` en `FREEZE / PORTFOLIO REVIEW READY`; mantener `BRAND-CAND-002` en `DEFERRED / PAUSED`.
-2. Mantener `BRAND-CAND-006` en `PORTFOLIO REVIEW READY / FREEZE`; no abrir F14 antes de Portfolio Review transversal y revisión externa.
-3. En paralelo, preparar material de decisión para la reunión con el socio y definir qué finalistas deben pasar a revisión externa / despachante.
-4. Realizar `Portfolio Review` transversal ahora que `BRAND-CAND-006` completó F13 y su cierre documental.
-5. Preparar la revisión externa —incluido despachante y validaciones regulatorias/técnicas cuando correspondan— sobre los finalistas seleccionados.
-6. Seleccionar qué Product Base justifica profundización procurement-grade y recién entonces decidir la apertura de F14.
+1. Mantener Marca Hogar con `INTERNAL PORTFOLIO REVIEW COMPLETE / BASELINE FROZEN`.
+2. Llevar a revisión externa prioritariamente `BASE-HOGAR-016` y `BASE-HOGAR-006`; usar `BASE-HOGAR-010` y `BASE-HOGAR-002` como segunda línea.
+3. Mantener `BASE-HOGAR-028` y `BASE-PET-003` como reserva / segunda etapa.
+4. No abrir F14 ni procurement de Hogar hasta incorporar información externa suficiente.
+5. Pasar el workstream principal a Marca Fitness.
+6. Materializar F0 de `BRAND-CAND-010` sobre `aut105`, validar y continuar Method v2 secuencialmente.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
-8. Mantener `Marca Fitness` en `EXPLORATION`: territorio provisional y `FIT-CAND-001..006` como hipótesis pre-screening, sin abrir todavía Method v2.
-9. Diferir implementación de Decision Reporter / nuevas automatizaciones hasta después de la primera compra, priorizando el período de tránsito de mercadería para desarrollo de software.
+8. Diferir Decision Reporter / nuevas automatizaciones hasta después de la primera compra.
 
 ## Changelog
 
 | Version | Date | Change |
 |---|---|---|
+| 1.23.0 | 2026-10-07 | Marca Hogar cierra Portfolio Review interno; BASE-HOGAR-016 queda como lead de primera etapa, BASE-HOGAR-006 como backup; baseline congelada, revisión externa pendiente y workstream principal habilitado para Fitness. |
 | 1.22.0 | 2026-10-05 | BRAND-CAND-006 completa la reconciliación F6–F13 sobre aut97–aut104 PASS; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; aut105 queda habilitado para BRAND-CAND-010. |
 | 1.21.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 — Brand Potential sobre aut96 PASS; EVAL-0028 = 4/5 Media; siguiente gate F6 — Product Bases. |
 | 1.20.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 de Marca Fitness; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed y aut105 reservado tras reconciliar aut96..aut104. |

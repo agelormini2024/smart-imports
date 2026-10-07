@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.16.0
+version: 0.17.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-05
+updated: 2026-10-07
 tags:
   - smart-imports
   - research
@@ -81,29 +81,23 @@ Esta regla evita que el estado operativo dependa de un chat o de archivos locale
 <!-- BRAND-HOGAR-RESEARCH-STATUS:START -->
 ## Marca Hogar — Research vigente
 
-Las ejecuciones originadas desde Brand Candidates se indexan en `brand-hogar/README.md`.
-
 ```text
-BRAND-CAND-001 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-BRAND-CAND-002 → PASS TO METHOD V2 → DEFERRED / PAUSED
-BRAND-CAND-003 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-BRAND-CAND-004 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-BRAND-CAND-005 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-BRAND-CAND-006 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-NEXT GLOBAL GATE → Portfolio Review transversal + revisión externa
+METHOD V2 RELEVANT CANDIDATES → CLOSED / FROZEN
+PORTFOLIO REVIEW → COMPLETE — INTERNAL
+FIRST-STAGE LEAD → BASE-HOGAR-016
+BACKUP → BASE-HOGAR-006
+SECONDARY → BASE-HOGAR-010 / BASE-HOGAR-002
+RESERVE → BASE-HOGAR-028 / BASE-PET-003
+BRAND-CAND-002 → DEFERRED / PAUSED
+EXTERNAL REVIEW → PENDING
+F14 → NOT OPENED
 ```
 
-`BRAND-CAND-003` queda documentado en `SI-RESEARCH-014` a `SI-RESEARCH-027`.
-
-`BRAND-CAND-004` queda documentado en `SI-RESEARCH-028` a `SI-RESEARCH-041`.
-
-`BRAND-CAND-005` queda documentado en `SI-RESEARCH-042` a `SI-RESEARCH-055`.
-
-`BRAND-CAND-006` queda documentado en `SI-RESEARCH-056` a `SI-RESEARCH-069`. `BASE-PET-003` permanece como Product Base histórico reutilizado y finalista condicionado.
+Portfolio Review: [`SI-RESEARCH-071`](./brand-hogar/si-research-071-brand-hogar-portfolio-review.md).
 
 La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, evidencia pública consolidada, estados, decisiones y continuidad.
 
-La pausa de `BRAND-CAND-002` refleja una preocupación del founder sobre aprobación/costo regulatorio; queda pendiente de revisión externa y no constituye una conclusión regulatoria verificada.
+Portfolio Review no crea un nuevo snapshot: `aut104` permanece como cierre de Hogar y `aut105` queda reservado para Marca Fitness.
 <!-- BRAND-HOGAR-RESEARCH-STATUS:END -->
 
 <!-- SI-F13-CHECKPOINT:START -->
@@ -211,6 +205,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.17.0 | 2026-10-07 | SI-RESEARCH-071 cierra Portfolio Review interno de Marca Hogar; BASE-HOGAR-016 lead, BASE-HOGAR-006 backup, baseline congelada y revisión externa pendiente. |
 | 0.16.0 | 2026-10-05 | BRAND-CAND-006 completa F0–F13; SI-RESEARCH-062..069 documentan la reconciliación aut97–aut104 PASS; BASE-PET-003 queda finalista condicionado y el candidato PORTFOLIO REVIEW READY / FREEZE. |
 | 0.15.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 formaliza Potencial de Marca 4/5 Media; siguiente gate F6. |
 | 0.14.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 con SI-RESEARCH-070 F0; análisis completo, materialización/Validator pendientes y aut105 reservado después del lineage aut96..aut104. |

@@ -2,15 +2,35 @@
 id: research-brand-hogar-readme
 title: Marca Hogar — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Hogar.
-version: 0.10.0
+version: 0.11.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-18
-updated: 2026-10-05
+updated: 2026-10-07
 ---
 
 # Marca Hogar — Research
+
+<!-- BRAND-HOGAR-PORTFOLIO-REVIEW:START -->
+## Portfolio Review — cierre interno
+
+```text
+SI-RESEARCH-071
+→ PORTFOLIO REVIEW COMPLETE — INTERNAL
+→ BASE-HOGAR-016 — INTERNAL FIRST-STAGE LEAD
+→ BASE-HOGAR-006 — FIRST-STAGE BACKUP
+→ BASE-HOGAR-010 / BASE-HOGAR-002 — SECONDARY
+→ BASE-HOGAR-028 / BASE-PET-003 — RESERVE / SECOND STAGE
+→ EXTERNAL REVIEW PENDING
+→ F14 NOT OPENED
+→ PORTFOLIO BASELINE FROZEN
+```
+
+Portfolio Review no modifica la matriz. `aut104` permanece como último snapshot de Hogar; `aut105` pertenece a Marca Fitness.
+
+Documento: [`SI-RESEARCH-071`](si-research-071-brand-hogar-portfolio-review.md).
+<!-- BRAND-HOGAR-PORTFOLIO-REVIEW:END -->
 
 <!-- BRAND-CAND-006-RESEARCH-INDEX:START -->
 ## BRAND-CAND-006 — Retrospective Run — estado vigente
@@ -249,6 +269,7 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 
 | Version | Date | Change |
 |---|---|---|
+| 0.11.0 | 2026-10-07 | SI-RESEARCH-071 cierra Portfolio Review interno de Marca Hogar y congela la prioridad BASE-HOGAR-016 → BASE-HOGAR-006 antes del gate externo. |
 | 0.10.0 | 2026-10-05 | BRAND-CAND-006 completa F6–F13 sobre aut97–aut104 PASS; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE. |
 | 0.9.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 — Brand Potential sobre aut96 PASS; siguiente gate F6 — Product Bases. |
 | 0.8.0 | 2026-10-03 | Se incorpora BRAND-CAND-006 SI-RESEARCH-056 a SI-RESEARCH-061; F0–F4 CLOSED sobre aut91–aut95 PASS; F5 permanece pendiente de materialización. |

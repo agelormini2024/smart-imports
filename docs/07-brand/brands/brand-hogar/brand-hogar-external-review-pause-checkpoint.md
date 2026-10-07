@@ -1,13 +1,13 @@
 ---
 id: brand-hogar-external-review-pause-checkpoint
-title: Marca Hogar — Pausa operativa para revisión externa
-description: Checkpoint previo a reuniones con socio y despachante; conserva estados metodológicos y define condiciones de reentrada.
-version: 0.1.0
-status: paused-external-review
+title: Marca Hogar — Baseline interna cerrada y revisión externa pendiente
+description: Checkpoint posterior al Portfolio Review interno; congela la baseline de Marca Hogar y define el gate de revisión externa.
+version: 0.2.0
+status: internal-closed-external-review-pending
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-07
 brand: brand-hogar
 tags:
   - brand-hogar
@@ -21,10 +21,12 @@ tags:
 
 ## 1. Estado
 
-Marca Hogar entra en:
+Marca Hogar queda en:
 
 ```text
-PAUSA OPERATIVA — REVISIÓN EXTERNA
+INTERNAL PORTFOLIO REVIEW COMPLETE
+PORTFOLIO BASELINE FROZEN
+EXTERNAL REVIEW PENDING
 ```
 
 La pausa comienza después de preparar material suficiente para reunión con socio, comparación transversal de finalistas y consulta estructurada con despachante.
@@ -72,7 +74,7 @@ BASE-HOGAR-028
 BASE-PET-003
 ```
 
-Esta separación es operativa; no constituye un nuevo ranking formal ni modifica decisiones de Method v2.
+La prioridad interna queda formalizada por SI-RESEARCH-071 / SI-DECISION-017: `BASE-HOGAR-016` lead, `BASE-HOGAR-006` backup, `BASE-HOGAR-010` y `BASE-HOGAR-002` segunda línea; `BASE-HOGAR-028` y `BASE-PET-003` reserva.
 
 ## 5. Qué no se hará durante la pausa
 
@@ -136,7 +138,7 @@ NCM ARGENTINA VALIDADO
 
 ## 9. Condición de reentrada
 
-Marca Hogar se retoma formalmente cuando exista información suficiente de las reuniones para decidir:
+Marca Hogar se reabre como workstream primario sólo cuando exista información externa suficiente que justifique modificar el baseline para decidir:
 
 ```text
 qué productos siguen
@@ -149,6 +151,6 @@ La profundización con proveedores será consecuencia de esa revisión, no un re
 
 ## 10. Relación con Marca Fitness
 
-La pausa de Marca Hogar permite abrir trabajo conceptual de Marca Fitness sin declarar cerrado HOGAR.
+Marca Hogar queda cerrada internamente y congelada hasta revisión externa. Esto permite que Marca Fitness pase a ser el workstream principal.
 
 Ambos frentes mantienen estados independientes. La experiencia de Hogar y `SI-BRAND-003` sirven como metodología reusable para Fitness y futuras marcas.

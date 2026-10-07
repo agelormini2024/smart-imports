@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.16.0
+version: 0.17.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-10-05
+updated: 2026-10-07
 tags:
   - brand
   - home
@@ -23,23 +23,26 @@ related:
 # Marca Hogar
 
 <!-- BRAND-HOGAR-EXTERNAL-PAUSE:START -->
-## Pausa operativa — reuniones con socio y despachante
-
-Marca Hogar queda temporalmente en:
+## Cierre interno — revisión externa pendiente
 
 ```text
-PAUSA OPERATIVA — REVISIÓN EXTERNA
+PORTFOLIO REVIEW: COMPLETE — INTERNAL
+FIRST-STAGE LEAD: BASE-HOGAR-016
+BACKUP: BASE-HOGAR-006
+SECONDARY: BASE-HOGAR-010 / BASE-HOGAR-002
+RESERVE: BASE-HOGAR-028 / BASE-PET-003
+EXTERNAL REVIEW: PENDING
+F14: NOT OPENED
+PORTFOLIO BASELINE: FROZEN
 ```
 
-La pausa no modifica los estados de Method v2. `BRAND-CAND-006` completó retrospectivamente F0–F13 sobre `aut91..aut104`, queda `PORTFOLIO REVIEW READY / FREEZE`, y F14 permanece `NOT OPENED`.
+La revisión externa puede confirmar o reordenar la prioridad, pero Marca Hogar ya no necesita permanecer como workstream primario.
 
-Ya se prepararon fuera del repositorio la comparativa ejecutiva de finalistas para reunión con socio y el paquete para revisión de despachante.
+Portfolio Review: [`SI-RESEARCH-071`](../../../06-research/brand-hogar/si-research-071-brand-hogar-portfolio-review.md).
 
-Prioridad inicial para revisión externa: `BASE-HOGAR-002`, `006`, `010`, `016`. Reserva de cartera / posible segunda etapa: `BASE-HOGAR-028`, `BASE-PET-003`.
+Decisión: [`SI-DECISION-017`](../../../09-decision-log/si-decision-017-freeze-brand-hogar-internal-portfolio-baseline.md).
 
-No se profundizarán proveedores hasta incorporar el resultado de las reuniones, salvo necesidad explícita. Durante la pausa sí pueden registrarse nuevos hallazgos mediante `SI-BRAND-003`; su ingreso no reabre por sí solo Brand Candidate Screening ni Method v2.
-
-Checkpoint completo: [`Marca Hogar — pausa operativa para revisión externa`](./brand-hogar-external-review-pause-checkpoint.md).
+Checkpoint externo: [`Marca Hogar — revisión externa`](./brand-hogar-external-review-pause-checkpoint.md).
 <!-- BRAND-HOGAR-EXTERNAL-PAUSE:END -->
 
 <!-- BRAND-CAND-006-STATUS:START -->
@@ -251,33 +254,25 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 
 `BRAND-CAND-006` completó la reconciliación retrospectiva de Method v2 sin reiniciar la investigación comercial ya realizada. `BASE-PET-003` queda finalista condicionado y elegible para Portfolio Review.
 
-## 10. Próximo candidato
+## 10. Estado de cierre interno
 
 ```text
-CLOSED / FREEZE
-→ BRAND-CAND-001
-→ BRAND-CAND-003
-→ BRAND-CAND-004
-→ BRAND-CAND-005
-
-DEFERRED / PAUSED
-→ BRAND-CAND-002
-
-CLOSED / FREEZE
-→ BRAND-CAND-006 — F0–F13 CLOSED / PORTFOLIO REVIEW READY
-
-NEXT GLOBAL GATE
-→ Portfolio Review transversal
-→ revisión externa
-→ selección para profundización
-→ decisión sobre apertura de F14
+MARCA HOGAR
+→ SCREENING COMPLETE
+→ METHOD V2 RELEVANT CANDIDATES COMPLETE
+→ PORTFOLIO REVIEW COMPLETE — INTERNAL
+→ BASE-HOGAR-016 — INTERNAL FIRST-STAGE LEAD
+→ BASE-HOGAR-006 — FIRST-STAGE BACKUP
+→ BASE-HOGAR-010 / BASE-HOGAR-002 — SECONDARY
+→ BASE-HOGAR-028 / BASE-PET-003 — RESERVE
+→ BRAND-CAND-002 — DEFERRED / PAUSED
+→ EXTERNAL REVIEW PENDING
+→ PROCUREMENT NOT OPENED
+→ F14 NOT OPENED
+→ PORTFOLIO BASELINE FROZEN
 ```
 
-Regla vigente: `BRAND-CAND-006` completó F13 y este checkpoint cierra su documentación. El siguiente gate global es Portfolio Review transversal + revisión externa antes de cualquier decisión sobre F14.
-
-`BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
-
-`BRAND-CAND-002` permanece `DEFERRED / PAUSED`: la preocupación del founder sobre aprobación/costo regulatorio requiere revisión externa y no se toma como conclusión regulatoria verificada.
+El workstream principal puede pasar a Marca Fitness. Hogar sólo se reabre por revisión externa, contradicción material o decisión explícita del Founder.
 
 ## 11. Documentos relacionados
 
@@ -289,6 +284,7 @@ Regla vigente: `BRAND-CAND-006` completó F13 y este checkpoint cierra su docume
 
 | Version | Date | Change |
 |---|---|---|
+| 0.17.0 | 2026-10-07 | Portfolio Review interno completo: BASE-HOGAR-016 lead, BASE-HOGAR-006 backup, 010/002 segunda línea, 028/PET-003 reserva; baseline de Hogar congelada hasta revisión externa. |
 | 0.16.0 | 2026-10-05 | BRAND-CAND-006 completa la reconciliación retrospectiva F0–F13 sobre aut91–aut104; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE. |
 | 0.15.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; próximo gate F6 — Product Bases. |
 | 0.15.0 | 2026-10-05 | Marca Hogar entra en pausa operativa para reuniones con socio y despachante; se preservan estados Method v2 y se formaliza el checkpoint de revisión externa. |
@@ -341,6 +337,6 @@ Fuente: [SI-RESEARCH-009](../../../06-research/brand-hogar/si-research-009-brand
 
 Fase 13 consolida la shortlist final: `BASE-HOGAR-002` y `BASE-HOGAR-006` quedan `FINALIST — CONDITIONED`; `BASE-HOGAR-003` permanece `STOP — REOPENABLE`. No se selecciona todavía un producto para importar.
 
-El siguiente gate global es `Portfolio Review`, una vez que los candidatos relevantes completen F13; luego corresponde revisión externa previa antes de decidir F14.
+El Portfolio Review interno ya está cerrado. El gate pendiente es la revisión externa antes de cualquier decisión sobre F14 o procurement.
 
 Fuente vigente: [SI-RESEARCH-013 — Fase 13 Shortlist final](../../../06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md).
