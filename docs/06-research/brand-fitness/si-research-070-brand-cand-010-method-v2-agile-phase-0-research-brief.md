@@ -269,7 +269,7 @@ pero:
 NO MATERIALIZAR aut105 DESDE aut95
 ```
 
-`aut105` sólo podrá convertirse en snapshot global válido después de que el lineage anterior haya sido reconciliado hasta `aut104`.
+El lineage anterior quedó reconciliado hasta `aut104`; `aut105` puede materializarse como siguiente snapshot global cuando se ejecute el cierre de F0 de `BRAND-CAND-010`.
 
 Esto evita dos ramas incompatibles de la matriz.
 

@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.21.0
+version: 1.22.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -81,11 +81,11 @@ Dependencia global:
 
 ```text
 aut96..aut104
-→ reservados para reconciliación pendiente de BRAND-CAND-006
-→ aut105 no debe materializarse desde aut95
+→ reconciliación completada de BRAND-CAND-006; aut104 PASS
+→ aut105 habilitado como siguiente target global desde aut104
 ```
 
-Siguiente gate Fitness: reconciliar lineage global, materializar F0 de `BRAND-CAND-010`, obtener Matrix Validator PASS y recién entonces cerrar F0 / abrir F1.
+Siguiente gate Fitness: materializar F0 de `BRAND-CAND-010` sobre `aut105`, obtener Matrix Validator PASS y recién entonces cerrar F0 / abrir F1.
 
 La prioridad comercial inmediata de Marca Hogar permanece sin cambios.
 
@@ -101,7 +101,7 @@ Marca Hogar: PAUSA OPERATIVA — REVISIÓN EXTERNA
 Socio: reunión pendiente
 Despachante: reunión pendiente
 Method v2 states: PRESERVADOS
-BRAND-CAND-006: F0–F4 CLOSED / F5 materialización pendiente
+BRAND-CAND-006: F0–F13 CLOSED / PORTFOLIO REVIEW READY / FREEZE
 F14: NOT OPENED
 ```
 
@@ -130,51 +130,49 @@ Fuente: `docs/07-brand/si-brand-003-opportunity-intake-and-discovery.md`.
 ## Checkpoint operativo — BRAND-CAND-006 / 2026-10-05
 
 ```text
-Execution: RETROSPECTIVE + REUSE + RECONCILIATION
+BRAND-CAND-006
+Mode: RETROSPECTIVE + REUSE + RECONCILIATION
+
 F0 CLOSED — aut91 PASS
 F1 CLOSED — aut92 PASS
 F2 CLOSED — aut93 PASS
 F3 CLOSED — aut94 corrected PASS
 F4 CLOSED — aut95 PASS
 F5 CLOSED — aut96 PASS
-Latest validated matrix: matrix-aut96-brand-cand-006-phase5.xlsx
-Latest validated SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
-Next gate: F6 — Product Bases
-F14: NOT OPENED
+F6 CLOSED — aut97 PASS
+F7 CLOSED — aut98 PASS
+F8 CLOSED — aut99 PASS
+F9 CLOSED — aut100 PASS
+F10 CLOSED — aut101 PASS
+F11 CLOSED — aut102 PASS
+F12 CLOSED — aut103 PASS
+F13 CLOSED — aut104 PASS
+F14 NOT OPENED
+
+Finalist: BASE-PET-003 — FINALIST — CONDITIONED
+Portfolio eligibility: ELIGIBLE FOR PORTFOLIO REVIEW
+First-stage fit: NOT FIRST-STAGE FIT
+Candidate status: PORTFOLIO REVIEW READY / FREEZE
 ```
 
-### F5 cerrado
+Snapshot final:
 
 ```text
-EVAL-0028
-Brand Potential = 4/5
-Confidence = Media
-Brand Fit = CONFIRMED
-Brand Relevance = HIGH — STRONG ADJACENCY
-Brand Credibility = CONDITIONED
-Territory Risk = MEDIUM
-Matrix Validator = PASS limpio
+matrix-aut104-brand-cand-006-phase13.xlsx
+SHA-256: a5caeebe1954b59ea1bf37e29b22e8961820305b743584eaf5355b0439cd056e
+Schema: full-matrix-v5 0.7.0
+Result: PASS
+errors: 0
+warnings: 0
+info: 0
+limitations: 0
 ```
 
-`Score parcial` operativo del alias: `2.7777777777777777`, calculado por la fórmula oficial de la matriz.
+Research publicado: `SI-RESEARCH-056..069`.
 
-### Dependencia siguiente
+La identidad de `BASE-PET-003` se preserva `REUSE AS-IS`.
 
-```text
-aut96 PASS
-→ F5 CLOSED
-→ F6 Product Bases
-→ materializar aut97
-→ Matrix Validator
-```
-
-No declarar F6 cerrada antes de `aut97 PASS`.
-
-Marca Fitness continúa en paralelo sólo a nivel conceptual/documental: `BRAND-CAND-010` F0 permanece pendiente de materialización y su target `aut105` depende de completar el lineage `aut97..aut104`.
-
-### Prioridad comercial
-
-Marca Hogar conserva prioridad para primera importación y revisión externa con socio/despachante.
+La reconciliación global `aut96..aut104` queda completa. `BRAND-CAND-010 / aut105` queda desbloqueado como siguiente target operativo, todavía pendiente de materialización.
 <!-- BRAND-CAND-006-HANDOFF:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
@@ -694,17 +692,16 @@ Marca Hogar
 → BRAND-CAND-003: PORTFOLIO REVIEW READY / FREEZE
 → BRAND-CAND-004: PORTFOLIO REVIEW READY / FREEZE
 → BRAND-CAND-005: PORTFOLIO REVIEW READY / FREEZE
-→ BRAND-CAND-006: F0–F4 CLOSED / F5 MATERIALIZATION PENDING
+→ BRAND-CAND-006: F0–F13 CLOSED / PORTFOLIO REVIEW READY / FREEZE
 
 CURRENT GATE
-→ materializar aut96
-→ Matrix Validator PASS
-→ cerrar F5
-→ continuar secuencialmente hasta F13
+→ Portfolio Review transversal + revisión externa
+→ BRAND-CAND-010 / aut105 habilitado como siguiente target de matriz
 
 THEN
-→ cierre documental BRAND-CAND-006
-→ Portfolio Review global
+→ Portfolio Review transversal
+→ revisión externa sobre finalistas
+→ decisión posterior sobre F14
 → revisión externa / despachante
 → selección para profundización
 → decisión sobre apertura de F14
@@ -813,6 +810,7 @@ El entregable se prepara cuando existan finalistas suficientes para `Portfolio R
 
 | Version | Date | Change |
 |---|---|---|
+| 1.22.0 | 2026-10-05 | BRAND-CAND-006 completa F6–F13 sobre aut97–aut104 PASS; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; aut105 queda desbloqueado para BRAND-CAND-010. |
 | 1.21.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 = 4/5 Media; siguiente gate F6 y aut97. |
 | 1.20.0 | 2026-10-05 | Marca Fitness abre Method v2 únicamente para BRAND-CAND-010; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed, con Nicho ID 37 y aut105 reservados tras el lineage aut96..aut104. |
 | 1.19.0 | 2026-10-05 | Marca Fitness cierra screenings: BRAND-CAND-007..010 = CORE / PASS TO METHOD V2; Brand System y Screening formalizan la trazabilidad desde FIT-CAND y el próximo gate es decidir el orden de Method v2. |

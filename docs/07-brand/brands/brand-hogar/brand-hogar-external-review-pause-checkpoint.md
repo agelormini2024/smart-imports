@@ -43,7 +43,7 @@ BRAND-CAND-006 → F0–F4 CLOSED → F5 ANALYSIS COMPLETE / MATERIALIZATION PEN
 F14 → NOT OPENED
 ```
 
-Para `BRAND-CAND-006`, `aut95` continúa siendo la última matriz validada. La próxima fase formal sigue siendo materializar `aut96`, validar y cerrar F5, pero no se prioriza mientras Marca Hogar permanezca en pausa operativa.
+Para `BRAND-CAND-006`, la reconciliación retrospectiva quedó completada hasta `aut104 PASS`, con F0–F13 `CLOSED`, estado `PORTFOLIO REVIEW READY / FREEZE` y F14 `NOT OPENED`. La pausa operativa no modifica ese estado.
 
 ## 3. Entregables operativos preparados
 

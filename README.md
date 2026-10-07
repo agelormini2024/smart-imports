@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.21.0
+version: 1.22.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -40,7 +40,7 @@ Los `FIT-CAND-*` permanecen como IDs históricos de hipótesis; los `BRAND-CAND-
 
 Research: `docs/06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md`.
 
-Target futuro de matriz: `Nicho ID 37 / aut105`, sólo después de reconciliar `aut96..aut104`.
+La dependencia previa `aut96..aut104` quedó satisfecha con `aut104 PASS`. `Nicho ID 37 / aut105` queda habilitado como siguiente target global, todavía sin materializar.
 
 La prioridad comercial de Marca Hogar permanece sin cambios.
 <!-- FITNESS-PRESCREENING-V02:END -->
@@ -51,7 +51,7 @@ La prioridad comercial de Marca Hogar permanece sin cambios.
 ```text
 Estado operativo: PAUSA — reuniones con socio + despachante
 Estados Method v2: PRESERVADOS
-BRAND-CAND-006: F0–F4 CLOSED / F5 materialización pendiente
+BRAND-CAND-006: F0–F13 CLOSED / PORTFOLIO REVIEW READY / FREEZE
 F14: NOT OPENED
 ```
 
@@ -70,26 +70,28 @@ El Brand System incorpora además [`SI-BRAND-003 — Ingreso de oportunidades y 
 ## Method v2 BRAND-CAND-006 — estado vigente
 
 ```text
-Mode: RETROSPECTIVE + REUSE + RECONCILIATION
-F0: CLOSED — aut91 PASS
-F1: CLOSED — aut92 PASS
-F2: CLOSED — aut93 PASS
-F3: CLOSED — aut94 corrected PASS
-F4: CLOSED — aut95 PASS
-F5: CLOSED — aut96 PASS
-Latest validated matrix: matrix-aut96-brand-cand-006-phase5.xlsx
-Latest validated SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
-Next gate: F6 — Product Bases
+BRAND-CAND-006
+F0–F13 CLOSED
+Finalist: BASE-PET-003 — FINALIST — CONDITIONED
+Portfolio eligibility: ELIGIBLE FOR PORTFOLIO REVIEW
+First-stage fit: NOT FIRST-STAGE FIT
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
 F14: NOT OPENED
 ```
 
-`EVAL-0028` formaliza `Potencial de Marca = 4/5 / confianza Media` reutilizando `EVID-0229`.
+Latest validated matrix:
 
-`BASE-PET-003` conserva su identidad histórica. F6 deberá reconciliar Product Bases sin crear un nuevo `BASE-HOGAR-*` sólo por cambio de contexto de marca.
+```text
+matrix-aut104-brand-cand-006-phase13.xlsx
+SHA-256: a5caeebe1954b59ea1bf37e29b22e8961820305b743584eaf5355b0439cd056e
+Schema: full-matrix-v5 0.7.0
+Result: PASS
+```
 
-Research vigente: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
+Research completo: `SI-RESEARCH-056..069`.
 
-Marca Fitness mantiene `BRAND-CAND-010` con F0 abierto pero pendiente de materialización; su target `aut105` permanece detrás del lineage `aut96..aut104`.
+La reconciliación preservó `BASE-PET-003` `REUSE AS-IS`. La secuencia `aut96..aut104` está completa y `aut105` queda habilitado para `BRAND-CAND-010`.
 <!-- BRAND-CAND-006-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-005-CHECKPOINT:START -->
@@ -284,14 +286,14 @@ El primer módulo ejecutable del Intelligence Engine, **Matrix Validator v0.1.0*
 Repositorio ejecutable: smart-imports-engine
 Matrix Validator: v0.1.0
 Baseline técnica de release: aut32
-Matriz comercial vigente: `matrix-aut96-brand-cand-006-phase5.xlsx`
-Archivo: matrix-aut96-brand-cand-006-phase5.xlsx
+Matriz comercial vigente: `matrix-aut104-brand-cand-006-phase13.xlsx`
+Archivo: matrix-aut104-brand-cand-006-phase13.xlsx
 Schema vigente: full-matrix-v5 0.7.0
-Resultado aut96: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
-SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
+Resultado aut104: PASS / 0 errors / 0 warnings / 0 info / 0 limitations
+SHA-256: a5caeebe1954b59ea1bf37e29b22e8961820305b743584eaf5355b0439cd056e
 ```
 
-`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` se conserva como snapshot final de BRAND-CAND-003. `aut72` se conserva como snapshot final de BRAND-CAND-004. `aut90` se conserva como snapshot final de BRAND-CAND-005. `aut95` es el snapshot comercial validado más reciente de BRAND-CAND-006; F0–F4 están cerradas y F5 todavía no está cerrada.
+`aut32` sigue siendo la baseline técnica de la release. `aut36` se conserva como checkpoint comercial histórico del Nicho 3. `aut44` se conserva como snapshot final de la Golden Run de BRAND-CAND-001. `aut58` se conserva como snapshot final de BRAND-CAND-003. `aut72` se conserva como snapshot final de BRAND-CAND-004. `aut90` se conserva como snapshot final de BRAND-CAND-005. `aut104` es el snapshot final validado de BRAND-CAND-006; F0–F13 están cerradas, el candidato queda PORTFOLIO REVIEW READY / FREEZE y F14 no está abierto.
 
 Avances recientes:
 
@@ -352,9 +354,9 @@ docs/
 ## Próximos pasos
 
 1. Mantener `BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` en `FREEZE / PORTFOLIO REVIEW READY`; mantener `BRAND-CAND-002` en `DEFERRED / PAUSED`.
-2. Continuar `BRAND-CAND-006` desde F5: materializar `aut96`, validar con Matrix Validator y no abrir formalmente F6 hasta obtener `PASS`.
+2. Mantener `BRAND-CAND-006` en `PORTFOLIO REVIEW READY / FREEZE`; no abrir F14 antes de Portfolio Review transversal y revisión externa.
 3. En paralelo, preparar material de decisión para la reunión con el socio y definir qué finalistas deben pasar a revisión externa / despachante.
-4. Cuando `BRAND-CAND-006` complete F13 y su cierre documental, realizar `Portfolio Review` transversal.
+4. Realizar `Portfolio Review` transversal ahora que `BRAND-CAND-006` completó F13 y su cierre documental.
 5. Preparar la revisión externa —incluido despachante y validaciones regulatorias/técnicas cuando correspondan— sobre los finalistas seleccionados.
 6. Seleccionar qué Product Base justifica profundización procurement-grade y recién entonces decidir la apertura de F14.
 7. Mantener Matrix Validator v0.1.0 y `full-matrix-v5 0.7.0` cerrados salvo requerimiento comercial bloqueante.
@@ -365,6 +367,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.22.0 | 2026-10-05 | BRAND-CAND-006 completa la reconciliación F6–F13 sobre aut97–aut104 PASS; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; aut105 queda habilitado para BRAND-CAND-010. |
 | 1.21.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 — Brand Potential sobre aut96 PASS; EVAL-0028 = 4/5 Media; siguiente gate F6 — Product Bases. |
 | 1.20.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 de Marca Fitness; SI-RESEARCH-070 deja F0 analysis complete / matrix pending / not closed y aut105 reservado tras reconciliar aut96..aut104. |
 | 1.19.0 | 2026-10-05 | Marca Fitness cierra el primer bloque de screening: BRAND-CAND-007..010 quedan CORE / PASS TO METHOD V2; se formaliza la trazabilidad desde FIT-CAND y Method v2 continúa sin abrir. |

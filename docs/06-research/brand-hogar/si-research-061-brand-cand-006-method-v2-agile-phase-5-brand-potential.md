@@ -77,20 +77,19 @@ También:
 COMMERCIAL VALIDATION ≠ BRAND PROMISE VALIDATION
 ```
 
-## 5. Próximo checkpoint
+## 5. Checkpoint ejecutado
 
-Cuando la materialización XLSX vuelva a estar disponible:
+La materialización prevista fue completada y validada:
 
 ```text
 aut95 validated
-→ materializar aut96
-→ EVAL-0028
-→ Matrix Validator
-→ PASS
+→ aut96 materializada
+→ EVAL-0028 formalizada
+→ Matrix Validator PASS
 → F5 CLOSED
 ```
 
-`F6 — Product Bases` queda habilitada como próximo gate formal; todavía no está cerrada.
+La continuidad posterior de `BRAND-CAND-006` fue reconciliada hasta `F13 CLOSED — aut104 PASS`; F14 permanece `NOT OPENED`.
 
 ## Cierre formal — 2026-10-05
 

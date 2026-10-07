@@ -2,7 +2,7 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.15.0
+version: 0.16.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -33,32 +33,28 @@ BRAND-CAND-007..009
 
 Research: [`brand-fitness/README.md`](./brand-fitness/README.md).
 
-Target operativo futuro: `Nicho ID 37 / MATRIX_SCOPE_ALIAS / aut105`, sólo después de reconciliar la secuencia global pendiente `aut96..aut104`.
+La dependencia global previa quedó satisfecha con `BRAND-CAND-006 / aut104 PASS`. `Nicho ID 37 / MATRIX_SCOPE_ALIAS / aut105` queda habilitado como target operativo siguiente, todavía sin materializar.
 <!-- BRAND-FITNESS-RESEARCH-STATUS:END -->
 
 <!-- BRAND-CAND-006-RESEARCH-STATUS:START -->
 ## BRAND-CAND-006 — estado de investigación
 
 ```text
-F0 CLOSED → aut91 PASS
-F1 CLOSED → aut92 PASS
-F2 CLOSED → aut93 PASS
-F3 CLOSED → aut94 corrected PASS
-F4 CLOSED → aut95 PASS
-F5 CLOSED → aut96 PASS
-F6–F13 NOT CLOSED in current retrospective run
+F0–F13 CLOSED
+Snapshot final: matrix-aut104-brand-cand-006-phase13.xlsx
+Validator: PASS limpio
+SHA-256: a5caeebe1954b59ea1bf37e29b22e8961820305b743584eaf5355b0439cd056e
+Finalist: BASE-PET-003 — FINALIST — CONDITIONED
+Portfolio eligibility: ELIGIBLE FOR PORTFOLIO REVIEW
+First-stage fit: NOT FIRST-STAGE FIT
+Portfolio status: PORTFOLIO REVIEW READY
+Candidate status: FREEZE
+F14: NOT OPENED
 ```
 
-Último snapshot validado:
+Documentación completa: `SI-RESEARCH-056` a `SI-RESEARCH-069`.
 
-```text
-matrix-aut96-brand-cand-006-phase5.xlsx
-SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
-```
-
-Documentación: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
-
-Próximo gate formal: `F6 — Product Bases`.
+La identidad histórica `BASE-PET-003` se preserva `REUSE AS-IS`; no se creó un nuevo Product Base por el cambio de contexto de marca.
 <!-- BRAND-CAND-006-RESEARCH-STATUS:END -->
 
 <!-- BRAND-CANDIDATE-DOC-CLOSE-RULE:START -->
@@ -93,15 +89,19 @@ BRAND-CAND-002 → PASS TO METHOD V2 → DEFERRED / PAUSED
 BRAND-CAND-003 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-004 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
 BRAND-CAND-005 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
-BRAND-CAND-006 → F0–F5 CLOSED → NEXT F6 — PRODUCT BASES
-NEXT GATE → materializar aut96 + Matrix Validator PASS
+BRAND-CAND-006 → F0–F13 CLOSED → PORTFOLIO REVIEW READY / FREEZE
+NEXT GLOBAL GATE → Portfolio Review transversal + revisión externa
 ```
 
 `BRAND-CAND-003` queda documentado en `SI-RESEARCH-014` a `SI-RESEARCH-027`.
 
 `BRAND-CAND-004` queda documentado en `SI-RESEARCH-028` a `SI-RESEARCH-041`.
 
-`BRAND-CAND-005` queda documentado en `SI-RESEARCH-042` a `SI-RESEARCH-055`. La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, evidencia pública consolidada, estados, decisiones y continuidad.
+`BRAND-CAND-005` queda documentado en `SI-RESEARCH-042` a `SI-RESEARCH-055`.
+
+`BRAND-CAND-006` queda documentado en `SI-RESEARCH-056` a `SI-RESEARCH-069`. `BASE-PET-003` permanece como Product Base histórico reutilizado y finalista condicionado.
+
+La matriz privada conserva los datos estructurados y simulaciones; el repositorio público conserva metodología, evidencia pública consolidada, estados, decisiones y continuidad.
 
 La pausa de `BRAND-CAND-002` refleja una preocupación del founder sobre aprobación/costo regulatorio; queda pendiente de revisión externa y no constituye una conclusión regulatoria verificada.
 <!-- BRAND-HOGAR-RESEARCH-STATUS:END -->
@@ -211,6 +211,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.16.0 | 2026-10-05 | BRAND-CAND-006 completa F0–F13; SI-RESEARCH-062..069 documentan la reconciliación aut97–aut104 PASS; BASE-PET-003 queda finalista condicionado y el candidato PORTFOLIO REVIEW READY / FREEZE. |
 | 0.15.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 formaliza Potencial de Marca 4/5 Media; siguiente gate F6. |
 | 0.14.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010 con SI-RESEARCH-070 F0; análisis completo, materialización/Validator pendientes y aut105 reservado después del lineage aut96..aut104. |
 | 0.13.0 | 2026-10-03 | Se incorpora BRAND-CAND-006 SI-RESEARCH-056 a SI-RESEARCH-061; F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. |

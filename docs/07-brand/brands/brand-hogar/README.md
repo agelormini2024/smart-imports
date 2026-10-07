@@ -2,7 +2,7 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.15.0
+version: 0.16.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -31,7 +31,7 @@ Marca Hogar queda temporalmente en:
 PAUSA OPERATIVA — REVISIÓN EXTERNA
 ```
 
-La pausa no modifica los estados de Method v2. `BRAND-CAND-006` continúa formalmente con F0–F4 `CLOSED`, F5 con análisis completo y materialización pendiente, y F14 `NOT OPENED`.
+La pausa no modifica los estados de Method v2. `BRAND-CAND-006` completó retrospectivamente F0–F13 sobre `aut91..aut104`, queda `PORTFOLIO REVIEW READY / FREEZE`, y F14 permanece `NOT OPENED`.
 
 Ya se prepararon fuera del repositorio la comparativa ejecutiva de finalistas para reunión con socio y el paquete para revisión de despachante.
 
@@ -45,29 +45,32 @@ Checkpoint completo: [`Marca Hogar — pausa operativa para revisión externa`](
 <!-- BRAND-CAND-006-STATUS:START -->
 ## Estado vigente de BRAND-CAND-006
 
-`BRAND-CAND-006` es una ejecución retrospectiva sobre `BASE-PET-003`.
+`BRAND-CAND-006` completó la reconciliación retrospectiva de Method v2 sobre `BASE-PET-003`.
 
 ```text
-F0 CLOSED — aut91 PASS
-F1 CLOSED — aut92 PASS
-F2 CLOSED — aut93 PASS
-F3 CLOSED — aut94 corrected PASS
-F4 CLOSED — aut95 PASS
-F5 CLOSED — aut96 PASS
-F6 — NEXT GATE / NOT CLOSED
-F14 NOT OPENED
-```
+F0–F13 CLOSED
+Snapshot final: matrix-aut104-brand-cand-006-phase13.xlsx
+Validator: PASS limpio
+SHA-256: a5caeebe1954b59ea1bf37e29b22e8961820305b743584eaf5355b0439cd056e
 
-Último snapshot validado:
+BASE-PET-003
+→ FINALIST — CONDITIONED
+→ ELIGIBLE FOR PORTFOLIO REVIEW
+→ NOT FIRST-STAGE FIT
 
-```text
-matrix-aut96-brand-cand-006-phase5.xlsx
-SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
+BRAND-CAND-006
+→ PORTFOLIO REVIEW READY
+→ FREEZE
+
+F14
+→ NOT OPENED
 ```
 
 Brand Fit continúa `CONFIRMED` como `HIGH — STRONG ADJACENCY`; Brand Credibility permanece `CONDITIONED`.
 
-F6 debe reutilizar `BASE-PET-003` cuando corresponda y no duplicar Product Base sólo por el cambio de contexto de marca.
+Condiciones dominantes: demanda, safety, QA, logística, postventa y validación profesional de importación.
+
+La reconciliación preservó `BASE-PET-003` como Product Base histórico `REUSE AS-IS`; no se duplicó como `BASE-HOGAR-*`.
 <!-- BRAND-CAND-006-STATUS:END -->
 
 <!-- BRAND-CAND-005-STATUS:START -->
@@ -244,9 +247,9 @@ El portfolio se organiza por misiones y problemas, no por categorías comerciale
 | [`BRAND-CAND-003`](./candidates/brand-cand-003-domestic-air-treatment.md) | Tratamiento doméstico del aire interior | Mejorar condiciones del hogar | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — SORBENT / CLAIM / TEST METHOD / ELECTRICAL / EXTERNAL REVIEW` |
 | [`BRAND-CAND-004`](./candidates/brand-cand-004-domestic-energy-monitoring.md) | Monitoreo doméstico del consumo energético | Usar mejor los recursos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — ACCURACY / LOCAL ELECTRICAL FIT / PACKING / CERTIFICATION / EXTERNAL REVIEW` |
 | [`BRAND-CAND-005`](./candidates/brand-cand-005-organic-waste-processing.md) | Compostaje / procesamiento de residuos orgánicos | Reducir y gestionar residuos | `CORE` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — DEMAND / TECH-SERVICE / ELECTRICAL / FILTERS-SPARES / CERTIFICATION / CLAIM / EXTERNAL REVIEW` |
-| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `METHOD V2 RETROSPECTIVE — F0–F5 CLOSED / NEXT F6` | HIGH | `CONDITIONED — DEMAND / SAFETY / QA / LOGISTICS / POST-SALE / EXTERNAL REVIEW` |
+| [`BRAND-CAND-006`](./candidates/brand-cand-006-pet-003-retrospective-screening.md) | PET-003 — gestión automatizada de residuos sanitarios de mascotas | Resolver problemas domésticos recurrentes conectados con el núcleo | `STRONG ADJACENCY` | `PORTFOLIO REVIEW READY / FREEZE` | HIGH | `CONDITIONED — DEMAND / SAFETY / QA / LOGISTICS / POST-SALE / EXTERNAL REVIEW` |
 
-`BRAND-CAND-006` ya cuenta con investigación previa en Method v2. Su screening retrospectivo confirmó Brand Fit y la reconciliación actual está en curso; no reinicia la investigación comercial ya realizada.
+`BRAND-CAND-006` completó la reconciliación retrospectiva de Method v2 sin reiniciar la investigación comercial ya realizada. `BASE-PET-003` queda finalista condicionado y elegible para Portfolio Review.
 
 ## 10. Próximo candidato
 
@@ -260,17 +263,17 @@ CLOSED / FREEZE
 DEFERRED / PAUSED
 → BRAND-CAND-002
 
-CURRENT METHOD V2 EXECUTION
-→ BRAND-CAND-006 — F0–F4 CLOSED / F5 MATERIALIZATION PENDING
+CLOSED / FREEZE
+→ BRAND-CAND-006 — F0–F13 CLOSED / PORTFOLIO REVIEW READY
 
-AFTER F13 + DOCUMENTARY CLOSE
-→ Portfolio Review global
+NEXT GLOBAL GATE
+→ Portfolio Review transversal
 → revisión externa
 → selección para profundización
 → decisión sobre apertura de F14
 ```
 
-Regla vigente: `BRAND-CAND-006` ya está abierto. No cerrar F5 ni abrir formalmente F6 hasta materializar `aut96` y obtener `PASS`; no abrir Portfolio Review global hasta completar F13 y el cierre documental del candidato.
+Regla vigente: `BRAND-CAND-006` completó F13 y este checkpoint cierra su documentación. El siguiente gate global es Portfolio Review transversal + revisión externa antes de cualquier decisión sobre F14.
 
 `BRAND-CAND-001`, `BRAND-CAND-003`, `BRAND-CAND-004` y `BRAND-CAND-005` permanecen en `FREEZE` hasta la comparación transversal y la revisión externa.
 
@@ -286,6 +289,7 @@ Regla vigente: `BRAND-CAND-006` ya está abierto. No cerrar F5 ni abrir formalme
 
 | Version | Date | Change |
 |---|---|---|
+| 0.16.0 | 2026-10-05 | BRAND-CAND-006 completa la reconciliación retrospectiva F0–F13 sobre aut91–aut104; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE. |
 | 0.15.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; próximo gate F6 — Product Bases. |
 | 0.15.0 | 2026-10-05 | Marca Hogar entra en pausa operativa para reuniones con socio y despachante; se preservan estados Method v2 y se formaliza el checkpoint de revisión externa. |
 | 0.14.0 | 2026-10-03 | BRAND-CAND-006 queda F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente. Se abre Marca Fitness como exploración separada del territorio Hogar. |

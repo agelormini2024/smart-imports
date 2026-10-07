@@ -45,14 +45,14 @@ MATRIX_SCOPE_ALIAS: Marca Fitness — movimiento integrado a la jornada sedentar
 Target matrix: aut105
 ```
 
-`aut105` no debe materializarse desde `aut95`.
+`aut105` debe materializarse únicamente desde el lineage vigente que culmina en `aut104`, nunca desde el snapshot histórico `aut95`.
 
-La secuencia global `aut96..aut104` permanece reservada para reconciliar las fases pendientes de `BRAND-CAND-006`.
+La secuencia global `aut96..aut104` quedó reconciliada con `BRAND-CAND-006 / aut104 PASS`; `aut105` queda habilitado como siguiente target, todavía sin materializar.
 
 ## 4. Próximo gate
 
 ```text
-reconciliar lineage global hasta aut104
+materializar aut105 desde el lineage global vigente cerrado en aut104
 → materializar BRAND-CAND-010 F0 como aut105
 → Matrix Validator PASS
 → cerrar F0

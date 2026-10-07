@@ -144,6 +144,6 @@ Target matrix: aut105
 Next formal gate: F0 MATRIX PASS
 ```
 
-`aut105` queda reservado como target futuro y no debe materializarse desde `aut95`; antes debe reconciliarse el lineage global `aut96..aut104`.
+`aut105` queda habilitado como target siguiente: el lineage global `aut96..aut104` ya fue reconciliado y cerró con `aut104 PASS`.
 
 `BRAND-CAND-007`, `BRAND-CAND-008` y `BRAND-CAND-009` permanecen `ELIGIBLE — NOT OPENED`.

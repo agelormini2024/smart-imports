@@ -2,8 +2,8 @@
 id: brand-cand-006
 title: PET-003 Retrospective Brand Screening
 description: Screening retrospectivo de BASE-PET-003 para validar su pertenencia a Marca Hogar.
-version: 0.4.0
-status: method-v2-in-progress
+version: 0.5.0
+status: complete
 brand: brand-hogar
 created: 2026-09-17
 updated: 2026-10-05
@@ -24,7 +24,7 @@ related:
 # BRAND-CAND-006 — PET-003 (screening retrospectivo)
 
 <!-- BRAND-CAND-006-METHOD-V2-RESULT:START -->
-## Method v2 — reconciliación retrospectiva vigente
+## Method v2 — reconciliación retrospectiva cerrada
 
 El screening de marca continúa válido:
 
@@ -35,7 +35,7 @@ Brand Credibility: CONDITIONED
 Territory Risk: MEDIUM
 ```
 
-La reconciliación Method v2 se encuentra en:
+Estado Method v2:
 
 ```text
 F0 CLOSED — aut91 PASS
@@ -44,29 +44,57 @@ F2 CLOSED — aut93 PASS
 F3 CLOSED — aut94 corrected PASS
 F4 CLOSED — aut95 PASS
 F5 CLOSED — aut96 PASS
-F6–F13 NOT CLOSED in current run
+F6 CLOSED — aut97 PASS
+F7 CLOSED — aut98 PASS
+F8 CLOSED — aut99 PASS
+F9 CLOSED — aut100 PASS
+F10 CLOSED — aut101 PASS
+F11 CLOSED — aut102 PASS
+F12 CLOSED — aut103 PASS
+F13 CLOSED — aut104 PASS
 F14 NOT OPENED
 ```
 
 Última matriz validada:
 
 ```text
-matrix-aut96-brand-cand-006-phase5.xlsx
-SHA-256: 56838f58bcf056178068e5a553c07060dbde62faa256d85454c0ff2bdd19014e
+matrix-aut104-brand-cand-006-phase13.xlsx
+SHA-256: a5caeebe1954b59ea1bf37e29b22e8961820305b743584eaf5355b0439cd056e
+Schema: full-matrix-v5 0.7.0
+Result: PASS
+errors: 0
+warnings: 0
+info: 0
+limitations: 0
 ```
 
-F5 formaliza:
+Resultado final:
 
 ```text
-EVAL-0028
-Potencial de Marca: 4 / 5
-Confianza: Media
-Soporte: EVID-0229
+BASE-PET-003
+→ FINALIST — CONDITIONED
+→ ELIGIBLE FOR PORTFOLIO REVIEW
+→ NOT FIRST-STAGE FIT
+
+BRAND-CAND-006
+→ PORTFOLIO REVIEW READY
+→ FREEZE
 ```
 
-Research vigente: `SI-RESEARCH-056` a `SI-RESEARCH-061`.
+Condiciones dominantes:
 
-Próximo gate: `F6 — Product Bases`, preservando la identidad histórica de `BASE-PET-003`.
+```text
+DEMAND
+SAFETY
+QA
+LOGISTICS
+POST-SALE
+PROFESSIONAL IMPORT VALIDATION
+```
+
+Research completo: `SI-RESEARCH-056` a `SI-RESEARCH-069`.
+
+La reconciliación preservó `BASE-PET-003` como identidad histórica `REUSE AS-IS`; no se creó un `BASE-HOGAR-*` duplicado.
 <!-- BRAND-CAND-006-METHOD-V2-RESULT:END -->
 
 ## 1. Identificación
@@ -386,5 +414,6 @@ Category membership ≠ Brand Fit
 
 | Version | Fecha | Cambio |
 |---|---|---|
+| 0.5.0 | 2026-10-05 | Reconciliación Method v2 completa: F6–F13 cierran sobre aut97–aut104 PASS; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; F14 NOT OPENED. |
 | 0.4.0 | 2026-10-05 | F5 — Brand Potential queda CLOSED sobre aut96 PASS; EVAL-0028 = 4/5 Media; próximo gate F6 — Product Bases. |
 | 0.3.0 | 2026-10-03 | Se documenta reconciliación retrospectiva Method v2: F0–F4 CLOSED sobre aut91–aut95 PASS; F5 análisis completo con materialización pendiente; F14 NOT OPENED. |
