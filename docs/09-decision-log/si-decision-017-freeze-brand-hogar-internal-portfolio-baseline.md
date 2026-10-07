@@ -60,7 +60,7 @@ Se decide:
 - economía fuerte;
 - carga operativa razonable para primera etapa.
 
-`BASE-HOGAR-006` conserva una economía muy robusta y una arquitectura localizada, pero su compatibilidad eléctrica y gate regulatorio justifican mantenerlo como backup inmediato.
+`BASE-HOGAR-006` conserva una economía muy robusta y una arquitectura localizada, pero la demanda local todavía no está demostrada. A ese gap se suman la compatibilidad eléctrica y el gate regulatorio; por eso permanece como backup inmediato condicionado y no comparte el rol de lead.
 
 `BASE-HOGAR-010` y `BASE-HOGAR-002` siguen siendo oportunidades defendibles, aunque presentan una carga mayor de claims/filtros o instalación/compatibilidad.
 

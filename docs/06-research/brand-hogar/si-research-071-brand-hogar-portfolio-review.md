@@ -115,17 +115,29 @@ Fortalezas:
 - propuesta de valor simple;
 - arquitectura localizada;
 - ausencia de dependencia cloud/app crítica;
-- adecuación a primera etapa `DEFENDIBLE — CONDITIONED`.
+- adecuación operativa a primera etapa `DEFENDIBLE — CONDITIONED`.
 
-Condición dominante:
+Señal de demanda local:
 
+```text
+MERCADO LIBRE OFFER SIGNAL: VERY LIMITED / NO DIRECT LOCAL CATEGORY OBSERVED
+MERCADO LIBRE DEMAND SIGNAL: WEAK / NOT DEMONSTRATED
+```
+
+El micro-review posterior al Portfolio Review no encontró una categoría local visible de soluciones equivalentes de `detección de fuga + corte automático` destinadas específicamente a proteger un artefacto. Las búsquedas tienden a devolver electroválvulas/repuestos de lavarropas, que no son comparables funcionales y no deben contarse como evidencia de demanda de `BASE-HOGAR-006`.
+
+Condiciones dominantes:
+
+- validar demanda local real;
 - compatibilidad eléctrica;
 - requisitos regulatorios aplicables en Argentina.
 
 Resultado:
 
 ```text
-FIRST-STAGE BACKUP
+FIRST-STAGE BACKUP — CONDITIONED
+ECONOMICS STRONG
+LOCAL DEMAND SIGNAL NOT YET CONFIRMED
 EXTERNAL REVIEW REQUIRED
 F14 NOT OPENED
 ```
@@ -228,6 +240,8 @@ DEFERRED
 ```
 
 Dentro de Tier B no se fuerza un ranking adicional antes del gate externo.
+
+La posición de `BASE-HOGAR-006` como backup no implica demanda validada. Su fortaleza proviene principalmente de economía y operabilidad; la señal de demanda local permanece `WEAK / NOT DEMONSTRATED`.
 
 ## 6. Qué significa esta decisión
 
