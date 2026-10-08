@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.23.0
+version: 1.23.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-10-07
+updated: 2026-10-08
 tags:
   - status
   - handoff
@@ -40,58 +40,41 @@ phase: research
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
 <!-- FITNESS-PRESCREENING-V02:START -->
-## Checkpoint operativo — Marca Fitness Method v2 / 2026-10-05
+## Checkpoint operativo — BRAND-CAND-010 Method v2 cerrado / 2026-10-08
 
 ```text
-SCREENING BLOCK: CLOSED
+SCREENING: CLOSED
+METHOD V2: F0–F13 CLOSED
+FINAL MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+FINAL SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+Matrix Validator: PASS / errors 0 / warnings 0 / info 0
+F14: NOT OPENED
 
-BRAND-CAND-007 → CORE / PASS TO METHOD V2 / NOT OPENED
-BRAND-CAND-008 → CORE / PASS TO METHOD V2 / NOT OPENED
-BRAND-CAND-009 → CORE / PASS TO METHOD V2 / NOT OPENED
-BRAND-CAND-010 → CORE / PASS TO METHOD V2 / F0 OPENED
+FINAL RESULT: NO PORTFOLIO FINALIST
 
-FIT-CAND-003 → MERGED
-FIT-CAND-004 → MERGED
-FIT-CAND-006 → TRANSVERSAL CAPABILITY
+BASE-FIT-001 — Walking pad compacta under-desk
+→ STOP — REOPENABLE / LOGISTICS GATE
+→ principal hipótesis de reapertura
 
-SI-RESEARCH-070:
-F0 ANALYSIS COMPLETE
-MATRIX MATERIALIZATION PENDING
-MATRIX VALIDATOR PENDING
-F0 NOT CLOSED
+BASE-FIT-002 — Pedalera compacta under-desk
+→ STOP — REOPENABLE / DEMAND + LOGISTICS GATE
 
-Product Bases Fitness: NOT DEFINED
+BASE-FIT-003 — Elíptica compacta under-desk
+→ DEFER — LOW DEMAND PROOF
+
+BASE-FIT-004 — Balance board para standing desk
+→ DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
+
+BRAND-CAND-007 → ELIGIBLE — NOT OPENED
+BRAND-CAND-008 → ELIGIBLE — NOT OPENED
+BRAND-CAND-009 → ELIGIBLE — NOT OPENED
 ```
 
-Se conserva el lifecycle de IDs:
+La walking pad queda como principal hipótesis de reapertura porque fue la única arquitectura con demanda local específica defendible, pero el screen de landed cost aéreo la deja fuera de shortlist final. Reabrir exige evidencia logística marítima/LCL decision-grade y validación de requisitos eléctricos, QA y postventa.
 
-```text
-FIT-CAND-* = hipótesis local / histórica
-BRAND-CAND-* = candidato formal global
-```
+`NO FINALIST` no equivale a descartar definitivamente el candidato. Significa que, con la evidencia disponible y los supuestos comparables del Method v2, ninguna Product Base justifica pasar hoy a Portfolio Review como finalista.
 
-Scope operativo reservado:
-
-```text
-Nicho ID target: 37
-MATRIX_SCOPE_ALIAS: Marca Fitness — movimiento integrado a la jornada sedentaria
-Target matrix: aut105
-```
-
-Dependencia global:
-
-```text
-aut96..aut104
-→ reconciliación completada de BRAND-CAND-006; aut104 PASS
-→ aut105 habilitado como siguiente target global desde aut104
-```
-
-Siguiente gate Fitness: materializar F0 de `BRAND-CAND-010` sobre `aut105`, obtener Matrix Validator PASS y recién entonces cerrar F0 / abrir F1.
-
-La prioridad comercial inmediata de Marca Hogar permanece sin cambios.
-
-Fuente de screening: `docs/07-brand/brands/brand-fitness/candidates/README.md`.
-Research F0: `docs/06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md`.
+Próximo gate de Marca Fitness: cerrar este checkpoint mediante revisión + commit/push humano y recién después seleccionar cuál de `BRAND-CAND-007..009` abrir. No abrir candidatos en paralelo por defecto.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
@@ -806,6 +789,7 @@ El trigger ya fue cumplido. El entregable permanece como material de reunión a 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.23.1 | 2026-10-08 | BRAND-CAND-010 completa Method v2 F0–F13 sobre aut105–aut118 PASS; NO FINALIST / FREEZE; BASE-FIT-001 queda principal reapertura por logistics gate; F14 no se abre. |
 | 1.23.0 | 2026-10-07 | Marca Hogar cierra Portfolio Review interno; BASE-HOGAR-016 lead, BASE-HOGAR-006 backup; baseline congelada, revisión externa pendiente y workstream principal cambia a Marca Fitness / aut105. |
 | 1.22.0 | 2026-10-05 | BRAND-CAND-006 completa F6–F13 sobre aut97–aut104 PASS; BASE-PET-003 queda FINALIST — CONDITIONED / ELIGIBLE FOR PORTFOLIO REVIEW / NOT FIRST-STAGE FIT; candidato PORTFOLIO REVIEW READY / FREEZE; aut105 queda desbloqueado para BRAND-CAND-010. |
 | 1.21.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 = 4/5 Media; siguiente gate F6 y aut97. |

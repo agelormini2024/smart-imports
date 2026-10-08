@@ -2,15 +2,34 @@
 id: brand-fitness-candidates-readme
 title: Marca Fitness — Brand Candidates
 description: Índice de expedientes de Brand Candidate Screening de Marca Fitness.
-version: 0.2.0
+version: 0.2.1
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-08
 ---
 
 # Marca Fitness — Brand Candidates
+
+<!-- BRAND-CAND-010-DOCUMENTARY-CHECKPOINT:START -->
+## Method v2 execution status
+
+```text
+SCREENINGS CLOSED: 4
+PASS TO METHOD V2: 4
+METHOD V2 COMPLETED: 1
+METHOD V2 NOT OPENED: 3
+PRODUCT BASES DEFINED: 4
+
+BRAND-CAND-010 → F0–F13 CLOSED / NO FINALIST / FREEZE / F14 NOT OPENED
+BRAND-CAND-007 → ELIGIBLE — NOT OPENED
+BRAND-CAND-008 → ELIGIBLE — NOT OPENED
+BRAND-CAND-009 → ELIGIBLE — NOT OPENED
+```
+
+`BRAND-CAND-010` finaliza sin Portfolio Finalist bajo el screen actual. `BASE-FIT-001` queda como principal hipótesis de reapertura, condicionada por logística marítima/LCL decision-grade.
+<!-- BRAND-CAND-010-DOCUMENTARY-CHECKPOINT:END -->
 
 ## 1. Estado
 

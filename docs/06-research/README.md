@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.17.0
+version: 0.17.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-07
+updated: 2026-10-08
 tags:
   - smart-imports
   - research
@@ -22,18 +22,20 @@ tags:
 
 ```text
 BRAND-CAND-010
-→ Method v2 F0 OPENED
-→ ANALYSIS COMPLETE
-→ MATRIX MATERIALIZATION PENDING
-→ F0 NOT CLOSED
+→ F0–F13 CLOSED
+→ FINAL MATRIX: aut118 PASS
+→ SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+→ NO PORTFOLIO FINALIST
+→ FREEZE
+→ F14 NOT OPENED
 
 BRAND-CAND-007..009
 → ELIGIBLE — NOT OPENED
 ```
 
-Research: [`brand-fitness/README.md`](./brand-fitness/README.md).
+Research completo: [`brand-fitness/README.md`](./brand-fitness/README.md).
 
-La dependencia global previa quedó satisfecha con `BRAND-CAND-006 / aut104 PASS`. `Nicho ID 37 / MATRIX_SCOPE_ALIAS / aut105` queda habilitado como target operativo siguiente, todavía sin materializar.
+La serie documental de `BRAND-CAND-010` es `SI-RESEARCH-070`, `SI-RESEARCH-072..084`; `SI-RESEARCH-071` pertenece al Portfolio Review de Marca Hogar y no se reutiliza.
 <!-- BRAND-FITNESS-RESEARCH-STATUS:END -->
 
 <!-- BRAND-CAND-006-RESEARCH-STATUS:START -->
@@ -205,6 +207,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.17.1 | 2026-10-08 | Se publica el cierre completo de BRAND-CAND-010 F0–F13; aut118 PASS, NO FINALIST, FREEZE y F14 NOT OPENED. |
 | 0.17.0 | 2026-10-07 | SI-RESEARCH-071 cierra Portfolio Review interno de Marca Hogar; BASE-HOGAR-016 lead, BASE-HOGAR-006 backup, baseline congelada y revisión externa pendiente. |
 | 0.16.0 | 2026-10-05 | BRAND-CAND-006 completa F0–F13; SI-RESEARCH-062..069 documentan la reconciliación aut97–aut104 PASS; BASE-PET-003 queda finalista condicionado y el candidato PORTFOLIO REVIEW READY / FREEZE. |
 | 0.15.0 | 2026-10-05 | BRAND-CAND-006 cierra F5 sobre aut96 PASS; EVAL-0028 formaliza Potencial de Marca 4/5 Media; siguiente gate F6. |

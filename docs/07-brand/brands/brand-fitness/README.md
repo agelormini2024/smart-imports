@@ -1,13 +1,13 @@
 ---
 id: brand-fitness
-title: Marca Fitness — Screening cerrado / Method v2 iniciado
-description: Estado vigente de Marca Fitness con screening cerrado y BRAND-CAND-010 abierto en F0 de Method v2.
-version: 0.5.0
+title: Marca Fitness — Screening cerrado / Method v2
+description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 completado hasta F13 y BRAND-CAND-007..009 elegibles todavía no abiertos.
+version: 0.5.1
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-03
-updated: 2026-10-05
+updated: 2026-10-08
 tags:
   - brand
   - fitness
@@ -20,6 +20,44 @@ related:
 ---
 
 # Marca Fitness — Screening cerrado
+
+<!-- BRAND-CAND-010-DOCUMENTARY-CHECKPOINT:START -->
+## Checkpoint operativo — BRAND-CAND-010 Method v2 cerrado / 2026-10-08
+
+```text
+SCREENING: CLOSED
+METHOD V2: F0–F13 CLOSED
+FINAL MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+FINAL SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+Matrix Validator: PASS / errors 0 / warnings 0 / info 0
+F14: NOT OPENED
+
+FINAL RESULT: NO PORTFOLIO FINALIST
+
+BASE-FIT-001 — Walking pad compacta under-desk
+→ STOP — REOPENABLE / LOGISTICS GATE
+→ principal hipótesis de reapertura
+
+BASE-FIT-002 — Pedalera compacta under-desk
+→ STOP — REOPENABLE / DEMAND + LOGISTICS GATE
+
+BASE-FIT-003 — Elíptica compacta under-desk
+→ DEFER — LOW DEMAND PROOF
+
+BASE-FIT-004 — Balance board para standing desk
+→ DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
+
+BRAND-CAND-007 → ELIGIBLE — NOT OPENED
+BRAND-CAND-008 → ELIGIBLE — NOT OPENED
+BRAND-CAND-009 → ELIGIBLE — NOT OPENED
+```
+
+La walking pad queda como principal hipótesis de reapertura porque fue la única arquitectura con demanda local específica defendible, pero el screen de landed cost aéreo la deja fuera de shortlist final. Reabrir exige evidencia logística marítima/LCL decision-grade y validación de requisitos eléctricos, QA y postventa.
+
+`NO FINALIST` no equivale a descartar definitivamente el candidato. Significa que, con la evidencia disponible y los supuestos comparables del Method v2, ninguna Product Base justifica pasar hoy a Portfolio Review como finalista.
+
+Próximo gate de Marca Fitness: cerrar este checkpoint mediante revisión + commit/push humano y recién después seleccionar cuál de `BRAND-CAND-007..009` abrir. No abrir candidatos en paralelo por defecto.
+<!-- BRAND-CAND-010-DOCUMENTARY-CHECKPOINT:END -->
 
 ## 1. Estado vigente
 

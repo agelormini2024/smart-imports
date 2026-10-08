@@ -3,11 +3,11 @@ id: si-research-070
 title: BRAND-CAND-010 — Method v2 Agile — Fase 0 — Research Brief
 description: Research Brief prospectivo para movimiento integrado a la jornada sedentaria dentro de Marca Fitness.
 version: 0.1.0
-status: pending-materialization
+status: closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-08
 brand: brand-fitness
 brand_candidate: brand-cand-010
 method: method-v2-agile
@@ -21,9 +21,9 @@ phase: F0
 ```text
 ANALYSIS COMPLETE
 DELTA DEFINED
-MATRIX MATERIALIZATION PENDING
-MATRIX VALIDATOR PENDING
-F0 NOT CLOSED
+MATRIX MATERIALIZED — aut105
+MATRIX VALIDATOR PASS
+F0 CLOSED
 ```
 
 `BRAND-CAND-010` es el primer candidato de Marca Fitness seleccionado para abrir Method v2.
@@ -289,9 +289,9 @@ Estado formal:
 
 ```text
 F0 ANALYSIS COMPLETE
-F0 MATRIX MATERIALIZATION PENDING
-F0 MATRIX VALIDATOR PENDING
-F0 NOT CLOSED
+F0 MATRIX MATERIALIZED — aut105
+F0 MATRIX VALIDATOR PASS
+F0 CLOSED
 ```
 
 ## 11. Próximo gate
@@ -318,3 +318,14 @@ BRAND-CAND-009
 ```
 
 La apertura de `BRAND-CAND-010` no implica prioridad comercial sobre Marca Hogar ni recomendación de importación.
+
+
+<!-- BRAND-CAND-010-F0-CLOSURE:START -->
+## Documentary reconciliation — 2026-10-08
+
+```text
+F0 CLOSED — aut105 PASS
+SHA-256: a36a6ed5cdce69b526107883fd7a236ba1cbfcf2c7a4f171aac29694da5783d7
+Next completed phase: F1 — Market / Solution Map
+```
+<!-- BRAND-CAND-010-F0-CLOSURE:END -->

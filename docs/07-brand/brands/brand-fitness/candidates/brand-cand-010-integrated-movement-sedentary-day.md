@@ -2,15 +2,52 @@
 id: brand-cand-010
 title: Movimiento integrado a la jornada sedentaria
 description: Brand Candidate Screening prospectivo de movimiento integrado a la jornada sedentaria para Marca Fitness.
-version: 0.2.0
-status: pass-to-method-v2
+version: 0.2.1
+status: method-v2-closed-no-finalist
 brand: brand-fitness
-method_v2_status: phase0-pending-materialization
+method_v2_status: f0-f13-closed-freeze
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-08
 ---
 
 # BRAND-CAND-010 — Movimiento integrado a la jornada sedentaria
+
+<!-- BRAND-CAND-010-FINAL-CHECKPOINT:START -->
+## Method v2 final checkpoint — 2026-10-08
+
+```text
+F0–F13: CLOSED
+FINAL MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+FINAL SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+VALIDATOR: PASS / 0 errors / 0 warnings / 0 info
+FINAL RESULT: NO PORTFOLIO FINALIST
+FREEZE: YES
+F14: NOT OPENED
+```
+
+### Product Bases
+
+```text
+BASE-FIT-001 — Walking pad compacta bajo escritorio
+→ STOP — REOPENABLE / LOGISTICS GATE
+→ principal hipótesis de reapertura
+
+BASE-FIT-002 — Pedalera compacta sentada / under-desk
+→ STOP — REOPENABLE / DEMAND + LOGISTICS GATE
+
+BASE-FIT-003 — Elíptica compacta sentada bajo escritorio
+→ DEFER — LOW DEMAND PROOF
+
+BASE-FIT-004 — Tabla de movimiento / balance para standing desk
+→ DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
+```
+
+La principal conclusión es que la walking pad sí alcanzó señal local de demanda y un origen defendible, pero no supera el Landed Cost Screen aéreo. No se transforma esa señal comercial en recomendación de importación sin resolver primero logística marítima/LCL, requisitos eléctricos, QA y postventa.
+
+Reapertura permitida sólo ante evidencia nueva decision-grade que cambie las condiciones dominantes.
+
+Research oficial: `SI-RESEARCH-070`, `SI-RESEARCH-072..084`.
+<!-- BRAND-CAND-010-FINAL-CHECKPOINT:END -->
 
 ## 1. Identidad
 
