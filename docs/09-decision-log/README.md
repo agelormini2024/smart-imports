@@ -2,7 +2,7 @@
 id: si-decision-log-readme
 title: Decision Log Index
 description: Índice de decisiones estratégicas, metodológicas y técnicas de Smart Imports.
-version: 0.7.1
+version: 0.7.2
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -124,3 +124,9 @@ Una decisión `approved` puede conservar valor histórico aunque una decisión p
 
 Aprobada. Desde el checkpoint de governance del 2026-10-10, un gate Method v2 requiere Data Fidelity Preflight PASS + Matrix Validator PASS.
 <!-- SI-DECISION-018:END -->
+
+<!-- SI-DECISION-019:START -->
+## SI-DECISION-019 — Require Marketplace Price + FX Completeness
+
+Aprobada. Desde el checkpoint aut121 corrected, toda evidencia marketplace activa desde F3 debe conservar Precio ARS + Precio USD + FX trazable + ventas visibles/raw + source binding.
+<!-- SI-DECISION-019:END -->

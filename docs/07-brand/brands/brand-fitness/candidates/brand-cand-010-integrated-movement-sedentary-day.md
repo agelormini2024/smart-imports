@@ -2,7 +2,7 @@
 id: brand-cand-010
 title: Movimiento integrado a la jornada sedentaria
 description: Brand Candidate Screening prospectivo de movimiento integrado a la jornada sedentaria para Marca Fitness.
-version: 0.2.2
+version: 0.2.3
 status: method-v2-closed-no-finalist
 brand: brand-fitness
 method_v2_status: f0-f13-closed-freeze
@@ -19,8 +19,8 @@ updated: 2026-10-10
 F0–F13: CLOSED
 F13 MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
 F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
-POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
-POST-CLOSE SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+POST-CLOSE BASELINE: matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx
+POST-CLOSE SHA-256: 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc
 DATA FIDELITY: PASS
 MATRIX VALIDATOR: PASS / 0 errors / 0 warnings / 0 info
 FINAL RESULT: NO PORTFOLIO FINALIST
@@ -191,15 +191,17 @@ La próxima acción de Marca Fitness es seleccionar exactamente uno entre `BRAND
 <!-- POST-CLOSE-RECONCILIATION:START -->
 ## BRAND-CAND-010 — baseline reconciliada
 
-`matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2` es la baseline post-close vigente tras dual PASS.
-
-Lineage:
+`matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx` / `7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc` es la baseline post-close vigente tras dual PASS.
 
 ```text
 aut118 → F13 histórico / 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
-aut119 corrected → reconciliación intermedia / superseded antes de publicación
-aut120 → baseline post-close vigente / 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+aut119 corrected → superseded before publication
+aut120 → data-fidelity baseline / 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2 / SUPERSEDED
+aut121 → preflight PASS / Matrix Validator FAIL por vocabulario Rol=SOPORTE
+aut121 corrected → CURRENT / dual PASS / 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc
 ```
 
-La reconciliación no cambia la decisión: NO PORTFOLIO FINALIST / FREEZE / F14 NOT OPENED.
+Marketplace economics queda reconciliado con ledger `Verificaciones ML`, Precio ARS/USD, ventas visibles y FX trazable.
+
+La decisión permanece: NO PORTFOLIO FINALIST / FREEZE / F0–F13 CLOSED / F14 NOT OPENED.
 <!-- POST-CLOSE-RECONCILIATION:END -->

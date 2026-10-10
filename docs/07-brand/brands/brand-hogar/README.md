@@ -2,12 +2,12 @@
 id: brand-hogar
 title: Marca Hogar
 description: Primera instancia real del Brand System de Smart Imports.
-version: 0.17.0
+version: 0.17.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-16
-updated: 2026-10-07
+updated: 2026-10-10
 tags:
   - brand
   - home
@@ -340,3 +340,29 @@ Fase 13 consolida la shortlist final: `BASE-HOGAR-002` y `BASE-HOGAR-006` quedan
 El Portfolio Review interno ya está cerrado. El gate pendiente es la revisión externa antes de cualquier decisión sobre F14 o procurement.
 
 Fuente vigente: [SI-RESEARCH-013 — Fase 13 Shortlist final](../../../06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md).
+
+<!-- METHOD-V2-MARKETPLACE-ECONOMICS-DEBT:START -->
+## Deuda de reconciliación marketplace — governance 2026-10-10
+
+`SI-DECISION-019` detecta deuda histórica de trazabilidad marketplace en Marca Hogar:
+
+```text
+ML-0089..ML-0151
+63 publicaciones auditadas
+2 Precio ARS históricos faltantes
+63 Precio USD históricos faltantes
+15 Ventas visibles en blanco
+1 Ventas visibles con interpretación
+```
+
+Tratamiento obligatorio:
+
+- preservar la captura histórica;
+- no aplicar FX retrospectivo como si hubiese pertenecido a la fecha original;
+- recuperar source binding cuando sea posible;
+- agregar verificación fechada con Precio ARS + Precio USD + FX + FX date/basis + ventas visibles;
+- marcar fuentes irrecuperables `HISTORICAL_ONLY / SOURCE_UNAVAILABLE`;
+- reabrir una fase sólo si la corrección puede cambiar score, gate o decisión.
+
+Esta deuda no invalida automáticamente decisiones históricas; exige reconciliación antes de reutilizar esos datos como baseline vigente.
+<!-- METHOD-V2-MARKETPLACE-ECONOMICS-DEBT:END -->

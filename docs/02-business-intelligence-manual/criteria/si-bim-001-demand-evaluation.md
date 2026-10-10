@@ -2,7 +2,7 @@
 id: si-bim-001
 title: Demand Evaluation
 description: Protocolo metodológico para evaluar el criterio Demanda dentro de la Matriz de Oportunidades de Smart Imports.
-version: 0.3.0
+version: 0.4.0
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -556,6 +556,49 @@ El procedimiento general está definido en `SI-BIM-PROC-003 — Method v2 Execut
 
 ---
 
+<!-- METHOD-V2-MARKETPLACE-COMMERCIAL-FX:START -->
+## 19.2 Method v2 — Marketplace Commercial + FX Addendum
+
+Cuando Mercado Libre u otro marketplace se utiliza para evaluar Demanda, la evidencia comercial debe conservar tanto la señal de tracción como el contexto económico observable.
+
+Registrar como mínimo:
+
+```text
+Producto / modelo
+Fecha
+URL / source binding
+Precio ARS
+Ventas visibles | No informadas
+FX ARS/USD
+FX Fecha
+FX Fuente / Basis
+Precio USD
+Tipo de Publicación
+```
+
+La conversión USD debe ser reconstruible:
+
+```text
+Precio USD = ROUND(Precio ARS / FX ARS/USD, 2)
+```
+
+Reglas:
+
+```text
+VISIBLE SALES ≠ MARKET SIZE
+SELLER SALES ≠ PRODUCT SALES
+ADJACENT SALES ≠ JOB-SPECIFIC DEMAND
+CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
+PRICE WITHOUT FX TRACEABILITY ≠ VALID USD EVIDENCE
+```
+
+Una publicación sin contador visible puede seguir siendo evidencia de oferta, pero su campo de ventas debe ser `No informadas`.
+
+Un precio sin FX trazable no debe presentarse como precio USD válido.
+
+La reverificación posterior se registra en `Verificaciones ML`; no sustituye silenciosamente el snapshot histórico.
+<!-- METHOD-V2-MARKETPLACE-COMMERCIAL-FX:END -->
+
 ## 20. Changelog
 
 | Version | Date | Change |
@@ -563,3 +606,4 @@ El procedimiento general está definido en `SI-BIM-PROC-003 — Method v2 Execut
 | 0.1.0 | 2026-07-02 | Versión inicial del protocolo de evaluación de Demanda. |
 | 0.2.0 | 2026-07-10 | Se actualizó el protocolo con el método operativo validado en el piloto Energía Solar Portátil, separación de capas, uso central de Evidencias y exclusión de generadores solares del nicho portátil. |
 | 0.3.0 | 2026-10-10 | Se preserva el protocolo histórico y se agrega el contrato de fidelidad Method v2: raw evidence literal, boundary DIRECT/ADJACENT/SUBSTITUTE, trazabilidad temporal y dual gate. |
+| 0.4.0 | 2026-10-10 | Agrega contrato marketplace obligatorio: Precio ARS/USD, ventas visibles, FX trazable, ledger de verificación y regla seller-sales ≠ product-sales. |

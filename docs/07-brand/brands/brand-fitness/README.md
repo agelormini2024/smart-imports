@@ -2,7 +2,7 @@
 id: brand-fitness
 title: Marca Fitness — Screening cerrado / Method v2
 description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 completado hasta F13 y BRAND-CAND-007..009 elegibles todavía no abiertos.
-version: 0.5.2
+version: 0.5.3
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -29,8 +29,8 @@ SCREENING: CLOSED
 METHOD V2: F0–F13 CLOSED
 F13 MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
 F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
-POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
-POST-CLOSE SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+POST-CLOSE BASELINE: matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx
+POST-CLOSE SHA-256: 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc
 Data Fidelity Preflight: PASS
 Matrix Validator: PASS / errors 0 / warnings 0 / info 0
 F14: NOT OPENED
@@ -148,7 +148,17 @@ BRAND-CAND-010 creó formalmente `BASE-FIT-001`..`BASE-FIT-004` en F6; ninguno q
 <!-- BRAND-CAND-010-RECONCILIATION:START -->
 ## BRAND-CAND-010 — baseline reconciliada
 
-`matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2` es la baseline post-close vigente tras dual PASS.
+`matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx` / `7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc` es la baseline post-close vigente tras dual PASS.
 
-`aut118` permanece como snapshot histórico F13 (`54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a`). `aut119 corrected` queda superseded antes de publicación. La reconciliación corrige fidelidad/trazabilidad sin cambiar la decisión: NO PORTFOLIO FINALIST / FREEZE / F14 NOT OPENED.
+Lineage:
+
+```text
+aut118 → F13 histórico / 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+aut119 corrected → reconciliación intermedia / superseded before publication
+aut120 → post-close data-fidelity baseline / 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2 / SUPERSEDED
+aut121 → first marketplace-economics materialization / validator vocabulary FAIL only
+aut121 corrected → CURRENT POST-CLOSE BASELINE / 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc / dual PASS
+```
+
+La reconciliación amplía la trazabilidad de marketplace con Precio ARS/USD + FX + ventas visibles y no cambia la decisión: NO PORTFOLIO FINALIST / FREEZE / F14 NOT OPENED.
 <!-- BRAND-CAND-010-RECONCILIATION:END -->

@@ -2,7 +2,7 @@
 id: si-bim-readme
 title: Business Intelligence Manual Index
 description: Índice principal del Business Intelligence Manual de Smart Imports. Organiza la metodología de investigación, evaluación, evidencias, scoring y priorización de nichos.
-version: 0.3.1
+version: 0.3.2
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -230,3 +230,11 @@ Estado del piloto:
 - `procedures/si-bim-proc-003-method-v2-execution-contract.md` — contrato operativo aprobado.
 - Gate obligatorio: Data Fidelity Preflight PASS + Matrix Validator PASS.
 <!-- METHOD-V2-EXECUTION-CONTRACT:END -->
+
+<!-- METHOD-V2-MARKETPLACE-CONTRACT:START -->
+## Method v2 — Marketplace economics contract
+
+`SI-BIM-PROC-003 v1.0.3` y `SI-DECISION-019` hacen obligatoria desde F3 la trazabilidad `Precio ARS → FX → Precio USD`, junto con ventas visibles raw y source binding.
+
+La validación semántica se ejecuta mediante `scripts/validate-method-v2-data-fidelity.py` antes del Matrix Validator.
+<!-- METHOD-V2-MARKETPLACE-CONTRACT:END -->

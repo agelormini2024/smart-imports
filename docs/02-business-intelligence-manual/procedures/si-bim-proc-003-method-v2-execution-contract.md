@@ -2,7 +2,7 @@
 id: si-bim-proc-003
 title: Method v2 Execution Contract
 description: Contrato operativo único para ejecutar, validar, cerrar y reconciliar fases de Method v2 de forma repetible y ágil.
-version: 1.0.2
+version: 1.0.3
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -18,6 +18,7 @@ related:
   - si-bim-001
   - si-func-001
   - si-decision-018
+  - si-decision-019
 phase: business-intelligence
 ---
 
@@ -285,6 +286,144 @@ Sí se exige:
 - trazabilidad de cualquier proxy;
 - detener investigación cuando evidencia adicional no cambiaría score/confianza/decisión.
 
+<!-- METHOD-V2-MARKETPLACE-ECONOMICS:START -->
+## 13.1 Marketplace Commercial + FX Capture Contract
+
+Desde el governance checkpoint del `2026-10-10`, toda evidencia marketplace utilizada desde F3 debe ser económicamente reconstruible.
+
+### 13.1.1 Campos mínimos de captura
+
+Toda publicación activa debe conservar:
+
+```text
+ML ID
+Fecha de captura / verificación
+Producto / modelo
+URL exacta o source binding explícito
+Tipo de Publicación
+Precio ARS
+Ventas visibles | No informadas
+FX ARS/USD
+FX Fecha
+FX Fuente / Basis
+Precio USD
+Observaciones
+```
+
+La conversión canónica es:
+
+```text
+Precio USD = ROUND(Precio ARS / FX ARS/USD, 2)
+```
+
+`Precio USD` sin `FX`, fecha y fuente/basis no constituye evidencia USD válida.
+
+### 13.1.2 Regla de ventas
+
+```text
+SELLER SALES ≠ PRODUCT SALES
+BADGE ≠ VISIBLE SALES
+```
+
+`Ventas visibles` sólo puede contener:
+
+- contador literal del producto/publicación; o
+- `No informadas`.
+
+No se transfiere al producto el volumen total del vendedor, tienda, categoría o listing vecino.
+
+### 13.1.3 Regla de precio
+
+El precio debe pertenecer al mismo producto/modelo y source binding utilizado por la evidencia.
+
+No se permite:
+
+```text
+precio de listing A + ventas de listing B
+```
+
+Si aparecen precio general y promoción personalizada/cupón, se usa por defecto el precio no personalizado salvo que el estudio modele explícitamente la promoción.
+
+### 13.1.4 Trazabilidad temporal
+
+```text
+CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
+```
+
+Una reverificación posterior genera una observación fechada separada.
+
+La matriz mantiene una hoja `Verificaciones ML` como ledger temporal **append-only**.
+
+Reglas del ledger:
+
+- `Verificación ID` es único;
+- un `ML ID` puede tener múltiples verificaciones a lo largo del tiempo;
+- nunca se elimina ni sobreescribe una verificación anterior para registrar una nueva;
+- la capa de verificación vigente en `Publicaciones ML` debe coincidir con la verificación más reciente del ledger para ese `ML ID`;
+- la verificación más reciente se determina por `Fecha Verificación`; si existen varias el mismo día, al menos una debe coincidir exactamente con la capa vigente y todas deben conservar `Verificación ID` único.
+
+Si la fuente histórica no puede recuperarse:
+
+```text
+Estado Evidencia ML = HISTORICAL_ONLY
+Binding Verificación ML = SOURCE_UNAVAILABLE
+Precio ARS Verificado = No verificable
+Precio USD Verificado = No verificable
+Ventas visibles Verificadas = No informadas
+```
+
+Si se necesita reemplazar esa evidencia, el comparable recibe un nuevo `ML ID`.
+
+### 13.1.5 Nuevas capturas
+
+Para cualquier publicación capturada desde la fecha efectiva de esta regla:
+
+- `Precio ARS` es obligatorio;
+- `Precio USD` es obligatorio;
+- `Ventas visibles` es obligatorio como dato raw o `No informadas`;
+- el ledger `Verificaciones ML` es obligatorio desde F3;
+- el FX debe ser numérico y mayor que cero;
+- `FX Fecha` es obligatorio;
+- `FX Fuente / Basis` es obligatorio.
+
+### 13.1.6 Gate
+
+El Data Fidelity Preflight debe comprobar:
+
+1. completitud del ledger;
+2. vocabulario de estado/binding;
+3. ventas raw;
+4. precio ARS;
+5. precio USD;
+6. FX;
+7. fecha y source/basis FX;
+8. aritmética `ARS / FX = USD`;
+9. source binding;
+10. tratamiento explícito de `HISTORICAL_ONLY`;
+11. ausencia de Product Bases antes de F6.
+
+> **Un Matrix Validator PASS sin este preflight no habilita CLOSED.**
+
+### 13.1.7 Responsabilidad del agente
+
+El agente que ejecuta Method v2 no debe pedir al Founder que detecte manualmente estas inconsistencias.
+
+Antes de presentar un checkpoint debe verificar:
+
+```text
+RAW FACT
+→ SOURCE BINDING
+→ PRICE + SALES
+→ FX TRACEABILITY
+→ USD RECONSTRUCTION
+→ CLASSIFICATION
+→ INTERPRETATION
+→ SCORE / DECISION
+```
+
+Si un dato no puede sostenerse, se declara la limitación; no se completa por inferencia.
+<!-- METHOD-V2-MARKETPLACE-ECONOMICS:END -->
+
 ## 14. One-candidate-at-a-time
 
 Por defecto:
@@ -325,6 +464,7 @@ El Founder no debe actuar como validador manual de consistencia.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.0.3 | 2026-10-10 | Formaliza Marketplace Commercial + FX Capture Contract: precio ARS/USD, ventas raw, FX trazable, Verificaciones ML y manejo HISTORICAL_ONLY. |
 | 1.0.2 | 2026-10-10 | Corrige orden ejecutable del pipeline, amplía boundary F6 y formaliza trazabilidad temporal. |
 | 1.0.1 | 2026-10-10 | Aprobado tras aut119 corrected dual PASS; documenta cobertura real y límites del preflight. |
 | 1.0.0 | 2026-10-08 | Contrato único creado tras auditoría post-cierre de BRAND-CAND-010. |

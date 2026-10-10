@@ -2,12 +2,12 @@
 id: research-brand-hogar-readme
 title: Marca Hogar — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Hogar.
-version: 0.11.0
+version: 0.11.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-09-18
-updated: 2026-10-07
+updated: 2026-10-10
 ---
 
 # Marca Hogar — Research
@@ -279,3 +279,29 @@ El expediente del Brand Candidate sigue siendo el input de negocio. Este directo
 | 0.3.0 | 2026-09-21 | Se documenta Fase 9 de BRAND-CAND-001; aut40 PASS y siguiente gate Fase 10. |
 | 0.2.0 | 2026-09-21 | Se documentan Fases 7–8 de BRAND-CAND-001; aut39 PASS y próximo gate Headroom. |
 | 0.6.0 | 2026-09-25 | Se incorpora la ejecución completa de BRAND-CAND-004, SI-RESEARCH-028 a SI-RESEARCH-041; aut72 PASS; estado PORTFOLIO REVIEW READY / FREEZE; se formaliza el cierre documental previo al siguiente candidato. |
+
+<!-- METHOD-V2-MARKETPLACE-ECONOMICS-DEBT:START -->
+## Deuda de reconciliación marketplace — governance 2026-10-10
+
+`SI-DECISION-019` detecta deuda histórica de trazabilidad marketplace en Marca Hogar:
+
+```text
+ML-0089..ML-0151
+63 publicaciones auditadas
+2 Precio ARS históricos faltantes
+63 Precio USD históricos faltantes
+15 Ventas visibles en blanco
+1 Ventas visibles con interpretación
+```
+
+Tratamiento obligatorio:
+
+- preservar la captura histórica;
+- no aplicar FX retrospectivo como si hubiese pertenecido a la fecha original;
+- recuperar source binding cuando sea posible;
+- agregar verificación fechada con Precio ARS + Precio USD + FX + FX date/basis + ventas visibles;
+- marcar fuentes irrecuperables `HISTORICAL_ONLY / SOURCE_UNAVAILABLE`;
+- reabrir una fase sólo si la corrección puede cambiar score, gate o decisión.
+
+Esta deuda no invalida automáticamente decisiones históricas; exige reconciliación antes de reutilizar esos datos como baseline vigente.
+<!-- METHOD-V2-MARKETPLACE-ECONOMICS-DEBT:END -->

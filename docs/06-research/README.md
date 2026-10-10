@@ -2,7 +2,7 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.17.2
+version: 0.17.3
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -260,9 +260,19 @@ Los datos comerciales exactos permanecen en sistemas privados:
 | Marca Hogar | [SI-RESEARCH-013 — BRAND-CAND-001 Fase 13 Shortlist final](./brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md) | `aut44` PASS / Fase 13 cerrada / Portfolio Review Ready / F14 no abierto |
 
 <!-- BRAND-CAND-010-RECONCILIATION:START -->
-### SI-RESEARCH-085 — BRAND-CAND-010 Post-close Evidence Reconciliation
+## SI-RESEARCH-085 — reconciliación post-cierre anterior / histórica
 
 Cerrada sobre `matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2` con dual PASS.
 
-`aut118` conserva su identidad y SHA como cierre histórico F13. `aut119 corrected` queda superseded antes de publicación. `aut120` es la baseline post-close vigente. No cambia score ni resultado; F14 permanece NOT OPENED.
+`aut118` conserva su identidad y SHA como cierre histórico F13. `aut119 corrected` quedó superseded antes de publicación. `aut120` fue la baseline post-close de data fidelity y queda `SUPERSEDED` por `aut121 corrected`.
+
+El estado vigente se documenta en `SI-RESEARCH-086`. No cambia score ni resultado; F14 permanece `NOT OPENED`.
 <!-- BRAND-CAND-010-RECONCILIATION:END -->
+
+<!-- SI-RESEARCH-086:START -->
+## SI-RESEARCH-086 — BRAND-CAND-010 Marketplace Economics Reconciliation
+
+`matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx` / `7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc` es la baseline post-close vigente tras Data Fidelity Preflight v2.2 PASS + Matrix Validator PASS.
+
+La reconciliación incorpora Precio ARS/USD, FX trazable, ventas visibles verificadas y ledger `Verificaciones ML`; no cambia score ni decisión.
+<!-- SI-RESEARCH-086:END -->
