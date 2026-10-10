@@ -2,12 +2,12 @@
 id: brand-fitness
 title: Marca Fitness — Screening cerrado / Method v2
 description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 completado hasta F13 y BRAND-CAND-007..009 elegibles todavía no abiertos.
-version: 0.5.1
+version: 0.5.2
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-03
-updated: 2026-10-08
+updated: 2026-10-10
 tags:
   - brand
   - fitness
@@ -27,8 +27,11 @@ related:
 ```text
 SCREENING: CLOSED
 METHOD V2: F0–F13 CLOSED
-FINAL MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
-FINAL SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+F13 MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
+POST-CLOSE SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+Data Fidelity Preflight: PASS
 Matrix Validator: PASS / errors 0 / warnings 0 / info 0
 F14: NOT OPENED
 
@@ -130,7 +133,7 @@ BRAND-CAND-007..009
 
 Research vigente: [`SI-RESEARCH-070`](../../../06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md).
 
-No hay Product Bases Fitness definidos todavía. La prioridad comercial inmediata de Marca Hogar no cambia.
+BRAND-CAND-010 creó formalmente `BASE-FIT-001`..`BASE-FIT-004` en F6; ninguno quedó seleccionado como portfolio finalist. La prioridad comercial inmediata de Marca Hogar no cambia.
 
 ## Changelog
 
@@ -141,3 +144,11 @@ No hay Product Bases Fitness definidos todavía. La prioridad comercial inmediat
 | 0.3.0 | 2026-10-05 | Se congela Fitness v0.2 como baseline pre-screening: territorio revisado, cuatro misiones, cuatro candidatos activos, FIT-CAND-003/004 absorbidos y FIT-CAND-006 reclasificado como capacidad transversal. |
 | 0.2.0 | 2026-10-05 | Se integra SI-BRAND-003 y se habilitan rutas de descubrimiento descendente y ascendente antes del Brand Candidate Screening. |
 | 0.1.0 | 2026-10-03 | Se abre Marca Fitness como exploración reusable del Brand System. |
+
+<!-- BRAND-CAND-010-RECONCILIATION:START -->
+## BRAND-CAND-010 — baseline reconciliada
+
+`matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2` es la baseline post-close vigente tras dual PASS.
+
+`aut118` permanece como snapshot histórico F13 (`54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a`). `aut119 corrected` queda superseded antes de publicación. La reconciliación corrige fidelidad/trazabilidad sin cambiar la decisión: NO PORTFOLIO FINALIST / FREEZE / F14 NOT OPENED.
+<!-- BRAND-CAND-010-RECONCILIATION:END -->

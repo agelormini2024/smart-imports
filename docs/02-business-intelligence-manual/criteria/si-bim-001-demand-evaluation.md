@@ -2,12 +2,12 @@
 id: si-bim-001
 title: Demand Evaluation
 description: Protocolo metodológico para evaluar el criterio Demanda dentro de la Matriz de Oportunidades de Smart Imports.
-version: 0.2.0
-status: review
+version: 0.3.0
+status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-10
+updated: 2026-10-10
 tags:
   - business-intelligence
   - demand
@@ -19,6 +19,7 @@ related:
   - si-bim-002
   - si-bim-readme
   - si-bim-proc-001
+  - si-bim-proc-003
 phase: business-intelligence
 ---
 
@@ -477,9 +478,88 @@ Generadores solares / power stations → excluir de Energía Solar Portátil y e
 
 ---
 
+## 19.1 Method v2 — Data Fidelity Addendum
+
+Desde 2026-10-10, este criterio conserva todo el protocolo histórico de Demanda y agrega un contrato de fidelidad operativo para Method v2.
+
+### Separación obligatoria
+
+```text
+RAW EVIDENCE
+→ NORMALIZATION / CLASSIFICATION
+→ INTERPRETATION
+→ SCORE + CONFIDENCE
+→ DECISION
+```
+
+Un campo de evidencia cruda no puede contener una conclusión analítica.
+
+### Contrato de `Ventas visibles`
+
+`Publicaciones ML.Ventas visibles` contiene únicamente:
+
+- contador literal observado, por ejemplo `+1000`, `+500`, `+5 mil`;
+- `No informadas` cuando no existe contador o no puede vincularse inequívocamente a la URL de la publicación.
+
+Badges como `MÁS VENDIDO` se registran como señal complementaria, no como contador.
+
+Ante ambigüedad:
+
+> **No reconstruir. Registrar `No informadas`.**
+
+Una reverificación posterior no reemplaza silenciosamente la captura histórica.
+
+### Boundary de demanda
+
+Cada publicación utilizada en F3 se clasifica como:
+
+```text
+DIRECT
+DIRECT_CONDITIONED
+ADJACENT
+SUBSTITUTE
+```
+
+`ADJACENT` y `SUBSTITUTE` pueden informar contexto, forma física o presión competitiva, pero sus ventas no se heredan automáticamente como demanda específica del job.
+
+```text
+VISIBLE SALES ≠ MARKET SIZE
+OFFER AVAILABILITY ≠ DEMAND EVIDENCE
+NO VISIBLE SALES ≠ NO DEMAND
+ADJACENT SALES ≠ JOB-SPECIFIC DEMAND
+```
+
+### Escala 1–5 — precisión Method v2
+
+- `1`: sin señal directa defendible;
+- `2`: señal directa débil/aislada y alta dependencia de adyacentes;
+- `3`: demanda directa positiva pero heterogénea o concentrada;
+- `4`: demanda directa fuerte y distribuida en múltiples comparables independientes;
+- `5`: demanda directa muy fuerte, amplia, repetida y robustamente trazable.
+
+Un único listing con ventas altas no convierte automáticamente un candidato en `4/5` o `5/5`.
+
+### Gate
+
+F3 sólo puede cerrarse cuando:
+
+```text
+captura suficiente
+→ clasificación completa
+→ matriz materializada
+→ Data Fidelity Preflight PASS
+→ score + confianza justificados
+→ Matrix Validator PASS
+```
+
+El procedimiento general está definido en `SI-BIM-PROC-003 — Method v2 Execution Contract`.
+
+---
+
 ## 20. Changelog
 
 | Version | Date | Change |
 |---|---|---|
 | 0.1.0 | 2026-07-02 | Versión inicial del protocolo de evaluación de Demanda. |
 | 0.2.0 | 2026-07-10 | Se actualizó el protocolo con el método operativo validado en el piloto Energía Solar Portátil, separación de capas, uso central de Evidencias y exclusión de generadores solares del nicho portátil. |
+| 0.3.0 | 2026-10-10 | Se preserva el protocolo histórico y se agrega el contrato de fidelidad Method v2: raw evidence literal, boundary DIRECT/ADJACENT/SUBSTITUTE, trazabilidad temporal y dual gate. |

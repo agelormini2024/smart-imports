@@ -2,12 +2,12 @@
 id: brand-cand-010
 title: Movimiento integrado a la jornada sedentaria
 description: Brand Candidate Screening prospectivo de movimiento integrado a la jornada sedentaria para Marca Fitness.
-version: 0.2.1
+version: 0.2.2
 status: method-v2-closed-no-finalist
 brand: brand-fitness
 method_v2_status: f0-f13-closed-freeze
 created: 2026-10-05
-updated: 2026-10-08
+updated: 2026-10-10
 ---
 
 # BRAND-CAND-010 — Movimiento integrado a la jornada sedentaria
@@ -17,9 +17,12 @@ updated: 2026-10-08
 
 ```text
 F0–F13: CLOSED
-FINAL MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
-FINAL SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
-VALIDATOR: PASS / 0 errors / 0 warnings / 0 info
+F13 MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
+POST-CLOSE SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+DATA FIDELITY: PASS
+MATRIX VALIDATOR: PASS / 0 errors / 0 warnings / 0 info
 FINAL RESULT: NO PORTFOLIO FINALIST
 FREEZE: YES
 F14: NOT OPENED
@@ -178,9 +181,25 @@ Matrix materialization: PENDING
 Matrix Validator: PENDING
 Target MATRIX_SCOPE_ALIAS: Nicho ID 37
 Target matrix: aut105
-Next formal gate: F0 MATRIX PASS
 ```
 
-`aut105` queda habilitado como target siguiente: el lineage global `aut96..aut104` ya fue reconciliado y cerró con `aut104 PASS`.
 
-`BRAND-CAND-007`, `BRAND-CAND-008` y `BRAND-CAND-009` permanecen `ELIGIBLE — NOT OPENED`.
+Estado formal vigente: `F0–F13 CLOSED / FREEZE`. `F14 NOT OPENED`.
+
+La próxima acción de Marca Fitness es seleccionar exactamente uno entre `BRAND-CAND-007`, `BRAND-CAND-008` y `BRAND-CAND-009`; los tres permanecen `ELIGIBLE — NOT OPENED`.
+
+<!-- POST-CLOSE-RECONCILIATION:START -->
+## BRAND-CAND-010 — baseline reconciliada
+
+`matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2` es la baseline post-close vigente tras dual PASS.
+
+Lineage:
+
+```text
+aut118 → F13 histórico / 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+aut119 corrected → reconciliación intermedia / superseded antes de publicación
+aut120 → baseline post-close vigente / 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+```
+
+La reconciliación no cambia la decisión: NO PORTFOLIO FINALIST / FREEZE / F14 NOT OPENED.
+<!-- POST-CLOSE-RECONCILIATION:END -->

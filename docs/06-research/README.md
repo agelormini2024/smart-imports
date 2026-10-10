@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.17.1
+version: 0.17.2
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-08
+updated: 2026-10-10
 tags:
   - smart-imports
   - research
@@ -23,8 +23,10 @@ tags:
 ```text
 BRAND-CAND-010
 → F0–F13 CLOSED
-→ FINAL MATRIX: aut118 PASS
-→ SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+→ FINAL F13 MATRIX: aut118 PASS
+→ F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+→ POST-CLOSE BASELINE: aut120 PASS
+→ POST-CLOSE SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
 → NO PORTFOLIO FINALIST
 → FREEZE
 → F14 NOT OPENED
@@ -256,3 +258,11 @@ Los datos comerciales exactos permanecen en sistemas privados:
 | Marca Hogar | [SI-RESEARCH-011 — BRAND-CAND-001 Fase 11 Landed Cost](./brand-hogar/si-research-011-brand-cand-001-method-v2-golden-run-phase-11-landed-cost.md) | `aut42` PASS / Fase 11 cerrada / siguiente gate Fase 12 — Margin + ROI |
 | Marca Hogar | [SI-RESEARCH-012 — BRAND-CAND-001 Fase 12 Margin + ROI](./brand-hogar/si-research-012-brand-cand-001-method-v2-golden-run-phase-12-margin-roi.md) | `aut43` PASS / Fase 12 cerrada / siguiente gate Fase 13 — Shortlist final |
 | Marca Hogar | [SI-RESEARCH-013 — BRAND-CAND-001 Fase 13 Shortlist final](./brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md) | `aut44` PASS / Fase 13 cerrada / Portfolio Review Ready / F14 no abierto |
+
+<!-- BRAND-CAND-010-RECONCILIATION:START -->
+### SI-RESEARCH-085 — BRAND-CAND-010 Post-close Evidence Reconciliation
+
+Cerrada sobre `matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2` con dual PASS.
+
+`aut118` conserva su identidad y SHA como cierre histórico F13. `aut119 corrected` queda superseded antes de publicación. `aut120` es la baseline post-close vigente. No cambia score ni resultado; F14 permanece NOT OPENED.
+<!-- BRAND-CAND-010-RECONCILIATION:END -->

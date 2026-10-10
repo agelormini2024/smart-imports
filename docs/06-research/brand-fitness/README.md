@@ -2,12 +2,12 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.0
+version: 0.2.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-08
+updated: 2026-10-10
 ---
 
 # Marca Fitness — Research
@@ -21,9 +21,12 @@ BRAND-CAND-010
 → FREEZE
 → F14 NOT OPENED
 
-Final matrix: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
-SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
-Validator: PASS / 0 errors / 0 warnings / 0 info
+F13 matrix: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+Post-close baseline: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
+Post-close SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+Data Fidelity Preflight: PASS
+Matrix Validator: PASS / 0 errors / 0 warnings / 0 info
 
 BRAND-CAND-007
 BRAND-CAND-008
@@ -72,3 +75,9 @@ DOCUMENTARY CHECKPOINT
 ```
 
 F14 permanece `NOT OPENED`.
+
+<!-- BRAND-CAND-010-RECONCILIATION:START -->
+### SI-RESEARCH-085 — BRAND-CAND-010 Post-close Evidence Reconciliation
+
+Cerrada sobre `matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2` con dual PASS. `aut118` permanece F13 histórico, `aut119 corrected` queda superseded antes de publicación y `aut120` es la baseline post-close vigente. No cambia score ni resultado; F14 permanece NOT OPENED.
+<!-- BRAND-CAND-010-RECONCILIATION:END -->

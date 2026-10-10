@@ -2,12 +2,12 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.23.1
+version: 1.23.2
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-08
+updated: 2026-10-10
 tags:
   - smart-imports
   - knowledge-base
@@ -17,14 +17,38 @@ tags:
 ---
 # Smart Imports
 
+<!-- METHOD-V2-GOVERNANCE:START -->
+## Method v2 — governance de ejecución vigente
+
+Desde `2026-10-10`, todo checkpoint requiere `Data Fidelity Preflight PASS` + `Matrix Validator PASS`.
+
+Fuentes de verdad: `SI-BIM-001`, `SI-BIM-PROC-003` y `SI-DECISION-018`.
+
+`BRAND-CAND-010` fue reconciliado sin cambio de decisión.
+
+```text
+F13 HISTORICAL SNAPSHOT: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+
+CURRENT POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
+CURRENT SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+
+F0–F13: CLOSED
+F14: NOT OPENED
+```
+<!-- METHOD-V2-GOVERNANCE:END -->
+
 <!-- FITNESS-PRESCREENING-V02:START -->
 ## Checkpoint operativo — BRAND-CAND-010 Method v2 cerrado / 2026-10-08
 
 ```text
 SCREENING: CLOSED
 METHOD V2: F0–F13 CLOSED
-FINAL MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
-FINAL SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+F13 MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
+POST-CLOSE SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+Data Fidelity Preflight: PASS
 Matrix Validator: PASS / errors 0 / warnings 0 / info 0
 F14: NOT OPENED
 

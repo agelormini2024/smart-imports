@@ -2,12 +2,12 @@
 id: si-bim-readme
 title: Business Intelligence Manual Index
 description: Índice principal del Business Intelligence Manual de Smart Imports. Organiza la metodología de investigación, evaluación, evidencias, scoring y priorización de nichos.
-version: 0.3.0
+version: 0.3.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-07-15
+updated: 2026-10-10
 tags:
   - business-intelligence
   - research
@@ -222,3 +222,11 @@ Estado del piloto:
 | 0.1.0 | 2026-07-02 | Versión inicial del índice del Business Intelligence Manual. |
 | 0.2.0 | 2026-07-10 | Se actualizó el índice luego de aplicar Demanda y Competencia al caso piloto y documentar el procedimiento de evidencias. |
 | 0.3.0 | 2026-07-15 | Se agregó Margen Potencial, procedimiento RFQ, estado de criterios estratégicos y estado actualizado del piloto. |
+
+<!-- METHOD-V2-EXECUTION-CONTRACT:START -->
+## Method v2 — contrato operativo vigente
+
+- `criteria/si-bim-001-demand-evaluation.md` — criterio histórico preservado y fortalecido aditivamente.
+- `procedures/si-bim-proc-003-method-v2-execution-contract.md` — contrato operativo aprobado.
+- Gate obligatorio: Data Fidelity Preflight PASS + Matrix Validator PASS.
+<!-- METHOD-V2-EXECUTION-CONTRACT:END -->

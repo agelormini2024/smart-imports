@@ -2,12 +2,12 @@
 id: si-decision-log-readme
 title: Decision Log Index
 description: Índice de decisiones estratégicas, metodológicas y técnicas de Smart Imports.
-version: 0.7.0
+version: 0.7.1
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-07
+updated: 2026-10-10
 tags:
   - decision-log
   - governance
@@ -118,3 +118,9 @@ Una decisión `approved` puede conservar valor histórico aunque una decisión p
 | 0.5.0 | 2026-09-11 | Se actualizó el índice vigente y se incorporó SI-DECISION-014 para Method v2 y `aut34`. |
 | 0.7.0 | 2026-10-07 | Se indexan SI-DECISION-016 y SI-DECISION-017; Marca Hogar cierra Portfolio Review interno y congela su baseline hasta revisión externa. |
 | 0.6.0 | 2026-09-15 | Se incorporó SI-DECISION-015 y la adopción de `aut36`. |
+
+<!-- SI-DECISION-018:START -->
+## SI-DECISION-018 — Require Method v2 Data Fidelity Gate
+
+Aprobada. Desde el checkpoint de governance del 2026-10-10, un gate Method v2 requiere Data Fidelity Preflight PASS + Matrix Validator PASS.
+<!-- SI-DECISION-018:END -->

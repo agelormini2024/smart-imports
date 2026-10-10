@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.23.1
+version: 1.23.2
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-10-08
+updated: 2026-10-10
 tags:
   - status
   - handoff
@@ -45,8 +45,11 @@ phase: research
 ```text
 SCREENING: CLOSED
 METHOD V2: F0–F13 CLOSED
-FINAL MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
-FINAL SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+F13 MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
+POST-CLOSE SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+Data Fidelity Preflight: PASS
 Matrix Validator: PASS / errors 0 / warnings 0 / info 0
 F14: NOT OPENED
 
@@ -927,3 +930,26 @@ El contacto con proveedores enriquece la evidencia, pero no debe controlar el ca
 F13 consolidó la shortlist final. `BRAND-CAND-001` queda en freeze hasta Portfolio Review; la revisión externa previa deberá incluir al despachante antes de decidir qué producto abre F14.
 
 Fuente de ejecución vigente: [SI-RESEARCH-013 — Fase 13 Shortlist final](../06-research/brand-hogar/si-research-013-brand-cand-001-method-v2-golden-run-phase-13-final-shortlist.md).
+
+<!-- METHOD-V2-GOVERNANCE-2026-10-10:START -->
+## Governance Method v2 + BRAND-CAND-010 reconciliado — 2026-10-10
+
+```text
+DATA FIDELITY PREFLIGHT PASS
++
+MATRIX VALIDATOR PASS
+
+F13 HISTORICAL SNAPSHOT: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
+F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
+
+CURRENT POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx
+CURRENT SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
+
+aut119 corrected: SUPERSEDED BEFORE PUBLICATION
+Reconciliation: PASS / no decision change
+F0–F13: CLOSED
+F14: NOT OPENED
+```
+
+Antes de abrir `BRAND-CAND-007..009`, este contrato y sus scripts deben quedar documentados y publicados.
+<!-- METHOD-V2-GOVERNANCE-2026-10-10:END -->
