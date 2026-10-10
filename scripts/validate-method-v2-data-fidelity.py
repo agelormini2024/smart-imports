@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Smart Imports — Method v2 Data Fidelity Preflight v2.2
+Smart Imports — Method v2 Data Fidelity Preflight v2.4
 
 Purpose
 -------
@@ -441,6 +441,45 @@ def main():
                                               "No coincide con ledger",
                                               "Debe coincidir con una verificación ledger de la fecha más reciente"))
 
+            # Current-baseline core projection.
+            #
+            # ACTIVE rows must expose the current verified commercial facts in
+            # the ordinary Publicaciones ML columns, not only in auxiliary
+            # verification columns.
+            core_ars = num(rec.get("Precio ARS"))
+            core_usd = num(rec.get("Precio USD"))
+            core_sales = clean(rec.get("Ventas visibles"))
+
+            if status == "ACTIVE":
+                if core_ars is None or core_ars <= 0:
+                    errors.append(finding("DF-CORE-001","Publicaciones ML",row,mid,
+                                          "Precio ARS",rec.get("Precio ARS"),
+                                          "ACTIVE requiere Precio ARS core numérico > 0"))
+                if core_usd is None or core_usd <= 0:
+                    errors.append(finding("DF-CORE-002","Publicaciones ML",row,mid,
+                                          "Precio USD",rec.get("Precio USD"),
+                                          "ACTIVE requiere Precio USD core numérico > 0"))
+                if not core_sales:
+                    errors.append(finding("DF-CORE-003","Publicaciones ML",row,mid,
+                                          "Ventas visibles",None,
+                                          "ACTIVE requiere ventas core o 'No informadas'"))
+
+                verified_ars = num(vars_)
+                verified_usd = num(vusd)
+
+                if core_ars is not None and verified_ars is not None and abs(core_ars - verified_ars) > 0.001:
+                    errors.append(finding("DF-CORE-004","Publicaciones ML",row,mid,
+                                          "Precio ARS",core_ars,
+                                          f"Debe coincidir con Precio ARS Verificado = {verified_ars}"))
+                if core_usd is not None and verified_usd is not None and abs(core_usd - verified_usd) > USD_TOLERANCE:
+                    errors.append(finding("DF-CORE-005","Publicaciones ML",row,mid,
+                                          "Precio USD",core_usd,
+                                          f"Debe coincidir con Precio USD Verificado = {verified_usd}"))
+                if core_sales != vsales:
+                    errors.append(finding("DF-CORE-006","Publicaciones ML",row,mid,
+                                          "Ventas visibles",core_sales or None,
+                                          f"Debe coincidir con Ventas visibles Verificadas = {vsales}"))
+
             # New captures after governance must be complete in the core row too.
             capture_date = num(rec.get("Fecha Relevamiento"))
             if capture_date is not None and capture_date >= GOVERNANCE_EFFECTIVE_EXCEL_DATE:
@@ -483,8 +522,201 @@ def main():
                 errors.append(finding("DF-PB-002","Productos Base",row,pbid,"ID Producto Base",
                                       pbid,"No debe existir Product Base antes de F6"))
 
+
+    # -----------------------------------------------------------------
+    # Pre-projection snapshot integrity (v2.4)
+    # -----------------------------------------------------------------
+    snapshot_scope_pubs = [
+        (srow, srec)
+        for srow, srec in table(path, "Publicaciones ML")
+        if clean(srec.get("Nicho")) == args.niche
+    ]
+
+    snapshot_required = False
+    for srow, srec in snapshot_scope_pubs:
+        capture_date = num(srec.get("Fecha Relevamiento"))
+        verify_date = num(srec.get("Fecha Verificación ML"))
+        if capture_date is not None and verify_date is not None and verify_date > capture_date:
+            snapshot_required = True
+            break
+
+    if snapshot_required:
+        try:
+            all_snapshots = table(path, "Snapshot Pre-Proyección ML")
+        except Exception:
+            all_snapshots = []
+            errors.append(finding(
+                "DF-SNP-001",
+                "Snapshot Pre-Proyección ML",
+                1,
+                args.niche,
+                "Sheet",
+                None,
+                "Reverificación posterior proyectada al core requiere hoja Snapshot Pre-Proyección ML"
+            ))
+
+        scope_snapshots = [
+            (srow, srec)
+            for srow, srec in all_snapshots
+            if clean(srec.get("Nicho")) == args.niche
+        ]
+
+        if all_snapshots:
+            required_snapshot_fields = {
+                "Snapshot ID",
+                "Snapshot Fecha",
+                "Snapshot Baseline",
+                "Snapshot SHA-256",
+                "ML ID",
+                "Fecha Relevamiento",
+                "Nicho",
+                "Subcategoría",
+                "Producto",
+                "Precio ARS core previo",
+                "Precio USD core previo",
+                "Ventas visibles core previas",
+            }
+            available_snapshot_fields = set(all_snapshots[0][1].keys())
+            missing_snapshot_fields = sorted(required_snapshot_fields - available_snapshot_fields)
+            if missing_snapshot_fields:
+                errors.append(finding(
+                    "DF-SNP-002",
+                    "Snapshot Pre-Proyección ML",
+                    1,
+                    args.niche,
+                    "Headers",
+                    ", ".join(missing_snapshot_fields),
+                    "Faltan columnas obligatorias del snapshot pre-proyección"
+                ))
+
+            seen_snapshot_ids = set()
+            snapshot_by_ml = {}
+
+            for srow, srec in scope_snapshots:
+                sid = clean(srec.get("Snapshot ID"))
+                mid = clean(srec.get("ML ID"))
+                sbaseline = clean(srec.get("Snapshot Baseline"))
+                ssha = clean(srec.get("Snapshot SHA-256"))
+                sdate = num(srec.get("Snapshot Fecha"))
+                capture_date = num(srec.get("Fecha Relevamiento"))
+
+                if not sid:
+                    errors.append(finding("DF-SNP-003","Snapshot Pre-Proyección ML",srow,mid or args.niche,
+                                          "Snapshot ID",None,"Snapshot ID obligatorio"))
+                elif sid in seen_snapshot_ids:
+                    errors.append(finding("DF-SNP-004","Snapshot Pre-Proyección ML",srow,mid or args.niche,
+                                          "Snapshot ID",sid,"Snapshot ID debe ser único"))
+                seen_snapshot_ids.add(sid)
+
+                if not mid:
+                    errors.append(finding("DF-SNP-005","Snapshot Pre-Proyección ML",srow,args.niche,
+                                          "ML ID",None,"ML ID obligatorio"))
+                elif mid in snapshot_by_ml:
+                    errors.append(finding("DF-SNP-006","Snapshot Pre-Proyección ML",srow,mid,
+                                          "ML ID",mid,"Una sola fila de snapshot por ML ID dentro de la baseline"))
+                snapshot_by_ml[mid] = (srow, srec)
+
+                if not sbaseline:
+                    errors.append(finding("DF-SNP-007","Snapshot Pre-Proyección ML",srow,mid,
+                                          "Snapshot Baseline",None,"Debe identificar la baseline pre-proyección"))
+                if not ssha or not re.fullmatch(r"[0-9a-fA-F]{64}", ssha):
+                    errors.append(finding("DF-SNP-008","Snapshot Pre-Proyección ML",srow,mid,
+                                          "Snapshot SHA-256",ssha or None,"Debe contener SHA-256 de 64 hex"))
+                if sdate is None:
+                    errors.append(finding("DF-SNP-009","Snapshot Pre-Proyección ML",srow,mid,
+                                          "Snapshot Fecha",srec.get("Snapshot Fecha"),"Fecha snapshot obligatoria"))
+                if capture_date is None:
+                    errors.append(finding("DF-SNP-010","Snapshot Pre-Proyección ML",srow,mid,
+                                          "Fecha Relevamiento",srec.get("Fecha Relevamiento"),"Fecha de relevamiento obligatoria"))
+                if sdate is not None and capture_date is not None and sdate < capture_date:
+                    errors.append(finding("DF-SNP-011","Snapshot Pre-Proyección ML",srow,mid,
+                                          "Snapshot Fecha",sdate,"Snapshot Fecha no puede preceder Fecha Relevamiento"))
+
+            publication_by_ml = {
+                clean(prec.get("ML ID")): (prow, prec)
+                for prow, prec in snapshot_scope_pubs
+                if clean(prec.get("ML ID"))
+            }
+
+            snapshot_baselines = {
+                clean(srec.get("Snapshot Baseline"))
+                for _, srec in scope_snapshots
+                if clean(srec.get("Snapshot Baseline"))
+            }
+            snapshot_shas = {
+                clean(srec.get("Snapshot SHA-256")).lower()
+                for _, srec in scope_snapshots
+                if clean(srec.get("Snapshot SHA-256"))
+            }
+            snapshot_dates = {
+                num(srec.get("Snapshot Fecha"))
+                for _, srec in scope_snapshots
+                if num(srec.get("Snapshot Fecha")) is not None
+            }
+
+            if len(snapshot_baselines) != 1:
+                errors.append(finding(
+                    "DF-SNP-014","Snapshot Pre-Proyección ML",1,args.niche,
+                    "Snapshot Baseline",", ".join(sorted(snapshot_baselines)) or None,
+                    "El snapshot de un scope debe referenciar una única baseline pre-proyección"
+                ))
+            if len(snapshot_shas) != 1:
+                errors.append(finding(
+                    "DF-SNP-015","Snapshot Pre-Proyección ML",1,args.niche,
+                    "Snapshot SHA-256",", ".join(sorted(snapshot_shas)) or None,
+                    "El snapshot de un scope debe referenciar un único SHA-256"
+                ))
+            if len(snapshot_dates) != 1:
+                errors.append(finding(
+                    "DF-SNP-016","Snapshot Pre-Proyección ML",1,args.niche,
+                    "Snapshot Fecha",", ".join(str(x) for x in sorted(snapshot_dates)) or None,
+                    "El snapshot de un scope debe tener una única fecha de snapshot"
+                ))
+
+            for mid, (srow, srec) in snapshot_by_ml.items():
+                pub_entry = publication_by_ml.get(mid)
+                if pub_entry is None:
+                    continue
+
+                _, prec = pub_entry
+
+                snap_capture = num(srec.get("Fecha Relevamiento"))
+                pub_capture = num(prec.get("Fecha Relevamiento"))
+                if snap_capture is not None and pub_capture is not None and abs(snap_capture - pub_capture) > 0.000001:
+                    errors.append(finding(
+                        "DF-SNP-017","Snapshot Pre-Proyección ML",srow,mid,
+                        "Fecha Relevamiento",srec.get("Fecha Relevamiento"),
+                        f"Debe coincidir con Publicaciones ML = {prec.get('Fecha Relevamiento')}"
+                    ))
+
+                if clean(srec.get("Producto")) != clean(prec.get("Producto")):
+                    errors.append(finding(
+                        "DF-SNP-018","Snapshot Pre-Proyección ML",srow,mid,
+                        "Producto",clean(srec.get("Producto")) or None,
+                        "Debe coincidir con Producto de Publicaciones ML"
+                    ))
+
+                if clean(srec.get("Subcategoría")) != clean(prec.get("Subcategoría")):
+                    errors.append(finding(
+                        "DF-SNP-019","Snapshot Pre-Proyección ML",srow,mid,
+                        "Subcategoría",clean(srec.get("Subcategoría")) or None,
+                        "Debe coincidir con Subcategoría de Publicaciones ML"
+                    ))
+
+            publication_ids = set(publication_by_ml)
+
+            for mid in sorted(publication_ids):
+                if mid not in snapshot_by_ml:
+                    errors.append(finding("DF-SNP-012","Snapshot Pre-Proyección ML",1,mid,
+                                          "ML ID",mid,"Falta snapshot pre-proyección para publicación del scope"))
+
+            for mid, (srow, _) in snapshot_by_ml.items():
+                if mid not in publication_ids:
+                    errors.append(finding("DF-SNP-013","Snapshot Pre-Proyección ML",srow,mid,
+                                          "ML ID",mid,"Snapshot huérfano: ML ID no existe en Publicaciones ML del scope"))
+
     print("============================================================")
-    print("SMART IMPORTS — METHOD V2 DATA FIDELITY PREFLIGHT v2.2")
+    print("SMART IMPORTS — METHOD V2 DATA FIDELITY PREFLIGHT v2.4")
     print("============================================================")
     print(f"File: {path}")
     print(f"Niche: {args.niche}")

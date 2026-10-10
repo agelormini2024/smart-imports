@@ -2,7 +2,7 @@
 id: si-bim-readme
 title: Business Intelligence Manual Index
 description: Índice principal del Business Intelligence Manual de Smart Imports. Organiza la metodología de investigación, evaluación, evidencias, scoring y priorización de nichos.
-version: 0.3.2
+version: 0.3.4
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -238,3 +238,41 @@ Estado del piloto:
 
 La validación semántica se ejecuta mediante `scripts/validate-method-v2-data-fidelity.py` antes del Matrix Validator.
 <!-- METHOD-V2-MARKETPLACE-CONTRACT:END -->
+
+<!-- AUT123-SNAPSHOT-BASELINE:START -->
+## aut123 — Core + snapshot baseline vigente
+
+```text
+aut121 corrected
+→ marketplace economics dual PASS
+→ SUPERSEDED: core operativo incompleto/stale
+→ 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc
+
+aut122
+→ core marketplace materialization
+→ Data Fidelity Preflight v2.3 PASS
+→ Matrix Validator PASS
+→ SUPERSEDED: estado pre-proyección no preservado estructuralmente
+→ 67e850c0a40fb274629429587f9ce5b500eddb51da6580fccb2c48f060dba4ba
+
+aut123
+→ 21 ACTIVE core complete / synchronized
+→ 5 HISTORICAL_ONLY explícitos
+→ 26/26 Snapshot Pre-Proyección ML
+→ ML-0160 temporal proof: +500 → +100
+→ Core + Snapshot Fidelity PASS
+→ Data Fidelity Preflight v2.4 PASS
+→ Matrix Validator PASS / 0 errors / 0 warnings / 0 info
+→ CURRENT POST-CLOSE BASELINE
+→ 23099aae25921caab2a223a101e420d4e217dd04701cfb767054e4e6fa2eadbb
+
+F0–F13: CLOSED
+F14: NOT OPENED
+```
+
+```text
+ACTIVE CORE = VERIFIED CURRENT LAYER
+CURRENT CORE PROJECTION REQUIRES PRE-PROJECTION SNAPSHOT
+CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
+```
+<!-- AUT123-SNAPSHOT-BASELINE:END -->

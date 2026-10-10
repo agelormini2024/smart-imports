@@ -2,7 +2,7 @@
 id: si-bim-proc-003
 title: Method v2 Execution Contract
 description: Contrato operativo único para ejecutar, validar, cerrar y reconciliar fases de Method v2 de forma repetible y ágil.
-version: 1.0.3
+version: 1.0.5
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -424,6 +424,47 @@ RAW FACT
 Si un dato no puede sostenerse, se declara la limitación; no se completa por inferencia.
 <!-- METHOD-V2-MARKETPLACE-ECONOMICS:END -->
 
+<!-- METHOD-V2-ACTIVE-CORE-PROJECTION:START -->
+### 13.1.8 Active Core Projection + Pre-Projection Snapshot
+
+`Verificaciones ML` es el historial temporal append-only.
+
+Las columnas core de `Publicaciones ML` son la proyección operacional vigente.
+
+Para una fila `ACTIVE`:
+
+```text
+Precio ARS = Precio ARS Verificado
+Precio USD = Precio USD Verificado
+Ventas visibles = Ventas visibles Verificadas
+```
+
+Cuando al menos una fila cumple `Fecha Verificación ML > Fecha Relevamiento`, antes de proyectar la reverificación al core debe generarse un snapshot completo del scope en `Snapshot Pre-Proyección ML`: exactamente una fila por cada publicación marketplace del scope, preservando el estado core inmediatamente anterior.
+
+Contrato mínimo del snapshot:
+
+- `Snapshot ID` único;
+- fecha del snapshot;
+- baseline pre-proyección;
+- SHA-256 de esa baseline;
+- `ML ID`;
+- fecha de relevamiento;
+- scope;
+- producto;
+- Precio ARS/USD core previos;
+- Ventas visibles core previas;
+- baseline, SHA-256 y fecha de snapshot consistentes para todo el scope;
+- identidad (`ML ID`, fecha de relevamiento, producto y subcategoría) consistente con `Publicaciones ML`.
+
+El preflight debe fallar con `DF-CORE-*` ante core vigente vacío/divergente y con `DF-SNP-*` ante snapshot ausente, incompleto, duplicado u huérfano.
+
+```text
+ACTIVE CORE = VERIFIED CURRENT LAYER
+CURRENT CORE PROJECTION REQUIRES PRE-PROJECTION SNAPSHOT
+CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
+```
+<!-- METHOD-V2-ACTIVE-CORE-PROJECTION:END -->
+
 ## 14. One-candidate-at-a-time
 
 Por defecto:
@@ -464,6 +505,8 @@ El Founder no debe actuar como validador manual de consistencia.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.0.5 | 2026-10-10 | Exige Snapshot Pre-Proyección ML y reglas DF-SNP cuando una reverificación posterior se proyecta al core. |
+| 1.0.4 | 2026-10-10 | Agrega Active Core Projection y reglas DF-CORE para impedir core marketplace vacío/stale cuando existe verificación ACTIVE. |
 | 1.0.3 | 2026-10-10 | Formaliza Marketplace Commercial + FX Capture Contract: precio ARS/USD, ventas raw, FX trazable, Verificaciones ML y manejo HISTORICAL_ONLY. |
 | 1.0.2 | 2026-10-10 | Corrige orden ejecutable del pipeline, amplía boundary F6 y formaliza trazabilidad temporal. |
 | 1.0.1 | 2026-10-10 | Aprobado tras aut119 corrected dual PASS; documenta cobertura real y límites del preflight. |

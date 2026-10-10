@@ -2,7 +2,7 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.2
+version: 0.2.4
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -83,13 +83,40 @@ Cerrada sobre `matrix-aut120-brand-cand-010-post-close-reconciliation.xlsx` / `5
 
 `aut118` permanece F13 histórico; `aut119 corrected` quedó superseded antes de publicación; `aut120` fue la baseline post-close de data fidelity y queda `SUPERSEDED` por `aut121 corrected`.
 
-La baseline vigente está documentada en `SI-RESEARCH-086`. No cambia score ni resultado; F14 permanece `NOT OPENED`.
+La baseline vigente está documentada en `SI-RESEARCH-088`. No cambia score ni resultado; F14 permanece `NOT OPENED`.
 <!-- BRAND-CAND-010-RECONCILIATION:END -->
 
 <!-- SI-RESEARCH-086:START -->
-## SI-RESEARCH-086 — BRAND-CAND-010 Marketplace Economics Reconciliation
+## SI-RESEARCH-086 — Marketplace Economics Reconciliation / histórica
 
-`matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx` / `7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc` es la baseline post-close vigente tras Data Fidelity Preflight v2.2 PASS + Matrix Validator PASS.
+`matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx` / `7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc` cerró marketplace economics con dual PASS.
 
-La reconciliación incorpora Precio ARS/USD, FX trazable, ventas visibles verificadas y ledger `Verificaciones ML`; no cambia score ni decisión.
+Queda `SUPERSEDED`: la capa verificada era correcta, pero el core operativo permanecía incompleto/stale.
+
+Estado posterior: `SI-RESEARCH-087` y `SI-RESEARCH-088`.
 <!-- SI-RESEARCH-086:END -->
+
+<!-- SI-RESEARCH-087:START -->
+## SI-RESEARCH-087 — Core Marketplace Materialization / histórica
+
+`matrix-aut122-brand-cand-010-post-close-core-marketplace-reconciliation.xlsx` / `67e850c0a40fb274629429587f9ce5b500eddb51da6580fccb2c48f060dba4ba` materializó correctamente el core `ACTIVE`.
+
+Queda `SUPERSEDED`: faltaba preservar estructuralmente el estado core pre-proyección.
+
+Estado vigente: `SI-RESEARCH-088`.
+<!-- SI-RESEARCH-087:END -->
+
+<!-- SI-RESEARCH-088:START -->
+## SI-RESEARCH-088 — BRAND-CAND-010 Core + Snapshot Reconciliation
+
+`matrix-aut123-brand-cand-010-post-close-core-snapshot-reconciliation.xlsx` / `23099aae25921caab2a223a101e420d4e217dd04701cfb767054e4e6fa2eadbb` es la baseline post-close vigente tras Data Fidelity Preflight v2.4 PASS + Matrix Validator PASS.
+
+```text
+21 ACTIVE core complete
+5 HISTORICAL_ONLY explícitos
+26/26 snapshots pre-proyección
+Core + Snapshot Fidelity PASS
+```
+
+Resultado estratégico sin cambios; F14 permanece `NOT OPENED`.
+<!-- SI-RESEARCH-088:END -->

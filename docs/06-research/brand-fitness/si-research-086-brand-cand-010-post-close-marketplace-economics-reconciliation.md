@@ -231,3 +231,14 @@ F0–F13 permanecen `CLOSED`.
 | Version | Date | Change |
 |---|---|---|
 | 1.0.0 | 2026-10-10 | Cierra marketplace economics reconciliation con aut121 corrected dual PASS. |
+
+
+## 13. Supersession
+
+`matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx` / `7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc` queda `SUPERSEDED` por `aut122`.
+
+Motivo: la capa de verificación estaba completa, pero el core `Precio ARS`, `Precio USD` y `Ventas visibles` no reflejaba la evidencia vigente en todas las filas `ACTIVE`.
+
+La corrección se documenta en `SI-RESEARCH-087`.
+
+No cambia score ni decisión.

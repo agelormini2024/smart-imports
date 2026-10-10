@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.23.3
+version: 1.23.5
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -41,9 +41,9 @@ PREVIOUS POST-CLOSE BASELINE: matrix-aut120-brand-cand-010-post-close-reconcilia
 PREVIOUS SHA-256: 5d52146d5011a72ed52d24df069346d2c063a5e8e918cb92bcc5aa110f4b10e2
 STATUS: SUPERSEDED BY aut121 corrected
 
-CURRENT POST-CLOSE BASELINE: matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx
-CURRENT SHA-256: 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc
-Data Fidelity Preflight v2.2: PASS
+CURRENT POST-CLOSE BASELINE: matrix-aut123-brand-cand-010-post-close-core-snapshot-reconciliation.xlsx
+CURRENT SHA-256: 23099aae25921caab2a223a101e420d4e217dd04701cfb767054e4e6fa2eadbb
+Data Fidelity Preflight v2.4: PASS
 Matrix Validator: PASS / errors 0 / warnings 0 / info 0
 
 F0–F13: CLOSED
@@ -59,8 +59,8 @@ SCREENING: CLOSED
 METHOD V2: F0–F13 CLOSED
 F13 MATRIX: matrix-aut118-brand-cand-010-phase13-final-corrected.xlsx
 F13 SHA-256: 54ffcb5cb2884141398763b796b5eb0162555a164e0d1c0ca172680bd4d5745a
-POST-CLOSE BASELINE: matrix-aut121-brand-cand-010-post-close-marketplace-economics-reconciliation-corrected.xlsx
-POST-CLOSE SHA-256: 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc
+POST-CLOSE BASELINE: matrix-aut123-brand-cand-010-post-close-core-snapshot-reconciliation.xlsx
+POST-CLOSE SHA-256: 23099aae25921caab2a223a101e420d4e217dd04701cfb767054e4e6fa2eadbb
 Data Fidelity Preflight: PASS
 Matrix Validator: PASS / errors 0 / warnings 0 / info 0
 F14: NOT OPENED
@@ -446,3 +446,41 @@ docs/
 
 | 1.8.0 | 2026-09-17 | Se consolida Brand System v0.3 y se migran los seis screenings a Territory Relationship + Screening Type. |
 | 1.14.0 | 2026-09-25 | BRAND-CAND-004 completa F0–F13; aut72 PASS; BASE-HOGAR-016 queda FINALIST — CONDITIONED; candidato PORTFOLIO REVIEW READY / FREEZE; se formaliza cierre documental obligatorio antes del siguiente candidato. |
+
+<!-- AUT123-SNAPSHOT-BASELINE:START -->
+## aut123 — Core + snapshot baseline vigente
+
+```text
+aut121 corrected
+→ marketplace economics dual PASS
+→ SUPERSEDED: core operativo incompleto/stale
+→ 7701f6d626905749431fb5836082d2bfbd612e8b6409e668fb6b1bc95ee77dfc
+
+aut122
+→ core marketplace materialization
+→ Data Fidelity Preflight v2.3 PASS
+→ Matrix Validator PASS
+→ SUPERSEDED: estado pre-proyección no preservado estructuralmente
+→ 67e850c0a40fb274629429587f9ce5b500eddb51da6580fccb2c48f060dba4ba
+
+aut123
+→ 21 ACTIVE core complete / synchronized
+→ 5 HISTORICAL_ONLY explícitos
+→ 26/26 Snapshot Pre-Proyección ML
+→ ML-0160 temporal proof: +500 → +100
+→ Core + Snapshot Fidelity PASS
+→ Data Fidelity Preflight v2.4 PASS
+→ Matrix Validator PASS / 0 errors / 0 warnings / 0 info
+→ CURRENT POST-CLOSE BASELINE
+→ 23099aae25921caab2a223a101e420d4e217dd04701cfb767054e4e6fa2eadbb
+
+F0–F13: CLOSED
+F14: NOT OPENED
+```
+
+```text
+ACTIVE CORE = VERIFIED CURRENT LAYER
+CURRENT CORE PROJECTION REQUIRES PRE-PROJECTION SNAPSHOT
+CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
+```
+<!-- AUT123-SNAPSHOT-BASELINE:END -->

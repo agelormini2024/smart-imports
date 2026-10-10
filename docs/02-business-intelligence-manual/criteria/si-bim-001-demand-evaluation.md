@@ -2,7 +2,7 @@
 id: si-bim-001
 title: Demand Evaluation
 description: Protocolo metodológico para evaluar el criterio Demanda dentro de la Matriz de Oportunidades de Smart Imports.
-version: 0.4.0
+version: 0.4.2
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -599,6 +599,40 @@ Un precio sin FX trazable no debe presentarse como precio USD válido.
 La reverificación posterior se registra en `Verificaciones ML`; no sustituye silenciosamente el snapshot histórico.
 <!-- METHOD-V2-MARKETPLACE-COMMERCIAL-FX:END -->
 
+<!-- METHOD-V2-MARKETPLACE-CORE-PROJECTION:START -->
+## 19.3 Method v2 — Marketplace Core Projection + Snapshot
+
+Las tres capas son distintas:
+
+```text
+Snapshot Pre-Proyección ML
+→ estado core anterior
+
+Verificaciones ML
+→ historial temporal append-only
+
+Publicaciones ML
+→ proyección operacional vigente
+```
+
+Para toda publicación `ACTIVE`:
+
+```text
+Precio ARS core = Precio ARS Verificado
+Precio USD core = Precio USD Verificado
+Ventas visibles core = Ventas visibles Verificadas
+```
+
+Si al menos una reverificación posterior se proyecta al core, antes de la proyección debe generarse un snapshot completo del scope: una fila por cada publicación marketplace del scope, preservando el estado core anterior.
+
+```text
+ACTIVE CORE = VERIFIED CURRENT LAYER
+CURRENT CORE PROJECTION REQUIRES PRE-PROJECTION SNAPSHOT
+CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
+HISTORICAL_ONLY ≠ FABRICATED CURRENT PRICE
+```
+<!-- METHOD-V2-MARKETPLACE-CORE-PROJECTION:END -->
+
 ## 20. Changelog
 
 | Version | Date | Change |
@@ -607,3 +641,5 @@ La reverificación posterior se registra en `Verificaciones ML`; no sustituye si
 | 0.2.0 | 2026-07-10 | Se actualizó el protocolo con el método operativo validado en el piloto Energía Solar Portátil, separación de capas, uso central de Evidencias y exclusión de generadores solares del nicho portátil. |
 | 0.3.0 | 2026-10-10 | Se preserva el protocolo histórico y se agrega el contrato de fidelidad Method v2: raw evidence literal, boundary DIRECT/ADJACENT/SUBSTITUTE, trazabilidad temporal y dual gate. |
 | 0.4.0 | 2026-10-10 | Agrega contrato marketplace obligatorio: Precio ARS/USD, ventas visibles, FX trazable, ledger de verificación y regla seller-sales ≠ product-sales. |
+| 0.4.1 | 2026-10-10 | Exige que el core marketplace ACTIVE materialice Precio ARS/USD y Ventas visibles desde la capa verificada vigente. |
+| 0.4.2 | 2026-10-10 | Agrega Snapshot Pre-Proyección ML para preservar el estado core anterior cuando una reverificación posterior se proyecta al core vigente. |
