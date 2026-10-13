@@ -2,15 +2,21 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.4
+version: 0.2.5
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-10
+updated: 2026-10-13
 ---
 
 # Marca Fitness — Research
+
+<!-- BRAND-CAND-007-F0-F3-CHECKPOINT:START -->
+## BRAND-CAND-007 — checkpoint F0–F3 (2026-10-13)
+
+**F0–F3 CLOSED / aut128 PASS / Demanda 3/5 / Confianza Media**. F3 ejecutada COLLABORATIVE con aprobación explícita del Founder. Seis publicaciones verificadas y trazables; sin Product Bases. Próximo gate **F4 — Competencia AUTO**, sobre la misma cohorte de F3. Checkpoint siguiente al finalizar F6. Research `SI-RESEARCH-089..092`. SHA-256 de aut128: `3fd9bce9fe32866ea30f33e26e3b3eaf9753a36e3223faf200618f8c8c4aba30`.
+<!-- BRAND-CAND-007-F0-F3-CHECKPOINT:END -->
 
 ## 1. Estado vigente
 
@@ -70,7 +76,7 @@ BASE-FIT-004 → DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
 DOCUMENTARY CHECKPOINT
 → review diff
 → commit/push humano
-→ seleccionar siguiente candidato entre BRAND-CAND-007..009
+→ paso histórico superado el 2026-10-13: `BRAND-CAND-007` ya está en F4 NEXT; `BRAND-CAND-008..009` permanecen sin abrir
 → abrir sólo uno
 ```
 

@@ -1,13 +1,13 @@
 ---
 id: brand-fitness
 title: Marca Fitness — Screening cerrado / Method v2
-description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 completado hasta F13 y BRAND-CAND-007..009 elegibles todavía no abiertos.
-version: 0.5.5
+description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 F0–F13 cerrado, BRAND-CAND-007 F0–F3 cerrado y BRAND-CAND-008..009 elegibles sin abrir.
+version: 0.5.6
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-03
-updated: 2026-10-10
+updated: 2026-10-13
 tags:
   - brand
   - fitness
@@ -20,6 +20,12 @@ related:
 ---
 
 # Marca Fitness — Screening cerrado
+
+<!-- BRAND-CAND-007-F0-F3-CHECKPOINT:START -->
+## BRAND-CAND-007 — checkpoint F0–F3 (2026-10-13)
+
+**F0–F3 CLOSED / aut128 PASS / Demanda 3/5 / Confianza Media**. F3 ejecutada COLLABORATIVE con aprobación explícita del Founder. Seis publicaciones verificadas y trazables; sin Product Bases. Próximo gate **F4 — Competencia AUTO**, sobre la misma cohorte de F3. Checkpoint siguiente al finalizar F6. Research `SI-RESEARCH-089..092`. SHA-256 de aut128: `3fd9bce9fe32866ea30f33e26e3b3eaf9753a36e3223faf200618f8c8c4aba30`.
+<!-- BRAND-CAND-007-F0-F3-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-010-DOCUMENTARY-CHECKPOINT:START -->
 ## Checkpoint operativo — BRAND-CAND-010 Method v2 cerrado / 2026-10-08
@@ -50,7 +56,7 @@ BASE-FIT-003 — Elíptica compacta under-desk
 BASE-FIT-004 — Balance board para standing desk
 → DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
 
-BRAND-CAND-007 → ELIGIBLE — NOT OPENED
+BRAND-CAND-007 → F0–F3 CLOSED / aut128 PASS / F4 NEXT
 BRAND-CAND-008 → ELIGIBLE — NOT OPENED
 BRAND-CAND-009 → ELIGIBLE — NOT OPENED
 ```
@@ -59,7 +65,7 @@ La walking pad queda como principal hipótesis de reapertura porque fue la únic
 
 `NO FINALIST` no equivale a descartar definitivamente el candidato. Significa que, con la evidencia disponible y los supuestos comparables del Method v2, ninguna Product Base justifica pasar hoy a Portfolio Review como finalista.
 
-Próximo gate de Marca Fitness: cerrar este checkpoint mediante revisión + commit/push humano y recién después seleccionar cuál de `BRAND-CAND-007..009` abrir. No abrir candidatos en paralelo por defecto.
+Próximo gate de Marca Fitness: completar la revisión y el commit/push humano del checkpoint F0–F3 de `BRAND-CAND-007`; después continuar **el mismo candidato** en F4–F6 AUTO, con checkpoint documental al terminar F6. `BRAND-CAND-008..009` siguen elegibles sin abrir. No abrir candidatos en paralelo.
 <!-- BRAND-CAND-010-DOCUMENTARY-CHECKPOINT:END -->
 
 ## 1. Estado vigente
@@ -127,8 +133,8 @@ BRAND-CAND-010
 → MATRIX MATERIALIZATION PENDING
 → F0 NOT CLOSED
 
-BRAND-CAND-007..009
-→ ELIGIBLE — NOT OPENED
+BRAND-CAND-007 → F0–F3 CLOSED / aut128 PASS / F4 NEXT
+BRAND-CAND-008..009 → ELIGIBLE — NOT OPENED
 ```
 
 Research vigente: [`SI-RESEARCH-070`](../../../06-research/brand-fitness/si-research-070-brand-cand-010-method-v2-agile-phase-0-research-brief.md).
@@ -139,6 +145,7 @@ BRAND-CAND-010 creó formalmente `BASE-FIT-001`..`BASE-FIT-004` en F6; ninguno q
 
 | Version | Fecha | Cambio |
 |---|---|---|
+| 0.5.6 | 2026-10-13 | Checkpoint BRAND-CAND-007 F0–F3, aut128 PASS, F4 siguiente. |
 | 0.5.0 | 2026-10-05 | Se abre Method v2 para BRAND-CAND-010: F0 Research Brief completo en SI-RESEARCH-070; materialización y Validator pendientes; 007–009 permanecen elegibles sin abrir. |
 | 0.4.0 | 2026-10-05 | Se cierra el primer bloque de Brand Candidate Screening: FIT-CAND-001/002/005/007 promueven a BRAND-CAND-007..010, todos CORE / PASS TO METHOD V2; Method v2 permanece sin abrir. |
 | 0.3.0 | 2026-10-05 | Se congela Fitness v0.2 como baseline pre-screening: territorio revisado, cuatro misiones, cuatro candidatos activos, FIT-CAND-003/004 absorbidos y FIT-CAND-006 reclasificado como capacidad transversal. |

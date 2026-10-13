@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.17.5
+version: 0.17.6
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-10
+updated: 2026-10-13
 tags:
   - smart-imports
   - research
@@ -16,6 +16,12 @@ tags:
 ---
 
 # 06 — Research
+
+<!-- BRAND-CAND-007-F0-F3-CHECKPOINT:START -->
+## BRAND-CAND-007 — checkpoint F0–F3 (2026-10-13)
+
+**F0–F3 CLOSED / aut128 PASS / Demanda 3/5 / Confianza Media**. F3 ejecutada COLLABORATIVE con aprobación explícita del Founder. Seis publicaciones verificadas y trazables; sin Product Bases. Próximo gate **F4 — Competencia AUTO**, sobre la misma cohorte de F3. Checkpoint siguiente al finalizar F6. Research `SI-RESEARCH-089..092`. SHA-256 de aut128: `3fd9bce9fe32866ea30f33e26e3b3eaf9753a36e3223faf200618f8c8c4aba30`.
+<!-- BRAND-CAND-007-F0-F3-CHECKPOINT:END -->
 
 <!-- BRAND-FITNESS-RESEARCH-STATUS:START -->
 ## Marca Fitness — Research vigente
@@ -31,8 +37,8 @@ BRAND-CAND-010
 → FREEZE
 → F14 NOT OPENED
 
-BRAND-CAND-007..009
-→ ELIGIBLE — NOT OPENED
+BRAND-CAND-007 → F0–F3 CLOSED / aut128 PASS / F4 NEXT
+BRAND-CAND-008..009 → ELIGIBLE — NOT OPENED
 ```
 
 Research completo: [`brand-fitness/README.md`](./brand-fitness/README.md).
@@ -209,6 +215,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.17.6 | 2026-10-13 | Checkpoint BRAND-CAND-007 F0–F3, aut128 PASS, F4 siguiente. |
 | 0.17.1 | 2026-10-08 | Se publica el cierre completo de BRAND-CAND-010 F0–F13; aut118 PASS, NO FINALIST, FREEZE y F14 NOT OPENED. |
 | 0.17.0 | 2026-10-07 | SI-RESEARCH-071 cierra Portfolio Review interno de Marca Hogar; BASE-HOGAR-016 lead, BASE-HOGAR-006 backup, baseline congelada y revisión externa pendiente. |
 | 0.16.0 | 2026-10-05 | BRAND-CAND-006 completa F0–F13; SI-RESEARCH-062..069 documentan la reconciliación aut97–aut104 PASS; BASE-PET-003 queda finalista condicionado y el candidato PORTFOLIO REVIEW READY / FREEZE. |
