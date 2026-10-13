@@ -2,7 +2,7 @@
 id: si-bim-proc-003
 title: Method v2 Execution Contract
 description: Contrato operativo único para ejecutar, validar, cerrar y reconciliar fases de Method v2 de forma repetible y ágil.
-version: 1.0.5
+version: 1.0.6
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -104,12 +104,90 @@ Qué significa la evidencia:
 | F5 | F3/F4 | Brand Potential | no sourcing |
 | F6 | F1–F5 | Product Bases | primera fase que crea PB |
 | F7 | PBs | shortlist pre-origin | no sourcing exhaustivo |
-| F8 | shortlist | Origin Screening | claims source-bound |
+| F8 | shortlist | Origin Screening | COLLABORATIVE; Founder Review required; claims source-bound |
 | F9 | precio local + origen | Headroom | headroom ≠ landed cost |
 | F10 | costo/MOQ/packing/peso | Minimum Landed Dataset | decision-grade ≠ procurement-grade |
 | F11 | dataset F10 + supuestos | Landed Cost Screen | no decisión final |
 | F12 | F11 | Margin + ROI | interpreta, no recalcula |
 | F13 | F3–F12 | Final Shortlist | integra; F14 no se abre implícitamente |
+
+<!-- METHOD-V2-F8-COLLABORATIVE:START -->
+### 4.1 F8 — Origin Screening / Alibaba — COLLABORATIVE
+
+F8 es un gate deliberadamente colaborativo.
+
+```text
+F8 — Origin Screening / Alibaba
+mode: COLLABORATIVE
+Founder participation: REQUIRED
+```
+
+La búsqueda de origen no debe tratarse como una recolección autónoma cerrada. Alibaba puede revelar variantes, OEM, arquitecturas, packaging, MOQ y alternativas que requieren lectura comercial conjunta.
+
+#### Participación del Founder
+
+El Founder participa en:
+
+- discovery exploratorio en Alibaba;
+- aporte y revisión de listings/productos/proveedores;
+- revisión de variantes y arquitecturas;
+- evaluación del shortlist de origen;
+- aprobación explícita del cierre.
+
+#### Automatización permitida
+
+Dentro de F8 pueden permanecer `AUTO`:
+
+- preparación de keywords;
+- ampliación y triage de búsquedas;
+- normalización;
+- deduplicación;
+- detección de equivalencias/OEM;
+- extracción de atributos públicos;
+- comparación contra Product Bases;
+- materialización de evidencias/matriz;
+- validación automática.
+
+```text
+PHASE MODE = COLLABORATIVE
+≠
+EVERY TASK = MANUAL
+```
+
+#### Close gate
+
+```text
+FOUNDER REVIEW: APPROVED
++
+ORIGIN EVIDENCE: SOURCE-BOUND
++
+ORIGIN SHORTLIST: MATERIALIZED
++
+CANONICAL VALIDATION: PASS
+=
+F8 ELIGIBLE FOR CLOSED
+```
+
+F8 no puede declararse `CLOSED` únicamente por ejecución autónoma del agente.
+
+Se mantienen:
+
+```text
+ORIGIN CONFIRMED ≠ SUPPLIER SELECTED
+PUBLIC LISTING ≠ FORMAL QUOTE
+PUBLIC ALIBABA PRICE ≠ NEGOTIATED FOB
+DECISION-GRADE ≠ PROCUREMENT-GRADE
+```
+
+Esta regla es prospectiva. Las ejecuciones históricas documentadas como `AUTO` conservan su valor histórico y no se reabren sólo por este cambio de governance.
+
+Toda nueva documentación F8 debe declarar en frontmatter:
+
+```text
+phase: F8
+mode: COLLABORATIVE
+```
+<!-- METHOD-V2-F8-COLLABORATIVE:END -->
 
 ## 5. Regla F6
 
@@ -505,6 +583,7 @@ El Founder no debe actuar como validador manual de consistencia.
 
 | Version | Date | Change |
 |---|---|---|
+| 1.0.6 | 2026-10-13 | Formaliza F8 — Origin Screening / Alibaba como COLLABORATIVE y exige Founder Review explícita para cerrar la fase. |
 | 1.0.5 | 2026-10-10 | Exige Snapshot Pre-Proyección ML y reglas DF-SNP cuando una reverificación posterior se proyecta al core. |
 | 1.0.4 | 2026-10-10 | Agrega Active Core Projection y reglas DF-CORE para impedir core marketplace vacío/stale cuando existe verificación ACTIVE. |
 | 1.0.3 | 2026-10-10 | Formaliza Marketplace Commercial + FX Capture Contract: precio ARS/USD, ventas raw, FX trazable, Verificaciones ML y manejo HISTORICAL_ONLY. |

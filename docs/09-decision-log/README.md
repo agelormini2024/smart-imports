@@ -2,7 +2,7 @@
 id: si-decision-log-readme
 title: Decision Log Index
 description: Índice de decisiones estratégicas, metodológicas y técnicas de Smart Imports.
-version: 0.7.2
+version: 0.7.3
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -130,3 +130,11 @@ Aprobada. Desde el checkpoint de governance del 2026-10-10, un gate Method v2 re
 
 Aprobada. Desde el checkpoint aut121 corrected, toda evidencia marketplace activa desde F3 debe conservar Precio ARS + Precio USD + FX trazable + ventas visibles/raw + source binding.
 <!-- SI-DECISION-019:END -->
+
+<!-- SI-DECISION-020:START -->
+## SI-DECISION-020 — F8 Origin Screening / Alibaba = COLLABORATIVE
+
+[`SI-DECISION-020`](./si-decision-020-make-f8-origin-screening-collaborative.md) formaliza F8 como fase colaborativa y exige `Founder Review: APPROVED` para el close gate.
+
+Aplicación: prospectiva; no reabre expedientes históricos.
+<!-- SI-DECISION-020:END -->

@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.23.5
+version: 1.23.6
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -954,7 +954,7 @@ F0–F13: CLOSED
 F14: NOT OPENED
 ```
 
-Antes de abrir `BRAND-CAND-007..009`, el siguiente candidato debe heredar `SI-BIM-PROC-003 v1.0.3`, `SI-DECISION-019` y el Data Fidelity Preflight v2.2.
+Antes de abrir `BRAND-CAND-007..009`, el siguiente candidato debe heredar `SI-BIM-PROC-003 v1.0.6`, `SI-DECISION-019`, `SI-DECISION-020` y Data Fidelity Preflight v2.4.
 
 Marca Hogar conserva una deuda histórica de reconciliación marketplace que debe resolverse por Brand Candidate antes de reutilizar esa evidencia como baseline vigente.
 <!-- METHOD-V2-GOVERNANCE-2026-10-10:END -->
@@ -996,3 +996,26 @@ CURRENT CORE PROJECTION REQUIRES PRE-PROJECTION SNAPSHOT
 CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
 ```
 <!-- AUT123-SNAPSHOT-BASELINE:END -->
+
+<!-- METHOD-V2-F8-COLLABORATIVE:START -->
+## Governance — F8 Origin Screening / Alibaba
+
+Cambio prospectivo vigente desde `SI-DECISION-020`:
+
+```text
+F8 MODE: COLLABORATIVE
+Founder participation: REQUIRED
+Founder Review: APPROVED → requerido para CLOSE
+```
+
+Para el próximo Brand Candidate:
+
+1. F7 entrega shortlist pre-origin.
+2. F8 abre discovery colaborativo en Alibaba.
+3. Alejandro participa en búsqueda y revisión de productos/variantes.
+4. El agente puede automatizar triage, normalización, deduplicación, clasificación, materialización y validación.
+5. Se presenta el origin shortlist.
+6. F8 sólo puede cerrar después de `Founder Review: APPROVED` + validación canónica PASS.
+
+No se reabren Brand Candidates históricos únicamente por esta corrección de governance.
+<!-- METHOD-V2-F8-COLLABORATIVE:END -->

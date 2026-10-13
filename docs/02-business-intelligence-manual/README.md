@@ -2,7 +2,7 @@
 id: si-bim-readme
 title: Business Intelligence Manual Index
 description: Índice principal del Business Intelligence Manual de Smart Imports. Organiza la metodología de investigación, evaluación, evidencias, scoring y priorización de nichos.
-version: 0.3.4
+version: 0.3.5
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -276,3 +276,18 @@ CURRENT CORE PROJECTION REQUIRES PRE-PROJECTION SNAPSHOT
 CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
 ```
 <!-- AUT123-SNAPSHOT-BASELINE:END -->
+
+<!-- METHOD-V2-F8-COLLABORATIVE:START -->
+## F8 — Origin Screening / Alibaba
+
+A partir de `SI-DECISION-020`, F8 se ejecuta en modalidad `COLLABORATIVE`.
+
+```text
+Founder participation: REQUIRED
+Founder Review: APPROVED → requerido para CLOSE
+```
+
+La fase admite automatización interna de búsqueda asistida, normalización, clasificación, materialización y validación, pero no puede cerrarse únicamente por ejecución autónoma.
+
+La regla es prospectiva y no reabre ejecuciones históricas.
+<!-- METHOD-V2-F8-COLLABORATIVE:END -->

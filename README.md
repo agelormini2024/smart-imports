@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.23.5
+version: 1.23.6
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -484,3 +484,20 @@ CURRENT CORE PROJECTION REQUIRES PRE-PROJECTION SNAPSHOT
 CURRENT VERIFICATION ≠ HISTORICAL CAPTURE
 ```
 <!-- AUT123-SNAPSHOT-BASELINE:END -->
+
+<!-- METHOD-V2-F8-COLLABORATIVE:START -->
+## Method v2 — F8 colaborativa
+
+Governance vigente:
+
+```text
+F8 — Origin Screening / Alibaba
+mode: COLLABORATIVE
+Founder participation: REQUIRED
+Founder Review: APPROVED → required for CLOSE
+```
+
+La búsqueda/revisión de origen se realiza de forma colaborativa con Alejandro. La normalización, deduplicación, análisis, materialización y validación pueden continuar automatizadas.
+
+`SI-DECISION-020` aplica prospectivamente; los expedientes históricos `AUTO` no se reescriben ni se reabren.
+<!-- METHOD-V2-F8-COLLABORATIVE:END -->
