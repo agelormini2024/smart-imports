@@ -2,7 +2,7 @@
 id: smart-imports-readme
 title: Smart Imports
 description: Knowledge base, business intelligence methodology and platform documentation for Smart Imports.
-version: 1.23.8
+version: 1.23.9
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -16,6 +16,27 @@ tags:
   - brand-system
 ---
 # Smart Imports
+
+<!-- BRAND-CAND-007-F7-F8-CHECKPOINT:START -->
+## BRAND-CAND-007 — Checkpoint único F7–F8 (2026-10-14)
+
+**F7–F8 CLOSED / aut133 PASS / HOLD para revisión externa.** F7 AUTO y F8 COLLABORATIVE culminaron con Data Fidelity Preflight v2.4 y Matrix Validator `full-matrix-v5 0.7.0` **PASS** en ambas matrices, sin errores, warnings, findings ni limitations. La aprobación del Founder para F8 se registra **expresamente** al ejecutar este checkpoint. La matriz `aut133` constituye un snapshot técnico **previo** a dicha aprobación; no se modifica retroactivamente.
+
+```text
+F7 Shortlist Pre-Origin: aut132 — CLOSED / AUTO / PASS
+F7 SHA-256: ca2aa758788c53be1307aa10bb0c3b7ba03cbda0126141b1eb121844979d828b
+F8 Origin Screening: aut133 — CLOSED / COLLABORATIVE / DOUBLE PASS / FOUNDER REVIEW APPROVED
+F8 SHA-256: 02a689d96fd98d2b46fea21aa5d6630fa27eff7a5f0e0cfa10d61bae6f8b1ccf
+F8 ofertas Alibaba observadas: COT-0065..0069 (5); SRC-0531..0535; EVID-0312..0316; EVSRC-0728..0732
+BASE-FIT-005 — HOLD / dos ofertas observadas / seguridad, ensayo de bandas-anclajes y condiciones no homologadas
+BASE-FIT-007 — HOLD / tres ofertas observadas / variantes 10-15-20 kg exploratorias, materiales y logística sin resolver
+BASE-FIT-006 — DEFER / reabrible con demanda específica y diferenciación verificable
+BASE-FIT-008 — DEFER / reabrible únicamente con base de seguridad técnica suficiente
+F9: NOT OPENED
+```
+
+**No se eligieron proveedores, no hubo RFQ ni muestras, no se definieron costos FOB/landed ni importaciones.** La profundización de producto/proveedor permanece en pausa hasta la reunión con el socio y el despachante; éstos deben informar las fricciones regulatorias, logísticas, económicas y de calidad que permitirán decidir reaperturas y prioridades. `SI-RESEARCH-096` y `SI-RESEARCH-097` documentan la trazabilidad. Los cinco PDF y las matrices permanecen privados fuera de Git. No se abrió `BRAND-CAND-008..009` en paralelo.
+<!-- BRAND-CAND-007-F7-F8-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-007-F4-F6-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Checkpoint F4–F6 (2026-10-14)
@@ -106,7 +127,7 @@ BASE-FIT-003 — Elíptica compacta under-desk
 BASE-FIT-004 — Balance board para standing desk
 → DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
 
-BRAND-CAND-007 → F0–F6 CLOSED / aut131 PASS / F7 NEXT
+BRAND-CAND-007 → F0–F8 CLOSED / aut133 PASS / HOLD EXTERNAL / F9 NOT OPENED
 BRAND-CAND-008 → ELIGIBLE — NOT OPENED
 BRAND-CAND-009 → ELIGIBLE — NOT OPENED
 ```
@@ -115,7 +136,7 @@ La walking pad queda como principal hipótesis de reapertura porque fue la únic
 
 `NO FINALIST` no equivale a descartar definitivamente el candidato. Significa que, con la evidencia disponible y los supuestos comparables del Method v2, ninguna Product Base justifica pasar hoy a Portfolio Review como finalista.
 
-Próximo gate de Marca Fitness: cerrar por revisión y commit/push humano el checkpoint documental F4–F6 de `BRAND-CAND-007` (`aut131` PASS); continuar con F7 — Shortlist Pre-Origin AUTO. F8 permanece COLLABORATIVE con revisión del Founder. `BRAND-CAND-008..009` permanecen sin abrir.
+Próximo gate de Marca Fitness: `BRAND-CAND-007` F7–F8 CLOSED / aut133 PASS, Founder Review aprobada; investigación profunda HOLD hasta reuniones con socio y despachante. F9 NOT OPENED. `BRAND-CAND-008..009` sin abrir.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-EXTERNAL-REVIEW-PAUSE:START -->
@@ -442,6 +463,7 @@ docs/
 
 | Version | Date | Change |
 |---|---|---|
+| 1.23.9 | 2026-10-14 | BRAND-CAND-007 F7–F8 CLOSED, aut132/aut133 doble PASS, Founder Review aprobado, HOLD externo. |
 | 1.23.8 | 2026-10-14 | Checkpoint BRAND-CAND-007 F4–F6, aut131 triple doble PASS, F7 siguiente. |
 | 1.23.7 | 2026-10-13 | Checkpoint BRAND-CAND-007 F0–F3, aut128 PASS, F4 siguiente. |
 | 1.23.1 | 2026-10-08 | BRAND-CAND-010 cierra Method v2 F0–F13 sobre aut105–aut118 PASS; resultado NO FINALIST, con BASE-FIT-001/002 STOP — REOPENABLE y 003/004 DEFER. F14 no se abre. |

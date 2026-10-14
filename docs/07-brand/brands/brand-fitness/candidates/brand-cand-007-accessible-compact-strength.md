@@ -2,15 +2,36 @@
 id: brand-cand-007
 title: Fuerza accesible y compacta
 description: Brand Candidate Screening prospectivo de fuerza accesible y compacta para Marca Fitness.
-version: 0.2.2
-status: method-v2-f6-closed
-method_v2_status: f0-f6-closed-f7-next
+version: 0.2.3
+status: method-v2-f8-closed-external-hold
+method_v2_status: f0-f8-closed-external-hold
 brand: brand-fitness
 created: 2026-10-05
 updated: 2026-10-14
 ---
 
 # BRAND-CAND-007 — Fuerza accesible y compacta
+
+<!-- BRAND-CAND-007-METHOD-V2-F7-F8:START -->
+## BRAND-CAND-007 — Checkpoint único F7–F8 (2026-10-14)
+
+**F7–F8 CLOSED / aut133 PASS / HOLD para revisión externa.** F7 AUTO y F8 COLLABORATIVE culminaron con Data Fidelity Preflight v2.4 y Matrix Validator `full-matrix-v5 0.7.0` **PASS** en ambas matrices, sin errores, warnings, findings ni limitations. La aprobación del Founder para F8 se registra **expresamente** al ejecutar este checkpoint. La matriz `aut133` constituye un snapshot técnico **previo** a dicha aprobación; no se modifica retroactivamente.
+
+```text
+F7 Shortlist Pre-Origin: aut132 — CLOSED / AUTO / PASS
+F7 SHA-256: ca2aa758788c53be1307aa10bb0c3b7ba03cbda0126141b1eb121844979d828b
+F8 Origin Screening: aut133 — CLOSED / COLLABORATIVE / DOUBLE PASS / FOUNDER REVIEW APPROVED
+F8 SHA-256: 02a689d96fd98d2b46fea21aa5d6630fa27eff7a5f0e0cfa10d61bae6f8b1ccf
+F8 ofertas Alibaba observadas: COT-0065..0069 (5); SRC-0531..0535; EVID-0312..0316; EVSRC-0728..0732
+BASE-FIT-005 — HOLD / dos ofertas observadas / seguridad, ensayo de bandas-anclajes y condiciones no homologadas
+BASE-FIT-007 — HOLD / tres ofertas observadas / variantes 10-15-20 kg exploratorias, materiales y logística sin resolver
+BASE-FIT-006 — DEFER / reabrible con demanda específica y diferenciación verificable
+BASE-FIT-008 — DEFER / reabrible únicamente con base de seguridad técnica suficiente
+F9: NOT OPENED
+```
+
+**No se eligieron proveedores, no hubo RFQ ni muestras, no se definieron costos FOB/landed ni importaciones.** La profundización de producto/proveedor permanece en pausa hasta la reunión con el socio y el despachante; éstos deben informar las fricciones regulatorias, logísticas, económicas y de calidad que permitirán decidir reaperturas y prioridades. `SI-RESEARCH-096` y `SI-RESEARCH-097` documentan la trazabilidad. Los cinco PDF y las matrices permanecen privados fuera de Git. No se abrió `BRAND-CAND-008..009` en paralelo.
+<!-- BRAND-CAND-007-METHOD-V2-F7-F8:END -->
 
 <!-- BRAND-CAND-007-METHOD-V2-F4-F6:START -->
 ## BRAND-CAND-007 — Checkpoint F4–F6 (2026-10-14)
@@ -137,7 +158,7 @@ Guardrail:
 
 ```text
 Decision: PASS TO METHOD V2
-Method v2 handoff: F0–F6 CLOSED / aut131 PASS / F7 NEXT
+Method v2 handoff: F0–F8 CLOSED / aut133 PASS / EXTERNAL HOLD / F9 NOT OPENED
 ```
 
 Decision rationale:
@@ -148,15 +169,15 @@ Decision rationale:
 
 ```text
 SCREENING: CLOSED
-METHOD V2: F0–F6 CLOSED / aut131 PASS / F7 NEXT
-PRODUCT BASES: BASE-FIT-005..008 (4) — normalizadas en F6
+METHOD V2: F0–F8 CLOSED / aut133 PASS / EXTERNAL HOLD / F9 NOT OPENED
+PRODUCT BASES: BASE-FIT-005..008 (4) — F7/F8 shortlist 005/007 HOLD; 006/008 DEFER
 ```
 
 `PASS TO METHOD V2` no implica recomendación de importación ni prioridad de ejecución.
 
 ## 10. Method v2 — apertura técnica de F0 (registro histórico)
 
-> Este apartado conserva el estado de apertura de F0, previo a sus validaciones. El estado vigente es **F0–F6 CLOSED / aut131 PASS / F7 NEXT**.
+> Este apartado conserva el estado de apertura de F0, previo a sus validaciones. El estado vigente es **F0–F8 CLOSED / aut133 PASS / HOLD EXTERNO / F9 NOT OPENED**.
 
 ```text
 Research: SI-RESEARCH-089
@@ -175,4 +196,4 @@ La apertura preserva el problema y los guardrails aprobados por Brand Candidate 
 
 F8 queda heredada bajo governance vigente como `COLLABORATIVE`, con participación del Founder y `Founder Review` requerido para cierre cuando la ejecución alcance esa fase.
 
-Próximo gate vigente: F7 — Shortlist Pre-Origin AUTO, después del triple doble PASS F4–F6.
+Próximo gate vigente: reunión con el socio y el despachante; F9 NOT OPENED. Solo entonces evaluar fricción y prioridad de profundización.
