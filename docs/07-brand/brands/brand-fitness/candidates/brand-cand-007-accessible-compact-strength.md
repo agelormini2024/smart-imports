@@ -2,15 +2,35 @@
 id: brand-cand-007
 title: Fuerza accesible y compacta
 description: Brand Candidate Screening prospectivo de fuerza accesible y compacta para Marca Fitness.
-version: 0.2.1
-status: method-v2-f3-closed
-method_v2_status: f0-f3-closed-f4-next
+version: 0.2.2
+status: method-v2-f6-closed
+method_v2_status: f0-f6-closed-f7-next
 brand: brand-fitness
 created: 2026-10-05
-updated: 2026-10-13
+updated: 2026-10-14
 ---
 
 # BRAND-CAND-007 — Fuerza accesible y compacta
+
+<!-- BRAND-CAND-007-METHOD-V2-F4-F6:START -->
+## BRAND-CAND-007 — Checkpoint F4–F6 (2026-10-14)
+
+**F4–F6 CLOSED — aut131 PASS.** Ejecución AUTO con validación canónica en cada fase y un único checkpoint documental conjunto. Se reutilizó la cohorte de seis publicaciones F3, sin alterar sus ventas, precios, FX ni el ledger histórico.
+
+```text
+F4 — Competencia: CLOSED / aut129 PASS / EVAL-0033: 3/5, Confianza Media
+F5 — Potencial de Marca: CLOSED / aut130 PASS / EVAL-0034: 3/5, Confianza Baja
+F6 — Product Bases: CLOSED / aut131 PASS / BASE-FIT-005..008 (4)
+F7 — Shortlist Pre-Origin: NEXT / AUTO
+F8 — Origin Screening: COLLABORATIVE / Founder Review REQUIRED
+Data Fidelity Preflight v2.4 + Matrix Validator full-matrix-v5 0.7.0: PASS en F4, F5 y F6
+SHA-256 aut129: 287d0f6bd93ce167b92f8967c2cf1690d0a620d58829e8cb827f13481983294f
+SHA-256 aut130: 8ba9d75fa09c0bf03a78372d4b9255190af27825f2272f77458f326cfbbdd106
+SHA-256 aut131: 99477da455a27a477245b5e4bc66c00992597f1b1ff32c2ab6376258f54c078d
+```
+
+Documentos nuevos: `SI-RESEARCH-093..095` en `docs/06-research/brand-fitness/`. Product Bases normalizadas: `BASE-FIT-005` bandas tubulares, `BASE-FIT-006` bandas loop, `BASE-FIT-007` mancuernas/barra ajustables 20 kg y `BASE-FIT-008` sistema de suspensión. Se mantienen riesgos pendientes de seguridad y durabilidad, y **no hay finalista, proveedor ni recomendación de importación**. La matriz permanece privada, fuera de Git.
+<!-- BRAND-CAND-007-METHOD-V2-F4-F6:END -->
 
 <!-- BRAND-CAND-007-METHOD-V2-F0-F3:START -->
 ## Estado Method v2 — checkpoint F0–F3 (2026-10-13)
@@ -117,7 +137,7 @@ Guardrail:
 
 ```text
 Decision: PASS TO METHOD V2
-Method v2 handoff: F0–F3 CLOSED / aut128 PASS / F4 NEXT
+Method v2 handoff: F0–F6 CLOSED / aut131 PASS / F7 NEXT
 ```
 
 Decision rationale:
@@ -128,15 +148,15 @@ Decision rationale:
 
 ```text
 SCREENING: CLOSED
-METHOD V2: F0–F3 CLOSED / aut128 PASS / F4 NEXT
-PRODUCT BASES: NOT DEFINED
+METHOD V2: F0–F6 CLOSED / aut131 PASS / F7 NEXT
+PRODUCT BASES: BASE-FIT-005..008 (4) — normalizadas en F6
 ```
 
 `PASS TO METHOD V2` no implica recomendación de importación ni prioridad de ejecución.
 
 ## 10. Method v2 — apertura técnica de F0 (registro histórico)
 
-> Este apartado conserva el estado de apertura de F0, previo a sus validaciones. El estado vigente es **F0–F3 CLOSED / aut128 PASS / F4 NEXT**.
+> Este apartado conserva el estado de apertura de F0, previo a sus validaciones. El estado vigente es **F0–F6 CLOSED / aut131 PASS / F7 NEXT**.
 
 ```text
 Research: SI-RESEARCH-089
@@ -155,4 +175,4 @@ La apertura preserva el problema y los guardrails aprobados por Brand Candidate 
 
 F8 queda heredada bajo governance vigente como `COLLABORATIVE`, con participación del Founder y `Founder Review` requerido para cierre cuando la ejecución alcance esa fase.
 
-Próximo gate: F4 — Competencia AUTO sobre la misma cohorte de F3, después de aut128 PASS.
+Próximo gate vigente: F7 — Shortlist Pre-Origin AUTO, después del triple doble PASS F4–F6.

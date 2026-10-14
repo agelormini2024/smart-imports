@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.23.7
+version: 1.23.8
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-10-13
+updated: 2026-10-14
 tags:
   - status
   - handoff
@@ -38,6 +38,26 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- BRAND-CAND-007-F4-F6-CHECKPOINT:START -->
+## BRAND-CAND-007 — Checkpoint F4–F6 (2026-10-14)
+
+**F4–F6 CLOSED — aut131 PASS.** Ejecución AUTO con validación canónica en cada fase y un único checkpoint documental conjunto. Se reutilizó la cohorte de seis publicaciones F3, sin alterar sus ventas, precios, FX ni el ledger histórico.
+
+```text
+F4 — Competencia: CLOSED / aut129 PASS / EVAL-0033: 3/5, Confianza Media
+F5 — Potencial de Marca: CLOSED / aut130 PASS / EVAL-0034: 3/5, Confianza Baja
+F6 — Product Bases: CLOSED / aut131 PASS / BASE-FIT-005..008 (4)
+F7 — Shortlist Pre-Origin: NEXT / AUTO
+F8 — Origin Screening: COLLABORATIVE / Founder Review REQUIRED
+Data Fidelity Preflight v2.4 + Matrix Validator full-matrix-v5 0.7.0: PASS en F4, F5 y F6
+SHA-256 aut129: 287d0f6bd93ce167b92f8967c2cf1690d0a620d58829e8cb827f13481983294f
+SHA-256 aut130: 8ba9d75fa09c0bf03a78372d4b9255190af27825f2272f77458f326cfbbdd106
+SHA-256 aut131: 99477da455a27a477245b5e4bc66c00992597f1b1ff32c2ab6376258f54c078d
+```
+
+Documentos nuevos: `SI-RESEARCH-093..095` en `docs/06-research/brand-fitness/`. Product Bases normalizadas: `BASE-FIT-005` bandas tubulares, `BASE-FIT-006` bandas loop, `BASE-FIT-007` mancuernas/barra ajustables 20 kg y `BASE-FIT-008` sistema de suspensión. Se mantienen riesgos pendientes de seguridad y durabilidad, y **no hay finalista, proveedor ni recomendación de importación**. La matriz permanece privada, fuera de Git.
+<!-- BRAND-CAND-007-F4-F6-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-007-F0-F3-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Checkpoint F0–F3 (2026-10-13)
@@ -87,7 +107,7 @@ BASE-FIT-003 — Elíptica compacta under-desk
 BASE-FIT-004 — Balance board para standing desk
 → DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
 
-BRAND-CAND-007 → F0–F3 CLOSED / aut128 PASS / F4 NEXT
+BRAND-CAND-007 → F0–F6 CLOSED / aut131 PASS / F7 NEXT
 BRAND-CAND-008 → ELIGIBLE — NOT OPENED
 BRAND-CAND-009 → ELIGIBLE — NOT OPENED
 ```
@@ -96,7 +116,7 @@ La walking pad queda como principal hipótesis de reapertura porque fue la únic
 
 `NO FINALIST` no equivale a descartar definitivamente el candidato. Significa que, con la evidencia disponible y los supuestos comparables del Method v2, ninguna Product Base justifica pasar hoy a Portfolio Review como finalista.
 
-Próximo gate de Marca Fitness: completar la revisión y el commit/push humano del checkpoint F0–F3 de `BRAND-CAND-007`; después continuar **el mismo candidato** en F4–F6 AUTO, con checkpoint documental al terminar F6. `BRAND-CAND-008..009` siguen elegibles sin abrir. No abrir candidatos en paralelo.
+Próximo gate de Marca Fitness: cerrar por revisión y commit/push humano el checkpoint documental F4–F6 de `BRAND-CAND-007` (`aut131` PASS); continuar con F7 — Shortlist Pre-Origin AUTO. F8 permanece COLLABORATIVE con revisión del Founder. `BRAND-CAND-008..009` permanecen sin abrir.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
@@ -406,7 +426,7 @@ No confundir:
 | Próxima acción Nicho 3 | Consolidar finalistas y preparar el gate profesional externo |
 | Brand System | v0.4; se agrega lifecycle de Hypothesis ID local → `BRAND-CAND-XXX` formal/global, manteniendo `CORE` / `STRONG ADJACENCY` y separación Brand Fit / Method v2 |
 | Brand Candidate Screening | v0.4 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; lifecycle Hypothesis ID → `BRAND-CAND-XXX`; 001–005 = `CORE / PASS`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED`; 007–010 = `CORE / PASS TO METHOD V2` |
-| Próxima acción Brand | Cerrar por revisión y commit/push humano el checkpoint F0–F3 de `BRAND-CAND-007` (`aut128` PASS); continuar F4–F6 AUTO con checkpoint al terminar F6. `BRAND-CAND-010` permanece F0–F13 CLOSED / FREEZE; `BRAND-CAND-008..009` siguen sin abrir. La prioridad comercial de Marca Hogar no se redefine aquí. |
+| Próxima acción Brand | Checkpoint documental F4–F6 de `BRAND-CAND-007` (`aut131` triple doble PASS): revisión y commit/push humano. Continuar el mismo candidato en F7 AUTO; F8 COLLABORATIVE con Founder Review requerida. `BRAND-CAND-010` continúa F0–F13 CLOSED / FREEZE y `BRAND-CAND-008..009` siguen sin abrir. La prioridad comercial de Marca Hogar no se redefine aquí. |
 
 ## 3. Snapshot histórico del Nicho 3 — 2026-09-17
 
@@ -811,6 +831,7 @@ El trigger ya fue cumplido. El entregable permanece como material de reunión a 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.23.8 | 2026-10-14 | Checkpoint BRAND-CAND-007 F4–F6, aut131 triple doble PASS, F7 siguiente. |
 | 1.23.7 | 2026-10-13 | Checkpoint BRAND-CAND-007 F0–F3, aut128 PASS, F4 siguiente. |
 | 1.23.1 | 2026-10-08 | BRAND-CAND-010 completa Method v2 F0–F13 sobre aut105–aut118 PASS; NO FINALIST / FREEZE; BASE-FIT-001 queda principal reapertura por logistics gate; F14 no se abre. |
 | 1.23.0 | 2026-10-07 | Marca Hogar cierra Portfolio Review interno; BASE-HOGAR-016 lead, BASE-HOGAR-006 backup; baseline congelada, revisión externa pendiente y workstream principal cambia a Marca Fitness / aut105. |

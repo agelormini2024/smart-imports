@@ -2,12 +2,12 @@
 id: docs-06-research-readme
 title: 06 — Research
 description: Índice de investigaciones de nichos, productos, proveedores, competencia, demanda, márgenes y oportunidades.
-version: 0.17.6
+version: 0.17.7
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-13
+updated: 2026-10-14
 tags:
   - smart-imports
   - research
@@ -16,6 +16,26 @@ tags:
 ---
 
 # 06 — Research
+
+<!-- BRAND-CAND-007-F4-F6-CHECKPOINT:START -->
+## BRAND-CAND-007 — Checkpoint F4–F6 (2026-10-14)
+
+**F4–F6 CLOSED — aut131 PASS.** Ejecución AUTO con validación canónica en cada fase y un único checkpoint documental conjunto. Se reutilizó la cohorte de seis publicaciones F3, sin alterar sus ventas, precios, FX ni el ledger histórico.
+
+```text
+F4 — Competencia: CLOSED / aut129 PASS / EVAL-0033: 3/5, Confianza Media
+F5 — Potencial de Marca: CLOSED / aut130 PASS / EVAL-0034: 3/5, Confianza Baja
+F6 — Product Bases: CLOSED / aut131 PASS / BASE-FIT-005..008 (4)
+F7 — Shortlist Pre-Origin: NEXT / AUTO
+F8 — Origin Screening: COLLABORATIVE / Founder Review REQUIRED
+Data Fidelity Preflight v2.4 + Matrix Validator full-matrix-v5 0.7.0: PASS en F4, F5 y F6
+SHA-256 aut129: 287d0f6bd93ce167b92f8967c2cf1690d0a620d58829e8cb827f13481983294f
+SHA-256 aut130: 8ba9d75fa09c0bf03a78372d4b9255190af27825f2272f77458f326cfbbdd106
+SHA-256 aut131: 99477da455a27a477245b5e4bc66c00992597f1b1ff32c2ab6376258f54c078d
+```
+
+Documentos nuevos: `SI-RESEARCH-093..095` en `docs/06-research/brand-fitness/`. Product Bases normalizadas: `BASE-FIT-005` bandas tubulares, `BASE-FIT-006` bandas loop, `BASE-FIT-007` mancuernas/barra ajustables 20 kg y `BASE-FIT-008` sistema de suspensión. Se mantienen riesgos pendientes de seguridad y durabilidad, y **no hay finalista, proveedor ni recomendación de importación**. La matriz permanece privada, fuera de Git.
+<!-- BRAND-CAND-007-F4-F6-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-007-F0-F3-CHECKPOINT:START -->
 ## BRAND-CAND-007 — checkpoint F0–F3 (2026-10-13)
@@ -37,7 +57,7 @@ BRAND-CAND-010
 → FREEZE
 → F14 NOT OPENED
 
-BRAND-CAND-007 → F0–F3 CLOSED / aut128 PASS / F4 NEXT
+BRAND-CAND-007 → F0–F6 CLOSED / aut131 PASS / F7 NEXT
 BRAND-CAND-008..009 → ELIGIBLE — NOT OPENED
 ```
 
@@ -215,6 +235,7 @@ Los datos comerciales exactos permanecen en sistemas privados:
 
 | Version | Date | Change |
 |---|---|---|
+| 0.17.7 | 2026-10-14 | Checkpoint BRAND-CAND-007 F4–F6, aut131 triple doble PASS, F7 siguiente. |
 | 0.17.6 | 2026-10-13 | Checkpoint BRAND-CAND-007 F0–F3, aut128 PASS, F4 siguiente. |
 | 0.17.1 | 2026-10-08 | Se publica el cierre completo de BRAND-CAND-010 F0–F13; aut118 PASS, NO FINALIST, FREEZE y F14 NOT OPENED. |
 | 0.17.0 | 2026-10-07 | SI-RESEARCH-071 cierra Portfolio Review interno de Marca Hogar; BASE-HOGAR-016 lead, BASE-HOGAR-006 backup, baseline congelada y revisión externa pendiente. |

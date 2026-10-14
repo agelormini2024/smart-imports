@@ -2,15 +2,35 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.5
+version: 0.2.6
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-13
+updated: 2026-10-14
 ---
 
 # Marca Fitness — Research
+
+<!-- BRAND-CAND-007-F4-F6-CHECKPOINT:START -->
+## BRAND-CAND-007 — Checkpoint F4–F6 (2026-10-14)
+
+**F4–F6 CLOSED — aut131 PASS.** Ejecución AUTO con validación canónica en cada fase y un único checkpoint documental conjunto. Se reutilizó la cohorte de seis publicaciones F3, sin alterar sus ventas, precios, FX ni el ledger histórico.
+
+```text
+F4 — Competencia: CLOSED / aut129 PASS / EVAL-0033: 3/5, Confianza Media
+F5 — Potencial de Marca: CLOSED / aut130 PASS / EVAL-0034: 3/5, Confianza Baja
+F6 — Product Bases: CLOSED / aut131 PASS / BASE-FIT-005..008 (4)
+F7 — Shortlist Pre-Origin: NEXT / AUTO
+F8 — Origin Screening: COLLABORATIVE / Founder Review REQUIRED
+Data Fidelity Preflight v2.4 + Matrix Validator full-matrix-v5 0.7.0: PASS en F4, F5 y F6
+SHA-256 aut129: 287d0f6bd93ce167b92f8967c2cf1690d0a620d58829e8cb827f13481983294f
+SHA-256 aut130: 8ba9d75fa09c0bf03a78372d4b9255190af27825f2272f77458f326cfbbdd106
+SHA-256 aut131: 99477da455a27a477245b5e4bc66c00992597f1b1ff32c2ab6376258f54c078d
+```
+
+Documentos nuevos: `SI-RESEARCH-093..095` en `docs/06-research/brand-fitness/`. Product Bases normalizadas: `BASE-FIT-005` bandas tubulares, `BASE-FIT-006` bandas loop, `BASE-FIT-007` mancuernas/barra ajustables 20 kg y `BASE-FIT-008` sistema de suspensión. Se mantienen riesgos pendientes de seguridad y durabilidad, y **no hay finalista, proveedor ni recomendación de importación**. La matriz permanece privada, fuera de Git.
+<!-- BRAND-CAND-007-F4-F6-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-007-F0-F3-CHECKPOINT:START -->
 ## BRAND-CAND-007 — checkpoint F0–F3 (2026-10-13)
@@ -76,7 +96,7 @@ BASE-FIT-004 → DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
 DOCUMENTARY CHECKPOINT
 → review diff
 → commit/push humano
-→ paso histórico superado el 2026-10-13: `BRAND-CAND-007` ya está en F4 NEXT; `BRAND-CAND-008..009` permanecen sin abrir
+→ paso histórico superado: `BRAND-CAND-007` se abrió y completó F0–F3; el estado vigente F0–F6 CLOSED / F7 NEXT consta en el checkpoint posterior. `BRAND-CAND-008..009` permanecen sin abrir
 → abrir sólo uno
 ```
 
