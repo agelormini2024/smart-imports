@@ -2,15 +2,39 @@
 id: brand-cand-007
 title: Fuerza accesible y compacta
 description: Brand Candidate Screening prospectivo de fuerza accesible y compacta para Marca Fitness.
-version: 0.2.3
-status: method-v2-f8-closed-external-hold
-method_v2_status: f0-f8-closed-external-hold
+version: 0.2.4
+status: method-v2-f13-closed-external-review
+method_v2_status: f0-f13-closed-external-review
 brand: brand-fitness
 created: 2026-10-05
 updated: 2026-10-14
 ---
 
 # BRAND-CAND-007 — Fuerza accesible y compacta
+
+<!-- BRAND-CAND-007-METHOD-V2-F9-F13:START -->
+## BRAND-CAND-007 — Cierre Method v2 F9–F13 (2026-10-14)
+
+**F0–F13 CLOSED / aut138 DOBLE PASS / SHORTLIST PARA REVISIÓN EXTERNA — CONDICIONADA.** F9–F13 se ejecutaron en modalidad **AUTO**, conservando Data Fidelity Preflight v2.4 PASS y Matrix Validator `full-matrix-v5 0.7.0` PASS por cada matriz. **F14 NOT OPENED.**
+
+```text
+F9 — Import Cost Headroom      aut134 — PASS — cdfd9960d7f1a36222a85c9c31c242a6259d84cef334cf2e259ada3131322071
+F10 — Minimum Landed Dataset   aut135 — PASS — def947f2fa6dcde1a5596e3a16829ab9cd0be514228a778edfd10b1d68ca0c7b
+F11 — Landed Cost Screen       aut136 — PASS — 2e2a9728768b884c407b1abdc0ebbc4a9e0063f85a39f270a59b73fe34c619c6
+F12 — Margin + ROI             aut137 — PASS — bae4d15aca6f6599ae7895ae59b6284c5fb917014b08bed531fb1683eb2d82ca
+F13 — Final Shortlist          aut138 — PASS — a7fbea16213714e0adee4e153c9910a538174c1e75850998df1754d596b147dd
+BASE-FIT-005 — EXTERNAL REVIEW SHORTLIST / LEAD CONDITIONED / HOLD
+BASE-FIT-007 — EXTERNAL REVIEW SHORTLIST / CONDITIONED / HOLD
+BASE-FIT-006 — DEFER — REOPENABLE / COMMODITY + JOB PROOF
+BASE-FIT-008 — DEFER — REOPENABLE / CRITICAL SAFETY GATE
+ECONOMIC / PROCUREMENT FINALIST: NONE WITH CURRENT EVIDENCE
+F14: NOT OPENED
+```
+
+**Interpretación económica:** headroom es techo teórico, no landed. F11 usa un proxy aéreo de estrés **no ejecutable**; las alternativas marítimas, tributos/NCM y requisitos aplicables están pendientes de evaluación profesional. **No hay landed confirmado, margen ni ROI numéricos defendibles.** La consulta breve enviada a dos proveedores de mancuernas 20 kg no constituye homologación y sus respuestas se incorporarán con fuente y fecha cuando estén disponibles; no se presupone resultado alguno.
+
+**Próxima acción:** usar `docs/06-research/brand-fitness/decision-report-brand-cand-007-para-socio-y-despachante.md` junto con `SI-RESEARCH-098..102` en la reunión con el socio y despachante. **Sólo después** decidir qué Product Bases o proveedores profundizar y si revisar escenarios de costos con datos concretos. No hubo RFQ formal, muestras, proveedor aprobado, compra o apertura de F14. Las matrices, logs y PDF permanecen privados fuera de Git.
+<!-- BRAND-CAND-007-METHOD-V2-F9-F13:END -->
 
 <!-- BRAND-CAND-007-METHOD-V2-F7-F8:START -->
 ## BRAND-CAND-007 — Checkpoint único F7–F8 (2026-10-14)
@@ -158,7 +182,7 @@ Guardrail:
 
 ```text
 Decision: PASS TO METHOD V2
-Method v2 handoff: F0–F8 CLOSED / aut133 PASS / EXTERNAL HOLD / F9 NOT OPENED
+Method v2 handoff: F0–F13 CLOSED / aut138 PASS / EXTERNAL REVIEW READY / F14 NOT OPENED
 ```
 
 Decision rationale:
@@ -169,15 +193,15 @@ Decision rationale:
 
 ```text
 SCREENING: CLOSED
-METHOD V2: F0–F8 CLOSED / aut133 PASS / EXTERNAL HOLD / F9 NOT OPENED
-PRODUCT BASES: BASE-FIT-005..008 (4) — F7/F8 shortlist 005/007 HOLD; 006/008 DEFER
+METHOD V2: F0–F13 CLOSED / aut138 PASS / EXTERNAL REVIEW READY / F14 NOT OPENED
+PRODUCT BASES: BASE-FIT-005..008 (4) — F13: 005/007 EXTERNAL REVIEW HOLD; 006/008 DEFER; NO ECONOMIC FINALIST
 ```
 
 `PASS TO METHOD V2` no implica recomendación de importación ni prioridad de ejecución.
 
 ## 10. Method v2 — apertura técnica de F0 (registro histórico)
 
-> Este apartado conserva el estado de apertura de F0, previo a sus validaciones. El estado vigente es **F0–F8 CLOSED / aut133 PASS / HOLD EXTERNO / F9 NOT OPENED**.
+> Este apartado conserva el estado de apertura de F0, previo a sus validaciones. El estado vigente es **F0–F13 CLOSED / aut138 PASS / REVISIÓN EXTERNA / F14 NOT OPENED**.
 
 ```text
 Research: SI-RESEARCH-089
@@ -196,4 +220,4 @@ La apertura preserva el problema y los guardrails aprobados por Brand Candidate 
 
 F8 queda heredada bajo governance vigente como `COLLABORATIVE`, con participación del Founder y `Founder Review` requerido para cierre cuando la ejecución alcance esa fase.
 
-Próximo gate vigente: reunión con el socio y el despachante; F9 NOT OPENED. Solo entonces evaluar fricción y prioridad de profundización.
+Próximo gate vigente: reunión con socio y despachante utilizando Decision Report F13; profundizaciones sólo después de la evaluación externa; F14 NOT OPENED.

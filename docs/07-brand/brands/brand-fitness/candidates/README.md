@@ -2,7 +2,7 @@
 id: brand-fitness-candidates-readme
 title: Marca Fitness — Brand Candidates
 description: Índice de expedientes de Brand Candidate Screening de Marca Fitness.
-version: 0.2.4
+version: 0.2.5
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -11,6 +11,30 @@ updated: 2026-10-14
 ---
 
 # Marca Fitness — Brand Candidates
+
+<!-- BRAND-CAND-007-F9-F13-CHECKPOINT:START -->
+## BRAND-CAND-007 — Cierre Method v2 F9–F13 (2026-10-14)
+
+**F0–F13 CLOSED / aut138 DOBLE PASS / SHORTLIST PARA REVISIÓN EXTERNA — CONDICIONADA.** F9–F13 se ejecutaron en modalidad **AUTO**, conservando Data Fidelity Preflight v2.4 PASS y Matrix Validator `full-matrix-v5 0.7.0` PASS por cada matriz. **F14 NOT OPENED.**
+
+```text
+F9 — Import Cost Headroom      aut134 — PASS — cdfd9960d7f1a36222a85c9c31c242a6259d84cef334cf2e259ada3131322071
+F10 — Minimum Landed Dataset   aut135 — PASS — def947f2fa6dcde1a5596e3a16829ab9cd0be514228a778edfd10b1d68ca0c7b
+F11 — Landed Cost Screen       aut136 — PASS — 2e2a9728768b884c407b1abdc0ebbc4a9e0063f85a39f270a59b73fe34c619c6
+F12 — Margin + ROI             aut137 — PASS — bae4d15aca6f6599ae7895ae59b6284c5fb917014b08bed531fb1683eb2d82ca
+F13 — Final Shortlist          aut138 — PASS — a7fbea16213714e0adee4e153c9910a538174c1e75850998df1754d596b147dd
+BASE-FIT-005 — EXTERNAL REVIEW SHORTLIST / LEAD CONDITIONED / HOLD
+BASE-FIT-007 — EXTERNAL REVIEW SHORTLIST / CONDITIONED / HOLD
+BASE-FIT-006 — DEFER — REOPENABLE / COMMODITY + JOB PROOF
+BASE-FIT-008 — DEFER — REOPENABLE / CRITICAL SAFETY GATE
+ECONOMIC / PROCUREMENT FINALIST: NONE WITH CURRENT EVIDENCE
+F14: NOT OPENED
+```
+
+**Interpretación económica:** headroom es techo teórico, no landed. F11 usa un proxy aéreo de estrés **no ejecutable**; las alternativas marítimas, tributos/NCM y requisitos aplicables están pendientes de evaluación profesional. **No hay landed confirmado, margen ni ROI numéricos defendibles.** La consulta breve enviada a dos proveedores de mancuernas 20 kg no constituye homologación y sus respuestas se incorporarán con fuente y fecha cuando estén disponibles; no se presupone resultado alguno.
+
+**Próxima acción:** usar `docs/06-research/brand-fitness/decision-report-brand-cand-007-para-socio-y-despachante.md` junto con `SI-RESEARCH-098..102` en la reunión con el socio y despachante. **Sólo después** decidir qué Product Bases o proveedores profundizar y si revisar escenarios de costos con datos concretos. No hubo RFQ formal, muestras, proveedor aprobado, compra o apertura de F14. Las matrices, logs y PDF permanecen privados fuera de Git.
+<!-- BRAND-CAND-007-F9-F13-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-007-F7-F8-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Checkpoint único F7–F8 (2026-10-14)
@@ -70,7 +94,7 @@ METHOD V2 NOT OPENED: 2
 PRODUCT BASES DEFINED: 8 (4 de BRAND-CAND-010 + 4 de BRAND-CAND-007)
 
 BRAND-CAND-010 → F0–F13 CLOSED / NO FINALIST / FREEZE / F14 NOT OPENED
-BRAND-CAND-007 → F0–F8 CLOSED / aut133 PASS / HOLD EXTERNAL / F9 NOT OPENED
+BRAND-CAND-007 → F0–F13 CLOSED / aut138 PASS / EXTERNAL REVIEW READY / F14 NOT OPENED
 BRAND-CAND-008 → ELIGIBLE — NOT OPENED
 BRAND-CAND-009 → ELIGIBLE — NOT OPENED
 ```
@@ -95,7 +119,7 @@ Método aplicado: `SI-BRAND-002 v0.4`.
 
 | Hypothesis ID | Formal Candidate ID | Candidate | Territory Relationship | Decision | Method v2 |
 |---|---|---|---|---|---|
-| `FIT-CAND-001` | [`BRAND-CAND-007`](./brand-cand-007-accessible-compact-strength.md) | Fuerza accesible y compacta | `CORE` | `PASS TO METHOD V2` | `F0–F8 CLOSED / aut133 PASS / EXTERNAL HOLD / F9 NOT OPENED` |
+| `FIT-CAND-001` | [`BRAND-CAND-007`](./brand-cand-007-accessible-compact-strength.md) | Fuerza accesible y compacta | `CORE` | `PASS TO METHOD V2` | `F0–F13 CLOSED / aut138 PASS / EXTERNAL REVIEW READY / F14 NOT OPENED` |
 | `FIT-CAND-002` | [`BRAND-CAND-008`](./brand-cand-008-flexible-portable-training.md) | Entrenamiento flexible y portátil | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
 | `FIT-CAND-005` | [`BRAND-CAND-009`](./brand-cand-009-mobility-stability-physical-capacity.md) | Movilidad, estabilidad y conservación/recuperación de capacidad física | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
 | `FIT-CAND-007` | [`BRAND-CAND-010`](./brand-cand-010-integrated-movement-sedentary-day.md) | Movimiento integrado a la jornada sedentaria | `CORE` | `PASS TO METHOD V2` | `F0–F13 CLOSED / NO FINALIST / FREEZE` |
@@ -137,7 +161,7 @@ BRAND-CAND-010
 → MATRIX MATERIALIZATION PENDING
 → F0 NOT CLOSED
 
-BRAND-CAND-007 → F0–F8 CLOSED / aut133 PASS / HOLD EXTERNAL / F9 NOT OPENED
+BRAND-CAND-007 → F0–F13 CLOSED / aut138 PASS / EXTERNAL REVIEW READY / F14 NOT OPENED
 BRAND-CAND-008..009 → ELIGIBLE — NOT OPENED
 ```
 

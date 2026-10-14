@@ -2,7 +2,7 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.23.9
+version: 1.23.10
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -38,6 +38,30 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- BRAND-CAND-007-F9-F13-CHECKPOINT:START -->
+## BRAND-CAND-007 — Cierre Method v2 F9–F13 (2026-10-14)
+
+**F0–F13 CLOSED / aut138 DOBLE PASS / SHORTLIST PARA REVISIÓN EXTERNA — CONDICIONADA.** F9–F13 se ejecutaron en modalidad **AUTO**, conservando Data Fidelity Preflight v2.4 PASS y Matrix Validator `full-matrix-v5 0.7.0` PASS por cada matriz. **F14 NOT OPENED.**
+
+```text
+F9 — Import Cost Headroom      aut134 — PASS — cdfd9960d7f1a36222a85c9c31c242a6259d84cef334cf2e259ada3131322071
+F10 — Minimum Landed Dataset   aut135 — PASS — def947f2fa6dcde1a5596e3a16829ab9cd0be514228a778edfd10b1d68ca0c7b
+F11 — Landed Cost Screen       aut136 — PASS — 2e2a9728768b884c407b1abdc0ebbc4a9e0063f85a39f270a59b73fe34c619c6
+F12 — Margin + ROI             aut137 — PASS — bae4d15aca6f6599ae7895ae59b6284c5fb917014b08bed531fb1683eb2d82ca
+F13 — Final Shortlist          aut138 — PASS — a7fbea16213714e0adee4e153c9910a538174c1e75850998df1754d596b147dd
+BASE-FIT-005 — EXTERNAL REVIEW SHORTLIST / LEAD CONDITIONED / HOLD
+BASE-FIT-007 — EXTERNAL REVIEW SHORTLIST / CONDITIONED / HOLD
+BASE-FIT-006 — DEFER — REOPENABLE / COMMODITY + JOB PROOF
+BASE-FIT-008 — DEFER — REOPENABLE / CRITICAL SAFETY GATE
+ECONOMIC / PROCUREMENT FINALIST: NONE WITH CURRENT EVIDENCE
+F14: NOT OPENED
+```
+
+**Interpretación económica:** headroom es techo teórico, no landed. F11 usa un proxy aéreo de estrés **no ejecutable**; las alternativas marítimas, tributos/NCM y requisitos aplicables están pendientes de evaluación profesional. **No hay landed confirmado, margen ni ROI numéricos defendibles.** La consulta breve enviada a dos proveedores de mancuernas 20 kg no constituye homologación y sus respuestas se incorporarán con fuente y fecha cuando estén disponibles; no se presupone resultado alguno.
+
+**Próxima acción:** usar `docs/06-research/brand-fitness/decision-report-brand-cand-007-para-socio-y-despachante.md` junto con `SI-RESEARCH-098..102` en la reunión con el socio y despachante. **Sólo después** decidir qué Product Bases o proveedores profundizar y si revisar escenarios de costos con datos concretos. No hubo RFQ formal, muestras, proveedor aprobado, compra o apertura de F14. Las matrices, logs y PDF permanecen privados fuera de Git.
+<!-- BRAND-CAND-007-F9-F13-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-007-F7-F8-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Checkpoint único F7–F8 (2026-10-14)
@@ -128,7 +152,7 @@ BASE-FIT-003 — Elíptica compacta under-desk
 BASE-FIT-004 — Balance board para standing desk
 → DEFER — LOW DEMAND PROOF / STANDING-DESK DEPENDENCY
 
-BRAND-CAND-007 → F0–F8 CLOSED / aut133 PASS / HOLD EXTERNAL / F9 NOT OPENED
+BRAND-CAND-007 → F0–F13 CLOSED / aut138 PASS / EXTERNAL REVIEW READY / F14 NOT OPENED
 BRAND-CAND-008 → ELIGIBLE — NOT OPENED
 BRAND-CAND-009 → ELIGIBLE — NOT OPENED
 ```
@@ -137,7 +161,7 @@ La walking pad queda como principal hipótesis de reapertura porque fue la únic
 
 `NO FINALIST` no equivale a descartar definitivamente el candidato. Significa que, con la evidencia disponible y los supuestos comparables del Method v2, ninguna Product Base justifica pasar hoy a Portfolio Review como finalista.
 
-Próximo gate de Marca Fitness: `BRAND-CAND-007` F7–F8 CLOSED / aut133 PASS, Founder Review aprobada; investigación profunda HOLD hasta reuniones con socio y despachante. F9 NOT OPENED. `BRAND-CAND-008..009` sin abrir.
+Próximo gate de Marca Fitness: `BRAND-CAND-007` F0–F13 CLOSED / aut138 doble PASS; Decision Report listo para reunión con socio y despachante, sin finalista económico ni F14 abierto. `BRAND-CAND-008..009` elegibles sin abrir.
 <!-- FITNESS-PRESCREENING-V02:END -->
 
 <!-- HOGAR-PAUSE-AND-OPPORTUNITY-INTAKE:START -->
@@ -447,7 +471,7 @@ No confundir:
 | Próxima acción Nicho 3 | Consolidar finalistas y preparar el gate profesional externo |
 | Brand System | v0.4; se agrega lifecycle de Hypothesis ID local → `BRAND-CAND-XXX` formal/global, manteniendo `CORE` / `STRONG ADJACENCY` y separación Brand Fit / Method v2 |
 | Brand Candidate Screening | v0.4 operativo; `PROSPECTIVE` / `RETROSPECTIVE`; lifecycle Hypothesis ID → `BRAND-CAND-XXX`; 001–005 = `CORE / PASS`; 006 = `STRONG ADJACENCY / BRAND FIT CONFIRMED`; 007–010 = `CORE / PASS TO METHOD V2` |
-| Próxima acción Brand | BRAND-CAND-007 F7–F8 CLOSED / aut133 PASS / Founder Review aprobada; HOLD para reuniones socio y despachante, sin selección de proveedores ni avance F9. BASE-FIT-005/007 retenidas condicionadas, BASE-FIT-006/008 diferidas. BRAND-CAND-010 continúa F0–F13 CLOSED / FREEZE y 008..009 sin abrir. Marca Hogar mantiene baseline interna congelada. |
+| Próxima acción Brand | BRAND-CAND-007 F0–F13 CLOSED / aut138 DOBLE PASS / shortlist condicionada para revisión externa BASE-FIT-005/007 (HOLD); BASE-FIT-006/008 DEFER; Decision Report previo a reuniones socio+despachante; ningún finalista económico, F14 NOT OPENED. BRAND-CAND-010 continúa FREEZE; 008/009 sin abrir; Marca Hogar sin cambio de prioridad. |
 
 ## 3. Snapshot histórico del Nicho 3 — 2026-09-17
 
@@ -852,6 +876,7 @@ El trigger ya fue cumplido. El entregable permanece como material de reunión a 
 
 | Version | Date | Change |
 |---|---|---|
+| 1.23.10 | 2026-10-14 | BRAND-CAND-007 F9–F13 CLOSED / aut138 doble PASS; Decision Report y shortlist condicionada para reunión externa. |
 | 1.23.9 | 2026-10-14 | BRAND-CAND-007 F7–F8 CLOSED, aut132/aut133 doble PASS, Founder Review aprobado, HOLD externo. |
 | 1.23.8 | 2026-10-14 | Checkpoint BRAND-CAND-007 F4–F6, aut131 triple doble PASS, F7 siguiente. |
 | 1.23.7 | 2026-10-13 | Checkpoint BRAND-CAND-007 F0–F3, aut128 PASS, F4 siguiente. |

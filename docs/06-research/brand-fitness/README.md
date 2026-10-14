@@ -2,7 +2,7 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.7
+version: 0.2.8
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -11,6 +11,40 @@ updated: 2026-10-14
 ---
 
 # Marca Fitness — Research
+
+<!-- BRAND-CAND-007-F9-F13-CHECKPOINT:START -->
+## BRAND-CAND-007 — Cierre Method v2 F9–F13 (2026-10-14)
+
+**F0–F13 CLOSED / aut138 DOBLE PASS / SHORTLIST PARA REVISIÓN EXTERNA — CONDICIONADA.** F9–F13 se ejecutaron en modalidad **AUTO**, conservando Data Fidelity Preflight v2.4 PASS y Matrix Validator `full-matrix-v5 0.7.0` PASS por cada matriz. **F14 NOT OPENED.**
+
+```text
+F9 — Import Cost Headroom      aut134 — PASS — cdfd9960d7f1a36222a85c9c31c242a6259d84cef334cf2e259ada3131322071
+F10 — Minimum Landed Dataset   aut135 — PASS — def947f2fa6dcde1a5596e3a16829ab9cd0be514228a778edfd10b1d68ca0c7b
+F11 — Landed Cost Screen       aut136 — PASS — 2e2a9728768b884c407b1abdc0ebbc4a9e0063f85a39f270a59b73fe34c619c6
+F12 — Margin + ROI             aut137 — PASS — bae4d15aca6f6599ae7895ae59b6284c5fb917014b08bed531fb1683eb2d82ca
+F13 — Final Shortlist          aut138 — PASS — a7fbea16213714e0adee4e153c9910a538174c1e75850998df1754d596b147dd
+BASE-FIT-005 — EXTERNAL REVIEW SHORTLIST / LEAD CONDITIONED / HOLD
+BASE-FIT-007 — EXTERNAL REVIEW SHORTLIST / CONDITIONED / HOLD
+BASE-FIT-006 — DEFER — REOPENABLE / COMMODITY + JOB PROOF
+BASE-FIT-008 — DEFER — REOPENABLE / CRITICAL SAFETY GATE
+ECONOMIC / PROCUREMENT FINALIST: NONE WITH CURRENT EVIDENCE
+F14: NOT OPENED
+```
+
+**Interpretación económica:** headroom es techo teórico, no landed. F11 usa un proxy aéreo de estrés **no ejecutable**; las alternativas marítimas, tributos/NCM y requisitos aplicables están pendientes de evaluación profesional. **No hay landed confirmado, margen ni ROI numéricos defendibles.** La consulta breve enviada a dos proveedores de mancuernas 20 kg no constituye homologación y sus respuestas se incorporarán con fuente y fecha cuando estén disponibles; no se presupone resultado alguno.
+
+**Próxima acción:** usar `docs/06-research/brand-fitness/decision-report-brand-cand-007-para-socio-y-despachante.md` junto con `SI-RESEARCH-098..102` en la reunión con el socio y despachante. **Sólo después** decidir qué Product Bases o proveedores profundizar y si revisar escenarios de costos con datos concretos. No hubo RFQ formal, muestras, proveedor aprobado, compra o apertura de F14. Las matrices, logs y PDF permanecen privados fuera de Git.
+
+### Documentos F9–F13 y Decision Report
+
+- [SI-RESEARCH-098 — F9 Headroom](./si-research-098-brand-cand-007-method-v2-agile-phase-9-import-cost-headroom.md)
+- [SI-RESEARCH-099 — F10 Dataset mínimo](./si-research-099-brand-cand-007-method-v2-agile-phase-10-minimum-landed-cost-dataset.md)
+- [SI-RESEARCH-100 — F11 Landed Cost Screen](./si-research-100-brand-cand-007-method-v2-agile-phase-11-landed-cost-screen.md)
+- [SI-RESEARCH-101 — F12 Margin + ROI](./si-research-101-brand-cand-007-method-v2-agile-phase-12-margin-roi.md)
+- [SI-RESEARCH-102 — F13 Final Shortlist](./si-research-102-brand-cand-007-method-v2-agile-phase-13-final-shortlist.md)
+- [Decision Report — Socio y despachante](./decision-report-brand-cand-007-para-socio-y-despachante.md)
+
+<!-- BRAND-CAND-007-F9-F13-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-007-F7-F8-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Checkpoint único F7–F8 (2026-10-14)
