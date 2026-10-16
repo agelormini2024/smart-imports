@@ -2,15 +2,25 @@
 id: brand-fitness-candidates-readme
 title: Marca Fitness — Brand Candidates
 description: Índice de expedientes de Brand Candidate Screening de Marca Fitness.
-version: 0.2.5
+version: 0.2.6
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-14
+updated: 2026-10-16
 ---
 
 # Marca Fitness — Brand Candidates
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:START -->
+## BRAND-CAND-008 — Checkpoint Method v2 F0–F3 (2026-10-16)
+
+**F0–F3 CLOSED / Demanda 2/5 / Confianza Baja / aut142-r1 DOBLE PASS.** F0–F2 AUTO; F3 COLLABORATIVE con aprobación explícita del Founder el 16/10/2026. Cinco publicaciones de Mercado Libre con URLs, PDF privados y referencias cruzadas; no hay Product Bases.
+
+F0 `aut139`, F1 `aut140`, F2 `aut141`, F3 `aut142-r1` — todos con Data Fidelity Preflight + Matrix Validator PASS. SHA-256 F3: `97b3260521630f7e00067946a3cc23341f965f1b209a8a5a7d65da0f5c9fdaf0`.
+
+**Próximo gate: F4 Competencia (AUTO), sobre la misma cohorte F3; F4 todavía no abierto.** F5–F6 AUTO, próximo checkpoint al finalizar F6; no subir XLSX, PDF o logs a Git.
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:END -->
+
 
 <!-- BRAND-CAND-007-F9-F13-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Cierre Method v2 F9–F13 (2026-10-14)
@@ -120,7 +130,7 @@ Método aplicado: `SI-BRAND-002 v0.4`.
 | Hypothesis ID | Formal Candidate ID | Candidate | Territory Relationship | Decision | Method v2 |
 |---|---|---|---|---|---|
 | `FIT-CAND-001` | [`BRAND-CAND-007`](./brand-cand-007-accessible-compact-strength.md) | Fuerza accesible y compacta | `CORE` | `PASS TO METHOD V2` | `F0–F13 CLOSED / aut138 PASS / EXTERNAL REVIEW READY / F14 NOT OPENED` |
-| `FIT-CAND-002` | [`BRAND-CAND-008`](./brand-cand-008-flexible-portable-training.md) | Entrenamiento flexible y portátil | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
+| `FIT-CAND-002` | [`BRAND-CAND-008`](./brand-cand-008-flexible-portable-training.md) | Entrenamiento flexible y portátil | `CORE` | `PASS TO METHOD V2` | `F0–F3 CLOSED / aut142-r1 PASS / F4 NEXT (AUTO)` |
 | `FIT-CAND-005` | [`BRAND-CAND-009`](./brand-cand-009-mobility-stability-physical-capacity.md) | Movilidad, estabilidad y conservación/recuperación de capacidad física | `CORE` | `PASS TO METHOD V2` | `ELIGIBLE — NOT OPENED` |
 | `FIT-CAND-007` | [`BRAND-CAND-010`](./brand-cand-010-integrated-movement-sedentary-day.md) | Movimiento integrado a la jornada sedentaria | `CORE` | `PASS TO METHOD V2` | `F0–F13 CLOSED / NO FINALIST / FREEZE` |
 

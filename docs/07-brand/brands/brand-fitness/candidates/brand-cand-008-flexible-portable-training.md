@@ -2,11 +2,11 @@
 id: brand-cand-008
 title: Entrenamiento flexible y portátil
 description: Brand Candidate Screening prospectivo de entrenamiento flexible y portátil para Marca Fitness.
-version: 0.1.0
+version: 0.2.0
 status: pass-to-method-v2
 brand: brand-fitness
 created: 2026-10-05
-updated: 2026-10-05
+updated: 2026-10-16
 ---
 
 # BRAND-CAND-008 — Entrenamiento flexible y portátil
@@ -114,6 +114,15 @@ Decision rationale:
 
 ```text
 SCREENING: CLOSED
-METHOD V2: NOT OPENED
+METHOD V2: F0–F3 CLOSED / aut142-r1 DOUBLE PASS
+F4: NEXT — AUTO / NOT OPENED
 PRODUCT BASES: NOT DEFINED
 ```
+
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:START -->
+## 11. Actualización operativa — Checkpoint F0–F3 (2026-10-16)
+
+La decisión de screening `PASS TO METHOD V2` se conserva como antecedente y no se reabre. Method v2 ejecutó F0–F2 AUTO y F3 COLLABORATIVE con aprobación explícita del Founder: **Demanda 2/5, Confianza Baja**. La matriz privada `aut142-r1` obtuvo doble PASS canónico, SHA-256 `97b3260521630f7e00067946a3cc23341f965f1b209a8a5a7d65da0f5c9fdaf0`. Cinco referencias ML con URLs y evidencia documental; ninguna Product Base definida y ninguna compra o F14 habilitados. La falta de evidencia específica de demanda por entrenamiento en contextos cambiantes no significa ausencia demostrada de mercado.
+
+Research público: `SI-RESEARCH-103..106` en `docs/06-research/brand-fitness/`. **Siguiente gate: F4 Competencia — AUTO, NOT OPENED**, seguido de F5–F6 y checkpoint documental al cerrar F6.
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:END -->

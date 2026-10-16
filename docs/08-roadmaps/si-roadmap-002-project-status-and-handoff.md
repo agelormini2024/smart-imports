@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.23.10
+version: 1.23.11
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-10-14
+updated: 2026-10-16
 tags:
   - status
   - handoff
@@ -38,6 +38,30 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:START -->
+## BRAND-CAND-008 — Checkpoint Method v2 F0–F3 (2026-10-16)
+
+**F0–F3 CLOSED / Demanda 2/5 / Confianza Baja / aut142-r1 DOBLE PASS.** F0–F2 AUTO; F3 COLLABORATIVE con aprobación explícita del Founder el 16/10/2026. Cinco publicaciones de Mercado Libre con URLs, PDF privados y referencias cruzadas; no hay Product Bases.
+
+```text
+F0 — aut139 — PASS — ffc2478f2f1ebd46dfb7dd4242b48ea2187c4190f9f39543bd5653b15f0c99ed
+F1 — aut140 — PASS — e757eea904bb4f117d2be20d83903b3adb646ed66c1d85575205d55f2d5b39ab
+F2 — aut141 — PASS — d0332a267fac3b7c0ae48e776f10d965100864a0c0dc563d839fdeab9cb6deca
+F3 — aut142-r1 — PASS — 97b3260521630f7e00067946a3cc23341f965f1b209a8a5a7d65da0f5c9fdaf0
+EVAL-0035 — Demanda 2/5 — Confianza Baja
+Data Fidelity Preflight v2.4: PASS
+Matrix Validator 0.1.0 / full-matrix-v5 0.7.0: PASS
+F4 — NEXT / AUTO / NOT OPENED
+F14 — NOT OPENED
+```
+
+**Lectura:** las ventas observadas en artículos adyacentes no validan demanda por entrenamiento flexible entre contextos. Cuatro de cinco referencias tienen ticket inferior a ARS 50.000; ese importe es una alerta orientativa, no regla excluyente ni rentabilidad demostrada. El primer `aut142` falló por tres códigos `COMPARABLE_ADYACENTE` en lugar de `ADJACENT`; `aut142-r1` corrigió sólo esas tres celdas y obtuvo doble PASS. No se reabre F3, no se transfiere demanda del candidato `007` y no se abre F8.
+
+**Trazabilidad:** `ML-0184..0188`, `SRC-0536..0540`, `EVID-0317..0321`, `EVSRC-0733..0737`, `MLV-0033..0037`, `EVAL-0035`. Los cinco enlaces originales y hashes de PDF están documentados en `SI-RESEARCH-106` y la matriz privada. XLSX, PDF y logs no se publican.
+
+**Siguiente bloque:** F4 Competencia → F5 Potencial de Marca → F6 Product Bases, AUTO, con el siguiente checkpoint documental después de F6; ninguna Product Base está definida antes de F6. La reunión con socio/despachante permanece como gate externo separado.
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:END -->
+
 
 <!-- BRAND-CAND-007-F9-F13-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Cierre Method v2 F9–F13 (2026-10-14)

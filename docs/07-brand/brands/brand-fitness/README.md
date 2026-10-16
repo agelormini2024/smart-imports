@@ -1,13 +1,13 @@
 ---
 id: brand-fitness
 title: Marca Fitness — Screening cerrado / Method v2
-description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 F0–F13 cerrado, BRAND-CAND-007 F0–F13 cerrado con shortlist condicionada para revisión externa (F14 no abierto) y BRAND-CAND-008..009 elegibles sin abrir.
-version: 0.5.9
+description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 F0–F13 cerrado, BRAND-CAND-007 F0–F13 cerrado con shortlist condicionada para revisión externa (F14 no abierto) y BRAND-CAND-008 F0–F3 cerrado / F4 siguiente y BRAND-CAND-009 elegible sin abrir.
+version: 0.5.10
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-03
-updated: 2026-10-14
+updated: 2026-10-16
 tags:
   - brand
   - fitness
@@ -20,6 +20,16 @@ related:
 ---
 
 # Marca Fitness — Screening cerrado
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:START -->
+## BRAND-CAND-008 — Checkpoint Method v2 F0–F3 (2026-10-16)
+
+**F0–F3 CLOSED / Demanda 2/5 / Confianza Baja / aut142-r1 DOBLE PASS.** F0–F2 AUTO; F3 COLLABORATIVE con aprobación explícita del Founder el 16/10/2026. Cinco publicaciones de Mercado Libre con URLs, PDF privados y referencias cruzadas; no hay Product Bases.
+
+F0 `aut139`, F1 `aut140`, F2 `aut141`, F3 `aut142-r1` — todos con Data Fidelity Preflight + Matrix Validator PASS. SHA-256 F3: `97b3260521630f7e00067946a3cc23341f965f1b209a8a5a7d65da0f5c9fdaf0`.
+
+**Próximo gate: F4 Competencia (AUTO), sobre la misma cohorte F3; F4 todavía no abierto.** F5–F6 AUTO, próximo checkpoint al finalizar F6; no subir XLSX, PDF o logs a Git.
+<!-- BRAND-CAND-008-F0-F3-CHECKPOINT:END -->
+
 
 <!-- BRAND-CAND-007-F9-F13-CHECKPOINT:START -->
 ## BRAND-CAND-007 — Cierre Method v2 F9–F13 (2026-10-14)
@@ -210,6 +220,7 @@ BRAND-CAND-010 creó formalmente `BASE-FIT-001`..`BASE-FIT-004` en F6; ninguno q
 
 | Version | Fecha | Cambio |
 |---|---|---|
+| 0.5.10 | 2026-10-16 | BRAND-CAND-008 F0–F3 CLOSED / aut142-r1 doble PASS / F4 AUTO siguiente. |
 | 0.5.9 | 2026-10-14 | BRAND-CAND-007 F9–F13 CLOSED / aut138 doble PASS; Decision Report y shortlist condicionada para reunión externa. |
 | 0.5.8 | 2026-10-14 | BRAND-CAND-007 F7–F8 CLOSED, aut132/aut133 doble PASS, Founder Review aprobado, HOLD externo. |
 | 0.5.7 | 2026-10-14 | Checkpoint BRAND-CAND-007 F4–F6, aut131 triple doble PASS, F7 siguiente. |
