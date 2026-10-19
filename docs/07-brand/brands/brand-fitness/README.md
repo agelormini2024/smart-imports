@@ -1,13 +1,13 @@
 ---
 id: brand-fitness
 title: Marca Fitness — Screening cerrado / Method v2
-description: Estado vigente de Marca Fitness con screening cerrado, BRAND-CAND-010 F0–F13 cerrado, BRAND-CAND-007 F0–F13 cerrado con shortlist condicionada para revisión externa (F14 no abierto) y BRAND-CAND-008 F0–F3 cerrado / F4 siguiente y BRAND-CAND-009 elegible sin abrir.
-version: 0.5.10
+description: Estado vigente de Marca Fitness; BRAND-CAND-007 y BRAND-CAND-010 F0–F13 cerrados, BRAND-CAND-008 F0–F13 cerrado sin finalistas y reabrible, F14 no abierta y BRAND-CAND-009 elegible sin abrir.
+version: 0.5.11
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-03
-updated: 2026-10-16
+updated: 2026-10-19
 tags:
   - brand
   - fitness
@@ -20,6 +20,16 @@ related:
 ---
 
 # Marca Fitness — Screening cerrado
+<!-- BRAND-CAND-008-F4-F13-FINAL-CHECKPOINT:START -->
+## BRAND-CAND-008 — Cierre Method v2 F4–F13 (2026-10-19)
+
+**F0–F13 CLOSED / NO FINALIST / FREEZE — REOPENABLE.** La única Product Base es **`BASE-FIT-009` — tabla plegable para flexiones con agarres reconfigurables**: `DEFER — REOPENABLE / PORTFOLIO WATCHLIST / NOT FIRST-STAGE FIT`. No está en la shortlist de primera importación. **F14 NOT OPENED**.
+
+**Resultados:** Demanda (F3) **2/5 Baja**, Competencia (F4) **2/5 Baja**, Potencial de Marca (F5) **2/5 Baja**. F6 se reconcilió mediante corrección Tipo B: `aut145` con cero PB es histórico válido; `aut146` normalizó una única PB. F7 exploratorio condicionado; F8 aprobado explícitamente por Founder el 19/10/2026, KESIDI como referencia condicionada; F9–F12 sin landed, margen ni ROI confirmados; F13 sin finalistas. No hubo homologación, RFQ formal ni autorización de compra.
+
+Último snapshot `aut153` **DOBLE PASS**; SHA-256 `4c88c0ac2e4d459f17707da38d8f4b72fb7cdaf0d157dc1d3e8b8c4505b10540`. Checkpoint documental para revisar antes de commit y push. Siguiente candidato `BRAND-CAND-009` elegible, **no abierto hasta publicación de este cierre**.
+<!-- BRAND-CAND-008-F4-F13-FINAL-CHECKPOINT:END -->
+
 <!-- BRAND-CAND-008-F0-F3-CHECKPOINT:START -->
 ## BRAND-CAND-008 — Checkpoint Method v2 F0–F3 (2026-10-16)
 

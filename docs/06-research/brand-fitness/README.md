@@ -2,15 +2,57 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.9
+version: 0.2.10
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-16
+updated: 2026-10-19
 ---
 
 # Marca Fitness — Research
+<!-- BRAND-CAND-008-F4-F13-FINAL-CHECKPOINT:START -->
+## BRAND-CAND-008 — Cierre Method v2 F4–F13 (2026-10-19)
+
+**F0–F13 CLOSED / NO FINALIST / FREEZE — REOPENABLE.** La única Product Base es **`BASE-FIT-009` — tabla plegable para flexiones con agarres reconfigurables**: `DEFER — REOPENABLE / PORTFOLIO WATCHLIST / NOT FIRST-STAGE FIT`. No está en la shortlist de primera importación. **F14 NOT OPENED**.
+
+**Resultados:** Demanda (F3) **2/5 Baja**, Competencia (F4) **2/5 Baja**, Potencial de Marca (F5) **2/5 Baja**. F6 se reconcilió mediante corrección Tipo B: `aut145` con cero PB es histórico válido; `aut146` normalizó una única PB. F7 exploratorio condicionado; F8 aprobado explícitamente por Founder el 19/10/2026, KESIDI como referencia condicionada; F9–F12 sin landed, margen ni ROI confirmados; F13 sin finalistas. No hubo homologación, RFQ formal ni autorización de compra.
+
+```text
+F4  aut143-r1: b9945f9feb58f5c5a17e56896f6c14e24b31724a70546c66f82244dfbfa3672c — DOUBLE PASS
+F5  aut144: 73ce0b6ccdb960277e969e11878e7e56ae661a3b71a0b63bc52581fc2a1c496a — DOUBLE PASS
+F6  aut145 HISTORICAL: 73ce0b6ccdb960277e969e11878e7e56ae661a3b71a0b63bc52581fc2a1c496a — DOUBLE PASS
+F6  aut146 RECONCILED: 7fa57317c2ec2987c162644a16a234e7156e93eac47534da52ac43448d06525e — DOUBLE PASS
+F7  aut147: 68e5b7797a05d33e289f1dd928507b434414673ef98c313e82a999ec318392d5 — DOUBLE PASS
+F8  aut148: 786676c581f97a972f38688a7dc6e0a27371e535c4cf224360fed71afa45c2c4 — DOUBLE PASS
+F9  aut149: 88aa184fd9668d9e47efd68f4ea7348ac2a08214cd1f47d265ba9360c890e0ec — DOUBLE PASS
+F10 aut150: cfa223d219ce6bc8ad63a5318b00f656b259ea846405667bf062e848a06f3e57 — DOUBLE PASS
+F11 aut151: caa1d887543b0edcc2ada1e5ce0bf85ce7c80053e3a953378f8e7926066df860 — DOUBLE PASS
+F12 aut152: 3e970884eebbd4a39591c748c2d6af0f3e8aaf52fbdcbf82ee5101dedce077af — DOUBLE PASS
+F13 aut153: 4c88c0ac2e4d459f17707da38d8f4b72fb7cdaf0d157dc1d3e8b8c4505b10540 — DOUBLE PASS
+Data Fidelity Preflight v2.4: PASS
+Matrix Validator 0.1.0 / full-matrix-v5 0.7.0: PASS, 0 errors / 0 warnings
+F14: NOT OPENED
+```
+
+**Origen:** tres referencias Alibaba con URL original y PDFs privados: KESIDI `COT-0072`, 123Sports `COT-0070`, Aofeite `COT-0071`; cinco publicaciones ML preservadas. **Economía:** headroom teórico USD 7,68–8,34; origen KESIDI público USD 6,50; estrés aéreo desfavorable bajo proxy histórico; marítimo indeterminado. No inventar costos landed, margen, ROI ni viabilidad regulatoria. Reevaluar únicamente tras reuniones con socio y despachante y evidencia nueva verificable.
+
+- [SI-RESEARCH-107 — F4](./si-research-107-brand-cand-008-method-v2-agile-phase-4-competition.md)
+- [SI-RESEARCH-108 — F5](./si-research-108-brand-cand-008-method-v2-agile-phase-5-brand-potential.md)
+- [SI-RESEARCH-109 — F6](./si-research-109-brand-cand-008-method-v2-agile-phase-6-product-bases.md)
+- [SI-RESEARCH-110 — F7](./si-research-110-brand-cand-008-method-v2-agile-phase-7-shortlist-pre-origin.md)
+- [SI-RESEARCH-111 — F8](./si-research-111-brand-cand-008-method-v2-agile-phase-8-origin-screening.md)
+- [SI-RESEARCH-112 — F9](./si-research-112-brand-cand-008-method-v2-agile-phase-9-import-cost-headroom.md)
+- [SI-RESEARCH-113 — F10](./si-research-113-brand-cand-008-method-v2-agile-phase-10-minimum-landed-dataset.md)
+- [SI-RESEARCH-114 — F11](./si-research-114-brand-cand-008-method-v2-agile-phase-11-landed-cost-screen.md)
+- [SI-RESEARCH-115 — F12](./si-research-115-brand-cand-008-method-v2-agile-phase-12-margin-roi.md)
+- [SI-RESEARCH-116 — F13](./si-research-116-brand-cand-008-method-v2-agile-phase-13-final-shortlist.md)
+- [Informe para socio/despachante](./decision-report-brand-cand-008-para-socio-y-despachante.md)
+- [Nota operativa de matrices](../../02-business-intelligence-manual/procedures/si-method-note-001-materializacion-y-validacion-de-matrices.md)
+
+**Documentación:** `SI-RESEARCH-107..116`, `decision-report-brand-cand-008-para-socio-y-despachante.md`, `SI-METHOD-NOTE-001`. PDFs, XLSX, logs y scripts de trabajo permanecen privados.
+<!-- BRAND-CAND-008-F4-F13-FINAL-CHECKPOINT:END -->
+
 <!-- BRAND-CAND-008-F0-F3-CHECKPOINT:START -->
 ## BRAND-CAND-008 — Checkpoint Method v2 F0–F3 (2026-10-16)
 
