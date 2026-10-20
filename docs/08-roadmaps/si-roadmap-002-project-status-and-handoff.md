@@ -2,12 +2,12 @@
 id: si-roadmap-002
 title: Project Status and Handoff
 description: Estado operativo, bloqueos, próximas acciones y contexto mínimo para retomar Smart Imports.
-version: 1.23.13
+version: 1.23.14
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-16
-updated: 2026-10-19
+updated: 2026-10-20
 tags:
   - status
   - handoff
@@ -38,6 +38,23 @@ phase: research
 ---
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
+
+<!-- BRAND-CAND-009-F4-F6-DOCUMENTARY-CHECKPOINT:START -->
+## BRAND-CAND-009 — Checkpoint Method v2 F4–F6 (2026-10-20)
+
+**F4–F6 CLOSED / AUTO / DOUBLE PASS POR FASE.** Este checkpoint regulariza la publicación documental omitida después de F6. No reabre ni invalida F7. No se ejecutaron búsquedas de origen en F8 ni se autorizaron compras.
+
+- **F4 Competencia** — `SI-RESEARCH-121`, `aut162` DOBLE PASS, SHA-256 `5017b62deeef096e150dedab749044fc64b71e400903b875d89e8efbe42a2f73`. Se registraron seis comparables `COMP-0187..0192`; `aut161` falló `DERIVED_VIEW_ROW_MISSING` y se conserva como intento histórico NO VALIDADO. `aut162` corrigió la fila derivada de `RES-COMP-0015`.
+- **F5 Potencial de Marca** — `SI-RESEARCH-122`, `aut163` DOBLE PASS, SHA-256 `0d19fd39ca2dad470258e283286ffd443c8d58f9f03e2cffadd71f7ae5d352bd`. Evaluación `EVAL-0038`: **3/5, confianza baja**; diferenciación hipotética, no demostrada.
+- **F6 Product Bases** — `SI-RESEARCH-123`, `aut164` DOBLE PASS, SHA-256 `3e39e5e00b2c6b3706ed0b152d6d5a8d7c684df21d3eb5ea5b0d503426315a8c`. Bases candidatas `BASE-FIT-010..013`, sin aprobación de SKU, proveedor ni compra.
+
+**Estado de continuidad que no integra esta publicación:** F7 SHORTLIST PRE-ORIGIN ya fue validada técnicamente (AUTO, `aut165` DOBLE PASS, SHA-256 `0630735db2ad9122e4eb93ab196393aa8dd971d1afe8c08cc09cefd781c20aae`). Su Research `SI-RESEARCH-124` se reserva para el checkpoint **F7–F8**, después de ejecutar F8 colaborativamente, recibir aprobación expresa del Founder y obtener doble PASS. **F8 NOT OPENED; F14 NOT OPENED.**
+
+**Límites:** seis publicaciones y seis verificaciones de F3 preservadas; cuatro PB candidatas, ninguna selección comercial definitiva. No hay costos FOB/EXW ni landed, rentabilidad acreditada, seguridad homologada, equivalencia OEM ni autorización de compra. El contador histórico de ventas de ML no representa ventas mensuales ni tamaño de mercado.
+
+**Trazabilidad:** `SI-RESEARCH-121..123` de este checkpoint y baseline privada `aut164`; `SI-RESEARCH-124` + `aut165` son posteriores y permanecen fuera de esta publicación documental. PDFs, XLSX, logs y respaldos son privados, fuera de Git.
+
+<!-- BRAND-CAND-009-F4-F6-DOCUMENTARY-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-009-F0-F3-DOCUMENTARY-CHECKPOINT:START -->
 ## BRAND-CAND-009 — Checkpoint Method v2 F0–F3 (2026-10-19)
