@@ -2,7 +2,7 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.10
+version: 0.2.11
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -11,6 +11,31 @@ updated: 2026-10-19
 ---
 
 # Marca Fitness — Research
+
+<!-- BRAND-CAND-009-F0-F3-DOCUMENTARY-CHECKPOINT:START -->
+## BRAND-CAND-009 — Checkpoint Method v2 F0–F3 (2026-10-19)
+
+**F0–F3 CLOSED / aut160 DOBLE PASS / F3 COLLABORATIVE con aprobación expresa del Founder (19/10/2026).** F0, F1 y F2 fueron AUTO. Investigación de movilidad, estabilidad y capacidad física no clínica, `FIT-CAND-005` / `CORE`.
+
+- F0 Research Brief `aut154` — DOUBLE PASS — `04c3ee21055858cca8d439c0130c2a8284b56795aa84d9cbbae9d7eb2ea8ef6c`.
+- F1 Solution Map `aut155` — DOUBLE PASS — `607a97df651d6c78914e0880c70b40d13509d45e73c17026b45dea02fb762208`; cinco arquitecturas, ninguna Product Base.
+- F2 Maturity `aut156` — DOUBLE PASS — `ad35b330bdafb64d64ec3eeff13e72df71c95819026eab68038d1ac648119fd1`; madurez de mecanismos no acredita seguridad del producto.
+- F3 Demanda Marketplace `aut160` — DOUBLE PASS — `ff3f9fa529bc4e82789a64cf1c89657b154dff03439d6b802e457c003536b420`; **6 publicaciones** y **6 verificaciones de ledger**, 0 Product Bases; A1=2, A2=1, A3=0 (referencia contextual), A4=2, A5=1.
+
+**Lectura aprobada con reservas:** A1 y A4 tienen señales comerciales locales y requieren comprobaciones de progresión y seguridad; A2 y A5 son secundarias/condicionadas; A3 no acredita apoyo o transferencias seguras ni demanda directa. Confianza cualitativa **baja/condicionada**, sin score numérico aprobado. Los contadores son acumulados visibles, no demanda mensual ni un mercado dimensionado. No se aprobaron proveedores, márgenes, costos de importación, Product Bases ni compras.
+
+**Historial de corrección F3:** `aut157` falló `DF-MLV-028` ×4; `aut158` reconciliado y doble PASS, `aut159` doble PASS y `aut160` doble PASS. `aut157` NO es baseline válida.
+
+**Fuente documental:** `SI-RESEARCH-117..120` en `docs/06-research/brand-fitness/`; `SI-BIM-PROC-003 v1.0.6`. **Siguiente paso F4 — Competencia, AUTO, NOT OPENED**: reutilizar la misma cohorte F3, sin recolectar/reinventar demanda. **F14 NOT OPENED.** Matrices XLSX, PDFs y logs privados fuera de Git.
+
+**Research publicados en este checkpoint:**
+
+- [SI-RESEARCH-117 — F0 Research Brief](./si-research-117-brand-cand-009-method-v2-agile-phase-0-research-brief.md)
+- [SI-RESEARCH-118 — F1 Market / Solution Map](./si-research-118-brand-cand-009-method-v2-agile-phase-1-market-solution-map.md)
+- [SI-RESEARCH-119 — F2 Maturity](./si-research-119-brand-cand-009-method-v2-agile-phase-2-maturity.md)
+- [SI-RESEARCH-120 — F3 Demanda Marketplace](./si-research-120-brand-cand-009-method-v2-agile-phase-3-marketplace-demand.md)
+<!-- BRAND-CAND-009-F0-F3-DOCUMENTARY-CHECKPOINT:END -->
+
 <!-- BRAND-CAND-008-F4-F13-FINAL-CHECKPOINT:START -->
 ## BRAND-CAND-008 — Cierre Method v2 F4–F13 (2026-10-19)
 
