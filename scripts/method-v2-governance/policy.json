@@ -1,0 +1,16 @@
+{
+  "id": "SI-METHOD-V2-GOVERNANCE",
+  "version": "0.2.0",
+  "contract": "SI-BIM-PROC-003",
+  "contractVersion": "1.0.7",
+  "cadence": [
+    {"from":"F0", "to":"F3", "checkpointAfter":"F3", "collaborative":["F3"]},
+    {"from":"F4", "to":"F6", "checkpointAfter":"F6", "collaborative":[]},
+    {"from":"F7", "to":"F8", "checkpointAfter":"F8", "collaborative":["F8"]},
+    {"from":"F9", "to":"F13", "checkpointAfter":"F13", "collaborative":[], "condition":"Requiere decisión de continuidad posterior a F8"}
+  ],
+  "phaseModes": {"F0":"AUTO", "F1":"AUTO", "F2":"AUTO", "F3":"COLLABORATIVE", "F4":"AUTO", "F5":"AUTO", "F6":"AUTO", "F7":"AUTO", "F8":"COLLABORATIVE", "F9":"AUTO", "F10":"AUTO", "F11":"AUTO", "F12":"AUTO", "F13":"AUTO"},
+  "f14ImplicitOpening": false,
+  "documentaryExceptionRequires": ["founder_approval", "evidence", "reason", "scope"],
+  "outcomeOnMissingEvidence": "BLOCKED"
+}

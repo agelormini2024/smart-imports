@@ -1,0 +1,23 @@
+{
+  "candidate": "BRAND-CAND-009",
+  "nextPhase": "F8",
+  "publishedCommitAtPreflightCreation": "b10fa2c",
+  "candidatePath": "docs/07-brand/brands/brand-fitness/candidates/brand-cand-009-mobility-stability-physical-capacity.md",
+  "roadmapPath": "docs/08-roadmaps/si-roadmap-002-project-status-and-handoff.md",
+  "contractPath": "docs/02-business-intelligence-manual/procedures/si-bim-proc-003-method-v2-execution-contract.md",
+  "expectedPublishedBlocks": ["F0-F3", "F4-F6"],
+  "researchPublished": [
+    "docs/06-research/brand-fitness/si-research-121-brand-cand-009-method-v2-agile-phase-4-competition.md",
+    "docs/06-research/brand-fitness/si-research-122-brand-cand-009-method-v2-agile-phase-5-brand-potential.md",
+    "docs/06-research/brand-fitness/si-research-123-brand-cand-009-method-v2-agile-phase-6-product-bases.md"
+  ],
+  "researchReservedForNextBlock": "docs/06-research/brand-fitness/si-research-124-brand-cand-009-method-v2-agile-phase-7-pre-origin-shortlist.md",
+  "lastValidated": {
+    "phase": "F7",
+    "matrixDesktopRelative": "brand-cand-009-f7-auto/matrix-aut165-brand-cand-009-phase7-pre-origin-shortlist.xlsx",
+    "logDesktopRelative": "brand-cand-009-f7-auto/validation-aut165-brand-cand-009-f7.log",
+    "sha256": "0630735db2ad9122e4eb93ab196393aa8dd971d1afe8c08cc09cefd781c20aae"
+  },
+  "f8FounderApproval": "NOT_REQUESTED",
+  "f14": "NOT_OPENED"
+}

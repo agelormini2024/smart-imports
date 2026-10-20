@@ -2,12 +2,12 @@
 id: si-bim-proc-003
 title: Method v2 Execution Contract
 description: Contrato operativo único para ejecutar, validar, cerrar y reconciliar fases de Method v2 de forma repetible y ágil.
-version: 1.0.6
+version: 1.0.7
 status: approved
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-08
-updated: 2026-10-10
+updated: 2026-10-20
 tags:
   - method-v2
   - procedure
@@ -579,10 +579,31 @@ Antes de pedir revisión al Founder, el asistente debe:
 
 El Founder no debe actuar como validador manual de consistencia.
 
+## 16.1 Cadencia documental y Governance Preflight
+<!-- METHOD-V2-GOVERNANCE-CADENCE:START -->
+
+La publicación documental se agrupa por bloques para conservar trazabilidad sin exigir un commit por cada fase. **El cierre técnico de cada fase sigue requiriendo Data Fidelity Preflight y Matrix Validator PASS**, aun cuando su documentación se publique después.
+
+| Bloque | Cierre documental | Requisito de revisión |
+|---|---|---|
+| F0–F3 | Después de F3 | F3 COLLABORATIVE: aprobación expresa del Founder |
+| F4–F6 | Después de F6 | AUTO, previa doble validación por fase |
+| F7–F8 | Después de F8 | F7 AUTO; F8 COLLABORATIVE: aprobación expresa del Founder |
+| F9–F13 | Después de F13 | Sólo si se autoriza continuar después de F8; no se abre F14 por inferencia |
+
+**Preflight preventivo:** antes de comenzar un nuevo bloque se verifican el contrato aprobado, el estado operativo y documental del candidato, los checkpoints previos publicados, la última baseline privada con SHA-256 y doble PASS, los modos de fase y el estado de Git. Si alguna prueba relevante es incongruente o no hay evidencia, el resultado es `BLOCKED`; no se completan datos ni autorizaciones por inferencia.
+
+El comprobador de gobernanza de `scripts/method-v2-governance/` complementa al Data Fidelity Preflight y al Matrix Validator; **no los sustituye**, no valida la veracidad de las fuentes y no equivale a aprobación comercial o aduanera.
+
+Las excepciones de cadencia requieren **aprobación expresa del Founder**, motivo, alcance y evidencia escrita incorporada al expediente. Ningún cambio en un archivo JSON constituye por sí mismo una autorización. Esta cadencia se aplica prospectivamente; los checkpoints históricos se conservan y las regularizaciones se registran sin reabrir fases técnicas ya validadas.
+
+<!-- METHOD-V2-GOVERNANCE-CADENCE:END -->
+
 ## 17. Changelog
 
 | Version | Date | Change |
 |---|---|---|
+| 1.0.7 | 2026-10-20 | Formaliza la cadencia documental F0–F3 / F4–F6 / F7–F8 / F9–F13 y el Governance Preflight preventivo fail-closed. |
 | 1.0.6 | 2026-10-13 | Formaliza F8 — Origin Screening / Alibaba como COLLABORATIVE y exige Founder Review explícita para cerrar la fase. |
 | 1.0.5 | 2026-10-10 | Exige Snapshot Pre-Proyección ML y reglas DF-SNP cuando una reverificación posterior se proyecta al core. |
 | 1.0.4 | 2026-10-10 | Agrega Active Core Projection y reglas DF-CORE para impedir core marketplace vacío/stale cuando existe verificación ACTIVE. |
