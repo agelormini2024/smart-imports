@@ -1,8 +1,8 @@
 ---
 id: brand-fitness
 title: Marca Fitness — Screening cerrado / Method v2
-description: Estado vigente de Marca Fitness; BRAND-CAND-007 y BRAND-CAND-010 F0–F13 cerrados, BRAND-CAND-008 F0–F13 cerrado sin finalistas y reabrible, BRAND-CAND-009 F0–F8 cerrado con F8 Founder Approved y checkpoint F7–F8 en preparación; F9 no abierta, F14 no abierta.
-version: 0.5.14
+description: Estado vigente de Marca Fitness; BRAND-CAND-007 y BRAND-CAND-010 F0–F13 cerrados, BRAND-CAND-008 F0–F13 cerrado sin finalistas y reabrible, BRAND-CAND-009 F0–F13 cerrado con shortlist condicionada; F14 no abierta y revisión externa pendiente.
+version: 0.5.15
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
@@ -20,6 +20,23 @@ related:
 ---
 
 # Marca Fitness — Screening cerrado
+
+<!-- BRAND-CAND-009-F9-F13-DOCUMENTARY-CHECKPOINT:START -->
+## BRAND-CAND-009 — Checkpoint Method v2 F9–F13 (2026-10-21)
+
+**F0–F13 CLOSED / F9–F13 AUTO — DOUBLE PASS EN LAS CINCO FASES / SHORTLIST CONDICIONADA PARA REVISIÓN EXTERNA.** F0–F8 publicados en `234abec`, F8 COLLABORATIVE aprobado expresamente por Founder el 21/10/2026. Contrato `SI-BIM-PROC-003 v1.0.7`: checkpoint conjunto F9–F13. **F14 NOT OPENED**; no se autoriza profundización de proveedores, RFQ, muestras ni compras.
+
+- **F9 — Headroom:** `aut167` DOUBLE PASS, SHA-256 `eca04f469f0fea429f07c38c36569fc31d657729753e2316ff71c3660789f21f`. Siete pares aritméticos; diferencia de precios ≠ margen; variante elástica adyacente `COT-0075` excluida.
+- **F10 — Minimum Landed Dataset:** `aut168` DOUBLE PASS, SHA-256 `84ac4470bbeb8e1e8d0fe03d9a76292d9a2d6b39988fd9bc7eaab1a17326cbf5`. Ocho ofertas, cero master packing verificado; faltantes logísticos explícitos.
+- **F11 — Landed Cost Screen:** `aut169` DOUBLE PASS, SHA-256 `1c3119c7070bb70122bcde4100c1b01047237c093500def751f5bbcd27e1c8f8`. Factores hipotéticos 1,5×/2×/3×; **landed real indeterminado**.
+- **F12 — Margin + ROI:** `aut170` DOUBLE PASS, SHA-256 `8af1e46af2d70d40baac83667ad80cb1476284bc2258398bd442ba14c849f4b0`. **Margen y ROI NO CALCULABLES**; no son cero.
+- **F13 — Final Shortlist:** `aut171` DOUBLE PASS, SHA-256 `e938ff75c3f7f51052965e0cfa46b5ba7c3e7cd4ab03f613a0fb020b8684b6b7`. **`BASE-FIT-010 FINALIST — CONDITIONED`** para revisión externa; **`BASE-FIT-011 SECONDARY RESERVE — CONDITIONED`**; `BASE-FIT-012 NOT COMMERCIAL FINALIST — SAFETY-GATED`; `BASE-FIT-013 DEFER — REOPENABLE`. `EVAL-0038 = 3/5`, confianza baja.
+
+En las cinco fases: **Data Fidelity Preflight v2.4 PASS + Matrix Validator 0.1.0 (`full-matrix-v5 0.7.0`) PASS**, sin errores, advertencias, hallazgos ni limitaciones. `aut171` contiene 29 hojas y 1.958 fórmulas; ni los datos comerciales históricos ni las evidencias de F8 fueron reescritos fuera de las celdas autorizadas.
+
+**Decisión y próximo gate:** Method v2 F0–F13 completo para este candidato, sin proveedores homologados ni producto autorizado para importar. La revisión con el socio y el despachante definirá la fricción importadora, las prioridades reales de portfolio y qué producto merecería profundización. **No abrir F14 automáticamente.** XLSX, PDFs, logs, manifests y ledgers permanecen privados y fuera de Git. Los checkpoints F0–F3, F4–F6 y F7–F8 debajo de éste son historia vigente de sus respectivas etapas, no estado más reciente.
+
+<!-- BRAND-CAND-009-F9-F13-DOCUMENTARY-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-009-F7-F8-DOCUMENTARY-CHECKPOINT:START -->
 ## BRAND-CAND-009 — Checkpoint Method v2 F7–F8 (2026-10-21)
