@@ -1,13 +1,13 @@
 ---
 id: brand-fitness
 title: Marca Fitness — Screening cerrado / Method v2
-description: Estado vigente de Marca Fitness; BRAND-CAND-007 y BRAND-CAND-010 F0–F13 cerrados, BRAND-CAND-008 F0–F13 cerrado sin finalistas y reabrible, BRAND-CAND-009 F0–F6 publicado, F7 técnico cerrado y F8 colaborativa pendiente, F14 no abierta.
-version: 0.5.13
+description: Estado vigente de Marca Fitness; BRAND-CAND-007 y BRAND-CAND-010 F0–F13 cerrados, BRAND-CAND-008 F0–F13 cerrado sin finalistas y reabrible, BRAND-CAND-009 F0–F8 cerrado con F8 Founder Approved y checkpoint F7–F8 en preparación; F9 no abierta, F14 no abierta.
+version: 0.5.14
 status: screening-closed
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-03
-updated: 2026-10-20
+updated: 2026-10-21
 tags:
   - brand
   - fitness
@@ -20,6 +20,19 @@ related:
 ---
 
 # Marca Fitness — Screening cerrado
+
+<!-- BRAND-CAND-009-F7-F8-DOCUMENTARY-CHECKPOINT:START -->
+## BRAND-CAND-009 — Checkpoint Method v2 F7–F8 (2026-10-21)
+
+**F7–F8 CLOSED / DOUBLE PASS EN AMBAS FASES / F8 COLLABORATIVE — FOUNDER REVIEW APPROVED EXPRESAMENTE (21/10/2026).** Contrato aprobado `SI-BIM-PROC-003 v1.0.7`; cadencia documental F0–F3, F4–F6, F7–F8 y F9–F13. El checkpoint F4–F6 ya se publicó en `b10fa2c`. Se preserva la auditoría real del Governance Preflight pre-F8 (GOV-001..009 PASS, commit `58cad04`).
+
+- **F7 — Shortlist pre-origin, AUTO:** `SI-RESEARCH-124`; matriz privada `aut165` con **Data Fidelity Preflight v2.4 PASS y Matrix Validator 0.1.0 / full-matrix-v5 0.7.0 PASS**, SHA-256 `0630735db2ad9122e4eb93ab196393aa8dd971d1afe8c08cc09cefd781c20aae`. Cuatro Product Bases: `BASE-FIT-010` LEAD — CONDITIONAL; `BASE-FIT-011` SECONDARY — CONDITIONAL; `BASE-FIT-012` SAFETY-GATED; `BASE-FIT-013` DEFER — REOPENABLE.
+- **F8 — Origin Screening / Alibaba, COLLABORATIVE:** `SI-RESEARCH-125`; matriz privada `aut166` con **Data Fidelity Preflight v2.4 PASS y Matrix Validator 0.1.0 / full-matrix-v5 0.7.0 PASS**, SHA-256 `51ad3d9d4d548a4804d6237004fa54a48d043ff03323e0f8810d917437e5cb95`. Cero errores, advertencias, findings y limitations. El Founder **aprobó expresamente el cierre el 21/10/2026**, con todas las reservas documentadas.
+- **Evidencias F8:** ocho fichas individuales Alibaba, ocho fuentes, ocho evidencias y ocho vínculos; `BASE-FIT-010` 3 (incluida una variante **elástica ADYACENTE**, no equivalencia exacta a la PB no elástica), `BASE-FIT-011` 3 (madera simple, doble y acero), `BASE-FIT-012` 2 (**SAFETY-GATED**) y `BASE-FIT-013` 0 (**DEFER**). La URL que mostraba sólo recomendaciones se excluyó. No se duplicaron PDFs idénticos.
+
+**Reservas:** oferta en Alibaba ≠ fabricante efectivo del SKU; publicación ≠ cotización formal; precios de pantalla ≠ FOB negociado; verificación del proveedor o claims RoHS/CP65/CE/carga ≠ homologación de seguridad. La selección, las muestras, RFQ, ensayos y la profundización del proveedor quedan diferidas hasta conversar con el socio y el despachante. **Ningún proveedor o producto aprobado para importar; F9 NOT OPENED; F14 NOT OPENED.** Las matrices, PDFs, logs y respaldos siguen fuera de Git.
+
+<!-- BRAND-CAND-009-F7-F8-DOCUMENTARY-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-009-F4-F6-DOCUMENTARY-CHECKPOINT:START -->
 ## BRAND-CAND-009 — Checkpoint Method v2 F4–F6 (2026-10-20)

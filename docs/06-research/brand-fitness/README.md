@@ -2,15 +2,33 @@
 id: brand-fitness-research-readme
 title: Marca Fitness — Research
 description: Índice de ejecuciones de Method v2 originadas desde Brand Candidates de Marca Fitness.
-version: 0.2.12
+version: 0.2.13
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-10-05
-updated: 2026-10-20
+updated: 2026-10-21
 ---
 
 # Marca Fitness — Research
+
+<!-- BRAND-CAND-009-F7-F8-DOCUMENTARY-CHECKPOINT:START -->
+## BRAND-CAND-009 — Checkpoint Method v2 F7–F8 (2026-10-21)
+
+**F7–F8 CLOSED / DOUBLE PASS EN AMBAS FASES / F8 COLLABORATIVE — FOUNDER REVIEW APPROVED EXPRESAMENTE (21/10/2026).** Contrato aprobado `SI-BIM-PROC-003 v1.0.7`; cadencia documental F0–F3, F4–F6, F7–F8 y F9–F13. El checkpoint F4–F6 ya se publicó en `b10fa2c`. Se preserva la auditoría real del Governance Preflight pre-F8 (GOV-001..009 PASS, commit `58cad04`).
+
+- **F7 — Shortlist pre-origin, AUTO:** `SI-RESEARCH-124`; matriz privada `aut165` con **Data Fidelity Preflight v2.4 PASS y Matrix Validator 0.1.0 / full-matrix-v5 0.7.0 PASS**, SHA-256 `0630735db2ad9122e4eb93ab196393aa8dd971d1afe8c08cc09cefd781c20aae`. Cuatro Product Bases: `BASE-FIT-010` LEAD — CONDITIONAL; `BASE-FIT-011` SECONDARY — CONDITIONAL; `BASE-FIT-012` SAFETY-GATED; `BASE-FIT-013` DEFER — REOPENABLE.
+- **F8 — Origin Screening / Alibaba, COLLABORATIVE:** `SI-RESEARCH-125`; matriz privada `aut166` con **Data Fidelity Preflight v2.4 PASS y Matrix Validator 0.1.0 / full-matrix-v5 0.7.0 PASS**, SHA-256 `51ad3d9d4d548a4804d6237004fa54a48d043ff03323e0f8810d917437e5cb95`. Cero errores, advertencias, findings y limitations. El Founder **aprobó expresamente el cierre el 21/10/2026**, con todas las reservas documentadas.
+- **Evidencias F8:** ocho fichas individuales Alibaba, ocho fuentes, ocho evidencias y ocho vínculos; `BASE-FIT-010` 3 (incluida una variante **elástica ADYACENTE**, no equivalencia exacta a la PB no elástica), `BASE-FIT-011` 3 (madera simple, doble y acero), `BASE-FIT-012` 2 (**SAFETY-GATED**) y `BASE-FIT-013` 0 (**DEFER**). La URL que mostraba sólo recomendaciones se excluyó. No se duplicaron PDFs idénticos.
+
+**Reservas:** oferta en Alibaba ≠ fabricante efectivo del SKU; publicación ≠ cotización formal; precios de pantalla ≠ FOB negociado; verificación del proveedor o claims RoHS/CP65/CE/carga ≠ homologación de seguridad. La selección, las muestras, RFQ, ensayos y la profundización del proveedor quedan diferidas hasta conversar con el socio y el despachante. **Ningún proveedor o producto aprobado para importar; F9 NOT OPENED; F14 NOT OPENED.** Las matrices, PDFs, logs y respaldos siguen fuera de Git.
+
+**Research publicados en este checkpoint:**
+
+- [SI-RESEARCH-124 — F7 Shortlist pre-origin](./si-research-124-brand-cand-009-method-v2-agile-phase-7-pre-origin-shortlist.md)
+- [SI-RESEARCH-125 — F8 Origin Screening](./si-research-125-brand-cand-009-method-v2-agile-phase-8-origin-screening.md)
+
+<!-- BRAND-CAND-009-F7-F8-DOCUMENTARY-CHECKPOINT:END -->
 
 <!-- BRAND-CAND-009-F4-F6-DOCUMENTARY-CHECKPOINT:START -->
 ## BRAND-CAND-009 — Checkpoint Method v2 F4–F6 (2026-10-20)
