@@ -2,12 +2,12 @@
 id: docs-03-functional-specifications-readme
 title: 03 — Functional Specifications
 description: Índice de especificaciones funcionales de la futura plataforma Smart Imports.
-version: 0.5.0
+version: 0.6.0
 status: review
 owner: Alejandro Gelormini
 reviewer: CTO/CSO Virtual
 created: 2026-07-02
-updated: 2026-10-23
+updated: 2026-10-26
 tags:
   - smart-imports
   - documentation
@@ -45,6 +45,7 @@ Las especificaciones de esta carpeta deben:
 | [SI-V3-FUNC-001 — Misión y ejecución](./si-v3-func-001-mission-and-execution-mvp.md) | Draft / revisión documental pendiente | Bloque 1 v3: misiones, ejecuciones, preflight, gobierno y `CA-01..CA-10`. |
 | [SI-V3-FUNC-002 — Investigación y agentes](./si-v3-func-002-research-and-agents-mvp.md) | Draft / revisión documental pendiente | Bloque 2 v3: `DF-AG-001..016`, H1–H3, investigación y ensayo histórico. |
 | [SI-V3-FUNC-003 — Corpus histórico y evidencias](./si-v3-func-003-historical-evidence-corpus-mvp.md) | Draft / revisión documental pendiente | Bloque 3 v3: corpus histórico en dos niveles, aislamiento, privacidad y `CA-EV-01..11`. |
+| [SI-V3-FUNC-004 — Aislamiento y Evidence Gateway](./si-v3-func-004-researcher-isolation-evidence-gateway-mvp.md) | Draft / revisión documental pendiente | Contrato de seguridad del investigador: `DF-SEC-001..002` y `CA-SEC-01..14`. |
 
 ## 4. Próximos pasos
 
@@ -70,3 +71,4 @@ Las especificaciones de esta carpeta deben:
 | 0.3.0 | 2026-08-03 | Se registra la implementación avanzada, los schemas v3/v4 y los bloqueadores de cierre. |
 | 0.4.0 | 2026-10-23 | Incorporación de referencias a los Bloques 1 y 2 de Smart Imports v3, preservando los documentos y el historial anteriores. |
 | 0.5.0 | 2026-10-23 | Se agrega el contrato inicial del Bloque 3 de v3, con corpus histórico en dos niveles y controles de evidencia. |
+| 0.6.0 | 2026-10-26 | Se referencia el contrato de aislamiento del investigador y Evidence Gateway (decisiones DF-SEC-001..002). |
