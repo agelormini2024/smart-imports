@@ -378,3 +378,8 @@ Core + Snapshot Fidelity PASS
 
 Resultado estratégico sin cambios; F14 permanece `NOT OPENED`.
 <!-- SI-RESEARCH-088:END -->
+
+<!-- RW-P001-CP02-REVIEW:START -->
+## Research Workbench — Piloto RW-P001 (CP02, DRAFT)
+Complementos de revisión en [`research-workbench/`](research-workbench/): `SI-RESEARCH-WORKBENCH-004` (C01–C15, sin sustituir `001` original en Biblioteca), `SI-RESEARCH-WORKBENCH-002` (proveedores y evidencias) y `SI-RESEARCH-WORKBENCH-003` (ranking de investigación, no shortlist).
+<!-- RW-P001-CP02-REVIEW:END -->

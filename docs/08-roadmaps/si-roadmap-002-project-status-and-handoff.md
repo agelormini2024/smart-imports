@@ -39,6 +39,15 @@ phase: research
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
+<!-- RW-P001-CP02-REVIEW:START -->
+## Research Workbench — RW-P001 CP02 (30/10/2026) — DRAFT / revisión pendiente
+- Piloto de atleta amateur: exploración C01–C15; documento complementario `SI-RESEARCH-WORKBENCH-004` (no altera el Discovery Log `001` original en Biblioteca).
+- Registro de siete consultas a proveedores: `SI-RESEARCH-WORKBENCH-002`; cuatro respuestas conocidas, tres sin respuesta registrada al cierre de ronda. Se preservan enlaces originales y discrepancias.
+- Ranking de **prioridad de investigación** `SI-RESEARCH-WORKBENCH-003`: C03, C01 y C08 sujetos a evidencias y al filtro aduanero; **ningún producto aún comercialmente viable validado**.
+- Estado: documentación en revisión, sin aprobación de inversión; no modifica Method v2, cierres F0–F13, ni abre F14. Documentación sensible y PDFs permanecen privados.
+- Documentos: `docs/06-research/research-workbench/si-research-workbench-002-supplier-screening.md`, `si-research-workbench-003-commercial-pipeline.md`, `si-research-workbench-004-pilot-001-c01-c15-addendum.md`.
+<!-- RW-P001-CP02-REVIEW:END -->
+
 <!-- BRAND-CAND-009-F9-F13-DOCUMENTARY-CHECKPOINT:START -->
 ## BRAND-CAND-009 — Checkpoint Method v2 F9–F13 (2026-10-21)
 
