@@ -383,3 +383,8 @@ Resultado estratégico sin cambios; F14 permanece `NOT OPENED`.
 ## Research Workbench — Piloto RW-P001 (CP02, DRAFT)
 Complementos de revisión en [`research-workbench/`](research-workbench/): `SI-RESEARCH-WORKBENCH-004` (C01–C15, sin sustituir `001` original en Biblioteca), `SI-RESEARCH-WORKBENCH-002` (proveedores y evidencias) y `SI-RESEARCH-WORKBENCH-003` (ranking de investigación, no shortlist).
 <!-- RW-P001-CP02-REVIEW:END -->
+
+<!-- RW-P001-CP03-DOCUMENTAL:START -->
+## Research Workbench — Decision Reports CP03 (30/10/2026; DRAFT)
+Se registra el **contrato funcional piloto** de Ficha de Oportunidad Comercial / Decision Report [`SI-RESEARCH-WORKBENCH-005`](research-workbench/si-research-workbench-005-decision-report-pilot-contract.md) y el [checkpoint CP03 de tres informes C01/C03/C08](research-workbench/si-research-workbench-006-cp03-decision-reports-checkpoint.md). La explicación económica recupera Headroom, Landed Cost, margen, ROI económico y caja de Method v2 como **screening**; no ejecuta F9–F13. Los PDF/DOCX con cotizaciones, simulaciones y evidencias siguen **privados**, fuera de Git. No hay shortlist comercial validada, gate aduanero ni compra aprobada. Ver [índice del Workbench](research-workbench/README.md).
+<!-- RW-P001-CP03-DOCUMENTAL:END -->

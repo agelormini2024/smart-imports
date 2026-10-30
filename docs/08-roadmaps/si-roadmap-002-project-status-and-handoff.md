@@ -39,6 +39,17 @@ phase: research
 
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
+<!-- RW-P001-CP03-DOCUMENTAL:START -->
+## RW-P001 CP03 — Decision Reports piloto (30/10/2026; DRAFT)
+- **Entregable del Workbench:** informe de oportunidad comercial para socio/despachante, derivado de investigación y matriz; no otro ciclo completo Method v2. Contrato piloto `SI-RESEARCH-WORKBENCH-005` y registro de versiones `SI-RESEARCH-WORKBENCH-006`, en `docs/06-research/research-workbench/`.
+- **Informes preparados (privados):** C01 torquímetro v0.1, C03 chaleco hidratación 5L v0.1, C08 auriculares natación v0.4. C08 v0.4 revisa **solo el precio de venta hipotético** y su sensibilidad; demanda/quality/landed siguen no comprobados. Tres informes **DRAFT**; sin candidato comercialmente viable validado.
+- **Economía didáctica:** costo puesto máximo, Headroom, pruebas de sensibilidad de landed **no calibradas**, margen/ROI económico y caja por separado; supuestos conservadores plausibles, nunca peor escenario imaginable; ausencia ⇒ NO CALCULABLE. No se modificó `aut171` histórico ni se homologó la matriz CP03 al Engine.
+- **Delta de proveedores post-CP02:** C03-S01 Youk respondió; ronda original ahora **cinco con respuesta y dos sin respuesta**. Evidencia IPX8 Tucson S10 sigue parcial (una muestra; informe completo no recibido). CP02 4/3 es corte histórico, no error a reescribir.
+- **Gate:** revisión Founder/socio → despachante para NCM/intervenciones/costo real → SOLO DESPUÉS investigación profunda de proveedores (muestras, QA, homologación, negociación) → selección final de 3–4 productos si procede. Ninguna compra autorizada; Method v2/F14 no se modifican.
+- Evidencia, cotizaciones y PDFs completos fuera de Git, en custodia privada RW-P001/CP03. Próximo paso: feedback de Eduardo y contraste de mercado/equivalencia para C08, sin acelerar negociación.
+<!-- RW-P001-CP03-DOCUMENTAL:END -->
+
+
 <!-- RW-P001-CP02-REVIEW:START -->
 ## Research Workbench — RW-P001 CP02 (30/10/2026) — DRAFT / revisión pendiente
 - Piloto de atleta amateur: exploración C01–C15; documento complementario `SI-RESEARCH-WORKBENCH-004` (no altera el Discovery Log `001` original en Biblioteca).
