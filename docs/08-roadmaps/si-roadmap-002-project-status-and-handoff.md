@@ -40,6 +40,15 @@ phase: research
 # SI-ROADMAP-002 — Estado actual y handoff de Smart Imports
 
 <!-- RW-P001-CP03-DOCUMENTAL:START -->
+## RW-P001 CP04 — Delta comercial, C08 y bicicletas TT (31/10/2026; DRAFT)
+
+- **Documento:** `SI-RESEARCH-WORKBENCH-007` en `docs/06-research/research-workbench/`; síntesis pública. Anexo de ofertas, mensajes, PDFs y precios en custodia **privada** `RW-P001/CP04`; no subirlo a Git.
+- **Revisión de Eduardo (30/10):** `C03` pasa a principal prioridad de atención, `C08` continúa condicionado y `C01` queda relegado/reabrible para primera importación. Entrevista cualitativa, no estadística representativa.
+- **C08:** Tucson S10 aportó cotización con DHL para dos volúmenes; AURALIZ aporta evidencia visible en Argentina; Langston informó discontinuación de BE02, BE17/BE20 16 GB y quedó pendiente confirmación sobre BE17 32 GB. Sin landed, muestra o calidad comparable validada.
+- **Nueva hipótesis `RW-P001-TT-001`:** tres referencias exploratorias de bicicletas TT (Twitter T3, Java TT Vega, T800/FLM). Posible prueba de 3–4 bicicletas **NO APROBADA**; necesidades de compradores, talles, armado, posventa, márgenes e importación pendientes.
+- **Gate de marca y canal:** presencia argentina y autodeclaración de 'distribuidor oficial' NO acreditan por sí mismas representación/exclusividad. Twitter: presencia local declarada, posible conflicto comercial, HOLD. Java: oficialidad alegada por tercero, por confirmar. FLM/T800: titular/fabricante efectivo por identificar. Verificar con titular, INPI y asesor; no dar por prohibida ni por libre la importación por una sola evidencia.
+- **Siguiente disparador:** información de campo de Eduardo en nueva reunión. No avanzar con RFQ profundo, muestras, compras ni proveedor homologado antes del despachante. CP03 documental sigue cerrado en `32fb5a0`, informes comerciales siguen DRAFT, `aut171` intacta.
+
 ## RW-P001 CP03 — Decision Reports piloto (30/10/2026; DRAFT)
 - **Entregable del Workbench:** informe de oportunidad comercial para socio/despachante, derivado de investigación y matriz; no otro ciclo completo Method v2. Contrato piloto `SI-RESEARCH-WORKBENCH-005` y registro de versiones `SI-RESEARCH-WORKBENCH-006`, en `docs/06-research/research-workbench/`.
 - **Informes preparados (privados):** C01 torquímetro v0.1, C03 chaleco hidratación 5L v0.1, C08 auriculares natación v0.4. C08 v0.4 revisa **solo el precio de venta hipotético** y su sensibilidad; demanda/quality/landed siguen no comprobados. Tres informes **DRAFT**; sin candidato comercialmente viable validado.
